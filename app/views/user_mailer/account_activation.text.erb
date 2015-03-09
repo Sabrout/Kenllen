@@ -1,0 +1,4 @@
+
+Hi <%=@user.uname%>  ,
+Welcome To Knellen Art , Please Click on the Link Below To Activate Your Account And Begin A Journey Of Inspiration: 
+<%=link_to "Activate NOW !!!" , edit_account_activation (@user.activation_token , email: @user.email) %>
