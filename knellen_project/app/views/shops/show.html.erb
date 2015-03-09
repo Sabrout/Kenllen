@@ -1,0 +1,17 @@
+<%= link_to("<< Back to List", {:action => 'index'}, :class => 'back-link') %>
+
+<div>
+  <h2>Show Shop</h2>
+
+  <table>
+    <tr>
+      <th>Shop Name</th>
+      <td><%= @shop.shop_name %></td>
+    </tr>
+    <tr>
+      <th>Shop Description</th>
+      <td><%= @shop.shop_desc %></td>
+    </tr>
+  </table>
+
+</div>
