@@ -1,5 +1,6 @@
 class ShopsController < ApplicationController
   def index
+    # sorted is a lambda (small procedure) in the model
   	@shops = Shop.sorted
   end
 
@@ -58,6 +59,6 @@ class ShopsController < ApplicationController
   # It raises an error if :subject is not present
   private
   def shop_params
-    params.require(:shop).permit(:shop_name, :shop_desc)
+    params.require(:shop).permit(:shop_name, :shop_desc, :cover)
   end
 end

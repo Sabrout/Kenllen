@@ -3,7 +3,7 @@
 <div>
 <h2>Edit Shop "<%= @shop.shop_name %>"</h2>
 
-<%= form_for(:shop, :url => {:action => 'update'}) do |f| %>
+<%= form_for(:shop, :url => {:action => 'update', :shop_id => @shop.shop_id}) do |f| %>
 
 	<table> 
 	<tr>
@@ -13,6 +13,10 @@
 	<tr>
 		<th>Shop Description</th>
 		<td><%= f.text_field(:shop_desc) %></td>
+	</tr>
+	<tr>
+		<th>Shop Cover</th>
+		<td><%= f.file_field(:cover) %></td>
 	</tr>
 	</table>
 
