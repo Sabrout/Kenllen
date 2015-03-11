@@ -22,4 +22,8 @@ def logout #logs user out
 	redirect_to '/' #redirect logged out user to home
 end
 
+def view_signin
+
+end
+
 end
