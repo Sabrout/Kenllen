@@ -1,0 +1,14 @@
+<html>
+<head>
+<% @page_title = "Home" %>
+</head>
+<body>
+<h1>WELCOME</h1>
+<% if !logged_in? %>
+<%=button_to "LOGIN" , {:action => 'view_signin', :controller => 'sessions'} , :method => :get%>
+<%else%>
+<h2>WELCOME</h2> <%=@current_user.uname%>
+<br>
+<%= button_to "Logout", logout_path , method: :delete %><%end%>
+</body>
+</html>
