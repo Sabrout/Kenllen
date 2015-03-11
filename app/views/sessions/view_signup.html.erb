@@ -1,31 +1,20 @@
 <html>
 <head>
-	<title></title>
+<% @page_title = "SignUp" %>
 </head>
 <body>
-<h2>Sign up</h2>
+<h2>SignUp</h2>
 
-<%= form_for :signup do |f| %>
-    <%= f.label "user name" %><br />
-    <%= f.text_field :uname %>
-    <%= f.label "email" %><br />
-    <%= f.text_field :email %>
-    <%= f.label "password" %><br />
-    <%= f.password_field :password %>
-    <%= f.label "password_confirmation", "Confirmation" %><br />
-    <%= f.password_field :password_confirmation %>
-  
-
-    <%= f.label "First name" %><br />
-    <%= f.text_field :fname %>
-  
-
-    <%= f.label "Last name" %><br />
-    <%= f.text_field :lname %>
-  
-
-    <%= f.label "phone"%><br />
-    <%= f.text_field :phone %>
+<%= bootstrap_form_for @user , url: {action: "create"} , inline_errors: false do |f| %>
+    <%= f.alert_message "Please fix the following errors." %>
+    <%= f.text_field :uname , :placeholder => 'User Name', label: "Username: " %>
+    <%= f.email_field :email , :placeholder => 'example@domain.com' , label: "Email: "  %>
+    <%= f.email_field :email_confirmation , :placeholder => 'Confirm email' , label: "Confirm Email: "  %>
+    <%= f.password_field :password , :placeholder => 'Password' , label: "Password: " %>
+    <%= f.password_field :password_confirmation , :placeholder => 'Confirm Password' , label: "Confirm Password: "  %>
+    <%= f.text_field :fname , :placeholder => 'First Name' , label: "First Name: "  %>
+    <%= f.text_field :lname , :placeholder => 'Last Name' , label: "Last Name: "  %>
+    <%= f.phone_field :phone , :placeholder => 'Phone Number', label: "Phone Number: " %>
     <%= f.submit "Sign up" %>
 <% end %>
 </body>
