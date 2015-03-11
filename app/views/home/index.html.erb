@@ -5,5 +5,11 @@
 <body>
 <h1>WELCOME</h1>
 <%=button_to "SIGN UP NOW" ,{:action => 'view_signup', :controller => 'sessions'} , :method => :get %>
+<% if !logged_in? %>
+<%=button_to "LOGIN" , {:action => 'view_signin', :controller => 'sessions'} , :method => :get%>
+<%else%>
+<h2>WELCOME</h2> <%=@current_user.uname%>
+<br>
+<%= button_to "Logout", logout_path , method: :delete %><%end%>
 </body>
 </html>

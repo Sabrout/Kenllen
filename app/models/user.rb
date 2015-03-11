@@ -10,4 +10,32 @@ class User < ActiveRecord::Base
     validates :password , :length => { :minimum => 6, :maximum => 12 } #sets the maximum length of password to 12 and minimum to 6
     validates :email ,uniqueness: {:message => "^Email Already Registerd"}, :format => { with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i }
     validates_confirmation_of :email , :allow_blank => true
+
+def remember # calls the new token function to generate the string and then call the digest to hash that string
+    self.remember_token = User.new_token
+    update_attribute(:remember_digest, User.digest(remember_token))
+end
+
+def User.new_token  # create a random string
+    SecureRandom.urlsafe_base64
+end
+
+def User.digest(string) # hashes the string (the token)
+    cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
+                                                  BCrypt::Engine.cost
+    BCrypt::Password.create(string, cost: cost)
+end
+
+def authenticated?(remember_token) #makes sure that the token matches the hashed one in db
+    if remember_digest.nil?
+        return false
+    else
+    BCrypt::Password.new(remember_digest).is_password?(remember_token)
+    end
+end
+
+def forget #delete the remember digest field from the database
+    update_attribute(:remember_digest, nil)
+end
+
 end
