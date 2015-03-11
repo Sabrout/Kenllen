@@ -1,14 +1,15 @@
 ﻿CREATE TABLE users(
 user_id SERIAL PRIMARY KEY ,
-fname varchar(255) NOT NULL,
-lname varchar(255) NOT NULL,
-uname varchar(255) UNIQUE NOT NULL,
+fname varchar(255) ,
+lname varchar(255) ,
+uname varchar(255) ,
 password_digest varchar(255),
 remember_digest varchar,
-phone NUMERIC CHECK (phone>0),
-email varchar(255) CHECK (email ~* '^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+[.][A-Za-z]+$') NOT NULL,
+phone integer ,
+email varchar(255) ,
 address varchar,
-reports INTEGER DEFAULT 0
+reports INTEGER DEFAULT 0,
+CHECK (phone>0)
 );
 
 CREATE TABLE report_user(
@@ -27,20 +28,20 @@ PRIMARY KEY(art_id,user_id)
 
 CREATE TABLE admins(
 admin_id SERIAL PRIMARY KEY ,
-uname varchar(255) UNIQUE NOT NULL ,
-password_digest varchar(255) NOT NULL ,
-email varchar(255) CHECK (email ~* '^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+[.][A-Za-z]+$') NOT NULL
+uname varchar(255) ,
+password_digest varchar(255) ,
+email varchar(255)
 );
 
 CREATE TABLE shops(
 shop_id SERIAL PRIMARY KEY ,
-shop_name char(50) UNIQUE NOT NULL ,
-shop_desc varchar(255) NOT NULL
+shop_name char(50) ,
+shop_desc varchar(255)
 );
 
 CREATE TABLE arts(
 art_id SERIAL PRIMARY KEY ,
-art_name varchar(255) NOT NULL ,
+art_name varchar(255) ,
 shop_id SERIAL REFERENCES shops(shop_id) ON UPDATE CASCADE ON DELETE CASCADE,
 price money NOT NULL ,
 art_desc varchar(255) ,
@@ -64,7 +65,7 @@ CREATE TABLE comment_art(
 comment_id SERIAL ,
 user_id SERIAL REFERENCES users(user_id) ON UPDATE CASCADE ON DELETE CASCADE,
 art_id SERIAL REFERENCES arts(art_id) ON UPDATE CASCADE ON DELETE CASCADE,
-content text NOT NULL ,
+content text ,
 time_stamp timestamp ,
 PRIMARY KEY(comment_id,user_id)
 );
@@ -72,6 +73,7 @@ PRIMARY KEY(comment_id,user_id)
 CREATE TABLE rate_art(
 art_id SERIAL REFERENCES arts(art_id) ON UPDATE CASCADE ON DELETE CASCADE,
 user_id SERIAL REFERENCES users(user_id) ON UPDATE CASCADE ON DELETE CASCADE,
-value integer CHECK (value>=0 AND value<=5) DEFAULT 0 ,
-PRIMARY KEY(user_id,art_id)
+value integer DEFAULT 0 ,
+PRIMARY KEY(user_id,art_id) ,
+CHECK (value>=0 AND value<=5)
 );
