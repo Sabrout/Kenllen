@@ -1,0 +1,175 @@
+/*// Place all the styles related to the Shops controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/*/
+
+.pagetitle{
+	color: black;
+	margin-left: 46%;
+	margin-right: 54%;
+	margin-top: 2%;
+	font-size: 220%;
+	font-family: 'Segoe UI';
+}
+body{
+	background-color: #F2F6DD;
+	background-size: cover;
+	height: 100%;
+}
+.page{
+	padding-top:6%;
+	padding-left: 6%;
+	padding-right: 1%;
+	background-color:#F8FAEE;
+	height: 100%;
+	font-family: 'Segoe UI';
+	border-radius: 1%;
+	margin-top: 1%;
+	margin-left: 11%;
+	margin-right: 11%;
+	text-align: center;
+	padding-bottom: 5%;
+	overflow: hidden;
+}
+.header{
+
+	/*margin-right:5%;*/
+	margin-top:20%;
+	
+}
+.title{
+	margin-left: 6.5%;
+	color: white;
+	font-family: 'Segoe UI';
+	text-decoration: none;
+
+	}
+.titlebk{
+	background-color: #E9573F;
+	margin-top:-1.5%;
+	margin-right:-1%;
+	margin-left:-1%;
+}
+.table{
+	font-size: 110%;
+
+	float: center;	
+}
+th{
+	padding: .5%;
+	width:28.5%;
+	float: center;
+	/*margin-bottom:-80%;*/
+}
+.actionshow, .actionedit, .actiondelete{
+	color: #E9573F; 
+	background-color: #F8FAEE; 
+	font-family: 'Segoe UI';
+	text-decoration: none;
+}
+
+.actionshow:hover, .actionedit:hover, .actiondelete:hover{
+	color: #ffb296; 
+}
+
+/*.add{
+	color: #F2F6DD; 
+	background-color: #E9573F; 
+	padding: 1%; 
+	border-color: #E9573F;
+	border: none; 
+	border-radius: 20%; 
+	margin-right: 50%;
+	margin-left:45.5%; 
+	font-family: 'Segoe UI';
+	text-decoration: none;
+}*/
+
+.add{
+	margin-right: 50%;
+	margin-left:44%; 
+	background: #e95640;
+  background-image: -webkit-linear-gradient(top, #e95640, #e95640);
+  background-image: -moz-linear-gradient(top, #e95640, #e95640);
+  background-image: -ms-linear-gradient(top, #e95640, #e95640);
+  background-image: -o-linear-gradient(top, #e95640, #e95640);
+  background-image: linear-gradient(to bottom, #e95640, #e95640);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+}
+
+.add:hover {
+  background: #ffb296;
+  background-image: -webkit-linear-gradient(top, #ffb296, #ffb296);
+  background-image: -moz-linear-gradient(top, #ffb296, #ffb296);
+  background-image: -ms-linear-gradient(top, #ffb296, #ffb296);
+  background-image: -o-linear-gradient(top, #ffb296, #ffb296);
+  background-image: linear-gradient(to bottom, #ffb296, #ffb296);
+  text-decoration: none;
+}
+
+.actions{
+	background-color: #F8FAEE; 
+}
+
+.shop-card{
+	max-width: 20%;
+	text-align:center;
+	margin-top: 1%;
+	margin-bottom: 5%;
+	margin-left: 1%;
+	padding:1%;
+	float: left;
+	font-size: 120%;
+	border-radius: 10%;
+	background-color: #F8FAEE; 
+
+	/*-webkit-box-shadow: 0px 0px 25px 0px rgba(233,87,63,1);
+-moz-box-shadow: 0px 0px 25px 0px rgba(233,87,63,1);
+box-shadow: 0px 0px 25px 0px rgba(233,87,63,1);*/
+}
+.back{
+	color: #F2F6DD; 
+	background-color: #E9573F; 
+	padding: 0.5%; 
+	border-color: #E9573F; 
+	border-radius: 45%; 
+	margin-right: 54%;
+	margin-left:46%; 
+	font-family: 'Segoe UI';
+	text-decoration: none;
+	font-size: 110%;
+	font-style: bold;
+}
+.create{
+	margin-right: 40%;
+	margin-left:35%;
+	margin-top: 8%;
+	border:outset;
+	font-size: 120%;
+	padding:2%;
+	background-color: #F8FAEE; 
+	border-radius: 10%;
+	text-align: center;
+	font-family: 'Segoe UI';
+
+}
+.submit{
+	color: #F2F6DD; 
+	background-color: #E9573F; 
+	padding: 0.5%; 
+	border-color: #E9573F; 
+	border-radius: 10%; 
+	margin-right: 50%;
+	margin-left:35%; 
+	font-family: 'Segoe UI';
+	text-decoration: none;
+	margin-top: 10%;
+	font-size: 90%;
+}

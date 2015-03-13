@@ -1,0 +1,33 @@
+<% if !flash[:notice].blank? %>
+  <div class = "notice">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
+
+<%= link_to("<<", {:action => 'index'}, :class => 'back') %>
+<div class = "create">
+
+<h2>Create Shop</h2>
+
+<%= form_for(:shop, :url => {:action => 'create'}, :class => 'create') do |f| %>
+
+	<table> 
+	<tr>
+		<th>Shop Name</th>
+		<td><%= f.text_field(:shop_name) %></td>
+	</tr>
+	<tr>
+		<th>Shop Description</th>
+		<td><%= f.text_field(:shop_desc) %></td>
+	</tr>
+	<tr>
+		<th>Shop Cover</th>
+		<td><%= f.file_field(:cover) %></td>
+	</tr>	
+	</table>
+
+	<div >
+		<%= submit_tag("Create Shop", :class => 'submit')%>
+	</div>
+	<% end %>
+</div>
