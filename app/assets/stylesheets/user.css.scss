@@ -1,0 +1,80 @@
+// Place all the styles related to the user controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+li
+{
+	
+	display: inline;
+}
+a
+{
+	color: white;
+}
+.nav
+{
+	border: dashed;
+	border-radius: 15px;
+	border-color: #E9573F;
+	background-color: #E9573F;
+}
+h1
+{
+	margin-left: 30%;
+	margin-top: 10%;
+}
+.head
+{
+	margin-right: 3%;
+	font-size: 150%;
+	font-family:  "Comic Sans MS", cursive, sans-serif;
+	color: #000000;
+	text-decoration: none;
+
+}
+
+.card
+{
+	margin-left: 40%;
+	margin-top: 30%;
+	border: dashed;
+	border-radius: 15px;
+	border-color: #E9573F;
+	background-color: #E9573F;
+	width :20%; 
+}
+
+body { 
+		background-color: #F2F6DD;
+
+	}	
+
+
+.password
+{
+	margin-left: 1.2%;
+}
+
+.submit-button
+{
+
+	margin-left: 40%;
+	margin-top: 5%;
+
+
+}
+.SignIn
+{
+	visibility: visible;
+	margin-right: 20%;
+	margin-bottom: 70%;
+	position: absolute;
+}
+.text
+{
+	text-transform: rotate(90deg);
+	text-align: center;
+}
+
+
+
+
