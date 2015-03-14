@@ -15,7 +15,7 @@
  */
 
 .button{
-	
+
 	background: #e95640;
   background-image: -webkit-linear-gradient(top, #e95640, #e95640);
   background-image: -moz-linear-gradient(top, #e95640, #e95640);
@@ -31,6 +31,7 @@
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   border: none;
+  opacity: 0.9;
 }
 
 .button:hover {
@@ -41,7 +42,9 @@
   background-image: -o-linear-gradient(top, #ffb296, #ffb296);
   background-image: linear-gradient(to bottom, #ffb296, #ffb296);
   text-decoration: none;
+  opacity: 0.9;
 }
+
 footer{
 	font-family: 'Segoe UI';
 	text-align: center;
