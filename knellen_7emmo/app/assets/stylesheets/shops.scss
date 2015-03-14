@@ -4,12 +4,12 @@
 
 .pagetitle{
 	color: black;
-	margin-left: 46%;
-	margin-right: 54%;
-	margin-top: 2%;
+	text-align: center;
+	margin-top: 5%;
 	font-size: 220%;
 	font-family: 'Segoe UI';
 }
+
 body{
 	background-color: #F2F6DD;
 	background-size: cover;
@@ -49,6 +49,13 @@ body{
 	margin-right:-1%;
 	margin-left:-1%;
 }
+
+.banner {
+	position: fixed;
+	width: 100%;
+	top: 0px;
+}
+
 .table{
 	font-size: 110%;
 
@@ -85,33 +92,7 @@ th{
 }*/
 
 .add{
-	margin-right: 50%;
-	margin-left:44%; 
-	background: #e95640;
-  background-image: -webkit-linear-gradient(top, #e95640, #e95640);
-  background-image: -moz-linear-gradient(top, #e95640, #e95640);
-  background-image: -ms-linear-gradient(top, #e95640, #e95640);
-  background-image: -o-linear-gradient(top, #e95640, #e95640);
-  background-image: linear-gradient(to bottom, #e95640, #e95640);
-  -webkit-border-radius: 28;
-  -moz-border-radius: 28;
-  border-radius: 28px;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  text-decoration: none;
-  border: none;
-}
-
-.add:hover {
-  background: #ffb296;
-  background-image: -webkit-linear-gradient(top, #ffb296, #ffb296);
-  background-image: -moz-linear-gradient(top, #ffb296, #ffb296);
-  background-image: -ms-linear-gradient(top, #ffb296, #ffb296);
-  background-image: -o-linear-gradient(top, #ffb296, #ffb296);
-  background-image: linear-gradient(to bottom, #ffb296, #ffb296);
-  text-decoration: none;
+text-align: center;	 
 }
 
 .actions{

@@ -7,9 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class = "banner">
 <div class = "titlebk">
 <h1 class= "title"><%= link_to("Knellen", {:controller => 'home', :action => 'index'}, :class => 'title') %></h1></div>
+</div>
 <%= yield %>
 
 </body>
+<footer id="footer">Knellen Project by ©WonderCode</footer>
 </html>
