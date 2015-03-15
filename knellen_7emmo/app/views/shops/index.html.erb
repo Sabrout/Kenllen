@@ -12,7 +12,7 @@
   <div class = "page">
     <% @shops.each do |shop| %>
     <div class ="shop-card">
-      <div class = "shop"><img src="<%= shop.cover_url.to_s %>" style="width:100px;height:100px"></div>
+      <div class = "shop"><img href="" src="<%= shop.cover_url.to_s %>" style="width:100px;height:100px"></div>
       <div><%= shop.shop_id %></div>
       <div><%= shop.shop_name %></div>
       <!-- <div><%= shop.shop_desc %></div> -->
