@@ -1,0 +1,56 @@
+<<<<<<< HEAD
+/*// Place all the styles related to the Shops controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/*/
+
+h2{          /*  change the color and font size of SignUp Word*/							
+	color: Black;
+	margin-left: 46%;
+	margin-right: 54%;
+	margin-top: 2%;
+	font-size: 220%;
+	font-family: 'Segoe UI';
+}
+body{          /* change the color of body background-color*/ 
+	background-color: #F2F6DD;
+	background-size: cover;
+	height: 100%;
+}
+.Signup{	/*make a border of sign up div and make a background-color */
+	margin-right: 40%;
+	margin-left:35%;
+	margin-top: 8%;
+	border:double;
+	font-size: 120%;
+	padding:2%;
+	background-color: #F8FAEE; 
+	border-radius: 10%;
+	text-align: center;
+	font-family: 'Segoe UI';
+
+}
+.title{    /* change font of the title and removed the underline*/
+	margin-left: 6%;
+	color: white;
+	font-family: 'roboto', 'Segoe UI';
+	text-decoration: none;
+	}
+.titlebk{    /*change background-color and put curvy corners and increased it's transparency*/
+	background-color:#E9573F;
+	margin-top:-25px;
+	margin-right:5%;
+	margin-left:5%;
+	width: 90%;
+	border-radius: 10px;
+	opacity: 0.9;
+}
+.banner {	/*to make title goes down when scrolling*/
+	position: fixed;
+	width: 100%;
+	top: 0px;
+}
+li{   /*change the color and font size of error massage*/
+color: Red;
+font-size: 60%;
+}
+
