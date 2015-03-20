@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   get 'item/index'
     
   get 'item/show'
@@ -8,6 +9,18 @@ Rails.application.routes.draw do
   get 'item/new'
 
   match ':controller(/:action(/:id))', :via => [:get, :post]
+
+
+root 'home#index'
+get 'home' => 'home#index'
+get 'sign_up' => 'sessions#view_signup'
+get 'login' => 'sessions#view_signin'
+post 'sign_up' => 'sessions#create'
+post 'login' => 'sessions#login'
+delete 'logout' => 'sessions#logout'
+
+resources :account_activation , only: [:edit]
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
