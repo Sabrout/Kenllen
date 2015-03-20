@@ -5,6 +5,9 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.0'
 # Use pg as the database for Active Record
 gem 'pg'
+
+gem 'tzinfo-data'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Used for file uploading
