@@ -1,0 +1,28 @@
+
+
+<div class="subjects index">
+<!-- the title of the page  -->
+  <h2 class= "pagetitle">Shops</h2>
+  <!-- the button that is clicked to add a new shop -->
+  <div class = "add">
+  <%= button_to("Add New Shop", {:action => 'new'}, :class => 'button') %>
+  </div>
+
+  <div class = "page">
+  <!-- looping over all elements of table shops  -->
+    <% @shops.each do |shop| %>
+    <!-- putting every shp in a seperate card -->
+      <div class ="shop-card">
+      <div class = "shop"><img src="<%= shop.cover_url.to_s %>" style="width:100px;height:100px"></div>
+      <div><%= shop.shop_id %></div>
+      <div><%= shop.shop_name %></div>
+      <!-- <div><%= shop.shop_desc %></div> -->
+      <div class="actions">
+        <%= link_to("Show", {:action => 'show', :shop_id => shop.shop_id}, :class => 'actionshow') %> |
+        <%= link_to("Edit", {:action => 'edit', :shop_id => shop.shop_id}, :class => 'actionedit') %> |
+        <%= link_to("Delete", {:action => 'delete', :shop_id => shop.shop_id}, :class => 'actiondelete') %>      
+        </div>
+    </div>
+    <% end %>
+  </div>
+</div>

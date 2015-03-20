@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Knellen</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<!-- the banner of all the pages -->
+<div class = "banner">
+<div class = "titlebk">
+<!-- making the title of the banner a link to the home page -->
+<h1 class= "title"><%= link_to("Knellen", {:controller => 'home', :action => 'index'}, :class => 'title') %></h1></div>
+</div>
+
+<!-- flash that appears after editing or deleting a shop  -->
+<% if !flash[:notice].blank? %>
+  <div class = "notice">
+    <%= flash[:notice] %>
+  </div>
+<% end %>	
+</body>
+
+
+<%= yield %>
+
+
+<footer id="footer" class = "footer">Knellen Project by ©WonderCode</footer>
+</html>
