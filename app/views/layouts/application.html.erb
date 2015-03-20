@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Knellen</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class = "banner">
+<div class = "titlebk">
+<h1 class= "title"><%= link_to("Knellen", {:controller => 'home', :action => 'index'}, :class => 'title') %></div>
+</div>
+<%= yield %>
+
+</body>
+<footer id="footer">Knellen Project by ©WonderCode</footer>
+</html>
