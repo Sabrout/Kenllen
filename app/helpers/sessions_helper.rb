@@ -39,5 +39,4 @@ def forget(user) #forgets a user
     cookies.delete(:remember_token) #removes the given token from the cookie
 end
 
-
 end

@@ -11,6 +11,7 @@ Rails.application.routes.draw do
   match ':controller(/:action(/:id))', :via => [:get, :post]
 
 
+
 root 'home#index'
 post '/gotowhatever' => 'user#signin'
 get 'Knellen' => 'home#index'
@@ -25,7 +26,9 @@ post 'sign_up' => 'sessions#create'
 post 'login' => 'sessions#login'
 delete 'logout' => 'sessions#logout'
 
+
 match ':controller(/:action(/:id))', :via  => [:get, :post]
+
 
 resources :account_activation , only: [:edit]
 
