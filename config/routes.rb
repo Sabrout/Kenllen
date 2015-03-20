@@ -1,17 +1,15 @@
 Rails.application.routes.draw do
 
+  get 'item/index'
+    
+  get 'item/show'
 
-  # get 'shops/index'
+  get 'item/edit'
 
-  # get 'shops/new'
+  get 'item/new'
 
-  # get 'shops/create'
+  match ':controller(/:action(/:id))', :via => [:get, :post]
 
-  # get 'shops/edit'
-
-  # get 'shops/delete'
-
-  # get 'shops/show'
 
 
 root 'home#index'
