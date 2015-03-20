@@ -7,12 +7,31 @@
 <h1>Login</h1>
 
 <div>
-    <%= bootstrap_form_for :session , layout: :inline do |f| %>
+<!--     <%= bootstrap_form_for :session , layout: :inline do |f| %>
       <%= f.text_field :uname , :placeholder => 'User Name' , label:"Username: "%>
       <%= f.password_field :password , :placeholder => 'Password' , label:"Password: "%>
       <%= f.check_box :remember_me %>
       <%= f.submit "Log in" %>
-    <% end %>
+ -->    <!-- <% end %> -->
+
+
+ 	<!-- create the form of the login page -->
+    <%= form_for :session do |l| %>
+	<div>
+		<%= l.label 'Username ' %>
+		<%= l.text_field :unamen %>
+	</div>
+	<div>
+		<%= l.label 'password ' %>
+		<%= l.text_field :password %>
+	</div>
+	<div>
+		<%= l.label 'Remember Me' %>
+		<%= l.check_box :remember_me %>
+	</div>
+		<%= l.submit 'Log In' %>
+
+<% end %>
 
 
   </div>
