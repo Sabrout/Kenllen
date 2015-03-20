@@ -13,3 +13,42 @@
  *= require_tree .
  *= require_self
  */
+
+
+.button{
+
+	background: #e95640;
+  background-image: -webkit-linear-gradient(top, #e95640, #e95640);
+  background-image: -moz-linear-gradient(top, #e95640, #e95640);
+  background-image: -ms-linear-gradient(top, #e95640, #e95640);
+  background-image: -o-linear-gradient(top, #e95640, #e95640);
+  background-image: linear-gradient(to bottom, #e95640, #e95640);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+  opacity: 0.9;
+}
+
+.button:hover {
+  background: #ffb296;
+  background-image: -webkit-linear-gradient(top, #ffb296, #ffb296);
+  background-image: -moz-linear-gradient(top, #ffb296, #ffb296);
+  background-image: -ms-linear-gradient(top, #ffb296, #ffb296);
+  background-image: -o-linear-gradient(top, #ffb296, #ffb296);
+  background-image: linear-gradient(to bottom, #ffb296, #ffb296);
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+footer{
+	font-family: 'Segoe UI';
+	text-align: center;
+	margin-top: 10px;
+}
+

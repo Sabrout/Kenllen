@@ -1,5 +1,6 @@
 module SessionsHelper
 
+
 def log_in(user) #logs in user
 session[:user_id] = user.user_id #sets the user_id key in the session hash to user id
 end

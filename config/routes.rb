@@ -1,5 +1,19 @@
 Rails.application.routes.draw do
 
+
+  # get 'shops/index'
+
+  # get 'shops/new'
+
+  # get 'shops/create'
+
+  # get 'shops/edit'
+
+  # get 'shops/delete'
+
+  # get 'shops/show'
+
+
 root 'home#index'
 get 'home' => 'home#index'
 get 'sign_up' => 'sessions#view_signup'
@@ -7,6 +21,10 @@ get 'login' => 'sessions#view_signin'
 post 'sign_up' => 'sessions#create'
 post 'login' => 'sessions#login'
 delete 'logout' => 'sessions#logout'
+
+
+match ':controller(/:action(/:id))', :via  => [:get, :post]
+
 
 resources :account_activation , only: [:edit]
 
