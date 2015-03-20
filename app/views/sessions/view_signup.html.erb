@@ -1,4 +1,5 @@
 <html>
+
 <% @page_title = "SignUp" %>
 <h2>SignUp</h2>
 
@@ -8,73 +9,89 @@
     <tr>
         <th>User Name</th>
         <td><%= f.text_field :uname , :placeholder => 'User Name' %> 
+
     <%if @user.errors[:uname].any?%>
     <% @user.errors[:uname].each do |msg| %>
     <li><%=msg%></li>
     <%end%>
+
     <%end%></li> </td>
     </tr>
     <tr>
         <th>Email</th>
         <td><%= f.email_field :email , :placeholder => 'example@domain.com' %>
+
     <%if @user.errors[:email].any?%>
     <% @user.errors[:email].each do |msg| %>
     <li><%=msg%></li>
     <%end%>
+
     <%end%></li> </td>
     </tr>
     <tr>
         <th>Confirm Email</th>
         <td><%= f.email_field :email_confirmation , :placeholder => 'Confirm email' %>
+
     <%if @user.errors[:email_confirmation].any?%>
     <% @user.errors[:email_confirmation].each do |msg| %>
     <li><%=msg%></li>
     <%end%>
+
     <%end%></li> </td>
     </tr>
     <tr>
         <th>Password</th>
         <td> <%= f.password_field :password , :placeholder => 'Password' %>
+
     <%if @user.errors[:password].any?%>
     <% @user.errors[:password].each do |msg| %>
     <li><%=msg%></li>
     <%end%>
+
     <%end%></li> </td>
     </tr>
     <tr>
         <th>Password Confirmation</th>
         <td><%= f.password_field :password_confirmation , :placeholder => 'Confirm Password' %>
+
     <%if @user.errors[:password_confirmation].any?%>
     <% @user.errors[:password_confirmation].each do |msg| %>
     <li><%=msg%></li>
     <%end%>
+
     <%end%></li> </td>
     </tr>
     <tr>
         <th>First Name</th>
         <td><%= f.text_field :fname , :placeholder => 'First Name' %>
+
     <%if @user.errors[:fname].any?%>
     <% @user.errors[:fname].each do |msg| %>
     <li><%=msg%></li>
     <%end%>
+
     <%end%></li> </td>
     </tr>
     <tr>
         <th>Last Name</th>
         <td>  <%= f.text_field :lname , :placeholder => 'Last Name' %>
+
     <%if @user.errors[:lname].any?%>
     <% @user.errors[:lname].each do |msg| %>
     <li><%=msg%></li>
     <%end%>
+
     <%end%></li> </td>
     </tr>
      <tr>
         <th>Phone Number</th>
         <td><%= f.phone_field :phone , :placeholder => 'Phone Number' %>
+
     <%if @user.errors[:phone].any?%>
     <% @user.errors[:phone].each do |msg| %>
     <li><%=msg%></li>
     <%end%>
+
     <%end%></li> </td>
     </tr>
      </table>

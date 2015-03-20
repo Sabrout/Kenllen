@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Knellen</title>
+  <title>KnellenArt - <%=@page_title%></title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -11,8 +11,16 @@
 <div class = "titlebk">
 <h1 class= "title"><%= link_to("Knellen", {:controller => 'home', :action => 'index'}, :class => 'title') %></div>
 </div>
+<% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <% end %>
 <%= yield %>
 
 </body>
 <footer id="footer">Knellen Project by ©WonderCode</footer>
+
+	
+
+
+
 </html>
