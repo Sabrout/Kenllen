@@ -1,10 +1,10 @@
- <% @page_title = "login" %>
- <div class = 'nav'>
+ <% @page_title = "login" %> <!--to set the titel of the page-->
+ <div class = 'nav'> <!--creating navigation bar-->
 	 <ul>	
   	<li><a href="#" class = head >Knellen</a></li>
 </ul> 
 </div>
-<style class = text>
+<style class = text> <!--this is the part where the animation effect on the word Knellen-->
 #blurringTextG{
 width:100%;
 }
@@ -130,7 +130,7 @@ text-shadow: #000000 0 0 0;
 <div class = 'card' id = "1">
 	
 
-<%= form_for :Session , :url => {:action => 'signin' , :controller => 'user'} do |l|  %>
+<%= form_for :Session , :url => {:action => 'signin' , :controller => 'user'} do |l|  %> <!--to create the username field and passwordf field and the login button-->
 <!-- ,:url  => {:action => 'login'} -->
 	<div class = 'username'>
 		<%= l.label 'Username ' %>
