@@ -6,7 +6,7 @@ class UserController < ApplicationController
   end
 
   def signin
-
+      redirect_to (root_path)
   end
 
   def goSignUp
