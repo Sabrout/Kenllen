@@ -15,9 +15,15 @@ Rails.application.routes.draw do
 
 
 root 'home#index'
+post '/gotowhatever' => 'user#signin'
+get 'Knellen' => 'home#index'
+get 'sign_up' => 'sessions#view_signup'
+get 'login' => 'user#signIn'
+
 get 'home' => 'home#index'
 get 'sign_up' => 'sessions#view_signup'
 get 'login' => 'sessions#view_signin'
+
 post 'sign_up' => 'sessions#create'
 post 'login' => 'sessions#login'
 delete 'logout' => 'sessions#logout'
