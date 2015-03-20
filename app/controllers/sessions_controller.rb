@@ -1,46 +1,27 @@
 class SessionsController < ApplicationController
 
-def create
-user = User.new(uname: params[:signup][:uname] ,password: params[:signup][:password],
-            fname: params[:signup][:fname] ,lname: params[:signup][:lname] ,
-            email: params[:signup][:email] ,phone: params[:signup][:phone] )
-	if (user.save) 
-    UserMailer.account_activation(user).deliver_now  
-      flash[:info] = "Please check your email to activate your account."   
+<<<<<<< HEAD
+
+def create #creates a new user from the values passed to signup hash and stores it in the db and redirects the user to the home page if successful else refresh the signup page
+@user = User.new(user_params)
+	if (@user.save) #check if user insertion was done correctly
+      flash.now[:notic] = "Successfully Registered !!"  
+      
       redirect_to '/'
       else
       render 'view_signup'
 	end         
 end
-def view_signup
 
-end
-
-def view_signin
-
-end
-
-def login
-user = User.find_by(uname: params[:session][:uname])
-if user && user.authenticate(params[:session][:password])
-log_in(user)
-params[:session][:remember_me] == '1' ? remember(user) : forget(user)
-flash[:success] = 'Welcome To KnellenArts , Please Check Your Email Account to Activate Your Knellen Account'
-else
-flash[:error] = 'Invalid Username/password combination'
-end
-if logged_in?
-	redirect_to '/'
-else
-    render 'view_signin'
-end
-
+def view_signup #used to generate the view for it , for the signup form
+@user = User.new
 end
 
 
-def logout
-	log_out
-	redirect_to '/'
-end
+private
 
+    def user_params
+      params.require(:user).permit(:uname, :email, :email_confirmation, :password,
+                :password_confirmation, :fname, :lname, :phone )
+    end
 end

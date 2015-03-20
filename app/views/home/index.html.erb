@@ -1,8 +1,10 @@
 <html>
 <head>
-	
+<% @page_title = "Home" %>
 </head>
 <body>
+
+
 <h1 class="pagetitle">KNELLEN HOMEPAGE</h1>
 <% if !logged_in? %>
 <div class ="homebuttons">
@@ -17,5 +19,7 @@
 <%=button_to "Logout", logout_path , method: :delete, :class => "button" %>
 <%=button_to "BROWSE SHOPS", {:action => 'index' , :controller => 'shops'}, :class =>"button"%><%end%>
 </div>
+
+
 </body>
 </html>
