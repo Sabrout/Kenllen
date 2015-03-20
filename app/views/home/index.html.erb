@@ -11,8 +11,24 @@
 <% @page_title = "Home" %>
 </head>
 <body>
-<h1>WELCOME</h1>
-<%=button_to "SIGN UP NOW" ,{:action => 'view_signup', :controller => 'sessions'} , :method => :get %>
+
+
+<h1 class="pagetitle">KNELLEN HOMEPAGE</h1>
+<% if !logged_in? %>
+<div class ="homebuttons">
+<%=button_to "SIGN UP" ,{:action => 'view_signup' , :controller => 'sessions'}, :class =>"button" %>
+<%=button_to "LOGIN" , {:action => 'view_signin' , :controller => 'sessions'}, :class =>"button"%>
+<%=button_to "BROWSE SHOPS", {:action => 'index' , :controller => 'shops'}, :class =>"button"%>
+</div>
+<%else%>
+<h2>WELCOME</h2> <%=@current_user.uname%>
+<br>
+<div class ="homebuttons">
+<%=button_to "Logout", logout_path , method: :delete, :class => "button" %>
+<%=button_to "BROWSE SHOPS", {:action => 'index' , :controller => 'shops'}, :class =>"button"%><%end%>
+</div>
+
+
 </body>
 </html>
 

@@ -2,6 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 .h /* to set the font and color and size of the headline*/
 {
 	margin-right: 50%;
@@ -17,5 +18,10 @@
 		margin-left: 41%;
 		margin-bottom: 30%;
 		width: 200px;
+}
+
+
+.homebuttons {
+	text-align: center;
 }
 
