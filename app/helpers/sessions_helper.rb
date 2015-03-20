@@ -1,5 +1,6 @@
 module SessionsHelper
 
+
 def log_in(user) #logs in user
 session[:user_id] = user.user_id #sets the user_id key in the session hash to user id
 end
@@ -37,5 +38,6 @@ def forget(user) #forgets a user
     cookies.delete(:user_id) #removes user_id from cookie
     cookies.delete(:remember_token) #removes the given token from the cookie
 end
+
 
 end

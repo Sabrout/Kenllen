@@ -1,6 +1,18 @@
 
+
 <% @page_title = "Home" %> <!--set the page title to home-->
 <div>
 <h1 class = h>WELCOME</h1>	<!--create a headline with a sign in button-->
 <%=button_to "LOGIN" , {:action => 'signIn', :controller => 'user'} , :method => :get, :class => 'sb'%>
 </div>
+
+<html>
+<head>
+<% @page_title = "Home" %>
+</head>
+<body>
+<h1>WELCOME</h1>
+<%=button_to "SIGN UP NOW" ,{:action => 'view_signup', :controller => 'sessions'} , :method => :get %>
+</body>
+</html>
+

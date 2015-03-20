@@ -1,0 +1,60 @@
+<html>
+<head>
+<% @page_title = "SignUp" %>
+</head>
+<body>
+<h2>SignUp</h2>
+
+<%= form_for @user ,  url: {action: "create"} do |f| %>
+    <%= f.text_field :uname , :placeholder => 'User Name' %> 
+    <%if @user.errors[:uname].any?%>
+    <% @user.errors[:uname].each do |msg| %>
+    <li><%=msg%></li>
+    <%end%>
+    <%end%>
+    <%= f.email_field :email , :placeholder => 'example@domain.com' %>
+    <%if @user.errors[:email].any?%>
+    <% @user.errors[:email].each do |msg| %>
+    <li><%=msg%></li>
+    <%end%>
+    <%end%>
+    <%= f.email_field :email_confirmation , :placeholder => 'Confirm email' %>
+    <%if @user.errors[:email_confirmation].any?%>
+    <% @user.errors[:email_confirmation].each do |msg| %>
+    <li><%=msg%></li>
+    <%end%>
+    <%end%>
+    <%= f.password_field :password , :placeholder => 'Password' %>
+    <%if @user.errors[:password].any?%>
+    <% @user.errors[:password].each do |msg| %>
+    <li><%=msg%></li>
+    <%end%>
+    <%end%>
+    <%= f.password_field :password_confirmation , :placeholder => 'Confirm Password' %>
+    <%if @user.errors[:password_confirmation].any?%>
+    <% @user.errors[:password_confirmation].each do |msg| %>
+    <li><%=msg%></li>
+    <%end%>
+    <%end%>
+    <%= f.text_field :fname , :placeholder => 'First Name' %>
+    <%if @user.errors[:fname].any?%>
+    <% @user.errors[:fname].each do |msg| %>
+    <li><%=msg%></li>
+    <%end%>
+    <%end%>
+    <%= f.text_field :lname , :placeholder => 'Last Name' %>
+    <%if @user.errors[:lname].any?%>
+    <% @user.errors[:lname].each do |msg| %>
+    <li><%=msg%></li>
+    <%end%>
+    <%end%>
+    <%= f.phone_field :phone , :placeholder => 'Phone Number' %>
+    <%if @user.errors[:phone].any?%>
+    <% @user.errors[:phone].each do |msg| %>
+    <li><%=msg%></li>
+    <%end%>
+    <%end%>
+    <%= f.submit "Sign up" %>
+<% end %>
+</body>
+</html>
