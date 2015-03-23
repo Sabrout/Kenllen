@@ -1,20 +1,7 @@
 
 
 <% @page_title = "Home" %> <!--set the page title to home-->
-<div>
-<h1 class = h>WELCOME</h1>	<!--create a headline with a sign in button-->
-<%=button_to "LOGIN" , {:action => 'signIn', :controller => 'user'} , :method => :get, :class => 'sb'%>
-</div>
 
-<html>
-<head>
-<% @page_title = "Home" %>
-</head>
-<body>
-
-
-
-<h1 class="pagetitle">KNELLEN HOMEPAGE</h1>
 <% if !logged_in? %>
 <div class ="homebuttons">
 <%=button_to "SIGN UP" ,{:action => 'view_signup' , :controller => 'sessions'}, :class =>"button" %>
@@ -28,8 +15,6 @@
 <%=button_to "Logout", logout_path , method: :delete, :class => "button" %>
 <%=button_to "BROWSE SHOPS", {:action => 'index' , :controller => 'shops'}, :class =>"button"%><%end%>
 </div>
-
-
 
 </body>
 </html>
