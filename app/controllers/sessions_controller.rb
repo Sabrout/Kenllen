@@ -20,7 +20,7 @@ end
 
 def logout #logs user out
 	log_out if logged_in?#calls log_out (exists in sessions_helper)
-	redirect_to '/' #redirect logged out user to home
+	redirect_to root_path #redirect logged out user to home
 end
 
 def view_signin

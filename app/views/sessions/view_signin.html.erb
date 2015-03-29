@@ -126,17 +126,18 @@ text-shadow: #000000 0 0 0;
 <div class = 'card' id = "1">
 	
 
-<%= form_for :Session , :url => {:action => 'login' , :controller => 'sessions'} do |l|  %> <!--to create the username field and passwordf field and the login button-->
+<%= form_for :session , :url => {:action => 'login' , :controller => 'sessions'} do |f|  %> <!--to create the username field and passwordf field and the login button-->
 <!-- ,:url  => {:action => 'login'} -->
 	<div class = 'username'>
-		<%= l.label 'Username ' %>
-		<%= l.text_field :unamelogin %>
+		<%= f.label 'Username ' %>
+		<%= f.text_field :uname %>
 	</div>
 	<div class = 'password'>
-		<%= l.label 'password ' %>
-		<%= l.text_field :passwordlogin %>
+		<%= f.label 'password ' %>
+		<%= f.password_field :password %>
 	</div>
-		<%= l.submit 'Log In', :class => 'submit-button' %>
+		<%= f.check_box :remember_me %>
+		<%= f.submit 'Log In', :class => 'submit-button' %>
 
 
 

@@ -12,8 +12,9 @@
 <h2>WELCOME</h2> <%=@current_user.uname%>
 <br>
 <div class ="homebuttons">
-<%=button_to "Logout", logout_path , method: :delete, :class => "button" %>
-<%=button_to "BROWSE SHOPS", {:action => 'index' , :controller => 'shops'}, :class =>"button"%><%end%>
+<%=button_to "Logout", {:action => 'logout' , :controller => 'sessions'} , method: :delete, :class => "button" %>
+<%=button_to "BROWSE SHOPS", {:action => 'index' , :controller => 'shops'}, :class =>"button"%>
+<%end%>
 </div>
 
 </body>
