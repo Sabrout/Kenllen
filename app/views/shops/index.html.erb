@@ -12,14 +12,14 @@
   <div class = "page">
     <% @shops.each do |shop| %>
     <div class ="shop-card">
-      <div class = "shop"><img href="" src="<%= shop.cover_url.to_s %>" style="width:100px;height:100px"></div>
-      <div><%= shop.shop_id %></div>
+      <div class = "shop"><%=image_tag shop.cover_url(:thumb).to_s %></div>
+      <div><%= shop.id %></div>
       <div><%= shop.shop_name %></div>
       <!-- <div><%= shop.shop_desc %></div> -->
       <div class="actions">
-        <%= link_to("Show", {:action => 'show', :shop_id => shop.shop_id}, :class => 'actionshow') %> |
-        <%= link_to("Edit", {:action => 'edit', :shop_id => shop.shop_id}, :class => 'actionedit') %> |
-        <%= link_to("Delete", {:action => 'delete', :shop_id => shop.shop_id}, :class => 'actiondelete') %>      
+        <%= link_to("Show", {:action => 'show', :id => shop.id}, :class => 'actionshow') %> |
+        <%= link_to("Edit", {:action => 'edit', :id => shop.id}, :class => 'actionedit') %> |
+        <%= link_to("Delete", {:action => 'delete', :id => shop.id}, :class => 'actiondelete') %>      
         </div>
     </div>
     <% end %>

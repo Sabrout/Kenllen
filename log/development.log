@@ -16484,3 +16484,1577 @@ Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.
 
 
 Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-30 23:32:06 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateShops (20150330211037)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (96.4ms)[0m  [1mCREATE TABLE "shops" ("id" serial primary key, "shop_name" character varying(25) NOT NULL, "shop_desc" text, "cover" character varying, "icon" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150330211037"]]
+  [1m[36m (15.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (4.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'shops'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (4.5ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 23:45:45 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 99ms (Views: 67.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-30 23:45:45 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 23:45:45 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 23:45:45 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-30 23:45:45 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-30 23:45:45 +0200
+
+
+Started POST "/shops" for 127.0.0.1 at 2015-03-30 23:45:47 +0200
+Processing by ShopsController#index as HTML
+  Parameters: {"authenticity_token"=>"V3JUIP3gwEIADhj04YWfNLgxniNpAc8SIhM0L6goEYUvyDCY+/VCbuGOER7v60GKs61COkeThv2zo780Z1Jt7g=="}
+  [1m[35mShop Load (2.1ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 58ms (Views: 47.5ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-30 23:45:47 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-30 23:45:47 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 23:45:47 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-30 23:45:47 +0200
+
+
+Started POST "/shops/new" for 127.0.0.1 at 2015-03-30 23:45:47 +0200
+Processing by ShopsController#new as HTML
+  Parameters: {"authenticity_token"=>"VAA4XPr2WRLAVtmuC2dsykWX17H5FaviLw7XTggXXhIsulzk/OPbPiHW0EQFCbJ0TgsLqNeH4g2+vlxVx20ieQ=="}
+  Rendered shops/new.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 98ms (Views: 74.0ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-30 23:45:48 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-30 23:45:48 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-30 23:45:48 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 23:45:48 +0200
+
+
+Started POST "/shops/create" for 127.0.0.1 at 2015-03-30 23:45:52 +0200
+Processing by ShopsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UEvMnXkhw7kHBXDqjDTFc1s9+myNJ/J39nkqUqKxeO4o8aglfzRBleaFeQCCWhvNUKEmdaO1u5hnyaFJbcsEhQ==", "shop"=>{"shop_name"=>"default", "shop_desc"=>"test", "cover"=>#<ActionDispatch::Http::UploadedFile:0x007fd404180b48 @tempfile=#<Tempfile:/tmp/RackMultipart20150330-12854-41lc04.jpg>, @original_filename="background.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"shop[cover]\"; filename=\"background.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Shop"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "shops" ("shop_name", "shop_desc", "cover", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["shop_name", "default"], ["shop_desc", "test"], ["cover", "#<ActionDispatch::Http::UploadedFile:0x007fd404180b48>"], ["created_at", "2015-03-30 21:45:52.566339"], ["updated_at", "2015-03-30 21:45:52.566339"]]
+  [1m[36m (36.9ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/shops
+Completed 302 Found in 56ms (ActiveRecord: 38.7ms)
+
+
+Started GET "/shops" for 127.0.0.1 at 2015-03-30 23:45:52 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mShop Load (0.8ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (9.3ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined method `cover_url' for #<Shop:0x007fd40421d010>):
+    12:   <div class = "page">
+    13:     <% @shops.each do |shop| %>
+    14:     <div class ="shop-card">
+    15:       <div class = "shop"><img href="" src="<%= shop.cover_url.to_s %>" style="width:100px;height:100px"></div>
+    16:       <div><%= shop.shop_id %></div>
+    17:       <div><%= shop.shop_name %></div>
+    18:       <!-- <div><%= shop.shop_desc %></div> -->
+  app/views/shops/index.html.erb:15:in `block in _app_views_shops_index_html_erb___2956101778384837562_31875080'
+  app/views/shops/index.html.erb:13:in `_app_views_shops_index_html_erb___2956101778384837562_31875080'
+
+
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.6ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.8ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.6ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (16.8ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.3ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.5ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (37.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 23:55:47 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 47ms (Views: 41.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 23:55:47 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-30 23:55:47 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-30 23:55:47 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-30 23:55:47 +0200
+
+
+Started POST "/shops" for 127.0.0.1 at 2015-03-30 23:55:48 +0200
+Processing by ShopsController#index as HTML
+  Parameters: {"authenticity_token"=>"N5czv/5dZn7n1tkqkzylcfIpvynqHWHj5S05F32Hoh9PLVcH+EjkUgZW0MCdUnvP+bVjMMSPKAx0nbIMsv3edA=="}
+  [1m[36mShop Load (0.8ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (21.8ms)
+Completed 500 Internal Server Error in 32ms
+
+ActionView::Template::Error (undefined method `cover_url' for #<Shop:0x0000000560b850>):
+    12:   <div class = "page">
+    13:     <% @shops.each do |shop| %>
+    14:     <div class ="shop-card">
+    15:       <div class = "shop"><%image_tage shop.cover_url.to_s %></div>
+    16:       <div><%= shop.id %></div>
+    17:       <div><%= shop.shop_name %></div>
+    18:       <!-- <div><%= shop.shop_desc %></div> -->
+  app/views/shops/index.html.erb:15:in `block in _app_views_shops_index_html_erb___2956101778384837562_43658960'
+  app/views/shops/index.html.erb:13:in `_app_views_shops_index_html_erb___2956101778384837562_43658960'
+
+
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.0ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.0ms)
+Cannot render console with content type application/x-www-form-urlencodedAllowed content types: [#<Mime::Type:0x000000055df6d8 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x000000055df408 @synonyms=[], @symbol=:text, @string="text/plain">]
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (6.4ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'shops'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (4.5ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 23:56:58 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 71ms (Views: 45.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-30 23:56:58 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-30 23:56:58 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 23:56:58 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-30 23:56:58 +0200
+
+
+Started POST "/shops" for 127.0.0.1 at 2015-03-30 23:57:00 +0200
+Processing by ShopsController#index as HTML
+  Parameters: {"authenticity_token"=>"kv7VlqG+r+tXguo5Ad35U6VTwnDk/JNzLsiAeEfWP8rqRLEup6stx7YC49MPsyftrs8eacpu2py/eAtjiKxDoQ=="}
+  [1m[35mShop Load (2.4ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (45.6ms)
+Completed 500 Internal Server Error in 53ms
+
+ActionView::Template::Error (undefined method `image_tage' for #<#<Class:0x00000004c98a70>:0x000000041067e8>):
+    12:   <div class = "page">
+    13:     <% @shops.each do |shop| %>
+    14:     <div class ="shop-card">
+    15:       <div class = "shop"><%image_tage shop.cover_url.to_s %></div>
+    16:       <div><%= shop.id %></div>
+    17:       <div><%= shop.shop_name %></div>
+    18:       <!-- <div><%= shop.shop_desc %></div> -->
+  app/views/shops/index.html.erb:15:in `block in _app_views_shops_index_html_erb__4041869106177806403_34005920'
+  app/views/shops/index.html.erb:13:in `_app_views_shops_index_html_erb__4041869106177806403_34005920'
+
+
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.4ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.3ms)
+Cannot render console with content type application/x-www-form-urlencodedAllowed content types: [#<Mime::Type:0x000000056e6bd0 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x000000056e6900 @synonyms=[], @symbol=:text, @string="text/plain">]
+
+
+Started GET "/shops" for 127.0.0.1 at 2015-03-30 23:57:17 +0200
+Processing by ShopsController#index as HTML
+  [1m[36mShop Load (0.7ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 38ms (Views: 36.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-30 23:57:17 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-30 23:57:17 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 23:57:17 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-30 23:57:17 +0200
+
+
+Started GET "/shops/delete/1" for 127.0.0.1 at 2015-03-30 23:57:19 +0200
+Processing by ShopsController#delete as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShop Load (0.7ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered shops/delete.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 43ms
+
+ActionView::Template::Error (undefined method `shop_id' for #<Shop:0x00000004eccfa8>):
+    3: <div class="shop delete">
+    4: 	<h2>Delete Shop "<%= @shop.shop_name %>" </h2>
+    5: 
+    6: 	<%= form_for(:shop, :url => {:action => 'destroy', :shop_id => @shop.shop_id}) do |f| %>
+    7: 	<p>Are you sure you want to permanently delete this shop?</p>
+    8: 
+    9: 	<div class="form-buttons">
+  app/views/shops/delete.html.erb:6:in `_app_views_shops_delete_html_erb___3041726163600344751_41280440'
+
+
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.2ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (29.3ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.4ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.5ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (17.4ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.6ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (37.0ms)
+
+
+Started GET "/shops/delete/1" for 127.0.0.1 at 2015-03-30 23:57:40 +0200
+Processing by ShopsController#delete as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShop Load (0.7ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered shops/delete.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 37ms (Views: 34.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-30 23:57:40 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-30 23:57:40 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-30 23:57:40 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 23:57:40 +0200
+
+
+Started POST "/shops/destroy/1" for 127.0.0.1 at 2015-03-30 23:57:42 +0200
+Processing by ShopsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gK3tqPCHqHvEAM55eYKh8JRKSl0zE94SOb9BT62PAJf4F4kQ9pIqVyWAx5N37H9On9aWRB2Bl/2oD8pUYvV8/A==", "commit"=>"Delete Shop", "id"=>"1"}
+  [1m[35mShop Load (0.7ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "shops" WHERE "shops"."id" = $1  [["id", 1]]
+  [1m[36m (9.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/shops
+Completed 302 Found in 16ms (ActiveRecord: 10.9ms)
+
+
+Started GET "/shops" for 127.0.0.1 at 2015-03-30 23:57:42 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mShop Load (0.6ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 30ms (Views: 28.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-30 23:57:42 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 23:57:42 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-30 23:57:42 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-30 23:57:42 +0200
+
+
+Started POST "/shops/new" for 127.0.0.1 at 2015-03-30 23:57:45 +0200
+Processing by ShopsController#new as HTML
+  Parameters: {"authenticity_token"=>"LgCmUoiNQSipqDiSg46AYwyxXSgVFc49WABt79kE69ZWusLqjpjDBEgoMXiN4F7dBy2BMTuHh9LJsOb0Fn6XvQ=="}
+  Rendered shops/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 42ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-30 23:57:45 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-30 23:57:45 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 23:57:45 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-30 23:57:45 +0200
+
+
+Started POST "/shops/create" for 127.0.0.1 at 2015-03-30 23:57:49 +0200
+Processing by ShopsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IbtH9Q7DV7dGM+OjDeQ1TIBnimeI9+GgSibuplFDKEJZASNNCNbVm6ez6kkDiuvyi/tWfqZlqE/blmW9njlUKQ==", "shop"=>{"shop_name"=>"default", "shop_desc"=>"test", "cover"=>#<ActionDispatch::Http::UploadedFile:0x000000068d3848 @tempfile=#<Tempfile:/tmp/RackMultipart20150330-13098-28hgos.jpg>, @original_filename="background.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"shop[cover]\"; filename=\"background.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Shop"}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "shops" ("shop_name", "shop_desc", "cover", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["shop_name", "default"], ["shop_desc", "test"], ["cover", "background.jpg"], ["created_at", "2015-03-30 21:57:49.387628"], ["updated_at", "2015-03-30 21:57:49.387628"]]
+  [1m[36m (31.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/shops
+Completed 302 Found in 192ms (ActiveRecord: 32.3ms)
+
+
+Started GET "/shops" for 127.0.0.1 at 2015-03-30 23:57:49 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mShop Load (0.6ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 33ms (Views: 31.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-30 23:57:49 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 23:57:49 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-30 23:57:49 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-30 23:57:49 +0200
+
+
+Started GET "/shops" for 127.0.0.1 at 2015-03-30 23:58:22 +0200
+Processing by ShopsController#index as HTML
+  [1m[36mShop Load (0.4ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 33ms (Views: 32.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 23:58:22 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-30 23:58:22 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-30 23:58:22 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-30 23:58:22 +0200
+
+
+Started GET "/shops" for 127.0.0.1 at 2015-03-30 23:59:24 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mShop Load (0.4ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 45ms (Views: 44.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:24 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:24 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:24 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:24 +0200
+
+
+Started GET "/shops/show/2" for 127.0.0.1 at 2015-03-30 23:59:30 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mShop Load (0.6ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered shops/show.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 37ms (Views: 34.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:30 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:30 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:30 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:30 +0200
+
+
+Started GET "/shops" for 127.0.0.1 at 2015-03-30 23:59:32 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mShop Load (1.1ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:33 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:33 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:33 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:33 +0200
+
+
+Started GET "/shops/show/2" for 127.0.0.1 at 2015-03-30 23:59:34 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mShop Load (0.4ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered shops/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 35ms (Views: 32.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:34 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:34 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:34 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:34 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-30 23:59:38 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 33ms (Views: 31.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:38 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:38 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:38 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:38 +0200
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-03-30 23:59:40 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 67ms (Views: 42.8ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:40 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:40 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:40 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:40 +0200
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-03-30 23:59:43 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"/rCg3hKQ9rIG5NlT2PqvAtfjvI5gy8tlrYDjfqPiq/uGCsRmFIV0nudk0LnWlHG83H9gl05Zgoo8MGhlbJjXkA=="}
+Completed 401 Unauthorized in 2ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"/rCg3hKQ9rIG5NlT2PqvAtfjvI5gy8tlrYDjfqPiq/uGCsRmFIV0nudk0LnWlHG83H9gl05Zgoo8MGhlbJjXkA=="}
+  Rendered devise/shared/_links.html.erb (8.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 58ms (Views: 56.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:43 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:43 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:43 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:43 +0200
+
+
+Started POST "/shops" for 127.0.0.1 at 2015-03-30 23:59:56 +0200
+Processing by ShopsController#index as HTML
+  Parameters: {"authenticity_token"=>"qgMeaP3FXeK7I7EAtTRtYFBxKmHFepl5c08KNv9PUZLSuXrQ+9DfzlqjuOq7WrPeW+32eOvo0Jbi/4EtMDUt+Q=="}
+  [1m[35mShop Load (0.7ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 46ms (Views: 43.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:56 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:56 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:56 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-30 23:59:56 +0200
+
+
+Started POST "/shops" for 127.0.0.1 at 2015-03-31 00:00:40 +0200
+Processing by ShopsController#index as HTML
+  Parameters: {"authenticity_token"=>"qgMeaP3FXeK7I7EAtTRtYFBxKmHFepl5c08KNv9PUZLSuXrQ+9DfzlqjuOq7WrPeW+32eOvo0Jbi/4EtMDUt+Q=="}
+  [1m[36mShop Load (0.7ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 64ms (Views: 48.8ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:00:40 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:00:40 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:00:40 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:00:40 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:00:40 +0200
+
+
+Started GET "/shops" for 127.0.0.1 at 2015-03-31 00:01:55 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mShop Load (0.8ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (20.8ms)
+Completed 500 Internal Server Error in 34ms
+
+ActionView::Template::Error (no implicit conversion of Symbol into Integer):
+    12:   <div class = "page">
+    13:     <% @shops.each do |shop| %>
+    14:     <div class ="shop-card">
+    15:       <div class = "shop"><%=image_tag shop.cover_url[:thumb].to_s %></div>
+    16:       <div><%= shop.id %></div>
+    17:       <div><%= shop.shop_name %></div>
+    18:       <!-- <div><%= shop.shop_desc %></div> -->
+  app/views/shops/index.html.erb:15:in `[]'
+  app/views/shops/index.html.erb:15:in `block in _app_views_shops_index_html_erb__4041869106177806403_33021200'
+  app/views/shops/index.html.erb:13:in `_app_views_shops_index_html_erb__4041869106177806403_33021200'
+
+
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.4ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.1ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.2ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (13.3ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.3ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (26.5ms)
+
+
+Started GET "/shops" for 127.0.0.1 at 2015-03-31 00:02:07 +0200
+Processing by ShopsController#index as HTML
+  [1m[36mShop Load (0.6ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (no implicit conversion of Symbol into Integer):
+    12:   <div class = "page">
+    13:     <% @shops.each do |shop| %>
+    14:     <div class ="shop-card">
+    15:       <div class = "shop"><%=image_tag shop.cover_url[:thumb] %></div>
+    16:       <div><%= shop.id %></div>
+    17:       <div><%= shop.shop_name %></div>
+    18:       <!-- <div><%= shop.shop_desc %></div> -->
+  app/views/shops/index.html.erb:15:in `[]'
+  app/views/shops/index.html.erb:15:in `block in _app_views_shops_index_html_erb__4041869106177806403_58364000'
+  app/views/shops/index.html.erb:13:in `_app_views_shops_index_html_erb__4041869106177806403_58364000'
+
+
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.8ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.0ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.4ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (16.9ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.4ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (33.7ms)
+
+
+Started GET "/shops" for 127.0.0.1 at 2015-03-31 00:05:35 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ShopsController#index as HTML
+  [1m[35mShop Load (2.1ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (27.8ms)
+Completed 200 OK in 117ms (Views: 90.2ms | ActiveRecord: 8.8ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:05:35 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:05:35 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:05:35 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:05:35 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:05:35 +0200
+
+
+Started GET "/shops" for 127.0.0.1 at 2015-03-31 00:06:26 +0200
+Processing by ShopsController#index as HTML
+  [1m[36mShop Load (0.8ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 36ms (Views: 33.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:06:26 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:06:26 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:06:26 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:06:26 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:06:26 +0200
+
+
+Started GET "/shops" for 127.0.0.1 at 2015-03-31 00:06:37 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mShop Load (0.5ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (20.5ms)
+Completed 200 OK in 80ms (Views: 63.5ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:06:37 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:06:37 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:06:37 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:06:37 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:06:37 +0200
+
+
+Started GET "/shops" for 127.0.0.1 at 2015-03-31 00:06:44 +0200
+Processing by ShopsController#index as HTML
+  [1m[36mShop Load (0.6ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 54ms (Views: 41.7ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:06:44 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:06:44 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:06:44 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:06:44 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:06:44 +0200
+
+
+Started GET "/shops/show/2" for 127.0.0.1 at 2015-03-31 00:06:46 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mShop Load (0.7ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered shops/show.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 57ms (Views: 41.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:06:46 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:06:46 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:06:46 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:06:46 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:06:46 +0200
+
+
+Started GET "/shops/show/2" for 127.0.0.1 at 2015-03-31 00:06:55 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mShop Load (0.6ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered shops/show.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 67ms (Views: 38.5ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:06:55 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:06:55 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:06:55 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:06:55 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:06:55 +0200
+
+
+Started GET "/shops/show/2" for 127.0.0.1 at 2015-03-31 00:06:56 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mShop Load (0.3ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered shops/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 31ms (Views: 29.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:06:56 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:06:56 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:06:56 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:06:56 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:06:56 +0200
+
+
+Started GET "/shops" for 127.0.0.1 at 2015-03-31 00:16:03 +0200
+Processing by ShopsController#index as HTML
+  [1m[36mShop Load (0.6ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 44ms (Views: 41.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:03 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:03 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:03 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:03 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:03 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-31 00:16:04 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 50ms (Views: 44.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:04 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:04 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:04 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:04 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:04 +0200
+
+
+Started POST "/shops" for 127.0.0.1 at 2015-03-31 00:16:05 +0200
+Processing by ShopsController#index as HTML
+  Parameters: {"authenticity_token"=>"LLyTmq2TbN3GTkmK7xA+lmPFRZC/KcjzDEO5/PD3RUhUBvciq4bu8SfOQGDhfuAoaFmZiZG7gRyd8zLnP405Iw=="}
+  [1m[35mShop Load (0.8ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 53ms (Views: 50.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:05 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:05 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:05 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:05 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:05 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-31 00:16:06 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 37ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:06 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:06 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:06 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:06 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:06 +0200
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-03-31 00:16:07 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"+m9c6h7MVu0Wg7H1vwUxQZ4AaXI0wuCSTiqCHcZ8KrSC1ThSGNnUwfcDuB+xa+//lZy1axpQqX3fmgkGCQZW3w=="}
+Completed 401 Unauthorized in 2ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"+m9c6h7MVu0Wg7H1vwUxQZ4AaXI0wuCSTiqCHcZ8KrSC1ThSGNnUwfcDuB+xa+//lZy1axpQqX3fmgkGCQZW3w=="}
+  Rendered devise/shared/_links.html.erb (7.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (24.7ms)
+Completed 200 OK in 74ms (Views: 52.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:07 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:07 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:07 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:07 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:07 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-31 00:16:10 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 41ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:10 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:10 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:10 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:10 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:10 +0200
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-03-31 00:16:14 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"CLoXOIHXpDRD62G+A5lbWm/to3sOMYm0+iMjnB5ZIHFwAHOAh8ImGKJraFQN94XkZHF/YiCjwFtrk6iH0SNcGg=="}
+Completed 401 Unauthorized in 1ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"CLoXOIHXpDRD62G+A5lbWm/to3sOMYm0+iMjnB5ZIHFwAHOAh8ImGKJraFQN94XkZHF/YiCjwFtrk6iH0SNcGg=="}
+  Rendered devise/shared/_links.html.erb (5.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 40ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:14 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:14 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:14 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:14 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:14 +0200
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-03-31 00:16:19 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+JprXg+9MLfC2Nxm9dtkWG3xZlqp4xFOiHFuty2XNlWAIA/mCaiymyNY1Yz7tbrmZm26Q4dxWKEZweWs4u1KPg==", "user"=>{"uname"=>"test", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."uname" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["uname", "test"]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.9ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["last_sign_in_at", "2015-03-30 21:31:59.721992"], ["current_sign_in_at", "2015-03-30 22:16:19.218491"], ["sign_in_count", 7], ["updated_at", "2015-03-30 22:16:19.220968"], ["id", 2]]
+  [1m[35m (7.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 144ms (ActiveRecord: 11.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-31 00:16:19 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 51ms (Views: 44.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:19 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:19 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:19 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:19 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:19 +0200
+
+
+Started POST "/shops" for 127.0.0.1 at 2015-03-31 00:16:24 +0200
+Processing by ShopsController#index as HTML
+  Parameters: {"authenticity_token"=>"cjmHdsmnhwI16mrkPN/OYxsbUk/mSnCBo4rjxa8J8vDnIwfIudweCmdcSd5sQNj4P+HAezXoASqDQJa6xBS6kg=="}
+  [1m[35mShop Load (0.4ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 32ms (Views: 30.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:24 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:24 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:24 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:24 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:24 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-31 00:16:27 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 29ms (Views: 24.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:27 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:27 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:27 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:27 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:16:27 +0200
+  [1m[36m (57.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (74.2ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20150330164234)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (74.1ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "fname" character varying, "lname" character varying, "phone" integer, "email" character varying, "address" character varying, "image" character varying, "reports" integer DEFAULT 0) [0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150330164234"]]
+  [1m[36m (16.4ms)[0m  [1mCOMMIT[0m
+Migrating to AddDeviseToUsers (20150330170555)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (141.7ms)[0m  [1mALTER TABLE "users" ADD "uname" character varying DEFAULT '' NOT NULL[0m
+  [1m[35m (88.5ms)[0m  ALTER TABLE "users" ADD "encrypted_password" character varying DEFAULT '' NOT NULL
+  [1m[36m (0.9ms)[0m  [1mALTER TABLE "users" ADD "reset_password_token" character varying[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD "reset_password_sent_at" timestamp
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "users" ADD "remember_created_at" timestamp[0m
+  [1m[35m (98.8ms)[0m  ALTER TABLE "users" ADD "sign_in_count" integer DEFAULT 0 NOT NULL
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "users" ADD "current_sign_in_at" timestamp[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD "last_sign_in_at" timestamp
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" ADD "current_sign_in_ip" inet[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD "last_sign_in_ip" inet
+DEPRECATION WARNING: `#timestamp` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in up at /home/abdoo/Desktop/SE/knellen_project/db/migrate/20150330170555_add_devise_to_users.rb:35)
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" ADD "created_at" timestamp[0m
+  [1m[35m (0.5ms)[0m  ALTER TABLE "users" ADD "updated_at" timestamp
+  [1m[36m (44.4ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (30.4ms)[0m  CREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150330170555"]]
+  [1m[35m (13.3ms)[0m  COMMIT
+Migrating to CreateShops (20150330211037)
+  [1m[36m (0.6ms)[0m  [1mBEGIN[0m
+  [1m[35m (91.8ms)[0m  CREATE TABLE "shops" ("id" serial primary key, "user_id" integer, "shop_name" character varying(25) NOT NULL, "shop_desc" text, "cover" character varying, "icon" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (39.4ms)[0m  [1mCREATE  INDEX  "index_shops_on_user_id" ON "shops"  ("user_id")[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150330211037"]]
+  [1m[36m (19.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (7.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'shops'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (5.1ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-31 00:26:06 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 123ms (Views: 65.1ms | ActiveRecord: 9.5ms)
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:26:06 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:26:06 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:26:06 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:26:06 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:26:06 +0200
+
+
+Started POST "/shops" for 127.0.0.1 at 2015-03-31 00:26:08 +0200
+Processing by ShopsController#index as HTML
+  Parameters: {"authenticity_token"=>"fKpUmuj2ZngUWUtohi+cB/+tEN4webH/qC7W3EHSySnpsNQkmI3/cEbvaFLWsIqc21eC6uPbwFSI5KOjKs+BSw=="}
+  [1m[36mShop Load (2.6ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 67ms (Views: 59.0ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:26:08 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:26:08 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:26:08 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:26:08 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:26:08 +0200
+
+
+Started POST "/shops/new" for 127.0.0.1 at 2015-03-31 00:26:09 +0200
+Processing by ShopsController#new as HTML
+  Parameters: {"authenticity_token"=>"9BbwcUIp7iQgHqflG4h7nfeM9aAKNvkfpsVHyiQDVrdhDHDPMlJ3LHKohN9LF20G03ZnlNmUiLSGDzK1Tx4e1Q=="}
+  Rendered shops/new.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 80ms (Views: 46.6ms | ActiveRecord: 14.2ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:26:09 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:26:09 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:26:09 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:26:09 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:26:09 +0200
+
+
+Started POST "/shops/create" for 127.0.0.1 at 2015-03-31 00:26:14 +0200
+Processing by ShopsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ahqDUk/0Pee9fp8WaKenz2n/G/X5bUEYhQ61h0Jwi0j/AAPsP4+k7+/IvCw4OLFUTQWJwSrPMLOlxMD4KW3DKg==", "shop"=>{"shop_name"=>"default", "shop_desc"=>"test", "cover"=>#<ActionDispatch::Http::UploadedFile:0x007fa9005cfdb8 @tempfile=#<Tempfile:/tmp/RackMultipart20150331-13904-1764hqa.jpg>, @original_filename="background.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"shop[cover]\"; filename=\"background.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Shop"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "shops" ("shop_name", "shop_desc", "cover", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["shop_name", "default"], ["shop_desc", "test"], ["cover", "background.jpg"], ["created_at", "2015-03-30 22:26:14.873843"], ["updated_at", "2015-03-30 22:26:14.873843"]]
+  [1m[35m (27.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/shops
+Completed 302 Found in 76ms (ActiveRecord: 28.2ms)
+
+
+Started GET "/shops" for 127.0.0.1 at 2015-03-31 00:26:14 +0200
+Processing by ShopsController#index as HTML
+  [1m[36mShop Load (0.8ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 47ms (Views: 45.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:26:15 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:26:15 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:26:15 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:26:15 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:26:15 +0200
+
+
+Started GET "/shops/delete/1" for 127.0.0.1 at 2015-03-31 00:26:16 +0200
+Processing by ShopsController#delete as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShop Load (0.7ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered shops/delete.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 47ms (Views: 41.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:26:16 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:26:16 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:26:16 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:26:16 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:26:16 +0200
+
+
+Started POST "/shops/destroy/1" for 127.0.0.1 at 2015-03-31 00:26:18 +0200
+Processing by ShopsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pSkW7U59TNzqJ6qt0LiQLDTYd39Z7k5taXzMkHifVqkwM5ZTPgbV1LiRiZeAJ4a3ECLlS4pMP8ZJtrnvE4Ieyw==", "commit"=>"Delete Shop", "id"=>"1"}
+  [1m[36mShop Load (0.8ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "shops" WHERE "shops"."id" = $1[0m  [["id", 1]]
+  [1m[35m (38.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/shops
+Completed 302 Found in 47ms (ActiveRecord: 39.8ms)
+
+
+Started GET "/shops" for 127.0.0.1 at 2015-03-31 00:26:18 +0200
+Processing by ShopsController#index as HTML
+  [1m[36mShop Load (0.7ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:26:18 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:26:18 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:26:18 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:26:18 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:26:18 +0200
+  [1m[36m (68.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (53.2ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (1.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20150330164234)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (75.2ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "fname" character varying, "lname" character varying, "phone" integer, "email" character varying, "address" character varying, "image" character varying, "reports" integer DEFAULT 0) [0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150330164234"]]
+  [1m[36m (17.6ms)[0m  [1mCOMMIT[0m
+Migrating to AddDeviseToUsers (20150330170555)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (76.2ms)[0m  [1mALTER TABLE "users" ADD "uname" character varying DEFAULT '' NOT NULL[0m
+  [1m[35m (88.7ms)[0m  ALTER TABLE "users" ADD "encrypted_password" character varying DEFAULT '' NOT NULL
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" ADD "reset_password_token" character varying[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD "reset_password_sent_at" timestamp
+  [1m[36m (0.4ms)[0m  [1mALTER TABLE "users" ADD "remember_created_at" timestamp[0m
+  [1m[35m (87.3ms)[0m  ALTER TABLE "users" ADD "sign_in_count" integer DEFAULT 0 NOT NULL
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" ADD "current_sign_in_at" timestamp[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD "last_sign_in_at" timestamp
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "users" ADD "current_sign_in_ip" inet[0m
+  [1m[35m (0.4ms)[0m  ALTER TABLE "users" ADD "last_sign_in_ip" inet
+DEPRECATION WARNING: `#timestamp` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in up at /home/abdoo/Desktop/SE/knellen_project/db/migrate/20150330170555_add_devise_to_users.rb:35)
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "users" ADD "created_at" timestamp[0m
+  [1m[35m (1.0ms)[0m  ALTER TABLE "users" ADD "updated_at" timestamp
+  [1m[36m (43.3ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (40.4ms)[0m  CREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150330170555"]]
+  [1m[35m (14.9ms)[0m  COMMIT
+Migrating to CreateShops (20150330211037)
+  [1m[36m (0.7ms)[0m  [1mBEGIN[0m
+  [1m[35m (80.6ms)[0m  CREATE TABLE "shops" ("id" serial primary key, "shop_name" character varying(25) NOT NULL, "shop_desc" text, "cover" character varying, "icon" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150330211037"]]
+  [1m[35m (9.6ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (6.1ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'shops'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (3.8ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.5ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateShops (20150330211037)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (3.1ms)[0m  [1mDROP TABLE "shops"[0m
+  [1m[35mSQL (0.8ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1  [["version", "20150330211037"]]
+  [1m[36m (8.9ms)[0m  [1mCOMMIT[0m
+Migrating to AddDeviseToUsers (20150330170555)
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateShops (20150330211037)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (100.7ms)[0m  [1mCREATE TABLE "shops" ("id" serial primary key, "user_id" integer, "shop_name" character varying(25) NOT NULL, "shop_desc" text, "cover" character varying, "icon" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (38.9ms)[0m  CREATE  INDEX  "index_shops_on_user_id" ON "shops"  ("user_id")
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150330211037"]]
+  [1m[35m (22.6ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (6.1ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'shops'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (3.2ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-31 00:45:13 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 234ms (Views: 207.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-03-31 00:45:14 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 43ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:14 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:14 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:14 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:14 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:14 +0200
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-03-31 00:45:15 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"rdiGhfn4hdGMiQcjvRRl9e3jXckt3wo+XHEk72ag8DE4wgY7iYMc2d4/JBnti3NuyRnP/f59e5V8u1GQDb24Uw=="}
+Completed 401 Unauthorized in 3ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"rdiGhfn4hdGMiQcjvRRl9e3jXckt3wo+XHEk72ag8DE4wgY7iYMc2d4/JBnti3NuyRnP/f59e5V8u1GQDb24Uw=="}
+  Rendered devise/shared/_links.html.erb (8.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (30.7ms)
+Completed 200 OK in 100ms (Views: 65.6ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:15 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:15 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:15 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:15 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:15 +0200
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-03-31 00:45:19 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6MweSnXV4/ecGdRKos9wcOs1nGg1UT4vPRt+SU5OLtN91p70Ba56/86v93DyUGbrz88OXObzT4Qd0Qs2JVNmsQ==", "user"=>{"uname"=>"test", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (1.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."uname" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["uname", "test"]]
+Completed 401 Unauthorized in 20ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6MweSnXV4/ecGdRKos9wcOs1nGg1UT4vPRt+SU5OLtN91p70Ba56/86v93DyUGbrz88OXObzT4Qd0Qs2JVNmsQ==", "user"=>{"uname"=>"test", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (3.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 126ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:19 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:19 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:19 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:19 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:19 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:20 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:20 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:20 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:20 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:20 +0200
+
+
+Started POST "/shops" for 127.0.0.1 at 2015-03-31 00:45:23 +0200
+Processing by ShopsController#index as HTML
+  Parameters: {"authenticity_token"=>"Hy8ivEsg57x2+bN7HYSXHADhybFNkzWvW8aQc/4hI5eKNaICO1t+tCRPkEFNG4GHJBtbhZ4xRAR7DOUMlTxr9Q=="}
+  [1m[36mShop Load (1.6ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 62ms (Views: 53.8ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:23 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:23 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:23 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:23 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:23 +0200
+
+
+Started POST "/shops/new" for 127.0.0.1 at 2015-03-31 00:45:24 +0200
+Processing by ShopsController#new as HTML
+  Parameters: {"authenticity_token"=>"jLOlQLvwqVHRkMk6mORdiee9SoAJR6RwuO9BwWdKiRoZqSX+y4swWYMm6gDIe0sSw0fYtNrl1duYJTS+DFfBeA=="}
+  Rendered shops/new.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 58ms (Views: 47.3ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:24 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:24 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:24 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:24 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:24 +0200
+
+
+Started GET "/shops" for 127.0.0.1 at 2015-03-31 00:45:26 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mShop Load (0.8ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 44ms (Views: 42.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:26 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:26 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:26 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:26 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:26 +0200
+
+
+Started POST "/shops/new" for 127.0.0.1 at 2015-03-31 00:45:27 +0200
+Processing by ShopsController#new as HTML
+  Parameters: {"authenticity_token"=>"4HClSRWiyJLgcc8ODHHfByR82Yh1offmPUdtUU6qOlp1aiX3ZdlRmrLH7DRc7smcAIZLvKYDhk0djRguJbdyOA=="}
+  Rendered shops/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:27 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:27 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:27 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:27 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:27 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:30 +0200
+
+
+Started GET "/assets/shops-46ae4818693ef5be1f5cf9de2aa3c858.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:30 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:30 +0200
+
+
+Started GET "/assets/home-336c56703504028ad3accc424641e243.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:30 +0200
+
+
+Started GET "/assets/application-c1b63ecb8e14735d732ed66e7280ef88.css?body=1" for 127.0.0.1 at 2015-03-31 00:45:30 +0200

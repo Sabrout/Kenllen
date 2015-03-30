@@ -6,6 +6,6 @@ class Shop < ActiveRecord::Base
 	scope :search, lambda {|query|
 		where(["shop_name LIKE ?", "%#{query}%"])}
 
-		mount_uploader :cover_photo, ImageUploader
+	mount_uploader :cover, ImageUploader
 
 end

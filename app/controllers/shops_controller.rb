@@ -5,7 +5,7 @@ class ShopsController < ApplicationController
   end
 
   def show
-  	@shop = Shop.find(params[:shop_id])
+  	@shop = Shop.find(params[:id])
   end
 
   def new
@@ -27,17 +27,17 @@ class ShopsController < ApplicationController
   end
 
   def edit
-    @shop = Shop.find(params[:shop_id])
+    @shop = Shop.find(params[:id])
   end
 
   def update
     # Find an existing object
-    @shop = Shop.find(params[:shop_id])
+    @shop = Shop.find(params[:id])
     # Update the object
     if @shop.update_attributes(shop_params)
       # If succeeds, redirect
       flash[:notice] = "Shop updated successfully."
-      redirect_to(:action => 'show', :shop_id => @shop.shop_id)
+      redirect_to(:action => 'show', :id => @shop.id)
     else
       # If fails, redisplay
       render('edit')
@@ -45,12 +45,12 @@ class ShopsController < ApplicationController
   end
 
   def delete
-    @shop = Shop.find(params[:shop_id])
+    @shop = Shop.find(params[:id])
   end
 
   def destroy
     # Find an existing object and destroy it
-    shop = Shop.find(params[:shop_id]).destroy
+    shop = Shop.find(params[:id]).destroy
     flash[:notice] = "Shop '#{shop.shop_name}' deleted successfully."
     redirect_to(:action => 'index')
   end
