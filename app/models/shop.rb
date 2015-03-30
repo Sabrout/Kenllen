@@ -1,7 +1,7 @@
 class Shop < ActiveRecord::Base
 
 	self.table_name = 'shops'
-
+	belongs_to :user
 	scope :sorted, lambda { order("shops.shop_name ASC")}
 	scope :search, lambda {|query|
 		where(["shop_name LIKE ?", "%#{query}%"])}
