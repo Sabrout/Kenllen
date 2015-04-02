@@ -16,6 +16,18 @@ ActiveRecord::Schema.define(version: 20150330211037) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "items", force: :cascade do |t|
+    t.integer  "shop_id"
+    t.string   "item_name",   limit: 15,               null: false
+    t.string   "description", limit: 200, default: ""
+    t.string   "inspiration", limit: 70,  default: ""
+    t.decimal  "price",                                null: false
+    t.datetime "created_at",                           null: false
+    t.datetime "updated_at",                           null: false
+  end
+
+  add_index "items", ["shop_id"], name: "index_items_on_shop_id", using: :btree
+
   create_table "shops", force: :cascade do |t|
     t.integer  "user_id"
     t.string   "shop_name",  limit: 25, null: false
