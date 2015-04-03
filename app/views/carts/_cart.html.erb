@@ -1,0 +1,5 @@
+<%=render cart.cart_items%>
+<%= cart.total_price%>
+<%if !cart.cart_items.empty?%>
+<%= button_to 'Clear My Cart', cart, method: :delete,confirm: 'Are you sure?' %>
+<%end%>

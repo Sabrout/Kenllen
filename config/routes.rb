@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
   
   resources :cart_items
-  resources :cart
-  
+  resources :carts
+
   devise_for :users
+
   root 'home#index'
 
 match ':controller(/:action(/:id))', :via  => [:get, :post , :delete]
