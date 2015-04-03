@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable
     has_many :shops , :dependent => :destroy
-
+    has_one :cart
     validates :fname , :presence => {:message => "Firsname Field Cannot be blank"}
     validates :fname , :length => { :maximum => 12 , :message => "Firstname Is Too Long(maximum is 12 characters)" }  #sets the maximum length of first name to 12
 
