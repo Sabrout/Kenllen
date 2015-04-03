@@ -6,13 +6,18 @@
   <table>
     <tr>
     <!-- This is the shop cover image. Can either use image_tag function or the good old html. I used html for css image resizing -->
-      <%=image_tag @shop.cover_url(:thumb).to_s %>
+      <img src="<%= @shop.cover_url.to_s %>" style="width:200px;height:200px">
       <th>Shop Name</th>
       <td><%= @shop.shop_name %></td>
     </tr>
     <tr>
       <th>Shop Description</th>
       <td><%= @shop.shop_desc %></td>
+    </tr>
+    <tr>
+    <th>
+    <%= button_to("Follow Shop", {:action => 'follow'}, :class => 'button') %>
+    </th>
     </tr>
   </table>
 
