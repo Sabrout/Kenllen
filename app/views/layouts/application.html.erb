@@ -14,7 +14,7 @@
 <!-- making the title of the banner a link to the home page -->
 <h1 class= "title"><%= link_to("Knellen", root_path, :class => 'title') %></h1></div>
 </div>
-<%=render :partial => 'carts/cart', :object => @cart%>
+
 <!-- flash that appears after editing or deleting a shop  -->
 <% if !flash[:notice].blank? %>
   <div class = "notice">

@@ -3,5 +3,10 @@
 <td><%= cart_item.quantity %>&times;</td>
 <td><%= cart_item.item.item_name %></td>
 <td><%= cart_item.total_price %></td>
+<td><%= cart_item.item.description%></td>
+<td><%= cart_item.item.quantity%></td>
+<td><%= button_to 'Remove', {controller: 'cart_items' , action: "destroy" , cart_item_id: cart_item.id} , method: :delete%></td>
 </tr>
+<td><%= button_to 'decrement' , {controller: 'cart_items' , action: "decrement" , cart_item_id: cart_item.id} %></td>
+<td><%= button_to 'increment' , {controller: 'cart_items' , action: "increment" , cart_item_id: cart_item.id} %></td>
 </table>

@@ -1,5 +1,5 @@
 <%=render :partial => 'cart_items/cart_item' , :collection => @cart.cart_items%>
 <%if !cart.cart_items.empty?%>
-<%= cart.total_price%>
+<%= cart.total_price%> EGP
 <%= button_to 'Clear My Cart', cart, method: :delete,confirm: 'Are you sure?' %>
 <%end%>
