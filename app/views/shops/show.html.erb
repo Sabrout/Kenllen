@@ -15,8 +15,23 @@
       <td><%= @shop.shop_desc %></td>
     </tr>
     <tr>
-    <th>
-    <%= button_to("Follow Shop", {:action => 'follow'}, :class => 'button') %>
+    <th></th>
+    <td>
+    <!-- Check if user is logged in -->
+    <% if user_signed_in?%>
+    <!-- Check if user does not own this shop -->
+    <% if !current_user.shops.include?(@shop)%>
+    <!-- Check if user is not already following this shop -->
+    <% if !current_user.followed_shops.include?(@shop) %>
+    <!-- The Follow Shop button -->
+    <%= button_to("Follow Shop", {:action => 'follow', :id => @shop.id}, :class => 'button') %>
+    <%else%>
+    You are currently following this shop.
+    <%end%>
+    <%end%>
+    <%else%>
+    You have to <%= link_to "login", new_user_session_path %> to follow a shop. 
+    <%end%>
     </th>
     </tr>
   </table>

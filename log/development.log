@@ -20326,3 +20326,2467 @@ Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 
 
 
 Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-03 14:34:02 +0200
+
+
+Started GET "/" for ::1 at 2015-04-03 14:48:27 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 60ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-03 14:48:27 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-03 14:48:27 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-03 14:48:27 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-03 14:48:27 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-03 14:48:27 +0200
+
+
+Started POST "/shops" for ::1 at 2015-04-03 14:48:30 +0200
+Processing by ShopsController#index as HTML
+  Parameters: {"authenticity_token"=>"6PxmFy2l/QyGWBX3mirGdl4X4gsWwoG8z/tCWzz9vjWgywj+2Lmuah652goHGmKp79PzDfaBVaLI02UufHeL5A=="}
+  [1m[35mShop Load (4.0ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 68ms (Views: 64.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-03 14:48:32 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-03 14:48:32 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-03 14:48:32 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-03 14:48:32 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-03 14:48:32 +0200
+
+
+Started POST "/shops" for ::1 at 2015-04-03 14:48:53 +0200
+Processing by ShopsController#index as HTML
+  Parameters: {"authenticity_token"=>"6PxmFy2l/QyGWBX3mirGdl4X4gsWwoG8z/tCWzz9vjWgywj+2Lmuah652goHGmKp79PzDfaBVaLI02UufHeL5A=="}
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 28ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-03 14:48:54 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-03 14:48:54 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-03 14:48:54 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-03 14:48:54 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-03 14:48:54 +0200
+
+
+Started GET "/shops/edit/1" for ::1 at 2015-04-03 14:49:40 +0200
+Processing by ShopsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShop Load (4.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered shops/edit.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 80ms (Views: 76.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-03 14:49:42 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-03 14:49:42 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-03 14:49:42 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-03 14:49:42 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-03 14:49:42 +0200
+
+
+Started POST "/shops/update/1" for ::1 at 2015-04-03 14:49:47 +0200
+Processing by ShopsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0UcXMfBKoSeVDqPLL3XqST/1rHXdSovWWVVXr2VgLNGZcHnYBVbyQQ3vbDayRU6WjjG9cz0JX8hefXDaJeoZAA==", "shop"=>{"shop_name"=>"Arnold Art", "shop_desc"=>"This shop is the best."}, "commit"=>"Update Shop", "id"=>"1"}
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/shops/show/1
+Completed 302 Found in 16ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/shops/show/1" for ::1 at 2015-04-03 14:49:49 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShop Load (0.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered shops/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 76ms (Views: 72.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-03 14:49:50 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-03 14:49:50 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-03 14:49:50 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-03 14:49:50 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-03 14:49:50 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-03 14:49:54 +0200
+Processing by ShopsController#index as HTML
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 76ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-03 14:49:55 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-03 14:49:55 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-03 14:49:55 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-03 14:49:55 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-03 14:49:55 +0200
+
+
+Started GET "/" for ::1 at 2015-04-03 18:33:39 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 109ms (Views: 62.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-03 18:33:40 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 28ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-03 18:33:41 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-03 18:33:41 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-03 18:33:41 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-03 18:33:41 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-03 18:33:41 +0200
+
+
+Started GET "/users/sign_up" for ::1 at 2015-04-03 18:33:43 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (16.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (140.0ms)
+Completed 200 OK in 288ms (Views: 224.0ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-03 18:33:45 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-03 18:33:46 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-03 18:33:46 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-03 18:33:46 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-03 18:33:46 +0200
+
+
+Started POST "/users" for ::1 at 2015-04-03 18:34:20 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MeO6gm4STPZPpRKGKAaxa6djWbXsC2VNPzf18hmjCe551NRrmw4fkNdE3Xu1NhW0FqdIswxIsVM4H9KHWSk8Pw==", "user"=>{"uname"=>"test", "email"=>"test@test.com", "email_confirmation"=>"test@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "fname"=>"test", "lname"=>"test", "phone"=>"1234"}, "commit"=>"Sign up"}
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mUser Exists (20.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."uname") = LOWER('test') LIMIT 1[0m
+  [1m[35mUser Exists (4.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'test@test.com' LIMIT 1
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "users" ("uname", "email", "fname", "lname", "phone", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["uname", "test"], ["email", "test@test.com"], ["fname", "test"], ["lname", "test"], ["phone", 1234], ["encrypted_password", "$2a$10$kOQny/SHiswXV5ZCiz9G/.sYEmnhDXiKDjPezfw.HciuhckkzZqaW"], ["created_at", "2015-04-03 16:34:21.601015"], ["updated_at", "2015-04-03 16:34:21.601015"]]
+  [1m[35m (4.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "last_sign_in_ip" = $3, "current_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7  [["last_sign_in_at", "2015-04-03 16:34:22.857705"], ["current_sign_in_at", "2015-04-03 16:34:22.857705"], ["last_sign_in_ip", "::1/128"], ["current_sign_in_ip", "::1/128"], ["sign_in_count", 1], ["updated_at", "2015-04-03 16:34:22.865677"], ["id", 1]]
+  [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 2249ms (ActiveRecord: 36.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-03 18:34:23 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (4.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 136ms (Views: 124.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-03 18:34:25 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-03 18:34:25 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-03 18:34:25 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-03 18:34:25 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-03 18:34:25 +0200
+
+
+Started POST "/shops" for ::1 at 2015-04-03 18:34:32 +0200
+Processing by ShopsController#index as HTML
+  Parameters: {"authenticity_token"=>"pEaoVN/ODKCtcLALslGfrAkac2TqFJcZCUQCdtu1n4nscca9KtJfxjWRf/YvYTtzuN5iYgpXQwcObCUDmz+qWA=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mShop Load (4.0ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 136ms (Views: 92.0ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-03 18:34:34 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-03 18:34:34 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-03 18:34:34 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-03 18:34:34 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-03 18:34:34 +0200
+
+
+Started GET "/shops/show/2" for ::1 at 2015-04-03 18:35:10 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered shops/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 90ms (Views: 69.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-03 18:35:12 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-03 18:35:12 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-03 18:35:12 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-03 18:35:12 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-03 18:35:12 +0200
+
+
+Started GET "/" for ::1 at 2015-04-03 18:35:16 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (4.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 68ms (Views: 64.0ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/shops" for ::1 at 2015-04-03 18:38:44 +0200
+Processing by ShopsController#index as HTML
+  Parameters: {"authenticity_token"=>"269GXIQ7SfohqO02akZ9muMMw0drwfk11hTrfIkEF7+TmCi1cScanLlJIsv3dtlFUsjSQYuCLSvRPMwJyY4ibg=="}
+  Rendered shops/index.html.erb within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+     5: <% end %>
+     6: 
+     7: <div class="subjects index">
+     8:   <h2 class= "pagetitle">Shops | <%= @current_user.email %></h2>
+     9:   <div class = "add">
+    10:   <%= button_to("Add New Shop", {:action => 'new'}, :class => 'button') %>
+    11:   </div>
+  app/views/shops/index.html.erb:8:in `_app_views_shops_index_html_erb__309913502_63870168'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (112.0ms)
+Cannot render console with content type application/x-www-form-urlencodedAllowed content types: [#<Mime::Type:0x5c7a608 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x5c7a488 @synonyms=[], @symbol=:text, @string="text/plain">]
+
+
+Started POST "/shops" for ::1 at 2015-04-03 18:39:39 +0200
+Processing by ShopsController#index as HTML
+  Parameters: {"authenticity_token"=>"269GXIQ7SfohqO02akZ9muMMw0drwfk11hTrfIkEF7+TmCi1cScanLlJIsv3dtlFUsjSQYuCLSvRPMwJyY4ibg=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mShop Load (4.0ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 84ms (Views: 80.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-03 18:39:42 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-03 18:39:42 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-03 18:39:42 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-03 18:39:42 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-03 18:39:42 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateFollows (20150403165311)
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (15.6ms)[0m  [1mCREATE TABLE "follows" ("id" serial primary key, "user_id" integer NOT NULL, "shop_id" integer NOT NULL) [0m
+  [1m[35m (46.9ms)[0m  CREATE  INDEX  "index_follows_on_user_id" ON "follows"  ("user_id")
+  [1m[36m (15.7ms)[0m  [1mCREATE  INDEX  "index_follows_on_shop_id" ON "follows"  ("shop_id")[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150403165311"]]
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'follows'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (15.6ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'items'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (0.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'shops'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (0.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'follows'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (15.6ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'items'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (0.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'shops'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (0.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (15.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateFollows (20150403165311)
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "follows"[0m
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1  [["version", "20150403165311"]]
+  [1m[36m (15.6ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (15.6ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'items'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (0.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'shops'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (0.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (15.6ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'items'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (0.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'shops'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (0.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (30.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateFollow (20150404160227)
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (250.0ms)[0m  [1mCREATE TABLE "follows" ("id" serial primary key) [0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150404160227"]]
+  [1m[36m (10.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateShopsUsersJoin (20150404161751)
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateShopsUsersJoin (20150404161751)
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "shops_users" ("user_id" integer, "shop_id" integer) [0m
+  [1m[35m (10.0ms)[0m  CREATE  INDEX  "index_shops_users_on_shop_id_and_user_id" ON "shops_users"  ("shop_id", "user_id")
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150404161751"]]
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (10.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'follows'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (0.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'items'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (0.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'shops'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (10.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'shops_users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (10.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36mShop Load (30.0ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (70.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (10.0ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "shops_users" ON "users"."id" = "shops_users"."user_id" WHERE "shops_users"."shop_id" = $1[0m  [["shop_id", 1]]
+  [1m[35mShop Load (0.0ms)[0m  SELECT "shops".* FROM "shops" INNER JOIN "shops_users" ON "shops"."id" = "shops_users"."shop_id" WHERE "shops_users"."user_id" = $1  [["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "shops_users" ("shop_id", "user_id") VALUES ($1, $2)  [["shop_id", 1], ["user_id", 1]]
+  [1m[36m (20.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mShop Load (0.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "shops_users" ON "users"."id" = "shops_users"."user_id" WHERE "shops_users"."shop_id" = $1[0m  [["shop_id", 2]]
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "shops_users" ("user_id", "shop_id") VALUES ($1, $2)[0m  [["user_id", 1], ["shop_id", 2]]
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "shops_users" WHERE "shops_users"."user_id" = $1 AND "shops_users"."shop_id" = 2  [["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "shops_users" ("user_id", "shop_id") VALUES ($1, $2)[0m  [["user_id", 1], ["shop_id", 2]]
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36mShop Load (10.0ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (10.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "shops_users" ON "users"."id" = "shops_users"."user_id" WHERE "shops_users"."shop_id" = $1  [["shop_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "shops_users" WHERE "shops_users"."shop_id" = $1 AND "shops_users"."user_id" = 1  [["shop_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT "shops".* FROM "shops" INNER JOIN "shops_users" ON "shops"."id" = "shops_users"."shop_id" WHERE "shops_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "shops_users" WHERE "shops_users"."user_id" = $1 AND "shops_users"."shop_id" = 2[0m  [["user_id", 1]]
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "shops_users" ("shop_id", "user_id") VALUES ($1, $2)  [["shop_id", 1], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mShop Load (0.0ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1  [["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "shops_users" WHERE "shops_users"."shop_id" = $1 AND "shops_users"."user_id" = 1  [["shop_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mUPDATE "shops" SET "user_id" = $1, "updated_at" = $2 WHERE "shops"."id" = $3[0m  [["user_id", 1], ["updated_at", "2015-04-04 16:59:12.040190"], ["id", 1]]
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (10.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "shops_users" WHERE "shops_users"."shop_id" = $1[0m  [["shop_id", 1]]
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "shops" WHERE "shops"."id" = $1  [["id", 1]]
+  [1m[36m (50.1ms)[0m  [1mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (10.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'follows'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (0.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'items'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (10.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'shops'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (0.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'shops_users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (10.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'follows'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (10.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'items'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (0.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'shops'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (10.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'shops_users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (0.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (10.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateShopsUsersJoin (20150404161751)
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (70.0ms)[0m  [1mDROP TABLE "shops_users"[0m
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1  [["version", "20150404161751"]]
+  [1m[36m (20.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'follows'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (10.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'items'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (0.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'shops'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (10.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'follows'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (0.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'items'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (15.6ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'shops'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (0.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateShopsUsersJoin (20150404161751)
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mCREATE TABLE "shops_users" ("user_id" integer, "shop_id" integer) [0m
+  [1m[35m (0.0ms)[0m  CREATE  INDEX  "index_shops_users_on_shop_id_and_user_id" ON "shops_users"  ("shop_id", "user_id")
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150404161751"]]
+  [1m[35m (46.9ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (15.6ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'follows'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (0.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'items'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (0.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'shops'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (15.6ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'shops_users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (0.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateShopsUsersJoin (20150404161751)
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mDROP TABLE "shops_users"[0m
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1  [["version", "20150404161751"]]
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (15.6ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'follows'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (0.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'items'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (0.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'shops'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (0.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateShops (20150330211037)
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (15.6ms)[0m  [1mDROP TABLE "shops"[0m
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1  [["version", "20150330211037"]]
+  [1m[36m (46.9ms)[0m  [1mCOMMIT[0m
+Migrating to AddDeviseToUsers (20150330170555)
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateShops (20150330211037)
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (15.6ms)[0m  [1mCREATE TABLE "shops" ("id" serial primary key, "user_id" integer, "shop_name" character varying(25) NOT NULL, "shop_desc" text, "cover" character varying, "icon" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  CREATE  INDEX  "index_shops_on_user_id" ON "shops"  ("user_id")
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150330211037"]]
+  [1m[35m (0.0ms)[0m  COMMIT
+Migrating to CreateShopsUsersJoin (20150404161751)
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.0ms)[0m  CREATE TABLE "shops_users" ("user_id" integer, "shop_id" integer) 
+  [1m[36m (0.0ms)[0m  [1mCREATE  INDEX  "index_shops_users_on_shop_id_and_user_id" ON "shops_users"  ("shop_id", "user_id")[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150404161751"]]
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'follows'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (0.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'items'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (0.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'shops'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (0.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'shops_users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (0.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[36m (0.0ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mShop Load (0.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (15.6ms)[0m  INSERT INTO "shops" ("shop_name", "shop_desc", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["shop_name", "Arnlod"], ["shop_desc", "mmmm"], ["created_at", "2015-04-04 18:21:44.561787"], ["updated_at", "2015-04-04 18:21:44.561787"]]
+  [1m[36m (15.7ms)[0m  [1mCOMMIT[0m
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "shops_users" ON "users"."id" = "shops_users"."user_id" WHERE "shops_users"."shop_id" = $1  [["shop_id", 1]]
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mUPDATE "shops" SET "user_id" = $1, "updated_at" = $2 WHERE "shops"."id" = $3[0m  [["user_id", 1], ["updated_at", "2015-04-04 20:25:06.447648"], ["id", 1]]
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT "shops".* FROM "shops" INNER JOIN "shops_users" ON "shops"."id" = "shops_users"."shop_id" WHERE "shops_users"."user_id" = $1[0m  [["user_id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT "users".* FROM "users" INNER JOIN "shops_users" ON "users"."id" = "shops_users"."user_id" WHERE "shops_users"."shop_id" = $1  [["shop_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "shops_users" ("shop_id", "user_id") VALUES ($1, $2)  [["shop_id", 1], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "shops_users" ("user_id", "shop_id") VALUES ($1, $2)[0m  [["user_id", 1], ["shop_id", 1]]
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "shops_users" WHERE "shops_users"."user_id" = $1 AND "shops_users"."shop_id" = 1  [["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "shops_users" WHERE "shops_users"."shop_id" = $1 AND "shops_users"."user_id" = 1[0m  [["shop_id", 1]]
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "shops_users" ("shop_id", "user_id") VALUES ($1, $2)  [["shop_id", 1], ["user_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "shops_users" WHERE "shops_users"."shop_id" = $1[0m  [["shop_id", 1]]
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "shops" WHERE "shops"."id" = $1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "shops_users" WHERE "shops_users"."shop_id" = $1[0m  [["shop_id", 1]]
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (9.9ms)[0m  INSERT INTO "shops" ("shop_name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["shop_name", "test shop"], ["created_at", "2015-04-04 20:36:06.487437"], ["updated_at", "2015-04-04 20:36:06.487437"]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "shops_users" ("user_id", "shop_id") VALUES ($1, $2)[0m  [["user_id", 1], ["shop_id", 2]]
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT "users".* FROM "users" INNER JOIN "shops_users" ON "users"."id" = "shops_users"."user_id" WHERE "shops_users"."shop_id" = $1[0m  [["shop_id", 2]]
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mROLLBACK[0m
+
+
+Started GET "/" for ::1 at 2015-04-04 22:40:56 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (4.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 404ms (Views: 288.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:40:58 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 22:40:58 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:40:58 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 22:40:58 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 22:40:58 +0200
+
+
+Started POST "/shops" for ::1 at 2015-04-04 22:41:00 +0200
+Processing by ShopsController#index as HTML
+  Parameters: {"authenticity_token"=>"Iy7pO3iam1Dazw/FKNAwsK2Reb8pBnmVNTediEeDkct+qYLlOHPAkK3LyLjPdoGB6v5oDsDuLyue+7j+l+WrzA=="}
+  Rendered shops/index.html.erb within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 44ms
+
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+     5: <% end %>
+     6: 
+     7: <div class="subjects index">
+     8:   <h2 class= "pagetitle">Shops | <%= current_user.email %></h2>
+     9:   <div class = "add">
+    10:   <%= button_to("Add New Shop", {:action => 'new'}, :class => 'button') %>
+    11:   </div>
+  app/views/shops/index.html.erb:8:in `_app_views_shops_index_html_erb__453694728_64911828'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (124.0ms)
+Cannot render console with content type application/x-www-form-urlencodedAllowed content types: [#<Mime::Type:0x5c81fb8 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x5c81e38 @synonyms=[], @symbol=:text, @string="text/plain">]
+
+
+Started GET "/" for ::1 at 2015-04-04 22:41:23 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 24ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2015-04-04 22:41:28 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (92.0ms)
+Completed 200 OK in 164ms (Views: 148.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:41:30 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 22:41:30 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:41:30 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 22:41:30 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 22:41:30 +0200
+
+
+Started POST "/users" for ::1 at 2015-04-04 22:42:06 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QjKY/Zq4qbQtCaGMsR9lMh7PeTleN+EgW++FldrFLj4ftfMj2lHydFoNZvFWudQDWaBoiLfft57wI6DjCqMUOQ==", "user"=>{"uname"=>"Takk", "email"=>"tak@tak.com", "email_confirmation"=>"tak@tak.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "fname"=>"tak", "lname"=>"tmam", "phone"=>"1234"}, "commit"=>"Sign up"}
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mUser Exists (4.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."uname") = LOWER('Takk') LIMIT 1[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'tak@tak.com' LIMIT 1
+  [1m[36mSQL (16.0ms)[0m  [1mINSERT INTO "users" ("uname", "email", "fname", "lname", "phone", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["uname", "Takk"], ["email", "tak@tak.com"], ["fname", "tak"], ["lname", "tmam"], ["phone", 1234], ["encrypted_password", "$2a$10$SsdPaVhaRUosmklR5IwQGONm61bGfuCxbkClZgmocHYkit0y3x2nK"], ["created_at", "2015-04-04 20:42:06.942789"], ["updated_at", "2015-04-04 20:42:06.942789"]]
+  [1m[35m (12.0ms)[0m  COMMIT
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "last_sign_in_ip" = $3, "current_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7  [["last_sign_in_at", "2015-04-04 20:42:06.998792"], ["current_sign_in_at", "2015-04-04 20:42:06.998792"], ["last_sign_in_ip", "::1/128"], ["current_sign_in_ip", "::1/128"], ["sign_in_count", 1], ["updated_at", "2015-04-04 20:42:07.006795"], ["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 420ms (ActiveRecord: 32.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-04 22:42:08 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (4.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 108ms (Views: 96.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:42:10 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 22:42:10 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:42:10 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 22:42:10 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 22:42:10 +0200
+
+
+Started POST "/shops" for ::1 at 2015-04-04 22:42:18 +0200
+Processing by ShopsController#index as HTML
+  Parameters: {"authenticity_token"=>"qFyJ9MwcnSg3g+QCzJD5dfZxAnGjzRqq9dLMb7VYsxb12+IqjPXG6ECHI38rNkhEsR4TwEolTBReHukZZT6JEQ=="}
+  [1m[36mUser Load (4.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mShop Load (4.0ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 88ms (Views: 80.0ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:42:20 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 22:42:20 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 22:42:20 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 22:42:20 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:42:20 +0200
+
+
+Started GET "/shops/delete/2" for ::1 at 2015-04-04 22:42:23 +0200
+Processing by ShopsController#delete as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered shops/delete.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 80ms (Views: 64.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 22:42:25 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 22:42:25 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:42:25 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 22:42:25 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:42:25 +0200
+
+
+Started POST "/shops/destroy/2" for ::1 at 2015-04-04 22:42:27 +0200
+Processing by ShopsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"j5K76uvF9LFtoZSNhBWUmMf+BNPUELlXhFG5EtVS9DbSFdA0qyyvcRqlU/BjsyWpgJEVYj347+kvnZxkBTTOMQ==", "commit"=>"Delete Shop", "id"=>"2"}
+  [1m[35mShop Load (4.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "shops_users" WHERE "shops_users"."shop_id" = $1  [["shop_id", 2]]
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "shops" WHERE "shops"."id" = $1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/shops
+Completed 302 Found in 84ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/shops" for ::1 at 2015-04-04 22:42:28 +0200
+Processing by ShopsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mShop Load (0.0ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 104ms (Views: 104.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 22:42:30 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 22:42:30 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:42:30 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 22:42:30 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:42:30 +0200
+
+
+Started POST "/shops/new" for ::1 at 2015-04-04 22:42:32 +0200
+Processing by ShopsController#new as HTML
+  Parameters: {"authenticity_token"=>"NjU4xgVmyblTDi3+2fI//FZhtQ7eeqhvnjWp+9rMGi9rslMYRY+SeSQK6oM+VI7NEQ6kvzeS/tE1+YyNCqogKA=="}
+  Rendered shops/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 76ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 22:42:34 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:42:34 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 22:42:34 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 22:42:34 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:42:34 +0200
+
+
+Started POST "/shops/create" for ::1 at 2015-04-04 22:43:29 +0200
+Processing by ShopsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d/q0RjiIk9eWPNVTT+fb4hrV8SlA7myYUPjWLJOlBC8qfd+YeGHIF+E4Ei6oQWrTXbrgmKkGOib7NPNaQ8M+KA==", "shop"=>{"shop_name"=>"The Art Shop", "shop_desc"=>"This is a useless description.", "cover"=>#<ActionDispatch::Http::UploadedFile:0x948ca50 @tempfile=#<Tempfile:C:/Users/TAREK-PC/AppData/Local/Temp/RackMultipart20150404-3268-c6feai.png>, @original_filename="c146d87a10701e7f7e6ca194fda119ce.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"shop[cover]\"; filename=\"c146d87a10701e7f7e6ca194fda119ce.png\"\r\nContent-Type: image/png\r\n">}, "commit"=>"Create Shop"}
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "shops" ("shop_name", "shop_desc", "cover", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["shop_name", "The Art Shop"], ["shop_desc", "This is a useless description."], ["cover", "c146d87a10701e7f7e6ca194fda119ce.png"], ["created_at", "2015-04-04 20:43:29.316031"], ["updated_at", "2015-04-04 20:43:29.316031"]]
+  [1m[36m (4.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/shops
+Completed 302 Found in 56ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/shops" for ::1 at 2015-04-04 22:43:30 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (4.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 88ms (Views: 84.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:43:32 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 22:43:32 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:43:32 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 22:43:32 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 22:43:32 +0200
+
+
+Started GET "/shops/show/3" for ::1 at 2015-04-04 22:43:37 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mShop Load (0.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered shops/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 72ms (Views: 72.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 22:43:39 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:43:39 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:43:39 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 22:43:39 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 22:43:39 +0200
+
+
+Started GET "/" for ::1 at 2015-04-04 22:44:12 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 72ms (Views: 64.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:44:13 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 22:44:13 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:44:13 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 22:44:13 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 22:44:13 +0200
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-04-04 22:44:15 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"YmbscgT5oAoSo5/N0WCFzHe5wQee7nxYjOEWIwUXS7E/4YesRBD7ymWnWLA2xjT9MNbQtncGKuYnLTNV1XFxtg=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (4.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 40ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-04 22:44:17 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 96ms (Views: 92.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:44:18 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 22:44:18 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 22:44:18 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 22:44:18 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:44:18 +0200
+
+
+Started POST "/shops" for ::1 at 2015-04-04 22:44:25 +0200
+Processing by ShopsController#index as HTML
+  Parameters: {"authenticity_token"=>"Lv/cIyanGyrDLtDVeiCDtRwpC2fYcW8Ljr20S2BkKflG+YrxKi7IxzzfemPQVMhluRf5C5R7vuczWHmcvQRdTw=="}
+  Rendered shops/index.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+     5: <% end %>
+     6: 
+     7: <div class="subjects index">
+     8:   <h2 class= "pagetitle">Shops | <%= current_user.email %></h2>
+     9:   <div class = "add">
+    10:   <%= button_to("Add New Shop", {:action => 'new'}, :class => 'button') %>
+    11:   </div>
+  app/views/shops/index.html.erb:8:in `_app_views_shops_index_html_erb__453694728_64911828'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (104.0ms)
+Cannot render console with content type application/x-www-form-urlencodedAllowed content types: [#<Mime::Type:0x5c81fb8 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x5c81e38 @synonyms=[], @symbol=:text, @string="text/plain">]
+
+
+Started GET "/" for ::1 at 2015-04-04 22:44:29 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 60ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-04-04 22:44:31 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"fdRkoVomIFcyxNlkNlwa63JcK0VNTy2hsAd/MFy99esV0jJzVq/zus01c9KcKFE712LZKQFF/E0N4rLngd2BXQ=="}
+Completed 401 Unauthorized in 4ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"fdRkoVomIFcyxNlkNlwa63JcK0VNTy2hsAd/MFy99esV0jJzVq/zus01c9KcKFE712LZKQFF/E0N4rLngd2BXQ=="}
+  Rendered devise/shared/_links.html.erb (28.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (108.0ms)
+Completed 200 OK in 248ms (Views: 244.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 22:44:33 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:44:33 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:44:33 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 22:44:33 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 22:44:33 +0200
+
+
+Started POST "/users/sign_in" for ::1 at 2015-04-04 22:44:40 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"88VdwUDAjW9Imgiu6mIGwiq7Nw7AQs9o8kaSdNvCHPObwwsTTElegrdrohhAFk0Sj4XFYoxIHoRPo1+jBqJoRQ==", "user"=>{"uname"=>"Takk", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (4.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."uname" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["uname", "Takk"]]
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (4.0ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["current_sign_in_at", "2015-04-04 20:44:40.760674"], ["sign_in_count", 2], ["updated_at", "2015-04-04 20:44:40.768655"], ["id", 2]]
+  [1m[35m (0.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 312ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-04 22:44:41 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 104ms (Views: 96.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:44:43 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 22:44:43 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 22:44:43 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 22:44:43 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:44:43 +0200
+
+
+Started POST "/shops" for ::1 at 2015-04-04 22:44:48 +0200
+Processing by ShopsController#index as HTML
+  Parameters: {"authenticity_token"=>"z/O2+c0A13Trxp2FFgtYBxkne5eQAryBCPttbRuUOZCwTCvUCH1AUFAgiyo3eUEnKwdMoWLm7Pn3dQQnzOEL9A=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 72ms (Views: 72.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:44:49 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 22:44:49 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:44:49 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 22:44:49 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 22:44:49 +0200
+
+
+Started GET "/shops/show/3" for ::1 at 2015-04-04 22:44:56 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mShop Load (0.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered shops/show.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 68ms (Views: 64.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 22:44:58 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:44:58 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:44:58 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 22:44:58 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 22:44:58 +0200
+
+
+Started GET "/shops/show/3" for ::1 at 2015-04-04 22:46:43 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered shops/show.html.erb within layouts/application (24.0ms)
+Completed 500 Internal Server Error in 36ms
+
+ActionView::Template::Error (undefined method `fname' for nil:NilClass):
+    16:     </tr>
+    17:     <tr>
+    18:       <th>Shop Owner</th>
+    19:       <td><%= @shop.user.fname %></td>
+    20:     </tr>
+    21:     <tr>
+    22:     <th>
+  app/views/shops/show.html.erb:19:in `_app_views_shops_show_html_erb___901266683_81761304'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (112.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (104.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (244.0ms)
+
+
+Started GET "/shops/show/3" for ::1 at 2015-04-04 22:46:57 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mShop Load (4.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered shops/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 88ms (Views: 84.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:46:59 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 22:46:59 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 22:46:59 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:46:59 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 22:46:59 +0200
+
+
+Started GET "/shops/show/3" for ::1 at 2015-04-04 22:48:16 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered shops/show.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 64ms
+
+ActionView::Template::Error (undefined method `fname' for nil:NilClass):
+    16:     </tr>
+    17:     <tr>
+    18:       <th>Shop Owner</th>
+    19:       <td><%= @shop_owner.fname %></td>
+    20:     </tr>
+    21:     <tr>
+    22:     <th>
+  app/views/shops/show.html.erb:19:in `_app_views_shops_show_html_erb___901266683_78542964'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (96.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (96.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (204.0ms)
+
+
+Started GET "/shops/show/3" for ::1 at 2015-04-04 22:48:32 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mShop Load (4.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered shops/show.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    16:     </tr>
+    17:     <tr>
+    18:       <th>Shop Owner</th>
+    19:       <td><%= @shop_owner.id %></td>
+    20:     </tr>
+    21:     <tr>
+    22:     <th>
+  app/views/shops/show.html.erb:19:in `_app_views_shops_show_html_erb___901266683_65228304'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (120.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (92.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (220.0ms)
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 22:48:40 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:48:40 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 22:48:40 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 22:48:40 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 22:48:40 +0200
+
+
+Started GET "/shops/show/3" for ::1 at 2015-04-04 23:02:08 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered shops/show.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 76ms
+
+SyntaxError (D:/SE/knellen/app/views/shops/show.html.erb:23: syntax error, unexpected tIVAR, expecting keyword_then or ';' or '\n'
+...r.followed_shoped.include @shop
+...                               ^
+D:/SE/knellen/app/views/shops/show.html.erb:32: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/shops/show.html.erb:23: syntax error, unexpected tIVAR, expecting keyword_then or ';' or '\n'
+  app/views/shops/show.html.erb:32: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (128.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (88.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (196.0ms)
+
+
+Started GET "/shops/show/3" for ::1 at 2015-04-04 23:02:46 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mShop Load (0.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered shops/show.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 24ms
+
+SyntaxError (D:/SE/knellen/app/views/shops/show.html.erb:23: syntax error, unexpected tIVAR, expecting keyword_then or ';' or '\n'
+....followed_shoped.include? @shop
+...                               ^
+D:/SE/knellen/app/views/shops/show.html.erb:32: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/shops/show.html.erb:23: syntax error, unexpected tIVAR, expecting keyword_then or ';' or '\n'
+  app/views/shops/show.html.erb:32: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (16.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (164.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (100.1ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (225.2ms)
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 23:07:18 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:07:18 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:07:18 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 23:07:18 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 23:07:18 +0200
+
+
+Started GET "/shops/show/3" for ::1 at 2015-04-04 23:07:20 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mShop Load (4.0ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered shops/show.html.erb within layouts/application (8.0ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    16:     </tr>
+    17:     <tr>
+    18:       <th>Shop Owner</th>
+    19:       <td><%= @shop_owner.id %></td>
+    20:     </tr>
+    21:     <tr>
+    22:     <th>
+  app/views/shops/show.html.erb:19:in `_app_views_shops_show_html_erb___901266683_63260256'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (116.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (136.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (296.0ms)
+
+
+Started GET "/shops/show/3" for ::1 at 2015-04-04 23:07:52 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mShop Load (0.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered shops/show.html.erb within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (undefined method `followed_shoped' for #<User:0x5f26a40>):
+    17:     <tr>
+    18:     <th>
+    19:     <% if user_signed_in?%>
+    20:     <% if !current_user.followed_shoped.include?(@shop) %>
+    21:     <%= button_to("Follow Shop", {:action => 'follow'}, :class => 'button') %>
+    22:     <%end%>
+    23:     <%end%>
+  app/views/shops/show.html.erb:20:in `_app_views_shops_show_html_erb___901266683_52432956'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (36.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (36.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (72.0ms)
+
+
+Started GET "/shops/show/3" for ::1 at 2015-04-04 23:08:09 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mShop Load (0.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered shops/show.html.erb within layouts/application (24.0ms)
+Completed 500 Internal Server Error in 36ms
+
+ActionView::Template::Error (undefined method `followed_shopes' for #<User:0x7f10040>):
+    17:     <tr>
+    18:     <th>
+    19:     <% if user_signed_in?%>
+    20:     <% if !current_user.followed_shopes.include?(@shop) %>
+    21:     <%= button_to("Follow Shop", {:action => 'follow'}, :class => 'button') %>
+    22:     <%end%>
+    23:     <%end%>
+  app/views/shops/show.html.erb:20:in `_app_views_shops_show_html_erb___901266683_66704544'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (136.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (104.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (248.0ms)
+
+
+Started GET "/shops/show/3" for ::1 at 2015-04-04 23:08:18 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mShop Load (0.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mShop Exists (0.0ms)[0m  SELECT "shops".* FROM "shops" INNER JOIN "shops_users" ON "shops"."id" = "shops_users"."shop_id" WHERE "shops_users"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 2], ["id", 3]]
+  Rendered shops/show.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 108ms (Views: 100.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 23:08:20 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 23:08:20 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 23:08:20 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:08:20 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:08:20 +0200
+
+
+Started POST "/shops/follow" for ::1 at 2015-04-04 23:08:23 +0200
+Processing by ShopsController#follow as HTML
+  Parameters: {"authenticity_token"=>"ipsMmcaeRrPEsWDW+EgibvgmlKs8zdsfRrW+Jk0n/Dz1JJG0A+PRl39XdnnZOjtOygajnc4pi2e5O9dsmlLOWA=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 500 Internal Server Error in 16ms
+
+NameError (undefined local variable or method `shop' for #<ShopsController:0x57934e0>):
+  app/controllers/shops_controller.rb:9:in `follow'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (100.0ms)
+Cannot render console with content type application/x-www-form-urlencodedAllowed content types: [#<Mime::Type:0x5c81fb8 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x5c81e38 @synonyms=[], @symbol=:text, @string="text/plain">]
+
+
+Started GET "/shops/show/3" for ::1 at 2015-04-04 23:09:39 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mShop Load (0.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (4.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mShop Exists (0.0ms)[0m  SELECT "shops".* FROM "shops" INNER JOIN "shops_users" ON "shops"."id" = "shops_users"."shop_id" WHERE "shops_users"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 2], ["id", 3]]
+  Rendered shops/show.html.erb within layouts/application (96.0ms)
+Completed 500 Internal Server Error in 148ms
+
+ActionView::Template::Error (undefined local variable or method `shop' for #<#<Class:0x7e2f820>:0x7e2ce98>):
+    18:     <th>
+    19:     <% if user_signed_in?%>
+    20:     <% if !current_user.followed_shops.include?(@shop) %>
+    21:     <%= button_to("Follow Shop", {:action => 'follow', :id => shop.id}, :class => 'button') %>
+    22:     <%end%>
+    23:     <%end%>
+    24:     </th>
+  app/views/shops/show.html.erb:21:in `_app_views_shops_show_html_erb___901266683_66150684'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (12.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (100.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (92.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (200.0ms)
+
+
+Started GET "/shops/show/3" for ::1 at 2015-04-04 23:10:10 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mShop Load (4.0ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Exists (0.0ms)[0m  [1mSELECT "shops".* FROM "shops" INNER JOIN "shops_users" ON "shops"."id" = "shops_users"."shop_id" WHERE "shops_users"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 2], ["id", 3]]
+  Rendered shops/show.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 120ms (Views: 116.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:10:12 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 23:10:12 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:10:12 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 23:10:12 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 23:10:12 +0200
+
+
+Started POST "/shops/follow/3" for ::1 at 2015-04-04 23:10:14 +0200
+Processing by ShopsController#follow as HTML
+  Parameters: {"authenticity_token"=>"kNEYQqI+bGhSgRKo+0+wTjZVO1BmUEvown7EOkug4mbvboVvZ0P7TOlnBAfaPaluBHUMZpS0G5A98K1wnNXQAg==", "id"=>"3"}
+  [1m[35mUser Load (4.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "shops_users" ("user_id", "shop_id") VALUES ($1, $2)[0m  [["user_id", 2], ["shop_id", 3]]
+  [1m[35m (4.0ms)[0m  COMMIT
+  [1m[36mShop Exists (4.0ms)[0m  [1mSELECT "shops".* FROM "shops" INNER JOIN "shops_users" ON "shops"."id" = "shops_users"."shop_id" WHERE "shops_users"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 2], ["id", 3]]
+  Rendered shops/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 108ms (Views: 80.0ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 23:10:16 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:10:16 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:10:16 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 23:10:16 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 23:10:16 +0200
+
+
+Started POST "/shops/follow/3" for ::1 at 2015-04-04 23:13:11 +0200
+Processing by ShopsController#follow as HTML
+  Parameters: {"authenticity_token"=>"kNEYQqI+bGhSgRKo+0+wTjZVO1BmUEvown7EOkug4mbvboVvZ0P7TOlnBAfaPaluBHUMZpS0G5A98K1wnNXQAg==", "id"=>"3"}
+  [1m[35mUser Load (4.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "shops_users" ("user_id", "shop_id") VALUES ($1, $2)[0m  [["user_id", 2], ["shop_id", 3]]
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36mShop Exists (0.0ms)[0m  [1mSELECT "shops".* FROM "shops" INNER JOIN "shops_users" ON "shops"."id" = "shops_users"."shop_id" WHERE "shops_users"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 2], ["id", 3]]
+  Rendered shops/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 92ms (Views: 72.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:13:13 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:13:13 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 23:13:13 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 23:13:13 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 23:13:13 +0200
+
+
+Started POST "/shops/follow/3" for ::1 at 2015-04-04 23:13:28 +0200
+Processing by ShopsController#follow as HTML
+  Parameters: {"authenticity_token"=>"kNEYQqI+bGhSgRKo+0+wTjZVO1BmUEvown7EOkug4mbvboVvZ0P7TOlnBAfaPaluBHUMZpS0G5A98K1wnNXQAg==", "id"=>"3"}
+  [1m[35mUser Load (4.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "shops_users" ("user_id", "shop_id") VALUES ($1, $2)[0m  [["user_id", 2], ["shop_id", 3]]
+  [1m[35m (0.0ms)[0m  COMMIT
+  [1m[36mShop Exists (0.0ms)[0m  [1mSELECT "shops".* FROM "shops" INNER JOIN "shops_users" ON "shops"."id" = "shops_users"."shop_id" WHERE "shops_users"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 2], ["id", 3]]
+  Rendered shops/show.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 96ms (Views: 76.0ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:13:30 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 23:13:30 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 23:13:30 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 23:13:30 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:13:30 +0200
+
+
+Started POST "/shops/follow/3" for ::1 at 2015-04-04 23:13:54 +0200
+Processing by ShopsController#follow as HTML
+  Parameters: {"authenticity_token"=>"kNEYQqI+bGhSgRKo+0+wTjZVO1BmUEvown7EOkug4mbvboVvZ0P7TOlnBAfaPaluBHUMZpS0G5A98K1wnNXQAg==", "id"=>"3"}
+  [1m[35mUser Load (4.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "shops_users" ("user_id", "shop_id") VALUES ($1, $2)[0m  [["user_id", 2], ["shop_id", 3]]
+  [1m[35m (4.0ms)[0m  COMMIT
+  [1m[36mShop Exists (0.0ms)[0m  [1mSELECT "shops".* FROM "shops" INNER JOIN "shops_users" ON "shops"."id" = "shops_users"."shop_id" WHERE "shops_users"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 2], ["id", 3]]
+  Rendered shops/show.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 88ms (Views: 68.0ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:13:56 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:13:56 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 23:13:56 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 23:13:56 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 23:13:56 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-04 23:14:16 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (4.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 80ms (Views: 76.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 23:14:19 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:14:19 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 23:14:19 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 23:14:19 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:14:19 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-04 23:16:00 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 80ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 23:16:02 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:16:02 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:16:02 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 23:16:02 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 23:16:02 +0200
+
+
+Started GET "/shops/show/3" for ::1 at 2015-04-04 23:16:04 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mShop Load (0.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mShop Exists (0.0ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 2], ["id", 3]]
+  [1m[36mShop Exists (0.0ms)[0m  [1mSELECT "shops".* FROM "shops" INNER JOIN "shops_users" ON "shops"."id" = "shops_users"."shop_id" WHERE "shops_users"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 2], ["id", 3]]
+  Rendered shops/show.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 160ms (Views: 156.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:16:05 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:16:05 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 23:16:05 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 23:16:05 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 23:16:05 +0200
+
+
+Started GET "/" for ::1 at 2015-04-04 23:43:27 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 48ms (Views: 31.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:43:27 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 23:43:27 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:43:27 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 23:43:27 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 23:43:27 +0200
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-04-04 23:43:30 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Qms9kpWSUyEzidQ3PS7bbvPpwwpyh+eHwF3IrVTGgdM91KC/UO/EBYhvwpgcXMJOwcn0PIBjt/8/06Hng7Oztw=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-04 23:43:31 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 25ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:43:32 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 23:43:32 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:43:32 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 23:43:32 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 23:43:32 +0200
+
+
+Started POST "/users/sign_in" for ::1 at 2015-04-04 23:43:34 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"Upy8nWWiw3ObgMn3+7GSFnt4RO0ZMgpnuCt6TVBUve3dGVgKWdpS+RSSU+B4Fn5US8vBGUiw5XwJjMlbhvui0g=="}
+Completed 401 Unauthorized in 1ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"Upy8nWWiw3ObgMn3+7GSFnt4RO0ZMgpnuCt6TVBUve3dGVgKWdpS+RSSU+B4Fn5US8vBGUiw5XwJjMlbhvui0g=="}
+  Rendered devise/shared/_links.html.erb (3.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:43:35 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:43:35 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 23:43:35 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 23:43:35 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 23:43:35 +0200
+
+
+Started GET "/" for ::1 at 2015-04-04 23:45:12 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 35ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:45:12 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 23:45:12 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:45:12 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 23:45:12 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 23:45:12 +0200
+
+
+Started POST "/shops" for ::1 at 2015-04-04 23:45:13 +0200
+Processing by ShopsController#index as HTML
+  Parameters: {"authenticity_token"=>"l0wIC0WFtDrMXEijGIC7E0gc6wQw6GIJj0a33Ij9YKMYyeycef0lsENO0rSbJ1dReK9u8GFqjRI+4QTKXlJ/nA=="}
+  Rendered shops/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined method `email' for nil:NilClass):
+     5: <% end %>
+     6: 
+     7: <div class="subjects index">
+     8:   <h2 class= "pagetitle">Shops | <%= current_user.email %></h2>
+     9:   <div class = "add">
+    10:   <%= button_to("Add New Shop", {:action => 'new'}, :class => 'button') %>
+    11:   </div>
+  app/views/shops/index.html.erb:8:in `_app_views_shops_index_html_erb__453694728_64911828'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (41.0ms)
+Cannot render console with content type application/x-www-form-urlencodedAllowed content types: [#<Mime::Type:0x5c81fb8 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x5c81e38 @synonyms=[], @symbol=:text, @string="text/plain">]
+
+
+Started POST "/shops" for ::1 at 2015-04-04 23:45:44 +0200
+Processing by ShopsController#index as HTML
+  Parameters: {"authenticity_token"=>"l0wIC0WFtDrMXEijGIC7E0gc6wQw6GIJj0a33Ij9YKMYyeycef0lsENO0rSbJ1dReK9u8GFqjRI+4QTKXlJ/nA=="}
+  [1m[35mShop Load (1.0ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 41ms (Views: 38.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:45:45 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 23:45:45 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:45:45 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 23:45:45 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 23:45:45 +0200
+
+
+Started GET "/shops/show/3" for ::1 at 2015-04-04 23:45:49 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mShop Load (1.0ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered shops/show.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 33ms (Views: 30.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:45:51 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 23:45:51 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 23:45:51 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:45:51 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 23:45:51 +0200
+
+
+Started GET "/" for ::1 at 2015-04-04 23:45:59 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 26ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 23:45:59 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:45:59 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 23:45:59 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 23:45:59 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:45:59 +0200
+
+
+Started POST "/shops" for ::1 at 2015-04-04 23:46:01 +0200
+Processing by ShopsController#index as HTML
+  Parameters: {"authenticity_token"=>"Wh7aILXjp1VSygIkJFdh2yAeCJxJjxaFmdyixMtSBTvVmz63iZs2393YmDOn8I2ZEK2NaBgN+Z4oexHSHf0aBA=="}
+  [1m[35mShop Load (1.0ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:46:02 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 23:46:02 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 23:46:02 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:46:02 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 23:46:02 +0200
+
+
+Started GET "/shops/delete/3" for ::1 at 2015-04-04 23:50:33 +0200
+Processing by ShopsController#delete as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  Rendered shops/delete.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 41ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:50:34 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:50:34 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 23:50:34 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 23:50:34 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 23:50:34 +0200
+
+
+Started POST "/shops/destroy/3" for ::1 at 2015-04-04 23:50:37 +0200
+Processing by ShopsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KUPmkQZZ3ix0vt8gPX8UDDY1vgdGsmG5be8P/lPAg6+mxgIGOiFPpvusRTe+2PhOBoY78xcwjqLcSLzohW+ckA==", "commit"=>"Delete Shop", "id"=>"3"}
+  [1m[35mShop Load (0.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "shops_users" WHERE "shops_users"."shop_id" = $1  [["shop_id", 3]]
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "shops" WHERE "shops"."id" = $1[0m  [["id", 3]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/shops
+Completed 302 Found in 13ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/shops" for ::1 at 2015-04-04 23:50:38 +0200
+Processing by ShopsController#index as HTML
+  [1m[36mShop Load (1.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 37ms (Views: 34.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-04 23:50:38 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:50:38 +0200
+
+
+Started GET "/assets/application-6b52ebbe2efe22f56d829facc6ea0f77.css?body=1" for ::1 at 2015-04-04 23:50:38 +0200
+
+
+Started GET "/assets/shops-4226bbf1e1d59c74b358dcf753a26cb7.css?body=1" for ::1 at 2015-04-04 23:50:38 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-04 23:50:39 +0200
