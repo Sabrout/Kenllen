@@ -1,22 +1,19 @@
-<%= link_to("<< Back to List", {:action => 'index'}, :class => 'back-link') %>
 
-<div>
-  <h2>Show Shop</h2>
 
-  <table>
-    <tr>
+<div class = "show-shop">
+  <div class = "shop-name"><%= @shop.shop_name %></div>
+  <div class = "shop-name"><%= @shop.user.uname.to_s %></div>
+<!--     <h4>Shop Description</h4>
+    <div><%= @shop.shop_desc %></div> -->
+    
+    <div>
     <!-- This is the shop cover image. Can either use image_tag function or the good old html. I used html for css image resizing -->
-      <img src="<%= @shop.cover_url.to_s %>" style="width:200px;height:200px">
-      <th>Shop Name</th>
-      <td><%= @shop.shop_name %></td>
-    </tr>
-    <tr>
-      <th>Shop Description</th>
-      <td><%= @shop.shop_desc %></td>
-    </tr>
-    <tr>
-    <th></th>
-    <td>
+
+      <img src="<%= @shop.cover_url.to_s %>" style="width:200px;height:200px" class = "shop-image"> 
+      
+    </div>
+    
+    <div class = "add1">  
     <!-- Check if user is logged in -->
     <% if user_signed_in?%>
     <!-- Check if user does not own this shop -->
@@ -24,17 +21,42 @@
     <!-- Check if user is not already following this shop -->
     <% if !current_user.followed_shops.include?(@shop) %>
     <!-- The Follow Shop button -->
-    <%= button_to("Follow Shop", {:action => 'follow', :id => @shop.id}, :class => 'button') %>
+    <%= button_to("Follow Shop", {:action => 'follow', :id => @shop.id}, :class => 'shop-button') %>
     <%else%>
-    You are currently following this shop.
-    <%= button_to("UnFollow Shop", {:action => 'unfollow', :id => @shop.id}, :class => 'button') %>
+    <%= button_to("UnFollow Shop", {:action => 'unfollow', :id => @shop.id}, :class => 'shop-button') %>
     <%end%>
     <%end%>
     <%else%>
-    You have to <%= link_to "login", new_user_session_path %> to follow a shop. 
-    <%end%>
-    </th>
-    </tr>
-  </table>
+    <%= button_to("Can not Follow", :class => 'dummy-button') %>
+    <%end%></div>
+  <% if user_signed_in?%>
+        <% if current_user.shops.include?(@shop)%>
+          <div class = "add1">
+        <%= button_to("Delete", {:action => 'delete', :id => @shop.id}, :class => 'shop-button') %>
+          </div>
+          <div class = "add1">
+          <%= button_to("Edit", {:action => 'edit', :id => @shop.id}, :class => 'shop-button') %>
+          </div>
+          <div class = "add1">
+  <%= button_to("Add New Item", {:controller => 'item', :action => 'new', :id => @shop.id}, :class => 'shop-button') %>
+  </div>
+        <%end%>
+        <%end%>
+  </div>
 
-</div>
+  <div class = "page">
+  <% if @item!=nil %>
+    <% @item.each do |item| %>
+    <div class ="shop-card">
+      <div><%= item.id %></div>
+      <div><%= item.item_name %></div>
+      <div class="actions">
+        <%= link_to "Show", {:controller => 'item', :action => 'show', :id => item.id}, :class => 'actionshow' %>|
+        <%= link_to "Edit", {:controller => 'item', :action => 'edit', :id => item.id}, :class => 'actionedit' %> |
+        <%= link_to "Delete", {:controller => 'item', :action => "action delete"}, :class => 'actiondelete' %>     
+        <!-- delete feature is not implemented yet  -->
+        </div>
+    </div>
+    <% end %>
+    <% end %>
+  </div>

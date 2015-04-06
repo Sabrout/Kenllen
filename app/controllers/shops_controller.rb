@@ -8,8 +8,11 @@ class ShopsController < ApplicationController
     # Adds the shop to the current user's followed shops
     @current_user = current_user
     @shop = Shop.find(params[:id])
+    if !current_user.shops.include?(@shop)
     @current_user.followed_shops << @shop
-    render 'show'
+  end
+    flash[:notice] = "You are now following '#{@shop.shop_name}.'"
+    redirect_to(:action => 'show', :id => @shop.id)
   end
 
   def unfollow
@@ -17,11 +20,13 @@ class ShopsController < ApplicationController
     @current_user = current_user
     @shop = Shop.find(params[:id])
     @current_user.followed_shops.delete(@shop)
-    render 'show'
+    flash[:notice] = "You are no longer following '#{@shop.shop_name}.'"
+    redirect_to(:action => 'show', :id => @shop.id)
   end
 
   def show
   	@shop = Shop.find(params[:id])
+    @item = @shop.items
   end
 
   def new
@@ -45,7 +50,12 @@ class ShopsController < ApplicationController
   end
 
   def edit
+    # Check if current user already owns the shop in order to edit
     @shop = Shop.find(params[:id])
+    if current_user.shops.include?(@shop)
+  else
+    render 'index'
+  end
   end
 
   def update
@@ -63,14 +73,27 @@ class ShopsController < ApplicationController
   end
 
   def delete
+    # Check if user already owns the shop inorder to delete it
     @shop = Shop.find(params[:id])
+    if current_user.shops.include?(@shop)
+    else
+    render 'index'
+  end
   end
 
   def destroy
     # Find an existing object and destroy it
+    if current_user.shops.include?(shop)
     shop = Shop.find(params[:id]).destroy
+    item = shop.items
+    item.each do |item| 
+    Item.destroy(item)
+  end
     flash[:notice] = "Shop '#{shop.shop_name}' deleted successfully."
     redirect_to(:action => 'index')
+  else 
+    render 'index'
+  end
   end
 
   # Mass assignement parameter
