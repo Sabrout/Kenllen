@@ -9,6 +9,8 @@ class ShopsController < ApplicationController
 
   def show
   	@shop = Shop.find(params[:id])
+    # @item = Item.where(:shop_id => :id)
+    @item = @shop.items
   end
 
   def new
@@ -53,7 +55,12 @@ class ShopsController < ApplicationController
 
   def destroy
     # Find an existing object and destroy it
-    shop = Shop.find(params[:id]).destroy
+    shop = Shop.find(params[:id])
+    item = shop.items
+    shop.destroy
+    item.each do |item| 
+    Item.destroy(item)
+  end
     flash[:notice] = "Shop '#{shop.shop_name}' deleted successfully."
     redirect_to(:action => 'index')
   end

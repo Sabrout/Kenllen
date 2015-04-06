@@ -1,4 +1,6 @@
 class Shop < ActiveRecord::Base
+	
+	
 
 	self.table_name = 'shops'
 	belongs_to :user
