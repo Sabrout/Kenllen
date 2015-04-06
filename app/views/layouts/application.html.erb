@@ -15,10 +15,16 @@
 <h1 class= "title"><%= link_to("Knellen", root_path, :class => 'title') %></h1></div>
 </div>
 
-<!-- flash that appears after editing or deleting a shop  -->
+<!-- flash for notices -->
 <% if !flash[:notice].blank? %>
   <div class = "notice">
     <%= flash[:notice] %>
+  </div>
+<% end %>
+<!-- flash for errors -->
+<% if !flash[:error].blank? %>
+  <div class = "cartError">
+    <%= flash[:error] %>
   </div>
 <% end %>	
 </body>

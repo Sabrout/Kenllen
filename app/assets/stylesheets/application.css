@@ -46,6 +46,28 @@
   opacity: 0.9;
 }
 
+.notice{
+  background: #A4FCEF;
+  width: 50%;
+  display: inline;
+  padding: 2px 10% 2px 10%;
+  margin-left: 35%;
+  font-family: 'Segoe UI';
+  text-align: center;
+}
+
+
+.cartError{
+  text-align: center;
+  background: #FF9494;
+  width: 50%;
+  display: inline;
+  padding: 2px 10% 2px 10%;
+  margin-left: 25%;
+  font-family: 'Segoe UI';
+  text-align: center;
+}
+
 footer{
 	font-family: 'Segoe UI';
 	text-align: center;

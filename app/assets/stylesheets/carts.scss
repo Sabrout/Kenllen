@@ -1,3 +1,177 @@
 // Place all the styles related to the carts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+
+.item-image {
+  float: left;
+  margin: 0 25px 10px 0;
+  text-align: center;
+}
+
+.text-field{
+  background: white; 
+  border: 1px solid #c4c4c4; 
+  border-radius: 5px; 
+  color: #666; 
+  text-align: center;
+  outline: none; 
+  height:23px; 
+  width: 25px; 
+}
+
+.text-field:focus{
+  box-shadow: 0 0 5px 3px #ee3e00; 
+}
+
+ .clear:after{
+    content: ".";
+    display: block;
+    height: 0px;
+    clear: both;
+    visibility: hidden;
+}
+
+.item-label {
+  color: #858585;
+  padding: 5px 0 10px 0;
+  font-weight: bold;
+  font-family: Tahoma;
+}
+.item-desc {
+  color: #ee3e00;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.6em;
+}
+
+.price {
+  color: #ee3e00;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.6em;
+}
+
+.total-price{
+  text-align: center;
+  background: white;
+}
+
+.cart-footer-buttons {
+  background-color: white;
+  border: 1px solid #eeeeee;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 5px 5px 5px 8px;
+}
+.cart-button {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: #e95640;
+  border: solid #e95640;
+  border-radius: 20px;
+}
+
+.cart-button-update {
+  color: white;
+  float: right;
+  height: 50px;
+  margin-top: -5px;
+  margin-right: 5px;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: #e95640;
+  border: solid #e95640;
+  border-radius: 20px;
+}
+
+.cart-button-delete {
+  color: white;
+  float: right;
+  height: 50px;
+  margin-right: 7px;
+  clear: right;
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: #e95640;
+  border: solid #e95640;
+  border-radius: 20px;
+}
+
+.cart-button:hover , .cart-button-update:hover , .cart-button-delete:hover {
+   cursor: pointer;
+   background-color: #ffb296;
+   border: solid #ffb296;
+}
+.cart-button:active ,.cart-button-update:active , .cart-button-delete:active {
+  position:relative;
+  top:1px;
+}
+
+
+
+
+body {
+    min-width: 1170px;
+    font-weight: 300;
+    font-size:  14px;
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+hr {
+    border: 0;
+    border-bottom: 1px solid #ececec;
+    margin-top : 0;
+    margin-bottom : 0;
+}
+
+
+.empty-cart{
+    margin-top : 0;
+    margin-bottom : 0;
+  padding: 5% 0 5% 40%;
+
+}
+
+
+
+.content-helper {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+
+
+.item-title {
+    color: #ee3e00;
+    font-family: 'Rufina', Georgia, Serif;
+    font-weight: bold;
+}
+
+.mainbox-cart-title {
+    margin: 62px 0 0;
+    padding: 8px 8px 7px 13px;
+    background: white;
+    font-size: 17px;
+    font-weight: 400;
+    color: #333333;
+    border: 1px solid #eeeeee;
+    -webkit-border-top-left-radius: 5px;
+            border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+            border-top-right-radius: 5px;
+}
+
+.item-body{
+  background: white;
+}
