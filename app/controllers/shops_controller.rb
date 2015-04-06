@@ -12,6 +12,14 @@ class ShopsController < ApplicationController
     render 'show'
   end
 
+  def unfollow
+    # Removes the shop from the current user's followed shops
+    @current_user = current_user
+    @shop = Shop.find(params[:id])
+    @current_user.followed_shops.delete(@shop)
+    render 'show'
+  end
+
   def show
   	@shop = Shop.find(params[:id])
   end

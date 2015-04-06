@@ -27,6 +27,7 @@
     <%= button_to("Follow Shop", {:action => 'follow', :id => @shop.id}, :class => 'button') %>
     <%else%>
     You are currently following this shop.
+    <%= button_to("UnFollow Shop", {:action => 'unfollow', :id => @shop.id}, :class => 'button') %>
     <%end%>
     <%end%>
     <%else%>
