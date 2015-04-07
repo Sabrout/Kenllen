@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <body>
 
@@ -39,7 +38,7 @@
 		</div>
 		<hr>
 		<%end%>
-<%if @cart.cart_items.empty?%>
+<%if !@cart.cart_items.empty?%>
 	<div class="cart-footer-buttons clear">
 		<div class="float-left">
 			<%= button_to 'Clear Cart' , cart_path(@cart) , method: :delete , class: 'cart-button'%>

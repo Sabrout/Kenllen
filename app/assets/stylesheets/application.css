@@ -46,6 +46,11 @@
   opacity: 0.9;
 }
 
+.cart_button{
+  background: url(cart.png) 3px 5px no-repeat;
+  background-size:cover
+}
+
 .notice{
   background: #A4FCEF;
   width: 50%;

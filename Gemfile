@@ -37,6 +37,7 @@ group :development, :test do
   gem 'byebug'
   # test framework 
   gem 'rspec-rails'
+  gem 'launchy'
   gem 'capybara'
   gem 'database_cleaner'
   # Access an IRB console on exception pages or by using <%= console %> in views

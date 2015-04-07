@@ -12,6 +12,7 @@ class CartItemsController < ApplicationController
 			end
 		else 	# else if a user isn't logged in
 			item = Item.find(params[:item_id])
+			temporary_cart
 			if (!session[:temporary_cart][params[:item_id]])
 				cart_item = Array.new 
 				cart_item[0] = item.item_name
@@ -33,8 +34,8 @@ class CartItemsController < ApplicationController
 		CartItem.destroy(params[:cart_item_id])
 		cart = current_cart
 			if(lastElement?(cart))
-			session[:cart_id] = nil
-				Cart.destroy(cart)
+			current_cart = nil
+			Cart.destroy(cart)
 			end
 		redirect_to :back
 	end	
@@ -53,7 +54,7 @@ class CartItemsController < ApplicationController
 	end
 
 private
-	#checks if an item exist in the cart already
+	#checks if an item already exists in the cart 
 	def add_item?(item,cart)
 			cart_item = cart.cart_items.find_by(item_id: item)
 		if(cart_item)

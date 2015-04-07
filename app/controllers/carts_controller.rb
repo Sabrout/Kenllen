@@ -40,8 +40,7 @@ class CartsController < ApplicationController
 	def destroy
 		if(current_user)	 # check if user is sign_in to delete the cart id from the database or not
 			cart = current_cart
-			Cart.destroy(cart)	
-			session[:cart_id] = nil
+			Cart.destroy(cart)	 # destroy in database
 		else
 			session[:temporary_cart] = nil
 		end

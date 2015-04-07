@@ -7,7 +7,6 @@ class CreateUsers < ActiveRecord::Migration
       t.string :email
       t.string :address
       t.string :image
-      t.integer :cart_id
       t.integer :reports , default: 0 
     end
   end

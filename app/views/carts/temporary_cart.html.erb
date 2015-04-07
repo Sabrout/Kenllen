@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <body>
 	
@@ -41,25 +40,25 @@
 		<%end%>
 <%if !@cart.empty?%>
 	<div class="cart-footer-buttons clear">
-
 		<div class="float-left">
 			<%= button_to 'Clear Cart' , {action: :destroy} ,  method: :delete , class: 'cart-button'%>
 			<!--CLEAR BUTTON-->
 		</div>
-	</div>
-
-	<div class="total-price"><!--Total Price-->
+		<div class="float-left">
+			<%=button_to 'Continue Shopping' ,root_path , class: 'cart-button' , method: :get%><!-- Continue BuTTON -->
+		</div>
+			<div class="total-price"><!--Total Price-->
 				<strong>Total cost:</strong><span class="price">$</span><span class="price"><%=@totalPrice%></span>
+		</div>
+
+		<div class="float-right"><!-- Put to the right -->
+			<span class="cart-button "><a>Checkout</a></span> <!-- CHECKOUT BuTTON -->
+		</div>
 	</div>
 
 <%end%>	
 
-	<div class="cart-footer-buttons">
-		<div class="float-right"><!-- Put to the right -->
-			<span class="cart-button "><a>Checkout</a></span> <!-- CHECKOUT BuTTON -->
-		</div>
- 			<%=button_to 'Continue Shopping' ,root_path , class: 'cart-button' , method: :get%>
-	</div> <!-- Continue BuTTON -->
+
 </div>
 
 </body>
