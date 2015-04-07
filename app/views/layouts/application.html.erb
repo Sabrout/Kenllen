@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Knellen</title>
+  <%=javascript_include_tag "http://codepen.io/assets/libs/fullpage/jquery.js"%>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true  %>
+ 
+  <%= csrf_meta_tags %>
+
+
+</head>
+<body>
+
+<header class="site-header" role="banner">
+	<div class="search-wrap">
+    	<div class="container">
+        	<form action="" method="" role="search">
+            	<input id="search-bar" placeholder="Search our website&hellip;">
+            </form>
+        </div>
+    </div>
+	 <div class="container">
+        <div class="nav-bar ">
+        	<img id="logo" src="assets/logo.png" alt="Knellen" href="">
+          	<a href="shop/index" class="toggle-search">Home</a>
+          	<a href="#" class="toggle-search">About Us</a>
+          	<a href="#" class="toggle-search">Shops</a>
+        	<a href="javascript:;" class="toggle-search">Search</a>
+          	<a href="#" class="toggle-search">Cart</a>
+        </div>
+    </div>
+</header>
+<img src="assets/HomeImage.jpg" alt="">
+
+
+
+<!-- flash that appears after editing or deleting a shop  -->
+<% if !flash[:notice].blank? %>
+  <div class = "notice">
+    <%= flash[:notice] %>
+  </div>
+<% end %>	
+</body>
+
+
+<%= yield %>
+
+
+<footer id="footer" class = "footer">Knellen Project by ©WonderCode</footer>
+</html>

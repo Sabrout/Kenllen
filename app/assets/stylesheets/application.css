@@ -1,0 +1,125 @@
+
+footer{ 
+	font-family: 'Segoe UI';
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+-- @Sabrout 
+
+body{
+padding:0px;
+overflow:hidden;
+background-color: #eff0ec;
+
+}
+
+#logo{
+  float: left;
+}
+
+/*Nav Bar Style*/
+
+
+/* Responsive Goodness */
+html{font-size:100%}
+@-webkit-viewport{width:device-width}
+@-moz-viewport{width:device-width}
+@-ms-viewport{width:device-width}
+@-o-viewport{width:device-width}
+@viewport{width:device-width}
+html{overflow-y:auto;}
+img,video{max-width:100%;height:auto;}
+img{-ms-interpolation-mode: bicubic;}
+
+/* Box Sizing */
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
+
+.clearfix:before,.clearfix:after{content:" ";display:table}
+.clearfix:after{clear:both}
+.clearfix{*zoom:1}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 90%
+}
+
+.site-header {
+  background-color: #fafbf9;
+  height: 70px;
+}
+
+.search-wrap {
+  background-color: #eff0ec; 
+}
+
+.search-wrap input {
+  background-color: #eff0ec;
+  border: none;
+  font-family:Segoe UI;
+  color: #0B424C;
+  padding: 1.875rem 0;
+  width: 100%;  
+}
+
+::-webkit-input-placeholder {
+   color: #000;
+   opacity: 1 !important;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #000;
+   opacity: 1 !important; 
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #000;  
+   opacity: 1 !important; 
+}
+
+:-ms-input-placeholder {  
+   color: #fff;  
+   opacity: 1 !important; 
+}
+
+.nav-bar {
+  padding: 0.625em 0;   
+  text-align: right;
+}
+
+.toggle-search {
+  text-transform: uppercase;
+  color: #0B424C;
+  text-decoration: none;
+  font-family:Segoe UI;
+  transition:all 0.4s ease-in-out;
+  padding:12px;
+  text-transform: uppercase;
+  text-align: center;
+  
+}
+
+.toggle-search:hover{
+  
+  text-decoration:none;
+  color:#fff;
+  font-family:Segoe UI;
+  background-color:#0B424C;
+  padding:12px 12px 25px 12px;
+}
+
+.toggle-search.active{
+ padding:12px 12px 25px 12px; 
+ background-color:#0B424C;
+  
+}
+
+@media screen and (min-width: 850px) {
+  .search-wrap input {
+    font-size: 2em; 
+  }
+} 
+
+/*Log in Form*/
+
