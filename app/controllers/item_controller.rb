@@ -13,12 +13,15 @@ class ItemController < ApplicationController
   def edit
     #finding certain item using id to edit
   	@item = Item.find(params[:id])
+    @shop = Shop.find(params[:shop_id])
   end
 
   def update
     #Find an existing item using form parameters
   	@item = Item.find(params[:id])
+    @shop = Shop.find(params[:shop_id])
     #Update the item
+    if current_user.shops.include?(@shop)
   	if @item.update_attributes(item_params)
   		#if update succeeds, redirect to the show action
       redirect_to(:action => 'show', :id => @item.id)
@@ -26,6 +29,7 @@ class ItemController < ApplicationController
       #if update fails, rerender the edit page for the use to correct the form
   		render('edit')
   	end
+  end
   end
 
   def new
@@ -39,6 +43,7 @@ class ItemController < ApplicationController
     #Instantiate a new Item using form parameters
     @item = Item.new(item_params)
     @shop = Shop.find(params[:id])
+    if current_user.shops.include?(@shop)
     #Save the item
     if @item.save
       #if save succeeds redirect to the index action
@@ -48,6 +53,20 @@ class ItemController < ApplicationController
       #if save fails rerender the new form for the user to correct the inputs
       render('new')
     end
+  end
+  end
+
+  def delete
+   @item = Item.find(params[:item_id])
+   @shop = Shop.find(params[:shop_id])
+  end
+
+  def destroy
+    @shop = Shop.find(params[:shop_id])
+    if current_user.shops.include?(@shop)
+    @item = Item.find(params[:item_id]).destroy
+    redirect_to({:controller => 'shops', :action => 'show', :id => @shop.id})
+  end
   end
 
 private

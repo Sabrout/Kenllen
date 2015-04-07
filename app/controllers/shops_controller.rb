@@ -52,10 +52,6 @@ class ShopsController < ApplicationController
   def edit
     # Check if current user already owns the shop in order to edit
     @shop = Shop.find(params[:id])
-    if current_user.shops.include?(@shop)
-  else
-    render 'index'
-  end
   end
 
   def update
