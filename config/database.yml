@@ -12,8 +12,13 @@ default: &default
 development:
   <<: *default
   database: knellen
+<<<<<<< HEAD
   username: postgres
   password: 123123
+=======
+  username:
+  password:
+>>>>>>> 9eb8d49f40f0a3c5332a5a5b3a218fa373904d29
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".

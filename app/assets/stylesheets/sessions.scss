@@ -1,0 +1,63 @@
+// Place all the styles related to the user controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+li /* to display any list item to be displayed in one line*/
+{
+	
+	display: inline;
+}
+a /* to make the color of any hyperlink white*/
+{
+	color: white;
+}
+h1 /* to make the headline in the ceneter of the page*/
+{
+	margin-left: 30%;
+	margin-top: 3%;
+}
+.head /* to set the color and the size and the font of the headline*/
+{
+	margin-right: 3%;
+	font-size: 150%;
+	font-family:  "Comic Sans MS", cursive, sans-serif;
+	color: #000000;
+	text-decoration: none;
+
+}
+
+.card /* to set the shape the and font and color and position of the sigin in (form)*/
+{
+	margin-left: 40%;
+	margin-top: 27%;
+	border: dashed;
+	border-radius: 15px;
+	border-color: #E9573F;
+	background-color: #E9573F;
+	width :20%; 
+}
+
+body /* to set the background of the ppage color */
+{ 
+		background-color: #F2F6DD;
+
+}	
+
+
+.password /* to set the password feild position*/
+{
+	margin-left: 1.2%;
+}
+
+.submit-button /* to set the login button position*/
+{
+
+	margin-left: 40%;
+	margin-top: 5%;
+
+
+}
+
+
+
+
+

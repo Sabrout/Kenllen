@@ -20,5 +20,9 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+<<<<<<< HEAD
   errors:
     format: '%{message}'
+=======
+  hello: "Hello world"
+>>>>>>> 9eb8d49f40f0a3c5332a5a5b3a218fa373904d29

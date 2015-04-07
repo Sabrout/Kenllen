@@ -1,9 +1,15 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   
   devise_for :users
   root 'home#index'
 
 match ':controller(/:action(/:id))', :via  => [:get, :post , :delete]
+=======
+
+root 'home#index'
+match ':controller(/:action(/:id))', :via  => [:get, :post ,:delete]
+>>>>>>> 9eb8d49f40f0a3c5332a5a5b3a218fa373904d29
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <% @page_title = "Home" %> <!--set the page title to home-->
 
 <% if !user_signed_in? %>
@@ -12,6 +13,23 @@
 <br>
 <div class ="homebuttons">
 <%=button_to "Logout", destroy_user_session_path , method: :delete , :class => "button" %>
+=======
+
+
+<% @page_title = "Home" %> <!--set the page title to home-->
+
+<% if !logged_in? %>
+<div class ="homebuttons">
+<%=button_to "SIGN UP" ,{:action => 'view_signup' , :controller => 'sessions'}, :class =>"button" %>
+<%=button_to "LOGIN" , {:action => 'view_signin' , :controller => 'sessions'}, :class =>"button"%>
+<%=button_to "BROWSE SHOPS", {:action => 'index' , :controller => 'shops'}, :class =>"button"%>
+</div>
+<%else%>
+<h2>WELCOME</h2> <%=@current_user.uname%>
+<br>
+<div class ="homebuttons">
+<%=button_to "Logout", {:action => 'logout' , :controller => 'sessions'} , method: :delete, :class => "button" %>
+>>>>>>> 9eb8d49f40f0a3c5332a5a5b3a218fa373904d29
 <%=button_to "BROWSE SHOPS", {:action => 'index' , :controller => 'shops'}, :class =>"button"%>
 <%end%>
 </div>

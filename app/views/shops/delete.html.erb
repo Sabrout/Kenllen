@@ -3,7 +3,11 @@
 <div class="shop delete">
 	<h2>Delete Shop "<%= @shop.shop_name %>" </h2>
 
+<<<<<<< HEAD
 	<%= form_for(:shop, :url => {:action => 'destroy', :id => @shop.id}) do |f| %>
+=======
+	<%= form_for(:shop, :url => {:action => 'destroy', :shop_id => @shop.shop_id}) do |f| %>
+>>>>>>> 9eb8d49f40f0a3c5332a5a5b3a218fa373904d29
 	<p>Are you sure you want to permanently delete this shop?</p>
 
 	<div class="form-buttons">

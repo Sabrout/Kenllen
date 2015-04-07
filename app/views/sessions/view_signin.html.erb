@@ -1,0 +1,149 @@
+ <% @page_title = "login" %> <!--to set the titel of the page-->
+ <!--this is the part where the animation effect on the word Knellen-->
+<style class = text> 
+#blurringTextG{
+width:100%;
+}
+
+.blurringTextG{
+color:transparent;
+;
+font-family:"Comic Sans MS", cursive, sans-serif;
+font-size:600%;
+text-decoration:none;
+font-weight:normal;
+font-style:normal;
+float:left;
+text-shadow: #000000 0 0 1px;
+-moz-animation-name:bounce_blurringTextG;
+-moz-animation-duration:10s;
+-moz-animation-iteration-count:1;
+-moz-animation-direction:linear;
+-webkit-animation-name:bounce_blurringTextG;
+-webkit-animation-duration:10s;
+-webkit-animation-iteration-count:1;
+-webkit-animation-direction:linear;
+-ms-animation-name:bounce_blurringTextG;
+-ms-animation-duration:10s;
+-ms-animation-iteration-count:1;
+-ms-animation-direction:linear;
+-o-animation-name:bounce_blurringTextG;
+-o-animation-duration:10s;
+-o-animation-iteration-count:1;
+-o-animation-direction:linear;
+animation-name:bounce_blurringTextG;
+animation-duration:10s;
+animation-iteration-count:1;
+animation-direction:linear;
+}
+
+@-moz-keyframes bounce_blurringTextG{
+0%{
+text-shadow: none;
+}
+
+50%{
+text-shadow: 000000 0 0 20px;
+}
+
+100%{
+text-shadow: #000000 0 0 0;
+}
+
+}
+
+@-webkit-keyframes bounce_blurringTextG{
+0%{
+text-shadow: none;
+}
+
+50%{
+text-shadow: 000000 0 0 20px;
+}
+
+100%{
+text-shadow: #000000 0 0 0;
+}
+
+}
+
+@-ms-keyframes bounce_blurringTextG{
+0%{
+text-shadow: none;
+}
+
+50%{
+text-shadow: 000000 0 0 20px;
+}
+
+100%{
+text-shadow: #000000 0 0 0;
+}
+
+}
+
+@-o-keyframes bounce_blurringTextG{
+0%{
+text-shadow: none;
+}
+
+50%{
+text-shadow: 000000 0 0 20px;
+}
+
+100%{
+text-shadow: #000000 0 0 0;
+}
+
+}
+
+@keyframes bounce_blurringTextG{
+0%{
+text-shadow: none;
+}
+
+50%{
+text-shadow: 000000 0 0 20px;
+}
+
+100%{
+text-shadow: #000000 0 0 0;
+}
+
+}
+
+</style>
+<h1>
+<div id="blurringTextG">
+<div id="blurringTextG_1" class="blurringTextG">K</div> 
+<div id="blurringTextG_2" class="blurringTextG">n</div>
+<div id="blurringTextG_3" class="blurringTextG">e</div>
+<div id="blurringTextG_4" class="blurringTextG">l</div>
+<div id="blurringTextG_5" class="blurringTextG">l</div>
+<div id="blurringTextG_6" class="blurringTextG">e</div>
+<div id="blurringTextG_7" class="blurringTextG">n</div>
+</h1> 
+<div class = 'card' id = "1">
+	
+
+<%= form_for :session , :url => {:action => 'login' , :controller => 'sessions'} do |f|  %> <!--to create the username field and passwordf field and the login button-->
+<!-- ,:url  => {:action => 'login'} -->
+	<div class = 'username'>
+		<%= f.label 'Username ' %>
+		<%= f.text_field :uname %>
+	</div>
+	<div class = 'password'>
+		<%= f.label 'password ' %>
+		<%= f.password_field :password %>
+	</div>
+		<%= f.check_box :remember_me %>
+		<%= f.submit 'Log In', :class => 'submit-button' %>
+
+
+
+<% end %>
+
+
+</div> 
+
+

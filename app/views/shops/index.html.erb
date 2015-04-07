@@ -12,6 +12,7 @@
   <div class = "page">
     <% @shops.each do |shop| %>
     <div class ="shop-card">
+<<<<<<< HEAD
       <div class = "shop">
       <img src="<%= shop.cover_url.to_s %>" style="width:200px;height:200px"></div>
       <div><%= shop.id %></div>
@@ -21,6 +22,16 @@
         <%= link_to("Show", {:action => 'show', :id => shop.id}, :class => 'actionshow') %> |
         <%= link_to("Edit", {:action => 'edit', :id => shop.id}, :class => 'actionedit') %> |
         <%= link_to("Delete", {:action => 'delete', :id => shop.id}, :class => 'actiondelete') %>      
+=======
+      <div class = "shop"><img href="" src="<%= shop.cover_url.to_s %>" style="width:100px;height:100px"></div>
+      <div><%= shop.shop_id %></div>
+      <div><%= shop.shop_name %></div>
+      <!-- <div><%= shop.shop_desc %></div> -->
+      <div class="actions">
+        <%= link_to("Show", {:action => 'show', :shop_id => shop.shop_id}, :class => 'actionshow') %> |
+        <%= link_to("Edit", {:action => 'edit', :shop_id => shop.shop_id}, :class => 'actionedit') %> |
+        <%= link_to("Delete", {:action => 'delete', :shop_id => shop.shop_id}, :class => 'actiondelete') %>      
+>>>>>>> 9eb8d49f40f0a3c5332a5a5b3a218fa373904d29
         </div>
     </div>
     <% end %>
