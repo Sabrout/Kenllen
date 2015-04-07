@@ -1,0 +1,245 @@
+<h2>Log in</h2>
+ <% @page_title = "login" %> <!--to set the titel of the page-->
+<style class = text> 
+#blurringTextG{
+width:100%;
+}
+
+.blurringTextG{
+color:transparent;
+;
+font-family:"Comic Sans MS", cursive, sans-serif;
+font-size:200%;
+text-decoration:none;
+font-weight:normal;
+font-style:normal;
+float:left;
+text-shadow: #000000 0 0 1px;
+-moz-animation-name:bounce_blurringTextG;
+-moz-animation-duration:10s;
+-moz-animation-iteration-count:1;
+-moz-animation-direction:linear;
+-webkit-animation-name:bounce_blurringTextG;
+-webkit-animation-duration:10s;
+-webkit-animation-iteration-count:1;
+-webkit-animation-direction:linear;
+-ms-animation-name:bounce_blurringTextG;
+-ms-animation-duration:10s;
+-ms-animation-iteration-count:1;
+-ms-animation-direction:linear;
+-o-animation-name:bounce_blurringTextG;
+-o-animation-duration:10s;
+-o-animation-iteration-count:1;
+-o-animation-direction:linear;
+animation-name:bounce_blurringTextG;
+animation-duration:10s;
+animation-iteration-count:1;
+animation-direction:linear;
+}
+
+@-moz-keyframes bounce_blurringTextG{
+0%{
+text-shadow: none;
+}
+
+50%{
+text-shadow: 000000 0 0 20px;
+}
+
+100%{
+text-shadow: #000000 0 0 0;
+}
+
+}
+
+@-webkit-keyframes bounce_blurringTextG{
+0%{
+text-shadow: none;
+}
+
+50%{
+text-shadow: 000000 0 0 20px;
+}
+
+100%{
+text-shadow: #000000 0 0 0;
+}
+
+}
+
+@-ms-keyframes bounce_blurringTextG{
+0%{
+text-shadow: none;
+}
+
+50%{
+text-shadow: 000000 0 0 20px;
+}
+
+100%{
+text-shadow: #000000 0 0 0;
+}
+
+}
+
+@-o-keyframes bounce_blurringTextG{
+0%{
+text-shadow: none;
+}
+
+50%{
+text-shadow: 000000 0 0 20px;
+}
+
+100%{
+text-shadow: #000000 0 0 0;
+}
+
+}
+
+@keyframes bounce_blurringTextG{
+0%{
+text-shadow: none;
+}
+
+50%{
+text-shadow: 000000 0 0 20px;
+}
+
+100%{
+text-shadow: #000000 0 0 0;
+}
+
+}
+
+</style>
+<body>
+<script>
+  // This is called with the results from from FB.getLoginStatus().
+  function statusChangeCallback(response) {
+    console.log('statusChangeCallback');
+    console.log(response);
+    // The response object is returned with a status field that lets the
+    // app know the current login status of the person.
+    // Full docs on the response object can be found in the documentation
+    // for FB.getLoginStatus().
+    if (response.status === 'connected') {
+      // Logged into your app and Facebook.
+      testAPI();
+    } else if (response.status === 'not_authorized') {
+      // The person is logged into Facebook, but not your app.
+      document.getElementById('status').innerHTML = 'Please log ' +
+        'into this app.';
+    } else {
+      // The person is not logged into Facebook, so we're not sure if
+      // they are logged into this app or not.
+      document.getElementById('status').innerHTML = 'Please log ' +
+        'into Facebook.';
+    }
+  }
+
+  // This function is called when someone finishes with the Login
+  // Button.  See the onlogin handler attached to it in the sample
+  // code below.
+  function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+      statusChangeCallback(response);
+    });
+  }
+  window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '1565520767049862',
+    cookie     : true,  // enable cookies to allow the server to access 
+                        // the session
+    xfbml      : true,  // parse social plugins on this page
+    version    : 'v2.2' // use version 2.2
+  });
+
+  // Now that we've initialized the JavaScript SDK, we call 
+  // FB.getLoginStatus().  This function gets the state of the
+  // person visiting this page and can return one of three states to
+  // the callback you provide.  They can be:
+  //
+  // 1. Logged into your app ('connected')
+  // 2. Logged into Facebook, but not your app ('not_authorized')
+  // 3. Not logged into Facebook and can't tell if they are logged into
+  //    your app or not.
+  //
+  // These three cases are handled in the callback function.
+
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  },{scope: 'public_profile,email'});
+
+  };
+
+  // Load the SDK asynchronously
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+
+  // Here we run a very simple test of the Graph API after login is
+  // successful.  See statusChangeCallback() for when this call is made.
+  function testAPI() {
+    console.log('Welcome!  Fetching your information.... ');
+    FB.api('/me', function(response) {
+      console.log('Successful login for: ' + response.name);
+      document.getElementById('status').innerHTML =
+        'Thanks for logging in, ' + response.name + '!';
+    });
+  }
+    function omar(){
+      // window.location.href = "http://localhost:3000";
+      }
+</script>
+<div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="true" data-auto-logout-link="false" onlogin=omar scope="public_profile,email"></div>
+<!--
+  Below we include the Login Button social plugin. This button uses
+  the JavaScript SDK to present a graphical Login button that triggers
+  the FB.login() function when clicked.
+-->
+<!-- 
+<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button> -->
+</body>
+<h1>
+<div id="blurringTextG">
+<div id="blurringTextG_1" class="blurringTextG">K</div> 
+<div id="blurringTextG_2" class="blurringTextG">n</div>
+<div id="blurringTextG_3" class="blurringTextG">e</div>
+<div id="blurringTextG_4" class="blurringTextG">l</div>
+<div id="blurringTextG_5" class="blurringTextG">l</div>
+<div id="blurringTextG_6" class="blurringTextG">e</div>
+<div id="blurringTextG_7" class="blurringTextG">n</div>
+</h1> 
+<div class = 'card' id = "1">
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <%=devise_error_messages!%>
+  <div class="field">
+    <%= f.label :Username %><br />
+    <%= f.text_field :uname, autofocus: true %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password %>
+  </div>
+
+  <% if devise_mapping.rememberable? -%>
+    <div class="field">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </div>
+  <% end -%>
+
+  <div class="actions">
+    <%= f.submit "Log in" ,:class => 'submit-button' %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+</div> 
