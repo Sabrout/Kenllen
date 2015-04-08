@@ -47,8 +47,12 @@
 }
 
 .cart_button{
-  background: url(cart.png) 3px 5px no-repeat;
-  background-size:cover
+  background: url(cart.png);
+  background-size: cover; 
+  width: 10%;
+  border-radius: 28px;
+  height: 25px;
+  clear:both;
 }
 
 .notice{
