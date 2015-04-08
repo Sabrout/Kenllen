@@ -1,5 +1,6 @@
 
 
+
 //Sabrout_Start
 
 // Search Bar
@@ -40,3 +41,14 @@ $(function()
  
 
 //Sabrout_End	
+
+ function test() {
+ 	var e = document.getElementById('desc');
+ 	if(e.className === 'invisible'){
+ 		e.className = 'shop-description';
+ 	}
+ 	else{
+	e.className = 'invisible';
+	}
+}
+

@@ -10,7 +10,7 @@ class ShopsController < ApplicationController
     @shop = Shop.find(params[:id])
     if !current_user.shops.include?(@shop)
     @current_user.followed_shops << @shop
-  end
+    end
     flash[:notice] = "You are now following '#{@shop.shop_name}.'"
     redirect_to(:action => 'show', :id => @shop.id)
   end
@@ -26,6 +26,7 @@ class ShopsController < ApplicationController
 
   def show
   	@shop = Shop.find(params[:id])
+
     @item = @shop.items
   end
 
@@ -74,22 +75,23 @@ class ShopsController < ApplicationController
     if current_user.shops.include?(@shop)
     else
     render 'index'
-  end
+    end
   end
 
   def destroy
     # Find an existing object and destroy it
+
     if current_user.shops.include?(shop)
     shop = Shop.find(params[:id]).destroy
     item = shop.items
     item.each do |item| 
     Item.destroy(item)
-  end
+    end
     flash[:notice] = "Shop '#{shop.shop_name}' deleted successfully."
     redirect_to(:action => 'index')
-  else 
+    else 
     render 'index'
-  end
+    end
   end
 
   # Mass assignement parameter

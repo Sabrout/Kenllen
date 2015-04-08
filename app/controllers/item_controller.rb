@@ -29,18 +29,19 @@ class ItemController < ApplicationController
       #if update fails, rerender the edit page for the use to correct the form
   		render('edit')
   	end
-  end
+    end
   end
 
   def new
     #Instantiate a new Item with default values
-    @item = Item.new(:item_name => 'default' , :price => 'default')
+  	@item = Item.new(:item_name => 'default' , :price => 'default')
     @shop = Shop.find(params[:id])
     @id = :id
   end
 
   def create
     #Instantiate a new Item using form parameters
+
     @item = Item.new(item_params)
     @shop = Shop.find(params[:id])
     if current_user.shops.include?(@shop)
@@ -48,12 +49,13 @@ class ItemController < ApplicationController
     if @item.save
       #if save succeeds redirect to the index action
       @shop.items << @item
+
       redirect_to({:controller => 'shops', :action => 'show', :id => @shop.id})
     else
       #if save fails rerender the new form for the user to correct the inputs
       render('new')
     end
-  end
+    end
   end
 
   def delete
@@ -66,7 +68,7 @@ class ItemController < ApplicationController
     if current_user.shops.include?(@shop)
     @item = Item.find(params[:item_id]).destroy
     redirect_to({:controller => 'shops', :action => 'show', :id => @shop.id})
-  end
+    end
   end
 
 private
@@ -76,4 +78,5 @@ private
     # - allows listed attributes to be mass assigned
 		params.require(:item).permit(:item_name, :price, :description, :inspiration)
 	end
+  
 end
