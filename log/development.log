@@ -31659,3 +31659,2974 @@ Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 a
 
 
 Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 12:49:01 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (30.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateShopsUsersJoin (20150404161751)
+  [1m[35m (5.0ms)[0m  BEGIN
+  [1m[36m (170.0ms)[0m  [1mCREATE TABLE "shops_users" ("user_id" integer, "shop_id" integer) [0m
+  [1m[35m (50.0ms)[0m  CREATE  INDEX  "index_shops_users_on_shop_id_and_user_id" ON "shops_users"  ("shop_id", "user_id")
+  [1m[36mSQL (10.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150404161751"]]
+  [1m[35m (15.0ms)[0m  COMMIT
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (5.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'items'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (5.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'shops'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (5.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'shops_users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (5.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/" for ::1 at 2015-04-08 16:12:15 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (3.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 474ms (Views: 354.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 16:12:18 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-08 16:12:18 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 16:12:18 +0200
+
+
+Started GET "/assets/shops-859225e41dcecb27997b2225d5773bf9.css?body=1" for ::1 at 2015-04-08 16:12:18 +0200
+
+
+Started GET "/assets/application-2302c59d09bbc58ac002b348f2eb08c6.css?body=1" for ::1 at 2015-04-08 16:12:18 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 16:16:19 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 58ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-1e30fc88c05bc633b7a6d447dcac4ce2.css?body=1" for ::1 at 2015-04-08 16:16:21 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 16:16:21 +0200
+
+
+Started GET "/assets/logo.png" for ::1 at 2015-04-08 16:16:21 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 16:16:21 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 16:24:34 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-78f4e9de0d9103c65b34a2ed3df6ace7.css?body=1" for ::1 at 2015-04-08 16:24:35 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 16:24:35 +0200
+
+
+Started GET "/assets/logo.png" for ::1 at 2015-04-08 16:24:35 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 16:24:35 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 16:24:51 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 26ms (Views: 26.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-ed354ce8a0d454d992304dc409c19073.css?body=1" for ::1 at 2015-04-08 16:24:52 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 16:24:52 +0200
+
+
+Started GET "/assets/logo.png" for ::1 at 2015-04-08 16:24:52 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 16:24:52 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 16:25:09 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logo.png" for ::1 at 2015-04-08 16:25:09 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 16:25:09 +0200
+
+
+Started GET "/assets/application-2ec0de00c1691b365aad5bda0e78d98c.css?body=1" for ::1 at 2015-04-08 16:25:09 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 16:25:09 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 16:25:27 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 58ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logo.png" for ::1 at 2015-04-08 16:25:28 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 16:25:28 +0200
+
+
+Started GET "/assets/application-af6e08437d7fe13919044f8f2726b24b.css?body=1" for ::1 at 2015-04-08 16:25:28 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 16:25:28 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 16:26:04 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-e10d7784d94c8b53436dde1d9ddb3893.css?body=1" for ::1 at 2015-04-08 16:26:05 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 16:26:05 +0200
+
+
+Started GET "/assets/logo.png" for ::1 at 2015-04-08 16:26:05 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 16:26:05 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 16:27:31 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-b24aacb9cbf4f42d18341bf096d032ad.css?body=1" for ::1 at 2015-04-08 16:27:31 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 16:27:31 +0200
+
+
+Started GET "/assets/logo.png" for ::1 at 2015-04-08 16:27:31 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 16:27:31 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 16:27:48 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 30ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-357d69b6907e5702e5423a761d51cf93.css?body=1" for ::1 at 2015-04-08 16:27:48 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 16:27:48 +0200
+
+
+Started GET "/assets/logo.png" for ::1 at 2015-04-08 16:27:48 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 16:27:48 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 16:28:27 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logo.png" for ::1 at 2015-04-08 16:28:28 +0200
+
+
+Started GET "/assets/application-b24aacb9cbf4f42d18341bf096d032ad.css?body=1" for ::1 at 2015-04-08 16:28:28 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 16:28:28 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 16:28:28 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 16:34:46 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-1217492fd29d16b6d598d2afcfe7b7de.css?body=1" for ::1 at 2015-04-08 16:34:47 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 16:34:47 +0200
+
+
+Started GET "/assets/logo.png" for ::1 at 2015-04-08 16:34:47 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 16:34:47 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 16:35:55 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 24ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-aedebe477a93bbef24ef19386b574077.css?body=1" for ::1 at 2015-04-08 16:35:56 +0200
+
+
+Started GET "/assets/logo.png" for ::1 at 2015-04-08 16:35:56 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 16:35:56 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 16:35:56 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 16:39:12 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 27ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-b24aacb9cbf4f42d18341bf096d032ad.css?body=1" for ::1 at 2015-04-08 16:39:12 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 16:39:12 +0200
+
+
+Started GET "/assets/logo.png" for ::1 at 2015-04-08 16:39:12 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 16:39:12 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 16:39:22 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 16:39:22 +0200
+
+
+Started GET "/assets/logo.png" for ::1 at 2015-04-08 16:39:22 +0200
+
+
+Started GET "/assets/application-b24aacb9cbf4f42d18341bf096d032ad.css?body=1" for ::1 at 2015-04-08 16:39:22 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 16:39:22 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 16:39:25 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logo.png" for ::1 at 2015-04-08 16:39:25 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 16:39:25 +0200
+
+
+Started GET "/assets/application-b24aacb9cbf4f42d18341bf096d032ad.css?body=1" for ::1 at 2015-04-08 16:39:25 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 16:39:25 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 16:39:49 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-b24aacb9cbf4f42d18341bf096d032ad.css?body=1" for ::1 at 2015-04-08 16:39:50 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 16:39:50 +0200
+
+
+Started GET "/assets/logo.png" for ::1 at 2015-04-08 16:39:50 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 16:39:50 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 16:45:27 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 23ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-b24aacb9cbf4f42d18341bf096d032ad.css?body=1" for ::1 at 2015-04-08 16:45:27 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 16:45:27 +0200
+
+
+Started GET "/images/assets/logo.png" for ::1 at 2015-04-08 16:45:27 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/assets/logo.png"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.0) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (63.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (136.1ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (34.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (81.1ms)
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 16:45:28 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 16:45:31 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-b24aacb9cbf4f42d18341bf096d032ad.css?body=1" for ::1 at 2015-04-08 16:45:31 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 16:45:31 +0200
+
+
+Started GET "/images/assets/logo.png" for ::1 at 2015-04-08 16:45:31 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/assets/logo.png"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.0) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (47.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (30.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (67.1ms)
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 16:45:31 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 16:47:33 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-b24aacb9cbf4f42d18341bf096d032ad.css?body=1" for ::1 at 2015-04-08 16:47:34 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 16:47:34 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 16:47:34 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 16:47:34 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 16:47:36 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 16:47:36 +0200
+
+
+Started GET "/assets/application-b24aacb9cbf4f42d18341bf096d032ad.css?body=1" for ::1 at 2015-04-08 16:47:36 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 16:47:36 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 16:47:37 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-b24aacb9cbf4f42d18341bf096d032ad.css?body=1" for ::1 at 2015-04-08 16:47:37 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 16:47:37 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 16:47:37 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 17:06:58 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-b24aacb9cbf4f42d18341bf096d032ad.css?body=1" for ::1 at 2015-04-08 17:06:59 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 17:06:59 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 17:06:59 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 17:07:22 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 35ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-d20501e9c3d09dc31a92a02327a1bc46.css?body=1" for ::1 at 2015-04-08 17:07:23 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 17:07:23 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 17:07:23 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 17:07:23 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 17:07:30 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 17:07:31 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 17:07:31 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 17:07:31 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 17:08:50 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 26ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-4ffb236a1d319cbfa97c66d3c86fa89f.css?body=1" for ::1 at 2015-04-08 17:08:51 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 17:08:51 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 17:08:51 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 17:08:51 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 17:49:47 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-4ffb236a1d319cbfa97c66d3c86fa89f.css?body=1" for ::1 at 2015-04-08 17:49:49 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 17:49:49 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 17:49:49 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 17:49:49 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 17:49:55 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-08 17:50:11 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-4ffb236a1d319cbfa97c66d3c86fa89f.css?body=1" for ::1 at 2015-04-08 17:50:12 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 17:50:12 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 17:50:12 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 17:50:12 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 17:50:23 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-4ffb236a1d319cbfa97c66d3c86fa89f.css?body=1" for ::1 at 2015-04-08 17:50:23 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 17:50:23 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 17:50:23 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 17:50:23 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-08 17:51:05 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mShop Load (61.9ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (65.9ms)
+Completed 200 OK in 100ms (Views: 20.0ms | ActiveRecord: 62.9ms)
+
+
+Started GET "/assets/application-4ffb236a1d319cbfa97c66d3c86fa89f.css?body=1" for ::1 at 2015-04-08 17:51:06 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 17:51:06 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 17:51:06 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 17:51:06 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-08 17:51:31 +0200
+Processing by ShopsController#index as HTML
+  [1m[36mShop Load (1.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 44ms
+
+ActionView::Template::Error (undefined local variable or method `shops_path' for #<#<Class:0x00000006b90e00>:0x0000000b9a2288>):
+    19:         <div class="nav-bar ">
+    20:         	<%= link_to(image_tag("logo.png"), root_path, :class => 'logo') %>
+    21:           	<%= link_to("Home", root_path, :class => 'toggle-search') %>
+    22:           	<%= link_to("Shops", shops_path, :class => 'toggle-search') %>
+    23:           	<a href="#" class="toggle-search">Shops</a>
+    24:           	<a href="#" class="toggle-search">About Us</a>
+    25:         	<a href="javascript:;" class="toggle-search">Search</a>
+  app/views/layouts/application.html.erb:22:in `_app_views_layouts_application_html_erb___1786832682_97432020'
+
+
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (31.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (67.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-08 17:52:38 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 39ms
+
+ActionView::Template::Error (undefined local variable or method `shops_path' for #<#<Class:0x0000000b7c5898>:0x0000000bdf3f30>):
+    19:         <div class="nav-bar ">
+    20:         	<%= link_to(image_tag("logo.png"), root_path, :class => 'logo') %>
+    21:           	<%= link_to("Home", root_path, :class => 'toggle-search') %>
+    22:           	<%= link_to("Shops", shops_path, :class => 'toggle-search') %>
+    23:           	<a href="#" class="toggle-search">Shops</a>
+    24:           	<a href="#" class="toggle-search">About Us</a>
+    25:         	<a href="javascript:;" class="toggle-search">Search</a>
+  app/views/layouts/application.html.erb:22:in `_app_views_layouts_application_html_erb___1786832682_97432020'
+
+
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (38.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (33.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (73.1ms)
+
+
+Started GET "/" for ::1 at 2015-04-08 17:52:48 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-4ffb236a1d319cbfa97c66d3c86fa89f.css?body=1" for ::1 at 2015-04-08 17:52:48 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 17:52:49 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 17:52:49 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 17:52:49 +0200
+
+
+Started POST "/shops" for ::1 at 2015-04-08 17:52:53 +0200
+Processing by ShopsController#index as HTML
+  Parameters: {"authenticity_token"=>"fHne4zwRXinheG3eEl8AX+bMAlvOqFUeVdw0bEptV1P/WYM4Iuc4LmwSEEoig67tBt0l6hMbW8Abjqm8+B/b2g=="}
+  [1m[35mShop Load (1.0ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application-4ffb236a1d319cbfa97c66d3c86fa89f.css?body=1" for ::1 at 2015-04-08 17:52:54 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 17:52:54 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 17:52:54 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 17:52:54 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 17:54:05 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 27ms (Views: 25.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-4ffb236a1d319cbfa97c66d3c86fa89f.css?body=1" for ::1 at 2015-04-08 17:54:05 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 17:54:05 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 17:54:05 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 17:54:05 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 17:55:40 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-218a514c618853f9937fdf6679fda989.css?body=1" for ::1 at 2015-04-08 17:55:41 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 17:55:41 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 17:55:41 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 17:55:41 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-08 17:55:52 +0200
+Processing by ShopsController#index as HTML
+  [1m[36mShop Load (1.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 96ms (Views: 92.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 17:55:52 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 17:55:52 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 17:55:53 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-08 17:56:43 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mShop Load (1.0ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application-9721bc4cd15ba8d1352616bbc77313a6.css?body=1" for ::1 at 2015-04-08 17:56:44 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 17:56:44 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 17:56:44 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 17:56:44 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 17:56:49 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 46ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 17:56:49 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 17:56:49 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 17:56:49 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-08 17:56:50 +0200
+Processing by ShopsController#index as HTML
+  [1m[36mShop Load (1.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 55ms (Views: 51.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 17:56:50 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 17:56:50 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 17:56:50 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 17:56:51 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 55ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 17:56:51 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 17:56:51 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 17:56:51 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 17:56:55 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 17:56:55 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 17:56:55 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 17:56:55 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-08 17:56:56 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mShop Load (2.0ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 53ms (Views: 48.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 17:56:56 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 17:56:56 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 17:56:56 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-08 17:57:12 +0200
+Processing by ShopsController#index as HTML
+  [1m[36mShop Load (1.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 65ms (Views: 62.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 17:57:13 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 17:57:13 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 17:57:13 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 17:57:13 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 51ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 17:57:14 +0200
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 17:57:14 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 17:57:14 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 17:59:19 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 39ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 17:59:19 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 17:59:20 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 17:59:20 +0200
+
+
+Started GET "/users/sign_up" for ::1 at 2015-04-08 17:59:30 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 65ms (Views: 38.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 17:59:32 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 17:59:32 +0200
+
+
+Started GET "/users/assets/HomeImage.jpg" for ::1 at 2015-04-08 17:59:32 +0200
+
+ActionController::RoutingError (No route matches [GET] "/users/assets/HomeImage.jpg"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.0) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (74.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (35.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (73.1ms)
+
+
+Started GET "/signin" for ::1 at 2015-04-08 18:00:55 +0200
+
+ActionController::RoutingError (No route matches [GET] "/signin"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.0) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (48.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (29.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (66.0ms)
+
+
+Started GET "/signup" for ::1 at 2015-04-08 18:01:09 +0200
+
+ActionController::RoutingError (No route matches [GET] "/signup"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.0) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (42.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (35.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (69.0ms)
+
+
+Started GET "/sign_in" for ::1 at 2015-04-08 18:01:33 +0200
+
+ActionController::RoutingError (No route matches [GET] "/sign_in"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.0) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (43.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (34.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (68.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-04-08 18:01:57 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (159.7ms)
+Completed 200 OK in 190ms (Views: 188.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 18:01:59 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 18:01:59 +0200
+
+
+Started GET "/users/assets/HomeImage.jpg" for ::1 at 2015-04-08 18:01:59 +0200
+
+ActionController::RoutingError (No route matches [GET] "/users/assets/HomeImage.jpg"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.0) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (59.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (43.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (93.1ms)
+
+
+Started GET "/" for ::1 at 2015-04-08 18:23:19 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 43ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-d5cc13d54454c862f75eb08a64564669.js?body=1" for ::1 at 2015-04-08 18:23:20 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 18:23:20 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 18:23:20 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 18:47:33 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 65ms
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( jquery-1.11.0.min.js )` to `config/initializers/assets.rb` and restart your server):
+     5:   <%=javascript_include_tag "http://codepen.io/assets/libs/fullpage/jquery.js"%>
+     6:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+     7:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true  %>
+     8:   <%= javascript_include_tag 'jquery-1.11.0.min', 'data-turbolinks-track' => true  %>
+     9:   <%= javascript_include_tag 'jquery.leanModal.min', 'data-turbolinks-track' => true  %>
+    10: </head>
+    11: <body>
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___1786832682_95376320'
+
+
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (34.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (30.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (70.1ms)
+
+
+Started GET "/" for ::1 at 2015-04-08 18:50:04 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 39ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-2102e500d0c38fde512eef913b909b59.css?body=1" for ::1 at 2015-04-08 18:50:06 +0200
+
+
+Started GET "/assets/application-7a3f0ab043be65829871aaddc71e9bd3.js?body=1" for ::1 at 2015-04-08 18:50:06 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 18:50:06 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 18:50:06 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 18:52:58 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 50ms
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( jquerymin.js )` to `config/initializers/assets.rb` and restart your server):
+     5:   <%=javascript_include_tag "http://codepen.io/assets/libs/fullpage/jquery.js"%>
+     6:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+     7:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true  %>
+     8:   <%= javascript_include_tag 'jquerymin', 'data-turbolinks-track' => true  %>
+     9:   <%= javascript_include_tag 'jqueryleanModal', 'data-turbolinks-track' => true  %>
+    10: </head>
+    11: <body>
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___1786832682_113528880'
+
+
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (36.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (33.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (74.1ms)
+
+
+Started GET "/" for ::1 at 2015-04-08 18:53:22 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( jquerymin.js )` to `config/initializers/assets.rb` and restart your server):
+     5:   <%=javascript_include_tag "http://codepen.io/assets/libs/fullpage/jquery.js"%>
+     6:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+     7:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true  %>
+     8:   <%= javascript_include_tag 'jquerymin.js', 'data-turbolinks-track' => true  %>
+     9:   <%= javascript_include_tag 'jqueryleanModal', 'data-turbolinks-track' => true  %>
+    10: </head>
+    11: <body>
+  app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___1786832682_67642220'
+
+
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (34.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (74.1ms)
+
+
+Started GET "/" for ::1 at 2015-04-08 19:14:34 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 55ms
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( jquerymin.js )` to `config/initializers/assets.rb` and restart your server):
+     6:   <%= stylesheet_link_tag "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" %>
+     7:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+     8:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true  %>
+     9:   <%= javascript_include_tag 'jquerymin', 'data-turbolinks-track' => true  %>
+    10:   <%= javascript_include_tag 'jqueryleanModal', 'data-turbolinks-track' => true  %>
+    11: </head>
+    12: <body>
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___1786832682_113461120'
+
+
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (35.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (35.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (84.1ms)
+
+
+Started GET "/" for ::1 at 2015-04-08 19:24:36 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 26ms
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( jquerymin.js )` to `config/initializers/assets.rb` and restart your server):
+     6:   <%= stylesheet_link_tag "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" %>
+     7:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+     8:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true  %>
+     9:   <%= javascript_include_tag 'jquerymin', 'data-turbolinks-track' => true  %>
+    10:   <%= javascript_include_tag 'jqueryleanModal', 'data-turbolinks-track' => true  %>
+    11: </head>
+    12: <body>
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___1786832682_113461120'
+
+
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (35.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (38.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (85.1ms)
+
+
+Started GET "/" for ::1 at 2015-04-08 19:28:02 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (Asset filtered out and will not be served: add `Rails.application.config.assets.precompile += %w( jquerymin.js )` to `config/initializers/assets.rb` and restart your server):
+     6:   <%= stylesheet_link_tag "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" %>
+     7:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+     8:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true  %>
+     9:   <%= javascript_include_tag 'jquerymin', 'data-turbolinks-track' => true  %>
+    10:   <%= javascript_include_tag 'jqueryleanModal', 'data-turbolinks-track' => true  %>
+    11: </head>
+    12: <body>
+  app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb___1786832682_113461120'
+
+
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (34.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (78.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-08 19:31:39 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (3.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 136ms (Views: 100.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-13c170f2847dd51cee1a438a14c78747.css?body=1" for ::1 at 2015-04-08 19:31:41 +0200
+
+
+Started GET "/assets/application-95e96822403454fcde362c18919fd6c7.js?body=1" for ::1 at 2015-04-08 19:31:41 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 19:31:41 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 19:31:41 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 19:31:41 +0200
+
+
+Started GET "/assets/HomeImage.jpg" for ::1 at 2015-04-08 19:31:41 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 19:37:03 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-13c170f2847dd51cee1a438a14c78747.css?body=1" for ::1 at 2015-04-08 19:37:03 +0200
+
+
+Started GET "/assets/application-95e96822403454fcde362c18919fd6c7.js?body=1" for ::1 at 2015-04-08 19:37:03 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 19:37:03 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 19:37:03 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 19:37:03 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 19:37:45 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 87ms (Views: 87.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-13c170f2847dd51cee1a438a14c78747.css?body=1" for ::1 at 2015-04-08 19:37:46 +0200
+
+
+Started GET "/assets/application-ea52f9f75dec48524c25ad4a23bf164f.js?body=1" for ::1 at 2015-04-08 19:37:46 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 19:37:46 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 19:37:46 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 19:37:46 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 19:39:03 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 57ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-13c170f2847dd51cee1a438a14c78747.css?body=1" for ::1 at 2015-04-08 19:39:03 +0200
+
+
+Started GET "/assets/application-c9b5ecf65723486f2b906b727f8d5480.js?body=1" for ::1 at 2015-04-08 19:39:03 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 19:39:04 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 19:39:04 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 19:39:04 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 19:40:17 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-13c170f2847dd51cee1a438a14c78747.css?body=1" for ::1 at 2015-04-08 19:40:18 +0200
+
+
+Started GET "/assets/application-c9b5ecf65723486f2b906b727f8d5480.js?body=1" for ::1 at 2015-04-08 19:40:18 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 19:40:18 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 19:40:18 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 19:40:18 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 19:40:36 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-13c170f2847dd51cee1a438a14c78747.css?body=1" for ::1 at 2015-04-08 19:40:37 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 19:40:37 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 19:40:37 +0200
+
+
+Started GET "/assets/application-c9b5ecf65723486f2b906b727f8d5480.js?body=1" for ::1 at 2015-04-08 19:40:37 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 19:40:37 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 19:44:04 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 34ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-c9b5ecf65723486f2b906b727f8d5480.js?body=1" for ::1 at 2015-04-08 19:44:05 +0200
+
+
+Started GET "/assets/application-13c170f2847dd51cee1a438a14c78747.css?body=1" for ::1 at 2015-04-08 19:44:05 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 19:44:05 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 19:44:05 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 19:44:05 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 19:49:00 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 168ms (Views: 166.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-4452e2fd90bdcd36bde814d1aceed36b.js?body=1" for ::1 at 2015-04-08 19:49:01 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 19:49:01 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 19:49:01 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 19:49:01 +0200
+
+
+Started GET "/assets/application-13c170f2847dd51cee1a438a14c78747.css?body=1" for ::1 at 2015-04-08 19:49:01 +0200
+
+
+Started GET "/users/sign_in" for ::1 at 2015-04-08 19:49:16 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (8.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (64.1ms)
+Completed 200 OK in 129ms (Views: 108.1ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-08 19:49:24 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 58ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-13c170f2847dd51cee1a438a14c78747.css?body=1" for ::1 at 2015-04-08 19:49:24 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 19:49:24 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 19:49:24 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 19:49:24 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 19:52:28 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 19:52:29 +0200
+
+
+Started GET "/assets/application-13c170f2847dd51cee1a438a14c78747.css?body=1" for ::1 at 2015-04-08 19:52:29 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 19:52:29 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 19:52:29 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 19:56:05 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 40ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 19:56:06 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 19:56:20 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 63ms (Views: 62.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-4452e2fd90bdcd36bde814d1aceed36b.js?body=1" for ::1 at 2015-04-08 19:56:20 +0200
+
+
+Started GET "/assets/application-13c170f2847dd51cee1a438a14c78747.css?body=1" for ::1 at 2015-04-08 19:56:20 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 19:56:20 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 19:56:20 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 19:56:20 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 20:02:42 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 517ms
+
+ActionView::Template::Error (SyntaxError: [stdin]:5:2: regular expressions cannot begin with *
+  (in D:/Program/Scratch Folder/Knellen/app/assets/javascripts/shops.coffee)):
+    4:   <title>Knellen</title>
+    5:   <%= javascript_include_tag "http://codepen.io/assets/libs/fullpage/jquery.js"%>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true  %>
+    7:   <%= javascript_include_tag 'shops', 'data-turbolinks-track' => true  %>
+    8:   <%= javascript_include_tag 'jquerymin', 'data-turbolinks-track' => true  %>
+    9:   <%= javascript_include_tag 'jqueryleanModal', 'data-turbolinks-track' => true  %>
+   10:   <%= stylesheet_link_tag "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" %>
+  app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___1745291898_108579080'
+
+
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (49.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (32.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (76.1ms)
+
+
+Started GET "/" for ::1 at 2015-04-08 20:03:03 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 76ms (Views: 76.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-4452e2fd90bdcd36bde814d1aceed36b.js?body=1" for ::1 at 2015-04-08 20:03:05 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 20:03:05 +0200
+
+
+Started GET "/javascripts/shops/coffee.js" for ::1 at 2015-04-08 20:03:05 +0200
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/shops/coffee.js"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.0) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (72.1ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (43.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (94.1ms)
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 20:03:05 +0200
+
+
+Started GET "/assets/application-13c170f2847dd51cee1a438a14c78747.css?body=1" for ::1 at 2015-04-08 20:03:05 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 20:03:05 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 20:03:23 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 57ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-4452e2fd90bdcd36bde814d1aceed36b.js?body=1" for ::1 at 2015-04-08 20:03:24 +0200
+
+
+Started GET "/javascripts/shops.coffee.js" for ::1 at 2015-04-08 20:03:24 +0200
+
+ActionController::RoutingError (No route matches [GET] "/javascripts/shops.coffee.js"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.0) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (87.1ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (52.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (105.1ms)
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 20:03:24 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 20:03:24 +0200
+
+
+Started GET "/assets/logo-545bd23c4d3d3ea03bfaf036a9dd03cf.png" for ::1 at 2015-04-08 20:03:24 +0200
+
+
+Started GET "/assets/application-13c170f2847dd51cee1a438a14c78747.css?body=1" for ::1 at 2015-04-08 20:03:24 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 20:24:41 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 159ms (Views: 82.1ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/application-4452e2fd90bdcd36bde814d1aceed36b.js?body=1" for ::1 at 2015-04-08 20:24:42 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 20:24:42 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 20:24:42 +0200
+
+
+Started GET "/assets/application-13c170f2847dd51cee1a438a14c78747.css?body=1" for ::1 at 2015-04-08 20:24:42 +0200
+
+
+Started GET "/images/logo.png" for ::1 at 2015-04-08 20:24:42 +0200
+
+ActionController::RoutingError (No route matches [GET] "/images/logo.png"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.0) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (87.1ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (145.1ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (47.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (85.1ms)
+
+
+Started GET "/" for ::1 at 2015-04-08 20:25:18 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 40ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-4452e2fd90bdcd36bde814d1aceed36b.js?body=1" for ::1 at 2015-04-08 20:25:18 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 20:25:18 +0200
+
+
+Started GET "/assets/application-13c170f2847dd51cee1a438a14c78747.css?body=1" for ::1 at 2015-04-08 20:25:18 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 20:25:18 +0200
+
+
+Started GET "/assets/logo-cf298352c87c38e5f51c5b5caf4dff8f.png" for ::1 at 2015-04-08 20:25:18 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 20:25:58 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 43ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-4452e2fd90bdcd36bde814d1aceed36b.js?body=1" for ::1 at 2015-04-08 20:25:58 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 20:25:58 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 20:25:58 +0200
+
+
+Started GET "/assets/application-b77835b7d05c5abe6f5b03666b7b09df.css?body=1" for ::1 at 2015-04-08 20:25:58 +0200
+
+
+Started GET "/assets/logo-cf298352c87c38e5f51c5b5caf4dff8f.png" for ::1 at 2015-04-08 20:25:58 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 20:26:06 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 52ms (Views: 47.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 20:26:07 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 20:26:07 +0200
+
+
+Started GET "/assets/application-4452e2fd90bdcd36bde814d1aceed36b.js?body=1" for ::1 at 2015-04-08 20:26:07 +0200
+
+
+Started GET "/assets/application-e44ed8e60e214ee2d973e8519d87968e.css?body=1" for ::1 at 2015-04-08 20:26:07 +0200
+
+
+Started GET "/assets/logo-cf298352c87c38e5f51c5b5caf4dff8f.png" for ::1 at 2015-04-08 20:26:07 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 20:28:50 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 41ms (Views: 38.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application-4452e2fd90bdcd36bde814d1aceed36b.js?body=1" for ::1 at 2015-04-08 20:28:50 +0200
+
+
+Started GET "/assets/application-e44ed8e60e214ee2d973e8519d87968e.css?body=1" for ::1 at 2015-04-08 20:28:50 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 20:28:50 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 20:28:50 +0200
+
+
+Started GET "/assets/logo-fc738342ca9a95a97119be1404fdf11b.png" for ::1 at 2015-04-08 20:28:50 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 20:29:24 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 51ms (Views: 45.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application-4452e2fd90bdcd36bde814d1aceed36b.js?body=1" for ::1 at 2015-04-08 20:29:24 +0200
+
+
+Started GET "/assets/application-e44ed8e60e214ee2d973e8519d87968e.css?body=1" for ::1 at 2015-04-08 20:29:24 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 20:29:24 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 20:29:24 +0200
+
+
+Started GET "/assets/logo-e307d3004624add13b3090a3131e13f1.png" for ::1 at 2015-04-08 20:29:24 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 20:30:35 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 58ms (Views: 55.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application-4452e2fd90bdcd36bde814d1aceed36b.js?body=1" for ::1 at 2015-04-08 20:30:36 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 20:30:36 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 20:30:36 +0200
+
+
+Started GET "/assets/application-fb546e3f9919aed3761896343616a50f.css?body=1" for ::1 at 2015-04-08 20:30:36 +0200
+
+
+Started GET "/assets/logo-e307d3004624add13b3090a3131e13f1.png" for ::1 at 2015-04-08 20:30:36 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 20:31:12 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 59ms (Views: 55.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-4452e2fd90bdcd36bde814d1aceed36b.js?body=1" for ::1 at 2015-04-08 20:31:13 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 20:31:13 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 20:31:13 +0200
+
+
+Started GET "/assets/application-748b20ba6880e723a4465fd5a797db6d.css?body=1" for ::1 at 2015-04-08 20:31:13 +0200
+
+
+Started GET "/assets/logo-e307d3004624add13b3090a3131e13f1.png" for ::1 at 2015-04-08 20:31:13 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 20:31:58 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 67ms (Views: 57.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application-4452e2fd90bdcd36bde814d1aceed36b.js?body=1" for ::1 at 2015-04-08 20:31:59 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 20:31:59 +0200
+
+
+Started GET "/assets/application-748b20ba6880e723a4465fd5a797db6d.css?body=1" for ::1 at 2015-04-08 20:31:59 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 20:31:59 +0200
+
+
+Started GET "/assets/logo-8a536b1dd487ce52798e62323377500e.png" for ::1 at 2015-04-08 20:31:59 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 20:33:12 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 47ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-4452e2fd90bdcd36bde814d1aceed36b.js?body=1" for ::1 at 2015-04-08 20:33:13 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 20:33:13 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 20:33:13 +0200
+
+
+Started GET "/assets/application-be9bc9f7a8dc96ba83d57d4b9ab6f89b.css?body=1" for ::1 at 2015-04-08 20:33:13 +0200
+
+
+Started GET "/assets/logo-8a536b1dd487ce52798e62323377500e.png" for ::1 at 2015-04-08 20:33:13 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 20:33:36 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 43ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 20:33:37 +0200
+
+
+Started GET "/assets/application-4452e2fd90bdcd36bde814d1aceed36b.js?body=1" for ::1 at 2015-04-08 20:33:37 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 20:33:37 +0200
+
+
+Started GET "/assets/application-be9bc9f7a8dc96ba83d57d4b9ab6f89b.css?body=1" for ::1 at 2015-04-08 20:33:37 +0200
+
+
+Started GET "/assets/logo-c010497839266f2bdbe3e95173676681.png" for ::1 at 2015-04-08 20:33:37 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 20:34:15 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 55ms (Views: 49.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application-4452e2fd90bdcd36bde814d1aceed36b.js?body=1" for ::1 at 2015-04-08 20:34:16 +0200
+
+
+Started GET "/assets/application-be9bc9f7a8dc96ba83d57d4b9ab6f89b.css?body=1" for ::1 at 2015-04-08 20:34:16 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 20:34:16 +0200
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 20:34:16 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 20:34:16 +0200
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-04-08 20:39:50 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JoZaYPxfyQNgoUXtRvCtyUkKPUV9YZYe+mE9ZZBIlQilpge74qmvBO3LOHl2LAN7qRsa9KDSmMC0M6C1IjoZgQ=="}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (1.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 67ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-08 20:39:51 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 37ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-4452e2fd90bdcd36bde814d1aceed36b.js?body=1" for ::1 at 2015-04-08 20:39:52 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 20:39:52 +0200
+
+
+Started GET "/assets/application-be9bc9f7a8dc96ba83d57d4b9ab6f89b.css?body=1" for ::1 at 2015-04-08 20:39:52 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 20:39:52 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-08 20:40:23 +0200
+Processing by ShopsController#index as HTML
+  [1m[36mShop Load (5.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 165ms (Views: 125.1ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/assets/application-4452e2fd90bdcd36bde814d1aceed36b.js?body=1" for ::1 at 2015-04-08 20:40:25 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 20:40:25 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 20:40:25 +0200
+
+
+Started GET "/assets/application-be9bc9f7a8dc96ba83d57d4b9ab6f89b.css?body=1" for ::1 at 2015-04-08 20:40:25 +0200
+
+
+Started GET "/uploads/shop/cover/1/aB3L2P1_460s.jpg" for ::1 at 2015-04-08 20:40:25 +0200
+
+ActionController::RoutingError (No route matches [GET] "/uploads/shop/cover/1/aB3L2P1_460s.jpg"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.0) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (70.1ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (3.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (64.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (117.1ms)
+
+
+Started GET "/shops/show/1" for ::1 at 2015-04-08 20:40:35 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShop Load (1.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (2.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."shop_id" = $1  [["shop_id", 1]]
+  Rendered shops/show.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 83ms (Views: 48.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 20:40:37 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 20:40:37 +0200
+
+
+Started GET "/assets/application-be9bc9f7a8dc96ba83d57d4b9ab6f89b.css?body=1" for ::1 at 2015-04-08 20:40:37 +0200
+
+
+Started GET "/uploads/shop/cover/1/aB3L2P1_460s.jpg" for ::1 at 2015-04-08 20:40:37 +0200
+
+ActionController::RoutingError (No route matches [GET] "/uploads/shop/cover/1/aB3L2P1_460s.jpg"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.0) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (49.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (35.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (77.1ms)
+
+
+Started GET "/assets/application-4452e2fd90bdcd36bde814d1aceed36b.js?body=1" for ::1 at 2015-04-08 20:40:37 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 20:40:43 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 56ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 20:40:44 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 20:40:44 +0200
+
+
+Started GET "/assets/application-4452e2fd90bdcd36bde814d1aceed36b.js?body=1" for ::1 at 2015-04-08 20:40:44 +0200
+
+
+Started GET "/assets/application-be9bc9f7a8dc96ba83d57d4b9ab6f89b.css?body=1" for ::1 at 2015-04-08 20:40:44 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 20:49:19 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 59ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-028fda9aa467accaa5df57b63a9948d7.js?body=1" for ::1 at 2015-04-08 20:49:21 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 20:49:21 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 20:49:21 +0200
+
+
+Started GET "/assets/application-d93ce2ddd59227a0b8ad94c763a3c8b9.css?body=1" for ::1 at 2015-04-08 20:49:21 +0200
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 20:49:21 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 20:49:40 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 53ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 20:49:42 +0200
+
+
+Started GET "/assets/application-028fda9aa467accaa5df57b63a9948d7.js?body=1" for ::1 at 2015-04-08 20:49:42 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 20:49:42 +0200
+
+
+Started GET "/assets/application-984e4ea8258ac3df023a18f6af87a7df.css?body=1" for ::1 at 2015-04-08 20:49:42 +0200
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 20:49:42 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 20:53:50 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 41ms (Views: 41.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-028fda9aa467accaa5df57b63a9948d7.js?body=1" for ::1 at 2015-04-08 20:53:52 +0200
+
+
+Started GET "/assets/application-984e4ea8258ac3df023a18f6af87a7df.css?body=1" for ::1 at 2015-04-08 20:53:52 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 20:53:52 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 20:53:52 +0200
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 20:53:52 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 20:54:38 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 63ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 20:54:40 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 20:54:40 +0200
+
+
+Started GET "/assets/application-984e4ea8258ac3df023a18f6af87a7df.css?body=1" for ::1 at 2015-04-08 20:54:40 +0200
+
+
+Started GET "/assets/application-028fda9aa467accaa5df57b63a9948d7.js?body=1" for ::1 at 2015-04-08 20:54:40 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 20:54:40 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 20:55:37 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 38ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-028fda9aa467accaa5df57b63a9948d7.js?body=1" for ::1 at 2015-04-08 20:55:40 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 20:55:40 +0200
+
+
+Started GET "/assets/application-984e4ea8258ac3df023a18f6af87a7df.css?body=1" for ::1 at 2015-04-08 20:55:40 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 20:55:40 +0200
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 20:55:40 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 20:56:00 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 93ms (Views: 90.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-028fda9aa467accaa5df57b63a9948d7.js?body=1" for ::1 at 2015-04-08 20:56:02 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 20:56:02 +0200
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 20:56:02 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 20:56:02 +0200
+
+
+Started GET "/assets/application-984e4ea8258ac3df023a18f6af87a7df.css?body=1" for ::1 at 2015-04-08 20:56:02 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 20:57:21 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-028fda9aa467accaa5df57b63a9948d7.js?body=1" for ::1 at 2015-04-08 20:57:23 +0200
+
+
+Started GET "/assets/application-984e4ea8258ac3df023a18f6af87a7df.css?body=1" for ::1 at 2015-04-08 20:57:23 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 20:57:23 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 20:57:23 +0200
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 20:57:23 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 20:57:48 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 41ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 20:57:49 +0200
+
+
+Started GET "/assets/application-028fda9aa467accaa5df57b63a9948d7.js?body=1" for ::1 at 2015-04-08 20:57:49 +0200
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 20:57:49 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 20:57:49 +0200
+
+
+Started GET "/assets/application-984e4ea8258ac3df023a18f6af87a7df.css?body=1" for ::1 at 2015-04-08 20:57:49 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 20:58:22 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 54ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-028fda9aa467accaa5df57b63a9948d7.js?body=1" for ::1 at 2015-04-08 20:58:23 +0200
+
+
+Started GET "/assets/application-984e4ea8258ac3df023a18f6af87a7df.css?body=1" for ::1 at 2015-04-08 20:58:23 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 20:58:23 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 20:58:23 +0200
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 20:58:23 +0200
+
+
+Started GET "/users/sign_in" for ::1 at 2015-04-08 21:00:03 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (37.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (106.1ms)
+Completed 200 OK in 205ms (Views: 202.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 21:00:05 +0200
+
+
+Started GET "/assets/application-028fda9aa467accaa5df57b63a9948d7.js?body=1" for ::1 at 2015-04-08 21:00:05 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 21:00:05 +0200
+
+
+Started GET "/assets/application-984e4ea8258ac3df023a18f6af87a7df.css?body=1" for ::1 at 2015-04-08 21:00:05 +0200
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 21:00:05 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 21:01:16 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 110ms (Views: 103.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-028fda9aa467accaa5df57b63a9948d7.js?body=1" for ::1 at 2015-04-08 21:01:16 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 21:01:16 +0200
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 21:01:16 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 21:01:16 +0200
+
+
+Started GET "/assets/application-984e4ea8258ac3df023a18f6af87a7df.css?body=1" for ::1 at 2015-04-08 21:01:16 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 21:05:09 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-028fda9aa467accaa5df57b63a9948d7.js?body=1" for ::1 at 2015-04-08 21:05:10 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 21:05:10 +0200
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 21:05:10 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 21:05:10 +0200
+
+
+Started GET "/assets/application-984e4ea8258ac3df023a18f6af87a7df.css?body=1" for ::1 at 2015-04-08 21:05:10 +0200
+
+
+Started GET "/users/sign_in" for ::1 at 2015-04-08 21:05:47 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (23.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (45.0ms)
+Completed 200 OK in 123ms (Views: 118.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-028fda9aa467accaa5df57b63a9948d7.js?body=1" for ::1 at 2015-04-08 21:05:49 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 21:05:49 +0200
+
+
+Started GET "/assets/application-984e4ea8258ac3df023a18f6af87a7df.css?body=1" for ::1 at 2015-04-08 21:05:49 +0200
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 21:05:49 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 21:05:49 +0200
+
+
+Started POST "/users/sign_in" for ::1 at 2015-04-08 21:05:51 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h1pt5lLO1FE1zlVdblhwX5IiNIqjfmE0MGRvokAXWq4GLbX/vN40VYUSyTmTLQMtISJPDTEmkV4728adfWreRg==", "user"=>{"uname"=>"sabrout@sabrout.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."uname" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["uname", "sabrout@sabrout.com"]]
+Completed 401 Unauthorized in 54ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"h1pt5lLO1FE1zlVdblhwX5IiNIqjfmE0MGRvokAXWq4GLbX/vN40VYUSyTmTLQMtISJPDTEmkV4728adfWreRg==", "user"=>{"uname"=>"sabrout@sabrout.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (3.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 138ms (Views: 75.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-028fda9aa467accaa5df57b63a9948d7.js?body=1" for ::1 at 2015-04-08 21:05:53 +0200
+
+
+Started GET "/assets/application-984e4ea8258ac3df023a18f6af87a7df.css?body=1" for ::1 at 2015-04-08 21:05:53 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 21:05:53 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 21:05:53 +0200
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 21:05:53 +0200
+
+
+Started POST "/users/sign_in" for ::1 at 2015-04-08 21:06:00 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GIhG/lwC7G7ECmfNAEuD4HLGnigwpQuFpZyACegyzaGZ/57nshIManTW+6n9PvCSwcblr6L9+++uIyk21U9JSQ==", "user"=>{"uname"=>"sabrout@sabrout.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."uname" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["uname", "sabrout@sabrout.com"]]
+Completed 401 Unauthorized in 9ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GIhG/lwC7G7ECmfNAEuD4HLGnigwpQuFpZyACegyzaGZ/57nshIManTW+6n9PvCSwcblr6L9+++uIyk21U9JSQ==", "user"=>{"uname"=>"sabrout@sabrout.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (20.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (40.0ms)
+Completed 200 OK in 181ms (Views: 112.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 21:06:02 +0200
+
+
+Started GET "/assets/application-984e4ea8258ac3df023a18f6af87a7df.css?body=1" for ::1 at 2015-04-08 21:06:02 +0200
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 21:06:02 +0200
+
+
+Started GET "/assets/application-028fda9aa467accaa5df57b63a9948d7.js?body=1" for ::1 at 2015-04-08 21:06:02 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 21:06:02 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 21:06:08 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 51ms (Views: 49.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-028fda9aa467accaa5df57b63a9948d7.js?body=1" for ::1 at 2015-04-08 21:06:09 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 21:06:09 +0200
+
+
+Started GET "/assets/application-984e4ea8258ac3df023a18f6af87a7df.css?body=1" for ::1 at 2015-04-08 21:06:09 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 21:06:09 +0200
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 21:06:09 +0200
+
+
+Started GET "/users/sign_up" for ::1 at 2015-04-08 21:06:12 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (10.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 64ms (Views: 63.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-028fda9aa467accaa5df57b63a9948d7.js?body=1" for ::1 at 2015-04-08 21:06:13 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 21:06:13 +0200
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 21:06:13 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 21:06:13 +0200
+
+
+Started GET "/assets/application-984e4ea8258ac3df023a18f6af87a7df.css?body=1" for ::1 at 2015-04-08 21:06:13 +0200
+
+
+Started POST "/users" for ::1 at 2015-04-08 21:07:07 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7WHzzKPa8ZStHmQhxjGkIxWcfdNzE6AcFhAS51wBDEVsFivVTcoRkB3C+EU7RNdRppwGVOFLUHYdr7vYYXyIrQ==", "user"=>{"uname"=>"sabrouts", "email"=>"sabrouts@sabrouts.com", "email_confirmation"=>"sabrouts@sabrouts.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "fname"=>"sabrout", "lname"=>"sabrout", "phone"=>"12312331"}, "commit"=>"Sign up"}
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.0ms)[0m  SELECT  1 AS one FROM "users" WHERE LOWER("users"."uname") = LOWER('sabrouts') LIMIT 1
+  [1m[36mUser Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'sabrouts@sabrouts.com' LIMIT 1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "users" ("uname", "email", "fname", "lname", "phone", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["uname", "sabrouts"], ["email", "sabrouts@sabrouts.com"], ["fname", "sabrout"], ["lname", "sabrout"], ["phone", 12312331], ["encrypted_password", "$2a$10$EwKFmmVyykBKgzpHfeqmLesmLtJUrPrXx6vLxyMDzoSQrcpWTruAa"], ["created_at", "2015-04-08 19:07:07.565858"], ["updated_at", "2015-04-08 19:07:07.565858"]]
+  [1m[36m (4.1ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "last_sign_in_ip" = $3, "current_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["last_sign_in_at", "2015-04-08 19:07:07.575906"], ["current_sign_in_at", "2015-04-08 19:07:07.575906"], ["last_sign_in_ip", "::1/128"], ["current_sign_in_ip", "::1/128"], ["sign_in_count", 1], ["updated_at", "2015-04-08 19:07:07.580914"], ["id", 2]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 113ms (ActiveRecord: 8.1ms)
+
+
+Started GET "/" for ::1 at 2015-04-08 21:07:08 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 49ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-028fda9aa467accaa5df57b63a9948d7.js?body=1" for ::1 at 2015-04-08 21:07:10 +0200
+
+
+Started GET "/assets/application-984e4ea8258ac3df023a18f6af87a7df.css?body=1" for ::1 at 2015-04-08 21:07:10 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 21:07:11 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 21:07:11 +0200
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 21:07:11 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 21:07:18 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 56ms (Views: 54.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-984e4ea8258ac3df023a18f6af87a7df.css?body=1" for ::1 at 2015-04-08 21:07:19 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 21:07:19 +0200
+
+
+Started GET "/assets/application-028fda9aa467accaa5df57b63a9948d7.js?body=1" for ::1 at 2015-04-08 21:07:19 +0200
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 21:07:19 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 21:07:19 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 21:12:56 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 57ms (Views: 55.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-028fda9aa467accaa5df57b63a9948d7.js?body=1" for ::1 at 2015-04-08 21:12:56 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 21:12:56 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 21:12:56 +0200
+
+
+Started GET "/assets/application-e716ddfc7f63712c106ae13d5a27ccc3.css?body=1" for ::1 at 2015-04-08 21:12:56 +0200
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 21:12:56 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 21:13:09 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 52ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 21:13:09 +0200
+
+
+Started GET "/assets/application-028fda9aa467accaa5df57b63a9948d7.js?body=1" for ::1 at 2015-04-08 21:13:09 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 21:13:10 +0200
+
+
+Started GET "/assets/application-c4e44e5292392ebd146469b2fc5c47f0.css?body=1" for ::1 at 2015-04-08 21:13:10 +0200
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 21:13:10 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 21:13:13 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 35ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 21:13:14 +0200
+
+
+Started GET "/assets/application-c4e44e5292392ebd146469b2fc5c47f0.css?body=1" for ::1 at 2015-04-08 21:13:14 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 21:13:14 +0200
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 21:13:14 +0200
+
+
+Started GET "/assets/application-028fda9aa467accaa5df57b63a9948d7.js?body=1" for ::1 at 2015-04-08 21:13:14 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 21:14:41 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 43ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 21:14:42 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 21:14:42 +0200
+
+
+Started GET "/assets/application-c4e44e5292392ebd146469b2fc5c47f0.css?body=1" for ::1 at 2015-04-08 21:14:42 +0200
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 21:14:42 +0200
+
+
+Started GET "/assets/application-028fda9aa467accaa5df57b63a9948d7.js?body=1" for ::1 at 2015-04-08 21:14:42 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 21:15:28 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 55ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-028fda9aa467accaa5df57b63a9948d7.js?body=1" for ::1 at 2015-04-08 21:15:29 +0200
+
+
+Started GET "/assets/application-c4e44e5292392ebd146469b2fc5c47f0.css?body=1" for ::1 at 2015-04-08 21:15:29 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 21:15:29 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 21:15:29 +0200
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 21:15:29 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 21:15:57 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 57ms (Views: 53.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 21:15:57 +0200
+
+
+Started GET "/assets/application-028fda9aa467accaa5df57b63a9948d7.js?body=1" for ::1 at 2015-04-08 21:15:57 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 21:15:58 +0200
+
+
+Started GET "/assets/application-a8ddffc863d28247fc92d9518d0f251c.css?body=1" for ::1 at 2015-04-08 21:15:58 +0200
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 21:15:58 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 21:17:07 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 54ms (Views: 47.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application-028fda9aa467accaa5df57b63a9948d7.js?body=1" for ::1 at 2015-04-08 21:17:07 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 21:17:08 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 21:17:08 +0200
+
+
+Started GET "/assets/application-7c2774c14bf9bc04afc248b16d37a22a.css?body=1" for ::1 at 2015-04-08 21:17:08 +0200
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 21:17:08 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 21:17:34 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 43ms (Views: 41.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 21:17:35 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 21:17:35 +0200
+
+
+Started GET "/assets/application-028fda9aa467accaa5df57b63a9948d7.js?body=1" for ::1 at 2015-04-08 21:17:35 +0200
+
+
+Started GET "/assets/application-616a3ef193c5c5ce26b362f6f178843c.css?body=1" for ::1 at 2015-04-08 21:17:35 +0200
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 21:17:35 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 21:17:41 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 51ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 21:17:42 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 21:17:42 +0200
+
+
+Started GET "/assets/application-028fda9aa467accaa5df57b63a9948d7.js?body=1" for ::1 at 2015-04-08 21:17:42 +0200
+
+
+Started GET "/assets/application-c74b3fd702bbb0f74faed50ac90ae7dd.css?body=1" for ::1 at 2015-04-08 21:17:42 +0200
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 21:17:42 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 21:20:24 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 39ms (Views: 33.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-028fda9aa467accaa5df57b63a9948d7.js?body=1" for ::1 at 2015-04-08 21:20:24 +0200
+
+
+Started GET "/assets/application-c74b3fd702bbb0f74faed50ac90ae7dd.css?body=1" for ::1 at 2015-04-08 21:20:24 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 21:20:24 +0200
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 21:20:24 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 21:20:24 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 21:21:10 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 42ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-028fda9aa467accaa5df57b63a9948d7.js?body=1" for ::1 at 2015-04-08 21:21:10 +0200
+
+
+Started GET "/assets/jquerymin-c0ad048b027a6e35c6d445035507078d.js?body=1" for ::1 at 2015-04-08 21:21:10 +0200
+
+
+Started GET "/assets/jqueryleanModal-145cb51f6825f812fccd86c4ab354b0c.js?body=1" for ::1 at 2015-04-08 21:21:10 +0200
+
+
+Started GET "/assets/application-c74b3fd702bbb0f74faed50ac90ae7dd.css?body=1" for ::1 at 2015-04-08 21:21:10 +0200
+
+
+Started GET "/assets/logo-daf9e65712fe8e38f42a852233754c57.png" for ::1 at 2015-04-08 21:21:10 +0200

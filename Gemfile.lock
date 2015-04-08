@@ -38,9 +38,11 @@ GEM
       tzinfo (~> 1.1)
     arel (6.0.0)
     bcrypt (3.1.10)
+    bcrypt (3.1.10-x64-mingw32)
     bcrypt (3.1.10-x86-mingw32)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap_form (2.3.0)
     builder (3.2.2)
     byebug (3.5.1)
       columnize (~> 0.8)
@@ -65,6 +67,7 @@ GEM
       execjs
     coffee-script-source (1.9.1)
     columnize (0.9.0)
+    custom_error_message (1.1.1)
     database_cleaner (1.4.1)
     debug_inspector (0.0.2)
     debugger-linecache (1.2.0)
@@ -100,10 +103,13 @@ GEM
     multi_json (1.10.1)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
+    nokogiri (1.6.6.2-x64-mingw32)
+      mini_portile (~> 0.6.0)
     nokogiri (1.6.6.2-x86-mingw32)
       mini_portile (~> 0.6.0)
     orm_adapter (0.5.0)
     pg (0.18.1)
+    pg (0.18.1-x64-mingw32)
     pg (0.18.1-x86-mingw32)
     rack (1.6.0)
     rack-test (0.6.3)
@@ -198,13 +204,17 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw32
   x86-mingw32
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
+  bootstrap_form
   byebug
   capybara
   carrierwave
   coffee-rails (~> 4.1.0)
+  custom_error_message
   database_cleaner
   devise
   jbuilder (~> 2.0)
