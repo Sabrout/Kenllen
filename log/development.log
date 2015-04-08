@@ -36975,3 +36975,2452 @@ Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 a
 
 
 Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-06 21:00:33 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (1.9ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'cart_items'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.6ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'carts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.6ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'items'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.6ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'shops'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (1.7ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 05:41:13 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (5.2ms)
+Completed 500 Internal Server Error in 34ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    64: <%end%>
+    65: </div>
+    66:  <div class = "page">
+    67:     <% @items.each do |item| %>
+    68:     <div class ="shop-card">
+    69:       <div><%= item.id %></div>
+    70:       <div><%= item.item_name %></div>
+  app/views/home/index.html.erb:67:in `_app_views_home_index_html_erb___114793460__623346038'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (17.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (12.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (1.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (28.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 05:41:55 +0200
+Processing by HomeController#index as HTML
+  [1m[35mItem Load (0.6ms)[0m  SELECT "items".* FROM "items"
+  Rendered home/index.html.erb within layouts/application (10.8ms)
+Completed 500 Internal Server Error in 224ms
+
+ActionView::Template::Error (Invalid CSS after "	margin-top: 5%": expected "{", was ";"
+  (in /home/abdo/Desktop/AbdoSE/c/app/assets/stylesheets/sessions.scss:181)):
+    2: <html>
+    3: <head>
+    4:   <title>Knellen</title>
+    5:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag('application')%>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/sessions.scss:181
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___978614747__623349238'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (13.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (26.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 05:44:00 +0200
+Processing by HomeController#index as HTML
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 37ms
+
+ActionView::Template::Error (Invalid CSS after "	margin-top: 5%": expected "{", was ";"
+  (in /home/abdo/Desktop/AbdoSE/c/app/assets/stylesheets/sessions.scss:181)):
+    2: <html>
+    3: <head>
+    4:   <title>Knellen</title>
+    5:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag('application')%>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/sessions.scss:181
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___978614747__623349238'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (24.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (12.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (42.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 05:44:04 +0200
+Processing by HomeController#index as HTML
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items"
+  Rendered home/index.html.erb within layouts/application (6.4ms)
+Completed 500 Internal Server Error in 37ms
+
+ActionView::Template::Error (Invalid CSS after "	margin-top: 5%": expected "{", was ";"
+  (in /home/abdo/Desktop/AbdoSE/c/app/assets/stylesheets/sessions.scss:181)):
+    2: <html>
+    3: <head>
+    4:   <title>Knellen</title>
+    5:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag('application')%>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/sessions.scss:181
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___978614747__623349238'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (22.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (13.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (25.2ms)
+
+
+Started GET "/item" for 127.0.0.1 at 2015-04-08 05:45:16 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ItemController#index as HTML
+  [1m[35mItem Load (0.6ms)[0m  SELECT "items".* FROM "items"
+  Rendered item/index.html.erb within layouts/application (15.8ms)
+Completed 500 Internal Server Error in 81ms
+
+ActionView::Template::Error (Invalid CSS after "}": expected "}", was ""
+  (in /home/abdo/Desktop/AbdoSE/c/app/assets/stylesheets/sessions.scss:185)):
+    2: <html>
+    3: <head>
+    4:   <title>Knellen</title>
+    5:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag('application')%>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/sessions.scss:185
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__4440867__623125868'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (23.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (12.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (27.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 05:45:49 +0200
+Processing by HomeController#index as HTML
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 45ms
+
+ActionView::Template::Error (Invalid CSS after "}": expected "}", was ""
+  (in /home/abdo/Desktop/AbdoSE/c/app/assets/stylesheets/sessions.scss:185)):
+    2: <html>
+    3: <head>
+    4:   <title>Knellen</title>
+    5:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag('application')%>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/sessions.scss:185
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__4440867__623125868'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_markup.html (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/style.css within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_inner_console_markup.html within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/_prompt_box_markup.html within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/console.js within layouts/javascript (13.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/main.js within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/error_page.js within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.0/lib/web_console/templates/index.html (27.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 05:46:21 +0200
+Processing by HomeController#index as HTML
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items"
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 1012ms (Views: 1010.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:46:22 +0200
+
+
+Started GET "/assets/home-9692cf8c8f9abc7b713569613d940b2d.css?body=1" for 127.0.0.1 at 2015-04-08 05:46:22 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:46:22 +0200
+
+
+Started GET "/assets/application-8a5940f77a8c2fac116f7cabcee8505c.css?body=1" for 127.0.0.1 at 2015-04-08 05:46:22 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 05:46:22 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 05:46:22 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 05:46:22 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 05:46:22 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:46:22 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 05:46:22 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:46:22 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:46:22 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 05:46:22 +0200
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-04-08 05:47:04 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"AanrZi1BGq+4mL/0wPEOYLR1HmecybUTSecBRbmr6Ny/jUzd8EtfEUapY0c30lwffhCB+3tks1iu/+yyJumkFg=="}
+Completed 401 Unauthorized in 1ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"AanrZi1BGq+4mL/0wPEOYLR1HmecybUTSecBRbmr6Ny/jUzd8EtfEUapY0c30lwffhCB+3tks1iu/+yyJumkFg=="}
+  Rendered devise/shared/_links.html.erb (6.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (22.3ms)
+Completed 200 OK in 91ms (Views: 75.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:47:04 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 05:47:04 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 05:47:04 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 05:47:04 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 05:47:04 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:47:04 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:47:04 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:47:04 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:47:04 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 05:47:04 +0200
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-04-08 05:47:21 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"AanrZi1BGq+4mL/0wPEOYLR1HmecybUTSecBRbmr6Ny/jUzd8EtfEUapY0c30lwffhCB+3tks1iu/+yyJumkFg=="}
+Completed 401 Unauthorized in 1ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"AanrZi1BGq+4mL/0wPEOYLR1HmecybUTSecBRbmr6Ny/jUzd8EtfEUapY0c30lwffhCB+3tks1iu/+yyJumkFg=="}
+  Rendered devise/shared/_links.html.erb (4.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.9ms)
+Completed 500 Internal Server Error in 51ms
+
+ActionView::Template::Error (Invalid CSS after "	margin-top: 5%": expected "{", was ";"
+  (in /home/abdo/Desktop/AbdoSE/c/app/assets/stylesheets/sessions.scss:181)):
+    2: <html>
+    3: <head>
+    4:   <title>Knellen</title>
+    5:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag('application')%>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/assets/stylesheets/sessions.scss:181
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__4440867__623125868'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.0ms)
+Cannot render console with content type application/x-www-form-urlencodedAllowed content types: [#<Mime::Type:0xa631758 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0xa631618 @synonyms=[], @symbol=:text, @string="text/plain">]
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-04-08 05:47:42 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"AanrZi1BGq+4mL/0wPEOYLR1HmecybUTSecBRbmr6Ny/jUzd8EtfEUapY0c30lwffhCB+3tks1iu/+yyJumkFg=="}
+Completed 401 Unauthorized in 1ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"AanrZi1BGq+4mL/0wPEOYLR1HmecybUTSecBRbmr6Ny/jUzd8EtfEUapY0c30lwffhCB+3tks1iu/+yyJumkFg=="}
+  Rendered devise/shared/_links.html.erb (8.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 155ms (Views: 154.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:47:42 +0200
+
+
+Started GET "/assets/home-9692cf8c8f9abc7b713569613d940b2d.css?body=1" for 127.0.0.1 at 2015-04-08 05:47:42 +0200
+
+
+Started GET "/assets/application-a9c07b9ed12a39574e108989a7dfd73c.css?body=1" for 127.0.0.1 at 2015-04-08 05:47:42 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:47:42 +0200
+
+
+Started GET "/assets/sessions-85ff4a9021070185641a4e16187faa68.css?body=1" for 127.0.0.1 at 2015-04-08 05:47:42 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 05:47:42 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 05:47:42 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 05:47:42 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 05:47:42 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:47:42 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 05:47:42 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:47:42 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:47:42 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 05:47:42 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 05:47:57 +0200
+Processing by HomeController#index as HTML
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 71ms (Views: 68.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:47:58 +0200
+
+
+Started GET "/assets/home-9692cf8c8f9abc7b713569613d940b2d.css?body=1" for 127.0.0.1 at 2015-04-08 05:47:58 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:47:58 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 05:47:58 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 05:47:58 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 05:47:58 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 05:47:58 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:47:58 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 05:47:58 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:47:58 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:47:58 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 05:47:58 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 05:48:32 +0200
+Processing by HomeController#index as HTML
+  [1m[35mItem Load (0.5ms)[0m  SELECT "items".* FROM "items"
+  Rendered home/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 189ms (Views: 187.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:48:32 +0200
+
+
+Started GET "/assets/sessions-85ff4a9021070185641a4e16187faa68.css?body=1" for 127.0.0.1 at 2015-04-08 05:48:32 +0200
+
+
+Started GET "/assets/home-d20a2bb8f2654a819baee30f84e1dd3b.css?body=1" for 127.0.0.1 at 2015-04-08 05:48:32 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:48:32 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 05:48:32 +0200
+
+
+Started GET "/assets/application-96e661a99c6d446fc6dd9cf61803fa9e.css?body=1" for 127.0.0.1 at 2015-04-08 05:48:32 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 05:48:33 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 05:48:33 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 05:48:33 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 05:48:33 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 05:48:33 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:48:33 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:48:33 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:48:33 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 05:48:37 +0200
+Processing by HomeController#index as HTML
+  [1m[36mItem Load (0.6ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 87ms (Views: 85.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-04-08 05:48:39 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"M9zqlufmp3ENutkEox9ZPNak/EVLxrmHvcj4Lp00qRCN+E0tOuziz/OLBbdUPAtDHMFj2axrv8xa0BXZAnbl2g=="}
+Completed 401 Unauthorized in 1ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"M9zqlufmp3ENutkEox9ZPNak/EVLxrmHvcj4Lp00qRCN+E0tOuziz/OLBbdUPAtDHMFj2axrv8xa0BXZAnbl2g=="}
+  Rendered devise/shared/_links.html.erb (8.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 83ms (Views: 81.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:48:40 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 05:48:40 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:48:40 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 05:48:40 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 05:48:40 +0200
+
+
+Started GET "/assets/sessions-85ff4a9021070185641a4e16187faa68.css?body=1" for 127.0.0.1 at 2015-04-08 05:48:40 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 05:48:40 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:48:40 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 05:48:40 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:48:40 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:48:40 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 05:48:40 +0200
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-04-08 05:49:21 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"M9zqlufmp3ENutkEox9ZPNak/EVLxrmHvcj4Lp00qRCN+E0tOuziz/OLBbdUPAtDHMFj2axrv8xa0BXZAnbl2g=="}
+Completed 401 Unauthorized in 1ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"M9zqlufmp3ENutkEox9ZPNak/EVLxrmHvcj4Lp00qRCN+E0tOuziz/OLBbdUPAtDHMFj2axrv8xa0BXZAnbl2g=="}
+  Rendered devise/shared/_links.html.erb (3.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 152ms (Views: 151.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:49:21 +0200
+
+
+Started GET "/assets/sessions-2f0b6dd20168fc82f86962dc402f9801.css?body=1" for 127.0.0.1 at 2015-04-08 05:49:21 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 05:49:21 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 05:49:21 +0200
+
+
+Started GET "/assets/application-f7f645550c61d0cfc4d5a41e593fb09d.css?body=1" for 127.0.0.1 at 2015-04-08 05:49:21 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:49:21 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 05:49:21 +0200
+
+
+Started GET "/assets/home-d20a2bb8f2654a819baee30f84e1dd3b.css?body=1" for 127.0.0.1 at 2015-04-08 05:49:21 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 05:49:21 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:49:21 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:49:21 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:49:21 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 05:49:21 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 05:49:21 +0200
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-04-08 05:49:36 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"M9zqlufmp3ENutkEox9ZPNak/EVLxrmHvcj4Lp00qRCN+E0tOuziz/OLBbdUPAtDHMFj2axrv8xa0BXZAnbl2g=="}
+Completed 401 Unauthorized in 1ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"M9zqlufmp3ENutkEox9ZPNak/EVLxrmHvcj4Lp00qRCN+E0tOuziz/OLBbdUPAtDHMFj2axrv8xa0BXZAnbl2g=="}
+  Rendered devise/shared/_links.html.erb (4.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 131ms (Views: 130.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:49:36 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 05:49:36 +0200
+
+
+Started GET "/assets/sessions-d0dff46bb2ddb8f8abf840eaf6723ea9.css?body=1" for 127.0.0.1 at 2015-04-08 05:49:36 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:49:36 +0200
+
+
+Started GET "/assets/home-d20a2bb8f2654a819baee30f84e1dd3b.css?body=1" for 127.0.0.1 at 2015-04-08 05:49:36 +0200
+
+
+Started GET "/assets/application-d9c84d8547312e8ed43d61a0b2680f69.css?body=1" for 127.0.0.1 at 2015-04-08 05:49:36 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 05:49:36 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 05:49:36 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 05:49:36 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:49:36 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 05:49:36 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:49:36 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 05:49:36 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:49:36 +0200
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-04-08 05:51:36 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"M9zqlufmp3ENutkEox9ZPNak/EVLxrmHvcj4Lp00qRCN+E0tOuziz/OLBbdUPAtDHMFj2axrv8xa0BXZAnbl2g=="}
+Completed 401 Unauthorized in 1ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"M9zqlufmp3ENutkEox9ZPNak/EVLxrmHvcj4Lp00qRCN+E0tOuziz/OLBbdUPAtDHMFj2axrv8xa0BXZAnbl2g=="}
+  Rendered devise/shared/_links.html.erb (5.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 134ms (Views: 133.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:51:36 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 05:51:36 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 05:51:36 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 05:51:36 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:51:36 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 05:51:36 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:51:36 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 05:51:36 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:51:36 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:51:36 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 05:51:36 +0200
+
+
+Started GET "/assets/home-d20a2bb8f2654a819baee30f84e1dd3b.css?body=1" for 127.0.0.1 at 2015-04-08 05:51:36 +0200
+
+
+Started GET "/assets/sessions-85ff4a9021070185641a4e16187faa68.css?body=1" for 127.0.0.1 at 2015-04-08 05:51:36 +0200
+
+
+Started GET "/assets/application-96e661a99c6d446fc6dd9cf61803fa9e.css?body=1" for 127.0.0.1 at 2015-04-08 05:51:36 +0200
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-04-08 05:51:55 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"M9zqlufmp3ENutkEox9ZPNak/EVLxrmHvcj4Lp00qRCN+E0tOuziz/OLBbdUPAtDHMFj2axrv8xa0BXZAnbl2g=="}
+Completed 401 Unauthorized in 1ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"M9zqlufmp3ENutkEox9ZPNak/EVLxrmHvcj4Lp00qRCN+E0tOuziz/OLBbdUPAtDHMFj2axrv8xa0BXZAnbl2g=="}
+  Rendered devise/shared/_links.html.erb (4.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 134ms (Views: 133.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-d20a2bb8f2654a819baee30f84e1dd3b.css?body=1" for 127.0.0.1 at 2015-04-08 05:51:55 +0200
+
+
+Started GET "/assets/application-7d807bb5a6c6b7f08fd6d9c2ea49dea0.css?body=1" for 127.0.0.1 at 2015-04-08 05:51:55 +0200
+
+
+Started GET "/assets/sessions-7a5fcdae8bcbff4d476947e232a877d9.css?body=1" for 127.0.0.1 at 2015-04-08 05:51:55 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 05:51:55 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:51:55 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:51:55 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 05:51:55 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 05:51:55 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 05:51:55 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:51:55 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 05:51:55 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:51:55 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:51:55 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 05:51:55 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 05:52:00 +0200
+Processing by HomeController#index as HTML
+  [1m[35mItem Load (3.8ms)[0m  SELECT "items".* FROM "items"
+  Rendered home/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 86ms (Views: 81.3ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/home-d20a2bb8f2654a819baee30f84e1dd3b.css?body=1" for 127.0.0.1 at 2015-04-08 05:52:00 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 05:52:00 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 05:52:00 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:52:00 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 05:52:00 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:52:00 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 05:52:00 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:52:00 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 05:52:00 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:52:00 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:52:00 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 05:52:00 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 05:52:29 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mItem Load (0.6ms)[0m  SELECT "items".* FROM "items"
+  Rendered home/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 149ms (Views: 124.8ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:52:29 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 05:52:29 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 05:52:29 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:52:29 +0200
+
+
+Started GET "/assets/home-d20a2bb8f2654a819baee30f84e1dd3b.css?body=1" for 127.0.0.1 at 2015-04-08 05:52:29 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 05:52:29 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 05:52:29 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:52:29 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 05:52:29 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:52:29 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:52:29 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 05:52:29 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 05:54:06 +0200
+Processing by HomeController#index as HTML
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 208ms (Views: 206.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:54:06 +0200
+
+
+Started GET "/assets/sessions-7a5fcdae8bcbff4d476947e232a877d9.css?body=1" for 127.0.0.1 at 2015-04-08 05:54:06 +0200
+
+
+Started GET "/assets/application-f43b4a051782c51137f68a245c09366c.css?body=1" for 127.0.0.1 at 2015-04-08 05:54:06 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 05:54:06 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 05:54:06 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 05:54:06 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 05:54:06 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:54:06 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 05:54:06 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:54:06 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:54:06 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:54:06 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 05:54:06 +0200
+
+
+Started GET "/assets/home-9692cf8c8f9abc7b713569613d940b2d.css?body=1" for 127.0.0.1 at 2015-04-08 05:54:06 +0200
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-04-08 05:54:42 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"4AkFVLj7EP/gAKmEN7YGEREQZq1snXVzTcbxbzPhbcBeLaLvZfFVQR4xdTfAlVRu23X5MYswcziq3hyYrKMhCg=="}
+Completed 401 Unauthorized in 2ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"4AkFVLj7EP/gAKmEN7YGEREQZq1snXVzTcbxbzPhbcBeLaLvZfFVQR4xdTfAlVRu23X5MYswcziq3hyYrKMhCg=="}
+  Rendered devise/shared/_links.html.erb (8.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 142ms (Views: 124.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:54:42 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:54:42 +0200
+
+
+Started GET "/assets/sessions-7a5fcdae8bcbff4d476947e232a877d9.css?body=1" for 127.0.0.1 at 2015-04-08 05:54:42 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 05:54:42 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 05:54:42 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:54:42 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 05:54:42 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 05:54:42 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 05:54:42 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:54:42 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:54:42 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 05:54:42 +0200
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-04-08 05:54:46 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m4JQ5U1b6LdgpJoYR8fLY3JGfcmHJvibcAMMKZ6D6yAlpvdekFGtCZ6VRquw5JkcuCPiVWCL/tCXG+HeAcGn6g==", "user"=>{"uname"=>"abdo", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."uname" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["uname", "abdo"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5  [["last_sign_in_at", "2015-04-08 03:01:35.375899"], ["current_sign_in_at", "2015-04-08 03:54:47.020517"], ["sign_in_count", 9], ["updated_at", "2015-04-08 03:54:47.022398"], ["id", 1]]
+  [1m[36m (2.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 101ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 05:54:47 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 79ms (Views: 76.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:54:47 +0200
+
+
+Started GET "/assets/sessions-7a5fcdae8bcbff4d476947e232a877d9.css?body=1" for 127.0.0.1 at 2015-04-08 05:54:47 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:54:47 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 05:54:47 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 05:54:47 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 05:54:47 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 05:54:47 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:54:47 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 05:54:47 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:54:47 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:54:47 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 05:54:47 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 05:55:12 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 175ms (Views: 172.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:55:12 +0200
+
+
+Started GET "/assets/home-d20a2bb8f2654a819baee30f84e1dd3b.css?body=1" for 127.0.0.1 at 2015-04-08 05:55:12 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:55:12 +0200
+
+
+Started GET "/assets/sessions-7a5fcdae8bcbff4d476947e232a877d9.css?body=1" for 127.0.0.1 at 2015-04-08 05:55:12 +0200
+
+
+Started GET "/assets/application-7d807bb5a6c6b7f08fd6d9c2ea49dea0.css?body=1" for 127.0.0.1 at 2015-04-08 05:55:12 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 05:55:12 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 05:55:12 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 05:55:12 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 05:55:12 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:55:12 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 05:55:12 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:55:12 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:55:12 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 05:55:12 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 05:55:38 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 167ms (Views: 164.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:55:38 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:55:38 +0200
+
+
+Started GET "/assets/sessions-7a5fcdae8bcbff4d476947e232a877d9.css?body=1" for 127.0.0.1 at 2015-04-08 05:55:38 +0200
+
+
+Started GET "/assets/home-d98a6d41ecc64433e11dbef74a2b26b4.css?body=1" for 127.0.0.1 at 2015-04-08 05:55:38 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 05:55:38 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 05:55:38 +0200
+
+
+Started GET "/assets/application-de07746b2cd3417db8dbb22b5dc0cd50.css?body=1" for 127.0.0.1 at 2015-04-08 05:55:38 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 05:55:38 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 05:55:38 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:55:38 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 05:55:38 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:55:38 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:55:38 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 05:55:38 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 05:55:44 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 226ms (Views: 222.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:55:45 +0200
+
+
+Started GET "/assets/home-f389e2709d3a69e353a753029fca9f28.css?body=1" for 127.0.0.1 at 2015-04-08 05:55:45 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 05:55:45 +0200
+
+
+Started GET "/assets/sessions-7a5fcdae8bcbff4d476947e232a877d9.css?body=1" for 127.0.0.1 at 2015-04-08 05:55:45 +0200
+
+
+Started GET "/assets/application-d07419e9d032c41c73dffdfa3e225014.css?body=1" for 127.0.0.1 at 2015-04-08 05:55:45 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:55:45 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 05:55:45 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 05:55:45 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 05:55:45 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:55:45 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:55:45 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 05:55:45 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:55:45 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 05:55:45 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 05:56:06 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 161ms (Views: 157.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:56:06 +0200
+
+
+Started GET "/assets/home-930bbcb63b43810255d475e2b033ded2.css?body=1" for 127.0.0.1 at 2015-04-08 05:56:06 +0200
+
+
+Started GET "/assets/sessions-7a5fcdae8bcbff4d476947e232a877d9.css?body=1" for 127.0.0.1 at 2015-04-08 05:56:06 +0200
+
+
+Started GET "/assets/application-e94459482ce69216a25dc0ee36d22579.css?body=1" for 127.0.0.1 at 2015-04-08 05:56:06 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 05:56:06 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:56:06 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:06 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:06 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:06 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:06 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:06 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:06 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:06 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:06 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 05:56:21 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 168ms (Views: 166.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:56:21 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:56:21 +0200
+
+
+Started GET "/assets/home-c643fc054fa1cd12b5a0c2901cf358f0.css?body=1" for 127.0.0.1 at 2015-04-08 05:56:21 +0200
+
+
+Started GET "/assets/sessions-7a5fcdae8bcbff4d476947e232a877d9.css?body=1" for 127.0.0.1 at 2015-04-08 05:56:21 +0200
+
+
+Started GET "/assets/application-180b23e996984b562758d8bb93f57302.css?body=1" for 127.0.0.1 at 2015-04-08 05:56:21 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 05:56:21 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:21 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:21 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:21 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:21 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:21 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:21 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:21 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:21 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 05:56:28 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 177ms (Views: 174.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:56:28 +0200
+
+
+Started GET "/assets/application-d07419e9d032c41c73dffdfa3e225014.css?body=1" for 127.0.0.1 at 2015-04-08 05:56:28 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 05:56:28 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:56:28 +0200
+
+
+Started GET "/assets/sessions-7a5fcdae8bcbff4d476947e232a877d9.css?body=1" for 127.0.0.1 at 2015-04-08 05:56:28 +0200
+
+
+Started GET "/assets/home-f389e2709d3a69e353a753029fca9f28.css?body=1" for 127.0.0.1 at 2015-04-08 05:56:28 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:28 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:28 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:28 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:28 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:28 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:28 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:28 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:28 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 05:56:42 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.9ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 184ms (Views: 176.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:56:42 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:56:42 +0200
+
+
+Started GET "/assets/sessions-7a5fcdae8bcbff4d476947e232a877d9.css?body=1" for 127.0.0.1 at 2015-04-08 05:56:42 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 05:56:42 +0200
+
+
+Started GET "/assets/home-f3d6ae23df1e7973620d93c05c63eaa0.css?body=1" for 127.0.0.1 at 2015-04-08 05:56:42 +0200
+
+
+Started GET "/assets/application-401410bf138c43857ccaae4385adc3c0.css?body=1" for 127.0.0.1 at 2015-04-08 05:56:42 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:42 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:42 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:42 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:42 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:42 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:42 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:42 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 05:56:42 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 05:57:00 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 200ms (Views: 197.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:57:00 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:57:00 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 05:57:00 +0200
+
+
+Started GET "/assets/sessions-7a5fcdae8bcbff4d476947e232a877d9.css?body=1" for 127.0.0.1 at 2015-04-08 05:57:00 +0200
+
+
+Started GET "/assets/home-8626552d75c293e1b3858def7cb9fb50.css?body=1" for 127.0.0.1 at 2015-04-08 05:57:00 +0200
+
+
+Started GET "/assets/application-b8fb440fdd4a781702684ba05e6d6dcb.css?body=1" for 127.0.0.1 at 2015-04-08 05:57:00 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 05:57:00 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 05:57:00 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 05:57:00 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:57:00 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:57:00 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:57:00 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 05:57:00 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 05:57:00 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 05:57:28 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.9ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 207ms (Views: 204.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:57:28 +0200
+
+
+Started GET "/assets/home-4f1a2c14fc2b09611cfb2064c0dd3bfa.css?body=1" for 127.0.0.1 at 2015-04-08 05:57:28 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 05:57:28 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:57:28 +0200
+
+
+Started GET "/assets/sessions-7a5fcdae8bcbff4d476947e232a877d9.css?body=1" for 127.0.0.1 at 2015-04-08 05:57:28 +0200
+
+
+Started GET "/assets/application-e983bb6dd10a30215940de2e05cdc7d0.css?body=1" for 127.0.0.1 at 2015-04-08 05:57:28 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 05:57:28 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 05:57:28 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 05:57:28 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 05:57:28 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 05:57:28 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:57:28 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:57:28 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:57:28 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 05:57:40 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (1.4ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 173ms (Views: 169.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:57:41 +0200
+
+
+Started GET "/assets/home-71c5c2c2f21f831a8243c45c2c212ed7.css?body=1" for 127.0.0.1 at 2015-04-08 05:57:41 +0200
+
+
+Started GET "/assets/application-361b170ade442766d45e6ad4d8015a17.css?body=1" for 127.0.0.1 at 2015-04-08 05:57:41 +0200
+
+
+Started GET "/assets/sessions-7a5fcdae8bcbff4d476947e232a877d9.css?body=1" for 127.0.0.1 at 2015-04-08 05:57:41 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 05:57:41 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:57:41 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 05:57:41 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 05:57:41 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 05:57:41 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:57:41 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 05:57:41 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:57:41 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 05:57:41 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:57:41 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 05:58:22 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 71ms (Views: 68.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:58:22 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 05:58:22 +0200
+
+
+Started GET "/assets/application-361b170ade442766d45e6ad4d8015a17.css?body=1" for 127.0.0.1 at 2015-04-08 05:58:22 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 05:58:22 +0200
+
+
+Started GET "/assets/sessions-7a5fcdae8bcbff4d476947e232a877d9.css?body=1" for 127.0.0.1 at 2015-04-08 05:58:22 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:58:22 +0200
+
+
+Started GET "/assets/home-71c5c2c2f21f831a8243c45c2c212ed7.css?body=1" for 127.0.0.1 at 2015-04-08 05:58:22 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 05:58:22 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 05:58:22 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:58:22 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 05:58:22 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:58:22 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:58:22 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 05:58:22 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 05:59:07 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 77ms (Views: 75.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:59:07 +0200
+
+
+Started GET "/assets/sessions-7a5fcdae8bcbff4d476947e232a877d9.css?body=1" for 127.0.0.1 at 2015-04-08 05:59:07 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 05:59:07 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 05:59:07 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 05:59:07 +0200
+
+
+Started GET "/assets/home-71c5c2c2f21f831a8243c45c2c212ed7.css?body=1" for 127.0.0.1 at 2015-04-08 05:59:07 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 05:59:07 +0200
+
+
+Started GET "/assets/application-361b170ade442766d45e6ad4d8015a17.css?body=1" for 127.0.0.1 at 2015-04-08 05:59:08 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:59:08 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 05:59:08 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 05:59:08 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:59:08 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 05:59:08 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 05:59:08 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 06:00:02 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.7ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 171ms (Views: 127.4ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:00:02 +0200
+
+
+Started GET "/assets/home-71c5c2c2f21f831a8243c45c2c212ed7.css?body=1" for 127.0.0.1 at 2015-04-08 06:00:02 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 06:00:02 +0200
+
+
+Started GET "/assets/application-361b170ade442766d45e6ad4d8015a17.css?body=1" for 127.0.0.1 at 2015-04-08 06:00:02 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:00:02 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:02 +0200
+
+
+Started GET "/assets/sessions-7a5fcdae8bcbff4d476947e232a877d9.css?body=1" for 127.0.0.1 at 2015-04-08 06:00:02 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:02 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:02 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:02 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:02 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:02 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:02 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:02 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 06:00:27 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.6ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 126ms (Views: 121.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/home-71c5c2c2f21f831a8243c45c2c212ed7.css?body=1" for 127.0.0.1 at 2015-04-08 06:00:27 +0200
+
+
+Started GET "/assets/application-8ae859cb6b37abb63ee3aa4a84db3c58.css?body=1" for 127.0.0.1 at 2015-04-08 06:00:27 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 06:00:27 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:00:27 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:00:27 +0200
+
+
+Started GET "/assets/sessions-cdd6dfb82bedfa0414dbb84593d6c7ff.css?body=1" for 127.0.0.1 at 2015-04-08 06:00:27 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:27 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:27 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:27 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:27 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:27 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:27 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:27 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:27 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 06:00:38 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 147ms (Views: 144.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:00:38 +0200
+
+
+Started GET "/assets/home-71c5c2c2f21f831a8243c45c2c212ed7.css?body=1" for 127.0.0.1 at 2015-04-08 06:00:38 +0200
+
+
+Started GET "/assets/sessions-05fbf2a7e25503de6bbe4bb6692a43fe.css?body=1" for 127.0.0.1 at 2015-04-08 06:00:38 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:00:38 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 06:00:38 +0200
+
+
+Started GET "/assets/application-3b87a55742d6efea5143d04484e1a0d8.css?body=1" for 127.0.0.1 at 2015-04-08 06:00:38 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:38 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:38 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:38 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:38 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:38 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:38 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:38 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:38 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 06:00:51 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 155ms (Views: 152.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:00:51 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:00:51 +0200
+
+
+Started GET "/assets/sessions-05fbf2a7e25503de6bbe4bb6692a43fe.css?body=1" for 127.0.0.1 at 2015-04-08 06:00:51 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 06:00:51 +0200
+
+
+Started GET "/assets/home-9692cf8c8f9abc7b713569613d940b2d.css?body=1" for 127.0.0.1 at 2015-04-08 06:00:51 +0200
+
+
+Started GET "/assets/application-09247beee419ff893061e5e3a600e6bc.css?body=1" for 127.0.0.1 at 2015-04-08 06:00:51 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:51 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:51 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:51 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:51 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:51 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:51 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:51 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 06:00:51 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 06:01:06 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 190ms (Views: 187.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:01:07 +0200
+
+
+Started GET "/assets/home-19b5161f936ea55cf25dde826c999c1c.css?body=1" for 127.0.0.1 at 2015-04-08 06:01:07 +0200
+
+
+Started GET "/assets/application-3482ab8cdf7444dc1cafcaedbfa7bcf3.css?body=1" for 127.0.0.1 at 2015-04-08 06:01:07 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 06:01:07 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:01:07 +0200
+
+
+Started GET "/assets/sessions-05fbf2a7e25503de6bbe4bb6692a43fe.css?body=1" for 127.0.0.1 at 2015-04-08 06:01:07 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:07 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:07 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:07 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:07 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:07 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:07 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:07 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:07 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 06:01:26 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 129ms (Views: 126.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:01:26 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 06:01:26 +0200
+
+
+Started GET "/assets/application-3687d301c574c1a0c9f5728f08bcb0a7.css?body=1" for 127.0.0.1 at 2015-04-08 06:01:26 +0200
+
+
+Started GET "/assets/sessions-2ad667f113b04a101ca47608efa66eb2.css?body=1" for 127.0.0.1 at 2015-04-08 06:01:26 +0200
+
+
+Started GET "/assets/home-19b5161f936ea55cf25dde826c999c1c.css?body=1" for 127.0.0.1 at 2015-04-08 06:01:26 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:01:26 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:26 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:26 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:26 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:26 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:26 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:26 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:26 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:26 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 06:01:38 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (1.4ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 134ms (Views: 130.7ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/home-19b5161f936ea55cf25dde826c999c1c.css?body=1" for 127.0.0.1 at 2015-04-08 06:01:38 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:01:39 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:01:39 +0200
+
+
+Started GET "/assets/sessions-ab2957b1a17e00699b4c0a7a9e04ce80.css?body=1" for 127.0.0.1 at 2015-04-08 06:01:39 +0200
+
+
+Started GET "/assets/application-5597c2735a9de71615ed8cdfa752f83b.css?body=1" for 127.0.0.1 at 2015-04-08 06:01:39 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 06:01:39 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:39 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:39 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:39 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:39 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:39 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:39 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:39 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:39 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 06:01:52 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.6ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 132ms (Views: 127.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:01:52 +0200
+
+
+Started GET "/assets/home-19b5161f936ea55cf25dde826c999c1c.css?body=1" for 127.0.0.1 at 2015-04-08 06:01:52 +0200
+
+
+Started GET "/assets/application-4dbe97a380fde9d293cabcc9b3b7de4e.css?body=1" for 127.0.0.1 at 2015-04-08 06:01:52 +0200
+
+
+Started GET "/assets/sessions-079ea0abc1d5ff188548acdac42f902c.css?body=1" for 127.0.0.1 at 2015-04-08 06:01:52 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 06:01:52 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:01:52 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:52 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:52 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:52 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:52 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:52 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:52 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:52 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 06:01:52 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 06:02:02 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 142ms (Views: 140.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/sessions-8d649b0a9bf58a0dbef049ebdfe423c5.css?body=1" for 127.0.0.1 at 2015-04-08 06:02:02 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:02:02 +0200
+
+
+Started GET "/assets/application-fac445e51da9151a94004a3c54bf09af.css?body=1" for 127.0.0.1 at 2015-04-08 06:02:02 +0200
+
+
+Started GET "/assets/home-19b5161f936ea55cf25dde826c999c1c.css?body=1" for 127.0.0.1 at 2015-04-08 06:02:02 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 06:02:02 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:02:02 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 06:02:02 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 06:02:02 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 06:02:02 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:02:02 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 06:02:02 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:02:02 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:02:02 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 06:02:02 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 06:02:52 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.6ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 84ms (Views: 80.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:02:52 +0200
+
+
+Started GET "/assets/home-19b5161f936ea55cf25dde826c999c1c.css?body=1" for 127.0.0.1 at 2015-04-08 06:02:52 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 06:02:52 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 06:02:52 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:02:52 +0200
+
+
+Started GET "/assets/sessions-8d649b0a9bf58a0dbef049ebdfe423c5.css?body=1" for 127.0.0.1 at 2015-04-08 06:02:52 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 06:02:52 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 06:02:52 +0200
+
+
+Started GET "/assets/application-fac445e51da9151a94004a3c54bf09af.css?body=1" for 127.0.0.1 at 2015-04-08 06:02:52 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:02:52 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 06:02:52 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:02:52 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:02:52 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 06:02:52 +0200
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2015-04-08 06:02:59 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UiJOuqtFJUxV9JRe97XpPuechFrJ4Z7gBPAL2f2qkSIWXe4vuFaXpZ2jCy0vej/6q6J8QLWkF2aHy9c2QBxt5w=="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.3ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 06:02:59 +0200
+Processing by HomeController#index as HTML
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 81ms (Views: 77.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/home-19b5161f936ea55cf25dde826c999c1c.css?body=1" for 127.0.0.1 at 2015-04-08 06:02:59 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:02:59 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:02:59 +0200
+
+
+Started GET "/assets/application-fac445e51da9151a94004a3c54bf09af.css?body=1" for 127.0.0.1 at 2015-04-08 06:02:59 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 06:02:59 +0200
+
+
+Started GET "/assets/sessions-8d649b0a9bf58a0dbef049ebdfe423c5.css?body=1" for 127.0.0.1 at 2015-04-08 06:02:59 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 06:02:59 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 06:02:59 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 06:02:59 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:02:59 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 06:02:59 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:02:59 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 06:02:59 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:02:59 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 06:03:12 +0200
+Processing by HomeController#index as HTML
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items"
+  Rendered home/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 61ms (Views: 59.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/shops" for 127.0.0.1 at 2015-04-08 06:03:14 +0200
+Processing by ShopsController#index as HTML
+  Parameters: {"authenticity_token"=>"rNmSaI6E76flwzBDrWjSE85z09/IwEIPE4vDR1Lcj8XZcXeLIeH8k9QtGekY8V8MEs0q567b6E8XdLW1+2pQVg=="}
+  [1m[36mShop Load (0.7ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 76ms (Views: 67.5ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:03:14 +0200
+
+
+Started GET "/assets/application-fac445e51da9151a94004a3c54bf09af.css?body=1" for 127.0.0.1 at 2015-04-08 06:03:14 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 06:03:14 +0200
+
+
+Started GET "/assets/sessions-8d649b0a9bf58a0dbef049ebdfe423c5.css?body=1" for 127.0.0.1 at 2015-04-08 06:03:14 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:03:14 +0200
+
+
+Started GET "/assets/home-19b5161f936ea55cf25dde826c999c1c.css?body=1" for 127.0.0.1 at 2015-04-08 06:03:14 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 06:03:14 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 06:03:14 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 06:03:14 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:03:14 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 06:03:14 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:03:14 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:03:14 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 06:03:14 +0200
+
+
+Started GET "/shops/show/1" for 127.0.0.1 at 2015-04-08 06:03:16 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShop Load (0.5ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.3ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."shop_id" = $1[0m  [["shop_id", 1]]
+  Rendered shops/show.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 86ms (Views: 74.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:03:16 +0200
+
+
+Started GET "/assets/sessions-8d649b0a9bf58a0dbef049ebdfe423c5.css?body=1" for 127.0.0.1 at 2015-04-08 06:03:16 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 06:03:16 +0200
+
+
+Started GET "/assets/application-fac445e51da9151a94004a3c54bf09af.css?body=1" for 127.0.0.1 at 2015-04-08 06:03:16 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:03:16 +0200
+
+
+Started GET "/assets/home-19b5161f936ea55cf25dde826c999c1c.css?body=1" for 127.0.0.1 at 2015-04-08 06:03:16 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 06:03:16 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 06:03:16 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 06:03:16 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:03:16 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 06:03:16 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:03:16 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:03:16 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 06:03:16 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 06:03:18 +0200
+Processing by HomeController#index as HTML
+  [1m[35mItem Load (0.5ms)[0m  SELECT "items".* FROM "items"
+  Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 74ms (Views: 72.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-04-08 06:03:21 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"YjMEwr3Txw/1Xr9cxsNPnqCE0Ly2hSTxpM0lJHjpYa4Xm+EhErbUO8SwlvZzWsKBfDophNCejrGgMlPW0V++PQ=="}
+Completed 401 Unauthorized in 1ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"YjMEwr3Txw/1Xr9cxsNPnqCE0Ly2hSTxpM0lJHjpYa4Xm+EhErbUO8SwlvZzWsKBfDophNCejrGgMlPW0V++PQ=="}
+  Rendered devise/shared/_links.html.erb (6.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (33.6ms)
+Completed 200 OK in 113ms (Views: 112.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:03:21 +0200
+
+
+Started GET "/assets/home-19b5161f936ea55cf25dde826c999c1c.css?body=1" for 127.0.0.1 at 2015-04-08 06:03:21 +0200
+
+
+Started GET "/assets/sessions-8d649b0a9bf58a0dbef049ebdfe423c5.css?body=1" for 127.0.0.1 at 2015-04-08 06:03:21 +0200
+
+
+Started GET "/assets/application-fac445e51da9151a94004a3c54bf09af.css?body=1" for 127.0.0.1 at 2015-04-08 06:03:21 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:03:21 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 06:03:21 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 06:03:21 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:03:21 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 06:03:21 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:03:21 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 06:03:21 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:03:21 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 06:03:21 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 06:03:21 +0200
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-04-08 06:04:38 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"YjMEwr3Txw/1Xr9cxsNPnqCE0Ly2hSTxpM0lJHjpYa4Xm+EhErbUO8SwlvZzWsKBfDophNCejrGgMlPW0V++PQ=="}
+Completed 401 Unauthorized in 1ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"YjMEwr3Txw/1Xr9cxsNPnqCE0Ly2hSTxpM0lJHjpYa4Xm+EhErbUO8SwlvZzWsKBfDophNCejrGgMlPW0V++PQ=="}
+  Rendered devise/shared/_links.html.erb (6.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 136ms (Views: 135.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:04:38 +0200
+
+
+Started GET "/assets/home-19b5161f936ea55cf25dde826c999c1c.css?body=1" for 127.0.0.1 at 2015-04-08 06:04:38 +0200
+
+
+Started GET "/assets/sessions-425bd5415f82611935d88552340244b3.css?body=1" for 127.0.0.1 at 2015-04-08 06:04:38 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 06:04:38 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:04:38 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 06:04:38 +0200
+
+
+Started GET "/assets/application-7a5efa07b85608df64aee0142e809b32.css?body=1" for 127.0.0.1 at 2015-04-08 06:04:38 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 06:04:38 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 06:04:38 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:04:38 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 06:04:38 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:04:38 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:04:38 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 06:04:38 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 06:04:45 +0200
+Processing by HomeController#index as HTML
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 75ms (Views: 73.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:04:45 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 06:04:45 +0200
+
+
+Started GET "/assets/home-19b5161f936ea55cf25dde826c999c1c.css?body=1" for 127.0.0.1 at 2015-04-08 06:04:45 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 06:04:45 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 06:04:45 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 06:04:45 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 06:04:45 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:04:45 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 06:04:45 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:04:45 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 06:04:45 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 06:04:45 +0200

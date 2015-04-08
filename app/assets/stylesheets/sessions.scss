@@ -1,0 +1,148 @@
+// Place all the styles related to the user controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.card /* to set the shape the and font and color and position of the sigin in (form)*/
+{
+	margin-left: 40%;
+	margin-top: 30%;
+	margin-top: 27%;
+	border: dashed;
+	border-radius: 15px;
+	border-color: #E9573F;
+	background-color: #E9573F;
+	width :20%; 
+}
+
+h1 /* to make the headline in the ceneter of the page*/
+{
+	margin-left: 33%;
+}
+.password /* to set the password feild position*/
+{
+	margin-left: 1.2%;
+}
+
+.submit-button /* to set the login button position*/
+{
+
+	margin-left: 40%;
+
+
+
+}
+#blurringTextG{
+width:200%;
+}
+
+.blurringTextG{
+color:transparent;
+;
+font-family:"Comic Sans MS", cursive, sans-serif;
+font-size:500%;
+text-decoration:none;
+font-weight:normal;
+font-style:normal;
+float: left;
+margin-top: 2%;
+text-shadow: #000000 0 0 1px;
+-moz-animation-name:bounce_blurringTextG;
+-moz-animation-duration:10s;
+-moz-animation-iteration-count:1;
+-moz-animation-direction:linear;
+-webkit-animation-name:bounce_blurringTextG;
+-webkit-animation-duration:10s;
+-webkit-animation-iteration-count:1;
+-webkit-animation-direction:linear;
+-ms-animation-name:bounce_blurringTextG;
+-ms-animation-duration:10s;
+-ms-animation-iteration-count:1;
+-ms-animation-direction:linear;
+-o-animation-name:bounce_blurringTextG;
+-o-animation-duration:10s;
+-o-animation-iteration-count:1;
+-o-animation-direction:linear;
+animation-name:bounce_blurringTextG;
+animation-duration:10s;
+animation-iteration-count:1;
+animation-direction:linear;
+}
+
+@-moz-keyframes bounce_blurringTextG{
+0%{
+text-shadow: none;
+}
+
+50%{
+text-shadow: 000000 0 0 20px;
+}
+
+100%{
+text-shadow: #000000 0 0 0;
+}
+
+}
+
+@-webkit-keyframes bounce_blurringTextG{
+0%{
+text-shadow: none;
+}
+
+50%{
+text-shadow: 000000 0 0 20px;
+}
+
+100%{
+text-shadow: #000000 0 0 0;
+}
+
+}
+
+@-ms-keyframes bounce_blurringTextG{
+0%{
+text-shadow: none;
+}
+
+50%{
+text-shadow: 000000 0 0 20px;
+}
+
+100%{
+text-shadow: #000000 0 0 0;
+}
+
+}
+
+@-o-keyframes bounce_blurringTextG{
+0%{
+text-shadow: none;
+}
+
+50%{
+text-shadow: 000000 0 0 20px;
+}
+
+100%{
+text-shadow: #000000 0 0 0;
+}
+
+}
+
+@keyframes bounce_blurringTextG{
+0%{
+text-shadow: none;
+}
+
+50%{
+text-shadow: 000000 0 0 20px;
+}
+
+100%{
+text-shadow: #000000 0 0 0;
+}
+
+}
+
+
+
+
