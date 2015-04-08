@@ -1,4 +1,3 @@
-
 <div class="subjects index">
   <h2 class= "pagetitle">Items</h2>
   <div class = "add">
@@ -24,5 +23,12 @@
         </div>
     </div>
     <% end %>
+     <div>
+      <p>Filter by Category</p>
+      <%= form_tag(:url => {:controller => 'item', :action => 'filterCategories'}) do %>
+      <%= select_tag 'category', options_for_select([['category one', 'Category One'], ['category two', 'Category TWO']]) %>
+      <%= submit_tag "Filter" %>
+      <% end %>
+    </div>
   </div>
 </div>

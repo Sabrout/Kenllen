@@ -86,6 +86,11 @@ class ItemController < ApplicationController
     redirect_to(:action => 'show', :id => @item.id)
   end
 
+  def filterCategories
+    categ = params[:category]
+    @itemsList = Item.find_by_category(categ)
+  end
+
 private
 	def item_params
     #same as using "params[:item]", Except that it :
