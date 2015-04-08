@@ -7,7 +7,6 @@ class CreateItems < ActiveRecord::Migration
       t.string "description", :limit => 200, :default => ""
       t.string "inspiration", :limit => 70, :default => ""
       t.decimal "price", :null => false
-      t.integer "quantity" , :default => 1
       
       t.timestamps null: false
     end

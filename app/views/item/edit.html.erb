@@ -1,9 +1,9 @@
-<%= link_to("<< Back To List", {:action => 'index'}, :class => 'back-link') %>
+
 
 <div class="create">
 	<h2>Update Item</h2>
 
-	<%= form_for(:item, :url => {:action => 'update', :id => @item.id}) do |f| %>
+	<%= form_for(:item, :url => {:action => 'update', :id => @item.id, :shop_id => @shop.id}) do |f| %>
 	
 	<table summary="Item form fields">
 		<tr>
@@ -21,6 +21,25 @@
 		<tr>
 			<th>Inspiration</th>
 			<td><%= f.text_field(:inspiration) %></td>
+		</tr>
+		<tr>
+			<th>Delete Images</th>
+			<td>
+				<% @item_attachments.each do |p| %>
+ 		 			<%= image_tag p.photo_url, :size => "150x150" %>
+  					<%= link_to "Delete", {:action => 'destroyImage', :id => @item.id, :attachment_id => p.id} %>
+				<% end %>
+			</td>
+		</tr>
+		<tr>
+			<th>Add Images</th>
+			<td>
+			<%= f.fields_for :item_attachments do |i| %>
+     			<div class="field">
+       				<%= i.file_field :photo, :multiple => true, name: "item_attachments[photo][]" %>
+     			</div>
+   			<% end %>
+   			</td>
 		</tr>
 	</table>
 

@@ -1,4 +1,4 @@
-<%= link_to("<< Back To List", {:action => 'index'}, :class => 'back-link') %>
+
 
 <div class="create">
 	<h2>Show Item</h2>
@@ -21,7 +21,14 @@
 			<td><%= @item.inspiration %></td>
 		</tr>
 		<tr>
-		<td><%= button_to 'Add to Cart', cart_items_path(item_id: @item) %></td>
+			<th>Category</th>
+			<td><%= @item.category %></td>
+		</tr>
+		<tr>
+			<% @item_attachments.each do |p| %>
+ 		 		<%= image_tag p.photo_url, :size => "150x150" %>
+  				<%= link_to "Destroy", p, method: :delete %>
+			<% end %>
 		</tr>
 	</table>
 </div>

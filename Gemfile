@@ -16,8 +16,6 @@ gem 'coffee-script-source' , '1.8.0'
 # gem 'therubyracer', platforms: :ruby
 #imageUploader
 gem 'carrierwave'
-#imageProcessor
-gem 'rmagick'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -32,14 +30,13 @@ gem 'devise'
 # gem 'unicorn'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'tzinfo-data'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   # test framework 
   gem 'rspec-rails'
-  gem 'launchy'
-  gem 'factory_girl_rails', '~> 4.0'
   gem 'capybara'
   gem 'database_cleaner'
   # Access an IRB console on exception pages or by using <%= console %> in views
@@ -47,4 +44,5 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-
+# For timezone information
+  gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
