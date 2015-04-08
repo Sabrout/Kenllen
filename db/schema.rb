@@ -11,10 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150330211037) do
+ActiveRecord::Schema.define(version: 20150404161751) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "follows", force: :cascade do |t|
+  end
 
   create_table "items", force: :cascade do |t|
     t.integer  "shop_id"
@@ -39,6 +42,13 @@ ActiveRecord::Schema.define(version: 20150330211037) do
   end
 
   add_index "shops", ["user_id"], name: "index_shops_on_user_id", using: :btree
+
+  create_table "shops_users", id: false, force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "shop_id"
+  end
+
+  add_index "shops_users", ["shop_id", "user_id"], name: "index_shops_users_on_shop_id_and_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "fname"

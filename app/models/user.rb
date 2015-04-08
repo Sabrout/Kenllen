@@ -4,7 +4,10 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable
+
+         # Associations
     has_many :shops , :dependent => :destroy
+    has_and_belongs_to_many :followed_shops, class_name: "Shop", join_table: "shops_users"
 
     validates :fname , :presence => {:message => "Firsname Field Cannot be blank"}
     validates :fname , :length => { :maximum => 12 , :message => "Firstname Is Too Long(maximum is 12 characters)" }  #sets the maximum length of first name to 12
