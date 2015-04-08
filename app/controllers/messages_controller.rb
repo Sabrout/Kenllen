@@ -9,6 +9,7 @@ class MessagesController < ApplicationController
   end
  
    # POST /message/create
+   # create a new message and sends it from current_user to the recipient given in the parameters
   def create
 
     @recipient = User.find_by(uname: params[:new_message][:runame])
@@ -32,6 +33,7 @@ class MessagesController < ApplicationController
 #     redirect_to conversation_path(conversation)
 #   end
 
+  # left temporarly to redirecting the view
   def index
 
     redirect_to root_path

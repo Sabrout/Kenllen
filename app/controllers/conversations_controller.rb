@@ -3,6 +3,7 @@ class ConversationsController < ApplicationController
   	helper_method :mailbox, :conversation
   	before_action :mailbox
 
+  	#listing all conversations inside inbox
   	def index 
     	@conversations = @mailbox.inbox.all
   	end

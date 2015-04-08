@@ -29899,3 +29899,171 @@ Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 a
 
 
 Started GET "/assets/application-347c1be26e62175aa74e2b803528c64a.css?body=1" for ::1 at 2015-04-08 22:00:30 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 22:15:00 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 140ms (Views: 85.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 22:15:00 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 22:15:00 +0200
+
+
+Started GET "/assets/home-cc9b62965754a7eb7a601d28b5dadebf.css?body=1" for ::1 at 2015-04-08 22:15:00 +0200
+
+
+Started GET "/assets/conversations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 22:15:00 +0200
+
+
+Started GET "/assets/shops-148cc41fc987f574a0bd73bc53d4401a.css?body=1" for ::1 at 2015-04-08 22:15:00 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 22:15:00 +0200
+
+
+Started GET "/assets/application-347c1be26e62175aa74e2b803528c64a.css?body=1" for ::1 at 2015-04-08 22:15:00 +0200
+
+
+Started GET "/conversations" for ::1 at 2015-04-08 22:15:02 +0200
+Processing by ConversationsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mMailboxer::Conversation Load (3.0ms)[0m  SELECT DISTINCT "mailboxer_conversations".* FROM "mailboxer_conversations" INNER JOIN "mailboxer_notifications" ON "mailboxer_notifications"."conversation_id" = "mailboxer_conversations"."id" AND "mailboxer_notifications"."type" IN ('Mailboxer::Message') INNER JOIN "mailboxer_receipts" ON "mailboxer_receipts"."notification_id" = "mailboxer_notifications"."id" WHERE "mailboxer_notifications"."type" = 'Mailboxer::Message' AND "mailboxer_receipts"."receiver_id" = $1 AND "mailboxer_receipts"."receiver_type" = $2 AND "mailboxer_receipts"."mailbox_type" = $3 AND "mailboxer_receipts"."trashed" = 'f' AND "mailboxer_receipts"."deleted" = 'f'  ORDER BY mailboxer_conversations.updated_at DESC  [["receiver_id", 2], ["receiver_type", "User"], ["mailbox_type", "inbox"]]
+  [1m[36mMailboxer::Message Load (0.0ms)[0m  [1mSELECT  "mailboxer_notifications".* FROM "mailboxer_notifications" WHERE "mailboxer_notifications"."type" IN ('Mailboxer::Message') AND "mailboxer_notifications"."conversation_id" = $1  ORDER BY created_at DESC LIMIT 1[0m  [["conversation_id", 25]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mMailboxer::Message Load (1.0ms)[0m  [1mSELECT  "mailboxer_notifications".* FROM "mailboxer_notifications" WHERE "mailboxer_notifications"."type" IN ('Mailboxer::Message') AND "mailboxer_notifications"."conversation_id" = $1  ORDER BY created_at DESC LIMIT 1[0m  [["conversation_id", 24]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mMailboxer::Message Load (1.0ms)[0m  [1mSELECT  "mailboxer_notifications".* FROM "mailboxer_notifications" WHERE "mailboxer_notifications"."type" IN ('Mailboxer::Message') AND "mailboxer_notifications"."conversation_id" = $1  ORDER BY created_at DESC LIMIT 1[0m  [["conversation_id", 23]]
+  [1m[35mCACHE (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mMailboxer::Message Load (1.0ms)[0m  [1mSELECT  "mailboxer_notifications".* FROM "mailboxer_notifications" WHERE "mailboxer_notifications"."type" IN ('Mailboxer::Message') AND "mailboxer_notifications"."conversation_id" = $1  ORDER BY created_at DESC LIMIT 1[0m  [["conversation_id", 22]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mMailboxer::Message Load (0.0ms)[0m  [1mSELECT  "mailboxer_notifications".* FROM "mailboxer_notifications" WHERE "mailboxer_notifications"."type" IN ('Mailboxer::Message') AND "mailboxer_notifications"."conversation_id" = $1  ORDER BY created_at DESC LIMIT 1[0m  [["conversation_id", 21]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mMailboxer::Message Load (0.0ms)[0m  [1mSELECT  "mailboxer_notifications".* FROM "mailboxer_notifications" WHERE "mailboxer_notifications"."type" IN ('Mailboxer::Message') AND "mailboxer_notifications"."conversation_id" = $1  ORDER BY created_at DESC LIMIT 1[0m  [["conversation_id", 20]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered conversations/index.html.erb within layouts/application (116.0ms)
+Completed 200 OK in 197ms (Views: 146.0ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/assets/conversations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 22:15:02 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 22:15:02 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 22:15:02 +0200
+
+
+Started GET "/assets/home-cc9b62965754a7eb7a601d28b5dadebf.css?body=1" for ::1 at 2015-04-08 22:15:02 +0200
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 22:15:02 +0200
+
+
+Started GET "/assets/shops-148cc41fc987f574a0bd73bc53d4401a.css?body=1" for ::1 at 2015-04-08 22:15:02 +0200
+
+
+Started GET "/assets/application-347c1be26e62175aa74e2b803528c64a.css?body=1" for ::1 at 2015-04-08 22:15:02 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 22:15:14 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 56ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 22:15:15 +0200
+
+
+Started GET "/assets/shops-148cc41fc987f574a0bd73bc53d4401a.css?body=1" for ::1 at 2015-04-08 22:15:15 +0200
+
+
+Started GET "/assets/conversations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 22:15:15 +0200
+
+
+Started GET "/assets/home-cc9b62965754a7eb7a601d28b5dadebf.css?body=1" for ::1 at 2015-04-08 22:15:15 +0200
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 22:15:15 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 22:15:15 +0200
+
+
+Started GET "/assets/application-347c1be26e62175aa74e2b803528c64a.css?body=1" for ::1 at 2015-04-08 22:15:15 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 22:22:15 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 157ms (Views: 95.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/conversations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 22:22:15 +0200
+
+
+Started GET "/assets/home-cc9b62965754a7eb7a601d28b5dadebf.css?body=1" for ::1 at 2015-04-08 22:22:15 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 22:22:15 +0200
+
+
+Started GET "/assets/shops-148cc41fc987f574a0bd73bc53d4401a.css?body=1" for ::1 at 2015-04-08 22:22:15 +0200
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 22:22:15 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 22:22:15 +0200
+
+
+Started GET "/assets/application-347c1be26e62175aa74e2b803528c64a.css?body=1" for ::1 at 2015-04-08 22:22:15 +0200
+
+
+Started GET "/conversations" for ::1 at 2015-04-08 22:22:17 +0200
+Processing by ConversationsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mMailboxer::Conversation Load (2.0ms)[0m  SELECT DISTINCT "mailboxer_conversations".* FROM "mailboxer_conversations" INNER JOIN "mailboxer_notifications" ON "mailboxer_notifications"."conversation_id" = "mailboxer_conversations"."id" AND "mailboxer_notifications"."type" IN ('Mailboxer::Message') INNER JOIN "mailboxer_receipts" ON "mailboxer_receipts"."notification_id" = "mailboxer_notifications"."id" WHERE "mailboxer_notifications"."type" = 'Mailboxer::Message' AND "mailboxer_receipts"."receiver_id" = $1 AND "mailboxer_receipts"."receiver_type" = $2 AND "mailboxer_receipts"."mailbox_type" = $3 AND "mailboxer_receipts"."trashed" = 'f' AND "mailboxer_receipts"."deleted" = 'f'  ORDER BY mailboxer_conversations.updated_at DESC  [["receiver_id", 2], ["receiver_type", "User"], ["mailbox_type", "inbox"]]
+  [1m[36mMailboxer::Message Load (0.0ms)[0m  [1mSELECT  "mailboxer_notifications".* FROM "mailboxer_notifications" WHERE "mailboxer_notifications"."type" IN ('Mailboxer::Message') AND "mailboxer_notifications"."conversation_id" = $1  ORDER BY created_at DESC LIMIT 1[0m  [["conversation_id", 25]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mMailboxer::Message Load (1.0ms)[0m  [1mSELECT  "mailboxer_notifications".* FROM "mailboxer_notifications" WHERE "mailboxer_notifications"."type" IN ('Mailboxer::Message') AND "mailboxer_notifications"."conversation_id" = $1  ORDER BY created_at DESC LIMIT 1[0m  [["conversation_id", 24]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mMailboxer::Message Load (0.0ms)[0m  [1mSELECT  "mailboxer_notifications".* FROM "mailboxer_notifications" WHERE "mailboxer_notifications"."type" IN ('Mailboxer::Message') AND "mailboxer_notifications"."conversation_id" = $1  ORDER BY created_at DESC LIMIT 1[0m  [["conversation_id", 23]]
+  [1m[35mCACHE (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mMailboxer::Message Load (0.0ms)[0m  [1mSELECT  "mailboxer_notifications".* FROM "mailboxer_notifications" WHERE "mailboxer_notifications"."type" IN ('Mailboxer::Message') AND "mailboxer_notifications"."conversation_id" = $1  ORDER BY created_at DESC LIMIT 1[0m  [["conversation_id", 22]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mMailboxer::Message Load (0.0ms)[0m  [1mSELECT  "mailboxer_notifications".* FROM "mailboxer_notifications" WHERE "mailboxer_notifications"."type" IN ('Mailboxer::Message') AND "mailboxer_notifications"."conversation_id" = $1  ORDER BY created_at DESC LIMIT 1[0m  [["conversation_id", 21]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mMailboxer::Message Load (0.0ms)[0m  [1mSELECT  "mailboxer_notifications".* FROM "mailboxer_notifications" WHERE "mailboxer_notifications"."type" IN ('Mailboxer::Message') AND "mailboxer_notifications"."conversation_id" = $1  ORDER BY created_at DESC LIMIT 1[0m  [["conversation_id", 20]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered conversations/index.html.erb within layouts/application (94.0ms)
+Completed 200 OK in 174ms (Views: 131.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 22:22:17 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 22:22:17 +0200
+
+
+Started GET "/assets/conversations-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 22:22:17 +0200
+
+
+Started GET "/assets/home-cc9b62965754a7eb7a601d28b5dadebf.css?body=1" for ::1 at 2015-04-08 22:22:17 +0200
+
+
+Started GET "/assets/messages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 22:22:17 +0200
+
+
+Started GET "/assets/shops-148cc41fc987f574a0bd73bc53d4401a.css?body=1" for ::1 at 2015-04-08 22:22:18 +0200
+
+
+Started GET "/assets/application-347c1be26e62175aa74e2b803528c64a.css?body=1" for ::1 at 2015-04-08 22:22:18 +0200
