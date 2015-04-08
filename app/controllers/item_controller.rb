@@ -52,10 +52,13 @@ class ItemController < ApplicationController
   def create
     #Instantiate a new Item using form parameters
   	@item = Item.new(item_params)
+    @item.category = params[:category]
     #Save the item
   	if @item.save
-      params[:item_attachments]['photo'].each do |a|
-        @item_attachment = @item.item_attachments.create!(:photo => a, :item_id => @item.id)
+      if params[:item_attachments]
+        params[:item_attachments]['photo'].each do |a|
+          @item_attachment = @item.item_attachments.create!(:photo => a, :item_id => @item.id)
+        end
       end
       #if save succeeds redirect to the index action
   		redirect_to(:action => 'index')

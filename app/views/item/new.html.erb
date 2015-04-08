@@ -23,16 +23,6 @@
 			<td><%= f.text_field(:inspiration) %></td>
 		</tr>
 		<tr>
-			<th>Category</th>
-			<td>
-			<select>
-    			<option value="" disabled="disabled" selected="selected">Please select a category</option>
-    			<option value="1">Category One</option>
-    			<option value="2">Category Two</option>
-			</select>
-			</td>
-		</tr>
-		<tr>
 			<th>Art Images</th>
 			<td>
 			<%= f.fields_for :item_attachments do |i| %>
@@ -41,6 +31,12 @@
      			</div>
    			<% end %>
    			</td>
+		</tr>
+		<tr>
+			<th>Category</th>
+			<td>
+			<%= select_tag(:category, options_for_select([['category one', 'Category One'], ['category two', 'Category TWO']])) %>
+			</td>
 		</tr>
 	</table>
 
