@@ -1,7 +1,7 @@
 <html>
 <body>
 
-<div class="content-helper"><!--Big Container-->
+<div class="content-helper" id ="cartpage"><!--Big Container-->
 	<h2 class="mainbox-cart-title"> <!--CART TITLE-->
 		<span class="float-left">&nbsp;</span>
 		<span class="float-right">&nbsp;</span>
@@ -52,8 +52,19 @@
 <%end%>	
 
 	<div class="cart-footer-buttons">
-		<div class="float-right"><!-- Put to the right -->
-			<span class="cart-button "><a>Checkout</a></span> <!-- CHECKOUT BuTTON -->
+		<div class="float-right"> <!-- Put to the right -->
+
+			<button class="cart-button " onclick="myFunction()"><a>Checkout</a></button> 
+			<script>
+					function myFunction() {
+   						 var addres = prompt("Please enter your addres", "Home");
+    
+   								 if (addres != null) {
+      							  location.href = "/home";
+	    								}
+									}
+									</script>
+<!-- CHECKOUT BuTTON -->
 		</div>
  			<%=button_to 'Continue Shopping' ,root_path , class: 'cart-button' , method: :get%>
 	</div> <!-- Continue BuTTON -->

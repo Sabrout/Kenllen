@@ -38,7 +38,6 @@ ActiveRecord::Schema.define(version: 20150402230350) do
     t.string   "description", limit: 200, default: ""
     t.string   "inspiration", limit: 70,  default: ""
     t.decimal  "price",                                null: false
-    t.integer  "quantity",                default: 1
     t.datetime "created_at",                           null: false
     t.datetime "updated_at",                           null: false
   end

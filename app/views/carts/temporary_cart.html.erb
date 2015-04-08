@@ -52,7 +52,14 @@
 		</div>
 
 		<div class="float-right"><!-- Put to the right -->
-			<span class="cart-button "><a>Checkout</a></span> <!-- CHECKOUT BuTTON -->
+			<button class="cart-button " onclick="myFunction()">Checkout</button> 
+			<script>
+				function myFunction() {
+    				alert("You Must LogIn First");
+    				location.href = "/users/sign_in";
+					}
+</script>
+			<!-- CHECKOUT BuTTON -->
 		</div>
 	</div>
 

@@ -63,7 +63,7 @@ GEM
     coffee-script (2.3.0)
       coffee-script-source
       execjs
-    coffee-script-source (1.9.1)
+    coffee-script-source (1.8.0)
     columnize (0.9.0)
     database_cleaner (1.4.1)
     debug_inspector (0.0.2)
@@ -78,6 +78,11 @@ GEM
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.3.0)
+    factory_girl (4.5.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.5.0)
+      factory_girl (~> 4.5.0)
+      railties (>= 3.0.0)
     globalid (0.3.3)
       activesupport (>= 4.1.0)
     hike (1.2.3)
@@ -202,8 +207,10 @@ DEPENDENCIES
   capybara
   carrierwave
   coffee-rails (~> 4.1.0)
+  coffee-script-source (= 1.8.0)
   database_cleaner
   devise
+  factory_girl_rails (~> 4.0)
   jbuilder (~> 2.0)
   jquery-rails
   launchy
