@@ -45824,3 +45824,149 @@ Processing by Devise::SessionsController#new as HTML
   Rendered devise/shared/_links.html.erb (7.1ms)
   Rendered devise/sessions/new.html.erb within layouts/application (24.0ms)
 Completed 200 OK in 94ms (Views: 82.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 21:01:18 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mItem Load (2.6ms)[0m  SELECT "items".* FROM "items"
+  Rendered home/index.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 183ms (Views: 149.6ms | ActiveRecord: 10.4ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-04-08 21:01:23 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"8ClYGyX6FR7k2Vx/zAeQfRm8X/Mip4MyrRPTBL2v6lhdz9b8+HmVPasxeb/vqF0ypOvDNPVeYlXz5OCGR0NdWw=="}
+Completed 401 Unauthorized in 2ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"8ClYGyX6FR7k2Vx/zAeQfRm8X/Mip4MyrRPTBL2v6lhdz9b8+HmVPasxeb/vqF0ypOvDNPVeYlXz5OCGR0NdWw=="}
+  Rendered devise/shared/_links.html.erb (8.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (28.2ms)
+Completed 200 OK in 99ms (Views: 88.0ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-04-08 21:06:13 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"8ClYGyX6FR7k2Vx/zAeQfRm8X/Mip4MyrRPTBL2v6lhdz9b8+HmVPasxeb/vqF0ypOvDNPVeYlXz5OCGR0NdWw=="}
+Completed 401 Unauthorized in 1ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"8ClYGyX6FR7k2Vx/zAeQfRm8X/Mip4MyrRPTBL2v6lhdz9b8+HmVPasxeb/vqF0ypOvDNPVeYlXz5OCGR0NdWw=="}
+  Rendered devise/shared/_links.html.erb (4.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 108ms (Views: 106.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 21:06:14 +0200
+
+
+Started GET "/assets/application-a6afc884d9f495b453d60d9de4a979b3.css?body=1" for 127.0.0.1 at 2015-04-08 21:06:14 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 21:06:14 +0200
+
+
+Started GET "/assets/sessions-f0efa21e1308893da46cfcbfc911968b.css?body=1" for 127.0.0.1 at 2015-04-08 21:06:14 +0200
+
+
+Started GET "/assets/home-b39f8f0287e0c76c2e67bcf86241e757.css?body=1" for 127.0.0.1 at 2015-04-08 21:06:14 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 21:06:14 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 21:06:14 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 21:06:14 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 21:06:14 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 21:06:14 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 21:06:14 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 21:06:14 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 21:06:14 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 21:06:14 +0200
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 21:18:57 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mItem Load (0.6ms)[0m  SELECT "items".* FROM "items"
+  Rendered home/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 210ms (Views: 186.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 21:18:58 +0200
+
+
+Started GET "/assets/home-b39f8f0287e0c76c2e67bcf86241e757.css?body=1" for 127.0.0.1 at 2015-04-08 21:18:58 +0200
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for 127.0.0.1 at 2015-04-08 21:18:58 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for 127.0.0.1 at 2015-04-08 21:18:58 +0200
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for 127.0.0.1 at 2015-04-08 21:18:58 +0200
+
+
+Started GET "/assets/shops-e8486228a4f5111bbb25f1d2bc104472.css?body=1" for 127.0.0.1 at 2015-04-08 21:18:58 +0200
+
+
+Started GET "/assets/turbolinks-686d2bf7d9d383528c901c64187a8c31.js?body=1" for 127.0.0.1 at 2015-04-08 21:18:58 +0200
+
+
+Started GET "/assets/carts-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 21:18:58 +0200
+
+
+Started GET "/assets/home-b659a43b4ec45da94b258d58a5ab2626.js?body=1" for 127.0.0.1 at 2015-04-08 21:18:58 +0200
+
+
+Started GET "/assets/item-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 21:18:58 +0200
+
+
+Started GET "/assets/shops-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for 127.0.0.1 at 2015-04-08 21:18:58 +0200
+
+
+Started GET "/assets/application-c4c9dccd92d7a1585876eb8c5cd9009e.js?body=1" for 127.0.0.1 at 2015-04-08 21:18:58 +0200
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-04-08 21:19:14 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"kGWCU95ViiNyAmTFI/+6lbQuAkog2Wq9XhlsC6Y42j1fsHPP1YHDmSmBqLoyIKhojgab39YAxFC2qNSPgFQc3w=="}
+Completed 401 Unauthorized in 2ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"kGWCU95ViiNyAmTFI/+6lbQuAkog2Wq9XhlsC6Y42j1fsHPP1YHDmSmBqLoyIKhojgab39YAxFC2qNSPgFQc3w=="}
+  Rendered devise/shared/_links.html.erb (5.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (19.6ms)
+Completed 200 OK in 86ms (Views: 73.5ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-04-08 21:19:21 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SA6PTOkhbGVfgPak+wvsMBtKa56w7dgPOQrDvCjEgXOH237Q4vUl3wQDOtvq1P7NIWLyC0Y0duLRu3s4DqhHkQ==", "user"=>{"uname"=>"abdo", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (4.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."uname" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["uname", "abdo"]]
+  [1m[35m (1.1ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["last_sign_in_at", "2015-04-08 14:49:50.128008"], ["current_sign_in_at", "2015-04-08 19:19:21.827661"], ["sign_in_count", 19], ["updated_at", "2015-04-08 19:19:21.830641"], ["id", 1]]
+  [1m[35m (1.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 111ms (ActiveRecord: 7.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-08 21:19:21 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items"
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 57ms (Views: 54.5ms | ActiveRecord: 0.6ms)
