@@ -20,5 +20,10 @@
 			<th>Inspiration</th>
 			<td><%= @item.inspiration %></td>
 		</tr>
+		<tr>
+			<% @item_attachments.each do |p| %>
+ 		 		<%= image_tag p.photo_url, :size => "150x150" %>
+			<% end %>
+		</tr>
 	</table>
 </div>

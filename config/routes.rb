@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  resources :item_attachments
+
   devise_for :users
   root 'home#index'
 

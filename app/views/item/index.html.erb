@@ -6,14 +6,21 @@
   </div>
   <div class = "page">
     <% @items.each do |item| %>
+    <% item_attachments = item.item_attachments.all %>
+
     <div class ="shop-card">
-      <div><%= item.id %></div>
+      <div>
+        <% item_attachments.each do |p| %>
+          <%= image_tag p.photo_url, :size => "150x150" %>
+          <%= link_to "Destroy", p, method: :delete %>
+        <% end %>
+      </div>
       <div><%= item.item_name %></div>
+
       <div class="actions">
-        <%= link_to "Show", {:action => 'show', :id => item.id}, :class => 'actionshow' %>|
-        <%= link_to "Edit", {:action => 'edit', :id => item.id}, :class => 'actionedit' %> |
-        <%= link_to "Delete", :action => 'delete', :class => 'actiondelete' %>     
-        <!-- delete feature is not implemented yet  -->
+        <%= link_to "Show", {:action => 'show', :id => item.id}, :class => 'action show' %>|
+        <%= link_to "Edit", {:action => 'edit', :id => item.id}, :class => 'action edit' %> |
+        <%= link_to "Delete", {:action => 'delete', :id => item.id}, :class => 'action delete' %>
         </div>
     </div>
     <% end %>
