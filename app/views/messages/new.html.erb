@@ -1,0 +1,21 @@
+<h2> new
+<br>
+<%= current_user.uname %>
+  <%= form_for(:new_message, :url => {:action => 'create'}) do |f| %>
+     <%= f.label 'UserName' %>
+     <br>
+     <%= f.text_field :runame %>
+     <br>
+     <%= f.label 'Subject' %>
+     <br>
+     <%= f.text_field :subject %>
+     <br>
+     <%= f.label 'Body' %>
+     <br>
+     <%= f.text_area :body, :size => '70x30' %>
+     <br>
+    <!--  = f.input :attachment, as: :file -->
+     <%=  f.submit 'Send message' %>
+   <%  end %>
+
+   <br>
