@@ -2,9 +2,14 @@
 <html>
 <head>
   <title>Knellen</title>
+  <%= javascript_include_tag "http://codepen.io/assets/libs/fullpage/jquery.js"%>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true  %>
+  <%= javascript_include_tag 'jquerymin', 'data-turbolinks-track' => true  %>
+  <%= javascript_include_tag 'jqueryleanModal', 'data-turbolinks-track' => true  %>
+  <%= stylesheet_link_tag "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" %>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
-
   <%= csrf_meta_tags %>
+
 </head>
 <body>
 <header class="site-header" role="banner">
@@ -27,11 +32,11 @@
           	<%else%>
 				<%=link_to "BROWSE SHOPS", {:action => 'index' , :controller => 'shops'}, :class =>"nav-bar-element"%>
 				<%=link_to "Sign Out", destroy_user_session_path , method: :delete , :class => "sign-element" %>
-        <%= link_to("Mail", :conversations, :class => 'title') %>
 			<%end%>
         </div>
     </div>
 </header>
+
 <!-- flash that appears after editing or deleting a shop  -->
 <% if !flash[:notice].blank? %>
   <div class = "notice">

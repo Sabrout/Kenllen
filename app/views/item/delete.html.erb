@@ -1,0 +1,11 @@
+<%= link_to("<< Back To List", {:action => 'index'}, :class => 'back-link') %>
+<div class="item delete">
+	<h2>Delete Item</h2>
+	<%= form_tag({:action => 'destroy', :item_id => @item.id, :shop_id => @shop.id}) do %>
+	<p>Are you sure you want to delete this Item?</p>
+	<p> <%= @item.item_name%> </p>
+	<div>
+		<%= submit_tag("Delete Item") %>
+	</div>
+	<% end %>
+</div>

@@ -2,13 +2,12 @@ class User < ActiveRecord::Base
   self.table_name = 'users'                         #setting referenced table in db
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-
-  # adds the messaging service from mailboxer to this model 
-  acts_as_messageable
-
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable
+
+         # Associations
     has_many :shops , :dependent => :destroy
+    has_and_belongs_to_many :followed_shops, class_name: "Shop", join_table: "shops_users"
 
     validates :fname , :presence => {:message => "Firsname Field Cannot be blank"}
     validates :fname , :length => { :maximum => 12 , :message => "Firstname Is Too Long(maximum is 12 characters)" }  #sets the maximum length of first name to 12
@@ -32,15 +31,5 @@ class User < ActiveRecord::Base
     validates :email ,:allow_blank => true ,:uniqueness => {:message => "Email Already Registerd"}
     validates_confirmation_of :email, {:message => "Please , Re-enter Your Email"}
 
-    # mount_uploader :image , ImageUploader
-
-    # attr_accessor :recipients, :subject, :body, :conversation_id
-    # def name
-    #   email
-    # end
-
-    # def mail_email(object)
-    #   email
-    # end
-
+    mount_uploader :image , ImageUploader
 end

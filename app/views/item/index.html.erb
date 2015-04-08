@@ -11,9 +11,8 @@
       <div><%= item.item_name %></div>
       <div class="actions">
         <%= link_to "Show", {:action => 'show', :id => item.id}, :class => 'actionshow' %>|
-        <%= link_to "Edit", {:action => 'edit', :id => item.id}, :class => 'actionedit' %> |
-        <%= link_to "Delete", :action => 'delete', :class => 'actiondelete' %>     
-        <!-- delete feature is not implemented yet  -->
+        <%= link_to "Edit", {:action => 'edit', :id => item.id, :shop_id => @shop.id}, :class => 'actionedit' %> |
+        <%= link_to "Delete", {:action => 'delete', :id => item.id, :shop_id => @shop.id}, :class => 'actiondelete' %>
         </div>
     </div>
     <% end %>

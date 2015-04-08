@@ -1,31 +1,9 @@
 Rails.application.routes.draw do
-
+  
   devise_for :users
   root 'home#index'
 
-  # get '/inbox' => 'conversations#inbox', as: conversations_inbox
-
-  match ':controller(/:action(/:id))', :via  => [:get, :post , :delete]
-
-  # post '/messagesPath' => 'messages#create'
-
-  resources :messages do
-    member do
-      post :new
-      post :create
-    end
-  end
-  resources :conversations do
-    member do
-      post :reply
-      post :trash
-      post :untrash
-    end
-    collection do
-     get :trashbin
-     post :empty_trash
-   end
- end
+match ':controller(/:action(/:id))', :via  => [:get, :post , :delete]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
