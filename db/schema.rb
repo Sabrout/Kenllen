@@ -16,9 +16,6 @@ ActiveRecord::Schema.define(version: 20150404161751) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "follows", force: :cascade do |t|
-  end
-
   create_table "items", force: :cascade do |t|
     t.integer  "shop_id"
     t.string   "item_name",   limit: 15,               null: false
