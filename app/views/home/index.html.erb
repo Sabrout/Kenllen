@@ -1,8 +1,66 @@
 <% @page_title = "Home" %> <!--set the page title to home-->
-
-
+<div id="slider"> <!--set the slider images -->
+  <div id="slides">
+    <div class="slide active-slide">
+      <img src="http://www.tidskriftenlibertas.se/wp-content/uploads/2014/08/Atlantic-Ocean-credit-Tiago-Fioreze-1024x731.jpg" class="slide-img" />
+    </div>
+    <div class="slide">
+      <img src="http://virtuellife.v.i.pic.centerblog.net/o/86ade1d5.jpg" class="slide-img" />
+    </div>
+    <div class="slide">
+      <img src="http://wallpaper-download.net/wallpapers/styles/1280x800/public/beach-wallpapers-beautiful-sunset-twilight-wallpaper-36791.jpg?itok=PIQhfH8p" class="slide-img" />
+    </div>
+    <div class="slide">
+      <img src="http://www.ellf.ru/uploads/posts/2013-06/1372093390_003-ellf.ru.jpg" class="slide-img" />
+    </div>
+  </div>
+  <!-- Update Dialog -->
+  <div id="dialog">
+    <div id="transparent"></div>
+    <span id="msg"></span>
+    <input id="input" type="text" placeholder="Enter image URL" />
+    <div id="ok"></div>
+    <div id="cancel">Cancel</div>
+  </div>
+  <!-- Arrows -->
+    <img src="http://cdn.flaticon.com/png/256/53579.png" alt="right arrow" class="arrow right" />
+    <img src="http://cdn.flaticon.com/png/256/53567.png" alt="left arrow" class="arrow left" />
+  <!-- Slider Navigation -->
+  <div id="slider-nav">
+    <ul></ul>
+  </div>
+  
 </div>
+<% if !user_signed_in? %> <!--check if the user loged in or not-->
+<div class ="homebuttons">
+<%=button_to "SIGN UP" , new_user_registration_path , method: :get , :class =>"button" %>
+<%=button_to "LOGIN" ,new_user_session_path  , :class =>"button"%>
+<%=button_to "BROWSE SHOPS", {:action => 'index' , :controller => 'shops'}, :class =>"button"%>
+</div>
+<%else%>
+<!-- <div class ="pp">
+  <h2>WELCOME</h2> <br>
+<img src="http://demosthenes.info/assets/images/austin-fireworks.jpg" alt="" height="100" width="100"> 
+<h4><%@current_user.uname%> </h4>
+</div> -->
 
+<br>
+<div class ="homebuttons">
+<%=button_to "Logout", destroy_user_session_path , method: :delete , :class => "button" %>
+<%=button_to "BROWSE SHOPS", {:action => 'index' , :controller => 'shops'}, :class =>"button"%>
+<%end%>
+</div>
+ <div class = "page">
+    <% @items.each do |item| %> <!--diplay of all items in all shops-->
+    <div class ="shop-card">
+      <div><%= item.id %></div>
+      <div><%= item.item_name %></div>
+      <div class="actions">
+        <%= link_to "Show", {:action => 'show', :id => item.id, :controller => 'item'}, :class => 'actionshow' %>   
+        </div>
+    </div>
+    <% end %>
+  </div>
 </body>
 </html>
 
