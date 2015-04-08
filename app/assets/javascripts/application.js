@@ -67,4 +67,3 @@ $(function()
 	e.className = 'invisible';
 	}
 }
-

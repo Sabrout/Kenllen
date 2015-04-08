@@ -20,5 +20,15 @@
 			<th>Inspiration</th>
 			<td><%= @item.inspiration %></td>
 		</tr>
+		<tr>
+			<th>Category</th>
+			<td><%= @item.category %></td>
+		</tr>
+		<tr>
+			<% @item_attachments.each do |p| %>
+ 		 		<%= image_tag p.photo_url, :size => "150x150" %>
+  				<%= link_to "Destroy", p, method: :delete %>
+			<% end %>
+		</tr>
 	</table>
 </div>

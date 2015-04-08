@@ -2,8 +2,7 @@
 <div class="create">
 	<h2>Create Item</h2>
 
-	<%= form_for(:item, :url => {:action => 'create', :id => @shop.id}) do |f| %>
-	
+	<%= form_for :item, :url => {:action => 'create'} , :html => { :multipart => true } do |f| %>
 	<table summary="Item form fields">
 		<tr>
 			<th>Name</th>
@@ -20,6 +19,22 @@
 		<tr>
 			<th>Inspiration</th>
 			<td><%= f.text_field(:inspiration) %></td>
+		</tr>
+		<tr>
+			<th>Art Images</th>
+			<td>
+			<%= f.fields_for :item_attachments do |i| %>
+     			<div class="field">
+       				<%= i.file_field :photo, :multiple => true, name: "item_attachments[photo][]" %>
+     			</div>
+   			<% end %>
+   			</td>
+		</tr>
+		<tr>
+			<th>Category</th>
+			<td>
+			<%= select_tag(:category, options_for_select([['category one', 'Category One'], ['category two', 'Category TWO']])) %>
+			</td>
 		</tr>
 	</table>
 
