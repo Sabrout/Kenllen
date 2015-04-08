@@ -25,7 +25,7 @@
         	<%= link_to(image_tag("logo.png"), root_path, :class => 'logo') %>
           	<%= link_to("Home", root_path, :class => 'nav-bar-element') %>
         	<a href="javascript:;" class="toggle-search">Search</a>
-          	<%= link_to("Cart", carts_path, :class => 'nav-bar-element') %>
+          	<%= link_to("Cart", root_path, :class => 'nav-bar-element') %>
           	<% if !user_signed_in? %>
           		<%=link_to "BROWSE SHOPS", {:action => 'index' , :controller => 'shops'}, :class =>"nav-bar-element"%>
 				<%=link_to "LOGIN" ,new_user_session_path  , :class =>"sign-element"%>
