@@ -1,4 +1,7 @@
 <% @page_title = "Home" %> <!--set the page title to home-->
+<<<<<<< HEAD
+	<% if !user_signed_in? %>
+=======
 <div id="slider"> <!--set the slider images -->
   <div id="slides">
     <div class="slide active-slide">
@@ -32,11 +35,23 @@
   
 </div>
 <% if !user_signed_in? %> <!--check if the user loged in or not-->
+>>>>>>> origin/master
 <div class ="homebuttons">
-<%=button_to "SIGN UP" , new_user_registration_path , method: :get , :class =>"button" %>
-<%=button_to "LOGIN" ,new_user_session_path  , :class =>"button"%>
-<%=button_to "BROWSE SHOPS", {:action => 'index' , :controller => 'shops'}, :class =>"button"%>
+	<%=button_to "SIGN UP" , new_user_registration_path , method: :get , :class =>"button" %>
+	<%=button_to "LOGIN" ,new_user_session_path  , :class =>"button"%>
+	<%=button_to "BROWSE SHOPS", {:action => 'index' , :controller => 'shops'}, :class =>"button"%>
 </div>
+<<<<<<< HEAD
+	<%else%>
+	<h2>WELCOME</h2> <br>
+	<h4><%=@current_user.uname%> </h4>
+<br>
+	<div class ="homebuttons">
+		<%=button_to "Logout", destroy_user_session_path , method: :delete , :class => "button" %>
+		<%=button_to "BROWSE SHOPS", {:action => 'index' , :controller => 'shops'}, :class =>"button"%>
+	<%end%>
+	</div>
+=======
 <%else%>
 <!-- <div class ="pp">
   <h2>WELCOME</h2> <br>
@@ -61,6 +76,7 @@
     </div>
     <% end %>
   </div>
+>>>>>>> origin/master
 </body>
 </html>
 

@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   
-  devise_for :users
+  resources :cart_items
+  resources :carts
+  devise_for :users, controllers: { sessions: "users/sessions" }
   root 'home#index'
 
 match ':controller(/:action(/:id))', :via  => [:get, :post , :delete]
