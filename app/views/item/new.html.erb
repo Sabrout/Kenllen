@@ -1,10 +1,8 @@
-<%= link_to("<< Back To List", {:action => 'index'}, :class => 'back-link') %>
 
 <div class="create">
 	<h2>Create Item</h2>
 
 	<%= form_for :item, :url => {:action => 'create'} , :html => { :multipart => true } do |f| %>
-	
 	<table summary="Item form fields">
 		<tr>
 			<th>Name</th>

@@ -19,6 +19,19 @@ ActiveRecord::Schema.define(version: 20150407193349) do
   create_table "item_attachments", force: :cascade do |t|
     t.integer  "item_id"
     t.string   "photo"
+
+  create_table "cart_items", force: :cascade do |t|
+    t.integer  "quantity",   default: 1
+    t.integer  "cart_id"
+    t.integer  "item_id"
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+  end
+
+  add_index "cart_items", ["item_id"], name: "index_cart_items_on_item_id", using: :btree
+
+  create_table "carts", force: :cascade do |t|
+    t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -47,6 +60,13 @@ ActiveRecord::Schema.define(version: 20150407193349) do
   end
 
   add_index "shops", ["user_id"], name: "index_shops_on_user_id", using: :btree
+
+  create_table "shops_users", id: false, force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "shop_id"
+  end
+
+  add_index "shops_users", ["shop_id", "user_id"], name: "index_shops_users_on_shop_id_and_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "fname"

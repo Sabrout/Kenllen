@@ -1,6 +1,157 @@
+.page{ /*changes the color, position , and padding of the white page which will include all the elements in the website*/
+  /*background: url(index.jpeg);
+  background-size: cover;*/
+  padding-top:6%;
+  padding-left: 6%;
+  padding-right: 1%;
+  background-color:#fefefe;
+  height: 100%;
+  font-family: 'Segoe UI';
+  margin-top: 4.5%;
+  margin-left: 11%;
+  margin-right: 11%;
+  text-align: center;
+  padding-bottom: 5%;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+  box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+}
+.pp
+{
+  position: absolute;
+  left: 5px;
+  top: 5%;
 
-
-.homebuttons {
-	text-align: center;
+}
+/* to set the slider view (Start)*/
+#slider {
+  width:1425px;
+  height:500px;
+  position:relative;
+  left: 11%;
+  margin-top: 1%;
+}
+#slider #slides {
+  width:inherit;
+  height:inherit;
+}
+#slider .slide {
+  width:inherit;
+  height:inherit;
+  position:absolute;
+  display:none;
+}
+#slider .slide .slide-img {
+  width:inherit;
+  height:inherit;
+  border-radius:5px;
+}
+#slider .active-slide {
+  display:block;
+}
+#slider-nav {
+  width:inherit;
+  text-align:center;
+  position:absolute;
+  bottom:0;
+}
+#slider-nav ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:inline-block;
+}
+#slider-nav ul li.dot {
+  display:inline;
+  margin:3px;
+  font-size:3.5em;
+  color:#5E5E5E;
+  cursor:pointer;
+}
+#slider-nav ul li.active-dot {
+  color:white;
+}
+#slider #dialog {
+  z-index:1;
+  width:35%;
+  height:35%;
+  color:white;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:1.4em;
+  border-radius:5px;
+  position:absolute;
+  top:33%;
+  left:33%;
+  display:none;
+}
+#slider #dialog #transparent {
+  width:100%;
+  height:100%;
+  background-color:black;
+  border-radius:5px;
+  opacity:0.7;
+}
+#slider #dialog * {
+  position:absolute;
+}
+#slider #dialog #msg {
+  top:10%;
+  left:10%;
+}
+#slider #dialog #input {
+  width:75%;
+  height:10%;
+  border-radius:5px;
+  font-size:0.8em;
+  padding:2%;
+  top:30%;
+  left:10%;
+}
+#slider #dialog #ok {
+  width:25%;
+  height:15%;
+  padding:2%;
+  background-color:black;
+  border-radius:5px;
+  text-align:center;
+  cursor:pointer;
+  top:60%;
+  right:40%;
+}
+#slider #dialog #cancel {
+  width:25%;
+  height:15%;
+  padding:2%;
+  background-color:black;
+  text-align:center;
+  border-radius:5px;
+  cursor:pointer;
+  top:60%;
+  right:9%;
 }
 
+#slider .arrow {
+  width:45px;
+  height:45px;
+  display:none;
+}
+#slider .left, #slider .right {
+  position:absolute;
+  top:45%;
+  cursor:pointer;
+}
+#slider .left {
+  left:2%;
+}
+#slider .right {
+  right:2%;
+}
+/* to set the slider view (End)*/
+.homebuttons { /* to set the buttons view*/
+  text-align: center;
+  position: relative;
+  right: 2px;
+  top: 15%;
+
+}
