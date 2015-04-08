@@ -3,7 +3,7 @@ class CartsController < ApplicationController
 	def index
 		if (current_user)  #checks if a user is logged in
 			@cart = current_cart
-			render 'carts/index'
+			render 'carts/cart'
 		else        # else create a temporary cart
 			@cart =	temporary_cart
 			@cart.each do |cartItem|
@@ -11,7 +11,7 @@ class CartsController < ApplicationController
 			end
 			@totalPrice = 0
 			@cart.each do |cartItem|
-				@totalPrice += cartItem[1][5].to_i
+			@totalPrice += cartItem[1][5].to_i
 			end
 			render 'carts/temporary_cart'
 		end

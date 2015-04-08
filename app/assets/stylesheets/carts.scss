@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.float-left {
+.float-left { 
   float: left;
 }
 .float-right {
@@ -47,7 +47,6 @@
 .item-desc {
   color: #ee3e00;
   font-size: 15px;
-  font-weight: bold;
   line-height: 1.6em;
 }
 
@@ -61,55 +60,62 @@
 .total-price{
   text-align: center;
   background: white;
-  font-size: 19px;
+  font-size: 18px;
 }
 
+.total-price-line{
+  margin-right: 10%;
+}
+
+.total-price-number{
+  color: #ee3e00;
+
+  font-size: 18px;
+}
 .sub-price{
-  
-}
-
-.cart-button {
-  color: grey;
-  height: 30px;
-  font-size: 15px;
-  background-color: white;
-  border-radius: 20px;
-}
-
-.cart-button-delete {
-  color: grey;
-  height: 30px;
-  font-size: 15px;
-  background-color: white;
-  border-radius: 20px;
-}
-
-.cart-button:hover , .cart-button-update:hover , .cart-button-delete:hover {
-   cursor: pointer;
-}
-.cart-button:active ,.cart-button-update:active , .cart-button-delete:active {
-  position:relative;
-  top:1px;
+  color: #ee3e00;
+  font-size: 14px;
+  line-height: 1.6em;
 }
 
 #left-button {
   display:inline-block;
-  margin-right: 20%;
-  color: grey;
-  height: 30px;
-  font-size: 15px;
-  background-color: white;
-  border-radius: 20px;
+  margin-right: 28%;
 }
 
 #center-button {
   display:inline-block;
-  margin-right: 20%;
+  margin-right: 35%;
 }
+
 
 #right-button {
   display:inline-block;
-  margin-right: 20%;
+}
+
+.cart-button {
+  background: white;
+-webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+  box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+  border-top-left-radius:10px;
+  border-top-right-radius: 10px;  
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius: 10px;
+  font-family: 'Segoe UI';
+  color: black;
+  font-weight: bold;
+  font-size:85%;
+  padding: 5px 5px 5px 5px;
+  text-decoration: none;
+  border: none;
+  opacity: 0.9;
+}
+.update-button {
+  margin-left: 1%;
+}
+.cart-button:hover{
+  color: #e95640;
 }
 
 .cart-footer-buttons {
