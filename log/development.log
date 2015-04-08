@@ -43738,3 +43738,97 @@ Started GET "/assets/scaffolds-9c6fef56a2822ce275349db526b78268.css?body=1" for 
 
 
 Started GET "/assets/shops-0ebcead4e93fd5949456face6b6c767d.css?body=1" for ::1 at 2015-04-08 19:00:18 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 19:20:56 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (4.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (4.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 880ms (Views: 672.0ms | ActiveRecord: 44.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 19:20:57 +0200
+
+
+Started GET "/assets/home-7660987e94d385d82666da1d4b85c897.css?body=1" for ::1 at 2015-04-08 19:20:57 +0200
+
+
+Started GET "/assets/item-6c652b322ef75aa0c94a2f0fa2d2a298.css?body=1" for ::1 at 2015-04-08 19:20:57 +0200
+
+
+Started GET "/assets/item_attachments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 19:20:57 +0200
+
+
+Started GET "/assets/scaffolds-9c6fef56a2822ce275349db526b78268.css?body=1" for ::1 at 2015-04-08 19:20:57 +0200
+
+
+Started GET "/assets/shops-c3d043af4004cef770012026ee060a9a.css?body=1" for ::1 at 2015-04-08 19:20:57 +0200
+
+
+Started GET "/assets/application-336c4c332122f76fde25e4ef9e9e871b.css?body=1" for ::1 at 2015-04-08 19:20:57 +0200
+
+
+Started POST "/shops" for ::1 at 2015-04-08 19:21:00 +0200
+Processing by ShopsController#index as HTML
+  Parameters: {"authenticity_token"=>"qbDBwkLFikYSfEkfOpQcpwSiGM+1yyO+UcdhWo3Id4WM/Fa4Ubc8xkmTT1U/qmcsvyW0WAvJ01KpN5GLCsDzPA=="}
+  [1m[36mShop Load (4.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 212ms (Views: 164.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 19:21:00 +0200
+
+
+Started GET "/assets/home-7660987e94d385d82666da1d4b85c897.css?body=1" for ::1 at 2015-04-08 19:21:00 +0200
+
+
+Started GET "/assets/scaffolds-9c6fef56a2822ce275349db526b78268.css?body=1" for ::1 at 2015-04-08 19:21:00 +0200
+
+
+Started GET "/assets/item_attachments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 19:21:00 +0200
+
+
+Started GET "/shops/show/4" for ::1 at 2015-04-08 19:21:03 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mShop Load (0.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mItem Load (56.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."shop_id" = $1[0m  [["shop_id", 4]]
+  [1m[35mItemAttachment Load (4.0ms)[0m  SELECT  "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1  ORDER BY "item_attachments"."id" ASC LIMIT 1  [["item_id", 15]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1  ORDER BY "item_attachments"."id" ASC LIMIT 1[0m  [["item_id", 15]]
+  [1m[35mItemAttachment Load (0.0ms)[0m  SELECT  "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1  ORDER BY "item_attachments"."id" ASC LIMIT 1  [["item_id", 9]]
+  Rendered shops/show.html.erb within layouts/application (168.0ms)
+Completed 200 OK in 380ms (Views: 236.1ms | ActiveRecord: 60.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 19:21:03 +0200
+
+
+Started GET "/assets/scaffolds-9c6fef56a2822ce275349db526b78268.css?body=1" for ::1 at 2015-04-08 19:21:03 +0200
+
+
+Started GET "/assets/item_attachments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 19:21:03 +0200
+
+
+Started GET "/assets/home-7660987e94d385d82666da1d4b85c897.css?body=1" for ::1 at 2015-04-08 19:21:03 +0200
+
+
+Started GET "/item/show/15" for ::1 at 2015-04-08 19:21:07 +0200
+Processing by ItemController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 15]]
+  [1m[35mItemAttachment Load (0.0ms)[0m  SELECT "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1  [["item_id", 15]]
+  Rendered item/show.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 152ms (Views: 140.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-7660987e94d385d82666da1d4b85c897.css?body=1" for ::1 at 2015-04-08 19:21:07 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 19:21:07 +0200
+
+
+Started GET "/assets/item_attachments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 19:21:07 +0200
+
+
+Started GET "/assets/scaffolds-9c6fef56a2822ce275349db526b78268.css?body=1" for ::1 at 2015-04-08 19:21:07 +0200
