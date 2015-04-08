@@ -1,0 +1,432 @@
+
+.pagetitle{ /*changes the color, font size, and font style of the title of every page*/
+	color: black;
+	text-align: center;
+	margin-top: 5%;
+	font-size: 220%;
+	font-family: 'Segoe UI';
+}
+h2{
+	margin-top: 1%;
+}
+body{  /*defines the background color of all the page of the website*/
+	background-color: #F2F2F2;
+	background-size: cover;
+	height: 100%;
+}
+.page{ /*changes the color, position , and padding of the white page which will include all the elements in the website*/
+	/*background: url(index.jpeg);
+	background-size: cover;*/
+	padding-top:6%;
+	padding-left: 6%;
+	padding-right: 1%;
+	background-color:#fefefe;
+	height: 100%;
+	font-family: 'Segoe UI';
+	margin-top: 1%;
+	margin-left: 11%;
+	margin-right: 11%;
+	text-align: center;
+	padding-bottom: 5%;
+	overflow: hidden;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+	box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+}
+.header{ 
+
+	/*margin-right:5%;*/
+	margin-top:20%;
+	
+}
+.k{
+	color:#E9573F;
+	margin-left: 15%;
+	font-family: 'Segoe UI';
+	text-decoration: none;
+}
+.title{ /*writes the knellen at the top of the page, sets the color to white and the font style to segoe*/
+	margin-left: -.5%;
+	color: black;
+	font-family: 'Segoe UI';
+	text-decoration: none;
+	}
+.titlebk{ /*changes the background of the banner at the top of the page to orange, and also changes its position and edges style*/
+	background-color: white;
+	margin-top:-25px;
+	margin-right:-.4%;
+	margin-left:-.4%;
+	/*width: 90%;*/
+	/*border-radius: 10px;*/
+	opacity: 0.9;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(160,160,160,1);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(160,160,160,1);
+	box-shadow: 0px 0px 15px 0px rgba(160,160,160,1);
+}
+
+.banner { /*setting the width of the banner*/
+	/*position: fixed;*/
+	width: 100%;
+	top: 0px;
+}
+
+.table{ /* changes the font size and the alignment of the table */
+	font-size: 110%;
+	float: center;	
+}
+th{ /*styling the heads of the table*/
+	padding: .5%;
+	width:28.5%;
+	float: center;
+	/*margin-bottom:-80%;*/
+}
+.actionshow, .actionedit, .actiondelete{ /*changes the background color, font color , and font style of the three buttons (show, edit, delete)*/
+	color: #E9573F; 
+	background-color: #fefefe; 
+	font-family: 'Segoe UI';
+	text-decoration: none;
+}
+.back:hover{
+		color: #E9573F; 
+		-webkit-box-shadow: 0px 0px 10px 0px rgba(233,87,63,1);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(233,87,63,1);
+	box-shadow: 0px 0px 10px 0px rgba(233,87,63,1);
+}
+ .actionshow:hover, .actionedit:hover, .actiondelete:hover{ /*changes the background color of the three buttons(show,edit, delete) on hover*/
+color:#ffb296;
+}
+.title :hover{ /*changes the background color of the knellen title on hover
+	background-color:	#ffb296;*/
+}
+/*.add{
+	color: #F2F6DD; 
+	background-color: #E9573F; 
+	padding: 1%; 
+	border-color: #E9573F;
+	border: none; 
+	border-radius: 20%; 
+	margin-right: 50%;
+	margin-left:45.5%; 
+	font-family: 'Segoe UI';
+	text-decoration: none;
+}*/
+
+.add1{ /*changes the text alignment*/
+text-align: right;	
+float: right; 
+display: inline-block; 
+margin-top: -.5%;	
+margin-left: 0.5%;
+}
+.add{
+	text-align: center;	
+}
+.actions{ /*changes the background color of the three buttons (show, edit, delete)*/
+	background-color: #fefefe; 
+}
+
+.shop-card{ /*styles all the shop cards by changing the position, font, border style, padding and text alignment*/
+	max-width: 20%;
+	text-align:center;
+	margin-top: 1%;
+	margin-bottom: 5%;
+	margin-left: 1%;
+	margin-right: 1%;
+	padding:1.5%;
+	float: left;
+	font-size: 120%;
+	border-color: black;
+	background-color: #fefefe; 
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
+	box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
+}
+.shop-card:hover{ /*changes the shadow of the shopcard on hover*/
+
+	-webkit-box-shadow: 0px 0px 25px 0px rgba(233,87,63,1);
+	-moz-box-shadow: 0px 0px 25px 0px rgba(233,87,63,1);
+	box-shadow: 0px 0px 25px 0px rgba(233,87,63,1);
+}
+.back{ /*styles the back button on all of the pages by changing their color the position, font, border style, padding and text alignment*/
+	color: black; 
+	background-color: #f2f2f2; 
+	padding: 0.5%; 
+	border-color: #E9573F; 
+	border-radius: 45%; 
+	margin-right: 52%;
+	margin-left:46%; 
+	font-family: 'Segoe UI';
+	text-decoration: none;
+	font-size: 110%;
+	font-style: none;
+	margin-top:20%;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
+	box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
+}
+.create{ /*styles (show, edit, delete) cards by changing the position, font, border style, padding and text alignment*/
+	margin-right: 40%;
+	margin-left:35%;
+	margin-top: 8%;	
+	font-size: 120%;
+	padding:2%;
+	padding-top: -1%;
+	background-color: #fefefe; 
+	border-radius: 10%;
+	text-align: center;
+	font-family: 'Segoe UI';
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+	box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);;
+}
+.submit{ /*styles all submit buttons in (show, edit, delete) cards*/
+	color: #F2F6DD; 
+	background-color: #E9573F; 
+	padding: 0.5%; 
+	border-color: #E9573F; 
+	border-radius: 10%; 
+	margin-right: 50%;
+	margin-left:35%; 
+	font-family: 'Segoe UI';
+	text-decoration: none;
+	margin-top: 10%;
+	font-size: 90%;
+}
+
+.notice{ /*styles the flash that appear after the delete or edit command execution*/
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
+	box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
+	margin-right: 54%;
+	margin-left:40%;
+	margin-top: 1%;
+	width: 20%;
+	text-align: center;
+}
+.bold{
+	font-size: 120%;
+	font-style: bold;
+}
+.description{
+	-webkit-box-shadow: 0px 0px 2px 0px rgba(160,160,160,1);
+	-moz-box-shadow: 0px 0px 2px 0px rgba(160,160,160,1);
+	box-shadow: 0px 0px 2px 0px rgba(160,160,160,1);
+	padding:1%;
+	overflow: hidden;
+	height: 100%;	
+}
+
+.show-shop{ /*styles (show, edit, delete) cards by changing the position, font, border style, padding and text alignment*/
+	color : black;
+	margin-top: 3%;
+	margin-left: 11%;
+	margin-right: 11%;	
+	font-size: 120%;
+	text-align: left;
+	padding:2%;
+	padding-top: -1%;
+	background-color: #D5D5D5; 
+	font-family: 'Segoe UI';
+ 	/*-webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+	box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);*/
+}
+.shop-image{
+	background: white;
+	padding: 1%;
+	margin-top: 2%;
+	margin-bottom: -12%;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(160,160,160,1);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(160,160,160,1);
+	box-shadow: 0px 0px 15px 0px rgba(160,160,160,1);
+}
+
+
+.shop-button{
+		background: white;
+-webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+	box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+  border-top-left-radius:10px;
+  border-top-right-radius: 10px;  
+  font-family: 'Segoe UI';
+  color: black;
+  font-weight: bold;
+  font-size:85%;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+  opacity: 0.9;
+
+ }
+
+
+
+.shop-button:hover{
+
+  color: #e95640;
+ /*-webkit-box-shadow: 0px 0px 20px 0px rgba(233,87,63,1);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(233,87,63,1);
+	box-shadow: 0px 0px 20px 0px rgba(233,87,63,1);*/
+}
+.shop-name{
+	font-size: 150%;
+	text-align: center;
+	
+}
+
+/*
+.screen:hover .background {
+    opacity:0.5;
+}
+.slider:hover {
+    left:-320px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+body {
+    font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.header {
+    width:100%;
+    height:60px;
+    background:#56B8DE;
+    text-align:center;
+    float:left;
+    color:#fff;
+}
+.profilepic {
+    width:64px;
+    height:64px;
+    border-radius:50%;
+    margin-top:20px;
+    border:2px solid #fff;
+    box-shadow:0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+h3 {
+    margin-top:0;
+    text-shadow:0px 1px 3px rgba(0, 0, 0, 0.75);
+}
+.screen {
+    margin:0 auto;
+    margin-top:24px;
+    width:320px;
+    height:200px;
+    box-shadow: 0px 2px 6px #999;
+    position:relative;
+    overflow:hidden;
+    background:#333;
+}
+.slider {
+    width:640px;
+    float:left;
+    left:0;
+    position:relative;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.background {
+    position:absolute;
+    width:320px;
+    height:auto;
+    z-index:0;
+    top:60px;
+    left:0;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.header1, .header2 {
+    text-align:center;
+    width:320px;
+    float:left;
+    height:140px;
+    color:#fff;
+    position:relative;
+}
+.header2 {
+    padding-top:24px;
+}
+p {
+    font-size:12px;
+    text-shadow:0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.screen {
+    overflow:hidden;
+    width:320px;
+    height:568px;
+}
+.slider {
+    position:relative;
+    float:left;
+    height:568px;
+    width:700px;
+    left:0;
+    -webkit-transition:all 0.5s ease-in-out;
+}
+.slider img {
+    position:relative;
+    float:left;
+    height:568px;
+    width:320px;
+}
+.screen:hover .slider {
+    left:-320px;
+}
+
+*/
+
+
+
+/*.screen:hover .background {
+    opacity:0.5;
+}
+.slider:hover {
+    left:-320px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+*/
+.font{
+	font-size:25px;
+	text-align:left;
+	color: black;
+    margin-top:0;
+    text-shadow:0px 1px 3px rgba(0, 0, 0, 0.75);
+}/*
+.screen {
+    width:70 %;
+    height:20%;
+    box-shadow: 0px 2px 6px #999;
+    position:relative;
+    overflow:hidden;
+    background:#D5D5D5;
+}
+.slider {
+    width:640px;
+    float:left;
+    left:0;
+    position:relative;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.header1, .header2 {
+    text-align:center;
+    width:320px;
+    float:left;
+    height:140px;
+    color:#fff;
+    position:relative;
+}
+.header2 {
+    padding-top:24px;
+}*/
+.font1{
+	font-size:20px;
+	text-align: justify;
+	color: #E9573F;
+    	
+	text-shadow:0px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+

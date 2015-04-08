@@ -1,0 +1,41 @@
+
+
+<div class = "show-shop">
+  <div class = "shop-name"><%= @shop.shop_name %></div>
+<!--     <h4>Shop Description</h4>
+    <div><%= @shop.shop_desc %></div> -->
+    
+    <div>
+    <!-- This is the shop cover image. Can either use image_tag function or the good old html. I used html for css image resizing -->
+
+      <img src="<%= @shop.cover_url.to_s %>" style="width:200px;height:200px" class = "shop-image"> 
+      
+    </div>
+    
+    <div class = "add1">
+    <%= button_to("Follow Shop", {:action => 'follow'}, :class => 'shop-button') %> </div>
+    <div class = "add1">
+  <%= button_to("Add New Item", {:controller => 'item', :action => 'new', :id => @shop.id}, :class => 'shop-button') %>
+  </div>
+  </div>
+
+  <div class = "page">
+    <% @item.each do |item| %>
+    <div class ="shop-card">
+      <div>
+        <% if item.item_attachments.first %>
+          <%= image_tag item.item_attachments.first.photo_url, :size => "150x150" %>
+        <% end %>
+      </div>
+      <div><%= item.item_name %></div>
+      <div class="actions">
+        <%= link_to "Show", {:controller => 'item', :action => 'show', :id => item.id}, :class => 'actionshow' %>|
+        <%= link_to "Edit", {:controller => 'item', :action => 'edit', :id => item.id}, :class => 'actionedit' %> |
+        <%= link_to "Delete", {:controller => 'item', :action => "action delete"}, :class => 'actiondelete' %>     
+        <!-- delete feature is not implemented yet  -->
+        </div>
+    </div>
+    <% end %>
+  </div>
+
+

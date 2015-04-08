@@ -1,0 +1,25 @@
+<div class="subjects index">
+  <h2 class= "pagetitle">Items</h2>
+  <div class = "add">
+  <%= link_to("Add New Item", {:action => 'new'}, :class => 'button') %>
+  </div>
+  <div class = "page">
+    <% @items.each do |item| %>
+    <% item_attachments = item.item_attachments.all %>
+
+    <div class ="shop-card">
+      <div>
+        <% item_attachments.each do |p| %>
+          <%= image_tag p.photo_url, :size => "150x150" %>
+        <% end %>
+      </div>
+      <div class="actions">
+        <%= link_to "Show", {:action => 'show', :id => item.id}, :class => 'action show' %>|
+        <%= link_to "Edit", {:action => 'edit', :id => item.id}, :class => 'action edit' %> |
+        <%= link_to "Delete", {:action => 'delete', :id => item.id}, :class => 'action delete' %>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
