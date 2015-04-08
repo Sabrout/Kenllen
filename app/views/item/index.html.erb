@@ -1,0 +1,21 @@
+
+<div class="subjects index">
+  <h2 class= "pagetitle">Items</h2>
+  <div class = "add">
+  <%= link_to("Add New Item", {:action => 'new'}, :class => 'button') %>
+  </div>
+  <div class = "page">
+    <% @items.each do |item| %>
+    <div class ="shop-card">
+      <div><%= item.id %></div>
+      <div><%= item.item_name %></div>
+      <div class="actions">
+        <%= link_to "Show", {:action => 'show', :id => item.id}, :class => 'actionshow' %>|
+        <%= link_to "Edit", {:action => 'edit', :id => item.id}, :class => 'actionedit' %> |
+        <%= link_to "Delete", :action => 'delete', :class => 'actiondelete' %>     
+        <!-- delete feature is not implemented yet  -->
+        </div>
+    </div>
+    <% end %>
+  </div>
+</div>

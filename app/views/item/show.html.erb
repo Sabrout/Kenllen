@@ -1,0 +1,24 @@
+<%= link_to("<< Back To List", {:action => 'index'}, :class => 'back-link') %>
+
+<div class="create">
+	<h2>Show Item</h2>
+
+	<table summary="Item detail view">
+		<tr>
+			<th>Name</th>
+			<td><%= @item.item_name %></td>
+		</tr>
+		<tr>
+			<th>Price</th>
+			<td><%= @item.price %></td>
+		</tr>
+		<tr>
+			<th>Description</th>
+			<td><%= @item.description %></td>
+		</tr>
+		<tr>
+			<th>Inspiration</th>
+			<td><%= @item.inspiration %></td>
+		</tr>
+	</table>
+</div>

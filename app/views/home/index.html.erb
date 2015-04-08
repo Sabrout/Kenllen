@@ -1,0 +1,21 @@
+<% @page_title = "Home" %> <!--set the page title to home-->
+
+<% if !user_signed_in? %>
+<div class ="homebuttons">
+<%=button_to "SIGN UP" , new_user_registration_path , method: :get , :class =>"button" %>
+<%=button_to "LOGIN" ,new_user_session_path  , :class =>"button"%>
+<%=button_to "BROWSE SHOPS", {:action => 'index' , :controller => 'shops'}, :class =>"button"%>
+</div>
+<%else%>
+<h2>WELCOME</h2> <br>
+<h4><%=@current_user.uname%> </h4>
+<br>
+<div class ="homebuttons">
+<%=button_to "Logout", destroy_user_session_path , method: :delete , :class => "button" %>
+<%=button_to "BROWSE SHOPS", {:action => 'index' , :controller => 'shops'}, :class =>"button"%>
+<%end%>
+</div>
+
+</body>
+</html>
+
