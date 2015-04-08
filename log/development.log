@@ -31659,3 +31659,914 @@ Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 a
 
 
 Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 12:49:01 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-07 16:39:17 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (2.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (49.0ms)
+Completed 200 OK in 220ms (Views: 184.1ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 16:39:19 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:39:19 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:39:19 +0200
+
+
+Started GET "/assets/shops-92973ee5971fe7255be2c2e59aff6d61.css?body=1" for ::1 at 2015-04-07 16:39:20 +0200
+
+
+Started GET "/assets/application-a67f2e3bd93e724a73df376c47067da8.css?body=1" for ::1 at 2015-04-07 16:39:20 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-07 16:40:29 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 119ms (Views: 118.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:40:31 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:40:31 +0200
+
+
+Started GET "/assets/shops-83ce933bba7ea6531f49d7b0e5e8507e.css?body=1" for ::1 at 2015-04-07 16:40:31 +0200
+
+
+Started GET "/assets/application-1a5f243aa7c33854684f55fae412d314.css?body=1" for ::1 at 2015-04-07 16:40:31 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 16:40:31 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-07 16:40:54 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (1.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 133ms (Views: 131.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:40:56 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 16:40:56 +0200
+
+
+Started GET "/assets/shops-7df2788cca22b5b2a7e6e12370bb7a92.css?body=1" for ::1 at 2015-04-07 16:40:56 +0200
+
+
+Started GET "/assets/application-7717d43e6048ec512de86e2d1668d6a2.css?body=1" for ::1 at 2015-04-07 16:40:56 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:40:56 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-07 16:41:05 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (1.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 118ms (Views: 115.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:41:07 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:41:07 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 16:41:07 +0200
+
+
+Started GET "/assets/application-d4e507c9ba1a14c6754cfd7eac0575e0.css?body=1" for ::1 at 2015-04-07 16:41:07 +0200
+
+
+Started GET "/assets/shops-05fefec24adff02aeb31069260a0d8f8.css?body=1" for ::1 at 2015-04-07 16:41:07 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-07 16:41:15 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (1.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 125ms (Views: 123.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 16:41:17 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:41:17 +0200
+
+
+Started GET "/assets/shops-094c0fa3cf6cf6a087a0694d3da3e7c2.css?body=1" for ::1 at 2015-04-07 16:41:17 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:41:17 +0200
+
+
+Started GET "/assets/application-2fa77a2b9e72e5cac5b6c494ae9c1f85.css?body=1" for ::1 at 2015-04-07 16:41:17 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-07 16:41:31 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (1.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 165ms (Views: 162.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:41:34 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 16:41:34 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:41:34 +0200
+
+
+Started GET "/assets/shops-0d3217a821685d8369f5e45dfd2f571a.css?body=1" for ::1 at 2015-04-07 16:41:34 +0200
+
+
+Started GET "/assets/application-18178a697075930ff6cf7d9c62e57cf2.css?body=1" for ::1 at 2015-04-07 16:41:34 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-07 16:41:45 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (1.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 129ms (Views: 126.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 16:41:46 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:41:46 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:41:46 +0200
+
+
+Started GET "/assets/shops-9fee0f9d489e7c577764ae6c0f80dc0a.css?body=1" for ::1 at 2015-04-07 16:41:46 +0200
+
+
+Started GET "/assets/application-14e66d10f2948a477a3bd6101e20f559.css?body=1" for ::1 at 2015-04-07 16:41:46 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-07 16:42:00 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 117ms (Views: 115.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 16:42:01 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:42:01 +0200
+
+
+Started GET "/assets/shops-dc7bf3b537053c59cd7276bb1045e3d9.css?body=1" for ::1 at 2015-04-07 16:42:01 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:42:01 +0200
+
+
+Started GET "/assets/application-aebd74b72dc2b6886ed5d7042f1409bc.css?body=1" for ::1 at 2015-04-07 16:42:01 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-07 16:42:06 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 31ms (Views: 30.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 16:42:07 +0200
+
+
+Started GET "/assets/application-aebd74b72dc2b6886ed5d7042f1409bc.css?body=1" for ::1 at 2015-04-07 16:42:07 +0200
+
+
+Started GET "/assets/shops-dc7bf3b537053c59cd7276bb1045e3d9.css?body=1" for ::1 at 2015-04-07 16:42:07 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:42:07 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:42:07 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-07 16:42:20 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (1.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 122ms (Views: 120.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 16:42:21 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:42:21 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:42:21 +0200
+
+
+Started GET "/assets/shops-ad5f6a22bb93df64592b497e1514b99c.css?body=1" for ::1 at 2015-04-07 16:42:21 +0200
+
+
+Started GET "/assets/application-a3268e72e1a711d61457933370562495.css?body=1" for ::1 at 2015-04-07 16:42:21 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-07 16:42:37 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 136ms (Views: 134.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 16:42:39 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:42:39 +0200
+
+
+Started GET "/assets/shops-bb9a31bf9d8fc40a854fe2c813e48eda.css?body=1" for ::1 at 2015-04-07 16:42:39 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:42:39 +0200
+
+
+Started GET "/assets/application-ce48660e83f94b7a84411fd53b310708.css?body=1" for ::1 at 2015-04-07 16:42:39 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-07 16:42:46 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-ce48660e83f94b7a84411fd53b310708.css?body=1" for ::1 at 2015-04-07 16:42:47 +0200
+
+
+Started GET "/assets/shops-bb9a31bf9d8fc40a854fe2c813e48eda.css?body=1" for ::1 at 2015-04-07 16:42:47 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:42:47 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:42:47 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 16:42:47 +0200
+
+
+Started POST "/shops/new" for ::1 at 2015-04-07 16:42:58 +0200
+Processing by ShopsController#new as HTML
+  Parameters: {"authenticity_token"=>"g3kbVBPo4C+22X3wzXkXLLU0+QHrEI2WB3a8rRbGbNWEcHIbh0s5zb6upA0AoAPqJs6xuljV5yGbR20nZFCwLg=="}
+  Rendered shops/new.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:42:59 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 16:42:59 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:42:59 +0200
+
+
+Started GET "/assets/shops-bb9a31bf9d8fc40a854fe2c813e48eda.css?body=1" for ::1 at 2015-04-07 16:42:59 +0200
+
+
+Started GET "/assets/application-ce48660e83f94b7a84411fd53b310708.css?body=1" for ::1 at 2015-04-07 16:42:59 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-07 16:43:05 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:43:06 +0200
+
+
+Started GET "/assets/application-ce48660e83f94b7a84411fd53b310708.css?body=1" for ::1 at 2015-04-07 16:43:06 +0200
+
+
+Started GET "/assets/shops-bb9a31bf9d8fc40a854fe2c813e48eda.css?body=1" for ::1 at 2015-04-07 16:43:06 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:43:06 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 16:43:06 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-07 16:44:06 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (1.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 124ms (Views: 122.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:44:07 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:44:07 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 16:44:07 +0200
+
+
+Started GET "/assets/shops-a8066149dea163fe5603e27f537d482a.css?body=1" for ::1 at 2015-04-07 16:44:07 +0200
+
+
+Started GET "/assets/application-ae16682aedec41c8b0cdbba53e9635e7.css?body=1" for ::1 at 2015-04-07 16:44:07 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-07 16:44:25 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (1.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 132ms (Views: 129.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:44:26 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 16:44:26 +0200
+
+
+Started GET "/assets/shops-58e926fd1c4f219060b98e1468abb8e1.css?body=1" for ::1 at 2015-04-07 16:44:26 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:44:26 +0200
+
+
+Started GET "/assets/application-10d091e7550184c9677043fd88c0eb25.css?body=1" for ::1 at 2015-04-07 16:44:26 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-07 16:44:36 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 127ms (Views: 125.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 16:44:37 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:44:37 +0200
+
+
+Started GET "/assets/shops-06ad0a07e4ad097e790fd32e3f5c2b71.css?body=1" for ::1 at 2015-04-07 16:44:37 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:44:37 +0200
+
+
+Started GET "/assets/application-26c8f3f49c6a2328b5f29447b8efe3a5.css?body=1" for ::1 at 2015-04-07 16:44:37 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-07 16:45:00 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 124ms (Views: 123.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:45:00 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 16:45:00 +0200
+
+
+Started GET "/assets/shops-6407e90953f720e1ac23ab1d5eea2581.css?body=1" for ::1 at 2015-04-07 16:45:00 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:45:00 +0200
+
+
+Started GET "/assets/application-21e3c7328d28a331f57d858705e95642.css?body=1" for ::1 at 2015-04-07 16:45:00 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-07 16:45:05 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (1.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 35ms (Views: 33.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application-21e3c7328d28a331f57d858705e95642.css?body=1" for ::1 at 2015-04-07 16:45:05 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:45:05 +0200
+
+
+Started GET "/assets/shops-6407e90953f720e1ac23ab1d5eea2581.css?body=1" for ::1 at 2015-04-07 16:45:05 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 16:45:05 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:45:05 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-07 16:45:38 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (2.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 165ms (Views: 160.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 16:45:38 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:45:38 +0200
+
+
+Started GET "/assets/shops-e9076f89b4834c5d172384c730b569bf.css?body=1" for ::1 at 2015-04-07 16:45:38 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:45:38 +0200
+
+
+Started GET "/assets/application-9a00802da6bd932a9ce994903006623b.css?body=1" for ::1 at 2015-04-07 16:45:38 +0200
+
+
+Started GET "/shops/show/6" for ::1 at 2015-04-07 16:45:52 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mShop Load (0.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Exists (1.0ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 2], ["id", 6]]
+  [1m[35mShop Exists (0.0ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 2], ["id", 6]]
+  [1m[36mItem Load (1.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."shop_id" = $1[0m  [["shop_id", 6]]
+  [1m[35mShop Exists (0.0ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 2], ["id", 6]]
+  Rendered shops/show.html.erb within layouts/application (47.0ms)
+Completed 200 OK in 112ms (Views: 67.1ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:45:53 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:45:53 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 16:45:53 +0200
+
+
+Started GET "/shops/show/6" for ::1 at 2015-04-07 16:46:01 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mShop Load (1.0ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mShop Exists (0.0ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 2], ["id", 6]]
+  [1m[36mShop Exists (0.0ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 2], ["id", 6]]
+  [1m[35mItem Load (1.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."shop_id" = $1  [["shop_id", 6]]
+  [1m[36mShop Exists (1.0ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 2], ["id", 6]]
+  Rendered shops/show.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 138ms (Views: 132.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/shops-6407e90953f720e1ac23ab1d5eea2581.css?body=1" for ::1 at 2015-04-07 16:46:03 +0200
+
+
+Started GET "/assets/application-21e3c7328d28a331f57d858705e95642.css?body=1" for ::1 at 2015-04-07 16:46:03 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:46:03 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 16:46:03 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:46:03 +0200
+
+
+Started POST "/shops/edit/6" for ::1 at 2015-04-07 16:46:06 +0200
+Processing by ShopsController#edit as HTML
+  Parameters: {"authenticity_token"=>"fWKpEkQbwfnM933Plp8li48NRnkivXGLj6xeo5RvOeh6a8Bd0LgYG8SApDJbRjFNHPcOwpF4GzwTnY8p5vnlEw==", "id"=>"6"}
+  [1m[35mShop Load (0.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 6]]
+  Rendered shops/edit.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 33ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 16:46:07 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:46:07 +0200
+
+
+Started GET "/assets/shops-6407e90953f720e1ac23ab1d5eea2581.css?body=1" for ::1 at 2015-04-07 16:46:07 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:46:07 +0200
+
+
+Started GET "/assets/application-21e3c7328d28a331f57d858705e95642.css?body=1" for ::1 at 2015-04-07 16:46:07 +0200
+
+
+Started GET "/shops/show/6" for ::1 at 2015-04-07 16:46:16 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 6]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mShop Exists (0.0ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 2], ["id", 6]]
+  [1m[36mShop Exists (1.0ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 2], ["id", 6]]
+  [1m[35mItem Load (0.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."shop_id" = $1  [["shop_id", 6]]
+  [1m[36mShop Exists (0.0ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 2], ["id", 6]]
+  Rendered shops/show.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 43ms (Views: 37.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/shops/show/6" for ::1 at 2015-04-07 16:46:22 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mShop Load (1.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Exists (0.0ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 2], ["id", 6]]
+  [1m[35mShop Exists (1.0ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 2], ["id", 6]]
+  [1m[36mItem Load (1.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."shop_id" = $1[0m  [["shop_id", 6]]
+  [1m[35mShop Exists (0.0ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 2], ["id", 6]]
+  Rendered shops/show.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 45ms (Views: 40.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:46:23 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:46:23 +0200
+
+
+Started GET "/assets/application-21e3c7328d28a331f57d858705e95642.css?body=1" for ::1 at 2015-04-07 16:46:23 +0200
+
+
+Started GET "/assets/shops-6407e90953f720e1ac23ab1d5eea2581.css?body=1" for ::1 at 2015-04-07 16:46:23 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 16:46:23 +0200
+
+
+Started GET "/shops/show/5" for ::1 at 2015-04-07 16:46:27 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mShop Exists (1.0ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 2], ["id", 5]]
+  [1m[36mShop Exists (1.0ms)[0m  [1mSELECT "shops".* FROM "shops" INNER JOIN "shops_users" ON "shops"."id" = "shops_users"."shop_id" WHERE "shops_users"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 2], ["id", 5]]
+  [1m[35mShop Exists (0.0ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 2], ["id", 5]]
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."shop_id" = $1[0m  [["shop_id", 5]]
+  Rendered shops/show.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 59ms (Views: 52.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:46:28 +0200
+
+
+Started GET "/assets/shops-6407e90953f720e1ac23ab1d5eea2581.css?body=1" for ::1 at 2015-04-07 16:46:28 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:46:28 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 16:46:28 +0200
+
+
+Started GET "/assets/application-21e3c7328d28a331f57d858705e95642.css?body=1" for ::1 at 2015-04-07 16:46:28 +0200
+
+
+Started GET "/shops/show/4" for ::1 at 2015-04-07 16:46:35 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mShop Load (0.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Exists (0.0ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 2], ["id", 4]]
+  [1m[35mShop Exists (1.0ms)[0m  SELECT "shops".* FROM "shops" INNER JOIN "shops_users" ON "shops"."id" = "shops_users"."shop_id" WHERE "shops_users"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 2], ["id", 4]]
+  [1m[36mShop Exists (1.0ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 2], ["id", 4]]
+  [1m[35mItem Load (1.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."shop_id" = $1  [["shop_id", 4]]
+  [1m[36mShop Exists (0.0ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 2], ["id", 4]]
+  Rendered shops/show.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 40ms (Views: 34.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:46:36 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 16:46:36 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:46:36 +0200
+
+
+Started GET "/assets/application-21e3c7328d28a331f57d858705e95642.css?body=1" for ::1 at 2015-04-07 16:46:36 +0200
+
+
+Started GET "/assets/shops-6407e90953f720e1ac23ab1d5eea2581.css?body=1" for ::1 at 2015-04-07 16:46:36 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-07 16:46:51 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:46:51 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 16:46:51 +0200
+
+
+Started GET "/assets/shops-6407e90953f720e1ac23ab1d5eea2581.css?body=1" for ::1 at 2015-04-07 16:46:51 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:46:51 +0200
+
+
+Started GET "/assets/application-21e3c7328d28a331f57d858705e95642.css?body=1" for ::1 at 2015-04-07 16:46:51 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-07 16:47:06 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (1.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 149ms (Views: 147.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:47:07 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 16:47:07 +0200
+
+
+Started GET "/assets/shops-0574b20e269db8b9bb71b0a6291a4a09.css?body=1" for ::1 at 2015-04-07 16:47:07 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:47:07 +0200
+
+
+Started GET "/assets/application-b745d2fa5c7dc0ae39f52948da2cc61c.css?body=1" for ::1 at 2015-04-07 16:47:07 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-07 16:47:26 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (1.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 152ms (Views: 149.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 16:47:27 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:47:27 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:47:27 +0200
+
+
+Started GET "/assets/application-0840203af9cedd8160f4f6a3daffc775.css?body=1" for ::1 at 2015-04-07 16:47:27 +0200
+
+
+Started GET "/assets/shops-680a183e8334934bd47967e8c2181ed5.css?body=1" for ::1 at 2015-04-07 16:47:27 +0200
+
+
+Started GET "/" for ::1 at 2015-04-07 16:47:39 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 34ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:47:40 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 16:47:40 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 16:47:40 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-07 17:35:03 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (1.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (44.0ms)
+Completed 200 OK in 130ms (Views: 95.1ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 17:35:04 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 17:35:04 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 17:35:04 +0200
+
+
+Started GET "/assets/shops-680a183e8334934bd47967e8c2181ed5.css?body=1" for ::1 at 2015-04-07 17:35:04 +0200
+
+
+Started GET "/assets/application-0840203af9cedd8160f4f6a3daffc775.css?body=1" for ::1 at 2015-04-07 17:35:04 +0200
+
+
+Started GET "/shops/show/4" for ::1 at 2015-04-07 17:35:07 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mShop Load (0.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Exists (0.0ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 2], ["id", 4]]
+  [1m[35mShop Exists (1.0ms)[0m  SELECT "shops".* FROM "shops" INNER JOIN "shops_users" ON "shops"."id" = "shops_users"."shop_id" WHERE "shops_users"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 2], ["id", 4]]
+  [1m[36mShop Exists (0.0ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 2], ["id", 4]]
+  [1m[35mItem Load (1.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."shop_id" = $1  [["shop_id", 4]]
+  [1m[36mShop Exists (0.0ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 2], ["id", 4]]
+  Rendered shops/show.html.erb within layouts/application (61.0ms)
+Completed 200 OK in 119ms (Views: 80.1ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/shops-680a183e8334934bd47967e8c2181ed5.css?body=1" for ::1 at 2015-04-07 17:35:09 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 17:35:09 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 17:35:09 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 17:35:09 +0200
+
+
+Started GET "/assets/application-0840203af9cedd8160f4f6a3daffc775.css?body=1" for ::1 at 2015-04-07 17:35:09 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-07 17:35:15 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 38ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/shops/show/6" for ::1 at 2015-04-07 17:35:19 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[35mShop Load (1.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 6]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Exists (0.0ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 2], ["id", 6]]
+  [1m[35mShop Exists (0.0ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 2], ["id", 6]]
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."shop_id" = $1[0m  [["shop_id", 6]]
+  [1m[35mShop Exists (0.0ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 2], ["id", 6]]
+  Rendered shops/show.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 44ms (Views: 41.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/shops-680a183e8334934bd47967e8c2181ed5.css?body=1" for ::1 at 2015-04-07 17:35:21 +0200
+
+
+Started GET "/assets/application-0840203af9cedd8160f4f6a3daffc775.css?body=1" for ::1 at 2015-04-07 17:35:21 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 17:35:21 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 17:35:21 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 17:35:21 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-07 17:35:42 +0200
+Processing by ShopsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mShop Load (1.0ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 40ms (Views: 39.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/shops/show/5" for ::1 at 2015-04-07 17:37:16 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mShop Load (1.0ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mShop Exists (1.0ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 2], ["id", 5]]
+  [1m[36mShop Exists (1.0ms)[0m  [1mSELECT "shops".* FROM "shops" INNER JOIN "shops_users" ON "shops"."id" = "shops_users"."shop_id" WHERE "shops_users"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 2], ["id", 5]]
+  [1m[35mShop Exists (0.0ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 2], ["id", 5]]
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."shop_id" = $1[0m  [["shop_id", 5]]
+  Rendered shops/show.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 50ms (Views: 45.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 17:37:16 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 17:37:17 +0200
+
+
+Started GET "/assets/shops-680a183e8334934bd47967e8c2181ed5.css?body=1" for ::1 at 2015-04-07 17:37:17 +0200
+
+
+Started GET "/assets/application-0840203af9cedd8160f4f6a3daffc775.css?body=1" for ::1 at 2015-04-07 17:37:17 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 17:37:17 +0200
+
+
+Started GET "/shops/show/5" for ::1 at 2015-04-07 17:38:25 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mShop Load (1.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mShop Exists (1.0ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 2], ["id", 5]]
+  [1m[35mShop Exists (1.0ms)[0m  SELECT "shops".* FROM "shops" INNER JOIN "shops_users" ON "shops"."id" = "shops_users"."shop_id" WHERE "shops_users"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 2], ["id", 5]]
+  [1m[36mShop Exists (0.0ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 2], ["id", 5]]
+  [1m[35mItem Load (1.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."shop_id" = $1  [["shop_id", 5]]
+  Rendered shops/show.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 152ms (Views: 144.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 17:38:26 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 17:38:26 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 17:38:26 +0200
+
+
+Started GET "/assets/shops-ceb2934c0fc69b14aca2a8cefadc48e3.css?body=1" for ::1 at 2015-04-07 17:38:26 +0200
+
+
+Started GET "/assets/application-393f74baec6156f2c08f3b76c5bb523e.css?body=1" for ::1 at 2015-04-07 17:38:26 +0200
+
+
+Started GET "/" for ::1 at 2015-04-07 17:38:55 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 35ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 17:38:56 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 17:38:56 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 17:38:56 +0200
+
+
+Started GET "/" for ::1 at 2015-04-07 17:47:17 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 26ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 17:47:18 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 17:47:18 +0200
+
+
+Started GET "/assets/home-18ff68edc450381a6dddcf204b2be526.css?body=1" for ::1 at 2015-04-07 17:47:18 +0200

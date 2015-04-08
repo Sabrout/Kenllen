@@ -140,12 +140,13 @@ margin-left: 0.5%;
 	-webkit-box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
 	-moz-box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
 	box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
+	transition: box-shadow .30s;
 }
 .shop-card:hover{ /*changes the shadow of the shopcard on hover*/
-
-	-webkit-box-shadow: 0px 0px 25px 0px rgba(233,87,63,1);
-	-moz-box-shadow: 0px 0px 25px 0px rgba(233,87,63,1);
-	box-shadow: 0px 0px 25px 0px rgba(233,87,63,1);
+	transition: .30s;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(233,87,63,1);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(233,87,63,1);
+	box-shadow: 0px 0px 15px 0px rgba(233,87,63,1);
 }
 .back{ /*styles the back button on all of the pages by changing their color the position, font, border style, padding and text alignment*/
 	color: black; 
@@ -259,9 +260,6 @@ margin-left: 0.5%;
   opacity: 0.9;
 
  }
-
-
-
 .shop-button:hover{
 
   color: #e95640;
@@ -271,6 +269,10 @@ margin-left: 0.5%;
 }
 .shop-name{
 	font-size: 150%;
+	text-align: center;
+}
+.shop-owner{
+	font-size: 100%;
 	text-align: center;
 	
 }
