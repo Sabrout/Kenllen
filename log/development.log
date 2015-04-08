@@ -25912,3 +25912,195 @@ Started GET "/assets/shops-387e4707af373b2fe6bfe79443a32e56.css?body=1" for ::1 
 
 
 Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-07 12:27:28 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 19:37:35 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (11.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 131ms (Views: 78.1ms | ActiveRecord: 16.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 19:37:35 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 19:37:35 +0200
+
+
+Started GET "/assets/shops-387e4707af373b2fe6bfe79443a32e56.css?body=1" for ::1 at 2015-04-08 19:37:35 +0200
+
+
+Started GET "/assets/home-3fb2dc121d33bd8c0b943dfddb58d4d9.css?body=1" for ::1 at 2015-04-08 19:37:35 +0200
+
+
+Started GET "/assets/application-f9505ef3d360c44a8f9953b7aa5c34da.css?body=1" for ::1 at 2015-04-08 19:37:35 +0200
+
+
+Started GET "/users/sign_up" for ::1 at 2015-04-08 19:37:38 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (46.2ms)
+Completed 200 OK in 83ms (Views: 72.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-f9505ef3d360c44a8f9953b7aa5c34da.css?body=1" for ::1 at 2015-04-08 19:37:38 +0200
+
+
+Started GET "/assets/home-3fb2dc121d33bd8c0b943dfddb58d4d9.css?body=1" for ::1 at 2015-04-08 19:37:38 +0200
+
+
+Started GET "/assets/shops-387e4707af373b2fe6bfe79443a32e56.css?body=1" for ::1 at 2015-04-08 19:37:38 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 19:37:38 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 19:37:38 +0200
+
+
+Started POST "/users/sign_in" for ::1 at 2015-04-08 19:37:40 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"AGVoXAsAreH7vj6hn61hUUzXFA1MFllwqNsPyTsXMb4lKf8mGHIbYaBROOuakxra91C4mvIUqZxQK/8YvB+1Bw=="}
+Completed 401 Unauthorized in 0ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"AGVoXAsAreH7vj6hn61hUUzXFA1MFllwqNsPyTsXMb4lKf8mGHIbYaBROOuakxra91C4mvIUqZxQK/8YvB+1Bw=="}
+  Rendered devise/shared/_links.html.erb (4.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 42ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 19:37:40 +0200
+
+
+Started GET "/assets/application-f9505ef3d360c44a8f9953b7aa5c34da.css?body=1" for ::1 at 2015-04-08 19:37:40 +0200
+
+
+Started GET "/assets/shops-387e4707af373b2fe6bfe79443a32e56.css?body=1" for ::1 at 2015-04-08 19:37:40 +0200
+
+
+Started GET "/assets/home-3fb2dc121d33bd8c0b943dfddb58d4d9.css?body=1" for ::1 at 2015-04-08 19:37:40 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 19:37:40 +0200
+
+
+Started GET "/users/sign_up" for ::1 at 2015-04-08 19:38:00 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 30ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/shops-387e4707af373b2fe6bfe79443a32e56.css?body=1" for ::1 at 2015-04-08 19:38:00 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 19:38:00 +0200
+
+
+Started GET "/assets/home-3fb2dc121d33bd8c0b943dfddb58d4d9.css?body=1" for ::1 at 2015-04-08 19:38:00 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 19:38:00 +0200
+
+
+Started GET "/assets/application-f9505ef3d360c44a8f9953b7aa5c34da.css?body=1" for ::1 at 2015-04-08 19:38:00 +0200
+
+
+Started POST "/users/sign_in" for ::1 at 2015-04-08 19:38:03 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"AGVoXAsAreH7vj6hn61hUUzXFA1MFllwqNsPyTsXMb4lKf8mGHIbYaBROOuakxra91C4mvIUqZxQK/8YvB+1Bw=="}
+Completed 401 Unauthorized in 1ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"AGVoXAsAreH7vj6hn61hUUzXFA1MFllwqNsPyTsXMb4lKf8mGHIbYaBROOuakxra91C4mvIUqZxQK/8YvB+1Bw=="}
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 31ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 19:38:03 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 19:38:03 +0200
+
+
+Started GET "/assets/application-f9505ef3d360c44a8f9953b7aa5c34da.css?body=1" for ::1 at 2015-04-08 19:38:03 +0200
+
+
+Started GET "/assets/shops-387e4707af373b2fe6bfe79443a32e56.css?body=1" for ::1 at 2015-04-08 19:38:03 +0200
+
+
+Started GET "/assets/home-3fb2dc121d33bd8c0b943dfddb58d4d9.css?body=1" for ::1 at 2015-04-08 19:38:03 +0200
+
+
+Started POST "/users/sign_in" for ::1 at 2015-04-08 19:39:34 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"AGVoXAsAreH7vj6hn61hUUzXFA1MFllwqNsPyTsXMb4lKf8mGHIbYaBROOuakxra91C4mvIUqZxQK/8YvB+1Bw=="}
+Completed 401 Unauthorized in 0ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"AGVoXAsAreH7vj6hn61hUUzXFA1MFllwqNsPyTsXMb4lKf8mGHIbYaBROOuakxra91C4mvIUqZxQK/8YvB+1Bw=="}
+  Rendered devise/shared/_links.html.erb (8.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 57ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 19:39:34 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 19:39:34 +0200
+
+
+Started GET "/assets/shops-387e4707af373b2fe6bfe79443a32e56.css?body=1" for ::1 at 2015-04-08 19:39:34 +0200
+
+
+Started GET "/assets/application-f9505ef3d360c44a8f9953b7aa5c34da.css?body=1" for ::1 at 2015-04-08 19:39:34 +0200
+
+
+Started GET "/assets/home-3fb2dc121d33bd8c0b943dfddb58d4d9.css?body=1" for ::1 at 2015-04-08 19:39:34 +0200
+
+
+Started POST "/users/sign_in" for ::1 at 2015-04-08 19:40:35 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"AGVoXAsAreH7vj6hn61hUUzXFA1MFllwqNsPyTsXMb4lKf8mGHIbYaBROOuakxra91C4mvIUqZxQK/8YvB+1Bw=="}
+Completed 401 Unauthorized in 0ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"AGVoXAsAreH7vj6hn61hUUzXFA1MFllwqNsPyTsXMb4lKf8mGHIbYaBROOuakxra91C4mvIUqZxQK/8YvB+1Bw=="}
+  Rendered devise/shared/_links.html.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 38ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 19:40:35 +0200
+
+
+Started GET "/assets/shops-387e4707af373b2fe6bfe79443a32e56.css?body=1" for ::1 at 2015-04-08 19:40:35 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 19:40:35 +0200
+
+
+Started GET "/assets/application-f9505ef3d360c44a8f9953b7aa5c34da.css?body=1" for ::1 at 2015-04-08 19:40:35 +0200
+
+
+Started GET "/assets/home-3fb2dc121d33bd8c0b943dfddb58d4d9.css?body=1" for ::1 at 2015-04-08 19:40:35 +0200
+
+
+Started GET "/" for ::1 at 2015-04-08 19:40:51 +0200
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home-3fb2dc121d33bd8c0b943dfddb58d4d9.css?body=1" for ::1 at 2015-04-08 19:40:52 +0200
+
+
+Started GET "/assets/carts-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 19:40:52 +0200
+
+
+Started GET "/assets/item-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-04-08 19:40:52 +0200
+
+
+Started GET "/assets/shops-387e4707af373b2fe6bfe79443a32e56.css?body=1" for ::1 at 2015-04-08 19:40:52 +0200
+
+
+Started GET "/assets/application-f9505ef3d360c44a8f9953b7aa5c34da.css?body=1" for ::1 at 2015-04-08 19:40:52 +0200
