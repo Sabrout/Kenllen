@@ -1,25 +1,22 @@
-<% if !flash[:notice].blank? %>
-  <div class = "notice">
-    <%= flash[:notice] %>
-  </div>
-<% end %>
-
 <div class="subjects index">
   <h2 class= "pagetitle">Shops</h2>
   <div class = "add">
-  <%= button_to("Add New Shop", {:action => 'new'}, :class => 'button') %>
+  <!-- Check if user is logged in in order to create a shop -->
+  <% if user_signed_in?%>
+  <%= button_to("Create New Shop", {:action => 'new'}, :class => 'button') %>
+  <%end%>
   </div>
+
+  <!-- Shops showcase -->
   <div class = "page">
     <% @shops.each do |shop| %>
     <div class ="shop-card">
-      <div class = "shop"><%=image_tag shop.cover_url(:thumb).to_s %></div>
+      <div class = "shop">
+      <img src="<%= shop.cover_url.to_s %>" style="width:200px;height:200px"></div>
       <div><%= shop.id %></div>
       <div><%= shop.shop_name %></div>
-      <!-- <div><%= shop.shop_desc %></div> -->
-      <div class="actions">
-        <%= link_to("Show", {:action => 'show', :id => shop.id}, :class => 'actionshow') %> |
-        <%= link_to("Edit", {:action => 'edit', :id => shop.id}, :class => 'actionedit') %> |
-        <%= link_to("Delete", {:action => 'delete', :id => shop.id}, :class => 'actiondelete') %>      
+        <div class="actions">
+         <%= link_to("Show", {:action => 'show', :id => shop.id}, :class => 'actionshow') %>
         </div>
     </div>
     <% end %>

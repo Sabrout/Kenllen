@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Knellen</title>
+  <%= javascript_include_tag "http://codepen.io/assets/libs/fullpage/jquery.js"%>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true  %>
+  <%= javascript_include_tag 'jquerymin', 'data-turbolinks-track' => true  %>
+  <%= javascript_include_tag 'jqueryleanModal', 'data-turbolinks-track' => true  %>
+  <%= stylesheet_link_tag "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+</head>
+<body>
+<header class="site-header" role="banner">
+	<div class="search-wrap">
+    	<div class="container">
+        	<form action="" method="" role="search">
+            	<input id="search-bar" placeholder="Search our website&hellip;">
+            </form>
+        </div>
+    </div>
+	 <div class="container">
+        <div class="nav-bar ">
+        	<%= link_to(image_tag("logo.png"), root_path, :class => 'logo') %>
+          	<%= link_to("Home", root_path, :class => 'nav-bar-element') %>
+        	<a href="javascript:;" class="toggle-search">Search</a>
+          	<%= link_to("Cart", carts_path, :class => 'nav-bar-element') %>
+          	<% if !user_signed_in? %>
+          		<%=link_to "BROWSE SHOPS", {:action => 'index' , :controller => 'shops'}, :class =>"nav-bar-element"%>
+				<%=link_to "LOGIN" ,new_user_session_path  , :class =>"sign-element"%>
+          	<%else%>
+				<%=link_to "BROWSE SHOPS", {:action => 'index' , :controller => 'shops'}, :class =>"nav-bar-element"%>
+				<%=link_to "Sign Out", destroy_user_session_path , method: :delete , :class => "sign-element" %>
+			<%end%>
+        </div>
+    </div>
+</header>
+
+<!-- flash that appears after editing or deleting a shop  -->
+<% if !flash[:notice].blank? %>
+  <div class = "notice">
+    <%= flash[:notice] %>
+  </div>
+<% end %>	
+</body>
+
+
+<%= yield %>
+
+
+<footer id="footer" class = "footer">Knellen Project by ©WonderCode</footer>
+</html>

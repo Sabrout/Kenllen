@@ -10,25 +10,26 @@ h2{
 	margin-top: 1%;
 }
 body{  /*defines the background color of all the page of the website*/
-	background-color: #F2F6DD;
+	background-color: #F2F2F2;
 	background-size: cover;
 	height: 100%;
 }
 .page{ /*changes the color, position , and padding of the white page which will include all the elements in the website*/
+	/*background: url(index.jpeg);
+	background-size: cover;*/
 	padding-top:6%;
 	padding-left: 6%;
 	padding-right: 1%;
-	background-color:#F8FAEE;
+	background-color:#fefefe;
 	height: 100%;
 	font-family: 'Segoe UI';
-	border-radius: 1%;
-	margin-top: 1%;
+	margin-top: 0.5%;
 	margin-left: 11%;
 	margin-right: 11%;
 	text-align: center;
 	padding-bottom: 5%;
 	overflow: hidden;
-		-webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
 	-moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
 	box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
 }
@@ -38,20 +39,29 @@ body{  /*defines the background color of all the page of the website*/
 	margin-top:20%;
 	
 }
+.k{
+	color:#E9573F;
+	margin-left: 15%;
+	font-family: 'Segoe UI';
+	text-decoration: none;
+}
 .title{ /*writes the knellen at the top of the page, sets the color to white and the font style to segoe*/
-	margin-left: 6%;
-	color: white;
+	margin-left: -.5%;
+	color: black;
 	font-family: 'Segoe UI';
 	text-decoration: none;
 	}
 .titlebk{ /*changes the background of the banner at the top of the page to orange, and also changes its position and edges style*/
-	background-color: #E9573F;
+	background-color: white;
 	margin-top:-25px;
-	margin-right:5%;
-	margin-left:5%;
-	width: 90%;
-	border-radius: 10px;
+	margin-right:-.4%;
+	margin-left:-.4%;
+	/*width: 90%;*/
+	/*border-radius: 10px;*/
 	opacity: 0.9;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(160,160,160,1);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(160,160,160,1);
+	box-shadow: 0px 0px 15px 0px rgba(160,160,160,1);
 }
 
 .banner { /*setting the width of the banner*/
@@ -72,18 +82,21 @@ th{ /*styling the heads of the table*/
 }
 .actionshow, .actionedit, .actiondelete{ /*changes the background color, font color , and font style of the three buttons (show, edit, delete)*/
 	color: #E9573F; 
-	background-color: #F8FAEE; 
+	background-color: #fefefe; 
 	font-family: 'Segoe UI';
 	text-decoration: none;
 }
 .back:hover{
-		background-color: #ffb296; 
+		color: #E9573F; 
+		-webkit-box-shadow: 0px 0px 10px 0px rgba(233,87,63,1);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(233,87,63,1);
+	box-shadow: 0px 0px 10px 0px rgba(233,87,63,1);
 }
  .actionshow:hover, .actionedit:hover, .actiondelete:hover{ /*changes the background color of the three buttons(show,edit, delete) on hover*/
 color:#ffb296;
 }
-.title :hover{ /*changes the background color of the knellen title on hover*/
-	background-color:	#ffb2961111;
+.title :hover{ /*changes the background color of the knellen title on hover
+	background-color:	#ffb296;*/
 }
 /*.add{
 	color: #F2F6DD; 
@@ -98,12 +111,18 @@ color:#ffb296;
 	text-decoration: none;
 }*/
 
-.add{ /*changes the text alignment*/
-text-align: center;	 
+.add1{ /*changes the text alignment*/
+text-align: right;	
+float: right; 
+display: inline-block; 
+margin-top: -.5%;	
+margin-left: 0.5%;
 }
-
+.add{
+	text-align: center;	
+}
 .actions{ /*changes the background color of the three buttons (show, edit, delete)*/
-	background-color: #F8FAEE; 
+	background-color: #fefefe; 
 }
 
 .shop-card{ /*styles all the shop cards by changing the position, font, border style, padding and text alignment*/
@@ -117,30 +136,34 @@ text-align: center;
 	float: left;
 	font-size: 120%;
 	border-color: black;
-	background-color: #F8FAEE; 
+	background-color: #fefefe; 
 	-webkit-box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
 	-moz-box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
 	box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
+	transition: box-shadow .30s;
 }
 .shop-card:hover{ /*changes the shadow of the shopcard on hover*/
-
-	-webkit-box-shadow: 0px 0px 25px 0px rgba(233,87,63,1);
-	-moz-box-shadow: 0px 0px 25px 0px rgba(233,87,63,1);
-	box-shadow: 0px 0px 25px 0px rgba(233,87,63,1);
+	transition: .30s;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(233,87,63,1);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(233,87,63,1);
+	box-shadow: 0px 0px 15px 0px rgba(233,87,63,1);
 }
 .back{ /*styles the back button on all of the pages by changing their color the position, font, border style, padding and text alignment*/
-	color: #F2F6DD; 
-	background-color: #E9573F; 
+	color: black; 
+	background-color: #f2f2f2; 
 	padding: 0.5%; 
 	border-color: #E9573F; 
 	border-radius: 45%; 
-	margin-right: 54%;
+	margin-right: 52%;
 	margin-left:46%; 
 	font-family: 'Segoe UI';
 	text-decoration: none;
 	font-size: 110%;
-	font-style: bold;
+	font-style: none;
 	margin-top:20%;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
+	box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
 }
 .create{ /*styles (show, edit, delete) cards by changing the position, font, border style, padding and text alignment*/
 	margin-right: 40%;
@@ -149,7 +172,7 @@ text-align: center;
 	font-size: 120%;
 	padding:2%;
 	padding-top: -1%;
-	background-color: #F8FAEE; 
+	background-color: #fefefe; 
 	border-radius: 10%;
 	text-align: center;
 	font-family: 'Segoe UI';
@@ -194,6 +217,89 @@ text-align: center;
 	height: 100%;	
 }
 
+.show-shop{ /*styles (show, edit, delete) cards by changing the position, font, border style, padding and text alignment*/
+	color : black;
+	margin-top: 3%;
+	margin-left: 11%;
+	margin-right: 11%;	
+	font-size: 120%;
+	text-align: left;
+	padding:2%;
+	padding-top: -1%;
+	background-color: #D5D5D5; 
+	font-family: 'Segoe UI';
+ 	/*-webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+	box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);*/
+}
+.shop-image{
+	background: white;
+	padding: 1%;
+	margin-top: 2%;
+	margin-bottom: -12%;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(160,160,160,1);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(160,160,160,1);
+	box-shadow: 0px 0px 15px 0px rgba(160,160,160,1);
+}
 
 
 
+.shop-button{
+		background: white;
+-webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+	box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+  border-top-left-radius:10px;
+  border-top-right-radius: 10px;  
+  font-family: 'Segoe UI';
+  color: black;
+  font-weight: bold;
+  font-size:85%;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+  opacity: 0.9;
+
+ }
+
+
+
+
+.shop-button:hover{
+  color: #e95640;
+ /*-webkit-box-shadow: 0px 0px 20px 0px rgba(233,87,63,1);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(233,87,63,1);
+	box-shadow: 0px 0px 20px 0px rgba(233,87,63,1);*/
+}
+.shop-name{
+	font-size: 150%;
+	text-align: center;
+	
+}
+.shop-description{
+	background-color: white;
+	font-size: 130%;
+	margin-left: 32%;
+	margin-right: 20%;
+	overflow: hidden;
+	padding: 1%;
+	border-radius: 5px;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	text-align: center;
+-webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+	box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+
+}
+.invisible{
+	visibility: hidden;
+
+.shop-name{
+	font-size: 150%;
+	text-align: center;
+}
+.shop-owner{
+	font-size: 100%;
+	text-align: center;
+}
