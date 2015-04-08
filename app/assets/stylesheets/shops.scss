@@ -23,7 +23,7 @@ body{  /*defines the background color of all the page of the website*/
 	background-color:#fefefe;
 	height: 100%;
 	font-family: 'Segoe UI';
-	margin-top: 1%;
+	margin-top: 0.5%;
 	margin-left: 11%;
 	margin-right: 11%;
 	text-align: center;
@@ -273,4 +273,23 @@ margin-left: 0.5%;
 	font-size: 150%;
 	text-align: center;
 	
+}
+.shop-description{
+	background-color: white;
+	font-size: 130%;
+	margin-left: 32%;
+	margin-right: 20%;
+	overflow: hidden;
+	padding: 1%;
+	border-radius: 5px;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	text-align: center;
+-webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+	box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+
+}
+.invisible{
+	visibility: hidden;
 }

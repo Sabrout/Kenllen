@@ -17,7 +17,13 @@
     <div class = "add1">
   <%= button_to("Add New Item", {:controller => 'item', :action => 'new', :id => @shop.id}, :class => 'shop-button') %>
   </div>
+  <div class = "add1">
+  <button class = "shop-button", onclick="test()">Description</button>
   </div>
+  </div>
+  <div  id= "desc", class = "invisible"><%= @shop.shop_desc %>
+  </div>
+  
 
   <div class = "page">
     <% @item.each do |item| %>
