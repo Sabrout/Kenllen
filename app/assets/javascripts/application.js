@@ -15,8 +15,6 @@
 //= require turbolinks
 //= require_tree .
 
-
-
 //Sabrout_Start
 
 // Search Bar

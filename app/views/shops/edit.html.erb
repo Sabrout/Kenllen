@@ -1,6 +1,6 @@
+<%= link_to("<< Back to List", {:action => 'index'}) %>
 
-
-<div class = "create">
+<div>
 <h2>Edit Shop "<%= @shop.shop_name %>"</h2>
 
 <%= form_for(:shop, :url => {:action => 'update', :id => @shop.id}) do |f| %>

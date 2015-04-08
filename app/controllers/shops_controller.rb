@@ -1,33 +1,11 @@
 class ShopsController < ApplicationController
   def index
-    # sorted is a scope (small procedure) in the model
+    # sorted is a lambda (small procedure) in the model
   	@shops = Shop.sorted
-  end
-
-  def follow
-    # Adds the shop to the current user's followed shops
-    @current_user = current_user
-    @shop = Shop.find(params[:id])
-    if !current_user.shops.include?(@shop)
-    @current_user.followed_shops << @shop
-    end
-    flash[:notice] = "You are now following '#{@shop.shop_name}.'"
-    redirect_to(:action => 'show', :id => @shop.id)
-  end
-
-  def unfollow
-    # Removes the shop from the current user's followed shops
-    @current_user = current_user
-    @shop = Shop.find(params[:id])
-    @current_user.followed_shops.delete(@shop)
-    flash[:notice] = "You are no longer following '#{@shop.shop_name}.'"
-    redirect_to(:action => 'show', :id => @shop.id)
   end
 
   def show
   	@shop = Shop.find(params[:id])
-
-    @item = @shop.items
   end
 
   def new
@@ -37,21 +15,18 @@ class ShopsController < ApplicationController
   def create
     # Instantiate a new object - shop_params is a private methode
     @shop = Shop.new(shop_params)
-    @user = current_user
-    @shop.user = @user
     # Save
     if @shop.save
       # If succeeds, redirect
       redirect_to(:action => 'index')
-      flash[:notice] = "Shop created successfully."
     else
       # If fails, redisplay
+      flash[:notice] = "Shop created successfully."
       render('new')
     end
   end
 
   def edit
-    # Check if current user already owns the shop in order to edit
     @shop = Shop.find(params[:id])
   end
 
@@ -70,28 +45,14 @@ class ShopsController < ApplicationController
   end
 
   def delete
-    # Check if user already owns the shop inorder to delete it
     @shop = Shop.find(params[:id])
-    if current_user.shops.include?(@shop)
-    else
-    render 'index'
-    end
   end
 
   def destroy
     # Find an existing object and destroy it
-
-    if current_user.shops.include?(shop)
     shop = Shop.find(params[:id]).destroy
-    item = shop.items
-    item.each do |item| 
-    Item.destroy(item)
-    end
     flash[:notice] = "Shop '#{shop.shop_name}' deleted successfully."
     redirect_to(:action => 'index')
-    else 
-    render 'index'
-    end
   end
 
   # Mass assignement parameter

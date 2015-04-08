@@ -1,6 +1,4 @@
-<div class = "show-shop">
-  <div class = "shop-name"><%= @shop.shop_name %></div>
-  <div class = "shop-owner">by <%= @shop.user.uname.to_s %></div>
+<%= link_to("<< Back to List", {:action => 'index'}, :class => 'back-link') %>
 
 <!--     <h4>Shop Description</h4>
     <div><%= @shop.shop_desc %></div> -->
@@ -66,4 +64,3 @@
     <%end%>
     <%end%>
   </div>
-
