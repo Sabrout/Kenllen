@@ -7,7 +7,7 @@
 	background-color:#fefefe;
 	height: 100%;
 	font-family: 'Segoe UI';
-	margin-top: 5%;
+	margin-top: 4.5%;
 	margin-left: 11%;
 	margin-right: 11%;
 	text-align: center;
@@ -26,11 +26,11 @@
 }
 /* to set the slider view (Start)*/
 #slider {
-  width:1035px;
-  height:355px;
+  width:1425px;
+  height:500px;
   position:relative;
-  left: 22%;
-  margin-top: 25%;
+  left: 11%;
+  margin-top: 1%;
 }
 #slider #slides {
   width:inherit;
@@ -149,227 +149,9 @@
 }
 /* to set the slider view (End)*/
 .homebuttons { /* to set the buttons view*/
-	text-align: right;
-  position: absolute;
+	text-align: center;
+	position: relative;
   right: 2px;
-  top: 5%;
-}
-#blurringTextG{ /* to set the header animation*/
-position: absolute;
-top: 5%;
-}
-
-.blurringTextG{ /* to set the header animation*/
-color:transparent;
-;
-font-family:"Comic Sans MS", cursive, sans-serif;
-font-size:500%;
-text-decoration:none;
-font-weight:normal;
-font-style:normal;
-float: left;
-text-shadow: #000000 0 0 1px;
--moz-animation-name:bounce_blurringTextG;
--moz-animation-duration:10s;
--moz-animation-iteration-count:1;
--moz-animation-direction:linear;
--webkit-animation-name:bounce_blurringTextG;
--webkit-animation-duration:10s;
--webkit-animation-iteration-count:1;
--webkit-animation-direction:linear;
--ms-animation-name:bounce_blurringTextG;
--ms-animation-duration:10s;
--ms-animation-iteration-count:1;
--ms-animation-direction:linear;
--o-animation-name:bounce_blurringTextG;
--o-animation-duration:10s;
--o-animation-iteration-count:1;
--o-animation-direction:linear;
-animation-name:bounce_blurringTextG;
-animation-duration:10s;
-animation-iteration-count:1;
-animation-direction:linear;
-}
-
-@-moz-keyframes bounce_blurringTextG{
-0%{
-text-shadow: none;
-}
-
-50%{
-text-shadow: 000000 0 0 20px;
-}
-
-100%{
-text-shadow: #000000 0 0 0;
-}
+  top: 15%;
 
 }
-
-@-webkit-keyframes bounce_blurringTextG{
-0%{
-text-shadow: none;
-}
-
-50%{
-text-shadow: 000000 0 0 20px;
-}
-
-100%{
-text-shadow: #000000 0 0 0;
-}
-
-}
-
-@-ms-keyframes bounce_blurringTextG{
-0%{
-text-shadow: none;
-}
-
-50%{
-text-shadow: 000000 0 0 20px;
-}
-
-100%{
-text-shadow: #000000 0 0 0;
-}
-
-}
-
-@-o-keyframes bounce_blurringTextG{
-0%{
-text-shadow: none;
-}
-
-50%{
-text-shadow: 000000 0 0 20px;
-}
-
-100%{
-text-shadow: #000000 0 0 0;
-}
-
-}
-
-@keyframes bounce_blurringTextG{
-0%{
-text-shadow: none;
-}
-
-50%{
-text-shadow: 000000 0 0 20px;
-}
-
-100%{
-text-shadow: #000000 0 0 0;
-}
-
-}
-.blurringTextG2{ /* to set the header animation*/
-color:transparent;
-;
-font-family:"Comic Sans MS", cursive, sans-serif;
-font-size:200%;
-text-decoration:none;
-font-weight:normal;
-font-style:normal;
-float: left;  
-width:100%;
-text-shadow: #000000 0 0 1px;
--moz-animation-name:bounce_blurringTextG;
--moz-animation-duration:15s;
--moz-animation-iteration-count:1;
--moz-animation-direction:linear;
--webkit-animation-name:bounce_blurringTextG;
--webkit-animation-duration:15s;
--webkit-animation-iteration-count:1;
--webkit-animation-direction:linear;
--ms-animation-name:bounce_blurringTextG;
--ms-animation-duration:15s;
--ms-animation-iteration-count:1;
--ms-animation-direction:linear;
--o-animation-name:bounce_blurringTextG;
--o-animation-duration:15s;
--o-animation-iteration-count:1;
--o-animation-direction:linear;
-animation-name:bounce_blurringTextG;
-animation-duration:15s;
-animation-iteration-count:1;
-animation-direction:linear;
-}
-
-@-moz-keyframes bounce_blurringTextG{
-0%{
-text-shadow: none;
-}
-
-50%{
-text-shadow: 000000 0 0 20px;
-}
-
-100%{
-text-shadow: #000000 0 0 0;
-}
-
-}
-
-@-webkit-keyframes bounce_blurringTextG{
-0%{
-text-shadow: none;
-}
-
-50%{
-text-shadow: 000000 0 0 20px;
-}
-
-100%{
-text-shadow: #000000 0 0 0;
-}
-
-}
-
-@-ms-keyframes bounce_blurringTextG{
-0%{
-text-shadow: none;
-}
-
-50%{
-text-shadow: 000000 0 0 20px;
-}
-
-100%{
-text-shadow: #000000 0 0 0;
-}
-
-}
-
-@-o-keyframes bounce_blurringTextG{
-0%{
-text-shadow: none;
-}
-
-50%{
-text-shadow: 000000 0 0 20px;
-}
-
-100%{
-text-shadow: #000000 0 0 0;
-}
-
-}
-
-@keyframes bounce_blurringTextG{
-0%{
-text-shadow: none;
-}
-
-50%{
-text-shadow: 000000 0 0 20px;
-}
-
-100%{
-text-shadow: #000000 0 0 0;
-}
-
-}
-
