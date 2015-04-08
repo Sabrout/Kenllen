@@ -1,7 +1,5 @@
 <% @page_title = "Home" %> <!--set the page title to home-->
-<<<<<<< HEAD
-	<% if !user_signed_in? %>
-=======
+
 <div id="slider"> <!--set the slider images -->
   <div id="slides">
     <div class="slide active-slide">
@@ -35,36 +33,14 @@
   
 </div>
 <% if !user_signed_in? %> <!--check if the user loged in or not-->
->>>>>>> origin/master
-<div class ="homebuttons">
-	<%=button_to "SIGN UP" , new_user_registration_path , method: :get , :class =>"button" %>
-	<%=button_to "LOGIN" ,new_user_session_path  , :class =>"button"%>
-	<%=button_to "BROWSE SHOPS", {:action => 'index' , :controller => 'shops'}, :class =>"button"%>
-</div>
-<<<<<<< HEAD
-	<%else%>
-	<h2>WELCOME</h2> <br>
-	<h4><%=@current_user.uname%> </h4>
-<br>
-	<div class ="homebuttons">
-		<%=button_to "Logout", destroy_user_session_path , method: :delete , :class => "button" %>
-		<%=button_to "BROWSE SHOPS", {:action => 'index' , :controller => 'shops'}, :class =>"button"%>
-	<%end%>
-	</div>
-=======
+
 <%else%>
-<!-- <div class ="pp">
+<div class ="pp">
   <h2>WELCOME</h2> <br>
 <img src="http://demosthenes.info/assets/images/austin-fireworks.jpg" alt="" height="100" width="100"> 
-<h4><%@current_user.uname%> </h4>
-</div> -->
-
-<br>
-<div class ="homebuttons">
-<%=button_to "Logout", destroy_user_session_path , method: :delete , :class => "button" %>
-<%=button_to "BROWSE SHOPS", {:action => 'index' , :controller => 'shops'}, :class =>"button"%>
-<%end%>
+<h4><%=@current_user.uname%> </h4>
 </div>
+<%end%>
  <div class = "page">
     <% @items.each do |item| %> <!--diplay of all items in all shops-->
     <div class ="shop-card">
@@ -76,7 +52,5 @@
     </div>
     <% end %>
   </div>
->>>>>>> origin/master
 </body>
 </html>
-
