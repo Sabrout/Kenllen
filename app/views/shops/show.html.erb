@@ -1,11 +1,13 @@
 <div class = "show-shop">
   <div class = "shop-name"><%= @shop.shop_name %></div>
   <div class = "shop-owner">by <%= @shop.user.uname.to_s %></div>
+
 <!--     <h4>Shop Description</h4>
     <div><%= @shop.shop_desc %></div> -->
     
     <div>
     <!-- This is the shop cover image. Can either use image_tag function or the good old html. I used html for css image resizing -->
+
       <img src="<%= @shop.cover_url.to_s %>" style="width:200px;height:200px" class = "shop-image"> 
     </div>
     
@@ -48,6 +50,7 @@
       <div><%= item.id %></div>
       <div><%= item.item_name %></div>
       <div class="actions">
+
         <%= link_to "Show", {:controller => 'item', :action => 'show', :id => item.id}, :class => 'actionshow' %>
         <!-- The edit and delete buttons won't appear if the user is not signed in or doesnt own the shop -->
         <% if user_signed_in? %>
@@ -61,3 +64,4 @@
     <%end%>
     <%end%>
   </div>
+

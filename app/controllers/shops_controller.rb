@@ -26,6 +26,7 @@ class ShopsController < ApplicationController
 
   def show
   	@shop = Shop.find(params[:id])
+
     @item = @shop.items
   end
 
@@ -79,6 +80,7 @@ class ShopsController < ApplicationController
 
   def destroy
     # Find an existing object and destroy it
+
     if current_user.shops.include?(shop)
     shop = Shop.find(params[:id]).destroy
     item = shop.items

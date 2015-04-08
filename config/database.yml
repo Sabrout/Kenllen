@@ -11,7 +11,7 @@ default: &default
 
 development:
   <<: *default
-  database: knellen
+  database: knellendb
   username: postgres
   password: helloworld
 

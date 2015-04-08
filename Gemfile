@@ -11,6 +11,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-script-source', '1.8.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 #imageUploader
@@ -45,5 +46,5 @@ group :development, :test do
   gem 'spring'
 end
 # For timezone information
-gem 'tzinfo-data', platforms: [:mingw, :mswin]
+  gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 

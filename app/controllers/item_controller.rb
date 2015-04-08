@@ -34,13 +34,14 @@ class ItemController < ApplicationController
 
   def new
     #Instantiate a new Item with default values
-    @item = Item.new(:item_name => 'default' , :price => 'default')
+  	@item = Item.new(:item_name => 'default' , :price => 'default')
     @shop = Shop.find(params[:id])
     @id = :id
   end
 
   def create
     #Instantiate a new Item using form parameters
+
     @item = Item.new(item_params)
     @shop = Shop.find(params[:id])
     if current_user.shops.include?(@shop)
@@ -48,6 +49,7 @@ class ItemController < ApplicationController
     if @item.save
       #if save succeeds redirect to the index action
       @shop.items << @item
+
       redirect_to({:controller => 'shops', :action => 'show', :id => @shop.id})
     else
       #if save fails rerender the new form for the user to correct the inputs
