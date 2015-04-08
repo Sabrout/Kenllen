@@ -11,13 +11,14 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
-gem 'coffee-script-source' , '1.8.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 #imageUploader
 gem 'carrierwave'
 #imageProcessor
-# gem 'rmagick'
+gem 'mini_magick'
+# messaging service
+gem 'mailboxer'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
@@ -28,6 +29,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # Authentication Gem (signup and in)
 gem 'devise'
+# Time-Zone
+gem 'tzinfo-data'
 # Use Unicorn as the app server
 # gem 'unicorn'
 # Use Capistrano for deployment
@@ -38,8 +41,6 @@ group :development, :test do
   gem 'byebug'
   # test framework 
   gem 'rspec-rails'
-  gem 'launchy'
-  gem 'factory_girl_rails', '~> 4.0'
   gem 'capybara'
   gem 'database_cleaner'
   # Access an IRB console on exception pages or by using <%= console %> in views
@@ -47,6 +48,4 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-# For timezone information
-  gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 

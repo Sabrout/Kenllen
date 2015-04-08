@@ -1,4 +1,4 @@
-
+<%= link_to("<< Back To List", {:action => 'index'}, :class => 'back-link') %>
 
 <div class="create">
 	<h2>Show Item</h2>
@@ -19,9 +19,6 @@
 		<tr>
 			<th>Inspiration</th>
 			<td><%= @item.inspiration %></td>
-		</tr>
-		<tr>
-		<td><%= button_to 'Add to Cart', cart_items_path(item_id: @item) %></td>
 		</tr>
 	</table>
 </div>
