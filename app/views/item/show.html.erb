@@ -1,59 +1,18 @@
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+<%= link_to("<< Back To List", {:action => 'index'}, :class => 'back-link') %>
 
-<a id="view-code" href="http://codepen.io/virgilpana/pen/RNYQwB" target="_blank">VIEW CODE</a>
+<div class="page">
+	<p class="Show-Item">Show Item</p>
+		<% @item_attachments.each do |p| %> <!-- print all pics for this item -->
+ 		 		<%= image_tag p.photo_url, :size => "450x300" %>
+			<% end %>
+</div>
+<div class="page"> <!-- this class contain all description of item -->
 
-<div id="make-3D-space">
-    <div id="product-card">
-        <div id="product-front">
-        	<div class="shadow"></div>
-            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/t-shirt.png" alt="" />
-            <div class="image_overlay"></div>
-            <div id="view_details">View details</div>
-            <div class="stats">        	
-                <div class="stats-container">
-                    <span class="product_price">$39</span>
-                    <span class="product_name">Adidas Originals</span>    
-                    <p>Men's running shirt</p>                                            
-                    
-                    <div class="product-options">
-                    <strong>SIZES</strong>
-                    <span>XS, S, M, L, XL, XXL</span>
-                    <strong>COLORS</strong>
-                    <div class="colors">
-                        <div class="c-blue"><span></span></div>
-                        <div class="c-red"><span></span></div>
-                        <div class="c-white"><span></span></div>
-                        <div class="c-green"><span></span></div>
-                    </div>
-                </div>                       
-                </div>                         
-            </div>
-        </div>
-        <div id="product-back">
-	        <div class="shadow"></div>
-            <div id="carousel">
-                <ul>
-                    <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/t-shirt-large.png" alt="" /></li>
-                    <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/t-shirt-large2.png" alt="" /></li>
-                    <li><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/t-shirt-large3.png" alt="" /></li>
-                </ul>
-                <div class="arrows-perspective">
-                    <div class="carouselPrev">
-                        <div class="y"></div>
-	                    <div class="x"></div>
-                    </div>
-                    <div class="carouselNext">
-                        <div class="y"></div>
-	                    <div class="x"></div>
-                    </div>
-                </div>
-            </div>
-            <div id="flip-back">
-            	<div id="cy"></div>
-                <div id="cx"></div>
-            </div>
-        </div>	  
-    </div>	
-</div>	
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<p class="blod">Name</p>  
+		<p class="answer"><%= @item.item_name %></p>
+		<p class="blod">Price</p>
+		<p class="answer"><%= @item.price %></p>
+		<p class="blod">Description</p>
+		<p class="answer"><%= @item.description %></p>
+			<p class="blod">Inspiration</p>
+		<p class="answer"><%= @item.inspiration %></p></div>

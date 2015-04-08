@@ -79,7 +79,8 @@ class ItemController < ApplicationController
     @item.item_attachments.all.each do |a|
       a.destroy
     end
-    redirect_to(:action => 'index')
+
+    redirect_to({:controller => 'shops', :action => 'show', :id => params[:shop_id]})
   end
 
   def destroyImage

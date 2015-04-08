@@ -5,7 +5,7 @@
 
 	<%= form_for(:item, :url => {:action => 'update', :id => @item.id}) do |f| %>
 	
-	<table summary="Item form fields">
+	<table summary="Item form fields"> <!-- this div contain all fields to edit items -->
 		<tr>
 			<th>Name</th>
 			<td><%= f.text_field(:item_name) %></td>
@@ -25,7 +25,7 @@
 		<tr>
 			<th>Delete Images</th>
 			<td>
-				<% @item_attachments.each do |p| %>
+				<% @item_attachments.each do |p| %> <!-- creat table contains all pics for the item to delete it -->
  		 			<%= image_tag p.photo_url, :size => "150x150" %>
   					<%= link_to "Delete", {:action => 'destroyImage', :id => @item.id, :attachment_id => p.id} %>
 				<% end %>
