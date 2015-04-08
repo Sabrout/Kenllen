@@ -1,5 +1,5 @@
 <% @page_title = "Home" %> <!--set the page title to home-->
-<h1 class = "h1">
+<h1 class = "h1"> <!--set the header to Knellen and add description line-->
 <div id="blurringTextG">
 <div id="blurringTextG_1" class="blurringTextG" style="color:#E9573F">K</div> 
 <div id="blurringTextG_2" class="blurringTextG">n</div>
@@ -11,7 +11,7 @@
 <h2 class="blurringTextG2" > The Right Place For Art </h2>
 
 </h1> 
-<div id="slider">
+<div id="slider"> <!--set the slider images -->
   <div id="slides">
     <div class="slide active-slide">
       <img src="http://www.tidskriftenlibertas.se/wp-content/uploads/2014/08/Atlantic-Ocean-credit-Tiago-Fioreze-1024x731.jpg" class="slide-img" />
@@ -43,7 +43,7 @@
   </div>
   
 </div>
-<% if !user_signed_in? %>
+<% if !user_signed_in? %> <!--check if the user loged in or not-->
 <div class ="homebuttons">
 <%=button_to "SIGN UP" , new_user_registration_path , method: :get , :class =>"button" %>
 <%=button_to "LOGIN" ,new_user_session_path  , :class =>"button"%>
@@ -63,7 +63,7 @@
 <%end%>
 </div>
  <div class = "page">
-    <% @items.each do |item| %>
+    <% @items.each do |item| %> <!--diplay of all items in all shops-->
     <div class ="shop-card">
       <div><%= item.id %></div>
       <div><%= item.item_name %></div>

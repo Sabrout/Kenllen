@@ -1,3 +1,4 @@
+# this script for the animation of the slider
 createDots = ->
   nav = $('#slider-nav ul')
   slides = $('.slide').length

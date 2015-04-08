@@ -24,11 +24,12 @@
   top: 5%;
 
 }
+/* to set the slider view (Start)*/
 #slider {
-  width:735px;
-  height:255px;
+  width:1035px;
+  height:355px;
   position:relative;
-  left: 30%;
+  left: 22%;
   margin-top: 25%;
 }
 #slider #slides {
@@ -146,19 +147,19 @@
 #slider .right {
   right:2%;
 }
-.homebuttons {
+/* to set the slider view (End)*/
+.homebuttons { /* to set the buttons view*/
 	text-align: right;
   position: absolute;
   right: 2px;
   top: 5%;
 }
-#blurringTextG{
-width:100%;
+#blurringTextG{ /* to set the header animation*/
 position: absolute;
-top: 0.005px;
+top: 5%;
 }
 
-.blurringTextG{
+.blurringTextG{ /* to set the header animation*/
 color:transparent;
 ;
 font-family:"Comic Sans MS", cursive, sans-serif;
@@ -264,7 +265,7 @@ text-shadow: #000000 0 0 0;
 }
 
 }
-.blurringTextG2{
+.blurringTextG2{ /* to set the header animation*/
 color:transparent;
 ;
 font-family:"Comic Sans MS", cursive, sans-serif;
@@ -274,7 +275,6 @@ font-weight:normal;
 font-style:normal;
 float: left;  
 width:100%;
-margin-right: 10%;
 text-shadow: #000000 0 0 1px;
 -moz-animation-name:bounce_blurringTextG;
 -moz-animation-duration:15s;
