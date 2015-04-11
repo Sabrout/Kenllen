@@ -1,34 +1,18 @@
+<%= link_to("<< Back To List", {:action => 'index'}, :class => 'back-link') %>
 
-
-<div class="create">
-	<h2>Show Item</h2>
-
-	<table summary="Item detail view">
-		<tr>
-			<th>Name</th>
-			<td><%= @item.item_name %></td>
-		</tr>
-		<tr>
-			<th>Price</th>
-			<td><%= @item.price %></td>
-		</tr>
-		<tr>
-			<th>Description</th>
-			<td><%= @item.description %></td>
-		</tr>
-		<tr>
-			<th>Inspiration</th>
-			<td><%= @item.inspiration %></td>
-		</tr>
-		<tr>
-			<th>Category</th>
-			<td><%= @item.category %></td>
-		</tr>
-		<tr>
-			<% @item_attachments.each do |p| %>
- 		 		<%= image_tag p.photo_url, :size => "150x150" %>
-  				<%= link_to "Destroy", p, method: :delete %>
+<div class="page">
+	<p class="Show-Item">Show Item</p>
+		<% @item_attachments.each do |p| %> <!-- print all pics for this item -->
+ 		 		<%= image_tag p.photo_url, :size => "450x300" %>
 			<% end %>
-		</tr>
-	</table>
 </div>
+<div class="page"> <!-- this class contain all description of item -->
+
+		<p class="blod">Name</p>  
+		<p class="answer"><%= @item.item_name %></p>
+		<p class="blod">Price</p>
+		<p class="answer"><%= @item.price %></p>
+		<p class="blod">Description</p>
+		<p class="answer"><%= @item.description %></p>
+			<p class="blod">Inspiration</p>
+		<p class="answer"><%= @item.inspiration %></p></div>

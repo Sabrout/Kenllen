@@ -14,11 +14,11 @@ class ItemController < ApplicationController
   def edit
     #finding certain item using id to edit
   	@item = Item.find(params[:id])
-<<<<<<< HEAD
+
     @item_attachments = @item.item_attachments.all
-=======
+
     @shop = Shop.find(params[:shop_id])
->>>>>>> origin/master
+
   end
 
   def update
@@ -52,14 +52,14 @@ class ItemController < ApplicationController
 
   def new
     #Instantiate a new Item with default values
-<<<<<<< HEAD
+
   	@item = Item.new
     @item_attachment = @item.item_attachments.build
-=======
+
   	@item = Item.new(:item_name => 'default' , :price => 'default')
     @shop = Shop.find(params[:id])
     @id = :id
->>>>>>> origin/master
+
   end
 
   def create
@@ -129,5 +129,4 @@ private
     # - allows listed attributes to be mass assigned
 		params.require(:item).permit(:item_name, :price, :description, :inspiration, item_attachments_attributes: [:id, :item_id, :photo])
 	end
-  
-end
+    

@@ -1,3 +1,21 @@
-// Place all the styles related to the Item controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.alert{ /* change color and size of alert massage of delete item */
+	color: red;
+	font-size: 100%;
+
+}
+.blod{  /*changes the color, font size, and font style of Description of item*/
+	text-align: left;
+	margin-top: 0;
+	color: black;
+	font-size: 200%;
+	font-family: 'Segoe UI';
+}
+.answer{	/*changes the color, font size, and font style of Description of item*/
+	text-align: left;
+	margin-top: 0;
+	margin-left: 3%;
+	color: red;
+	font-size: 100%;
+	font-family: 'Segoe UI';
+
+}

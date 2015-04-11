@@ -303,3 +303,66 @@ margin-left: 0.5%;
 	font-size: 100%;
 	text-align: center;
 }
+
+
+
+
+.screen:hover .background {
+    opacity:0.5;
+}
+.slider:hover {
+    left:-150px;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.screen {
+    margin:0 auto;
+    margin-top:24px;
+    width:150px;
+    height:100px;
+    box-shadow: 0px 2px 6px #999;
+    position:relative;
+    overflow:hidden;
+    background:white;
+}
+.slider{
+    width:300px;
+    float:left;
+    left:0;
+    position:relative;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.header1{/* change position of text , width and hieght of header and color */
+    text-align:center;
+    width:150px;
+    float:left;
+    height:100px;
+    color:#fff;
+    position:relative;
+}
+.header2 { /* change position of text , width and hieght of header and color */
+    padding-top:24px;
+    text-align:center;
+    width:150px;
+    float:left;
+    height:100px;
+    color:#fff;
+    position:relative;
+}
+.actions2{
+	color: red;
+	margin-top:2%;
+
+}
+.art-name{ /* change color ,size and position of art name*/
+	font-size: 100%;
+	text-align: center;
+	color: red;
+	
+}
+
+
