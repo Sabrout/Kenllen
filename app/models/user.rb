@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable
 
+
   # adds the messaging service from mailboxer to this model 
   acts_as_messageable
 
@@ -35,5 +36,6 @@ class User < ActiveRecord::Base
     validates_confirmation_of :email, {:message => "Please , Re-enter Your Email"}
 
     # mount_uploader :image , ImageUploader
+
 
 end

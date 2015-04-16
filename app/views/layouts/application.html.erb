@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
   <title>Knellen</title>
@@ -12,7 +12,8 @@
         <div class="nav-bar ">
         	<%= link_to(image_tag("logo.png"), root_path, :class => 'logo') %>
           <%= link_to("Home", root_path, :class => 'navbar-element') %>
-          <%= link_to("Cart", cart_path, :class => 'navbar-element') %>
+          <%= link_to("Mail", :conversations, :class => 'navbar-element') %>
+          <%= link_to("Cart", {:action => 'index' , :controller => 'carts'}, :class => 'navbar-element') %>
           <% if !user_signed_in? %>
           <%=link_to "BROWSE SHOPS", {:action => 'index' , :controller => 'shops'}, :class =>"navbar-element"%>
 				  <%=link_to "LOGIN" ,new_user_session_path  , :class =>"login-element"%>
