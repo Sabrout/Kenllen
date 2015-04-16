@@ -38,7 +38,7 @@
           <%= button_to("Edit", {:action => 'edit', :id => @shop.id}, :class => 'shop-button') %>
           </div>
           <div class = "add1">
-  <%= button_to("Add New Item", {:controller => 'item', :action => 'new', :id => @shop.id}, :class => 'shop-button') %>
+  <%= button_to("Add New Item", {:controller => 'item', :action => 'new', :shop_id => @shop.id}, :class => 'shop-button') %>
   </div>
         <%end%>
         <%end%>

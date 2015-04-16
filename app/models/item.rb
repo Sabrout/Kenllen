@@ -9,7 +9,7 @@ class Item < ActiveRecord::Base
 	validates_length_of :description, maximum: 200, message: "Description can't be more than 200 characters long!"
 	#validation of length of the inspiration article (MAX 70 chars)
 	validates_length_of :inspiration, maximum: 70, message: "Inspiration can't be more than 70 characters long!"
-
+	validates :price, :numericality => {:only_integer => true}
 	belongs_to :shop
 
 	has_many :item_attachments

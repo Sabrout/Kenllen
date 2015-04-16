@@ -55,26 +55,22 @@ class ItemController < ApplicationController
 
   	@item = Item.new
     @item_attachment = @item.item_attachments.build
-
-  	@item = Item.new(:item_name => 'default' , :price => 'default')
-    @shop = Shop.find(params[:id])
-    @id = :id
-
+    @shop = Shop.find(params[:shop_id])
   end
 
   def create
     #Instantiate a new Item using form parameters
   	@item = Item.new(item_params)
     @item.category = params[:category]
+    @shop = Shop.find(params[:shop_id])
     #Save the item
-  	if current_user.shops.include?(@shop)
+    
     if @item.save
       if params[:item_attachments]
         params[:item_attachments]['photo'].each do |a|
           @item_attachment = @item.item_attachments.create!(:photo => a, :item_id => @item.id)
         end
       end
-    end
       #if save succeeds redirect to the index action
       @shop.items << @item
 
@@ -97,18 +93,6 @@ class ItemController < ApplicationController
     @item = Item.find(params[:item_id]).destroy
     redirect_to({:controller => 'shops', :action => 'show', :id => @shop.id})
     end
-  end
-
-  def delete
-   @item = Item.find(params[:id])
-  end
-
-  def destroy
-    @item = Item.find(params[:id]).destroy
-    @item.item_attachments.all.each do |a|
-      a.destroy
-    end
-    redirect_to(:action => 'index')
   end
 
   def destroyImage
