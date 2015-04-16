@@ -3,7 +3,7 @@
 <div class="create">
 	<h2>Create Item</h2>
 
-	<%= form_for :item, :url => {:action => 'create', :id => @shop.id} , :html => { :multipart => true } do |f| %>
+	<%= form_for :item, :url => {:action => 'create', :shop_id => @shop.id} , :html => { :multipart => true } do |f| %>
 	
 	<table summary="Item form fields">
 		<tr>
