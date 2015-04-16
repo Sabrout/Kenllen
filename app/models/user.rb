@@ -5,6 +5,9 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable
 
+  # adds the messaging service from mailboxer to this model 
+  acts_as_messageable
+
          # Associations
     has_many :shops , :dependent => :destroy
     has_and_belongs_to_many :followed_shops, class_name: "Shop", join_table: "shops_users"
@@ -31,5 +34,6 @@ class User < ActiveRecord::Base
     validates :email ,:allow_blank => true ,:uniqueness => {:message => "Email Already Registerd"}
     validates_confirmation_of :email, {:message => "Please , Re-enter Your Email"}
 
-    mount_uploader :image , ImageUploader
+    # mount_uploader :image , ImageUploader
+
 end

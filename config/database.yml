@@ -13,7 +13,7 @@ development:
   <<: *default
   database: knellen3
   username: postgres
-  password: Avengers4
+  password: omar
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".

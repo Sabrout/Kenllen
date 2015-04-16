@@ -26,6 +26,11 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # Authentication Gem (signup and in)
 gem 'devise'
+
+#mailboxer gem
+# gem 'mailboxer'
+# gem 'mailboxer', :git => 'git://github.com/div/mailboxer.git', :branch => 'rails42-foreigner'
+gem 'mailboxer'
 # Use Unicorn as the app server
 # gem 'unicorn'
 # Use Capistrano for deployment
@@ -45,4 +50,4 @@ group :development, :test do
   gem 'spring'
 end
 # For timezone information
-  gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+  # gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
