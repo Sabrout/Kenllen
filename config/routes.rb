@@ -8,6 +8,26 @@ Rails.application.routes.draw do
 match ':controller(/:action(/:id))', :via  => [:get, :post , :delete]
 
 
+
+resources :messages do
+    member do
+      # post :new
+      post :create
+    end
+  end
+  resources :conversations do
+    member do
+      post :reply
+      post :trash
+      post :untrash
+    end
+    collection do
+     get :trashbin
+     post :empty_trash
+   end
+ end
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
