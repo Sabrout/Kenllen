@@ -1,37 +1,41 @@
 <% @page_title = "Home" %> <!--set the page title to home-->
 
-<div id="slider"> <!--set the slider images -->
-  <div id="slides">
-    <div class="slide active-slide">
-      <img src="http://www.tidskriftenlibertas.se/wp-content/uploads/2014/08/Atlantic-Ocean-credit-Tiago-Fioreze-1024x731.jpg" class="slide-img" />
-    </div>
-    <div class="slide">
-      <img src="http://virtuellife.v.i.pic.centerblog.net/o/86ade1d5.jpg" class="slide-img" />
-    </div>
-    <div class="slide">
-      <img src="http://wallpaper-download.net/wallpapers/styles/1280x800/public/beach-wallpapers-beautiful-sunset-twilight-wallpaper-36791.jpg?itok=PIQhfH8p" class="slide-img" />
-    </div>
-    <div class="slide">
-      <img src="http://www.ellf.ru/uploads/posts/2013-06/1372093390_003-ellf.ru.jpg" class="slide-img" />
-    </div>
-  </div>
-  <!-- Update Dialog -->
-  <div id="dialog">
-    <div id="transparent"></div>
-    <span id="msg"></span>
-    <input id="input" type="text" placeholder="Enter image URL" />
-    <div id="ok"></div>
-    <div id="cancel">Cancel</div>
-  </div>
-  <!-- Arrows -->
-    <img src="http://cdn.flaticon.com/png/256/53579.png" alt="right arrow" class="arrow right" />
-    <img src="http://cdn.flaticon.com/png/256/53567.png" alt="left arrow" class="arrow left" />
-  <!-- Slider Navigation -->
-  <div id="slider-nav">
-    <ul></ul>
-  </div>
   
-</div>
+    <div id="slider"> <!-- Slider DIV-->
+      <div id="mask"> <!-- Mask DIV-->
+        <ul>
+          <li class="firstanimation">
+            <a href="#">
+            <img src="http://wallpaper.ultradownloads.com.br/282542_Papel-de-Parede-Connor-Assassins-Creed-3_1600x900.jpg" alt="Wood"/>
+            </a>
+          </li>
+          <li class="secondanimation">
+            <a href="#">
+            <img src="http://www.mrwallpaper.com/wallpapers/summer-landscape-road-hd-1600x900.jpg" alt="Fire"/>
+            </a>
+          </li>
+          <li class="thirdanimation">
+            <a href="#">
+            <img src="http://www.mrwallpaper.com/wallpapers/Blue-Dragon-Art-1600x900.jpg" alt="Earth"/>
+            </a>
+          </li>           
+          <li class="fourthanimation">
+            <a href="#">
+            <img src="http://www.mrwallpaper.com/wallpapers/Fantasy-Space-Art-1600x900.jpg" alt="Metal"/>
+            </a>
+          </li>
+          <li class="fifthanimation">
+            <a href="#">
+            <img src="http://www.mrwallpaper.com/wallpapers/The-Joker-Art-1600x900.jpg" alt="Water"/>
+            </a>
+          </li>
+        </ul>
+      </div> <!-- /Mask DIV-->
+      <div id="progressbar"> <!-- Progress Bar DIV-->
+      </div> <!-- /Progress Bar DIV-->
+    </div> <!-- /Slider DIV-->
+  
+
 <% if !user_signed_in? %> <!--check if the user loged in or not-->
 
 <%else%>
@@ -52,5 +56,4 @@
     </div>
     <% end %>
   </div>
-</body>
-</html>
+
