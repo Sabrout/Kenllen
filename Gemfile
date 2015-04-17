@@ -29,9 +29,7 @@ gem 'devise'
 
 
 #mailboxer gem
-# gem 'mailboxer'
-# gem 'mailboxer', :git => 'git://github.com/div/mailboxer.git', :branch => 'rails42-foreigner'
-gem 'mailboxer'
+gem 'mailboxer', :git => 'git://github.com/div/mailboxer.git', :branch => 'rails42-foreigner'
 
 # Use Unicorn as the app server
 # gem 'unicorn'

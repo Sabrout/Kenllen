@@ -45,7 +45,6 @@ ActiveRecord::Schema.define(version: 20150416102261) do
     t.string   "description", limit: 200, default: ""
     t.string   "inspiration", limit: 70,  default: ""
     t.decimal  "price",                                null: false
-    t.integer  "quantity",                default: 1
     t.datetime "created_at",                           null: false
     t.datetime "updated_at",                           null: false
     t.string   "category"
@@ -150,3 +149,7 @@ ActiveRecord::Schema.define(version: 20150416102261) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
+  add_foreign_key "mailboxer_conversation_opt_outs", "mailboxer_conversations", column: "conversation_id", name: "mb_opt_outs_on_conversations_id"
+  add_foreign_key "mailboxer_notifications", "mailboxer_conversations", column: "conversation_id", name: "notifications_on_conversation_id"
+  add_foreign_key "mailboxer_receipts", "mailboxer_notifications", column: "notification_id", name: "receipts_on_notification_id"
+end

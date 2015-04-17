@@ -11,6 +11,7 @@ class User < ActiveRecord::Base
 
          # Associations
     has_many :shops , :dependent => :destroy
+    has_one :cart , dependent: :destroy
     has_and_belongs_to_many :followed_shops, class_name: "Shop", join_table: "shops_users"
 
     validates :fname , :presence => {:message => "Firsname Field Cannot be blank"}
