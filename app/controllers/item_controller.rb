@@ -14,10 +14,7 @@ class ItemController < ApplicationController
   def edit
     #finding certain item using id to edit
   	@item = Item.find(params[:id])
-
     @item_attachments = @item.item_attachments.all
-
-    @shop = Shop.find(params[:shop_id])
 
   end
 
@@ -83,14 +80,14 @@ class ItemController < ApplicationController
   end
 
   def delete
-   @item = Item.find(params[:item_id])
+   @item = Item.find(params[:id])
    @shop = Shop.find(params[:shop_id])
   end
 
   def destroy
     @shop = Shop.find(params[:shop_id])
     if current_user.shops.include?(@shop)
-    @item = Item.find(params[:item_id]).destroy
+    @item = Item.find(params[:id]).destroy
     redirect_to({:controller => 'shops', :action => 'show', :id => @shop.id})
     end
   end
