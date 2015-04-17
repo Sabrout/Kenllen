@@ -1,0 +1,23 @@
+<!-- <h1>Messages#inbox</h1> -->
+
+<h1> <%= current_user.fname %>'s Inbox </h1>
+
+<%= link_to 'Compose New', compose_path %>
+<table>
+	<% current_user.received_messages.each do |m| %>
+	<% @current_message = m %>
+	<tr>
+		<td>
+			<%= m.from.uname %>
+		</td>
+		<td>
+			<%= m.topic %>
+		</td>
+		<td>
+			<%= m.body %>
+		</td>
+	</tr>
+	<% end %>
+
+
+</table>
