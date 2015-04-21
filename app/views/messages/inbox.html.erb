@@ -2,11 +2,31 @@
 
 <h1> <%= current_user.fname %>'s Inbox </h1>
 
-<%= link_to 'Compose New', compose_path %>
-<table border = "1">
-	<% current_user.received_messages.each do |m| %>
-	<% @current_message = m %>
+<table border = '1'>
+<tr>
+<td>
+<table border = "0" style="width:100%">
 	<tr>
+		<td><%= link_to 'Compose New', compose_path %></td>
+	</tr>
+	<tr>
+		<td><%= link_to 'Sent Messages', '#' %></td>
+	</tr>
+	<tr>
+		<td><%= link_to 'Trash', '#' %></td>
+	</tr>
+</table>
+</td>
+<td>
+<table border = "1">
+	<tr>
+		<td>Sender</td>
+		<td>Subject</td>
+		<td>Message</td>
+	</tr>
+	<% current_user.received_messages.each do |m| %>
+	<tr>
+	<% @current_message = m %>
 		<td>
 			<%= m.from.uname %>
 		</td>
@@ -18,6 +38,8 @@
 		</td>
 	</tr>
 	<% end %>
-
+</table>
+</td>
+</tr>
 
 </table>
