@@ -28,9 +28,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
 
 
-# Messaging gem
-gem 'acts-as-messageable'
-# gem 'mailboxer', :git => 'git://github.com/div/mailboxer.git', :branch => 'rails42-foreigner'
+#mailboxer gem
+gem 'mailboxer', :git => 'git://github.com/div/mailboxer.git', :branch => 'rails42-foreigner'
 
 # Use Unicorn as the app server
 # gem 'unicorn'

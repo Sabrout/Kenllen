@@ -6,8 +6,8 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable
 
 
-  # adds the messaging service from acts-as-messageable to this model 
-  acts_as_messageable :dependent => :destroy
+  # adds the messaging service from mailboxer to this model 
+  acts_as_messageable
 
          # Associations
     has_many :shops , :dependent => :destroy
