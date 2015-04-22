@@ -1,0 +1,25 @@
+<div>
+	<p>My Messages</p>
+
+	<div>
+		<%= link_to	'Compose', new_message_path %>
+		<br>
+		<br>
+	</div>
+	
+
+	<table>
+		<!-- loop over conversations and display messages in them -->
+		<% @conversations.each do |m| %>
+		<tr>
+			<td> <%= link_to m.last_sender.uname, '#' %> </td>
+			<!-- <td> <%= link_to m.subject, message_path(m) %>	</td> -->
+			<td> <%= m.subject %> </td>
+			<td> <%= m.last_message.body %> </td>
+		</tr>
+		<% end %>
+	</table>
+
+
+
+</div>
