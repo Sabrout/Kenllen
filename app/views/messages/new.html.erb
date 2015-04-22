@@ -1,22 +1,17 @@
-<h2> new
-<!-- creates the message form -->
-<br>
-<%= current_user.uname %>
-  <%= form_for(:new_message, :url => {:action => 'create'}) do |f| %>
-     <%= f.label 'UserName' %>
-     <br>
-     <%= f.text_field :runame %>
-     <br>
-     <%= f.label 'Subject' %>
-     <br>
-     <%= f.text_field :subject %>
-     <br>
-     <%= f.label 'Body' %>
-     <br>
-     <%= f.text_area :body, :size => '70x30' %>
-     <br>
-    <!--  = f.input :attachment, as: :file -->
-     <%=  f.submit 'Send message' %>
-   <%  end %>
+<!-- Creates a form which takes the name of the recepient, hte subject, and the message body -->
+<!-- The username is still shown on top of the page and to be removed later -->
+<p><%= current_user.uname %></p>
+<p>Compose new message</p>
 
-   <br>
+<%= form_for :compose, :url => {:action => 'create', :controller => 'messages'} do |f| %>
+<%= f.text_area :user, :placeholder => 'Username', :size => '50x1'%>
+<br>
+<br>
+<%= f.text_area :subject, :placeholder => 'Subject', :size => '50x2'%>
+<br>
+<br>
+<%= f.text_area :body, :placeholder => 'Message Body', :size => '50x20' %>
+<br>
+<br>
+<%= f.submit 'Send' %>
+<% end %>
