@@ -16,13 +16,13 @@
 	<% current_user.received_messages.each do |m| %>
 	<tr>
 	<% @current_message = m %>
-		<td>
+		<td class = "txt">
 			<%= m.from.uname  %>
 		</td>
-		<td>
+		<td class = "txt">
 			<%= m.topic %>
 		</td>
-		<td>
+		<td class = "txt">
 			<%= m.body %>
 		</td>
 	</tr>

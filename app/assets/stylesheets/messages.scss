@@ -4,11 +4,11 @@
 
 .buttons
 {
-	margin-top: 5.5%;
+	margin-top: 5.25%;
 	margin-bottom: 1%;
 	text-align: center;
 	margin-bottom: 7%;
-	margin-left: 20.25%;
+	margin-left: 20.1%;
 }
 .h1
 {
@@ -20,6 +20,9 @@
 	border:0;
 	display: inline-block;
 	float: left;
+	background-color:#e86540;
+	padding: 3px;
+	margin: 1px;
 }
 .button:hover
 {
@@ -28,9 +31,10 @@
 .table 
 {
 	margin-left:20%;
-	margin-top: 2%;
+	margin-top: 1%;
 	width: 60%;
-	padding:3px;
+	/*padding:1px;*/
+	margin-bottom: 5%;
 }
 .td
 {
@@ -47,6 +51,11 @@
 	color: #fff;
 	width: 60%;
 	font-size: 130%;
+}
+.txt
+{
+	font-size: 110%;
+	padding: 3px;
 }
 .name
 {
@@ -93,7 +102,7 @@
 }
 .send:hover
 {
-	 background-color: #3399ff;
+	 background-color: #e86540;
 }
 .p
 {
