@@ -1,0 +1,49 @@
+<!-- <h1>Messages#inbox</h1> -->
+
+<h1> <%= current_user.fname %>'s Inbox </h1>
+
+<table border = '1'>
+<tr>
+<td>
+<table border = "0" style="width:100%">
+	<tr>
+	<!-- links to the page where a user creates a new message  -->
+		<td><%= link_to 'Compose New', compose_path %></td>
+	</tr>
+	<tr>
+	<!-- To be finished in milestone 2 -->
+		<td><%= link_to 'Sent Messages', '#' %></td>
+	</tr>
+	<tr>
+	<!-- To be finished in milestone 2 -->
+		<td><%= link_to 'Trash', '#' %></td>
+	</tr>
+</table>
+</td>
+<td>
+<table border = "1">
+	<tr>
+		<td>Sender</td>
+		<td>Subject</td>
+		<td>Message</td>
+	</tr>
+	<!-- Loop over all messages and show sender's name then the subject then the body -->
+	<% current_user.received_messages.each do |m| %>
+	<tr>
+	<% @current_message = m %>
+		<td>
+			<%= m.from.uname %>
+		</td>
+		<td>
+			<%= m.topic %>
+		</td>
+		<td>
+			<%= m.body %>
+		</td>
+	</tr>
+	<% end %>
+</table>
+</td>
+</tr>
+
+</table>
