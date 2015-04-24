@@ -1,8 +1,5 @@
 class MessagesController < ApplicationController
-
-  def show
-  end
-
+  
   def inbox
 
     # checks if the current user is logged in or not, if not, he/she is redirected to the signin page

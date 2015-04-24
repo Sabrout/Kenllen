@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   devise_for :users
   root 'home#index'
 
+
   post 'inbox' => 'messages#inbox', as: 'inbox'
   post 'sentbox' => 'messages#sentbox', as: 'sentbox'
   post 'new' => 'messages#new', as: 'compose'
