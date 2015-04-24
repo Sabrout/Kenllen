@@ -13,6 +13,15 @@ class MessagesController < ApplicationController
 
   end
 
+  def sentbox
+
+    # same as inbox... mainly for security reasons and to avoid errors
+
+    if current_user == nil
+      redirect_to new_user_session_path
+    end
+  end
+
   def trash
   end
 
