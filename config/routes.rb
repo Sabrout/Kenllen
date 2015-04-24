@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   root 'home#index'
 
   get 'inbox' => 'messages#inbox', as: 'inbox'
-  get 'new' => 'messages#new', as: 'compose'
+  post 'new' => 'messages#new', as: 'compose'
   post '/' => 'messages#create'
 
 match ':controller(/:action(/:id))', :via  => [:get, :post , :delete]
