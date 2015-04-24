@@ -9,11 +9,7 @@ default: &default
   pool: 5
   timeout: 5000
   username: postgres
-<<<<<<< HEAD
-  password: 123
-=======
   password: wondercode
->>>>>>> origin/master
 
 development:
   <<: *default
