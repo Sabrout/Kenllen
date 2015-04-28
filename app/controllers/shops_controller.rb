@@ -4,6 +4,11 @@ class ShopsController < ApplicationController
   	@shops = Shop.sorted
   end
 
+  def search
+    # Searches for a shop 
+    @shops = Shop.search(params[:query])
+  end
+
   def follow
     # Adds the shop to the current user's followed shops
     @current_user = current_user
@@ -26,7 +31,6 @@ class ShopsController < ApplicationController
 
   def show
   	@shop = Shop.find(params[:id])
-
     @item = @shop.items
   end
 
@@ -80,17 +84,17 @@ class ShopsController < ApplicationController
 
   def destroy
     # Find an existing object and destroy it
-
+    shop = Shop.find(params[:id])
     if current_user.shops.include?(shop)
-    shop = Shop.find(params[:id]).destroy
-    item = shop.items
-    item.each do |item| 
-    Item.destroy(item)
-    end
-    flash[:notice] = "Shop '#{shop.shop_name}' deleted successfully."
-    redirect_to(:action => 'index')
+    	shop.destroy
+    	item = shop.items
+    	item.each do |item| 
+    	Item.destroy(item)
+    	end
+    	flash[:notice] = "Shop '#{shop.shop_name}' deleted successfully."
+    	redirect_to(:action => 'index')
     else 
-    render 'index'
+    	render 'index'
     end
   end
 

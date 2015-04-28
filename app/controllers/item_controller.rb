@@ -80,7 +80,7 @@ class ItemController < ApplicationController
   end
 
   def delete
-   @item = Item.find(params[:id])
+   item = Item.find(params[:id])
    @shop = Shop.find(params[:shop_id])
   end
 
