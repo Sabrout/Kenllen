@@ -64,10 +64,12 @@
         <div class="header2">
            <div class="actions2">
         <%= link_to "Show", {:controller => 'item', :action => 'show', :id => item.id}, :class => 'actionshow' %> </div>
+        <div class="actions2">
         <%= link_to 'Add to Cart', cart_items_path(item_id: item.id) ,method: :post , :class => 'actionshow' %>
    <!--    The edit and delete buttons won't appear if the user is not signed in or doesnt own the shop -->
         <% if user_signed_in? %>
-        <% if current_user.shops.include?(@shop)%> |
+        <% if current_user.shops.include?(@shop)%> 
+        </div>
             <div class="actions2"> <%= link_to "Edit", {:controller => 'item', :action => 'edit', :id => item.id,:shop_id => @shop.id}, :class => 'actionedit' %>  </div>
            <div class="actions2">  <%= link_to "Delete", {:controller => 'item', :action => 'delete', :id => item.id, :shop_id => @shop.id}, :class => 'actiondelete' %> </div>    
         
