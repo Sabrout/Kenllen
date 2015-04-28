@@ -1,5 +1,5 @@
 <h2 class="pagetitle">SignUp</h2>
-
+<div class = "signup"> <!-- adding border to signup table -->
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
  <table> <!-- make a table 2*8 contain all text field we need to enter information in it -->
     <tr>
@@ -7,7 +7,7 @@
         <td><%= f.text_field :uname %> 
              <%if resource.errors[:uname].any?%>
                 <% resource.errors[:uname].each do |msg| %>
-                     <li><%=msg%></li>
+                     <li class="alert_o"><%=msg%></li> <!-- adding some styling to alert massage -->
                   <%end%>
 
              <%end%></li> </td>
@@ -17,7 +17,7 @@
         <td><%= f.email_field :email %>
               <%if resource.errors[:email].any?%>
                   <% resource.errors[:email].each do |msg| %>
-                     <li><%=msg%></li>
+                     <li class="alert_o"><%=msg%></li>
                   <%end%>
 
              <%end%></li> </td>
@@ -27,7 +27,7 @@
         <td><%= f.email_field :email_confirmation %>
                  <%if resource.errors[:email_confirmation].any?%>
                       <% resource.errors[:email_confirmation].each do |msg| %>
-                         <li><%=msg%></li>
+                         <li class="alert_o"><%=msg%></li>
                     <%end%>
 
                  <%end%></li> </td>
@@ -37,7 +37,7 @@
         <td> <%= f.password_field :password %>
                  <%if resource.errors[:password].any?%>
                     <% resource.errors[:password].each do |msg| %>
-                        <li><%=msg%></li>
+                        <li class="alert_o"><%=msg%></li>
                     <%end%>
 
                  <%end%></li> </td>
@@ -47,7 +47,7 @@
         <td><%= f.password_field :password_confirmation %>
                  <%if resource.errors[:password_confirmation].any?%>
                      <% resource.errors[:password_confirmation].each do |msg| %>
-                            <li><%=msg%></li>
+                            <li class="alert_o"><%=msg%></li>
                      <%end%>
 
                 <%end%></li> </td>
@@ -57,7 +57,7 @@
         <td><%= f.text_field :fname %>
                  <%if resource.errors[:fname].any?%>
                     <% resource.errors[:fname].each do |msg| %>
-                         <li><%=msg%></li>
+                         <li class="alert_o"><%=msg%></li>
                       <%end%>
 
                  <%end%></li> </td>
@@ -67,7 +67,7 @@
         <td>  <%= f.text_field :lname %>
                 <%if resource.errors[:lname].any?%>
                      <% resource.errors[:lname].each do |msg| %>
-                        <li><%=msg%></li>
+                        <li class="alert_o"><%=msg%></li>
                      <%end%>
 
                 <%end%></li> </td>
@@ -77,14 +77,15 @@
         <td><%= f.phone_field :phone %>
                 <%if resource.errors[:phone].any?%>
                      <% resource.errors[:phone].each do |msg| %>
-                        <li><%=msg%></li>
+                        <li class="alert_o"><%=msg%></li>
                     <%end%>
                 <%end%>
     </tr>
      </table>
-     <div class="button"> <!-- this div contain the sign up button --> 
-    <%= f.submit "Sign up" %>
+<div class= button_o><div class="button"> </div> <!-- this div contain the sign up button --> 
+    <%= f.submit "Sign up" %> <!-- adding style to Sign up button --> 
     </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
+<div class= link_o><%= render "devise/shared/links" %></div> <!-- adding style to signin link -->
+</div>

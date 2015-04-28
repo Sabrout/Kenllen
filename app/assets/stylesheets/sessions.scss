@@ -1,7 +1,30 @@
 // Place all the styles related to the user controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+.alert_o{    /*change color and size of alert massage*/
+	color:black;
+	font-size: 90%;
+	font-family: 'Segoe UI';
+}
+.link_o{	/*change color to sign in link*/
+	text-align: center;
+	color:black;
+}	
+.button_o{ /*change position of button*/
+	text-align: center;
+}
+.signup{   /*adding border and change background color*/
+ 	padding-top: 25px;
+ 	padding-bottom: 25px;
+	margin-left: 40%;
+	margin-top: 5%;
+	border: outset;
+	border-radius: 18px;
+	background-color: #E9573F;
+	width: 300px;
+    
+	
+}
 .card /* to set the shape the and font and color and position of the sigin in (form)*/
 {
 	margin-left: 40%;
