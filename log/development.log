@@ -45287,3 +45287,275 @@ Processing by MessagesController#new as HTML
   Rendered messages/new.html.erb within layouts/application (0.0ms)
   [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
 Completed 200 OK in 68ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (76.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (42.3ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (5.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateItems (20150316000310)
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36m (108.5ms)[0m  [1mCREATE TABLE "items" ("id" serial primary key, "shop_id" integer, "item_name" character varying(15) NOT NULL, "description" character varying(200) DEFAULT '', "inspiration" character varying(70) DEFAULT '', "price" decimal NOT NULL, "quantity" integer DEFAULT 1, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (40.6ms)[0m  CREATE  INDEX  "index_items_on_shop_id" ON "items"  ("shop_id")
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150316000310"]]
+  [1m[35m (10.0ms)[0m  COMMIT
+Migrating to CreateUsers (20150330164234)
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (65.7ms)[0m  CREATE TABLE "users" ("id" serial primary key, "fname" character varying, "lname" character varying, "phone" integer, "email" character varying, "address" character varying, "image" character varying, "reports" integer DEFAULT 0) 
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150330164234"]]
+  [1m[35m (2.0ms)[0m  COMMIT
+Migrating to AddDeviseToUsers (20150330170555)
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (128.8ms)[0m  ALTER TABLE "users" ADD "uname" character varying DEFAULT '' NOT NULL
+  [1m[36m (91.5ms)[0m  [1mALTER TABLE "users" ADD "encrypted_password" character varying DEFAULT '' NOT NULL[0m
+  [1m[35m (1.0ms)[0m  ALTER TABLE "users" ADD "reset_password_token" character varying
+  [1m[36m (0.0ms)[0m  [1mALTER TABLE "users" ADD "reset_password_sent_at" timestamp[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "users" ADD "remember_created_at" timestamp
+  [1m[36m (65.1ms)[0m  [1mALTER TABLE "users" ADD "sign_in_count" integer DEFAULT 0 NOT NULL[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "users" ADD "current_sign_in_at" timestamp
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "users" ADD "last_sign_in_at" timestamp[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "users" ADD "current_sign_in_ip" inet
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "users" ADD "last_sign_in_ip" inet[0m
+DEPRECATION WARNING: `#timestamp` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in up at E:/knellen/db/migrate/20150330170555_add_devise_to_users.rb:35)
+  [1m[35m (0.0ms)[0m  ALTER TABLE "users" ADD "created_at" timestamp
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "users" ADD "updated_at" timestamp[0m
+  [1m[35m (20.5ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")
+  [1m[36m (18.1ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150330170555"]]
+  [1m[36m (8.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateShops (20150330211037)
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (183.9ms)[0m  [1mCREATE TABLE "shops" ("id" serial primary key, "user_id" integer, "shop_name" character varying(25) NOT NULL, "shop_desc" text, "cover" character varying, "icon" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (140.7ms)[0m  CREATE  INDEX  "index_shops_on_user_id" ON "shops"  ("user_id")
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150330211037"]]
+  [1m[35m (46.9ms)[0m  COMMIT
+Migrating to CreateCarts (20150402223220)
+  [1m[36m (15.6ms)[0m  [1mBEGIN[0m
+  [1m[35m (31.3ms)[0m  CREATE TABLE "carts" ("id" serial primary key, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150402223220"]]
+  [1m[35m (0.0ms)[0m  COMMIT
+Migrating to CreateCartItems (20150402230350)
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (46.9ms)[0m  CREATE TABLE "cart_items" ("id" serial primary key, "quantity" integer DEFAULT 1, "cart_id" integer, "item_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (31.3ms)[0m  [1mCREATE  INDEX  "index_cart_items_on_item_id" ON "cart_items"  ("item_id")[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150402230350"]]
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateShopsUsersJoin (20150404161751)
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36m (15.6ms)[0m  [1mCREATE TABLE "shops_users" ("user_id" integer, "shop_id" integer) [0m
+  [1m[35m (46.9ms)[0m  CREATE  INDEX  "index_shops_users_on_shop_id_and_user_id" ON "shops_users"  ("shop_id", "user_id")
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150404161751"]]
+  [1m[35m (0.0ms)[0m  COMMIT
+Migrating to CreateItemAttachments (20150407100250)
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (62.5ms)[0m  CREATE TABLE "item_attachments" ("id" serial primary key, "item_id" integer, "photo" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150407100250"]]
+  [1m[35m (16.6ms)[0m  COMMIT
+Migrating to AddCategoryToItems (20150407193349)
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.0ms)[0m  ALTER TABLE "items" ADD "category" character varying
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150407193349"]]
+  [1m[35m (0.0ms)[0m  COMMIT
+Migrating to CreateMessagesTable (20150417144452)
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+DEPRECATION WARNING: `#timestamp` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in up at E:/knellen/db/migrate/20150417144452_create_messages_table.rb:11)
+  [1m[35m (109.4ms)[0m  CREATE TABLE "messages" ("id" serial primary key, "topic" character varying, "body" text, "received_messageable_id" integer, "received_messageable_type" character varying, "sent_messageable_id" integer, "sent_messageable_type" character varying, "opened" boolean DEFAULT 'f', "recipient_delete" boolean DEFAULT 'f', "sender_delete" boolean DEFAULT 'f', "created_at" timestamp, "updated_at" timestamp, "ancestry" character varying) 
+  [1m[36m (15.6ms)[0m  [1mCREATE  INDEX  "acts_as_messageable_ids" ON "messages"  ("sent_messageable_id", "received_messageable_id")[0m
+  [1m[35m (15.6ms)[0m  CREATE  INDEX  "index_messages_on_ancestry" ON "messages"  ("ancestry")
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ($1)[0m  [["version", "20150417144452"]]
+  [1m[35m (0.0ms)[0m  COMMIT
+Migrating to AddRecipientPermanentDeleteAndSenderPermanentDeleteToMessages (20150417144453)
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (140.7ms)[0m  ALTER TABLE "messages" ADD "recipient_permanent_delete" boolean DEFAULT 'f'
+  [1m[36m (125.0ms)[0m  [1mALTER TABLE "messages" ADD "sender_permanent_delete" boolean DEFAULT 'f'[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150417144453"]]
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (15.6ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'cart_items'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (0.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'carts'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (0.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'item_attachments'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (0.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'items'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (0.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'messages'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (0.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'shops'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+  [1m[36m (0.0ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'shops_users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (0.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+
+
+Started GET "/" for ::1 at 2015-04-28 23:33:10 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mItem Load (0.0ms)[0m  SELECT "items".* FROM "items"
+  Rendered home/index.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 4439ms (Views: 4356.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-28 23:33:15 +0200
+Processing by HomeController#index as HTML
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 89ms (Views: 89.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-28 23:33:15 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-28 23:33:15 +0200
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-28 23:33:15 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-28 23:33:15 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-28 23:33:15 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-28 23:33:15 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-28 23:33:15 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-28 23:33:15 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-28 23:33:15 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-28 23:33:15 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-28 23:33:15 +0200
+
+
+Started GET "/assets/carts.self-07c76eeced37241b7a811516d4e68aef0e5af715b083be420142a65b0f6c33b7.css?body=1" for ::1 at 2015-04-28 23:33:15 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-28 23:33:15 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-28 23:33:15 +0200
+
+
+Started GET "/assets/home.self-543bbbfe34538ae7e1dfdf0c2cb239d7ca803cb09ecfb50cde4cac57ce7bd6db.css?body=1" for ::1 at 2015-04-28 23:33:15 +0200
+
+
+Started GET "/assets/item.self-647f03c2b1f545ad2edf6231f6b35550af0062366e4c3419d40937162a32c492.css?body=1" for ::1 at 2015-04-28 23:33:15 +0200
+
+
+Started GET "/assets/messages.self-d790a28de4f72a86f2b5a62101d6f00aa97670bff263b2f89e1700ab15d3f55e.css?body=1" for ::1 at 2015-04-28 23:33:15 +0200
+
+
+Started GET "/assets/scaffolds.self-60f38f67cfb6574c0b9393171f6b96c8d321aaac963ed0fcb50424b998273391.css?body=1" for ::1 at 2015-04-28 23:33:15 +0200
+
+
+Started GET "/assets/sessions.self-1b57ad997728924ac16ed9d46374dfcd149b4a7af6651af532abf6be497d32bd.css?body=1" for ::1 at 2015-04-28 23:33:15 +0200
+
+
+Started GET "/assets/shops.self-77d25f081b2a0546bf96fd4018f9039f529908e78a08ddc2a0ecda1aad1ce09d.css?body=1" for ::1 at 2015-04-28 23:33:15 +0200
+
+
+Started GET "/assets/application.self-e2d0e1554b829582e02600da2f5bb9b7800f79223cd7acefc6a54085200e57ab.css?body=1" for ::1 at 2015-04-28 23:33:15 +0200
+
+
+Started GET "/assets/logo-c45f4f0a08ed8997fb9a942ddedb17238ede2045a11b7e475af00ec7e5ab64cb.png" for ::1 at 2015-04-28 23:33:15 +0200
+
+
+Started GET "/users/sign_in" for ::1 at 2015-04-28 23:33:48 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (342.7ms)
+Completed 200 OK in 449ms (Views: 416.7ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2015-04-28 23:33:52 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 123ms (Views: 122.1ms | ActiveRecord: 0.0ms)
