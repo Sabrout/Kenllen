@@ -16,5 +16,5 @@ class Item < ActiveRecord::Base
 	validates :price, :numericality => {:only_integer => true}
 
 	scope :search, lambda {|query|
-		where(["shop_name LIKE ?", "%#{query}%"])}
+		where(["item_name LIKE ?", "%#{query}%"])}
 end

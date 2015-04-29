@@ -8,6 +8,7 @@ class ShopsController < ApplicationController
     # Searches for a shop
     if !params[:query].empty?
       @shops = Shop.search(params[:query])
+      @items = Item.search(params[:query])
     end
   end
 
