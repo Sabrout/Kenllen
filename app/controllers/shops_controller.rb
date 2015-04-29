@@ -5,8 +5,10 @@ class ShopsController < ApplicationController
   end
 
   def search
-    # Searches for a shop 
-    @shops = Shop.search(params[:query])
+    # Searches for a shop
+    if !params[:query].empty?
+      @shops = Shop.search(params[:query])
+    end
   end
 
   def follow

@@ -1,10 +1,12 @@
 
 .pagetitle{ /*changes the color, font size, and font style of the title of every page*/
 	color: black;
-	text-align: center;
+	/*text-align: center;*/
+	margin-left: 12%;
 	margin-top: 5%;
 	font-size: 220%;
 	font-family: 'Segoe UI';
+	font-size: 400%;
 }
 h2{
 	margin-top: 1%;
@@ -119,7 +121,8 @@ margin-top: -.5%;
 margin-left: 0.5%;
 }
 .add{
-	text-align: center;	
+	text-align: right;	
+	margin-right: 12%;
 }
 .actions{ /*changes the background color of the three buttons (show, edit, delete)*/
 	background-color: #fefefe; 
