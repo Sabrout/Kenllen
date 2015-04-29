@@ -55,8 +55,7 @@
      
               <% if item.item_attachments.first %>
               <ul class="gallery_o">
-  <li>
-      <div class = "image"><%= image_tag item.item_attachments.first.photo_url, :size => "350x250" %></div>
+  <li><%= image_tag item.item_attachments.first.photo_url, :size => "350x250" %>
         <% end %>
        <span class="name_o">
         <%= link_to "Show", {:controller => 'item', :action => 'show', :id => item.id}, :class => 'actionshow' %> 

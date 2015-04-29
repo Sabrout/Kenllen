@@ -1,12 +1,16 @@
 <%= link_to("<< Back To List", {:action => 'index'}, :class => 'back-link') %>
 
-<div class="page_o">
-	<p class="Show-Item">Show Item</p>
-		<% @item_attachments.each do |p| %> <!-- print all pics for this item -->
- 		 		<%= image_tag p.photo_url, :size => "450x300" %>
+<div class="page2_o">
+<!-- 	<p class="Show-Item">Show Item</p> -->
+<div class='picture-wall'>
+  <ul class='picture-wall__list picture-wall__list--list-type-1'><li class='picture-wall__item'>
+      <img alt='Dummy' class='picture-wall__image'>	<% @item_attachments.each do |p| %> <!-- print all pics for this item -->
+ 		 		<%= image_tag p.photo_url, :size => "600x450" %>
 			<% end %>
-</div>
-<div class="page"> <!-- this class contain all description of item -->
+    </li><li class='picture-wall__item'>
+     </div>
+ </div>	
+ <div class="page_o"> <!-- this class contain all description of item -->
 
 		<p class="blod">Name</p>  
 		<p class="answer"><%= @item.item_name %></p>
@@ -17,4 +21,3 @@
 			<p class="blod">Inspiration</p>
 		<p class="answer"><%= @item.inspiration %></p>
 		</div>
-
