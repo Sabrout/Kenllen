@@ -1,13 +1,5 @@
 
-.pagetitle{ /*changes the color, font size, and font style of the title of every page*/
-	color: black;
-	/*text-align: center;*/
-	margin-left: 12%;
-	margin-top: 5%;
-	font-size: 220%;
-	font-family: 'Segoe UI';
-	font-size: 400%;
-}
+
 h2{
 	margin-top: 1%;
 }
@@ -114,16 +106,88 @@ color:#ffb296;
 }*/
 
 .add1{ /*changes the text alignment*/
-text-align: right;	
-float: right; 
-display: inline-block; 
-margin-top: -.5%;	
-margin-left: 0.5%;
+	text-align: right;	
+	float: right; 
+	display: inline-block; 
+	margin-top: -.5%;	
+	margin-left: 0.5%;
 }
+
+.pagetitle{ /*changes the color, font size, and font style of the title of every page*/
+	color: black;
+	margin-left: 12%;
+	margin-top: 5%;
+	font-size: 220%;
+	font-family: 'Segoe UI';
+	font-size: 400%;
+}
+
 .add{
 	text-align: right;	
 	margin-right: 12%;
 }
+
+.search-field {
+	text-align: center;
+	margin-top: -2%;
+	margin-bottom: 1%;
+	opacity: 0.85;
+}
+
+.button {
+	text-align: right;	
+	margin-right: 12%;
+	margin-bottom: 0.30%;
+    opacity: 0.85;
+}
+
+.create-button {
+	position:relative;
+    padding:6px 15px;
+    left:-8px;
+    border:2px solid #E9573F;
+    background-color:#E9573F;
+    color:#fafafa;
+}
+
+.create-button:hover {
+	background-color:#fafafa;
+    color:#E9573F;
+}
+
+/*
+CSS For the Search Text Field
+AUTHOR: Tarek
+*/
+
+.search-form {
+	width:500px;
+    margin:50px auto;
+}
+
+.search-tf{
+	width: 350px;
+    padding:8px 15px;
+    background:rgba(50, 50, 50, 0.2);
+    border:0px solid #dbdbdb;
+}
+
+.search-button {
+    position:relative;
+    padding:6px 15px;
+    left:-8px;
+    border:2px solid #E9573F;
+    background-color:#E9573F;
+    color:#fafafa;
+}
+.search-button:hover  {
+    background-color:#fafafa;
+    color:#E9573F;
+}
+
+/*
+*/
+
 .actions{ /*changes the background color of the three buttons (show, edit, delete)*/
 	background-color: #fefefe; 
 }
@@ -264,9 +328,6 @@ margin-left: 0.5%;
   opacity: 0.9;
 
  }
-
-
-
 
 .shop-button:hover{
   color: #e95640;
