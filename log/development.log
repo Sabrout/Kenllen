@@ -62368,3 +62368,234 @@ Processing by ItemController#show as HTML
   Rendered item/show.html.erb within layouts/application (0.0ms)
   [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
 Completed 200 OK in 148ms (Views: 144.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-29 04:54:53 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 88ms (Views: 88.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-29 04:55:41 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (4.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (12.0ms)
+Completed 500 Internal Server Error in 452ms
+
+ActionView::Template::Error (Invalid CSS after "	text-align:": expected expression (e.g. 1px, bold), was "}"):
+    3: <head>
+    4:   <title>Knellen</title>
+    5:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true  %>
+    6:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: 
+    9: </head>
+  app/assets/stylesheets/shops.scss:436
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___156313366_49674000'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (24.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (60.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-29 04:55:56 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 96ms
+
+ActionView::Template::Error (Invalid CSS after "	text-align:": expected expression (e.g. 1px, bold), was "}"):
+    3: <head>
+    4:   <title>Knellen</title>
+    5:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true  %>
+    6:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: 
+    9: </head>
+  app/assets/stylesheets/shops.scss:436
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___156313366_49674000'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (24.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (56.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-29 04:56:13 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (0.0ms)
+Completed 500 Internal Server Error in 100ms
+
+ActionView::Template::Error (Invalid CSS after "	text-align:": expected expression (e.g. 1px, bold), was "}"):
+    3: <head>
+    4:   <title>Knellen</title>
+    5:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true  %>
+    6:   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: 
+    9: </head>
+  app/assets/stylesheets/shops.scss:436
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb___156313366_49674000'
+
+
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (28.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (24.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (56.0ms)
+
+
+Started POST "/console/repl_sessions/bc6d9bc3dc3d12607304d1c5b41610bf/trace" for ::1 at 2015-04-29 04:57:24 +0200
+
+
+Started GET "/" for ::1 at 2015-04-29 04:58:02 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 468ms (Views: 464.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-29 04:58:02 +0200
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-29 04:58:03 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-29 04:58:03 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-29 04:58:03 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-29 04:58:03 +0200
+
+
+Started GET "/assets/carts.self-07c76eeced37241b7a811516d4e68aef0e5af715b083be420142a65b0f6c33b7.css?body=1" for ::1 at 2015-04-29 04:58:03 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-29 04:58:03 +0200
+
+
+Started GET "/assets/home.self-543bbbfe34538ae7e1dfdf0c2cb239d7ca803cb09ecfb50cde4cac57ce7bd6db.css?body=1" for ::1 at 2015-04-29 04:58:03 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-29 04:58:03 +0200
+
+
+Started GET "/assets/item.self-ae7bd555a1477dedb3c87be03c1b1570b6ba04a922a862cf19235411e513374a.css?body=1" for ::1 at 2015-04-29 04:58:03 +0200
+
+
+Started GET "/assets/messages.self-d790a28de4f72a86f2b5a62101d6f00aa97670bff263b2f89e1700ab15d3f55e.css?body=1" for ::1 at 2015-04-29 04:58:03 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-29 04:58:03 +0200
+
+
+Started GET "/assets/sessions.self-1b57ad997728924ac16ed9d46374dfcd149b4a7af6651af532abf6be497d32bd.css?body=1" for ::1 at 2015-04-29 04:58:03 +0200
+
+
+Started GET "/assets/scaffolds.self-60f38f67cfb6574c0b9393171f6b96c8d321aaac963ed0fcb50424b998273391.css?body=1" for ::1 at 2015-04-29 04:58:03 +0200
+
+
+Started GET "/assets/shops.self-deea092d7fc097b4a37349bb5065deb9a642c8d1a79c41f20817e6708fc931f9.css?body=1" for ::1 at 2015-04-29 04:58:03 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-29 04:58:03 +0200
+
+
+Started GET "/assets/application.self-c952b5f169c59df661624813055c401cebe7e1d44eccf4946c6d4518ab4ded71.css?body=1" for ::1 at 2015-04-29 04:58:03 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-29 04:58:03 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-29 04:58:03 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-29 04:58:03 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-29 04:58:03 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-29 04:58:03 +0200
+
+
+Started GET "/assets/logo-c45f4f0a08ed8997fb9a942ddedb17238ede2045a11b7e475af00ec7e5ab64cb.png" for ::1 at 2015-04-29 04:58:03 +0200
+
+
+Started GET "/assets/shops.self-deea092d7fc097b4a37349bb5065deb9a642c8d1a79c41f20817e6708fc931f9.css?body=1" for ::1 at 2015-04-29 04:58:03 +0200
+
+
+Started GET "/assets/logo-c45f4f0a08ed8997fb9a942ddedb17238ede2045a11b7e475af00ec7e5ab64cb.png" for ::1 at 2015-04-29 04:58:03 +0200
+
+
+Started GET "/shops" for ::1 at 2015-04-29 04:58:08 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (4.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 172ms (Views: 135.9ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/shops/show/1" for ::1 at 2015-04-29 04:58:12 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShop Load (0.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mShop Exists (0.0ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 1], ["id", 1]]
+  [1m[35mShop Exists (0.0ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 1], ["id", 1]]
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."shop_id" = $1[0m  [["shop_id", 1]]
+  [1m[35mItemAttachment Load (0.0ms)[0m  SELECT  "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1  ORDER BY "item_attachments"."id" ASC LIMIT 1  [["item_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1  ORDER BY "item_attachments"."id" ASC LIMIT 1[0m  [["item_id", 2]]
+  [1m[35mShop Exists (0.0ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 1], ["id", 1]]
+  [1m[36mItemAttachment Load (0.0ms)[0m  [1mSELECT  "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1  ORDER BY "item_attachments"."id" ASC LIMIT 1[0m  [["item_id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1  ORDER BY "item_attachments"."id" ASC LIMIT 1  [["item_id", 1]]
+  [1m[36mShop Exists (0.0ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 1], ["id", 1]]
+  Rendered shops/show.html.erb within layouts/application (46.9ms)
+Completed 200 OK in 145ms (Views: 125.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/item/show/2" for ::1 at 2015-04-29 04:58:13 +0200
+Processing by ItemController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mItem Load (0.0ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mItemAttachment Load (0.0ms)[0m  [1mSELECT "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1[0m  [["item_id", 2]]
+  Rendered item/show.html.erb within layouts/application (4.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 79ms (Views: 74.7ms | ActiveRecord: 0.0ms)
