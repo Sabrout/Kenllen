@@ -257,7 +257,7 @@ AUTHOR: Tarek
 }
 
 .form-attr {
-	width: 125px;
+	width: 150px;
 	font-style: none;
 	text-align: left;
 	font-weight: normal;
@@ -266,7 +266,24 @@ AUTHOR: Tarek
 
 .form-tf {
 	margin: 1%;
-	width: 110%;
+	width: 90%;
+    padding:8px 15px;
+    margin-left: 10px;
+    background:rgba(50, 50, 50, 0.2);
+    border:0px solid #dbdbdb;
+}
+
+.form-ta {
+	width: 90%;
+    padding:8px 15px;
+    margin-left: 10px;
+    background:rgba(50, 50, 50, 0.2);
+    border:0px solid #dbdbdb;
+    resize: none;
+}
+
+.form-dropbox {
+	width: 370px;
     padding:8px 15px;
     margin-left: 10px;
     background:rgba(50, 50, 50, 0.2);
@@ -274,7 +291,6 @@ AUTHOR: Tarek
 }
 
 .form-upload {
-	width: 110%;
     padding:8px 15px;
     margin-left: 10px;
 }

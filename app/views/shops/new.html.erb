@@ -7,20 +7,20 @@
 	<table class = 'form-fields'> 
 	<tr>
 		<th class = 'form-attr'>Shop Name</th>
-		<td><%= f.text_field(:shop_name, :class => 'form-tf', :placeholder=>"Type here!") %></td>
+		<td><%= f.text_field(:shop_name, :class => 'form-tf') %></td>
 	</tr>
 	<tr>
 		<th class = 'form-attr'>Shop Description</th>
-		<td><%= f.text_area(:shop_desc, :class => 'form-tf') %></td>
+		<td><%= f.text_area(:shop_desc, :class => 'form-ta') %></td>
 	</tr>
 	<tr>
 		<th class = 'form-attr'>Shop Cover</th>
 		<td><%= f.file_field(:cover, :class => 'form-upload') %></td>
 	</tr>
 	</table>
-
 	<div >
 		<%= submit_tag("Create Shop", :class => 'form-button')%>
 	</div>
+
 	<% end %>
 </div>
