@@ -1,4 +1,3 @@
-<%= link_to("<< Back To List", {:action => 'index'}, :class => 'back-link') %>
 <div class="page2_o">
 <p class="art_name_o"><%= @item.item_name %></p>
 <!-- 	<p class="Show-Item">Show Item</p> -->
@@ -11,10 +10,13 @@
      </div>
  </div>	
  <div class="page_o"> <!-- this class contain all description of item -->
-		<p class="blod">Price</p>
-		<p class="answer"><%= @item.price %></p>
+ 		<div class="inspiration_o">
+		<p class="blod">Inspiration</p>
+		<p class="answer"><%= @item.inspiration %></p></div>
+ 		<div class="price_o">
+		<p class="blod">Price</p>	
+		<p class="number_o"><%= @item.price %></p></div>
+		<div class="description_o">
 		<p class="blod">Description</p>
-		<p class="answer"><%= @item.description %></p>
-			<p class="blod">Inspiration</p>
-		<p class="answer"><%= @item.inspiration %></p>
+		<p class="answer"><%= @item.description %></p></div>
 		</div>
