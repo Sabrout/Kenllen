@@ -1,10 +1,20 @@
 <div class="subjects index">
-  <h2 class= "pagetitle">Shops</h2>
-  <div class = "add">
+  
+  <div>
+  <div class= "pagetitle">Shops</div>
   <!-- Check if user is logged in in order to create a shop -->
-  <% if user_signed_in?%>
-  <%= button_to("Create New Shop", {:action => 'new'}, :class => 'button') %>
-  <%end%>
+
+    <div class = 'search-field'>
+      <%= form_tag :action => 'search', :method => 'get', :class => 'search-form' do %>
+        <%= text_field_tag :query, params[:query], :class => 'search-tf' %>
+        <%= submit_tag "Search", :name => nil, :class => 'search-button' %>
+      <% end %>    
+    </div>
+    <div class = 'button'>
+      <% if user_signed_in?%>
+        <%= button_to("Create New Shop", {:action => 'new'}, :class => 'create-button') %>
+      <%end%>
+    </div>
   </div>
 
   <!-- Shops showcase -->
