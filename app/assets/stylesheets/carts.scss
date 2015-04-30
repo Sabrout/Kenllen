@@ -1,0 +1,185 @@
+// Place all the styles related to the carts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.float-left { 
+  float: left;
+}
+.float-right {
+  float: right;
+}
+
+.item-image {
+  float: left;
+  margin: 0 25px 10px 0;
+  text-align: center;
+}
+
+.text-field{
+  background: white; 
+  border: 1px solid #c4c4c4; 
+  border-radius: 15px; 
+  color: #666; 
+  text-align: center;
+  outline: none; 
+  height:23px; 
+  width: 25px; 
+}
+
+.text-field:focus{
+  box-shadow: 0 0 5px 3px #c4c4c4; 
+}
+
+ .clear:after{
+    content: ".";
+    display: block;
+    height: 0px;
+    clear: both;
+    visibility: hidden;
+}
+
+.item-label {
+  color: #858585;
+  padding: 5px 0 10px 0;
+  font-weight: bold;
+  font-family: Tahoma;
+}
+.item-desc {
+  color: #ee3e00;
+  font-size: 15px;
+  line-height: 1.6em;
+}
+
+.price {
+  color: #ee3e00;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.6em;
+}
+
+.total-price{
+  text-align: center;
+  background: white;
+  font-size: 18px;
+}
+
+.total-price-line{
+  margin-right: 10%;
+}
+
+.total-price-number{
+  color: #ee3e00;
+
+  font-size: 18px;
+}
+.sub-price{
+  color: #ee3e00;
+  font-size: 14px;
+  line-height: 1.6em;
+}
+
+#left-button {
+  display:inline-block;
+  margin-right: 28%;
+}
+
+#center-button {
+  display:inline-block;
+  margin-right: 35%;
+}
+
+
+#right-button {
+  display:inline-block;
+}
+
+.cart-button {
+  background: white;
+-webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+  box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+  border-top-left-radius:10px;
+  border-top-right-radius: 10px;  
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius: 10px;
+  font-family: 'Segoe UI';
+  color: black;
+  font-weight: bold;
+  font-size:85%;
+  padding: 5px 5px 5px 5px;
+  text-decoration: none;
+  border: none;
+  opacity: 0.9;
+}
+.update-button {
+  margin-left: 1%;
+}
+.cart-button:hover{
+  color: #e95640;
+}
+
+.cart-footer-buttons {
+  background-color: white;
+  border: 1px solid #eeeeee;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 5px 5px 5px 8px;
+  text-align: center;
+}
+
+
+
+body {
+  font-weight: 300;
+  font-size:  14px;
+  line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+hr {
+  border: 0;
+  border-bottom: 1px solid #ececec;
+  margin-top : 0;
+  margin-bottom : 0;
+}
+
+
+.empty-cart{
+  margin-top : 0;
+  margin-bottom : 0;
+  padding: 5% 0 5% 40%;
+
+}
+
+
+
+.content-helper {
+  width: 60%;
+  margin: 0 auto;
+}
+
+
+
+.item-title {
+  color: #ee3e00;
+  font-family: 'Rufina', Georgia, Serif;
+  font-weight: bold;
+}
+
+.mainbox-cart-title {
+  margin: 62px 0 0;
+  padding: 8px 8px 7px 13px;
+  background: white;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333333;
+  border: 1px solid #eeeeee;
+  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.item-body{
+  background: white;
+}

@@ -1,17 +1,8 @@
 h2 {
 	margin-top: 1%;
 }
-.myshops-title{
-	float: left;
-	font-size:250%;
-	margin-top: -5%;
-}
-.followed-shops{
-margin-top: 35%;
-clear:both;
 
-}
-body{  /*defines the background color of all the page of the website*/
+body {  /*defines the background color of all the page of the website*/
 	background-color: #F2F2F2;
 	background-size: cover;
 	height: 100%;
@@ -73,16 +64,6 @@ body{  /*defines the background color of all the page of the website*/
 	/*position: fixed;*/
 	width: 100%;
 	top: 0px;
-}
-
-.main-button{
-	background-color:#eff0ec;
-	border:0;
-	display: inline-block;
-	float: center;
-	background-color:#e86540;
-	padding: .5%;
-	margin-top: 1%; 
 }
 
 .table{ /* changes the font size and the alignment of the table */
@@ -320,7 +301,7 @@ AUTHOR: Tarek
 	margin-right: 11%;	
 	font-size: 120%;
 	text-align: left;
-	padding:1.6%;
+	padding:2%;
 	padding-top: -1%;
 	background-color: #D5D5D5; 
 	font-family: 'Segoe UI';
