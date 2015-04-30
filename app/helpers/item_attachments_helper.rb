@@ -1,0 +1,2 @@
+module ItemAttachmentsHelper
+end

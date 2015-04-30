@@ -1,0 +1,33 @@
+<!-- <h1>Messages#inbox</h1> -->
+
+<div class ="h1"> <h1> <%= current_user.fname %>'s Inbox </h1></div>
+<div class = "buttons">
+<div><%= button_to 'Compose New', compose_path , :class=> 'button'%> </div> 
+<div><%= button_to 'Sent Messages', '#' , :class=> 'button'%> </div>
+<div><%= button_to 'Trash', '#' , :class=> 'button'%> </div>
+</div>
+<table class = "table">
+	<tr>
+		<td class = "td">Sender</td>
+		<td class = "td">Subject</td>
+		<td class = "td-message">Message</td>
+	</tr>
+	<!-- Loop over all messages and show sender's name then the subject then the body -->
+	<% current_user.received_messages.each do |m| %>
+	<tr>
+	<% @current_message = m %>
+		<td class = "txt">
+			<%= m.from.uname  %>
+		</td>
+		<td class = "txt">
+			<%= m.topic %>
+		</td>
+		<td class = "txt">
+			<%= m.body %>
+		</td>
+	</tr>
+	<% end %>
+</td>
+</tr>
+</table>
+
