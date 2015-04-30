@@ -24,7 +24,6 @@ background-color: #222222;
 
 .logo{
   float: left;
-  height: 26px;
 }
 
 /*Nav Bar Style*/
@@ -98,23 +97,49 @@ img{-ms-interpolation-mode: bicubic;}
   
 }*/
 
-.navbar-element {
+.navbar-mail{
   text-transform: uppercase;
-  color: #000;
+  color: #EEC900;
   text-decoration: none;
   font-family:Segoe UI;
+  font-weight: bold;
   transition:all 0.4s ease-in-out;
   padding:12px;
   text-align: center;
   
 }
 
-.login-element {
-  text-decoration:none;
-  color:#fff;
+.navbar-cart{
+  text-transform: uppercase;
+  color: #aa5351;
+  text-decoration: none;
   font-family:Segoe UI;
-  background-color:#e86551;
-  padding:12px 12px 25px 12px;
+  font-weight: bold;
+  transition:all 0.4s ease-in-out;
+  padding:12px;
+  text-align: center;
+}
+
+.navbar-browse{
+  text-transform: uppercase;
+  color: #7b911f;
+  text-decoration: none;
+  font-family:Segoe UI;
+  font-weight: bold;
+  transition:all 0.4s ease-in-out;
+  padding:12px;
+  text-align: center;
+}
+
+.navbar-login{
+  text-transform: uppercase;
+  color: #5a9ea2;
+  text-decoration: none;
+  font-family:Segoe UI;
+  font-weight: bold;
+  transition:all 0.4s ease-in-out;
+  padding:12px;
+  text-align: center;
 }
 
 /*.toggle-search:hover{
@@ -126,21 +151,39 @@ img{-ms-interpolation-mode: bicubic;}
   padding:12px 12px 25px 12px;
 }*/
 
-.navbar-element:hover{
+.navbar-mail:hover{
   
   text-decoration:none;
   color:#fff;
   font-family:Segoe UI;
-  background-color:#e86551;
+  background-color:#EEC900;
   padding:12px 12px 25px 12px;
 }
 
-.login-element:hover{
+.navbar-cart:hover{
   
   text-decoration:none;
   color:#fff;
   font-family:Segoe UI;
-  background-color:#000;
+  background-color:#aa5351;
+  padding:12px 12px 25px 12px;
+}
+
+.navbar-browse:hover{
+  
+  text-decoration:none;
+  color:#fff;
+  font-family:Segoe UI;
+  background-color:#7b911f;
+  padding:12px 12px 25px 12px;
+}
+
+.navbar-login:hover{
+  
+  text-decoration:none;
+  color:#fff;
+  font-family:Segoe UI;
+  background-color:#5a9ea2;
   padding:12px 12px 25px 12px;
 }
 
@@ -227,8 +270,8 @@ img{-ms-interpolation-mode: bicubic;}
   background-color: #2f2f2f;
 }
 
-#reasonable-white{
-  color:#e5e5e5;
+#reasonable-yellow{
+  color:#EEC900;
   font-family: Segoe UI;
   font-size: 1.5em;
 }

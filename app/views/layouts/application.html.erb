@@ -11,15 +11,14 @@
   <div class="container">
     <div class="nav-bar ">
       <%= link_to(image_tag("logo.png"), root_path, :class => 'logo') %>
-      <%= link_to("Home", root_path, :class => 'navbar-element') %>
-      <%= link_to("Mail", {:action => 'inbox' , :controller => '/messages'}, :class => 'navbar-element') %>
-      <%= link_to("Cart", {:action => 'index' , :controller => '/carts'}, :class => 'navbar-element') %>
+      <%= link_to("Mail", {:action => 'inbox' , :controller => '/messages'}, :class => 'navbar-mail') %>
+      <%= link_to("Cart", {:action => 'index' , :controller => '/carts'}, :class => 'navbar-cart') %>
       <% if !user_signed_in? %>
-      <%=link_to "BROWSE SHOPS", {:action => 'index' , :controller => '/shops'}, :class =>"navbar-element"%>
-			<%=link_to "LOGIN" ,new_user_session_path  , :class =>"login-element"%>
+      <%=link_to "BROWSE SHOPS", {:action => 'index' , :controller => '/shops'}, :class =>"navbar-browse"%>
+			<%=link_to "LOGIN" ,new_user_session_path  , :class =>"navbar-login"%>
       <%else%>
-			<%=link_to "BROWSE SHOPS", {:action => 'index' , :controller => '/shops'}, :class =>"navbar-element"%>
-			<%=link_to "Sign Out", destroy_user_session_path , method: :delete , :class => "login-element" %>
+			<%=link_to "BROWSE SHOPS", {:action => 'index' , :controller => '/shops'}, :class =>"navbar-browse"%>
+			<%=link_to "Sign Out", destroy_user_session_path , method: :delete , :class => "navbar-login" %>
 			<%end%>
     </div>
   </div>
@@ -43,7 +42,7 @@
   <div class="lookWrap">
     <div id="look">
       <div class="section">
-        <h3 id="reasonable-white">Support</h3>
+        <h3 id="reasonable-yellow">Support</h3>
         <a class="a-footer" href="#">FAQs</a>
         <a class="a-footer" href="#">Contact Us</a>
         <a class="a-footer" href="#">Privacy Policy</a>

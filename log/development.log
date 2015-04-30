@@ -48546,3 +48546,2342 @@ Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff253
 
 
 Started GET "/assets/logo-c45f4f0a08ed8997fb9a942ddedb17238ede2045a11b7e475af00ec7e5ab64cb.png" for ::1 at 2015-04-30 17:45:28 +0200
+
+
+Started GET "/" for ::1 at 2015-04-30 17:58:16 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (1.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 229ms (Views: 226.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-30 17:58:17 +0200
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-30 17:58:17 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-30 17:58:17 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 17:58:17 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 17:58:17 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-30 17:58:17 +0200
+
+
+Started GET "/assets/carts.self-05092fc4c6f294f31530f1d789949092c3b696f8d4e83bf25e0f9554ae11a0eb.css?body=1" for ::1 at 2015-04-30 17:58:17 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 17:58:17 +0200
+
+
+Started GET "/assets/home.self-00c3d38c53b355d86131c8ba48c396b03f325afa485f2577a765716b10e570ff.css?body=1" for ::1 at 2015-04-30 17:58:17 +0200
+
+
+Started GET "/assets/item.self-29bad3505ffc099e66be592888687ecfa0f245d08104386238f366508f6cc309.css?body=1" for ::1 at 2015-04-30 17:58:17 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 17:58:17 +0200
+
+
+Started GET "/assets/messages.self-83950d3aa46e976986f2d2f5bc83c6ab24662c3ceabf699e14ea2b511b68ecde.css?body=1" for ::1 at 2015-04-30 17:58:17 +0200
+
+
+Started GET "/assets/scaffolds.self-3ae8b17be74e7e198dfba269ee329cef7e786a6f1b51214af564852d12141529.css?body=1" for ::1 at 2015-04-30 17:58:17 +0200
+
+
+Started GET "/assets/sessions.self-8ba9579092429b6e9da3bff98dc7d205810c00c003d05cbf360072d8d39741bf.css?body=1" for ::1 at 2015-04-30 17:58:17 +0200
+
+
+Started GET "/assets/shops.self-2d40747618ec435f9fad8df0ca3597bf4afcbff61f926f538e714b0e49ca77c2.css?body=1" for ::1 at 2015-04-30 17:58:17 +0200
+
+
+Started GET "/assets/application.self-fc2c2b05e13f29d96f8928897dfd1dad0b4bd9a495bd50bf289feb2abcb046b8.css?body=1" for ::1 at 2015-04-30 17:58:17 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 17:58:17 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 17:58:17 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 17:58:17 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 17:58:17 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-30 17:58:17 +0200
+
+
+Started GET "/assets/logo-c45f4f0a08ed8997fb9a942ddedb17238ede2045a11b7e475af00ec7e5ab64cb.png" for ::1 at 2015-04-30 17:58:17 +0200
+
+
+Started GET "/" for ::1 at 2015-04-30 17:58:46 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 338ms (Views: 331.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-30 17:58:47 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-30 17:58:47 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 17:58:47 +0200
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-30 17:58:47 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 17:58:47 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-30 17:58:47 +0200
+
+
+Started GET "/assets/carts.self-05092fc4c6f294f31530f1d789949092c3b696f8d4e83bf25e0f9554ae11a0eb.css?body=1" for ::1 at 2015-04-30 17:58:47 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 17:58:47 +0200
+
+
+Started GET "/assets/home.self-00c3d38c53b355d86131c8ba48c396b03f325afa485f2577a765716b10e570ff.css?body=1" for ::1 at 2015-04-30 17:58:47 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 17:58:47 +0200
+
+
+Started GET "/assets/item.self-29bad3505ffc099e66be592888687ecfa0f245d08104386238f366508f6cc309.css?body=1" for ::1 at 2015-04-30 17:58:47 +0200
+
+
+Started GET "/assets/messages.self-83950d3aa46e976986f2d2f5bc83c6ab24662c3ceabf699e14ea2b511b68ecde.css?body=1" for ::1 at 2015-04-30 17:58:47 +0200
+
+
+Started GET "/assets/scaffolds.self-3ae8b17be74e7e198dfba269ee329cef7e786a6f1b51214af564852d12141529.css?body=1" for ::1 at 2015-04-30 17:58:47 +0200
+
+
+Started GET "/assets/sessions.self-8ba9579092429b6e9da3bff98dc7d205810c00c003d05cbf360072d8d39741bf.css?body=1" for ::1 at 2015-04-30 17:58:47 +0200
+
+
+Started GET "/assets/shops.self-2d40747618ec435f9fad8df0ca3597bf4afcbff61f926f538e714b0e49ca77c2.css?body=1" for ::1 at 2015-04-30 17:58:47 +0200
+
+
+Started GET "/assets/application.self-72453ac65bbf1660b16c7b526ecdf966b57fd4dc26204680ea6fc0ec3b44babc.css?body=1" for ::1 at 2015-04-30 17:58:47 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 17:58:47 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 17:58:47 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 17:58:47 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 17:58:47 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-30 17:58:47 +0200
+
+
+Started GET "/assets/logo-c45f4f0a08ed8997fb9a942ddedb17238ede2045a11b7e475af00ec7e5ab64cb.png" for ::1 at 2015-04-30 17:58:47 +0200
+
+
+Started GET "/" for ::1 at 2015-04-30 17:58:51 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (2.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 143ms (Views: 139.1ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-30 17:58:51 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 17:58:51 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-30 17:58:51 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 17:58:51 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-30 17:58:51 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-30 17:58:51 +0200
+
+
+Started GET "/assets/carts.self-05092fc4c6f294f31530f1d789949092c3b696f8d4e83bf25e0f9554ae11a0eb.css?body=1" for ::1 at 2015-04-30 17:58:51 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 17:58:51 +0200
+
+
+Started GET "/assets/home.self-00c3d38c53b355d86131c8ba48c396b03f325afa485f2577a765716b10e570ff.css?body=1" for ::1 at 2015-04-30 17:58:51 +0200
+
+
+Started GET "/assets/item.self-29bad3505ffc099e66be592888687ecfa0f245d08104386238f366508f6cc309.css?body=1" for ::1 at 2015-04-30 17:58:51 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 17:58:51 +0200
+
+
+Started GET "/assets/messages.self-83950d3aa46e976986f2d2f5bc83c6ab24662c3ceabf699e14ea2b511b68ecde.css?body=1" for ::1 at 2015-04-30 17:58:51 +0200
+
+
+Started GET "/assets/scaffolds.self-3ae8b17be74e7e198dfba269ee329cef7e786a6f1b51214af564852d12141529.css?body=1" for ::1 at 2015-04-30 17:58:51 +0200
+
+
+Started GET "/assets/sessions.self-8ba9579092429b6e9da3bff98dc7d205810c00c003d05cbf360072d8d39741bf.css?body=1" for ::1 at 2015-04-30 17:58:51 +0200
+
+
+Started GET "/assets/shops.self-2d40747618ec435f9fad8df0ca3597bf4afcbff61f926f538e714b0e49ca77c2.css?body=1" for ::1 at 2015-04-30 17:58:51 +0200
+
+
+Started GET "/assets/application.self-72453ac65bbf1660b16c7b526ecdf966b57fd4dc26204680ea6fc0ec3b44babc.css?body=1" for ::1 at 2015-04-30 17:58:51 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 17:58:51 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 17:58:51 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 17:58:51 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 17:58:51 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-30 17:58:51 +0200
+
+
+Started GET "/assets/logo-c45f4f0a08ed8997fb9a942ddedb17238ede2045a11b7e475af00ec7e5ab64cb.png" for ::1 at 2015-04-30 17:58:51 +0200
+
+
+Started GET "/" for ::1 at 2015-04-30 17:59:32 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 698ms (Views: 696.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-30 17:59:33 +0200
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-30 17:59:33 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 17:59:33 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-30 17:59:33 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 17:59:33 +0200
+
+
+Started GET "/assets/carts.self-05092fc4c6f294f31530f1d789949092c3b696f8d4e83bf25e0f9554ae11a0eb.css?body=1" for ::1 at 2015-04-30 17:59:33 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 17:59:33 +0200
+
+
+Started GET "/assets/home.self-00c3d38c53b355d86131c8ba48c396b03f325afa485f2577a765716b10e570ff.css?body=1" for ::1 at 2015-04-30 17:59:33 +0200
+
+
+Started GET "/assets/item.self-29bad3505ffc099e66be592888687ecfa0f245d08104386238f366508f6cc309.css?body=1" for ::1 at 2015-04-30 17:59:33 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 17:59:33 +0200
+
+
+Started GET "/assets/messages.self-83950d3aa46e976986f2d2f5bc83c6ab24662c3ceabf699e14ea2b511b68ecde.css?body=1" for ::1 at 2015-04-30 17:59:33 +0200
+
+
+Started GET "/assets/scaffolds.self-3ae8b17be74e7e198dfba269ee329cef7e786a6f1b51214af564852d12141529.css?body=1" for ::1 at 2015-04-30 17:59:33 +0200
+
+
+Started GET "/assets/sessions.self-8ba9579092429b6e9da3bff98dc7d205810c00c003d05cbf360072d8d39741bf.css?body=1" for ::1 at 2015-04-30 17:59:33 +0200
+
+
+Started GET "/assets/shops.self-2d40747618ec435f9fad8df0ca3597bf4afcbff61f926f538e714b0e49ca77c2.css?body=1" for ::1 at 2015-04-30 17:59:33 +0200
+
+
+Started GET "/assets/application.self-bb978332b55cc0ccf1a174e2e05c1c6526bed8fb7b09b3d5b62efdb32ad8eb24.css?body=1" for ::1 at 2015-04-30 17:59:33 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-30 17:59:33 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 17:59:33 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 17:59:33 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 17:59:33 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 17:59:33 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-30 17:59:33 +0200
+
+
+Started GET "/assets/logo-c45f4f0a08ed8997fb9a942ddedb17238ede2045a11b7e475af00ec7e5ab64cb.png" for ::1 at 2015-04-30 17:59:33 +0200
+
+
+Started GET "/" for ::1 at 2015-04-30 17:59:35 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (2.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 235ms (Views: 224.2ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-30 17:59:35 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-30 17:59:35 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-30 17:59:35 +0200
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-30 17:59:35 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 17:59:35 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 17:59:35 +0200
+
+
+Started GET "/assets/carts.self-05092fc4c6f294f31530f1d789949092c3b696f8d4e83bf25e0f9554ae11a0eb.css?body=1" for ::1 at 2015-04-30 17:59:35 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 17:59:35 +0200
+
+
+Started GET "/assets/home.self-00c3d38c53b355d86131c8ba48c396b03f325afa485f2577a765716b10e570ff.css?body=1" for ::1 at 2015-04-30 17:59:35 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 17:59:35 +0200
+
+
+Started GET "/assets/item.self-29bad3505ffc099e66be592888687ecfa0f245d08104386238f366508f6cc309.css?body=1" for ::1 at 2015-04-30 17:59:35 +0200
+
+
+Started GET "/assets/messages.self-83950d3aa46e976986f2d2f5bc83c6ab24662c3ceabf699e14ea2b511b68ecde.css?body=1" for ::1 at 2015-04-30 17:59:35 +0200
+
+
+Started GET "/assets/scaffolds.self-3ae8b17be74e7e198dfba269ee329cef7e786a6f1b51214af564852d12141529.css?body=1" for ::1 at 2015-04-30 17:59:35 +0200
+
+
+Started GET "/assets/sessions.self-8ba9579092429b6e9da3bff98dc7d205810c00c003d05cbf360072d8d39741bf.css?body=1" for ::1 at 2015-04-30 17:59:35 +0200
+
+
+Started GET "/assets/shops.self-2d40747618ec435f9fad8df0ca3597bf4afcbff61f926f538e714b0e49ca77c2.css?body=1" for ::1 at 2015-04-30 17:59:35 +0200
+
+
+Started GET "/assets/application.self-bb978332b55cc0ccf1a174e2e05c1c6526bed8fb7b09b3d5b62efdb32ad8eb24.css?body=1" for ::1 at 2015-04-30 17:59:35 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 17:59:35 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 17:59:35 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 17:59:35 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 17:59:35 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-30 17:59:35 +0200
+
+
+Started GET "/assets/logo-c45f4f0a08ed8997fb9a942ddedb17238ede2045a11b7e475af00ec7e5ab64cb.png" for ::1 at 2015-04-30 17:59:35 +0200
+
+
+Started GET "/" for ::1 at 2015-04-30 18:01:37 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (1.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 611ms (Views: 602.5ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-30 18:01:38 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-30 18:01:38 +0200
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-30 18:01:38 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:01:38 +0200
+
+
+Started GET "/assets/carts.self-05092fc4c6f294f31530f1d789949092c3b696f8d4e83bf25e0f9554ae11a0eb.css?body=1" for ::1 at 2015-04-30 18:01:38 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:01:38 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-30 18:01:38 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:01:38 +0200
+
+
+Started GET "/assets/home.self-00c3d38c53b355d86131c8ba48c396b03f325afa485f2577a765716b10e570ff.css?body=1" for ::1 at 2015-04-30 18:01:38 +0200
+
+
+Started GET "/assets/item.self-29bad3505ffc099e66be592888687ecfa0f245d08104386238f366508f6cc309.css?body=1" for ::1 at 2015-04-30 18:01:38 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:01:38 +0200
+
+
+Started GET "/assets/messages.self-83950d3aa46e976986f2d2f5bc83c6ab24662c3ceabf699e14ea2b511b68ecde.css?body=1" for ::1 at 2015-04-30 18:01:38 +0200
+
+
+Started GET "/assets/scaffolds.self-3ae8b17be74e7e198dfba269ee329cef7e786a6f1b51214af564852d12141529.css?body=1" for ::1 at 2015-04-30 18:01:38 +0200
+
+
+Started GET "/assets/sessions.self-8ba9579092429b6e9da3bff98dc7d205810c00c003d05cbf360072d8d39741bf.css?body=1" for ::1 at 2015-04-30 18:01:38 +0200
+
+
+Started GET "/assets/shops.self-2d40747618ec435f9fad8df0ca3597bf4afcbff61f926f538e714b0e49ca77c2.css?body=1" for ::1 at 2015-04-30 18:01:38 +0200
+
+
+Started GET "/assets/application.self-0d9d58233487cdca61d80c739bce4e5ab89ba04e61e372715dd944bdd15cb26d.css?body=1" for ::1 at 2015-04-30 18:01:38 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:01:38 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:01:38 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:01:38 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-30 18:01:38 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:01:38 +0200
+
+
+Started GET "/assets/logo-c45f4f0a08ed8997fb9a942ddedb17238ede2045a11b7e475af00ec7e5ab64cb.png" for ::1 at 2015-04-30 18:01:38 +0200
+
+
+Started GET "/" for ::1 at 2015-04-30 18:03:20 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 363ms (Views: 355.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-30 18:03:21 +0200
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-30 18:03:21 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-30 18:03:21 +0200
+
+
+Started GET "/assets/carts.self-05092fc4c6f294f31530f1d789949092c3b696f8d4e83bf25e0f9554ae11a0eb.css?body=1" for ::1 at 2015-04-30 18:03:21 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:03:21 +0200
+
+
+Started GET "/assets/item.self-29bad3505ffc099e66be592888687ecfa0f245d08104386238f366508f6cc309.css?body=1" for ::1 at 2015-04-30 18:03:21 +0200
+
+
+Started GET "/assets/home.self-00c3d38c53b355d86131c8ba48c396b03f325afa485f2577a765716b10e570ff.css?body=1" for ::1 at 2015-04-30 18:03:21 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:03:21 +0200
+
+
+Started GET "/assets/messages.self-83950d3aa46e976986f2d2f5bc83c6ab24662c3ceabf699e14ea2b511b68ecde.css?body=1" for ::1 at 2015-04-30 18:03:21 +0200
+
+
+Started GET "/assets/scaffolds.self-3ae8b17be74e7e198dfba269ee329cef7e786a6f1b51214af564852d12141529.css?body=1" for ::1 at 2015-04-30 18:03:21 +0200
+
+
+Started GET "/assets/sessions.self-8ba9579092429b6e9da3bff98dc7d205810c00c003d05cbf360072d8d39741bf.css?body=1" for ::1 at 2015-04-30 18:03:21 +0200
+
+
+Started GET "/assets/shops.self-2d40747618ec435f9fad8df0ca3597bf4afcbff61f926f538e714b0e49ca77c2.css?body=1" for ::1 at 2015-04-30 18:03:21 +0200
+
+
+Started GET "/assets/application.self-99994df347ea70d81d26db88625ad2f2647ecd1f073c65e6b20bd86cbe6969da.css?body=1" for ::1 at 2015-04-30 18:03:21 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:03:21 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:03:21 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-30 18:03:21 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:03:21 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:03:21 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:03:21 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:03:21 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-30 18:03:21 +0200
+
+
+Started GET "/assets/logo-c45f4f0a08ed8997fb9a942ddedb17238ede2045a11b7e475af00ec7e5ab64cb.png" for ::1 at 2015-04-30 18:03:21 +0200
+
+
+Started GET "/" for ::1 at 2015-04-30 18:04:29 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (1.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 633ms (Views: 629.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-30 18:04:30 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-30 18:04:30 +0200
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-30 18:04:30 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:04:30 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-30 18:04:30 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:04:30 +0200
+
+
+Started GET "/assets/carts.self-05092fc4c6f294f31530f1d789949092c3b696f8d4e83bf25e0f9554ae11a0eb.css?body=1" for ::1 at 2015-04-30 18:04:30 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:04:30 +0200
+
+
+Started GET "/assets/home.self-00c3d38c53b355d86131c8ba48c396b03f325afa485f2577a765716b10e570ff.css?body=1" for ::1 at 2015-04-30 18:04:30 +0200
+
+
+Started GET "/assets/item.self-29bad3505ffc099e66be592888687ecfa0f245d08104386238f366508f6cc309.css?body=1" for ::1 at 2015-04-30 18:04:30 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:04:30 +0200
+
+
+Started GET "/assets/messages.self-83950d3aa46e976986f2d2f5bc83c6ab24662c3ceabf699e14ea2b511b68ecde.css?body=1" for ::1 at 2015-04-30 18:04:30 +0200
+
+
+Started GET "/assets/scaffolds.self-3ae8b17be74e7e198dfba269ee329cef7e786a6f1b51214af564852d12141529.css?body=1" for ::1 at 2015-04-30 18:04:30 +0200
+
+
+Started GET "/assets/sessions.self-8ba9579092429b6e9da3bff98dc7d205810c00c003d05cbf360072d8d39741bf.css?body=1" for ::1 at 2015-04-30 18:04:30 +0200
+
+
+Started GET "/assets/shops.self-2d40747618ec435f9fad8df0ca3597bf4afcbff61f926f538e714b0e49ca77c2.css?body=1" for ::1 at 2015-04-30 18:04:30 +0200
+
+
+Started GET "/assets/application.self-3f82a942459805c200fc8f7a75b0d9dfea083a9e776ff40a8edeb5bcab9e5cdf.css?body=1" for ::1 at 2015-04-30 18:04:30 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:04:30 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:04:30 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:04:30 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:04:30 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-30 18:04:30 +0200
+
+
+Started GET "/assets/logo-c45f4f0a08ed8997fb9a942ddedb17238ede2045a11b7e475af00ec7e5ab64cb.png" for ::1 at 2015-04-30 18:04:30 +0200
+
+
+Started GET "/" for ::1 at 2015-04-30 18:13:17 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 162ms (Views: 159.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-30 18:13:18 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-30 18:13:18 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:13:18 +0200
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-30 18:13:18 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:13:18 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-30 18:13:18 +0200
+
+
+Started GET "/assets/carts.self-05092fc4c6f294f31530f1d789949092c3b696f8d4e83bf25e0f9554ae11a0eb.css?body=1" for ::1 at 2015-04-30 18:13:18 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:13:18 +0200
+
+
+Started GET "/assets/home.self-00c3d38c53b355d86131c8ba48c396b03f325afa485f2577a765716b10e570ff.css?body=1" for ::1 at 2015-04-30 18:13:18 +0200
+
+
+Started GET "/assets/item.self-29bad3505ffc099e66be592888687ecfa0f245d08104386238f366508f6cc309.css?body=1" for ::1 at 2015-04-30 18:13:18 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:13:18 +0200
+
+
+Started GET "/assets/messages.self-83950d3aa46e976986f2d2f5bc83c6ab24662c3ceabf699e14ea2b511b68ecde.css?body=1" for ::1 at 2015-04-30 18:13:18 +0200
+
+
+Started GET "/assets/scaffolds.self-3ae8b17be74e7e198dfba269ee329cef7e786a6f1b51214af564852d12141529.css?body=1" for ::1 at 2015-04-30 18:13:18 +0200
+
+
+Started GET "/assets/sessions.self-8ba9579092429b6e9da3bff98dc7d205810c00c003d05cbf360072d8d39741bf.css?body=1" for ::1 at 2015-04-30 18:13:18 +0200
+
+
+Started GET "/assets/shops.self-2d40747618ec435f9fad8df0ca3597bf4afcbff61f926f538e714b0e49ca77c2.css?body=1" for ::1 at 2015-04-30 18:13:18 +0200
+
+
+Started GET "/assets/application.self-3f82a942459805c200fc8f7a75b0d9dfea083a9e776ff40a8edeb5bcab9e5cdf.css?body=1" for ::1 at 2015-04-30 18:13:18 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:13:18 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:13:18 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:13:18 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:13:18 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-30 18:13:18 +0200
+
+
+Started GET "/assets/logo-3c9300f9c287900772518da396dfef3d68b339e6e81a97c238b501f243bc37ea.png" for ::1 at 2015-04-30 18:13:18 +0200
+
+
+Started GET "/" for ::1 at 2015-04-30 18:21:37 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 193ms (Views: 190.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-30 18:21:37 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-30 18:21:37 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:21:37 +0200
+
+
+Started GET "/assets/carts.self-05092fc4c6f294f31530f1d789949092c3b696f8d4e83bf25e0f9554ae11a0eb.css?body=1" for ::1 at 2015-04-30 18:21:37 +0200
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-30 18:21:37 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:21:37 +0200
+
+
+Started GET "/assets/home.self-00c3d38c53b355d86131c8ba48c396b03f325afa485f2577a765716b10e570ff.css?body=1" for ::1 at 2015-04-30 18:21:37 +0200
+
+
+Started GET "/assets/item.self-29bad3505ffc099e66be592888687ecfa0f245d08104386238f366508f6cc309.css?body=1" for ::1 at 2015-04-30 18:21:37 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:21:37 +0200
+
+
+Started GET "/assets/messages.self-83950d3aa46e976986f2d2f5bc83c6ab24662c3ceabf699e14ea2b511b68ecde.css?body=1" for ::1 at 2015-04-30 18:21:37 +0200
+
+
+Started GET "/assets/scaffolds.self-3ae8b17be74e7e198dfba269ee329cef7e786a6f1b51214af564852d12141529.css?body=1" for ::1 at 2015-04-30 18:21:37 +0200
+
+
+Started GET "/assets/sessions.self-8ba9579092429b6e9da3bff98dc7d205810c00c003d05cbf360072d8d39741bf.css?body=1" for ::1 at 2015-04-30 18:21:37 +0200
+
+
+Started GET "/assets/shops.self-2d40747618ec435f9fad8df0ca3597bf4afcbff61f926f538e714b0e49ca77c2.css?body=1" for ::1 at 2015-04-30 18:21:37 +0200
+
+
+Started GET "/assets/application.self-3f82a942459805c200fc8f7a75b0d9dfea083a9e776ff40a8edeb5bcab9e5cdf.css?body=1" for ::1 at 2015-04-30 18:21:37 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:21:37 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-30 18:21:37 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:21:37 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:21:37 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:21:37 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:21:37 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-30 18:21:37 +0200
+
+
+Started GET "/assets/logo-9e5140634c7d40af977b8b3ec5253dd47ab86882effc8a358f1f5021229ef7e5.png" for ::1 at 2015-04-30 18:21:37 +0200
+
+
+Started GET "/" for ::1 at 2015-04-30 18:22:25 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 217ms (Views: 215.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-30 18:22:26 +0200
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-30 18:22:26 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-30 18:22:26 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:22:26 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:22:26 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-30 18:22:26 +0200
+
+
+Started GET "/assets/carts.self-05092fc4c6f294f31530f1d789949092c3b696f8d4e83bf25e0f9554ae11a0eb.css?body=1" for ::1 at 2015-04-30 18:22:26 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:22:26 +0200
+
+
+Started GET "/assets/home.self-00c3d38c53b355d86131c8ba48c396b03f325afa485f2577a765716b10e570ff.css?body=1" for ::1 at 2015-04-30 18:22:26 +0200
+
+
+Started GET "/assets/item.self-29bad3505ffc099e66be592888687ecfa0f245d08104386238f366508f6cc309.css?body=1" for ::1 at 2015-04-30 18:22:26 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:22:26 +0200
+
+
+Started GET "/assets/messages.self-83950d3aa46e976986f2d2f5bc83c6ab24662c3ceabf699e14ea2b511b68ecde.css?body=1" for ::1 at 2015-04-30 18:22:26 +0200
+
+
+Started GET "/assets/scaffolds.self-3ae8b17be74e7e198dfba269ee329cef7e786a6f1b51214af564852d12141529.css?body=1" for ::1 at 2015-04-30 18:22:26 +0200
+
+
+Started GET "/assets/sessions.self-8ba9579092429b6e9da3bff98dc7d205810c00c003d05cbf360072d8d39741bf.css?body=1" for ::1 at 2015-04-30 18:22:26 +0200
+
+
+Started GET "/assets/shops.self-2d40747618ec435f9fad8df0ca3597bf4afcbff61f926f538e714b0e49ca77c2.css?body=1" for ::1 at 2015-04-30 18:22:26 +0200
+
+
+Started GET "/assets/application.self-343da462f6dda710290fe8e89ac51c74b4a0100036800fd2e450996bbf7aa5d5.css?body=1" for ::1 at 2015-04-30 18:22:26 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:22:26 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:22:26 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:22:26 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:22:26 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-30 18:22:26 +0200
+
+
+Started GET "/assets/logo-9e5140634c7d40af977b8b3ec5253dd47ab86882effc8a358f1f5021229ef7e5.png" for ::1 at 2015-04-30 18:22:26 +0200
+
+
+Started GET "/" for ::1 at 2015-04-30 18:22:43 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 215ms (Views: 213.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-30 18:22:44 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-30 18:22:44 +0200
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-30 18:22:44 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:22:44 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-30 18:22:44 +0200
+
+
+Started GET "/assets/carts.self-05092fc4c6f294f31530f1d789949092c3b696f8d4e83bf25e0f9554ae11a0eb.css?body=1" for ::1 at 2015-04-30 18:22:44 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:22:44 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:22:44 +0200
+
+
+Started GET "/assets/home.self-00c3d38c53b355d86131c8ba48c396b03f325afa485f2577a765716b10e570ff.css?body=1" for ::1 at 2015-04-30 18:22:44 +0200
+
+
+Started GET "/assets/item.self-29bad3505ffc099e66be592888687ecfa0f245d08104386238f366508f6cc309.css?body=1" for ::1 at 2015-04-30 18:22:44 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:22:44 +0200
+
+
+Started GET "/assets/messages.self-83950d3aa46e976986f2d2f5bc83c6ab24662c3ceabf699e14ea2b511b68ecde.css?body=1" for ::1 at 2015-04-30 18:22:44 +0200
+
+
+Started GET "/assets/scaffolds.self-3ae8b17be74e7e198dfba269ee329cef7e786a6f1b51214af564852d12141529.css?body=1" for ::1 at 2015-04-30 18:22:44 +0200
+
+
+Started GET "/assets/sessions.self-8ba9579092429b6e9da3bff98dc7d205810c00c003d05cbf360072d8d39741bf.css?body=1" for ::1 at 2015-04-30 18:22:44 +0200
+
+
+Started GET "/assets/shops.self-2d40747618ec435f9fad8df0ca3597bf4afcbff61f926f538e714b0e49ca77c2.css?body=1" for ::1 at 2015-04-30 18:22:44 +0200
+
+
+Started GET "/assets/application.self-0490c77c678dbbb2c62f0d662fe8f2eca42ec6914398331988ddd00dddce1b8a.css?body=1" for ::1 at 2015-04-30 18:22:44 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:22:44 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:22:44 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:22:44 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:22:44 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-30 18:22:44 +0200
+
+
+Started GET "/assets/logo-9e5140634c7d40af977b8b3ec5253dd47ab86882effc8a358f1f5021229ef7e5.png" for ::1 at 2015-04-30 18:22:44 +0200
+
+
+Started GET "/" for ::1 at 2015-04-30 18:23:16 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 232ms (Views: 230.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-30 18:23:16 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-30 18:23:17 +0200
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-30 18:23:17 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:23:17 +0200
+
+
+Started GET "/assets/carts.self-05092fc4c6f294f31530f1d789949092c3b696f8d4e83bf25e0f9554ae11a0eb.css?body=1" for ::1 at 2015-04-30 18:23:17 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:23:17 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-30 18:23:17 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:23:17 +0200
+
+
+Started GET "/assets/home.self-00c3d38c53b355d86131c8ba48c396b03f325afa485f2577a765716b10e570ff.css?body=1" for ::1 at 2015-04-30 18:23:17 +0200
+
+
+Started GET "/assets/item.self-29bad3505ffc099e66be592888687ecfa0f245d08104386238f366508f6cc309.css?body=1" for ::1 at 2015-04-30 18:23:17 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:23:17 +0200
+
+
+Started GET "/assets/messages.self-83950d3aa46e976986f2d2f5bc83c6ab24662c3ceabf699e14ea2b511b68ecde.css?body=1" for ::1 at 2015-04-30 18:23:17 +0200
+
+
+Started GET "/assets/scaffolds.self-3ae8b17be74e7e198dfba269ee329cef7e786a6f1b51214af564852d12141529.css?body=1" for ::1 at 2015-04-30 18:23:17 +0200
+
+
+Started GET "/assets/sessions.self-8ba9579092429b6e9da3bff98dc7d205810c00c003d05cbf360072d8d39741bf.css?body=1" for ::1 at 2015-04-30 18:23:17 +0200
+
+
+Started GET "/assets/shops.self-2d40747618ec435f9fad8df0ca3597bf4afcbff61f926f538e714b0e49ca77c2.css?body=1" for ::1 at 2015-04-30 18:23:17 +0200
+
+
+Started GET "/assets/application.self-a6a9cfe9e53ab3097e8cc5847d528d24a8b4dfa6ae203e2a7986c1f3943d5444.css?body=1" for ::1 at 2015-04-30 18:23:17 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:23:17 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:23:17 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:23:17 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:23:17 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-30 18:23:17 +0200
+
+
+Started GET "/assets/logo-9e5140634c7d40af977b8b3ec5253dd47ab86882effc8a358f1f5021229ef7e5.png" for ::1 at 2015-04-30 18:23:17 +0200
+
+
+Started GET "/" for ::1 at 2015-04-30 18:23:36 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 206ms (Views: 205.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-30 18:23:36 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-30 18:23:36 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:23:36 +0200
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-30 18:23:36 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:23:36 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-30 18:23:36 +0200
+
+
+Started GET "/assets/carts.self-05092fc4c6f294f31530f1d789949092c3b696f8d4e83bf25e0f9554ae11a0eb.css?body=1" for ::1 at 2015-04-30 18:23:36 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:23:36 +0200
+
+
+Started GET "/assets/home.self-00c3d38c53b355d86131c8ba48c396b03f325afa485f2577a765716b10e570ff.css?body=1" for ::1 at 2015-04-30 18:23:36 +0200
+
+
+Started GET "/assets/item.self-29bad3505ffc099e66be592888687ecfa0f245d08104386238f366508f6cc309.css?body=1" for ::1 at 2015-04-30 18:23:36 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:23:36 +0200
+
+
+Started GET "/assets/messages.self-83950d3aa46e976986f2d2f5bc83c6ab24662c3ceabf699e14ea2b511b68ecde.css?body=1" for ::1 at 2015-04-30 18:23:36 +0200
+
+
+Started GET "/assets/scaffolds.self-3ae8b17be74e7e198dfba269ee329cef7e786a6f1b51214af564852d12141529.css?body=1" for ::1 at 2015-04-30 18:23:36 +0200
+
+
+Started GET "/assets/sessions.self-8ba9579092429b6e9da3bff98dc7d205810c00c003d05cbf360072d8d39741bf.css?body=1" for ::1 at 2015-04-30 18:23:36 +0200
+
+
+Started GET "/assets/shops.self-2d40747618ec435f9fad8df0ca3597bf4afcbff61f926f538e714b0e49ca77c2.css?body=1" for ::1 at 2015-04-30 18:23:36 +0200
+
+
+Started GET "/assets/application.self-aee6c2ef27ff51d654ee86989ceab34c648a4bec4e5e4bf10dcda7502c569a1d.css?body=1" for ::1 at 2015-04-30 18:23:36 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:23:36 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:23:36 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:23:36 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:23:36 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-30 18:23:36 +0200
+
+
+Started GET "/assets/logo-9e5140634c7d40af977b8b3ec5253dd47ab86882effc8a358f1f5021229ef7e5.png" for ::1 at 2015-04-30 18:23:36 +0200
+
+
+Started GET "/" for ::1 at 2015-04-30 18:25:48 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (1.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 196ms (Views: 192.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-30 18:25:48 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-30 18:25:48 +0200
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-30 18:25:48 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:25:48 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:25:48 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-30 18:25:48 +0200
+
+
+Started GET "/assets/carts.self-05092fc4c6f294f31530f1d789949092c3b696f8d4e83bf25e0f9554ae11a0eb.css?body=1" for ::1 at 2015-04-30 18:25:48 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:25:48 +0200
+
+
+Started GET "/assets/home.self-00c3d38c53b355d86131c8ba48c396b03f325afa485f2577a765716b10e570ff.css?body=1" for ::1 at 2015-04-30 18:25:48 +0200
+
+
+Started GET "/assets/item.self-29bad3505ffc099e66be592888687ecfa0f245d08104386238f366508f6cc309.css?body=1" for ::1 at 2015-04-30 18:25:48 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:25:48 +0200
+
+
+Started GET "/assets/messages.self-83950d3aa46e976986f2d2f5bc83c6ab24662c3ceabf699e14ea2b511b68ecde.css?body=1" for ::1 at 2015-04-30 18:25:48 +0200
+
+
+Started GET "/assets/scaffolds.self-3ae8b17be74e7e198dfba269ee329cef7e786a6f1b51214af564852d12141529.css?body=1" for ::1 at 2015-04-30 18:25:48 +0200
+
+
+Started GET "/assets/sessions.self-8ba9579092429b6e9da3bff98dc7d205810c00c003d05cbf360072d8d39741bf.css?body=1" for ::1 at 2015-04-30 18:25:48 +0200
+
+
+Started GET "/assets/shops.self-2d40747618ec435f9fad8df0ca3597bf4afcbff61f926f538e714b0e49ca77c2.css?body=1" for ::1 at 2015-04-30 18:25:48 +0200
+
+
+Started GET "/assets/application.self-1ce18c000ae723a86b5b8514dc51c69ace9434210fc0fd8b3c5e19ffb9fd2834.css?body=1" for ::1 at 2015-04-30 18:25:48 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:25:48 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:25:48 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:25:48 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:25:48 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-30 18:25:48 +0200
+
+
+Started GET "/assets/logo-9e5140634c7d40af977b8b3ec5253dd47ab86882effc8a358f1f5021229ef7e5.png" for ::1 at 2015-04-30 18:25:48 +0200
+
+
+Started GET "/" for ::1 at 2015-04-30 18:26:42 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (1.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 183ms (Views: 180.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-30 18:26:42 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:26:42 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-30 18:26:42 +0200
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-30 18:26:42 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:26:42 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-30 18:26:42 +0200
+
+
+Started GET "/assets/carts.self-05092fc4c6f294f31530f1d789949092c3b696f8d4e83bf25e0f9554ae11a0eb.css?body=1" for ::1 at 2015-04-30 18:26:42 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:26:42 +0200
+
+
+Started GET "/assets/home.self-00c3d38c53b355d86131c8ba48c396b03f325afa485f2577a765716b10e570ff.css?body=1" for ::1 at 2015-04-30 18:26:42 +0200
+
+
+Started GET "/assets/item.self-29bad3505ffc099e66be592888687ecfa0f245d08104386238f366508f6cc309.css?body=1" for ::1 at 2015-04-30 18:26:42 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:26:42 +0200
+
+
+Started GET "/assets/messages.self-83950d3aa46e976986f2d2f5bc83c6ab24662c3ceabf699e14ea2b511b68ecde.css?body=1" for ::1 at 2015-04-30 18:26:42 +0200
+
+
+Started GET "/assets/scaffolds.self-3ae8b17be74e7e198dfba269ee329cef7e786a6f1b51214af564852d12141529.css?body=1" for ::1 at 2015-04-30 18:26:42 +0200
+
+
+Started GET "/assets/sessions.self-8ba9579092429b6e9da3bff98dc7d205810c00c003d05cbf360072d8d39741bf.css?body=1" for ::1 at 2015-04-30 18:26:42 +0200
+
+
+Started GET "/assets/shops.self-2d40747618ec435f9fad8df0ca3597bf4afcbff61f926f538e714b0e49ca77c2.css?body=1" for ::1 at 2015-04-30 18:26:43 +0200
+
+
+Started GET "/assets/application.self-8133b61ceca6d231c0ddd406382c85cc86f97b3ed8f24de83d50fb848815b6d3.css?body=1" for ::1 at 2015-04-30 18:26:43 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:26:43 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:26:43 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:26:43 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:26:43 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-30 18:26:43 +0200
+
+
+Started GET "/assets/logo-9e5140634c7d40af977b8b3ec5253dd47ab86882effc8a358f1f5021229ef7e5.png" for ::1 at 2015-04-30 18:26:43 +0200
+
+
+Started GET "/" for ::1 at 2015-04-30 18:26:59 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (1.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 133ms (Views: 130.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-30 18:26:59 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-30 18:26:59 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-30 18:26:59 +0200
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-30 18:26:59 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:26:59 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:26:59 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:26:59 +0200
+
+
+Started GET "/assets/carts.self-05092fc4c6f294f31530f1d789949092c3b696f8d4e83bf25e0f9554ae11a0eb.css?body=1" for ::1 at 2015-04-30 18:26:59 +0200
+
+
+Started GET "/assets/home.self-00c3d38c53b355d86131c8ba48c396b03f325afa485f2577a765716b10e570ff.css?body=1" for ::1 at 2015-04-30 18:26:59 +0200
+
+
+Started GET "/assets/item.self-29bad3505ffc099e66be592888687ecfa0f245d08104386238f366508f6cc309.css?body=1" for ::1 at 2015-04-30 18:26:59 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:27:00 +0200
+
+
+Started GET "/assets/messages.self-83950d3aa46e976986f2d2f5bc83c6ab24662c3ceabf699e14ea2b511b68ecde.css?body=1" for ::1 at 2015-04-30 18:27:00 +0200
+
+
+Started GET "/assets/scaffolds.self-3ae8b17be74e7e198dfba269ee329cef7e786a6f1b51214af564852d12141529.css?body=1" for ::1 at 2015-04-30 18:27:00 +0200
+
+
+Started GET "/assets/sessions.self-8ba9579092429b6e9da3bff98dc7d205810c00c003d05cbf360072d8d39741bf.css?body=1" for ::1 at 2015-04-30 18:27:00 +0200
+
+
+Started GET "/assets/shops.self-2d40747618ec435f9fad8df0ca3597bf4afcbff61f926f538e714b0e49ca77c2.css?body=1" for ::1 at 2015-04-30 18:27:00 +0200
+
+
+Started GET "/assets/application.self-8133b61ceca6d231c0ddd406382c85cc86f97b3ed8f24de83d50fb848815b6d3.css?body=1" for ::1 at 2015-04-30 18:27:00 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:27:00 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:27:00 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:27:00 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:27:00 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-30 18:27:00 +0200
+
+
+Started GET "/assets/logo-9e5140634c7d40af977b8b3ec5253dd47ab86882effc8a358f1f5021229ef7e5.png" for ::1 at 2015-04-30 18:27:00 +0200
+
+
+Started GET "/" for ::1 at 2015-04-30 18:29:28 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (2.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 249ms (Views: 239.2ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-30 18:29:29 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-30 18:29:29 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:29:29 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:29:29 +0200
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-30 18:29:29 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-30 18:29:29 +0200
+
+
+Started GET "/assets/carts.self-05092fc4c6f294f31530f1d789949092c3b696f8d4e83bf25e0f9554ae11a0eb.css?body=1" for ::1 at 2015-04-30 18:29:29 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:29:29 +0200
+
+
+Started GET "/assets/home.self-00c3d38c53b355d86131c8ba48c396b03f325afa485f2577a765716b10e570ff.css?body=1" for ::1 at 2015-04-30 18:29:29 +0200
+
+
+Started GET "/assets/item.self-29bad3505ffc099e66be592888687ecfa0f245d08104386238f366508f6cc309.css?body=1" for ::1 at 2015-04-30 18:29:29 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:29:29 +0200
+
+
+Started GET "/assets/messages.self-83950d3aa46e976986f2d2f5bc83c6ab24662c3ceabf699e14ea2b511b68ecde.css?body=1" for ::1 at 2015-04-30 18:29:29 +0200
+
+
+Started GET "/assets/scaffolds.self-3ae8b17be74e7e198dfba269ee329cef7e786a6f1b51214af564852d12141529.css?body=1" for ::1 at 2015-04-30 18:29:29 +0200
+
+
+Started GET "/assets/sessions.self-8ba9579092429b6e9da3bff98dc7d205810c00c003d05cbf360072d8d39741bf.css?body=1" for ::1 at 2015-04-30 18:29:29 +0200
+
+
+Started GET "/assets/shops.self-2d40747618ec435f9fad8df0ca3597bf4afcbff61f926f538e714b0e49ca77c2.css?body=1" for ::1 at 2015-04-30 18:29:29 +0200
+
+
+Started GET "/assets/application.self-391b1c3c57037803c1cf90033fcf481ca833ad50bc3d1a16bebe141a58a8c469.css?body=1" for ::1 at 2015-04-30 18:29:29 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:29:29 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:29:29 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:29:29 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:29:29 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-30 18:29:29 +0200
+
+
+Started GET "/assets/logo-af5774fa01a581b3a0c483090d45e9eec365b5154b9d99dc619683f72ac9826e.png" for ::1 at 2015-04-30 18:29:29 +0200
+
+
+Started GET "/" for ::1 at 2015-04-30 18:31:35 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (2.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 124ms (Views: 118.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-30 18:31:36 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-30 18:31:36 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-30 18:31:36 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:31:36 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:31:36 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-30 18:31:36 +0200
+
+
+Started GET "/assets/carts.self-05092fc4c6f294f31530f1d789949092c3b696f8d4e83bf25e0f9554ae11a0eb.css?body=1" for ::1 at 2015-04-30 18:31:36 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:31:36 +0200
+
+
+Started GET "/assets/home.self-00c3d38c53b355d86131c8ba48c396b03f325afa485f2577a765716b10e570ff.css?body=1" for ::1 at 2015-04-30 18:31:36 +0200
+
+
+Started GET "/assets/item.self-29bad3505ffc099e66be592888687ecfa0f245d08104386238f366508f6cc309.css?body=1" for ::1 at 2015-04-30 18:31:36 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:31:36 +0200
+
+
+Started GET "/assets/messages.self-83950d3aa46e976986f2d2f5bc83c6ab24662c3ceabf699e14ea2b511b68ecde.css?body=1" for ::1 at 2015-04-30 18:31:36 +0200
+
+
+Started GET "/assets/scaffolds.self-3ae8b17be74e7e198dfba269ee329cef7e786a6f1b51214af564852d12141529.css?body=1" for ::1 at 2015-04-30 18:31:36 +0200
+
+
+Started GET "/assets/sessions.self-8ba9579092429b6e9da3bff98dc7d205810c00c003d05cbf360072d8d39741bf.css?body=1" for ::1 at 2015-04-30 18:31:36 +0200
+
+
+Started GET "/assets/shops.self-2d40747618ec435f9fad8df0ca3597bf4afcbff61f926f538e714b0e49ca77c2.css?body=1" for ::1 at 2015-04-30 18:31:36 +0200
+
+
+Started GET "/assets/application.self-391b1c3c57037803c1cf90033fcf481ca833ad50bc3d1a16bebe141a58a8c469.css?body=1" for ::1 at 2015-04-30 18:31:36 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:31:36 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:31:36 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:31:36 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:31:36 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-30 18:31:36 +0200
+
+
+Started GET "/assets/logo-af5774fa01a581b3a0c483090d45e9eec365b5154b9d99dc619683f72ac9826e.png" for ::1 at 2015-04-30 18:31:36 +0200
+
+
+Started GET "/" for ::1 at 2015-04-30 18:36:43 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (2.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 227ms (Views: 222.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-30 18:36:44 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-30 18:36:44 +0200
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-30 18:36:44 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:36:44 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:36:44 +0200
+
+
+Started GET "/assets/carts.self-05092fc4c6f294f31530f1d789949092c3b696f8d4e83bf25e0f9554ae11a0eb.css?body=1" for ::1 at 2015-04-30 18:36:44 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-30 18:36:44 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:36:44 +0200
+
+
+Started GET "/assets/home.self-00c3d38c53b355d86131c8ba48c396b03f325afa485f2577a765716b10e570ff.css?body=1" for ::1 at 2015-04-30 18:36:44 +0200
+
+
+Started GET "/assets/item.self-29bad3505ffc099e66be592888687ecfa0f245d08104386238f366508f6cc309.css?body=1" for ::1 at 2015-04-30 18:36:44 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:36:44 +0200
+
+
+Started GET "/assets/messages.self-83950d3aa46e976986f2d2f5bc83c6ab24662c3ceabf699e14ea2b511b68ecde.css?body=1" for ::1 at 2015-04-30 18:36:44 +0200
+
+
+Started GET "/assets/scaffolds.self-3ae8b17be74e7e198dfba269ee329cef7e786a6f1b51214af564852d12141529.css?body=1" for ::1 at 2015-04-30 18:36:44 +0200
+
+
+Started GET "/assets/sessions.self-8ba9579092429b6e9da3bff98dc7d205810c00c003d05cbf360072d8d39741bf.css?body=1" for ::1 at 2015-04-30 18:36:44 +0200
+
+
+Started GET "/assets/shops.self-2d40747618ec435f9fad8df0ca3597bf4afcbff61f926f538e714b0e49ca77c2.css?body=1" for ::1 at 2015-04-30 18:36:44 +0200
+
+
+Started GET "/assets/application.self-f82a8d709c99b8a10b9e10af279245b7785eb19926486213360fa7644ac99eef.css?body=1" for ::1 at 2015-04-30 18:36:44 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:36:44 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:36:44 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:36:44 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:36:44 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-30 18:36:44 +0200
+
+
+Started GET "/assets/logo-af5774fa01a581b3a0c483090d45e9eec365b5154b9d99dc619683f72ac9826e.png" for ::1 at 2015-04-30 18:36:44 +0200
+
+
+Started GET "/" for ::1 at 2015-04-30 18:37:26 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 185ms (Views: 182.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-30 18:37:27 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:37:27 +0200
+
+
+Started GET "/assets/home.self-00c3d38c53b355d86131c8ba48c396b03f325afa485f2577a765716b10e570ff.css?body=1" for ::1 at 2015-04-30 18:37:27 +0200
+
+
+Started GET "/assets/carts.self-05092fc4c6f294f31530f1d789949092c3b696f8d4e83bf25e0f9554ae11a0eb.css?body=1" for ::1 at 2015-04-30 18:37:27 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:37:27 +0200
+
+
+Started GET "/assets/item.self-29bad3505ffc099e66be592888687ecfa0f245d08104386238f366508f6cc309.css?body=1" for ::1 at 2015-04-30 18:37:27 +0200
+
+
+Started GET "/assets/messages.self-83950d3aa46e976986f2d2f5bc83c6ab24662c3ceabf699e14ea2b511b68ecde.css?body=1" for ::1 at 2015-04-30 18:37:27 +0200
+
+
+Started GET "/assets/scaffolds.self-3ae8b17be74e7e198dfba269ee329cef7e786a6f1b51214af564852d12141529.css?body=1" for ::1 at 2015-04-30 18:37:27 +0200
+
+
+Started GET "/assets/sessions.self-8ba9579092429b6e9da3bff98dc7d205810c00c003d05cbf360072d8d39741bf.css?body=1" for ::1 at 2015-04-30 18:37:27 +0200
+
+
+Started GET "/assets/shops.self-2d40747618ec435f9fad8df0ca3597bf4afcbff61f926f538e714b0e49ca77c2.css?body=1" for ::1 at 2015-04-30 18:37:27 +0200
+
+
+Started GET "/assets/application.self-c7c25ced965e382afd3e8063cdc7cd9873d0509fc1324a8ea448a0b83c1dc262.css?body=1" for ::1 at 2015-04-30 18:37:27 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-30 18:37:27 +0200
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-30 18:37:27 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:37:27 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:37:27 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-30 18:37:27 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:37:27 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:37:27 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:37:27 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:37:27 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-30 18:37:27 +0200
+
+
+Started GET "/assets/logo-af5774fa01a581b3a0c483090d45e9eec365b5154b9d99dc619683f72ac9826e.png" for ::1 at 2015-04-30 18:37:27 +0200
+
+
+Started GET "/carts" for ::1 at 2015-04-30 18:40:57 +0200
+Processing by CartsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCart Load (26.1ms)[0m  [1mSELECT  "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT 1[0m  [["user_id", 3]]
+  [1m[35m (5.0ms)[0m  BEGIN
+  [1m[36mSQL (45.1ms)[0m  [1mINSERT INTO "carts" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", "2015-04-30 16:40:58.972637"], ["updated_at", "2015-04-30 16:40:58.972637"]]
+  [1m[35m (42.2ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (14.1ms)[0m  UPDATE "carts" SET "user_id" = $1, "updated_at" = $2 WHERE "carts"."id" = $3  [["user_id", 3], ["updated_at", "2015-04-30 16:40:59.085946"], ["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mCartItem Exists (17.0ms)[0m  SELECT  1 AS one FROM "cart_items" WHERE "cart_items"."cart_id" = $1 LIMIT 1  [["cart_id", 1]]
+  [1m[36mCartItem Load (1.0ms)[0m  [1mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."cart_id" = $1  ORDER BY created_at ASC[0m  [["cart_id", 1]]
+  Rendered carts/index.html.erb within layouts/application (91.2ms)
+Completed 200 OK in 486ms (Views: 211.4ms | ActiveRecord: 153.5ms)
+
+
+Started GET "/shops" for ::1 at 2015-04-30 18:41:18 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mShop Load (67.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (92.1ms)
+Completed 200 OK in 347ms (Views: 258.2ms | ActiveRecord: 74.0ms)
+
+
+Started GET "/uploads/shop/cover/2/11164056_1402527719787440_3550466112619866426_o.jpg" for ::1 at 2015-04-30 18:41:18 +0200
+
+ActionController::RoutingError (No route matches [GET] "/uploads/shop/cover/2/11164056_1402527719787440_3550466112619866426_o.jpg"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (55.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (182.1ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (51.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (146.2ms)
+
+
+Started GET "/uploads/shop/cover/1/aB3L2P1_460s.jpg" for ::1 at 2015-04-30 18:41:19 +0200
+
+ActionController::RoutingError (No route matches [GET] "/uploads/shop/cover/1/aB3L2P1_460s.jpg"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (112.1ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (3.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (3.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (80.1ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (196.1ms)
+
+
+Started GET "/shops/show/2" for ::1 at 2015-04-30 18:41:20 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mShop Load (0.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mShop Exists (1.0ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 3], ["id", 2]]
+  [1m[35mShop Exists (1.0ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 3], ["id", 2]]
+  [1m[36mItem Load (15.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."shop_id" = $1[0m  [["shop_id", 2]]
+  [1m[35mItemAttachment Load (37.1ms)[0m  SELECT  "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1  ORDER BY "item_attachments"."id" ASC LIMIT 1  [["item_id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1  ORDER BY "item_attachments"."id" ASC LIMIT 1[0m  [["item_id", 1]]
+  [1m[35mShop Exists (1.0ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 3], ["id", 2]]
+  Rendered shops/show.html.erb within layouts/application (100.4ms)
+Completed 200 OK in 191ms (Views: 129.1ms | ActiveRecord: 59.3ms)
+
+
+Started GET "/uploads/item_attachment/photo/1/aB3L2P1_460s.jpg" for ::1 at 2015-04-30 18:41:20 +0200
+
+ActionController::RoutingError (No route matches [GET] "/uploads/item_attachment/photo/1/aB3L2P1_460s.jpg"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (79.1ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (49.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (112.1ms)
+
+
+Started GET "/uploads/shop/cover/2/11164056_1402527719787440_3550466112619866426_o.jpg" for ::1 at 2015-04-30 18:41:20 +0200
+
+ActionController::RoutingError (No route matches [GET] "/uploads/shop/cover/2/11164056_1402527719787440_3550466112619866426_o.jpg"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby21-x64/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (82.1ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (52.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (118.1ms)
+
+
+Started POST "/cart_items?item_id=1" for ::1 at 2015-04-30 18:41:23 +0200
+Processing by CartItemsController#create as HTML
+  Parameters: {"authenticity_token"=>"WDv22VIlwbouv5HD9260YxolPjlLEO/GG2WazpOeiyYBPU+fM+nNVGCXzvzybqlp7AC6Z16IgS5ZSXWLXt566g==", "item_id"=>"1"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCart Load (0.0ms)[0m  SELECT  "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT 1  [["user_id", 3]]
+  [1m[36mItem Load (12.0ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCartItem Load (1.0ms)[0m  SELECT  "cart_items".* FROM "cart_items" WHERE "cart_items"."cart_id" = $1 AND "cart_items"."item_id" = 1  ORDER BY created_at ASC LIMIT 1  [["cart_id", 1]]
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (25.1ms)[0m  INSERT INTO "cart_items" ("item_id", "cart_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["item_id", 1], ["cart_id", 1], ["created_at", "2015-04-30 16:41:23.634795"], ["updated_at", "2015-04-30 16:41:23.634795"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/carts
+Completed 302 Found in 89ms (ActiveRecord: 41.1ms)
+
+
+Started GET "/carts" for ::1 at 2015-04-30 18:41:23 +0200
+Processing by CartsController#index as HTML
+  [1m[35mUser Load (2.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCart Load (2.0ms)[0m  [1mSELECT  "carts".* FROM "carts" WHERE "carts"."user_id" = $1 LIMIT 1[0m  [["user_id", 3]]
+  [1m[35mCartItem Exists (1.0ms)[0m  SELECT  1 AS one FROM "cart_items" WHERE "cart_items"."cart_id" = $1 LIMIT 1  [["cart_id", 1]]
+  [1m[36mCartItem Load (2.0ms)[0m  [1mSELECT "cart_items".* FROM "cart_items" WHERE "cart_items"."cart_id" = $1  ORDER BY created_at ASC[0m  [["cart_id", 1]]
+  [1m[35mItem Load (2.0ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered carts/index.html.erb within layouts/application (53.1ms)
+Completed 500 Internal Server Error in 75ms
+
+ActionView::Template::Error (undefined method `quantity' for #<Item:0x0000000cbb5718>):
+    34: 						<span class="item-desc"><%= cart_item.item.description%></span>
+    35: 						<br>
+    36: <!--Item Quantity-->	<label class="item-label">Quantity In Stock: </label>
+    37: 						<span class="price"><%= cart_item.item.quantity%></span>
+    38: 		</div>
+    39: 		<hr>
+    40: 		<%end%>
+  app/views/carts/index.html.erb:37:in `block in _app_views_carts_index_html_erb__2134385071_101250960'
+  app/views/carts/index.html.erb:15:in `_app_views_carts_index_html_erb__2134385071_101250960'
+  app/controllers/carts_controller.rb:6:in `index'
+
+
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (90.1ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (2.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (67.1ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered C:/Ruby21-x64/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (142.1ms)
+
+
+Started GET "/" for ::1 at 2015-04-30 18:42:34 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mItem Load (1.0ms)[0m  SELECT "items".* FROM "items"
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 152ms (Views: 148.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-30 18:42:34 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-30 18:42:35 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:42:35 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-30 18:42:35 +0200
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-30 18:42:35 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:42:35 +0200
+
+
+Started GET "/assets/carts.self-05092fc4c6f294f31530f1d789949092c3b696f8d4e83bf25e0f9554ae11a0eb.css?body=1" for ::1 at 2015-04-30 18:42:35 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:42:35 +0200
+
+
+Started GET "/assets/home.self-00c3d38c53b355d86131c8ba48c396b03f325afa485f2577a765716b10e570ff.css?body=1" for ::1 at 2015-04-30 18:42:35 +0200
+
+
+Started GET "/assets/item.self-29bad3505ffc099e66be592888687ecfa0f245d08104386238f366508f6cc309.css?body=1" for ::1 at 2015-04-30 18:42:35 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:42:35 +0200
+
+
+Started GET "/assets/messages.self-83950d3aa46e976986f2d2f5bc83c6ab24662c3ceabf699e14ea2b511b68ecde.css?body=1" for ::1 at 2015-04-30 18:42:35 +0200
+
+
+Started GET "/assets/scaffolds.self-3ae8b17be74e7e198dfba269ee329cef7e786a6f1b51214af564852d12141529.css?body=1" for ::1 at 2015-04-30 18:42:35 +0200
+
+
+Started GET "/assets/sessions.self-8ba9579092429b6e9da3bff98dc7d205810c00c003d05cbf360072d8d39741bf.css?body=1" for ::1 at 2015-04-30 18:42:35 +0200
+
+
+Started GET "/assets/shops.self-2d40747618ec435f9fad8df0ca3597bf4afcbff61f926f538e714b0e49ca77c2.css?body=1" for ::1 at 2015-04-30 18:42:35 +0200
+
+
+Started GET "/assets/application.self-c7c25ced965e382afd3e8063cdc7cd9873d0509fc1324a8ea448a0b83c1dc262.css?body=1" for ::1 at 2015-04-30 18:42:35 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:42:35 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:42:35 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:42:35 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:42:35 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-30 18:42:35 +0200
+
+
+Started GET "/assets/logo-af5774fa01a581b3a0c483090d45e9eec365b5154b9d99dc619683f72ac9826e.png" for ::1 at 2015-04-30 18:42:35 +0200
+
+
+Started GET "/" for ::1 at 2015-04-30 18:44:05 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mItem Load (1.0ms)[0m  SELECT "items".* FROM "items"
+  Rendered home/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 174ms (Views: 170.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-30 18:44:06 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-30 18:44:06 +0200
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-30 18:44:06 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:44:06 +0200
+
+
+Started GET "/assets/carts.self-05092fc4c6f294f31530f1d789949092c3b696f8d4e83bf25e0f9554ae11a0eb.css?body=1" for ::1 at 2015-04-30 18:44:06 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:44:06 +0200
+
+
+Started GET "/assets/home.self-00c3d38c53b355d86131c8ba48c396b03f325afa485f2577a765716b10e570ff.css?body=1" for ::1 at 2015-04-30 18:44:06 +0200
+
+
+Started GET "/assets/item.self-29bad3505ffc099e66be592888687ecfa0f245d08104386238f366508f6cc309.css?body=1" for ::1 at 2015-04-30 18:44:06 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:44:06 +0200
+
+
+Started GET "/assets/messages.self-83950d3aa46e976986f2d2f5bc83c6ab24662c3ceabf699e14ea2b511b68ecde.css?body=1" for ::1 at 2015-04-30 18:44:06 +0200
+
+
+Started GET "/assets/scaffolds.self-3ae8b17be74e7e198dfba269ee329cef7e786a6f1b51214af564852d12141529.css?body=1" for ::1 at 2015-04-30 18:44:06 +0200
+
+
+Started GET "/assets/sessions.self-8ba9579092429b6e9da3bff98dc7d205810c00c003d05cbf360072d8d39741bf.css?body=1" for ::1 at 2015-04-30 18:44:06 +0200
+
+
+Started GET "/assets/shops.self-2d40747618ec435f9fad8df0ca3597bf4afcbff61f926f538e714b0e49ca77c2.css?body=1" for ::1 at 2015-04-30 18:44:06 +0200
+
+
+Started GET "/assets/application.self-f82a8d709c99b8a10b9e10af279245b7785eb19926486213360fa7644ac99eef.css?body=1" for ::1 at 2015-04-30 18:44:06 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:44:06 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-30 18:44:06 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:44:06 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:44:06 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:44:06 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:44:06 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-30 18:44:06 +0200
+
+
+Started GET "/assets/logo-af5774fa01a581b3a0c483090d45e9eec365b5154b9d99dc619683f72ac9826e.png" for ::1 at 2015-04-30 18:44:06 +0200
+
+
+Started GET "/" for ::1 at 2015-04-30 18:45:07 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mItem Load (2.0ms)[0m  SELECT "items".* FROM "items"
+  Rendered home/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 422ms (Views: 404.3ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-30 18:45:08 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-30 18:45:08 +0200
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-30 18:45:08 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:45:08 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:45:08 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-30 18:45:08 +0200
+
+
+Started GET "/assets/carts.self-05092fc4c6f294f31530f1d789949092c3b696f8d4e83bf25e0f9554ae11a0eb.css?body=1" for ::1 at 2015-04-30 18:45:08 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:45:08 +0200
+
+
+Started GET "/assets/home.self-00c3d38c53b355d86131c8ba48c396b03f325afa485f2577a765716b10e570ff.css?body=1" for ::1 at 2015-04-30 18:45:08 +0200
+
+
+Started GET "/assets/item.self-29bad3505ffc099e66be592888687ecfa0f245d08104386238f366508f6cc309.css?body=1" for ::1 at 2015-04-30 18:45:08 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:45:08 +0200
+
+
+Started GET "/assets/messages.self-83950d3aa46e976986f2d2f5bc83c6ab24662c3ceabf699e14ea2b511b68ecde.css?body=1" for ::1 at 2015-04-30 18:45:08 +0200
+
+
+Started GET "/assets/scaffolds.self-3ae8b17be74e7e198dfba269ee329cef7e786a6f1b51214af564852d12141529.css?body=1" for ::1 at 2015-04-30 18:45:08 +0200
+
+
+Started GET "/assets/sessions.self-8ba9579092429b6e9da3bff98dc7d205810c00c003d05cbf360072d8d39741bf.css?body=1" for ::1 at 2015-04-30 18:45:08 +0200
+
+
+Started GET "/assets/shops.self-2d40747618ec435f9fad8df0ca3597bf4afcbff61f926f538e714b0e49ca77c2.css?body=1" for ::1 at 2015-04-30 18:45:08 +0200
+
+
+Started GET "/assets/application.self-540198b8a0a3a90b333ea2f8fe79ec65dce74aa5d5edb079dc13dee1035983aa.css?body=1" for ::1 at 2015-04-30 18:45:08 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:45:08 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:45:08 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:45:08 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:45:09 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-30 18:45:09 +0200
+
+
+Started GET "/assets/logo-af5774fa01a581b3a0c483090d45e9eec365b5154b9d99dc619683f72ac9826e.png" for ::1 at 2015-04-30 18:45:09 +0200
+
+
+Started GET "/" for ::1 at 2015-04-30 18:45:23 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mItem Load (1.0ms)[0m  SELECT "items".* FROM "items"
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 524ms (Views: 521.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:45:23 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-30 18:45:23 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-30 18:45:23 +0200
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-30 18:45:23 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:45:23 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-30 18:45:23 +0200
+
+
+Started GET "/assets/carts.self-05092fc4c6f294f31530f1d789949092c3b696f8d4e83bf25e0f9554ae11a0eb.css?body=1" for ::1 at 2015-04-30 18:45:23 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:45:24 +0200
+
+
+Started GET "/assets/home.self-00c3d38c53b355d86131c8ba48c396b03f325afa485f2577a765716b10e570ff.css?body=1" for ::1 at 2015-04-30 18:45:24 +0200
+
+
+Started GET "/assets/item.self-29bad3505ffc099e66be592888687ecfa0f245d08104386238f366508f6cc309.css?body=1" for ::1 at 2015-04-30 18:45:24 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:45:24 +0200
+
+
+Started GET "/assets/messages.self-83950d3aa46e976986f2d2f5bc83c6ab24662c3ceabf699e14ea2b511b68ecde.css?body=1" for ::1 at 2015-04-30 18:45:24 +0200
+
+
+Started GET "/assets/scaffolds.self-3ae8b17be74e7e198dfba269ee329cef7e786a6f1b51214af564852d12141529.css?body=1" for ::1 at 2015-04-30 18:45:24 +0200
+
+
+Started GET "/assets/sessions.self-8ba9579092429b6e9da3bff98dc7d205810c00c003d05cbf360072d8d39741bf.css?body=1" for ::1 at 2015-04-30 18:45:24 +0200
+
+
+Started GET "/assets/shops.self-2d40747618ec435f9fad8df0ca3597bf4afcbff61f926f538e714b0e49ca77c2.css?body=1" for ::1 at 2015-04-30 18:45:24 +0200
+
+
+Started GET "/assets/application.self-4d3dfc05302bb1a5976f072542aed6f7327fd637ba38ca9c39f6c86663a2dc07.css?body=1" for ::1 at 2015-04-30 18:45:24 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:45:24 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:45:24 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:45:24 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:45:24 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-30 18:45:24 +0200
+
+
+Started GET "/assets/logo-af5774fa01a581b3a0c483090d45e9eec365b5154b9d99dc619683f72ac9826e.png" for ::1 at 2015-04-30 18:45:24 +0200
+
+
+Started GET "/" for ::1 at 2015-04-30 18:46:55 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mItem Load (1.0ms)[0m  SELECT "items".* FROM "items"
+  Rendered home/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 302ms (Views: 298.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-30 18:46:56 +0200
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-30 18:46:56 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-30 18:46:56 +0200
+
+
+Started GET "/assets/carts.self-05092fc4c6f294f31530f1d789949092c3b696f8d4e83bf25e0f9554ae11a0eb.css?body=1" for ::1 at 2015-04-30 18:46:56 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:46:56 +0200
+
+
+Started GET "/assets/home.self-00c3d38c53b355d86131c8ba48c396b03f325afa485f2577a765716b10e570ff.css?body=1" for ::1 at 2015-04-30 18:46:56 +0200
+
+
+Started GET "/assets/item.self-29bad3505ffc099e66be592888687ecfa0f245d08104386238f366508f6cc309.css?body=1" for ::1 at 2015-04-30 18:46:56 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:46:56 +0200
+
+
+Started GET "/assets/messages.self-83950d3aa46e976986f2d2f5bc83c6ab24662c3ceabf699e14ea2b511b68ecde.css?body=1" for ::1 at 2015-04-30 18:46:56 +0200
+
+
+Started GET "/assets/scaffolds.self-3ae8b17be74e7e198dfba269ee329cef7e786a6f1b51214af564852d12141529.css?body=1" for ::1 at 2015-04-30 18:46:56 +0200
+
+
+Started GET "/assets/sessions.self-8ba9579092429b6e9da3bff98dc7d205810c00c003d05cbf360072d8d39741bf.css?body=1" for ::1 at 2015-04-30 18:46:56 +0200
+
+
+Started GET "/assets/application.self-f617d6d3eee9123c08f4e13bcba2efd4d1d990180d032e76da504d46da1485c4.css?body=1" for ::1 at 2015-04-30 18:46:56 +0200
+
+
+Started GET "/assets/shops.self-2d40747618ec435f9fad8df0ca3597bf4afcbff61f926f538e714b0e49ca77c2.css?body=1" for ::1 at 2015-04-30 18:46:56 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:46:56 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:46:56 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-30 18:46:56 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:46:56 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:46:56 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:46:56 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:46:56 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-30 18:46:56 +0200
+
+
+Started GET "/assets/logo-af5774fa01a581b3a0c483090d45e9eec365b5154b9d99dc619683f72ac9826e.png" for ::1 at 2015-04-30 18:46:56 +0200
+
+
+Started GET "/" for ::1 at 2015-04-30 18:48:30 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mItem Load (1.0ms)[0m  SELECT "items".* FROM "items"
+  Rendered home/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 232ms (Views: 228.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-30 18:48:30 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-30 18:48:30 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:48:30 +0200
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-30 18:48:30 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:48:30 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-30 18:48:30 +0200
+
+
+Started GET "/assets/carts.self-05092fc4c6f294f31530f1d789949092c3b696f8d4e83bf25e0f9554ae11a0eb.css?body=1" for ::1 at 2015-04-30 18:48:30 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:48:31 +0200
+
+
+Started GET "/assets/home.self-00c3d38c53b355d86131c8ba48c396b03f325afa485f2577a765716b10e570ff.css?body=1" for ::1 at 2015-04-30 18:48:31 +0200
+
+
+Started GET "/assets/item.self-29bad3505ffc099e66be592888687ecfa0f245d08104386238f366508f6cc309.css?body=1" for ::1 at 2015-04-30 18:48:31 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:48:31 +0200
+
+
+Started GET "/assets/messages.self-83950d3aa46e976986f2d2f5bc83c6ab24662c3ceabf699e14ea2b511b68ecde.css?body=1" for ::1 at 2015-04-30 18:48:31 +0200
+
+
+Started GET "/assets/scaffolds.self-3ae8b17be74e7e198dfba269ee329cef7e786a6f1b51214af564852d12141529.css?body=1" for ::1 at 2015-04-30 18:48:31 +0200
+
+
+Started GET "/assets/sessions.self-8ba9579092429b6e9da3bff98dc7d205810c00c003d05cbf360072d8d39741bf.css?body=1" for ::1 at 2015-04-30 18:48:31 +0200
+
+
+Started GET "/assets/shops.self-2d40747618ec435f9fad8df0ca3597bf4afcbff61f926f538e714b0e49ca77c2.css?body=1" for ::1 at 2015-04-30 18:48:31 +0200
+
+
+Started GET "/assets/application.self-c03b5de7f3d6672ba5a4ffe8533fb49877b26d11a21c630a8ce9d31a012e333d.css?body=1" for ::1 at 2015-04-30 18:48:31 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:48:31 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:48:31 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:48:31 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:48:31 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-30 18:48:31 +0200
+
+
+Started GET "/assets/logo-af5774fa01a581b3a0c483090d45e9eec365b5154b9d99dc619683f72ac9826e.png" for ::1 at 2015-04-30 18:48:31 +0200
+
+
+Started GET "/" for ::1 at 2015-04-30 18:49:50 +0200
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mItem Load (1.0ms)[0m  SELECT "items".* FROM "items"
+  Rendered home/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 516ms (Views: 503.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:49:51 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-30 18:49:51 +0200
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-30 18:49:51 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-30 18:49:51 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:49:51 +0200
+
+
+Started GET "/assets/carts.self-05092fc4c6f294f31530f1d789949092c3b696f8d4e83bf25e0f9554ae11a0eb.css?body=1" for ::1 at 2015-04-30 18:49:51 +0200
+
+
+Started GET "/assets/home.self-00c3d38c53b355d86131c8ba48c396b03f325afa485f2577a765716b10e570ff.css?body=1" for ::1 at 2015-04-30 18:49:51 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:49:51 +0200
+
+
+Started GET "/assets/item.self-29bad3505ffc099e66be592888687ecfa0f245d08104386238f366508f6cc309.css?body=1" for ::1 at 2015-04-30 18:49:51 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-30 18:49:51 +0200
+
+
+Started GET "/assets/messages.self-83950d3aa46e976986f2d2f5bc83c6ab24662c3ceabf699e14ea2b511b68ecde.css?body=1" for ::1 at 2015-04-30 18:49:51 +0200
+
+
+Started GET "/assets/scaffolds.self-3ae8b17be74e7e198dfba269ee329cef7e786a6f1b51214af564852d12141529.css?body=1" for ::1 at 2015-04-30 18:49:51 +0200
+
+
+Started GET "/assets/sessions.self-8ba9579092429b6e9da3bff98dc7d205810c00c003d05cbf360072d8d39741bf.css?body=1" for ::1 at 2015-04-30 18:49:51 +0200
+
+
+Started GET "/assets/shops.self-2d40747618ec435f9fad8df0ca3597bf4afcbff61f926f538e714b0e49ca77c2.css?body=1" for ::1 at 2015-04-30 18:49:51 +0200
+
+
+Started GET "/assets/application.self-56950dc4a681b3987a1cd2f01245b3f12df6a5c336bc01097abae419cb1cdf8b.css?body=1" for ::1 at 2015-04-30 18:49:51 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-30 18:49:51 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:49:51 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:49:51 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:49:51 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-30 18:49:51 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-30 18:49:51 +0200
+
+
+Started GET "/assets/logo-af5774fa01a581b3a0c483090d45e9eec365b5154b9d99dc619683f72ac9826e.png" for ::1 at 2015-04-30 18:49:51 +0200
