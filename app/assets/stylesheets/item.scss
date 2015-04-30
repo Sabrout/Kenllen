@@ -196,8 +196,8 @@
 }
 
 .picture-wall__list--list-type-1 {
-  -webkit-animation: left-right 30s infinite;
-          animation: left-right 30s infinite;
+  -webkit-animation: left-right 50s infinite;
+          animation: left-right 50s infinite;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
   -webkit-animation-timing-function: linear;
@@ -209,8 +209,8 @@
 }
 
 .picture-wall__list--list-type-2 {
-  -webkit-animation: right-left 35s infinite;
-          animation: right-left 35s infinite;
+  -webkit-animation: right-left 55s infinite;
+          animation: right-left 55s infinite;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
   -webkit-animation-timing-function: linear;
