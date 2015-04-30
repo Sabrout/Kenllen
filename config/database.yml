@@ -13,8 +13,8 @@ development:
   <<: *default
 
   database: knellen
-  username: 
-  password: 
+  username: postgres
+  password: helloworld
 
 
 # Warning: The database defined as "test" will be erased and
