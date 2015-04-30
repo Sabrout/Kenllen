@@ -1,52 +1,23 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
  *= require_tree .
  *= require_self
  */
 
-/*Sabrout_Start*/
+/*
+  Start point
+  author:Sabrout
+  */
 
 body{
-padding:0px;
-overflow:hidden;
-background-color: #222222;
+  padding:0px;
+  overflow:hidden;
+  background-color: #222222;
 }
 
 .logo{
   float: left;
 }
 
-/*Nav Bar Style*/
-
-
-/* Responsive Goodness */
-/*html{font-size:100%}
-@-webkit-viewport{width:device-width}
-@-moz-viewport{width:device-width}
-@-ms-viewport{width:device-width}
-@-o-viewport{width:device-width}
-@viewport{width:device-width}
-html{overflow-y:auto;}
-img,video{max-width:100%;height:auto;}
-img{-ms-interpolation-mode: bicubic;}
-*/
-/* Box Sizing */
-/**,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}*/
-
-/*.clearfix:before,.clearfix:after{content:" ";display:table}
-.clearfix:after{clear:both}
-.clearfix{*zoom:1}
-*/
 .container {
   margin: 0 auto;
   max-width: 1200px;
@@ -57,21 +28,6 @@ img{-ms-interpolation-mode: bicubic;}
   background-color: #fafbf9;
   height: 20px;
 }
-
-/*.search-wrap {
-  background-color: #fafbf9; 
-  height: 60px;
-}
-*/
-/*.search-wrap input {
-  background-color: #fafbf9;
-  border: none;
-  font-family:Segoe UI;
-  color: #0B424C;
-  padding: 1.875rem 0;
-  width: 100%;  
-  height: 60px;
-}*/
 
 .nav-bar {
   padding: 0.625em 0;   
@@ -84,18 +40,6 @@ img{-ms-interpolation-mode: bicubic;}
   float: left;
   margin-left: 30%;
 }
-
-/*.toggle-search {
-  text-transform: uppercase;
-  color: #000;
-  text-decoration: none;
-  font-family:Segoe UI;
-  transition:all 0.4s ease-in-out;
-  padding:12px;
-  text-transform: uppercase;
-  text-align: center;
-  
-}*/
 
 .navbar-mail{
   text-transform: uppercase;
@@ -142,15 +86,6 @@ img{-ms-interpolation-mode: bicubic;}
   text-align: center;
 }
 
-/*.toggle-search:hover{
-  
-  text-decoration:none;
-  color:#fff;
-  font-family:Segoe UI;
-  background-color:#e86551;
-  padding:12px 12px 25px 12px;
-}*/
-
 .navbar-mail:hover{
   
   text-decoration:none;
@@ -185,18 +120,6 @@ img{-ms-interpolation-mode: bicubic;}
   font-family:Segoe UI;
   background-color:#5a9ea2;
   padding:12px 12px 25px 12px;
-}
-
-/*.toggle-search.active{
- padding:12px 12px 25px 12px; 
- background-color:#e86551;
-  
-}*/
-
-.navbar-element.active{
- padding:12px 12px 25px 12px; 
- background-color:#e86551;
-  
 }
 
 .a-footer{
@@ -293,11 +216,8 @@ img{-ms-interpolation-mode: bicubic;}
   font-family: Segoe UI;
   font-size: 1.5em;
 }
-/*@media screen and (min-width: 850px) {
-  .search-wrap input {
-    font-size: 1em; 
-  }
-} */
 
-
-/*Sabrout_End*/
+/*
+  End point
+  author:Sabrout
+  */
