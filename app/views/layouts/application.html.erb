@@ -12,6 +12,9 @@
         <div class="nav-bar ">
         	<%= link_to(image_tag("logo.png"), root_path, :class => 'logo') %>
           <%= link_to("Home", root_path, :class => 'navbar-element') %>
+            <% if user_signed_in?%>
+          <%= link_to("Profile",{:action => 'myshops', :controller => '/profile'}, :class => 'navbar-element') %>
+           <%end%>
           <%= link_to("Mail", {:action => 'inbox' , :controller => '/messages'}, :class => 'navbar-element') %>
           <%= link_to("Cart", {:action => 'index' , :controller => '/carts'}, :class => 'navbar-element') %>
           <% if !user_signed_in? %>
