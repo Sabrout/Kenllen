@@ -1,5 +1,8 @@
 class MessagesController < ApplicationController
-  
+
+  def show
+  end
+
   def inbox
 
     # checks if the current user is logged in or not, if not, he/she is redirected to the signin page
@@ -8,15 +11,6 @@ class MessagesController < ApplicationController
   		redirect_to new_user_session_path
   	end
 
-  end
-
-  def sentbox
-
-    # same as inbox... mainly for security reasons and to avoid errors
-
-    if current_user == nil
-      redirect_to new_user_session_path
-    end
   end
 
   def trash

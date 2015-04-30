@@ -3,7 +3,7 @@
 <div class ="h1"> <h1> <%= current_user.fname %>'s Inbox </h1></div>
 <div class = "buttons">
 <div><%= button_to 'Compose New', compose_path , :class=> 'button'%> </div> 
-<div><%= button_to 'Sent Messages', sentbox_path , :class=> 'button'%> </div>
+<div><%= button_to 'Sent Messages', '#' , :class=> 'button'%> </div>
 <div><%= button_to 'Trash', '#' , :class=> 'button'%> </div>
 </div>
 <table class = "table">
@@ -30,3 +30,4 @@
 </td>
 </tr>
 </table>
+
