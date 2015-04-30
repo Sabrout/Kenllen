@@ -26,7 +26,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # Authentication Gem (signup and in)
 gem 'devise'
-
+# delayed Jobs
+gem 'delayed_job_active_record'
 
 # Messaging gem
 gem 'acts-as-messageable'

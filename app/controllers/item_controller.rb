@@ -24,16 +24,17 @@ class ItemController < ApplicationController
     flash[:notice] = "Item Reported Successfully"
     if (ItemReports.count(params[:id]) >= 3) # count number of reports for a given item
       #delete Item
-      flash[:notice] = "Item Is NOW DELETED"
+      flash[:notice] = "Item Is now DELETED , thank you for the feedback"
       item = Item.find(params[:id])
       #add to user reports 1 
       user = User.find(item.shop.user.id)
       item.destroy
       reports = user.reports + 1
       user.update_without_password(reports: reports)
-      if (user.reports >= 3)
-        user.update_without_password(banned: true)
+      if (user.reports >= 3) 
+        user.update_without_password(banned: true) # ban the user
         user.update_without_password(reports: 0)  # reset the reports count
+        user.delay(run_at: 14.days.from_now).update_without_password(banned: false)# initialize the count for unbanning
       end
       #count user reports , If >= 3 then ban user for 2 weeks and reset it
     end
