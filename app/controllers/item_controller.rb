@@ -21,6 +21,7 @@ class ItemController < ApplicationController
   def report 
     # report the item
     ItemReports.create(user_id:current_user.id,item_id:params[:id])
+    flash[:notice] = "Item Reported Successfully"
     redirect_to :back
   end
 
