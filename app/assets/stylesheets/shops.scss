@@ -21,9 +21,9 @@ body{  /*defines the background color of all the page of the website*/
 	padding-left: 6%;
 	padding-right: 1%;
 	background-color:#fefefe;
-	height: 100%;
 	font-family: 'Segoe UI';
-	margin-top: 0.5%;
+	height: 400px;
+	margin-top: 5%;
 	margin-left: 11%;
 	margin-right: 11%;
 	text-align: center;
@@ -110,13 +110,14 @@ color:#ffb296;
 	font-family: 'Segoe UI';
 	text-decoration: none;
 }*/
+.add2{
+margin-top: 25%;
+
+}
 
 .add1{ /*changes the text alignment*/
-text-align: right;	
-float: right; 
-display: inline-block; 
-margin-top: -.5%;	
-margin-left: 0.5%;
+	 
+margin-top: 0%;	
 }
 .add{
 	text-align: center;	
@@ -219,18 +220,22 @@ margin-left: 0.5%;
 
 .show-shop{ /*styles (show, edit, delete) cards by changing the position, font, border style, padding and text alignment*/
 	color : black;
-	margin-top: 3%;
-	margin-left: 11%;
-	margin-right: 11%;	
+	margin-top: -8.5%;
+	margin-left: -8.5%;
+	margin-right: 0%;
+	height:100000px;
+	overflow: hidden;
 	font-size: 120%;
-	text-align: left;
+	text-align: center;
 	padding:2%;
 	padding-top: -1%;
+	float:left;
+	display: inline-block;
 	background-color: #D5D5D5; 
 	font-family: 'Segoe UI';
- 	/*-webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
-	-moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
-	box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);*/
+ 	-webkit-box-shadow: 0px 0px 25px 0px rgba(160,160,160,1) inset;
+	-moz-box-shadow: 0px 0px 25px 0px rgba(160,160,160,1) inset;
+	box-shadow: 0px 0px 25px 0px rgba(160,160,160,1) inset;
 }
 .shop-image{
 	background: white;
@@ -245,12 +250,10 @@ margin-left: 0.5%;
 
 
 .shop-button{
-		background: white;
--webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+		background: #D5D5D5;
+/*-webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
 	-moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
-	box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
-  border-top-left-radius:10px;
-  border-top-right-radius: 10px;  
+	box-shadow: 0px 0px 5px 0px rgba(160,160,160,1); */
   font-family: 'Segoe UI';
   color: black;
   font-weight: bold;
@@ -270,11 +273,6 @@ margin-left: 0.5%;
  /*-webkit-box-shadow: 0px 0px 20px 0px rgba(233,87,63,1);
 	-moz-box-shadow: 0px 0px 20px 0px rgba(233,87,63,1);
 	box-shadow: 0px 0px 20px 0px rgba(233,87,63,1);*/
-}
-.shop-name{
-	font-size: 150%;
-	text-align: center;
-	
 }
 .shop-description{
 	background-color: white;
@@ -298,10 +296,12 @@ margin-left: 0.5%;
 .shop-name{
 	font-size: 150%;
 	text-align: center;
+	margin-bottom: 5%;
 }
 .shop-owner{
 	font-size: 100%;
 	text-align: center;
+	margin-bottom: 10%;
 }
 
 

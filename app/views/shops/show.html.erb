@@ -1,3 +1,4 @@
+<div class = "page">
 <div class = "show-shop">
   <div class = "shop-name"><%= @shop.shop_name %></div>
   <div class = "shop-owner">by <%= @shop.user.uname.to_s %></div>
@@ -12,7 +13,7 @@
     </div>
      
      
-    <div class = "add1">  
+    <div class = "add2">  
     <button class = "shop-button", onclick="test()">Description</button>
     </div>
     <div class = "add1">
@@ -29,7 +30,6 @@
     <%end%>
     <%end%>
     <%else%>
-    <%= button_to("Can not Follow", :class => 'dummy-button') %>
     <%end%></div>
   <% if user_signed_in?%>
         <% if current_user.shops.include?(@shop)%>
@@ -47,7 +47,7 @@
   </div>
 <div id= "desc", class = "invisible"><%= @shop.shop_desc %> </div>
 <!-- This is the item showcase of the shop -->
-  <div class = "page">
+  
   <% if @item!=nil %>
     <% @item.each do |item| %>
        <div class ="shop-card2">
