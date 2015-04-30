@@ -52431,3 +52431,291 @@ Processing by ShopsController#show as HTML
   [1m[36mItem Load (1.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."shop_id" = $1[0m  [["shop_id", 1]]
   Rendered shops/show.html.erb within layouts/application (13.0ms)
 Completed 200 OK in 217ms (Views: 209.9ms | ActiveRecord: 5.0ms)
+
+
+Started POST "/item/new?shop_id=1" for ::1 at 2015-04-30 20:10:15 +0200
+Processing by ItemController#new as HTML
+  Parameters: {"authenticity_token"=>"1t1w37KEL8lUSvE++i+oRl4kJ/1TiKJBK0idaAadZINlhfHEqBnI7I6KE2O4yOhVCPIsK83stAeAdOBV9U0pgg==", "shop_id"=>"1"}
+  [1m[35mShop Load (0.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered item/new.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 355ms (Views: 296.6ms | ActiveRecord: 10.0ms)
+
+
+Started POST "/item/create?shop_id=1" for ::1 at 2015-04-30 20:10:34 +0200
+Processing by ItemController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NW3QFo6dR1KUpToaglQQ/49rPhauYGFVpEV4CDivePOGNVENlACgd05l2EfAs1Ds2b01wDAEdxMPeQU1y3818g==", "item"=>{"item_name"=>"ItemZaki", "price"=>"200", "description"=>"asdfasdf", "inspiration"=>"sdfasdf"}, "item_attachments"=>{"photo"=>[#<ActionDispatch::Http::UploadedFile:0xa88d648 @tempfile=#<Tempfile:C:/Users/MB826~1.ZAK/AppData/Local/Temp/RackMultipart20150430-2180-1qj1zms.jpg>, @original_filename="11091272_945396958840100_333142044745137904_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item_attachments[photo][]\"; filename=\"11091272_945396958840100_333142044745137904_n.jpg\"\r\nContent-Type: image/jpeg\r\n">, #<ActionDispatch::Http::UploadedFile:0xa88d4f8 @tempfile=#<Tempfile:C:/Users/MB826~1.ZAK/AppData/Local/Temp/RackMultipart20150430-2180-16gcune.jpg>, @original_filename="603801_454991081343748_8048666025971716753_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item_attachments[photo][]\"; filename=\"603801_454991081343748_8048666025971716753_n.jpg\"\r\nContent-Type: image/jpeg\r\n">, #<ActionDispatch::Http::UploadedFile:0xa88d468 @tempfile=#<Tempfile:C:/Users/MB826~1.ZAK/AppData/Local/Temp/RackMultipart20150430-2180-1t50uib.jpg>, @original_filename="11043046_914212231943157_2702058902035775488_n.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"item_attachments[photo][]\"; filename=\"11043046_914212231943157_2702058902035775488_n.jpg\"\r\nContent-Type: image/jpeg\r\n">]}, "commit"=>"Create Item", "shop_id"=>"1"}
+  [1m[35mShop Load (1.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "items" ("item_name", "price", "description", "inspiration", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"  [["item_name", "ItemZaki"], ["price", "200.0"], ["description", "asdfasdf"], ["inspiration", "sdfasdf"], ["created_at", "2015-04-30 18:10:34.889646"], ["updated_at", "2015-04-30 18:10:34.889646"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "item_attachments" ("photo", "item_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "11091272_945396958840100_333142044745137904_n.jpg"], ["item_id", 2], ["created_at", "2015-04-30 18:10:35.029896"], ["updated_at", "2015-04-30 18:10:35.029896"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "item_attachments" ("photo", "item_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["photo", "603801_454991081343748_8048666025971716753_n.jpg"], ["item_id", 2], ["created_at", "2015-04-30 18:10:35.201262"], ["updated_at", "2015-04-30 18:10:35.201262"]]
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "item_attachments" ("photo", "item_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["photo", "11043046_914212231943157_2702058902035775488_n.jpg"], ["item_id", 2], ["created_at", "2015-04-30 18:10:35.402395"], ["updated_at", "2015-04-30 18:10:35.402395"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  UPDATE "items" SET "shop_id" = $1, "updated_at" = $2 WHERE "items"."id" = $3  [["shop_id", 1], ["updated_at", "2015-04-30 18:10:35.487451"], ["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/shops/show/1
+Completed 302 Found in 609ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/shops/show/1" for ::1 at 2015-04-30 20:10:36 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShop Load (0.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mShop Exists (1.0ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 1], ["id", 1]]
+  [1m[35mShop Exists (1.0ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 1], ["id", 1]]
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."shop_id" = $1[0m  [["shop_id", 1]]
+  [1m[35mItemAttachment Load (0.0ms)[0m  SELECT  "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1  ORDER BY "item_attachments"."id" ASC LIMIT 1  [["item_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1  ORDER BY "item_attachments"."id" ASC LIMIT 1[0m  [["item_id", 2]]
+  [1m[35mShop Exists (0.0ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 1], ["id", 1]]
+  Rendered shops/show.html.erb within layouts/application (23.4ms)
+Completed 200 OK in 297ms (Views: 290.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/item/edit/2?shop_id=1" for ::1 at 2015-04-30 20:10:44 +0200
+Processing by ItemController#edit as HTML
+  Parameters: {"shop_id"=>"1", "id"=>"2"}
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mShop Load (0.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mItemAttachment Load (0.0ms)[0m  [1mSELECT "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1[0m  [["item_id", 2]]
+  Rendered item/edit.html.erb within layouts/application (9.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 141ms (Views: 137.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/item/destroyImage/2?attachment_id=11&confirm=Are+you+sure+%3F" for ::1 at 2015-04-30 20:10:47 +0200
+Processing by ItemController#destroyImage as HTML
+  Parameters: {"attachment_id"=>"11", "confirm"=>"Are you sure ?", "id"=>"2"}
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mItemAttachment Load (1.0ms)[0m  SELECT  "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1 AND "item_attachments"."id" = $2 LIMIT 1  [["item_id", 2], ["id", 11]]
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "item_attachments" WHERE "item_attachments"."id" = $1  [["id", 11]]
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/item/show/2
+Completed 302 Found in 15ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/item/show/2" for ::1 at 2015-04-30 20:10:48 +0200
+Processing by ItemController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mItem Load (0.0ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mItemAttachment Load (1.0ms)[0m  [1mSELECT "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1[0m  [["item_id", 2]]
+  Rendered item/show.html.erb within layouts/application (4.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 158ms (Views: 154.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/shops" for ::1 at 2015-04-30 20:13:38 +0200
+Processing by ShopsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mShop Load (1.0ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (32.0ms)
+Completed 200 OK in 299ms (Views: 267.5ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/shops/show/1" for ::1 at 2015-04-30 20:13:42 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mShop Exists (1.0ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 1], ["id", 1]]
+  [1m[36mShop Exists (1.0ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 1], ["id", 1]]
+  [1m[35mItem Load (0.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."shop_id" = $1  [["shop_id", 1]]
+  [1m[36mItemAttachment Load (0.0ms)[0m  [1mSELECT  "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1  ORDER BY "item_attachments"."id" ASC LIMIT 1[0m  [["item_id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1  ORDER BY "item_attachments"."id" ASC LIMIT 1  [["item_id", 2]]
+  [1m[36mShop Exists (1.0ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 1], ["id", 1]]
+  Rendered shops/show.html.erb within layouts/application (45.7ms)
+Completed 200 OK in 171ms (Views: 155.4ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/item/edit/2?shop_id=1" for ::1 at 2015-04-30 20:13:47 +0200
+Processing by ItemController#edit as HTML
+  Parameters: {"shop_id"=>"1", "id"=>"2"}
+  [1m[35mItem Load (1.0ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mItemAttachment Load (0.0ms)[0m  SELECT "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1  [["item_id", 2]]
+  Rendered item/edit.html.erb within layouts/application (6.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 169ms (Views: 164.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/item/destroyImage/2?attachment_id=12&confirm=Are+you+sure+%3F" for ::1 at 2015-04-30 20:13:51 +0200
+Processing by ItemController#destroyImage as HTML
+  Parameters: {"attachment_id"=>"12", "confirm"=>"Are you sure ?", "id"=>"2"}
+  [1m[35mItem Load (0.0ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mItemAttachment Load (0.0ms)[0m  [1mSELECT  "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1 AND "item_attachments"."id" = $2 LIMIT 1[0m  [["item_id", 2], ["id", 12]]
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "item_attachments" WHERE "item_attachments"."id" = $1[0m  [["id", 12]]
+  [1m[35m (12.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/item/show/2
+Completed 302 Found in 96ms (ActiveRecord: 12.1ms)
+
+
+Started GET "/item/show/2" for ::1 at 2015-04-30 20:13:51 +0200
+Processing by ItemController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mItemAttachment Load (1.0ms)[0m  SELECT "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1  [["item_id", 2]]
+  Rendered item/show.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 141ms (Views: 137.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/shops" for ::1 at 2015-04-30 20:14:01 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mShop Load (1.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 317ms (Views: 314.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/shops/show/1" for ::1 at 2015-04-30 20:14:06 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mShop Load (1.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mShop Exists (0.0ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 1], ["id", 1]]
+  [1m[35mShop Exists (1.0ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 1], ["id", 1]]
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."shop_id" = $1[0m  [["shop_id", 1]]
+  [1m[35mItemAttachment Load (0.0ms)[0m  SELECT  "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1  ORDER BY "item_attachments"."id" ASC LIMIT 1  [["item_id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1  ORDER BY "item_attachments"."id" ASC LIMIT 1[0m  [["item_id", 2]]
+  [1m[35mShop Exists (0.0ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 1], ["id", 1]]
+  Rendered shops/show.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 142ms (Views: 139.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/item/edit/2?shop_id=1" for ::1 at 2015-04-30 20:14:14 +0200
+Processing by ItemController#edit as HTML
+  Parameters: {"shop_id"=>"1", "id"=>"2"}
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mShop Load (0.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mItemAttachment Load (0.0ms)[0m  [1mSELECT "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1[0m  [["item_id", 2]]
+  Rendered item/edit.html.erb within layouts/application (5.4ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 139ms (Views: 135.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/item/destroyImage/2?attachment_id=13&confirm=Are+you+sure+%3F" for ::1 at 2015-04-30 20:14:18 +0200
+Processing by ItemController#destroyImage as HTML
+  Parameters: {"attachment_id"=>"13", "confirm"=>"Are you sure ?", "id"=>"2"}
+  [1m[36mItem Load (0.0ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mItemAttachment Load (0.0ms)[0m  SELECT  "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1 AND "item_attachments"."id" = $2 LIMIT 1  [["item_id", 2], ["id", 13]]
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  DELETE FROM "item_attachments" WHERE "item_attachments"."id" = $1  [["id", 13]]
+  [1m[36m (0.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/item/show/2
+Completed 302 Found in 9ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/item/show/2" for ::1 at 2015-04-30 20:14:19 +0200
+Processing by ItemController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mItem Load (1.0ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mItemAttachment Load (1.0ms)[0m  [1mSELECT "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1[0m  [["item_id", 2]]
+  Rendered item/show.html.erb within layouts/application (2.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 133ms (Views: 129.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/shops" for ::1 at 2015-04-30 20:14:25 +0200
+Processing by ShopsController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mShop Load (1.0ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 185ms (Views: 183.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/shops/show/1" for ::1 at 2015-04-30 20:14:29 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mShop Exists (0.0ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 1], ["id", 1]]
+  [1m[36mShop Exists (1.0ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 1], ["id", 1]]
+  [1m[35mItem Load (1.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."shop_id" = $1  [["shop_id", 1]]
+  [1m[36mItemAttachment Load (0.0ms)[0m  [1mSELECT  "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1  ORDER BY "item_attachments"."id" ASC LIMIT 1[0m  [["item_id", 2]]
+  [1m[35mShop Exists (0.0ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 1], ["id", 1]]
+  Rendered shops/show.html.erb within layouts/application (15.5ms)
+Completed 200 OK in 141ms (Views: 135.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/item/delete/2?shop_id=1" for ::1 at 2015-04-30 20:14:33 +0200
+Processing by ItemController#delete as HTML
+  Parameters: {"shop_id"=>"1", "id"=>"2"}
+  [1m[36mItem Load (1.0ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mShop Load (0.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered item/delete.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 177ms (Views: 173.5ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/item/destroy/2?shop_id=1" for ::1 at 2015-04-30 20:14:35 +0200
+Processing by ItemController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n7ejqG0OK8YYNbPKbiLcPq21X4WI8Tlp5BNKvfLh3mks7yKzd5PM48L1UZcsxZwt+2NUUxaVLy9PLzeAATGTaA==", "commit"=>"Delete", "shop_id"=>"1", "id"=>"2"}
+  [1m[35mShop Load (1.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (1.0ms)[0m  [1mSELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mShop Exists (1.0ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 1], ["id", 1]]
+  [1m[35m (1.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 2]]
+  [1m[35m (1.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/shops/show/1
+Completed 302 Found in 10ms (ActiveRecord: 6.0ms)
+
+
+Started GET "/shops/show/1" for ::1 at 2015-04-30 20:14:36 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShop Load (1.0ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mShop Exists (1.0ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 1], ["id", 1]]
+  [1m[36mShop Exists (1.0ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 1], ["id", 1]]
+  [1m[35mItem Load (0.0ms)[0m  SELECT "items".* FROM "items" WHERE "items"."shop_id" = $1  [["shop_id", 1]]
+  Rendered shops/show.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 203ms (Views: 196.7ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/shops/delete/1" for ::1 at 2015-04-30 20:14:40 +0200
+Processing by ShopsController#delete as HTML
+  Parameters: {"authenticity_token"=>"2ie/ZloElOFfKfU6hBF/qsFcKg/7Gw6HaaSPaA4/U6Rpfz59QJlzxIXpF2fG9j+5l4oh2WV/GMHCmPJV/e8epQ==", "id"=>"1"}
+  [1m[36mShop Load (1.0ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mShop Exists (0.0ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 1], ["id", 1]]
+  Rendered shops/delete.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 226ms (Views: 216.8ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/shops/destroy/1" for ::1 at 2015-04-30 20:14:43 +0200
+Processing by ShopsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"72CvVKmXrks6fn76gqgGWPrUrjrupSAkrtc7U0vEL5pcOC5PswpJbuC+nKfAT0ZLrAKl7HDBNmIF60ZuuBRimw==", "commit"=>"Delete Shop", "id"=>"1"}
+  [1m[35mShop Load (0.0ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mShop Exists (0.0ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 1], ["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (19.0ms)[0m  DELETE FROM "shops_users" WHERE "shops_users"."shop_id" = $1  [["shop_id", 1]]
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "shops" WHERE "shops"."id" = $1[0m  [["id", 1]]
+  [1m[35m (1.0ms)[0m  COMMIT
+  [1m[36mItem Load (1.0ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."shop_id" = $1[0m  [["shop_id", 1]]
+Redirected to http://localhost:3000/shops
+Completed 302 Found in 84ms (ActiveRecord: 22.0ms)
+
+
+Started GET "/shops" for ::1 at 2015-04-30 20:14:44 +0200
+Processing by ShopsController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mShop Load (0.0ms)[0m  [1mSELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC[0m
+  Rendered shops/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 239ms (Views: 236.7ms | ActiveRecord: 1.0ms)

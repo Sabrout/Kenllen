@@ -24,8 +24,7 @@ class ItemController < ApplicationController
     @shop = Shop.find(params[:shop_id])
     #Update the item
     if current_user.shops.include?(@shop)
-  	if @item.update_attributes(item_params)
-      
+  	 if @item.update_attributes(item_params)  
       if params[:item_attachments] 
         params[:item_attachments]['photo'].each do |a|
           @item_attachment = @item.item_attachments.create!(:photo => a, :item_id => @item.id)
@@ -37,18 +36,18 @@ class ItemController < ApplicationController
             i.destroy
           end
       end
+
   		#if update succeeds, redirect to the show action
       redirect_to(:action => 'show', :id => @item.id)
   	else
       #if update fails, rerender the edit page for the use to correct the form
   		render('edit')
   	end
-    end
+   end
   end
 
   def new
     #Instantiate a new Item with default values
-
   	@item = Item.new
     @item_attachment = @item.item_attachments.build
     @shop = Shop.find(params[:shop_id])
@@ -69,7 +68,6 @@ class ItemController < ApplicationController
       end
       #if save succeeds redirect to the index action
       @shop.items << @item
-
       redirect_to({:controller => 'shops', :action => 'show', :id => @shop.id})
     else
       #if save fails rerender the new form for the user to correct the inputs
@@ -95,10 +93,8 @@ class ItemController < ApplicationController
   def destroyImage
     @item = Item.find(params[:id])
     image = @item.item_attachments.all.find(params[:attachment_id])
-
-    redirect_to ({:controller => 'item', :action => 'show', :id => @item.id}), notice: 'Image Deleted'
-
     image.destroy
+    redirect_to ({:controller => 'item', :action => 'show', :id => @item.id}), notice: 'Image Deleted'
   end
 
   def filterCategories
