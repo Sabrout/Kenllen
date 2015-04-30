@@ -5,10 +5,17 @@
 }
 .blod{  /*changes the color, font size, and font style of Description of item*/
 	text-align: center;
-	margin-top: 4%;
+	margin-top: 2%;
 	color: black;
 	font-size: 200%;
 	font-family: 'Segoe UI';
+}
+.blod_o{  /*changes the color, font size, and font style of price word*/
+  text-align: center;
+  margin-top: 6%;
+  color: black;
+  font-size: 200%;
+  font-family: 'Segoe UI';
 }
 .answer{	/*changes the color, font size, and font style of Description of item*/
   text-align: left;
@@ -22,9 +29,9 @@
 
 }
 .page_o{
-	padding-top:6%;
-	padding-left: 6%;
-	padding-right: 1%;
+	padding-top:3%;
+	padding-left: 3%;
+	padding-right: 3%;
 	background-color:#fefefe;
 	height: 100%;
 	font-family: 'Segoe UI';
@@ -245,8 +252,7 @@ body {
 	padding-bottom: 5%;
 
 }
-.price_o{ /*styling the price div*/
-
+.price_o{ /*styling the price div*/ 
   border-color: black;
   background-color: #fefefe; 
   -webkit-box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
@@ -260,11 +266,11 @@ body {
 .description_o{  /*styling the description div*/
   border-color: black;
   background-color: #fefefe; 
+  word-wrap: break-word;
   -webkit-box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
   -moz-box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
   box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
-  transition: box-shadow .30s;
-  border-radius: 10%; 
+  transition: box-shadow .30s; 
   margin-top: 2%;
   padding-right: auto;
   padding-top: auto;
@@ -274,8 +280,8 @@ body {
   height: auto;
 }
 .inspiration_o{ /*styling the inspiration div*/
-
   border-color: black;
+   word-wrap: break-word;
   background-color: #fefefe; 
   -webkit-box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
   -moz-box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
