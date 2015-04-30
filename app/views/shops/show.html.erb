@@ -64,7 +64,12 @@
         <div class="header2">
            <div class="actions2">
         <%= link_to "Show", {:controller => 'item', :action => 'show', :id => item.id}, :class => 'actionshow' %> </div>
-        <%= link_to 'Add to Cart', cart_items_path(item_id: item.id) ,method: :post , :class => 'actionshow' %>
+        <%= link_to 'Add to Cart', cart_items_path(item_id: item.id) ,method: :post , :class => 'actionshow' %> <br>
+        <%if user_signed_in? and !reported?(item.id,current_user.id)%>  <!-- Can't Report An Owned Item Or Report Item Twice-->
+          <% if !current_user.shops.include?(@shop)%>
+           <%= link_to 'Report Item' ,{:controller => 'item', :action => 'report', :id => item.id} , :class => 'actionshow'%>
+          <%end%>
+        <%end%>
    <!--    The edit and delete buttons won't appear if the user is not signed in or doesnt own the shop -->
         <% if user_signed_in? %>
         <% if current_user.shops.include?(@shop)%> |

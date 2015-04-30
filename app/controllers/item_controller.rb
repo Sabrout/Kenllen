@@ -18,6 +18,12 @@ class ItemController < ApplicationController
 
   end
 
+  def report 
+    # report the item
+    ItemReports.create(user_id:current_user.id,item_id:params[:id])
+    redirect_to :back
+  end
+
   def update
     #Find an existing item using form parameters
   	@item = Item.find(params[:id])
@@ -110,4 +116,3 @@ private
     # - allows listed attributes to be mass assigned
 		params.require(:item).permit(:item_name, :price, :description, :inspiration, item_attachments_attributes: [:id, :item_id, :photo])
 	end
-    

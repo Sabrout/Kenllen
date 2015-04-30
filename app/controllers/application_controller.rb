@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
   before_action :configure_permitted_parameters, if: :devise_controller?
-
+  helper_method :reported?
 	def configure_permitted_parameters
     	devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:uname, :email, :fname, :lname, :phone, :password ,:password_confirmation , :email_confirmation) }
     	devise_parameter_sanitizer.for(:sign_in) { |u| u.permit(:uname, :password, :remember_me) }
@@ -31,6 +31,10 @@ class ApplicationController < ActionController::Base
            session[:temporary_cart] = Hash.new if !session[:temporary_cart]
            return session[:temporary_cart]
         end
+      end
+
+      def reported?(item_id , user_id) # check if a user has reported this item before
+       return ItemReports.find_by(item_id:item_id , user_id: user_id)
       end
 
       private 
