@@ -5,7 +5,7 @@
 }
 .blod{  /*changes the color, font size, and font style of Description of item*/
 	text-align: center;
-	margin-top: 1%;
+	margin-top: 4%;
 	color: black;
 	font-size: 200%;
 	font-family: 'Segoe UI';
@@ -39,7 +39,7 @@
 	box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
 
 }
-.page2_o{
+.page2_o{  
 	padding-top:1%;
 	padding-bottom: 1%;
 	padding-left: 6%;
@@ -236,7 +236,7 @@ body {
   color: #545454;
   background: #effec7;
 }
-.art_name_o{
+.art_name_o{ /*change size and color of art name*/
 	color: red;
 	font-family: 'Segoe UI';
 	font-size: 300%;
@@ -245,7 +245,7 @@ body {
 	padding-bottom: 5%;
 
 }
-.price_o{
+.price_o{ /*styling the price div*/
 
   border-color: black;
   background-color: #fefefe; 
@@ -257,7 +257,7 @@ body {
   width: 19%;
   height: 100px;
 }
-.description_o{
+.description_o{  /*styling the description div*/
   border-color: black;
   background-color: #fefefe; 
   -webkit-box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
@@ -273,7 +273,7 @@ body {
   width: 100%;
   height: auto;
 }
-.inspiration_o{
+.inspiration_o{ /*styling the inspiration div*/
 
   border-color: black;
   background-color: #fefefe; 
@@ -285,7 +285,7 @@ body {
   float: left;
   width: 80%;
 }
-.number_o{
+.number_o{ /*editing size and color of price*/
   text-align: center;
   padding-top: 7%;
   margin-left: 3%;
