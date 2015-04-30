@@ -7,8 +7,10 @@ Rails.application.routes.draw do
   root 'home#index'
 
 
-  post 'inbox' => 'messages#inbox', as: 'inbox'
-  post 'sentbox' => 'messages#sentbox', as: 'sentbox'
+  get 'inbox' => 'messages#inbox', as: 'inbox'
+  get 'sentbox' => 'messages#sentbox', as: 'sentbox'
+  post 'inbox' => 'messages#inbox'
+  post 'sentbox' => 'messages#sentbox'
   post 'new' => 'messages#new', as: 'compose'
   post '/' => 'messages#create'
 
