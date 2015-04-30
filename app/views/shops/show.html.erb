@@ -1,0 +1,84 @@
+<div class = "show-shop">
+  <div class = "shop-name"><%= @shop.shop_name %></div>
+  <div class = "shop-owner">by <%= @shop.user.uname.to_s %></div>
+
+<!--     <h4>Shop Description</h4>
+    <div><%= @shop.shop_desc %></div> -->
+    
+    <div>
+    <!-- This is the shop cover image. Can either use image_tag function or the good old html. I used html for css image resizing -->
+
+      <img src="<%= @shop.cover_url.to_s %>" style="width:200px;height:200px" class = "shop-image"> 
+    </div>
+     
+     
+    <div class = "add1">  
+    <button class = "shop-button", onclick="test()">Description</button>
+    </div>
+    <div class = "add1">
+    <!-- Check if user is logged in -->
+    <% if user_signed_in?%>
+    <!-- Check if user does not own this shop -->
+    <% if !current_user.shops.include?(@shop)%>
+    <!-- Check if user is not already following this shop -->
+    <% if !current_user.followed_shops.include?(@shop) %>
+    <!-- The Follow Shop button -->
+    <%= button_to("Follow Shop", {:action => 'follow', :id => @shop.id}, :class => 'shop-button') %>
+    <%else%>
+    <%= button_to("UnFollow Shop", {:action => 'unfollow', :id => @shop.id}, :class => 'shop-button') %>
+    <%end%>
+    <%end%>
+    <%else%>
+    <%= button_to("Can not Follow", :class => 'dummy-button') %>
+    <%end%></div>
+  <% if user_signed_in?%>
+        <% if current_user.shops.include?(@shop)%>
+          <div class = "add1">
+        <%= button_to("Delete", {:action => 'delete', :id => @shop.id}, :class => 'shop-button') %>
+          </div>
+          <div class = "add1">
+          <%= button_to("Edit", {:action => 'edit', :id => @shop.id}, :class => 'shop-button') %>
+          </div>
+          <div class = "add1">
+  <%= button_to("Add New Item", {:controller => 'item', :action => 'new', :shop_id => @shop.id}, :class => 'shop-button') %>
+  </div>
+        <%end%>
+        <%end%>
+  </div>
+<div id= "desc", class = "invisible"><%= @shop.shop_desc %> </div>
+<!-- This is the item showcase of the shop -->
+  <div class = "page">
+  <% if @item!=nil %>
+    <% @item.each do |item| %>
+       <div class ="shop-card2">
+      <div class="screen">
+       <!-- This slider moves on hover --> 
+       <div class="slider">
+          <!-- Section 1 -->
+           <div class="header1">>
+              <% if item.item_attachments.first %>
+          <%= image_tag item.item_attachments.first.photo_url, :size => "150x150" %>
+        <% end %>
+        </div>
+        <!-- Section 2 -->
+        <div class="header2">
+           <div class="actions2">
+        <%= link_to "Show", {:controller => 'item', :action => 'show', :id => item.id}, :class => 'actionshow' %> </div>
+        <%= link_to 'Add to Cart', cart_items_path(item_id: item.id) ,method: :post , :class => 'actionshow' %>
+   <!--    The edit and delete buttons won't appear if the user is not signed in or doesnt own the shop -->
+        <% if user_signed_in? %>
+        <% if current_user.shops.include?(@shop)%> |
+            <div class="actions2"> <%= link_to "Edit", {:controller => 'item', :action => 'edit', :id => item.id, :shop_id => @shop.id}, :class => 'actionedit' %>  </div>
+           <div class="actions2">  <%= link_to "Delete", {:controller => 'item', :action => 'delete', :id => item.id, :shop_id => @shop.id}, :class => 'actiondelete' %> </div>    
+        
+        </div>
+    </div>
+</div>
+     <p class="art-name"> <%= item.id %> </p>
+    </div>
+    <%end%>
+    <%end%>
+    <%end%>
+    <%end%>
+  </div>
+
