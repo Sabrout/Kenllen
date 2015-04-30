@@ -7,6 +7,7 @@ class ApplicationController < ActionController::Base
 	def configure_permitted_parameters
     	devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:uname, :email, :fname, :lname, :phone, :password ,:password_confirmation , :email_confirmation) }
     	devise_parameter_sanitizer.for(:sign_in) { |u| u.permit(:uname, :password, :remember_me) }
+      devise_parameter_sanitizer.for(:account_update) { |u| u.permit(:reports , :banned) }
   end
 
       def current_cart                      #retrieve the current cart id & if it doesn't exist then create a new cart and put id in session

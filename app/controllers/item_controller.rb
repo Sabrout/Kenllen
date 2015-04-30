@@ -21,6 +21,22 @@ class ItemController < ApplicationController
   def report 
     # report the item
     ItemReports.create(user_id:current_user.id,item_id:params[:id])
+    flash[:notice] = "Item Reported Successfully"
+    if (ItemReports.count(params[:id]) >= 3) # count number of reports for a given item
+      #delete Item
+      flash[:notice] = "Item Is NOW DELETED"
+      item = Item.find(params[:id])
+      #add to user reports 1 
+      user = User.find(item.shop.user.id)
+      item.destroy
+      reports = user.reports + 1
+      user.update_without_password(reports: reports)
+      if (user.reports >= 3)
+        user.update_without_password(banned: true)
+        user.update_without_password(reports: 0)  # reset the reports count
+      end
+      #count user reports , If >= 3 then ban user for 2 weeks and reset it
+    end
     redirect_to :back
   end
 
@@ -116,3 +132,7 @@ private
     # - allows listed attributes to be mass assigned
 		params.require(:item).permit(:item_name, :price, :description, :inspiration, item_attachments_attributes: [:id, :item_id, :photo])
 	end
+
+  def user_params
+     params.require(:user).permit(:reports, :banned)
+  end
