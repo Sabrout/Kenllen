@@ -35,6 +35,8 @@ class ShopsController < ApplicationController
   def show
   	@shop = Shop.find(params[:id])
     @item = @shop.items
+# Client.where("orders_count = ? AND locked = ?", params[:orders], false)
+@categoryOne = @item.where("category = ")
   end
 
   def new

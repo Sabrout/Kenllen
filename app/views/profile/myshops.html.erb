@@ -1,0 +1,43 @@
+<div class="subjects index">
+  <h2 class= "pagetitle">Shops</h2>
+  <div class = "add">
+  <!-- Check if user is logged in in order to create a shop -->
+  <% if user_signed_in?%>
+  <%= button_to("Create New Shop", {:action => 'new', :controller => '/shops'}, :class => 'main-button') %>
+  <%end%>
+  </div>
+
+  <!-- Shops showcase -->
+  <div class = "page">
+  <div>
+  <div class = "myshops-title">My shops</div>
+    <% @shops.each do |shop| %>
+    <div class ="shop-card">
+      <div class = "shop">
+      <img src="<%= shop.cover_url.to_s %>" style="width:200px;height:200px"></div>
+      <div><%= shop.id %></div>
+      <div><%= shop.shop_name %></div>
+        <div class="actions">
+         <%= link_to("Show", {:action => 'show', :controller => '/shops', :id => shop.id}, :class => 'actionshow') %>
+        </div>
+    </div>
+    <% end %>
+    </div>
+
+<div class = "followed-shops">
+    <div class = "myshops-title">My followed shops</div>
+   <!-- followed shops  -->
+   <% @followed_shops.each do |shop| %>
+    <div class ="shop-card">
+      <div class = "shop">
+      <img src="<%= shop.cover_url.to_s %>" style="width:200px;height:200px"></div>
+      <div><%= shop.id %></div>
+      <div><%= shop.shop_name %></div>
+        <div class="actions">
+         <%= link_to("Show", {:action => 'show', :controller => '/shops', :id => shop.id}, :class => 'actionshow') %>
+        </div>
+    </div>
+    <% end %>
+</div>
+  </div>
+</div>
