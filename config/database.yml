@@ -9,12 +9,12 @@ default: &default
   pool: 5
   timeout: 5000
   username: postgres
-  password: helloworld
+  password: wondercode
 
 development:
   <<: *default
 
-  database: knellen
+  database: Knellen
 
 
 # Warning: The database defined as "test" will be erased and
@@ -23,9 +23,9 @@ development:
 test:
   <<: *default
 
-  database: knellen
+  database: Knellen
 
 production:
   <<: *default
-  database: knellen
+  database: Knellen
 

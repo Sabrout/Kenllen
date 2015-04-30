@@ -14,4 +14,7 @@ class Item < ActiveRecord::Base
 	#validation of length of the inspiration article (MAX 70 chars)
 	validates_length_of :inspiration, maximum: 70, message: "Inspiration can't be more than 70 characters long!"
 	validates :price, :numericality => {:only_integer => true}
+
+	scope :search, lambda {|query|
+		where(["item_name LIKE ?", "%#{query}%"])}
 end
