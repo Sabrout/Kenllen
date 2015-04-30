@@ -50,12 +50,12 @@
 <div id= "desc", class = "invisible"><%= @shop.shop_desc %> </div>
 <!-- This is the item showcase of the shop -->
   <div class = "page_o">
-  <% if @item!=nil %>
+   <% if @item!=nil %>
     <% @item.each do |item| %>
-     
-              <% if item.item_attachments.first %>
+             <% if item.item_attachments.first %>
+             <div class="arrange_o">
               <ul class="gallery_o">
-  <li><%= image_tag item.item_attachments.first.photo_url, :size => "350x250" %>
+        <li><%= image_tag item.item_attachments.first.photo_url, :size => "250x250" %>
         <% end %>
        <span class="name_o">
         <%= link_to "Show", {:controller => 'item', :action => 'show', :id => item.id}, :class => 'actionshow' %> 
@@ -64,10 +64,11 @@
         <% if user_signed_in? %>
         <% if current_user.shops.include?(@shop)%> 
         <%= link_to "Edit", {:controller => 'item', :action => 'edit', :id => item.id,:shop_id => @shop.id}, :class => 'actionedit' %> 
-        <%= link_to "Delete", {:controller => 'item', :action => 'delete', :id => item.id, :shop_id => @shop.id}, :class => 'actiondelete' %>   <span class="title_o">
-     <p class="art-name"> <%= item.item_name %> </p></span></span></a></li>
+        <%= link_to "Delete", {:controller => 'item', :action => 'delete', :id => item.id, :shop_id => @shop.id}, :class => 'actiondelete' %>   
     <%end%>
     <%end%>
+    <span class="title_o"><p class="art-name"> <%= item.item_name %> </p></span></span></a></li>
+    </div>  
     <%end%>
     <%end%>
   </div>
