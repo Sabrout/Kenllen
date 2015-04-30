@@ -57620,3 +57620,78 @@ Processing by Devise::SessionsController#new as HTML
   Rendered devise/shared/_links.html.erb (9.8ms)
   Rendered devise/sessions/new.html.erb within layouts/application (29.9ms)
 Completed 200 OK in 117ms (Views: 116.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-30 22:05:46 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (34.5ms)
+Completed 200 OK in 349ms (Views: 295.2ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2015-04-30 22:05:49 +0200
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (22.7ms)
+Completed 200 OK in 132ms (Views: 129.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-04-30 22:06:01 +0200
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Fw2aFQRrBExFbR3x+WZn9/TphCzvqVJ1jaPG5GrcqxE/6pbShTEhMy2/Kn0f0v3VVSoD2jR/i7dciTi2s4oXjA==", "user"=>{"uname"=>"test", "email"=>"test@test.com", "email_confirmation"=>"test@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "fname"=>"test", "lname"=>"test", "phone"=>"123456"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (1.8ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE LOWER("users"."uname") = LOWER('test') LIMIT 1[0m
+  [1m[35mUser Exists (1.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'test@test.com' LIMIT 1
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["confirmation_token", "911719f37055c5bc000002c0e4753be7830b5f83921c77ef0a3ca72ee65bbbcb"]]
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "users" ("uname", "email", "fname", "lname", "phone", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING "id"  [["uname", "test"], ["email", "test@test.com"], ["fname", "test"], ["lname", "test"], ["phone", 123456], ["encrypted_password", "$2a$10$zF5cuiJ8tarZKeYCfzojguz6ym9ba8mC65YZcXXajv6YnJ2/3DFGm"], ["created_at", "2015-04-30 20:06:01.432730"], ["updated_at", "2015-04-30 20:06:01.432730"], ["confirmation_token", "911719f37055c5bc000002c0e4753be7830b5f83921c77ef0a3ca72ee65bbbcb"], ["confirmation_sent_at", "2015-04-30 20:06:01.639968"]]
+  Rendered devise/mailer/confirmation_instructions.html.erb (2.7ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 128.6ms
+
+Sent mail to test@test.com (21.5ms)
+Date: Thu, 30 Apr 2015 22:06:01 +0200
+From: knellenart.com
+Reply-To: knellenart.com
+To: test@test.com
+Message-ID: <55428b29c008b_68db265154c89758@abdoo-HP.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome test@test.com!</p>
+
+<p>Please confirm your account through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=yqmm2eKkyzQS96qa1aRm">Confirm my account</a></p>
+
+  [1m[36m (15.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 509ms (ActiveRecord: 20.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-04-30 22:06:01 +0200
+Processing by HomeController#index as HTML
+  [1m[35mItem Load (1.2ms)[0m  SELECT "items".* FROM "items"
+  Rendered home/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 78ms (Views: 67.8ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/users/confirmation?confirmation_token=yqmm2eKkyzQS96qa1aRm" for 127.0.0.1 at 2015-04-30 22:06:12 +0200
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"yqmm2eKkyzQS96qa1aRm"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["confirmation_token", "911719f37055c5bc000002c0e4753be7830b5f83921c77ef0a3ca72ee65bbbcb"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "confirmation_token" = $1, "confirmed_at" = $2, "updated_at" = $3 WHERE "users"."id" = $4[0m  [["confirmation_token", nil], ["confirmed_at", "2015-04-30 20:06:12.511336"], ["updated_at", "2015-04-30 20:06:12.512215"], ["id", 8]]
+  [1m[35m (18.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/users/sign_in
+Completed 302 Found in 36ms (ActiveRecord: 19.5ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-04-30 22:06:12 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 61ms (Views: 59.5ms | ActiveRecord: 0.0ms)
