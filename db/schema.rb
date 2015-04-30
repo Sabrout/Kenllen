@@ -55,10 +55,6 @@ ActiveRecord::Schema.define(version: 20150430180259) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "item_reports", primary_key: "user_id", force: :cascade do |t|
-    t.integer "item_id", default: "nextval('item_reports_item_id_seq'::regclass)", null: false
-  end
-
   create_table "items", force: :cascade do |t|
     t.integer  "shop_id"
     t.string   "item_name",   limit: 15,               null: false
@@ -119,25 +115,24 @@ ActiveRecord::Schema.define(version: 20150430180259) do
     t.integer  "phone"
     t.string   "email"
     t.string   "address"
-    t.integer  "reports",                default: 0
-    t.string   "uname",                  default: "", null: false
-    t.string   "encrypted_password",     default: "", null: false
-    t.string   "reset_password_token"
-    t.datetime "reset_password_sent_at"
+    t.integer  "reports",              default: 0
+    t.string   "uname",                default: "", null: false
+    t.string   "encrypted_password",   default: "", null: false
     t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          default: 0,  null: false
+    t.integer  "sign_in_count",        default: 0,  null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
     t.inet     "current_sign_in_ip"
     t.inet     "last_sign_in_ip"
+    t.string   "confirmation_token"
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "banned"
   end
 
+  add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
-  add_foreign_key "item_reports", "items", name: "item_reports_item_id_fkey", on_update: :cascade, on_delete: :cascade
-  add_foreign_key "item_reports", "users", name: "item_reports_user_id_fkey", on_update: :cascade, on_delete: :cascade
 end
