@@ -5,39 +5,79 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true  %>
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-
 </head>
+
 <body>
-	 <div class="container">
-        <div class="nav-bar ">
-        	<%= link_to(image_tag("logo.png"), root_path, :class => 'logo') %>
-          <%= link_to("Home", root_path, :class => 'navbar-element') %>
-            <% if user_signed_in?%>
-          <%= link_to("Profile",{:action => 'myshops', :controller => '/profile'}, :class => 'navbar-element') %>
-           <%end%>
-          <%= link_to("Mail", {:action => 'inbox' , :controller => '/messages'}, :class => 'navbar-element') %>
-          <%= link_to("Cart", {:action => 'index' , :controller => '/carts'}, :class => 'navbar-element') %>
-          <% if !user_signed_in? %>
-          <%=link_to "BROWSE SHOPS", {:action => 'index' , :controller => '/shops'}, :class =>"navbar-element"%>
-				  <%=link_to "LOGIN" ,new_user_session_path  , :class =>"login-element"%>
-          <%else%>
-				  <%=link_to "BROWSE SHOPS", {:action => 'index' , :controller => '/shops'}, :class =>"navbar-element"%>
-				  <%=link_to "Sign Out", destroy_user_session_path , method: :delete , :class => "login-element" %>
-			    <%end%>
-        </div>
+  <div class="container">
+    <div class="nav-bar ">
+      <%= link_to(image_tag("logo.png"), root_path, :class => 'logo') %>
+      <%= link_to("Mail", {:action => 'inbox' , :controller => '/messages'}, :class => 'navbar-mail') %>
+      <%= link_to("Cart", {:action => 'index' , :controller => '/carts'}, :class => 'navbar-cart') %>
+      <% if !user_signed_in? %>
+      <%=link_to "BROWSE SHOPS", {:action => 'index' , :controller => '/shops'}, :class =>"navbar-browse"%>
+			<%=link_to "LOGIN" ,new_user_session_path  , :class =>"navbar-login"%>
+      <%else%>
+			<%=link_to "BROWSE SHOPS", {:action => 'index' , :controller => '/shops'}, :class =>"navbar-browse"%>
+			<%=link_to "Sign Out", destroy_user_session_path , method: :delete , :class => "navbar-login" %>
+			<%end%>
     </div>
-
-<!-- flash for notices -->
-<% if !flash[:notice].blank? %>
-  <div class = "notice">
-    <%= flash[:notice] %>
   </div>
-<% end %>	
+  <!-- flash for notices -->
+  <% if !flash[:notice].blank? %>
+    <div class = "notice">
+    <%= flash[:notice] %>
+    </div>
+  <% end %>	
 
+  <%= yield %>
 
-
-<%= yield %>
+  <div id="footer">
+    <div class="tomottoWrap">
+      <div id="tomotto">
+       “In such seconds of decision entire futures are made.” ― Dan Simmons, Hyperion
+      </div>
+    </div>
+    <div class="lookWrap">
+      <div id="look">
+        <div class="section">
+          <h3 id="reasonable-yellow">Support</h3>
+          <a class="a-footer" href="#">FAQs</a>
+          <a class="a-footer" href="#">Contact Us</a>
+          <a class="a-footer" href="#">Privacy Policy</a>
+          <a class="a-footer" href="#">Shipping Information</a>
+          <a class="a-footer" href="#">Return Policy</a>
+          <a class="a-footer" href="#">Item Exchange</a>
+          <a class="a-footer" href="#">Cash Back Rewards</a>
+        </div>
+        <div class="section">
+          <h3 id="reasonable-red">Give and Take</h3>
+          <a class="a-footer" href="#">Gift Certificates</a>
+          <a class="a-footer" href="#">Wishlist</a>
+          <a class="a-footer" href="#">Gift Ideas</a>
+          <a class="a-footer" href="#">Refer a Friend</a>
+          <a class="a-footer" href="#">Reviews</a>
+          <a class="a-footer" href="#">Scholarship</a>
+          <a class="a-footer" href="#">Sponsors</a>
+        </div>
+        <div class="section">
+          <h3 id="reasonable-green">Follow Us</h3>
+          <a class="a-footer" href="https://www.facebook.com/knellenart?fref=ts">Facebook</a>
+          <a class="a-footer" href="https://twitter.com/KnellenArt">Twitter</a>        
+          <a class="a-footer" href="#">Pinterest</a>
+          <a class="a-footer" href="#">Blog</a>
+          <a class="a-footer" href="#">Ravelry</a>
+          <a class="a-footer" href="#">Sponsor</a>
+          <a class="a-footer" href="#">RSS</a>
+        </div>
+        <div class="section">
+          <h3 id="reasonable-blue">About Us</h3>
+          <a class="a-footer" href="#">About</a>
+          <a class="a-footer" href="#">Testimonials</a>      
+          <a class="a-footer" href="#">The Team</a>        
+        </div>      
+      </div>
+    </div>
+    <div class="legality">Copyright 2008 - 2015 KnellenArt ©</div>
+  </div>
 </body>
-
-<footer id="footer" class = "footer">Knellen Project by ©WonderCode</footer>
 </html>
