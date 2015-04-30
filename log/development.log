@@ -45287,3 +45287,652 @@ Processing by MessagesController#new as HTML
   Rendered messages/new.html.erb within layouts/application (0.0ms)
   [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
 Completed 200 OK in 68ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-24 17:24:45 +0200
+
+ActiveRecord::NoDatabaseError (FATAL:  database "Knellen" does not exist
+):
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:661:in `rescue in connect'
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:651:in `connect'
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:242:in `initialize'
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `new'
+  activerecord (4.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:44:in `postgresql_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:436:in `new_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:446:in `checkout_new_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:422:in `acquire_connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:349:in `block in checkout'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:348:in `checkout'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:263:in `block in connection'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:262:in `connection'
+  activerecord (4.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:565:in `retrieve_connection'
+  activerecord (4.2.0) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.2.0) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.2.0) lib/active_record/migration.rb:384:in `connection'
+  activerecord (4.2.0) lib/active_record/migration.rb:371:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:734:in `_run_call_callbacks'
+  activesupport (4.2.0) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (52.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (53.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (120.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-24 17:26:03 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (1.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 679ms (Views: 586.0ms | ActiveRecord: 9.0ms)
+
+
+Started GET "/assets/item.self-e3bda9c9f370f7e7ab19dff51f324a43aa986cf5797215409c30e86db35e1519.css?body=1" for ::1 at 2015-04-24 17:26:04 +0200
+
+
+Started GET "/assets/home.self-a920c5d39a56ffc1c56d3d06cae7a8bee0aac43d5d6b34e6afbfacc01e37123d.css?body=1" for ::1 at 2015-04-24 17:26:04 +0200
+
+
+Started GET "/assets/messages.self-6559d450b161bdb4e76faf2aaf311890ac32cd605d7cf09a514c559b1d575ffb.css?body=1" for ::1 at 2015-04-24 17:26:04 +0200
+
+
+Started GET "/assets/scaffolds.self-204efe87cef49af3d9443dba9a439c99e1ec14ccc50ebc179b2f69d78e43901b.css?body=1" for ::1 at 2015-04-24 17:26:04 +0200
+
+
+Started GET "/assets/carts.self-57ce48466796d3dab4f00cd505105380a32f1d7636825fefd1836157289d8b4f.css?body=1" for ::1 at 2015-04-24 17:26:04 +0200
+
+
+Started GET "/assets/sessions.self-f7eccb106675f3c526f61a0649b0ae409fcc3b7fd88c83f4a162585270f3018e.css?body=1" for ::1 at 2015-04-24 17:26:04 +0200
+
+
+Started GET "/assets/shops.self-730227f67bbd3596a49b98d786141a2d34828cd26d864e5a9d4f36306874efaa.css?body=1" for ::1 at 2015-04-24 17:26:04 +0200
+
+
+Started GET "/assets/application.self-e2d0e1554b829582e02600da2f5bb9b7800f79223cd7acefc6a54085200e57ab.css?body=1" for ::1 at 2015-04-24 17:26:04 +0200
+
+
+Started GET "/inbox" for ::1 at 2015-04-24 17:26:16 +0200
+Processing by MessagesController#inbox as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mActsAsMessageable::Message Load (4.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."received_messageable_id" = $1 AND "messages"."received_messageable_type" = $2 AND "messages"."recipient_delete" = 'f'  ORDER BY created_at desc[0m  [["received_messageable_id", 1], ["received_messageable_type", "User"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered messages/inbox.html.erb within layouts/application (67.0ms)
+Completed 200 OK in 214ms (Views: 205.0ms | ActiveRecord: 7.0ms)
+
+
+Started POST "/new" for ::1 at 2015-04-24 17:26:29 +0200
+Processing by MessagesController#new as HTML
+  Parameters: {"authenticity_token"=>"eKwbTlLewbDs/QMrfbvtYajMCGThSubKxbVRRt2i6mRlmqhFweuchEqtxg5wdmj3pn8lCyQbjRdb+MQpAGrXmw=="}
+  Rendered messages/new.html.erb within layouts/application (19.0ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 156ms (Views: 154.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/" for ::1 at 2015-04-24 17:27:01 +0200
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mL7Z7xM+QOnz8msV6RfM4v7UD0rXr7ZEd3D8iwCB+1mFiGrkgAsd3VWirjDk2kl08GciJRL+3ZnpPWnk3UnGpg==", "compose"=>{"user"=>"omar2", "subject"=>"test3", "body"=>"testing new interface"}, "commit"=>"Send"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."uname" = $1 LIMIT 1[0m  [["uname", "omar2"]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (1.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "messages" ("topic", "body", "received_messageable_id", "received_messageable_type", "sent_messageable_id", "sent_messageable_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["topic", "test3"], ["body", "testing new interface"], ["received_messageable_id", 2], ["received_messageable_type", "User"], ["sent_messageable_id", 1], ["sent_messageable_type", "User"], ["created_at", "2015-04-24 15:27:01.746367"], ["updated_at", "2015-04-24 15:27:01.746367"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/inbox
+Completed 302 Found in 16ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/inbox" for ::1 at 2015-04-24 17:27:01 +0200
+Processing by MessagesController#inbox as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mActsAsMessageable::Message Load (1.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."received_messageable_id" = $1 AND "messages"."received_messageable_type" = $2 AND "messages"."recipient_delete" = 'f'  ORDER BY created_at desc[0m  [["received_messageable_id", 1], ["received_messageable_type", "User"]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered messages/inbox.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 123ms (Views: 118.0ms | ActiveRecord: 2.0ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-04-24 17:27:06 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"m2M/bHm25uv9xgHtoKxlk0Fd3LnCIsFm8K328DE2zIiGVYxn6oO731uWxMitYeAFT+7x1gdzqrtu4GOf7P7xdw=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 40ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-24 17:27:06 +0200
+Processing by HomeController#index as HTML
+  [1m[36mItem Load (1.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 122ms (Views: 116.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-04-24 17:27:08 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (5.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 170ms (Views: 168.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-04-24 17:27:14 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"edve6NlgcCzQ+YS5GARphXzDJjIePlHTTH4hD/975/Lw6EVtRDmbnyw/4jPjJ0jyVWgi6UGWojVEtvh3z1pwXQ==", "user"=>{"uname"=>"omar2", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."uname" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["uname", "omar2"]]
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5  [["last_sign_in_at", "2015-04-17 18:55:59.653265"], ["current_sign_in_at", "2015-04-24 15:27:14.815114"], ["sign_in_count", 3], ["updated_at", "2015-04-24 15:27:14.818115"], ["id", 2]]
+  [1m[36m (6.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 124ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-24 17:27:14 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mItem Load (1.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 129ms (Views: 125.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/inbox" for ::1 at 2015-04-24 17:27:16 +0200
+Processing by MessagesController#inbox as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mActsAsMessageable::Message Load (1.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."received_messageable_id" = $1 AND "messages"."received_messageable_type" = $2 AND "messages"."recipient_delete" = 'f'  ORDER BY created_at desc[0m  [["received_messageable_id", 2], ["received_messageable_type", "User"]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered messages/inbox.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 165ms (Views: 158.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/new" for ::1 at 2015-04-24 17:27:53 +0200
+Processing by MessagesController#new as HTML
+  Parameters: {"authenticity_token"=>"dT8PzQ8AP9gcTV5Qa8m318C6wDqOMqPHEVbCueK0mRqC9wEkG8FuZYe9jFS/vWHlaI6zT+GYKEB1v/uWiUhv/g=="}
+  Rendered messages/new.html.erb within layouts/application (1.0ms)
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+Completed 200 OK in 119ms (Views: 118.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/" for ::1 at 2015-04-24 17:28:11 +0200
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RrwV17HlPFEUJyp7zPZKohI7pOcb2qvnCow/7P0A2CKxdBs+pSRt7I/X+H8YgpyQug/XknRwIGBuZQbDlvwuxg==", "compose"=>{"user"=>"omar2", "subject"=>"self messaging", "body"=>""}, "commit"=>"Send"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."uname" = $1 LIMIT 1[0m  [["uname", "omar2"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.0ms)[0m  ROLLBACK
+Redirected to http://localhost:3000/inbox
+Completed 302 Found in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/inbox" for ::1 at 2015-04-24 17:28:11 +0200
+Processing by MessagesController#inbox as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mActsAsMessageable::Message Load (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."received_messageable_id" = $1 AND "messages"."received_messageable_type" = $2 AND "messages"."recipient_delete" = 'f'  ORDER BY created_at desc  [["received_messageable_id", 2], ["received_messageable_type", "User"]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered messages/inbox.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 133ms (Views: 128.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/new" for ::1 at 2015-04-24 17:28:14 +0200
+Processing by MessagesController#new as HTML
+  Parameters: {"authenticity_token"=>"qkZMLtCfpJ4i1nhfV+Td1UYXiwAt6tg8QtfQ3uU6Z6FdjkLHxF71I7kmqluDkAvn7iP4dUJAU7smPunxjsaRRQ=="}
+  Rendered messages/new.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 128ms (Views: 128.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for ::1 at 2015-04-24 17:28:32 +0200
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IbuZyjvma+O0i0ugZiull5Wz8OSa87s8q1vuZbws1dHWc5cjLyc6Xi97maSyX3OlPYeDkfVZMLvPstdK19AjNQ==", "compose"=>{"user"=>"omar2", "subject"=>"self messaging", "body"=>"testing self"}, "commit"=>"Send"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."uname" = $1 LIMIT 1  [["uname", "omar2"]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  BEGIN
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "messages" ("topic", "body", "received_messageable_id", "received_messageable_type", "sent_messageable_id", "sent_messageable_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["topic", "self messaging"], ["body", "testing self"], ["received_messageable_id", 2], ["received_messageable_type", "User"], ["sent_messageable_id", 2], ["sent_messageable_type", "User"], ["created_at", "2015-04-24 15:28:32.753572"], ["updated_at", "2015-04-24 15:28:32.753572"]]
+  [1m[35m (55.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/inbox
+Completed 302 Found in 68ms (ActiveRecord: 56.0ms)
+
+
+Started GET "/inbox" for ::1 at 2015-04-24 17:28:32 +0200
+Processing by MessagesController#inbox as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mActsAsMessageable::Message Load (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."received_messageable_id" = $1 AND "messages"."received_messageable_type" = $2 AND "messages"."recipient_delete" = 'f'  ORDER BY created_at desc  [["received_messageable_id", 2], ["received_messageable_type", "User"]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered messages/inbox.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 174ms (Views: 169.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-24 17:43:25 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (2.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mItem Load (1.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 404ms (Views: 343.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/inbox" for ::1 at 2015-04-24 17:43:27 +0200
+Processing by MessagesController#inbox as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mActsAsMessageable::Message Load (1.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."received_messageable_id" = $1 AND "messages"."received_messageable_type" = $2 AND "messages"."recipient_delete" = 'f'  ORDER BY created_at desc[0m  [["received_messageable_id", 2], ["received_messageable_type", "User"]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered messages/inbox.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 194ms (Views: 187.0ms | ActiveRecord: 5.0ms)
+
+
+Started POST "/sentbox" for ::1 at 2015-04-24 17:43:29 +0200
+
+ActionController::RoutingError (No route matches [POST] "/sentbox"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (22.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (117.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (52.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (115.0ms)
+
+
+Started POST "/sentbox" for ::1 at 2015-04-24 17:45:17 +0200
+
+ActionController::RoutingError (No route matches [POST] "/sentbox"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (84.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (55.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (122.0ms)
+
+
+Started POST "/sentbox" for ::1 at 2015-04-24 17:45:29 +0200
+Processing by MessagesController#sentbox as HTML
+  Parameters: {"authenticity_token"=>"PKG7DmoPiSRnXQFUq7VplGOKm+JSfVjZ247Njos1blDLabXnfs7Ymfyt01B/wb+my77olz3X016/Z/Sh4MmYtA=="}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mActsAsMessageable::Message Load (1.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."sent_messageable_id" = $1 AND "messages"."sent_messageable_type" = $2 AND "messages"."sender_delete" = 'f'  ORDER BY created_at desc  [["sent_messageable_id", 2], ["sent_messageable_type", "User"]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered messages/sentbox.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 148ms (Views: 137.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-24 17:45:29 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-24 17:45:29 +0200
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-24 17:45:29 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-24 17:45:29 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-24 17:45:29 +0200
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-24 17:45:29 +0200
+
+
+Started GET "/assets/carts.self-57ce48466796d3dab4f00cd505105380a32f1d7636825fefd1836157289d8b4f.css?body=1" for ::1 at 2015-04-24 17:45:29 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-24 17:45:29 +0200
+
+
+Started GET "/assets/home.self-a920c5d39a56ffc1c56d3d06cae7a8bee0aac43d5d6b34e6afbfacc01e37123d.css?body=1" for ::1 at 2015-04-24 17:45:29 +0200
+
+
+Started GET "/assets/item.self-e3bda9c9f370f7e7ab19dff51f324a43aa986cf5797215409c30e86db35e1519.css?body=1" for ::1 at 2015-04-24 17:45:29 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-24 17:45:29 +0200
+
+
+Started GET "/assets/messages.self-6559d450b161bdb4e76faf2aaf311890ac32cd605d7cf09a514c559b1d575ffb.css?body=1" for ::1 at 2015-04-24 17:45:29 +0200
+
+
+Started GET "/assets/scaffolds.self-204efe87cef49af3d9443dba9a439c99e1ec14ccc50ebc179b2f69d78e43901b.css?body=1" for ::1 at 2015-04-24 17:45:29 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-24 17:45:29 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-24 17:45:29 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-24 17:45:29 +0200
+
+
+Started GET "/assets/shops.self-730227f67bbd3596a49b98d786141a2d34828cd26d864e5a9d4f36306874efaa.css?body=1" for ::1 at 2015-04-24 17:45:29 +0200
+
+
+Started GET "/assets/application.self-e2d0e1554b829582e02600da2f5bb9b7800f79223cd7acefc6a54085200e57ab.css?body=1" for ::1 at 2015-04-24 17:45:29 +0200
+
+
+Started GET "/assets/sessions.self-f7eccb106675f3c526f61a0649b0ae409fcc3b7fd88c83f4a162585270f3018e.css?body=1" for ::1 at 2015-04-24 17:45:29 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-24 17:45:29 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-24 17:45:29 +0200
+
+
+Started GET "/assets/logo-c45f4f0a08ed8997fb9a942ddedb17238ede2045a11b7e475af00ec7e5ab64cb.png" for ::1 at 2015-04-24 17:45:29 +0200
+
+
+Started POST "/inbox" for ::1 at 2015-04-24 17:45:33 +0200
+
+ActionController::RoutingError (No route matches [POST] "/inbox"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  c:/RailsInstaller/Ruby2.1.0/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (73.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (52.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.0ms)
+  Rendered c:/RailsInstaller/Ruby2.1.0/lib/ruby/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (112.0ms)
+
+
+Started POST "/inbox" for ::1 at 2015-04-24 17:45:58 +0200
+Processing by MessagesController#inbox as HTML
+  Parameters: {"authenticity_token"=>"kfBgfmLRBVzhGyXgtuFoHoawtaMk/2rrfbSZLrLvW/5mOG6XdhBU4Xrr9+Rilb4sLoTG1ktV4WwZXaAB2ROtGg=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mActsAsMessageable::Message Load (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."received_messageable_id" = $1 AND "messages"."received_messageable_type" = $2 AND "messages"."recipient_delete" = 'f'  ORDER BY created_at desc[0m  [["received_messageable_id", 2], ["received_messageable_type", "User"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered messages/inbox.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 146ms (Views: 132.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-24 17:45:58 +0200
+
+
+Started GET "/assets/home.self-4e8e851db23046d7053efbc8d35176be01c19346808e992f4f365440882eaacd.js?body=1" for ::1 at 2015-04-24 17:45:58 +0200
+
+
+Started GET "/assets/conversations.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-24 17:45:58 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-24 17:45:58 +0200
+
+
+Started GET "/assets/turbolinks.self-3ad9a189e282f93d4e08b6b4af94c9dd70e5aaa8557b7704050a875ed67faf50.js?body=1" for ::1 at 2015-04-24 17:45:58 +0200
+
+
+Started GET "/assets/carts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-24 17:45:58 +0200
+
+
+Started GET "/assets/carts.self-57ce48466796d3dab4f00cd505105380a32f1d7636825fefd1836157289d8b4f.css?body=1" for ::1 at 2015-04-24 17:45:58 +0200
+
+
+Started GET "/assets/conversations.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-24 17:45:58 +0200
+
+
+Started GET "/assets/home.self-a920c5d39a56ffc1c56d3d06cae7a8bee0aac43d5d6b34e6afbfacc01e37123d.css?body=1" for ::1 at 2015-04-24 17:45:58 +0200
+
+
+Started GET "/assets/item.self-e3bda9c9f370f7e7ab19dff51f324a43aa986cf5797215409c30e86db35e1519.css?body=1" for ::1 at 2015-04-24 17:45:58 +0200
+
+
+Started GET "/assets/item_attachments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-04-24 17:45:58 +0200
+
+
+Started GET "/assets/messages.self-6559d450b161bdb4e76faf2aaf311890ac32cd605d7cf09a514c559b1d575ffb.css?body=1" for ::1 at 2015-04-24 17:45:59 +0200
+
+
+Started GET "/assets/scaffolds.self-204efe87cef49af3d9443dba9a439c99e1ec14ccc50ebc179b2f69d78e43901b.css?body=1" for ::1 at 2015-04-24 17:45:59 +0200
+
+
+Started GET "/assets/sessions.self-f7eccb106675f3c526f61a0649b0ae409fcc3b7fd88c83f4a162585270f3018e.css?body=1" for ::1 at 2015-04-24 17:45:59 +0200
+
+
+Started GET "/assets/shops.self-730227f67bbd3596a49b98d786141a2d34828cd26d864e5a9d4f36306874efaa.css?body=1" for ::1 at 2015-04-24 17:45:59 +0200
+
+
+Started GET "/assets/application.self-e2d0e1554b829582e02600da2f5bb9b7800f79223cd7acefc6a54085200e57ab.css?body=1" for ::1 at 2015-04-24 17:45:59 +0200
+
+
+Started GET "/assets/item_attachments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-24 17:45:59 +0200
+
+
+Started GET "/assets/item.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-24 17:45:59 +0200
+
+
+Started GET "/assets/messages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-24 17:45:59 +0200
+
+
+Started GET "/assets/shops.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-04-24 17:45:59 +0200
+
+
+Started GET "/assets/application.self-75f68b196344b5871e46b0197ab2d17cb01ffff2534ecb62d938cdd7306f4903.js?body=1" for ::1 at 2015-04-24 17:45:59 +0200
+
+
+Started GET "/assets/logo-c45f4f0a08ed8997fb9a942ddedb17238ede2045a11b7e475af00ec7e5ab64cb.png" for ::1 at 2015-04-24 17:45:59 +0200
+
+
+Started POST "/sentbox" for ::1 at 2015-04-24 17:46:02 +0200
+Processing by MessagesController#sentbox as HTML
+  Parameters: {"authenticity_token"=>"FEsKJGDFuthG96AAMjiVLYX4w8yJ1REqCdP/UlyKn87jgwTNdATrZd0HcgTmTEMfLcywueZ/mq1tOsZ9N3ZpKg=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mActsAsMessageable::Message Load (1.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."sent_messageable_id" = $1 AND "messages"."sent_messageable_type" = $2 AND "messages"."sender_delete" = 'f'  ORDER BY created_at desc  [["sent_messageable_id", 2], ["sent_messageable_type", "User"]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered messages/sentbox.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 134ms (Views: 132.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/inbox" for ::1 at 2015-04-24 17:46:06 +0200
+Processing by MessagesController#inbox as HTML
+  Parameters: {"authenticity_token"=>"gpXZr2tM7sh7kZMuHknu+SGK82IpA4wpeBbJNXykMWZ1XddGf42/deBhQSrKPTjLib6AF0apB64c//AaF1jHgg=="}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mActsAsMessageable::Message Load (1.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."received_messageable_id" = $1 AND "messages"."received_messageable_type" = $2 AND "messages"."recipient_delete" = 'f'  ORDER BY created_at desc[0m  [["received_messageable_id", 2], ["received_messageable_type", "User"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered messages/inbox.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 219ms (Views: 212.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/sentbox" for ::1 at 2015-04-24 17:46:13 +0200
+Processing by MessagesController#sentbox as HTML
+  Parameters: {"authenticity_token"=>"ekoY7Kd9svDxpbD4czxUtEkxgDxZDD/T3y8x1G2Tvx2NghYFs7zjTWpVYvynSIKG4QXzSTamtFS7xgj7Bm9J+Q=="}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mActsAsMessageable::Message Load (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."sent_messageable_id" = $1 AND "messages"."sent_messageable_type" = $2 AND "messages"."sender_delete" = 'f'  ORDER BY created_at desc  [["sent_messageable_id", 2], ["sent_messageable_type", "User"]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered messages/sentbox.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 127ms (Views: 125.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/inbox" for ::1 at 2015-04-24 17:46:16 +0200
+Processing by MessagesController#inbox as HTML
+  Parameters: {"authenticity_token"=>"XjlrOR5uLYqkwHuLOvCcyOF7iwzkSWjSelLRwB18UZyp8WXQCq98Nz8wqY/uhEr6SU/4eYvj41Ueu+jvdoCneA=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mActsAsMessageable::Message Load (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."received_messageable_id" = $1 AND "messages"."received_messageable_type" = $2 AND "messages"."recipient_delete" = 'f'  ORDER BY created_at desc[0m  [["received_messageable_id", 2], ["received_messageable_type", "User"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered messages/inbox.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 112ms (Views: 111.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sentbox" for ::1 at 2015-04-24 17:46:22 +0200
+Processing by MessagesController#sentbox as HTML
+  Parameters: {"authenticity_token"=>"X1XSj5Fcz19WhBgxivM00nQNeGmjlaOFFA0KXM1r6wWondxmhZ2e4s10yjVeh+Lg3DkLHMw/KAJw5DNzppcd4Q=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mActsAsMessageable::Message Load (1.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."sent_messageable_id" = $1 AND "messages"."sent_messageable_type" = $2 AND "messages"."sender_delete" = 'f'  ORDER BY created_at desc  [["sent_messageable_id", 2], ["sent_messageable_type", "User"]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered messages/sentbox.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 122ms (Views: 121.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/inbox" for ::1 at 2015-04-24 17:46:53 +0200
+Processing by MessagesController#inbox as HTML
+  Parameters: {"authenticity_token"=>"nm5XtyxalfgQZsvQ5Zh8wJwchXORh2jRnb+xZfIKZSZpplleOJvERYuWGdQx7KryNCj2Bv4t41b5VohKmfaTwg=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mActsAsMessageable::Message Load (1.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."received_messageable_id" = $1 AND "messages"."received_messageable_type" = $2 AND "messages"."recipient_delete" = 'f'  ORDER BY created_at desc[0m  [["received_messageable_id", 2], ["received_messageable_type", "User"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered messages/inbox.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 118ms (Views: 115.0ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/sentbox" for ::1 at 2015-04-24 17:47:00 +0200
+Processing by MessagesController#sentbox as HTML
+  Parameters: {"authenticity_token"=>"+7/o9MnsBsr4qa5VnbCG+X1QFGenAnCl2u8s/31QrGsMd+Yd3S1Xd2NZfFFJxFDL1WRnEsio+yK+BhXQFqxajw=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mActsAsMessageable::Message Load (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."sent_messageable_id" = $1 AND "messages"."sent_messageable_type" = $2 AND "messages"."sender_delete" = 'f'  ORDER BY created_at desc  [["sent_messageable_id", 2], ["sent_messageable_type", "User"]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered messages/sentbox.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 164ms (Views: 163.0ms | ActiveRecord: 1.0ms)
