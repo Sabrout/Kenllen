@@ -49,7 +49,10 @@ class MessagesController < ApplicationController
   end
 
   def reply
-    body = params[:reply][:body]
+    @body = params[:reply][:body]
+    @message = current_user.received_messages.find(params[:r_id])
+    current_user.reply_to(@message, params[:r_sub], params[:reply][:r_body])
+    redirect_to inbox_path
   end
 
 end

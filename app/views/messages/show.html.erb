@@ -1,6 +1,6 @@
 <h1 class = "p">Reply</h1>
 <div class = "dialog">
-<%= form_for :reply, :url => {:action => 'reply', :controller => 'messages'} do |f| %>
+<%= form_for :reply, :url => {:action => 'reply', :controller => 'messages', :r_from => params[:m_from], :r_id => params[:m_id], :r_sub => params[:m_sub] } do |f| %>
 <textarea class = 'name'><%= params[:m_from] %></textarea>
 <br>
 <br>
@@ -9,7 +9,7 @@
 <textarea class = 'sub'><%= params[:m_body] %></textarea>
 <br>
 <br>
-<%= f.text_area :body, :placeholder => 'Reply Body', :size => '50x20' , :class=> 'body'%>
+<%= f.text_area :r_body, :placeholder => 'Reply Body', :size => '50x20' , :class=> 'body'%>
 <br>
 <br>
 <%= f.submit 'Reply' , :class=> 'send'%>
