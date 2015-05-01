@@ -1,5 +1,5 @@
-<div class = "page">
-<div class = "show-shop">
+<div class = "page", id = "page">
+<div class = "show-shop", id = "show-shop">
   <div class = "shop-name"><%= @shop.shop_name %></div>
   <div class = "shop-owner">by <%= @shop.user.uname.to_s %></div>
 
@@ -56,8 +56,8 @@
          <% if item.item_attachments.first %>
             <div class="arrange_o">
               <ul class="gallery_o">
-                <li><%= image_tag item.item_attachments.first.photo_url, :size => "150x250" %>
-          <% end %>
+                <li><%= image_tag item.item_attachments.first.photo_url, :size => "150x250" %></li>
+          <% end %></ul></div>
                   <span class="name_o">
                     <%= link_to "Show", {:controller => 'item', :action => 'show', :id => item.id}, :class => 'actionshow_o' %> 
                     <%= link_to 'Add to Cart', cart_items_path(item_id: item.id) ,method: :post , :class => 'actioncart_o' %>
@@ -68,10 +68,8 @@
                           <%= link_to "Delete", {:controller => 'item', :action => 'delete', :id => item.id, :shop_id => @shop.id}, :class => 'actiondelete_o' %>   
                         <%end%>
                      <%end%>
-    <span class="title_o"><p class="art-name"> <%= item.item_name %> </p></span></span></a></li>
-            
+    <span class="title_o"><p class="art-name"> <%= item.item_name %> </p></span></span>
       <%end%>
     <%end%>
+
 </div>
-
-
