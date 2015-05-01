@@ -8,18 +8,23 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="nav-bar ">
-      <%= link_to(image_tag("logo.png"), root_path, :class => 'logo') %>
-      <%= link_to("Mail", {:action => 'inbox' , :controller => '/messages'}, :class => 'navbar-mail') %>
-      <%= link_to("Cart", {:action => 'index' , :controller => '/carts'}, :class => 'navbar-cart') %>
-      <% if !user_signed_in? %>
-      <%=link_to "BROWSE SHOPS", {:action => 'index' , :controller => '/shops'}, :class =>"navbar-browse"%>
-			<%=link_to "LOGIN" ,new_user_session_path  , :class =>"navbar-login"%>
-      <%else%>
-			<%=link_to "BROWSE SHOPS", {:action => 'index' , :controller => '/shops'}, :class =>"navbar-browse"%>
-			<%=link_to "Sign Out", destroy_user_session_path , method: :delete , :class => "navbar-login" %>
-			<%end%>
+	 <div class="container">
+        <div class="nav-bar ">
+        	<%= link_to(image_tag("logo.png"), root_path, :class => 'logo') %>
+          <%= link_to("Home", root_path, :class => 'navbar-element') %>
+            <% if user_signed_in?%>
+          <%= link_to("Profile",{:action => 'myshops', :controller => '/profile'}, :class => 'navbar-element') %>
+           <%end%>
+          <%= link_to("Mail", {:action => 'inbox' , :controller => '/messages'}, :class => 'navbar-element') %>
+          <%= link_to("Cart", {:action => 'index' , :controller => '/carts'}, :class => 'navbar-element') %>
+          <% if !user_signed_in? %>
+          <%=link_to "BROWSE SHOPS", {:action => 'index' , :controller => '/shops'}, :class =>"navbar-element"%>
+				  <%=link_to "LOGIN" ,new_user_session_path  , :class =>"login-element"%>
+          <%else%>
+				  <%=link_to "BROWSE SHOPS", {:action => 'index' , :controller => '/shops'}, :class =>"navbar-element"%>
+				  <%=link_to "Sign Out", destroy_user_session_path , method: :delete , :class => "login-element" %>
+			    <%end%>
+        </div>
     </div>
   </div>
   <!-- flash for notices -->
