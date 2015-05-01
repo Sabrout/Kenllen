@@ -11,11 +11,13 @@ Rails.application.routes.draw do
   get '/messages/sentbox' => 'messages#sentbox', as: 'sentbox'
   get '/messages/trash' => 'messages#trash', as: 'trash'
   get '/messages/new' => 'messages#new', as: 'compose'
+  get '/messages/show' => 'messages#show', as: 'show'
   post '/messages/inbox' => 'messages#inbox'
   post '/messages/sentbox' => 'messages#sentbox'
   post '/messages/new' => 'messages#new'
   post '/messages/create' => 'messages#create'
   post '/messages/trash' => 'messages#trash'
+  post '/messages/show' => 'messages#show'
 
   match '/destroy_image' => 'items#destroyImage', :as => 'destroyImage', via: [:get, :post]
 

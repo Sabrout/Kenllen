@@ -2,9 +2,9 @@
 
 <div class ="h1"> <h1> <%= current_user.fname %>'s Inbox </h1></div>
 <div class = "buttons">
-<div><%= button_to 'Compose New', compose_path , :class=> 'button'%> </div> 
-<div><%= button_to 'Sent Messages', sentbox_path , :class=> 'button'%> </div>
-<div><%= button_to 'Trash', '#' , :class=> 'button'%> </div>
+	<div><%= button_to 'Compose New', compose_path , :class=> 'button'%> </div> 
+	<div><%= button_to 'Sent Messages', sentbox_path , :class=> 'button'%> </div>
+	<div><%= button_to 'Trash', '#' , :class=> 'button'%> </div>
 </div>
 <table class = "table">
 	<tr>
@@ -16,7 +16,7 @@
 	<!-- Loop over all received messages and show sender's name then the subject then the body -->
 	<% current_user.received_messages.each do |m| %>
 	<tr>
-	<% @current_message = m %>
+		<% @current_message = m %>
 		<td class = "txt">
 			<%= m.from.uname  %>
 		</td>
@@ -24,7 +24,8 @@
 			<%= m.topic %>
 		</td>
 		<td class = "txt">
-			<%= m.body %>
+			<!-- when you press on the body u r redirected to the reply page -->
+			<%= link_to m.body, {:action => 'show', :m_body => m.body, :m_id => m.id, :m_from => m.from.uname, :m_sub => m.topic} %>
 		</td>
 		<!-- adds the delete button that calls a method to sent this message to trash -->
 		<td class = "txt">
