@@ -20,6 +20,7 @@ class CartItemsController < ApplicationController
 				cart_item[2] = item.description
 				cart_item[3] = item.price
 				cart_item[4] = item.quantity
+				cart_item[6] = item.item_attachments.first.photo_url
 				session[:temporary_cart][item.id] = cart_item 
 				flash[:notice] = 'added item to your cart'
 			else

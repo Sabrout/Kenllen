@@ -3,7 +3,7 @@
 	
 <div class="content-helper"><!--Big Container-->
 		<%if @cart.empty?%><!--checks if the cart is empty-->
-			<div class="clear item-body">
+			<div class="item-body">
 				 <h2 class="empty-cart"> Your Cart Is Empty </h2>
 			</div>	
 		<%else%>
@@ -22,14 +22,15 @@
 			<!-- CHECKOUT BuTTON -->
 		<%@cart.each do |cart_item|%><!--List All Cart Items-->
 		<div class="item-body">
-			<%if cart_item[0].item.item_attachments.first %>
-		<div class="item-body">
-			<div class="item-image"> <%=image_tag(cart_item[0].item.item_attachments.first.photo_url, size: "190x120")%> 
-			</div>
+			<%if cart_item[1][6] %>
+				<div class="item-body">
+					<div class="item-image"> <%=image_tag(cart_item[1][6], size: "190x120")%> 
+					</div>
 			<%else%>
 					<img  src="https://www.cs-cart.com/images/thumbnails/5/120/facebook_store_product_v1.png" width="100" >
+				</div>	
 			<%end%>
-		</div>
+		
 				<label class="item-label">Item Name: </label>
 					<label class="item-title"><%=cart_item[1][0]%></label>
 					<br>
