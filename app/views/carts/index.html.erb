@@ -25,11 +25,10 @@
 	    								}
 									}
 									</script>
-<div class="content-helper" id ="cartpage"><!--Big Container-->
+<div class="content-helper"><!--Big Container-->
 		<%@cart.cart_items.each do |cart_item|%> <!--List All Cart Items-->
 		
 		<%if cart_item.item.item_attachments.first %>
-		<div class="item-body">
 			<div class="item-image"> <%=image_tag(cart_item.item.item_attachments.first.photo_url, size: "190x90")%> 
 			</div>
 			<%else%>
@@ -40,7 +39,7 @@
 				<label class="item-label">Item Name: </label>
 					<label class="item-title"><%=cart_item.item.item_name%></label>
 					<%= form_for :cart_item , :url => { :controller => 'CartItems' , :action => "update_quantity" , :cart_item_id => cart_item.id } do |f|%>
-					<label class="item-label">Quantity:</label><%= f.text_field :quantity , class:'text-field' , value: cart_item.quantity %>x<span>$<%=cart_item.item.price%></span> = <span class="price">$</span><span class="price"> <!--Price -->
+					<label class="item-label">Quantity:</label><%= f.text_field :quantity , class:'text-field' , value: cart_item.quantity %><span class="complete">x </span><span class="price"><span class="price">$</span><%=cart_item.item.price%></span> <span class="complete"> = </span><span class="price">$</span><span class="price"> <!--Price -->
 								<%= cart_item.total_price %>
 								</span>
 	<!--Update Button--><%= f.submit 'Update' , class: 'update'%>
@@ -56,10 +55,9 @@
 		<%end%>	
 		<%if !@cart.cart_items.empty?%>
 					<div class="total-price"> <!--Total Price-->
-						<strong>Total cost:</strong><span class="price">$</span><span class="price"><%=@cart.total_price%></span>
+						<strong><span class="complete">Total cost: </span></strong><span class="price">$</span><span class="price"><%=@cart.total_price%></span>
 					</div>
 		<%end%>			
-		</div>				
 	</div>
 		
 </body>
