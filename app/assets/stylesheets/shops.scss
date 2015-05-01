@@ -32,27 +32,33 @@ clear:both;
 margin-left: 8%;
 }
 
-body{  /*defines the background color of all the page of the website*/
-	background-color: #F2F2F2;
-	background-size: cover;
-	height: 100%;
-}
 .page{ /*changes the color, position , and padding of the white page which will include all the elements in the website*/
 	/*background: url(index.jpeg);
 	background-size: cover;*/
-	padding-top:6%;
-	padding-left: 6%;
-	padding-right: 1%;
-	background-color:#fefefe;
+	width:1200px;
 	height: 100%;
 	font-family: 'Segoe UI';
 	margin-top: 5%;
 	margin-left: 11%;
 	margin-right: 11%;
 	overflow: hidden;
-	-webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
-	-moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
-	box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+	padding-left: 10px;
+	padding-right: 10px;
+	align:center;
+}
+
+.page-homepage{ /*changes the color, position , and padding of the white page which will include all the elements in the website*/
+	/*background: url(index.jpeg);
+	background-size: cover;*/
+	width:1200px;
+	height: 100%;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	padding-left: 10px;
+	padding-right: 10px;
+	align:center;
 }
 .header{ 
 
@@ -266,8 +272,7 @@ AUTHOR: Tarek
 	margin: 1%;
 	width: 90%;
     padding:8px 15px;
-    margin-left: 10px;
-    background:rgba(50, 50, 50, 0.2);
+    background:rgba(30, 30, 30, 0.7);
     border:0px solid #dbdbdb;
 }
 
@@ -297,15 +302,14 @@ AUTHOR: Tarek
 	position:relative;
     padding:6px 15px;
     left:-8px;
-    border:2px solid #E9573F;
-    background-color:#E9573F;
-    color:#fafafa;
-    margin-top: 5%;
+    border:2px solid #EEC900;
+    background-color:#EEC900;
+    color:#222;
 }
 
-.form-button:hover {
-	background-color:#fafafa;
-    color:#E9573F;
+.search-button:hover {
+    background-color:#c5a600;
+    color:#fff;
 }
 
 .form-image {
@@ -565,29 +569,32 @@ AUTHOR: Tarek
 }
 .art-name{ /* change color ,size and position of art name*/
 	margin-top: 2% ;
-	font-size: 100%;
+	font-size: 20px; 
+	font-family: 'Segoe UI';
+	font-style: bold;
 	text-align: center;
-	color: red;
+	color: #fff;
 }
 .gallery_o {
-  margin: 0 auto;
   text-align: center;
   width: 100%;
   padding: 20px;
 }
 .gallery_o li {
-  width: 270px;
+  width: 338px;
+  height:338px;
   min-height: 100%;
   text-align: center;
-  height: 200px;
   position: relative;
-  margin: 0 auto;
   display: inline-block;
   overflow: hidden;
   background-color: black;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #000;
+
 }
 .gallery_o li:nth-child(2) img {
-  margin: 0;
   display: inline-block;
   float: right;
 }
@@ -596,8 +603,8 @@ AUTHOR: Tarek
   text-transform: uppercase;
   text-shadow: rgba(0, 0, 0, 0.7) 1px 1px 5px;
   color: white;
-  font-weight: lighter;
-  font-size: 20px;
+  font-weight: bold;
+  font-size: 22px;
   letter-spacing: .1em;
   position: absolute;
   display: block;
@@ -613,9 +620,9 @@ AUTHOR: Tarek
 .gallery_o li .name_o .title_o {
   display: block;
   text-transform: none;
-  font-style: italic;
-  font-size: 80%;
-  color: rgba(255, 255, 255, 0.7);
+  font-style: normal;
+  font-weight: 1000;
+  color: rgba(255, 255, 255, 0.9);
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -moz-transition-property: all;
@@ -674,8 +681,8 @@ AUTHOR: Tarek
 }
 .gallery_o li img {
   display: block;
-  width: 270px;
-  height: 200px;
+  width: 338px;
+  height: 338px;
   margin: 0 auto;
   display: inline-block;
   text-align: center;
@@ -693,18 +700,58 @@ AUTHOR: Tarek
   transition-duration: 0.4s;
 }
 .arrange_o{
-	margin-top: 0.5%;
-	margin-bottom: 0.5%;
-	margin-left: 0.25%;
-	margin-right: .25%;
-	padding:1%;
+	padding:0;
+	margin-left: 0;
+	margin-right: auto;
 	float: left;
 
 }
-.actionshow_o, .actionedit_o, .actiondelete_o,.actioncart_o{ /*changes the background color, font color , and font style of the three buttons (show, edit, delete)*/
-	color: red; 
-	font-size: 12px; 
+.actionshow_o{ /*changes the background color, font color , and font style of the three buttons (show, edit, delete)*/
+	color: #EEC900; 
+	font-size: 14px; 
 	font-family: 'Segoe UI';
-	font-style: italic;
+	font-style: normal !important;
 	text-decoration: none;
+}
+
+.actionedit_o{ /*changes the background color, font color , and font style of the three buttons (show, edit, delete)*/
+	color: #aa5351; 
+	font-size: 14px; 
+	font-family: 'Segoe UI';
+	font-style: normal !important;
+	text-decoration: none;
+}
+
+.actiondelete_o{ /*changes the background color, font color , and font style of the three buttons (show, edit, delete)*/
+	color: #7b911f; 
+	font-size: 14px; 
+	font-family: 'Segoe UI';
+	font-style: normal !important;
+	text-decoration: none;
+}
+
+.actioncart_o{ /*changes the background color, font color , and font style of the three buttons (show, edit, delete)*/
+	color: #5a9ea2; 
+	font-size: 14px; 
+	font-family: 'Segoe UI';
+	font-style: normal !important;
+	text-decoration: none;
+}
+
+.featured-items{
+	color: #fff;
+	float: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+.search-bar{
+	color: #fff;
+	float: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 60px;
+	margin-bottom: 0px;
 }

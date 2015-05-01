@@ -27,10 +27,15 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # Authentication Gem (signup and in)
 gem 'devise'
+
+# Manipulate images
+gem 'mini_magick'
+
 # delayed Jobs
 gem 'delayed_job_active_record'
 #daemon for multiple processes
 gem "daemons"
+
 # Messaging gem
 gem 'acts-as-messageable'
 
