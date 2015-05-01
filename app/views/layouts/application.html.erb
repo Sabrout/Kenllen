@@ -8,29 +8,44 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="nav-bar ">
-      <%= link_to(image_tag("logo.png"), root_path, :class => 'logo') %>
-      <%= link_to("Mail", {:action => 'inbox' , :controller => '/messages'}, :class => 'navbar-mail') %>
-      <%= link_to("Cart", {:action => 'index' , :controller => '/carts'}, :class => 'navbar-cart') %>
-      <% if !user_signed_in? %>
-      <%=link_to "BROWSE SHOPS", {:action => 'index' , :controller => '/shops'}, :class =>"navbar-browse"%>
-			<%=link_to "LOGIN" ,new_user_session_path  , :class =>"navbar-login"%>
-      <%else%>
-			<%=link_to "BROWSE SHOPS", {:action => 'index' , :controller => '/shops'}, :class =>"navbar-browse"%>
-			<%=link_to "Sign Out", destroy_user_session_path , method: :delete , :class => "navbar-login" %>
-			<%end%>
-    </div>
+  <div class="wrapper">
+    <div class="container-color">
+      <div class="container">
+        <div class="nav-bar ">
+          <%= link_to(image_tag("logo.png"), root_path, :class => 'logo') %>
+          <% if user_signed_in? %> 
+          <div class ="username">
+            <h4>Welcome,</h4>
+            <h3>
+            <% if user_signed_in?%>
+            <%= link_to(current_user.fname,{:action => 'myshops', :controller => '/profile'}, :class => 'profile-welcome-word') %>
+            <%end%> 
+            </h3>
+          </div>
+          <%end%>
+          <%= link_to("Mail", {:action => 'inbox' , :controller => '/messages'}, :class => 'navbar-mail') %>
+          <%= link_to("Cart", {:action => 'index' , :controller => '/carts'}, :class => 'navbar-cart') %>
+          <% if !user_signed_in? %>
+          <%=link_to "BROWSE SHOPS", {:action => 'index' , :controller => '/shops'}, :class =>"navbar-browse"%>
+    			<%=link_to "LOGIN" ,new_user_session_path  , :class =>"navbar-login"%>
+          <%else%>
+    			<%=link_to "BROWSE SHOPS", {:action => 'index' , :controller => '/shops'}, :class =>"navbar-browse"%>
+    			<%=link_to "Sign Out", destroy_user_session_path , method: :delete , :class => "navbar-login" %>
+    			<%end%>
+        </div>
+      </div>
+    </div> 
+    <!-- flash for notices -->
+    <% if !flash[:notice].blank? %>
+      <div class = "notice">
+      <%= flash[:notice] %>
+      </div>
+    <% end %>	
+
+    <%= yield %>
+
+    <div class="push"></div>
   </div>
-  <!-- flash for notices -->
-  <% if !flash[:notice].blank? %>
-    <div class = "notice">
-    <%= flash[:notice] %>
-    </div>
-  <% end %>	
-
-  <%= yield %>
-
   <div id="footer">
     <div class="tomottoWrap">
       <div id="tomotto">

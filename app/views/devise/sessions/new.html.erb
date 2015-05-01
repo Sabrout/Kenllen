@@ -1,39 +1,33 @@
 <% @page_title = "login" %> <!--to set the titel of the page-->
-<h1>
-<div id="blurringTextG">
-<div id="blurringTextG_1" class="blurringTextG" style="color:#E9573F">K</div> 
-<div id="blurringTextG_2" class="blurringTextG">n</div>
-<div id="blurringTextG_3" class="blurringTextG">e</div>
-<div id="blurringTextG_4" class="blurringTextG">l</div>
-<div id="blurringTextG_5" class="blurringTextG">l</div>
-<div id="blurringTextG_6" class="blurringTextG">e</div>
-<div id="blurringTextG_7" class="blurringTextG">n</div>
-</h1> 
-<div class = 'card' id = "1">
+<div class = 'form-card' id = "1">
+<div class = 'form-title'>Login</div>
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <%=devise_error_messages!%>
+  <table>
   <div class="field">
     <%= f.label :Username %><br />
-    <%= f.text_field :uname, autofocus: true %>
+    <%= f.text_field :uname, autofocus: true, :class => 'form-tf' %>
   </div>
 
   <div class="field">
     <%= f.label :password %><br />
-    <%= f.password_field :password %>
+    <%= f.password_field :password, :class => 'form-tf' %>
   </div>
 
   <% if devise_mapping.rememberable? -%>
     <div class="field">
       <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+      <%= f.label :remember_me, :class => '' %>
     </div>
   <% end -%>
-
+  </table>
+  <div><%= render "devise/shared/links" %></div>
   <div class="actions">
-    <%= f.submit "Log in" ,:class => 'submit-button' %>
+    <%= f.submit "Log in" ,:class => 'form-button' %>
   </div>
 <% end %>
 <body>
+
 <script>
   // This is called with the results from from FB.getLoginStatus().
   function statusChangeCallback(response) {
@@ -127,5 +121,4 @@
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
 </fb:login-button> -->
 </body>
-<%= render "devise/shared/links" %>
 </div> 

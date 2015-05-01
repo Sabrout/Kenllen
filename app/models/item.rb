@@ -4,7 +4,7 @@ class Item < ActiveRecord::Base
 	has_one :cart_item
     accepts_nested_attributes_for :item_attachments
 	#Validations of any entered information to match the desired criteria
-	
+	ratyrate_rateable "speed"
 	#validations that these attributes are entered (NOT NULL) 
 	validates_presence_of :item_name, :price, :description, message: "Required field."
 	#validation of length of the item name (3 => 15 character)

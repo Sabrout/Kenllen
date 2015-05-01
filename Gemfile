@@ -12,6 +12,7 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 gem 'coffee-script-source' , '1.8.0'
+gem 'ratyrate'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 #imageUploader
@@ -27,10 +28,16 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Authentication Gem (signup and in)
 gem 'devise'
 
+# Manipulate images
+gem 'mini_magick'
+
+# delayed Jobs
+gem 'delayed_job_active_record'
+#daemon for multiple processes
+gem "daemons"
 
 # Messaging gem
 gem 'acts-as-messageable'
-# gem 'mailboxer', :git => 'git://github.com/div/mailboxer.git', :branch => 'rails42-foreigner'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
@@ -42,6 +49,7 @@ group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
   # test framework 
+  gem 'factory_girl_rails'
   gem 'rspec-rails'
   gem 'capybara'
   gem 'database_cleaner'
