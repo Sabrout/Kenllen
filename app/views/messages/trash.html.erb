@@ -10,7 +10,7 @@
 		<td class = "td">Subject</td>
 		<td class = "td-message">Message</td>
 	</tr>
-	<!-- Loop over all messages and show recipient's name then the subject then the body -->
+	<!-- Loop over all deleted messages and show recipient's name then the subject then the body -->
 	<% current_user.sent_messages.each do |m| %>
 	<tr>
 	<% @current_message = m %>
