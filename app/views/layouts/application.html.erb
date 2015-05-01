@@ -19,6 +19,7 @@
             <h3>
             <% if user_signed_in?%>
             <%= link_to(current_user.fname,{:action => 'myshops', :controller => '/profile'}, :class => 'profile-welcome-word') %>
+              <% if current_user.messages.unreaded.count > 0%> <a class = "newmessage">You Have New Message</a> <%end%> 
             <%end%> 
             </h3>
           </div>

@@ -245,3 +245,11 @@ body{
   End point
   author:Sabrout
   */
+.newmessage
+{ 
+    position: fixed;
+    top: 20px;
+    left: 703px;
+    color: purple;
+    background-color: black;
+}
