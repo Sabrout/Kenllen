@@ -45287,3 +45287,20 @@ Processing by MessagesController#new as HTML
   Rendered messages/new.html.erb within layouts/application (0.0ms)
   [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
 Completed 200 OK in 68ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-01 13:07:49 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (4.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mItem Load (4.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (48.0ms)
+Completed 200 OK in 1364ms (Views: 1160.1ms | ActiveRecord: 28.0ms)
+
+
+Started GET "/" for ::1 at 2015-05-01 13:07:51 +0200
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 4]]
+  [1m[36mItem Load (4.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 328ms (Views: 316.0ms | ActiveRecord: 4.0ms)
