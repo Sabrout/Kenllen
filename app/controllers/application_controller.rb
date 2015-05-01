@@ -11,7 +11,7 @@ class ApplicationController < ActionController::Base
       devise_parameter_sanitizer.for(:account_update) { |u| u.permit(:reports , :banned) }
   end
 
-      def banned?
+      def banned?	# check if a user is banned or not and kicks him/her in case column ban has true value in it
         if current_user.present? && current_user.banned
           sign_out current_user
            redirect_to root_path, :notice => "This account has been suspended...."
