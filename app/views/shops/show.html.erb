@@ -50,7 +50,7 @@
 <div id= "desc", class = "invisible"><%= @shop.shop_desc %> </div>
 <!-- This is the item showcase of the shop -->
 
-  <div class = "page_o">
+ 
     <% if @item!=nil %>
       <% @item.each do |item| %>
          <% if item.item_attachments.first %>
@@ -69,7 +69,7 @@
                         <%end%>
                      <%end%>
     <span class="title_o"><p class="art-name"> <%= item.item_name %> </p></span></span></a></li>
-           </div>  
+            
       <%end%>
     <%end%>
 </div>
