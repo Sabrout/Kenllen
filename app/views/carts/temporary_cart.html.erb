@@ -1,72 +1,55 @@
 <html>
 <body>
-	
-<div class="content-helper"><!--Big Container-->
-	<h2 class="mainbox-cart-title"> <!--CART TITLE-->
-		<span class="float-left">&nbsp;</span>
-		<span class="float-right">&nbsp;</span>
-		Your Shopping Cart 
-	</h2>
-		<%if @cart.empty?%><!--checks if the cart is empty-->
-			<div class="clear item-body">
-				 <p class="empty-cart"> Your Cart Is Empty </p>
+	<%if @cart.empty?%><!--checks if the cart is empty-->
+			<div class="content-helper">
+				 <h2 class="empty-cart"> Your Cart Is Empty </h2>
 			</div>	
+		<%else%>
+			<%= button_to 'Clear Cart' , {action: :destroy} ,  method: :delete , class: 'clear'%>
+			<!--CLEAR BUTTON-->
 		<%end%>
+		<%=button_to 'Continue Shopping' , {:controller => '/shops' , method: :get}, class: 'Continue' %><!-- Continue BuTTON -->
+
+			<button class="checkout" onclick="myFunction()">Checkout</button> 
+			<script>
+				function myFunction() {
+    				alert("You Must LogIn First");
+    				location.href = "/users/sign_in";
+					}
+			</script>
+			<!-- CHECKOUT BuTTON -->
+<div class="content-helper"><!--Big Container-->
 		<%@cart.each do |cart_item|%><!--List All Cart Items-->
-		<div class="clear item-body">
-			<div class="item-image">
-				<a href="https://www.cs-cart.com/facebook-store.html">
-					<img class=" " src="https://www.cs-cart.com/images/thumbnails/5/120/facebook_store_product_v1.png" width="120" alt="" border="0">
-				</a>
-			</div>
+			<%if cart_item[1][6] %>
+					<div class="item-image"> <%=image_tag(cart_item[1][6], size: "190x90")%> 
+					</div>
+			<%else%>
+					<img  src="https://www.cs-cart.com/images/thumbnails/5/120/facebook_store_product_v1.png" width="90" >
+			<%end%>
+		
 				<label class="item-label">Item Name: </label>
 					<label class="item-title"><%=cart_item[1][0]%></label>
-					<br>
 					<%= form_for :cart , :url => { :controller => 'Carts' , :action => "update_quantity" , :cart_item_id => cart_item[0] } do |f|%>
-					<label class="item-label">Quantity:</label><%= f.text_field :quantity , class:'text-field' , value: cart_item[1][1] %> x <span>$<%=cart_item[1][3]%></span> = <span class="price">$</span><span class="price">
+					<label class="item-label">Quantity:</label><%= f.text_field :quantity , class:'text-field' , value: cart_item[1][1] %> <span class="complete">x </span><span class="price"><span class="price">$</span><%=cart_item[1][3]%></span> <span class="complete"> = </span><span class="price">$</span><span class="price"> <!--Price -->
 								<%= cart_item[1][5] %>
 								</span>
-	<!--Update Button--><%= f.submit 'Update' , class: 'cart-button-update'%>
+	<!--Update Button--><%= f.submit 'Update' , class: 'update'%>
 						<%end%>
-	<!--Delete Button--><%=button_to 'Delete' ,{controller: 'Carts' , action: 'remove_item' , cart_item_id: cart_item[0]}, class: 'cart-button-delete' , method: :delete%>
+	<!--Delete Button--><%=button_to 'Delete' ,{controller: 'Carts' , action: 'remove_item' , cart_item_id: cart_item[0]}, class: 'delete' , method: :delete%>
 
 <!--Item Description-->	<label class="item-label">Description: </label>
 						<span class="item-desc"><%= cart_item[1][2]%></span>
 						<br>
 	<!--Item Quantity--><label class="item-label">Quantity In Stock: </label>
 						<span class="price"><%= cart_item[1][4]%></span>
-		</div>
+
 		<hr>
 		<%end%>
-<%if !@cart.empty?%>
-	<div class="cart-footer-buttons clear">
-		<div class="float-left">
-			<%= button_to 'Clear Cart' , {action: :destroy} ,  method: :delete , class: 'cart-button'%>
-			<!--CLEAR BUTTON-->
-		</div>
-		<div class="float-left">
-			<%=button_to 'Continue Shopping' ,root_path , class: 'cart-button' , method: :get%><!-- Continue BuTTON -->
-		</div>
+		<%if !@cart.empty?%>
 			<div class="total-price"><!--Total Price-->
-				<strong>Total cost:</strong><span class="price">$</span><span class="price"><%=@totalPrice%></span>
+				<strong><span class="complete">Total cost: </span></strong><span class="price">$</span><span class="price"><%=@totalPrice%></span>
 		</div>
-
-		<div class="float-right"><!-- Put to the right -->
-			<button class="cart-button " onclick="myFunction()">Checkout</button> 
-			<script>
-				function myFunction() {
-    				alert("You Must LogIn First");
-    				location.href = "/users/sign_in";
-					}
-</script>
-			<!-- CHECKOUT BuTTON -->
-		</div>
-	</div>
-
-<%end%>	
-
-
-</div>
-
+		<%end%>
+	</div>	
 </body>
 </html>

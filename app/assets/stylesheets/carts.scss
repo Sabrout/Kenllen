@@ -1,35 +1,46 @@
 // Place all the styles related to the carts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.float-left { 
-  float: left;
-}
-.float-right {
-  float: right;
-}
 
-.item-image {
+.item-image /*here is the styling for the item image*/ 
+{
   float: left;
   margin: 0 25px 10px 0;
   text-align: center;
+  margin-left: 0.5%;
+
 }
 
-.text-field{
+.item-image:hover img /*here is the styling for the item image to 
+make it bigger when hover is on*/ 
+{ 
+    cursor: pointer;
+    width: 700px;
+    height: 700px;
+}
+
+.text-field /*here is the styling field where u can update the 
+number of the items u want to buy*/ 
+{
   background: white; 
   border: 1px solid #c4c4c4; 
   border-radius: 15px; 
-  color: #666; 
+  color: #E9573F; 
   text-align: center;
   outline: none; 
   height:23px; 
-  width: 25px; 
+  width: 50px; 
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.text-field:focus{
+.text-field:focus /*here is animation for the field*/ 
+{
   box-shadow: 0 0 5px 3px #c4c4c4; 
 }
 
- .clear:after{
+ .clear:after /*here is making the clear button hidden if the cart is clear*/ 
+ {
     content: ".";
     display: block;
     height: 0px;
@@ -37,149 +48,239 @@
     visibility: hidden;
 }
 
-.item-label {
+.item-label /*here is the styling for the whole item description*/ 
+{
   color: #858585;
   padding: 5px 0 10px 0;
   font-weight: bold;
   font-family: Tahoma;
-}
-.item-desc {
-  color: #ee3e00;
-  font-size: 15px;
-  line-height: 1.6em;
+  text-align: center;
 }
 
-.price {
-  color: #ee3e00;
+.item-title /*here is the styling for the item name*/
+{
+  color: #E9573F;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.6em;
 }
 
-.total-price{
-  text-align: center;
-  background: white;
+.item-desc /*here is the styling for the item description*/
+{
+  color: #E9573F;
   font-size: 18px;
+  font-weight: bold;
+  line-height: 1.6em;
 }
 
-.total-price-line{
+.price /*here is the styling for the item price*/
+{
+  color: #E9573F;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.6em;
+}
+  
+ .complete /*here is the styling for the x,=,$*/
+{
+  color: #F2F2F2;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.6em;
+}
+ 
+.total-price /*here is the styling for the item total price of all the items in the cart*/
+{
+  font-size: 18px;
+  color: black;
+}
+
+.total-price-line /*here is the styling for the item total price of all the items in the cart*/
+{
   margin-right: 10%;
 }
 
-.total-price-number{
-  color: #ee3e00;
-
+.total-price-number /*here is the styling for the item total price of all the items in the cart*/
+{
+  color: #E9573F;
   font-size: 18px;
 }
-.sub-price{
-  color: #ee3e00;
+.sub-price /*here is the styling for the item total price of every single item the items in the cart*/
+{
+  color: #E9573F;
   font-size: 14px;
   line-height: 1.6em;
 }
 
-#left-button {
-  display:inline-block;
-  margin-right: 28%;
-}
-
-#center-button {
-  display:inline-block;
-  margin-right: 35%;
+hr  /*here is the styling for the breaker between every item*/
+{
+  border: 0.5;
 }
 
 
-#right-button {
-  display:inline-block;
-}
-
-.cart-button {
-  background: white;
--webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
-  box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
-  border-top-left-radius:10px;
-  border-top-right-radius: 10px;  
-  border-bottom-left-radius:10px;
-  border-bottom-right-radius: 10px;
-  font-family: 'Segoe UI';
-  color: black;
-  font-weight: bold;
-  font-size:85%;
-  padding: 5px 5px 5px 5px;
-  text-decoration: none;
-  border: none;
-  opacity: 0.9;
-}
-.update-button {
-  margin-left: 1%;
-}
-.cart-button:hover{
-  color: #e95640;
-}
-
-.cart-footer-buttons {
-  background-color: white;
-  border: 1px solid #eeeeee;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  padding: 5px 5px 5px 8px;
-  text-align: center;
-}
-
-
-
-body {
-  font-weight: 300;
-  font-size:  14px;
-  line-height: 1.6;
-  font-family: 'Open Sans', sans-serif;
-}
-
-
-hr {
-  border: 0;
-  border-bottom: 1px solid #ececec;
-  margin-top : 0;
-  margin-bottom : 0;
-}
-
-
-.empty-cart{
-  margin-top : 0;
-  margin-bottom : 0;
+.empty-cart /*here is the styling for the  cart when empty*/
+{
   padding: 5% 0 5% 40%;
-
+  background-color: #2F2F2F;
+  color: #F2F2F2;
 }
 
-
-
-.content-helper {
-  width: 60%;
+.content-helper /*here is the styling for the whole cart*/
+{
+  width: 80%;
   margin: 0 auto;
+  margin-top: 5%;
+  background: #2F2F2F;
+  margin-bottom: 2%;
+  border-radius: 2px;
 }
 
+.clear /*here is the styling for the  button clear*/
+{
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+    box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+    color: #FFF;
+    background: #2F2F2F;
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #aa5351;
+    -webkit-transition: all ease 0.8s;
+    -moz-transition: all ease 0.8s;
+    transition: all 0.8s ease 0s;
+    float: right;
+    position: fixed;
+    top:90px;
+    right: 375px;
+}
+.clear:hover /*here is animation for the  button clear*/
+{
 
-
-.item-title {
-  color: #ee3e00;
-  font-family: 'Rufina', Georgia, Serif;
-  font-weight: bold;
+    box-shadow: inset 0 100px 0 0 #aa5351;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
 }
 
-.mainbox-cart-title {
-  margin: 62px 0 0;
-  padding: 8px 8px 7px 13px;
-  background: white;
-  font-size: 17px;
-  font-weight: 400;
-  color: #333333;
-  border: 1px solid #eeeeee;
-  -webkit-border-top-left-radius: 5px;
-  border-top-left-radius: 5px;
-  -webkit-border-top-right-radius: 5px;
-  border-top-right-radius: 5px;
+.checkout /*here is the styling for the  button checkout*/
+{
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+    box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+    color: #FFF;
+    background: #2F2F2F;
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #7b911f;
+    -webkit-transition: all ease 0.8s;
+    -moz-transition: all ease 0.8s;
+    transition: all 0.8s ease 0s;
+    float: right;
+    position: fixed;
+    top: 90px;
+    right: 503px;
+}
+.checkout:hover /*here is animation for the  button checkout*/
+{
+
+    box-shadow: inset 0 100px 0 0 #7b911f;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
 }
 
-.item-body{
-  background: white;
+.Continue /*here is the styling for the  button Continuw shopping*/
+{
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+    box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+    color: #FFF;
+    background: #2F2F2F;
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #5a9ea2;
+    -webkit-transition: all ease 0.8s;
+    -moz-transition: all ease 0.8s;
+    transition: all 0.8s ease 0s;
+    float: right;
+    position: fixed;
+    top: 90px;
+    right: 170px;
+}
+.Continue:hover /*here is animation for the  button continue shopping*/
+{
+
+    box-shadow: inset 0 100px 0 0 #5a9ea2;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+}
+.update /*here is the styling for the  button update*/
+{
+    color: #FFF;
+    background: #7b911f;
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #C14800;
+    -webkit-transition: all ease 0.8s;
+    -moz-transition: all ease 0.8s;
+    transition: all 0.8s ease 0s;
+    float: right;
+}
+.update:hover /*here is animation for the  button update*/
+{
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+    box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+    
+}
+
+.delete /*here is the styling for the  button delete*/
+{
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+    box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+    color: #FFF;
+    background: #aa5351;
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #C14800;
+    -webkit-transition: all ease 0.8s;
+    -moz-transition: all ease 0.8s;
+    transition: all 0.8s ease 0s;
+    float: right;
+    position: relative;
+    top :20px;
+}
+
+.delete:hover /*here is animation for the  button delete*/
+{
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+    box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+    
 }
