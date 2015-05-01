@@ -7,7 +7,7 @@ class ItemController < ApplicationController
 
   def show
     #finding certain Item using id to use in show page
-  	@item = Item.find(params[:id])
+    @item = Item.find(params[:id])
     @item_attachments = @item.item_attachments.all
   end
 
@@ -16,6 +16,13 @@ class ItemController < ApplicationController
   	@item = Item.find(params[:id])
     #@item_attachments = @item.item_attachments.all
     @shop = Shop.find(params[:shop_id])
+  end
+
+  def report 
+    # report the item
+    ItemReport.create(user_id:current_user.id,item_id:params[:id])
+    flash[:notice] = "Item Reported Successfully"
+    redirect_to :back
   end
 
   def update
