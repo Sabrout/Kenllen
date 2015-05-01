@@ -36,7 +36,7 @@
 </div>
 <div class="search-bar">
   <div class = 'search-field'>
-      <%= form_tag :action => 'search', :method => 'get', :class => 'search-form' do %>
+      <%= form_tag :action => 'search',:controller => 'shops', :method => 'get', :class => 'search-form' do %>
         <%= text_field_tag :query, params[:query], :class => 'search-tf' %>
         <%= submit_tag "Search", :name => nil, :class => 'search-button' %>
       <% end %>    
