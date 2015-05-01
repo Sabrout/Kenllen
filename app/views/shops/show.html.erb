@@ -61,7 +61,7 @@
                     <%= link_to 'Add to Cart', cart_items_path(item_id: item.id) ,method: :post , :class => 'actioncart_o' %>
         <%if user_signed_in? and !reported?(item.id,current_user.id)%>  <!-- Can't Report An Owned Item Or Report Item Twice-->
             <% if !current_user.shops.include?(@shop)%>
-                <%= link_to 'Report Item' ,{:controller => 'item', :action => 'report', :id => item.id} , :class => 'actionshow'%>
+                <%= link_to 'Report Item' ,{:controller => 'item', :action => 'report', :id => item.id} , :class => 'actionshow_o'%>
             <%end%>
         <%end%>
    <!--    The edit and delete buttons won't appear if the user is not signed in or doesnt own the shop -->
