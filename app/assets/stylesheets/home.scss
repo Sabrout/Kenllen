@@ -72,10 +72,10 @@ img, ul, li {
 
 /* Progress Bar */
 #progressbar {
-  width:1745px;
-  height:5px; 
-  top:-5px;
-  position:relative;
+  width:1600px;
+  height:10px;
+  bottom:0px;
+  position:absolute;
   background:#000;
   -moz-animation:fullexpand 25s ease-out infinite;
   -webkit-animation:fullexpand 25s ease-out infinite;

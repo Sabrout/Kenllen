@@ -30,15 +30,13 @@
             </a>
           </li>
         </ul>
-      </div> <!-- /Mask DIV-->
-      <div id="progressbar"> <!-- Progress Bar DIV-->
-      </div> <!-- /Progress Bar DIV-->
-    </div> <!-- /Slider DIV-->
+      </div> 
+      <div id="progressbar">
+      </div>
+    </div>
   
 
-<% if !user_signed_in? %> <!--check if the user loged in or not-->
-
-<%else%>
+<% if user_signed_in? %> 
 <div class ="pp">
   <h2>WELCOME</h2> <br>
 <h4><%=@current_user.uname%> </h4>
