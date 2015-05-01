@@ -1,4 +1,5 @@
-<div class = "show-shop">
+<div class = "page", id = "page">
+<div class = "show-shop", id = "show-shop">
   <div class = "shop-name"><%= @shop.shop_name %></div>
   <div class = "shop-owner">by <%= @shop.user.uname.to_s %></div>
 
@@ -12,7 +13,7 @@
     </div>
      
      
-    <div class = "add1">  
+    <div class = "add2">  
     <button class = "shop-button", onclick="test()">Description</button>
     </div>
     <div class = "add1">
@@ -29,7 +30,6 @@
     <%end%>
     <%end%>
     <%else%>
-    <%= button_to("Can not Follow", :class => 'dummy-button') %>
     <%end%></div>
   <% if user_signed_in?%>
         <% if current_user.shops.include?(@shop)%>
@@ -45,45 +45,39 @@
         <%end%>
         <%end%>
   </div>
+
+
 <div id= "desc", class = "invisible"><%= @shop.shop_desc %> </div>
 <!-- This is the item showcase of the shop -->
-  <div class = "page">
-  <% if @item!=nil %>
-    <% @item.each do |item| %>
-       <div class ="shop-card2">
-      <div class="screen">
-       <!-- This slider moves on hover --> 
-       <div class="slider">
-          <!-- Section 1 -->
-           <div class="header1">>
-              <% if item.item_attachments.first %>
-          <%= image_tag item.item_attachments.first.photo_url, :size => "150x150" %>
-        <% end %>
-        </div>
-        <!-- Section 2 -->
-        <div class="header2">
-           <div class="actions2">
-        <%= link_to "Show", {:controller => 'item', :action => 'show', :id => item.id}, :class => 'actionshow' %> </div>
-        <%= link_to 'Add to Cart', cart_items_path(item_id: item.id) ,method: :post , :class => 'actionshow' %> <br>
-        <%if user_signed_in? and !reported?(item.id,current_user.id)%>  <!-- Can't Report An Owned Item Or Report Item Twice-->
+    <% if @item!=nil %>
+      <% @item.each do |item| %>
+          <% if item.item_attachments.first %>
+            <div class="arrange_o">
+              <ul class="gallery_o">
+                <li><%= image_tag item.item_attachments.first.photo_url, :size => "150x250" %></li>
+          <% end %></ul></div>
+                  <span class="name_o">
+                  <span class="title_o"><p class="art-name"> <%= item.item_name %> </p></span>
+                    <%= link_to "Show",  {:controller => 'item', :action => 'show', :id => item.id}, :class => 'actionshow_o' %> 
           <% if !current_user.shops.include?(@shop)%>
-           <%= link_to 'Report Item' ,{:controller => 'item', :action => 'report', :id => item.id} , :class => 'actionshow'%>
+                    <%= link_to 'Add to Cart', cart_items_path(item_id: item.id) ,method: :post , :class => 'actioncart_o' %>
           <%end%>
+        <%if user_signed_in? and !reported?(item.id,current_user.id)%>  <!-- Can't Report An Owned Item Or Report Item Twice-->
+            <% if !current_user.shops.include?(@shop)%>
+                <%= link_to 'Report Item' ,{:controller => 'item', :action => 'report', :id => item.id} , :class => 'actionshow_o'%>
+            <%end%>
         <%end%>
    <!--    The edit and delete buttons won't appear if the user is not signed in or doesnt own the shop -->
-        <% if user_signed_in? %>
-        <% if current_user.shops.include?(@shop)%> |
-            <div class="actions2"> <%= link_to "Edit", {:controller => 'item', :action => 'edit', :id => item.id,:shop_id => @shop.id}, :class => 'actionedit' %>  </div>
-           <div class="actions2">  <%= link_to "Delete", {:controller => 'item', :action => 'delete', :id => item.id, :shop_id => @shop.id}, :class => 'actiondelete' %> </div>    
-        
-        </div>
-    </div>
-</div>
-     <p class="art-name"> <%= item.id %> </p>
-    </div>
+                      <% if user_signed_in? %>
+                        <% if current_user.shops.include?(@shop)%> 
+                         <%= link_to "Edit", {:controller => 'item', :action => 'edit', :id => item.id,:shop_id => @shop.id}, :class => 'actionedit_o' %> 
+                          <%= link_to "Delete", {:controller => 'item', :action => 'delete', :id => item.id, :shop_id => @shop.id}, :class => 'actiondelete_o' %>   
+                        <%end%>
+                     <%end%>
+    </span></li>
+    </ul>
+           </div>  
+      <%end%>
     <%end%>
-    <%end%>
-    <%end%>
-    <%end%>
-  </div>
 
+</div>

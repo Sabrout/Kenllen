@@ -5,13 +5,13 @@ class ApplicationController < ActionController::Base
   before_action :configure_permitted_parameters, if: :devise_controller?
   before_filter :banned?
   helper_method :reported?
-	def configure_permitted_parameters
-    	devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:uname, :email, :fname, :lname, :phone, :password ,:password_confirmation , :email_confirmation) }
-    	devise_parameter_sanitizer.for(:sign_in) { |u| u.permit(:uname, :password, :remember_me) }
+  def configure_permitted_parameters
+      devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:uname, :email, :fname, :lname, :phone, :password ,:password_confirmation , :email_confirmation) }
+      devise_parameter_sanitizer.for(:sign_in) { |u| u.permit(:uname, :password, :remember_me) }
       devise_parameter_sanitizer.for(:account_update) { |u| u.permit(:reports , :banned) }
   end
 
-      def banned?
+      def banned? # check if a user is banned or not and kicks him/her in case column ban has true value in it
         if current_user.present? && current_user.banned
           sign_out current_user
            redirect_to root_path, :notice => "This account has been suspended...."
