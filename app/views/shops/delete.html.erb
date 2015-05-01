@@ -1,13 +1,14 @@
-
-
-<div class="create">
-	<h2>Delete Shop "<%= @shop.shop_name %>" </h2>
-
-	<%= form_for(:shop, :url => {:action => 'destroy', :id => @shop.id}, :class => 'create') do |f| %>
+<div class = "form-card">
+	<div class = "form-back">
+		<%= link_to("<< Back", {:action => 'show', :id => @shop.id}, :class => 'form-back') %>
+	</div>
+	<div class = "form-title">Delete <%= @shop.shop_name %>? </div>
+	<img src="<%= @shop.cover_url.to_s %>" style="width:200px;height:200px" class = "form-image">
+	<%= form_for(:shop, :url => {:action => 'destroy', :id => @shop.id}) do |f| %>
 	<p>Are you sure you want to permanently delete this shop?</p>
 
-	<div class="form-buttons">
-		<%= submit_tag("Delete Shop", :class => "button") %>
+	<div>
+		<%= submit_tag("Delete Shop", :class => "form-button") %>
 	</div>
 
 	<% end %>

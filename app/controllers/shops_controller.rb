@@ -4,6 +4,14 @@ class ShopsController < ApplicationController
   	@shops = Shop.sorted
   end
 
+  def search
+    # Searches for a shop
+    if !params[:query].empty?
+      @shops = Shop.search(params[:query])
+      @items = Item.search(params[:query])
+    end
+  end
+
   def follow
     # Adds the shop to the current user's followed shops
     @current_user = current_user
@@ -26,8 +34,9 @@ class ShopsController < ApplicationController
 
   def show
   	@shop = Shop.find(params[:id])
-
     @item = @shop.items
+# Client.where("orders_count = ? AND locked = ?", params[:orders], false)
+@categoryOne = @item.where("category = ")
   end
 
   def new
@@ -42,7 +51,7 @@ class ShopsController < ApplicationController
     # Save
     if @shop.save
       # If succeeds, redirect
-      redirect_to(:action => 'index')
+      redirect_to(:controller => 'profile', :action => 'myshops')
       flash[:notice] = "Shop created successfully."
     else
       # If fails, redisplay
@@ -80,17 +89,17 @@ class ShopsController < ApplicationController
 
   def destroy
     # Find an existing object and destroy it
-
+    shop = Shop.find(params[:id])
     if current_user.shops.include?(shop)
-    shop = Shop.find(params[:id]).destroy
-    item = shop.items
-    item.each do |item| 
-    Item.destroy(item)
-    end
-    flash[:notice] = "Shop '#{shop.shop_name}' deleted successfully."
-    redirect_to(:action => 'index')
+    	shop.destroy
+    	item = shop.items
+    	item.each do |item| 
+    	Item.destroy(item)
+    	end
+    	flash[:notice] = "Shop '#{shop.shop_name}' deleted successfully."
+    	redirect_to(:action => 'index')
     else 
-    render 'index'
+    	render 'index'
     end
   end
 

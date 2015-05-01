@@ -1,29 +1,26 @@
+<div class = "form-card">
+<div class = "form-back"><%= link_to("Back", {:action => 'index'}, :class => 'form-back') %></div>
+<div class = "form-title">Create New Shop</div>
 
-<%= link_to("<<", {:action => 'index'}, :class => 'back') %>
+<%= form_for(:shop, :url => {:action => 'create'}, :class => 'form-new') do |f| %>
 
-<div class = "create">
-
-<h2>Create Shop</h2>
-
-<%= form_for(:shop, :url => {:action => 'create'}, :class => 'create') do |f| %>
-
-	<table> 
+	<table class = 'form-fields'> 
 	<tr>
-		<th>Shop Name</th>
-		<td><%= f.text_field(:shop_name) %></td>
+		<th class = 'form-attr'>Shop Name</th>
+		<td><%= f.text_field(:shop_name, :class => 'form-tf') %></td>
 	</tr>
 	<tr>
-		<th>Shop Description</th>
-		<td><%= f.text_field(:shop_desc) %></td>
+		<th class = 'form-attr'>Shop Description</th>
+		<td><%= f.text_area(:shop_desc, :class => 'form-ta') %></td>
 	</tr>
 	<tr>
-		<th>Shop Cover</th>
-		<td><%= f.file_field(:cover) %></td>
-	</tr>	
+		<th class = 'form-attr'>Shop Cover</th>
+		<td><%= f.file_field(:cover, :class => 'form-upload') %></td>
+	</tr>
 	</table>
-
 	<div >
-		<%= submit_tag("Create Shop", :class => 'button')%>
+		<%= submit_tag("Create Shop", :class => 'form-button')%>
 	</div>
+
 	<% end %>
 </div>

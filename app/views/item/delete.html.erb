@@ -1,12 +1,12 @@
-<%= link_to("<< Back To List", {:action => 'index'}, :class => 'back-link') %>
-<div class="create">
-	<h2>Delete Item</h2>
-
-	<%= form_tag({:action => 'destroy', :id => @item.id}) do %> <!-- this div contain button to delete and the name of item -->
-	<p class="alert">Are you sure you want to delete this Item?</p>
-	<p class=> <%= @item.item_name%> </p>
+<div class = "form-card">
+<div class = "form-back"><%= link_to("Back", {:controller => 'shops', :action => 'show', :id => @shop.id}, :class => 'form-back') %></div>
+	<div class = "form-title">Delete Item</div>
+	<%= form_for(:item, :url => {:action => 'destroy', :id => @item.id, :shop_id => @shop.id}) do %>
+	<!-- this div contain button to delete and the name of item -->
+	<div>Are you sure you want to delete this Item?</div>
+	<div> <%= @item.item_name %> </div>
 	<div>
-		<%= submit_tag("Delete") %>
+		<%= submit_tag("Delete", :class => "form-button") %>
 	</div>
 	<% end %>
 </div>
