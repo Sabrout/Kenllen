@@ -203,7 +203,7 @@ AUTHOR: Tarek
 .search-tf{
 	width: 350px;
     padding:8px 15px;
-    background:rgba(50, 50, 50, 0.2);
+    background:rgba(30, 30, 30, 0.7);
     border:0px solid #dbdbdb;
 }
 
@@ -221,9 +221,18 @@ AUTHOR: Tarek
     color:#E9573F;
 }
 
+
 /*
 */
 
+/*
+#222222 dark gray
+#2f2f2f light gray
+#EEC900 yellow
+#aa5351 red
+#7b911f green
+#5a9ea2 blue
+*/
 
 /*
 CSS For Forms
@@ -251,11 +260,11 @@ AUTHOR: Tarek
 	text-align: left;
 	margin-top: -2%;
 	text-decoration: none;
-	color: #E9573F;
+	color: #aa5351;
 }
 
 .form-back:hover {
-	color: #ffb296;
+	color: #2f2f2f;
 }
 
 .form-title {
@@ -281,7 +290,8 @@ AUTHOR: Tarek
 	margin: 1%;
 	width: 90%;
     padding:8px 15px;
-    background:rgba(30, 30, 30, 0.7);
+    margin-left: 10px;
+    background:rgba(50, 50, 50, 0.2);
     border:0px solid #dbdbdb;
 }
 
@@ -311,14 +321,15 @@ AUTHOR: Tarek
 	position:relative;
     padding:6px 15px;
     left:-8px;
-    border:2px solid #EEC900;
-    background-color:#EEC900;
-    color:#222;
+    border:2px solid #aa5351;
+    background-color:#aa5351;
+    color:#fafafa;
+    margin-top: 5%;
 }
 
-.search-button:hover {
-    background-color:#c5a600;
-    color:#fff;
+.form-button:hover {
+	background-color:#fafafa;
+    color:#aa5351;
 }
 
 .form-image {
@@ -328,6 +339,18 @@ AUTHOR: Tarek
 	-webkit-box-shadow: 0px 0px 15px 0px rgba(160,160,160,1);
 	-moz-box-shadow: 0px 0px 15px 0px rgba(160,160,160,1);
 	box-shadow: 0px 0px 15px 0px rgba(160,160,160,1);
+}
+
+.form-text {
+	text-align: center;
+	text-decoration: none;
+	color: #5a9ea2;
+}
+
+.form-text:hover {
+	text-align: center;
+	text-decoration: none;
+	color: #ADD8E6;
 }
 
 /*
