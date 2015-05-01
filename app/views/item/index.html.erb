@@ -24,11 +24,20 @@
     </div>
     <% end %>
      <div>
-      <p>Filter by Category</p>
-      <%= form_tag(:url => {:controller => 'item', :action => 'filterCategories'}) do %>
-      <%= select_tag 'category', options_for_select([['category one', 'Category One'], ['category two', 'Category TWO']]) %>
-      <%= submit_tag "Filter" %>
-      <% end %>
+
+      <%= form_for :item, :url => {:action => 'filterCategories'} , :html => { :multipart => true } do |f| %>
+      <table summary="Item form fields">
+      <th>Filter by Category</th>    
+      <td>
+      <%= f.select :category, options_for_select([['Category One', 'Category One'], ['Category Two', 'Category Two'], ['Category Three', 'Category Three']], {:prompt => "Please select"}) %>
+      </td>
+  </table>
+
+  <div class="form-button">
+    <%= submit_tag("Filter", :class => 'button') %>
+  </div>
+
+  <% end %>
     </div>
   </div>
 </div>
