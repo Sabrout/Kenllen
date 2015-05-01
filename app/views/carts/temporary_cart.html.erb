@@ -1,18 +1,16 @@
 <html>
 <body>
-	
-<div class="content-helper"><!--Big Container-->
-		<%if @cart.empty?%><!--checks if the cart is empty-->
-			<div class="item-body">
+	<%if @cart.empty?%><!--checks if the cart is empty-->
+			<div class="content-helper">
 				 <h2 class="empty-cart"> Your Cart Is Empty </h2>
 			</div>	
 		<%else%>
-			<%= button_to 'Clear Cart' , {action: :destroy} ,  method: :delete , class: 'cart-button'%>
+			<%= button_to 'Clear Cart' , {action: :destroy} ,  method: :delete , class: 'clear'%>
 			<!--CLEAR BUTTON-->
 		<%end%>
-		<%=button_to 'Continue Shopping' ,root_path , class: 'cart-button' , method: :get%><!-- Continue BuTTON -->
+		<%=button_to 'Continue Shopping' , {:controller => '/shops' , method: :get}, class: 'Continue' %><!-- Continue BuTTON -->
 
-			<button class="cart-button " onclick="myFunction()">Checkout</button> 
+			<button class="checkout" onclick="myFunction()">Checkout</button> 
 			<script>
 				function myFunction() {
     				alert("You Must LogIn First");
@@ -20,6 +18,7 @@
 					}
 			</script>
 			<!-- CHECKOUT BuTTON -->
+<div class="content-helper"><!--Big Container-->
 		<%@cart.each do |cart_item|%><!--List All Cart Items-->
 		<div class="item-body">
 			<%if cart_item[1][6] %>
@@ -38,9 +37,9 @@
 					<label class="item-label">Quantity:</label><%= f.text_field :quantity , class:'text-field' , value: cart_item[1][1] %> x <span>$<%=cart_item[1][3]%></span> = <span class="price">$</span><span class="price">
 								<%= cart_item[1][5] %>
 								</span>
-	<!--Update Button--><%= f.submit 'Update' , class: 'cart-button-update'%>
+	<!--Update Button--><%= f.submit 'Update' , class: 'update'%>
 						<%end%>
-	<!--Delete Button--><%=button_to 'Delete' ,{controller: 'Carts' , action: 'remove_item' , cart_item_id: cart_item[0]}, class: 'cart-button-delete' , method: :delete%>
+	<!--Delete Button--><%=button_to 'Delete' ,{controller: 'Carts' , action: 'remove_item' , cart_item_id: cart_item[0]}, class: 'delete' , method: :delete%>
 
 <!--Item Description-->	<label class="item-label">Description: </label>
 						<span class="item-desc"><%= cart_item[1][2]%></span>

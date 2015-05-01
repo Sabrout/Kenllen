@@ -1,23 +1,20 @@
 <html>
 <body>
-
-<div class="content-helper" id ="cartpage"><!--Big Container-->
-	
-		<%if @cart.cart_items.empty?%> <!--checks if the cart is empty-->
-			<div class="item-body">
+<%if @cart.cart_items.empty?%> <!--checks if the cart is empty-->
+			<div class="content-helper">
 				 <h2 class="empty-cart"> Your Cart Is Empty </h2>
 			</div>
 
 		<%else%>
-				<%= button_to 'Clear Cart' , cart_path(@cart) , method: :delete , class: 'cart-button'%>
+				<%= button_to 'Clear Cart' , cart_path(@cart) , method: :delete , class: 'clear'%>
 			<!--CLEAR BUTTON-->
 
 		<%end%>
 		 <!-- CHECKOUT BuTTON -->
 
-			<button class="cart-button " onclick="myFunction()"><a>Checkout</a></button> 
+			<button class="checkout" onclick="myFunction()"><a>Checkout</a></button> 
 
-			<%=button_to 'Continue Shopping' ,root_path , class: 'cart-button' , method: :get%>
+			<%=button_to 'Continue Shopping' , {:controller => '/shops' , method: :get}, class: 'Continue' %>
 	 <!-- Continue BuTTON -->
 			<script>
 					function myFunction() {
@@ -28,14 +25,15 @@
 	    								}
 									}
 									</script>
+<div class="content-helper" id ="cartpage"><!--Big Container-->
 		<%@cart.cart_items.each do |cart_item|%> <!--List All Cart Items-->
 		
 		<%if cart_item.item.item_attachments.first %>
 		<div class="item-body">
-			<div class="item-image"> <%=image_tag(cart_item.item.item_attachments.first.photo_url, size: "190x120")%> 
+			<div class="item-image"> <%=image_tag(cart_item.item.item_attachments.first.photo_url, size: "190x90")%> 
 			</div>
 			<%else%>
-					<div class="item-image"><img  src="https://www.cs-cart.com/images/thumbnails/5/120/facebook_store_product_v1.png" width="100" ></div>
+					<div class="item-image"><img  src="https://www.cs-cart.com/images/thumbnails/5/120/facebook_store_product_v1.png" width="90" ></div>
 			<%end%>
 				
 			
@@ -45,9 +43,9 @@
 					<label class="item-label">Quantity:</label><%= f.text_field :quantity , class:'text-field' , value: cart_item.quantity %>x<span>$<%=cart_item.item.price%></span> = <span class="price">$</span><span class="price"> <!--Price -->
 								<%= cart_item.total_price %>
 								</span>
-	<!--Update Button--><%= f.submit 'Update' , class: 'cart-button-update'%>
+	<!--Update Button--><%= f.submit 'Update' , class: 'update'%>
 						<%end%>
-    <!--Delete Button--><%=button_to 'Delete' ,{controller: 'CartItems' , action: :destroy , cart_item_id: cart_item.id}, class: 'cart-button-delete' , method: :delete%>
+    <!--Delete Button--><%=button_to 'Delete' ,{controller: 'CartItems' , action: :destroy , cart_item_id: cart_item.id}, class: 'delete' , method: :delete%>
 
 <!--Item Description-->	<label class="item-label">Description: </label>
 						<span class="item-desc"><%= cart_item.item.description%></span>
