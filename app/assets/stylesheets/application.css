@@ -47,7 +47,7 @@ body{
   text-decoration: none;
   font-family:Segoe UI;
   font-weight: bold;
-  transition:all 0.4s ease-in-out;
+  transition:all 0.2s ease-in-out;
   padding:12px;
   text-align: center;
   
@@ -59,7 +59,7 @@ body{
   text-decoration: none;
   font-family:Segoe UI;
   font-weight: bold;
-  transition:all 0.4s ease-in-out;
+  transition:all 0.2s ease-in-out;
   padding:12px;
   text-align: center;
 }
@@ -70,7 +70,7 @@ body{
   text-decoration: none;
   font-family:Segoe UI;
   font-weight: bold;
-  transition:all 0.4s ease-in-out;
+  transition:all 0.2s ease-in-out;
   padding:12px;
   text-align: center;
 }
@@ -81,7 +81,7 @@ body{
   text-decoration: none;
   font-family:Segoe UI;
   font-weight: bold;
-  transition:all 0.4s ease-in-out;
+  transition:all 0.2s ease-in-out;
   padding:12px;
   text-align: center;
 }
