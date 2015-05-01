@@ -1,9 +1,7 @@
-<%= link_to("<< Back To List", {:action => 'index'}, :class => 'back-link') %>
-
 <div class="create">
 	<h2>Update Item</h2>
 
-	<%= form_for(:item, :url => {:action => 'update', :id => @item.id}) do |f| %>
+	<%= form_for(:item, :url => {:action => 'update', :id => @item.id, :shop_id => @shop.id}) do |f| %>
 	
 	<table summary="Item form fields"> <!-- this div contain all fields to edit items -->
 		<tr>
@@ -25,9 +23,10 @@
 		<tr>
 			<th>Delete Images</th>
 			<td>
+				<% @item_attachments = @item.item_attachments %>
 				<% @item_attachments.each do |p| %> <!-- creat table contains all pics for the item to delete it -->
  		 			<%= image_tag p.photo_url, :size => "150x150" %>
-  					<%= link_to "Delete", {:action => 'destroyImage', :id => @item.id, :attachment_id => p.id} %>
+  					<%= link_to "Delete", {:action => 'destroyImage', :id => @item.id, :attachment_id => p.id, :confirm => 'Are you sure ?'} %>
 				<% end %>
 			</td>
 		</tr>

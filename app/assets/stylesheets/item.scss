@@ -4,18 +4,298 @@
 
 }
 .blod{  /*changes the color, font size, and font style of Description of item*/
-	text-align: left;
-	margin-top: 0;
+	text-align: center;
+	margin-top: 2%;
 	color: black;
 	font-size: 200%;
 	font-family: 'Segoe UI';
 }
+.blod_o{  /*changes the color, font size, and font style of price word*/
+  text-align: center;
+  margin-top: 6%;
+  color: black;
+  font-size: 200%;
+  font-family: 'Segoe UI';
+}
 .answer{	/*changes the color, font size, and font style of Description of item*/
-	text-align: left;
-	margin-top: 0;
+  text-align: left;
+	margin-top: 2%;
 	margin-left: 3%;
+  margin-right:3%;
+  margin-bottom:3%;
 	color: red;
-	font-size: 100%;
+	font-size: 150%;
 	font-family: 'Segoe UI';
 
+}
+.page_o{
+	padding-top:3%;
+	padding-left: 3%;
+	padding-right: 3%;
+	background-color:#fefefe;
+	height: 100%;
+	font-family: 'Segoe UI';
+	margin-top: 0.5%;
+	margin-left: 11%;
+	margin-right: 11%;
+	padding-bottom: 5%;
+	overflow: hidden;
+  float: center;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+	box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+
+}
+.page2_o{  
+	padding-top:1%;
+	padding-bottom: 1%;
+	padding-left: 6%;
+	padding-right: 1%;
+	background-color:#fefefe;
+	height: 400px;
+	font-family: 'Segoe UI';
+	margin-top: 0.5%;
+	margin-left: 11%;
+	margin-right: 11%;
+	padding-bottom: 5%;
+	overflow: hidden;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+	box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+
+}
+@-webkit-keyframes left-right {
+  0% {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    left: 100%;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+}
+@keyframes left-right {
+  0% {
+    left: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    left: 100%;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+}
+@-webkit-keyframes right-left {
+  0% {
+    right: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    right: 100%;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+}
+@keyframes right-left {
+  0% {
+    right: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  100% {
+    right: 100%;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+}
+.picture-wall {
+  position: relative;
+}
+
+.picture-wall__list {
+  position: absolute;
+  height: 244px;
+  white-space: nowrap;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+.picture-wall__list:nth-child(1) {
+  top: 0px;
+}
+
+.picture-wall__list:nth-child(2) {
+  top: 247px;
+}
+
+.picture-wall__list:nth-child(3) {
+  top: 494px;
+}
+
+.picture-wall__list:nth-child(4) {
+  top: 741px;
+}
+
+.picture-wall__list:nth-child(5) {
+  top: 988px;
+}
+
+.picture-wall__list:nth-child(6) {
+  top: 1235px;
+}
+
+.picture-wall__list:nth-child(7) {
+  top: 1482px;
+}
+
+.picture-wall__list:nth-child(8) {
+  top: 1729px;
+}
+
+.picture-wall__list:nth-child(9) {
+  top: 1976px;
+}
+
+.picture-wall__list:nth-child(10) {
+  top: 2223px;
+}
+
+.picture-wall__list:nth-child(11) {
+  top: 2470px;
+}
+
+.picture-wall__list:nth-child(12) {
+  top: 2717px;
+}
+
+.picture-wall__list:nth-child(13) {
+  top: 2964px;
+}
+
+.picture-wall__list:nth-child(14) {
+  top: 3211px;
+}
+
+.picture-wall__list:nth-child(15) {
+  top: 3458px;
+}
+
+.picture-wall__list:nth-child(16) {
+  top: 3705px;
+}
+
+.picture-wall__list:nth-child(17) {
+  top: 3952px;
+}
+
+.picture-wall__list:nth-child(18) {
+  top: 4199px;
+}
+
+.picture-wall__list:nth-child(19) {
+  top: 4446px;
+}
+
+.picture-wall__list:nth-child(20) {
+  top: 4693px;
+}
+
+.picture-wall__list--list-type-1 {
+  -webkit-animation: left-right 50s infinite;
+          animation: left-right 50s infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+.picture-wall__list--list-type-1:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.picture-wall__list--list-type-2 {
+  -webkit-animation: right-left 55s infinite;
+          animation: right-left 55s infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+.picture-wall__list--list-type-2:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+.picture-wall__item {
+  display: inline-block;
+  overflow: hidden;
+  height: 400px;
+  box-sizing: border-box;
+  margin-right: 3px;
+}
+
+body {
+  overflow-x: hidden;
+  color: #545454;
+  background: #effec7;
+}
+.art_name_o{ /*change size and color of art name*/
+	color: red;
+	font-family: 'Segoe UI';
+	font-size: 300%;
+	text-align: center;
+	padding-top: 2px;
+	padding-bottom: 5%;
+
+}
+.price_o{ /*styling the price div*/ 
+  border-color: black;
+  background-color: #fefefe; 
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
+  box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
+  transition: box-shadow .30s;
+  float: right;
+  width: 19%;
+  height: 100px;
+}
+.description_o{  /*styling the description div*/
+  border-color: black;
+  background-color: #fefefe; 
+  word-wrap: break-word;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
+  box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
+  transition: box-shadow .30s; 
+  margin-top: 2%;
+  padding-right: auto;
+  padding-top: auto;
+  padding-bottom: auto;
+  float: left;
+  width: 100%;
+  height: auto;
+}
+.inspiration_o{ /*styling the inspiration div*/
+  border-color: black;
+   word-wrap: break-word;
+  background-color: #fefefe; 
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
+  box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
+  transition: box-shadow .30s;
+  height: 100px;
+  float: left;
+  width: 80%;
+}
+.number_o{ /*editing size and color of price*/
+  text-align: center;
+  padding-top: 7%;
+  margin-left: 3%;
+  color: red;
+  font-size: 300%;
+  font-family: 'Segoe UI'; 
 }

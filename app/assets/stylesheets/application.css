@@ -1,59 +1,22 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
  *= require_tree .
  *= require_self
  */
 
-footer{ 
-	font-family: 'Segoe UI';
-	text-align: center;
-	margin-bottom: 10px;
-}
-
-/*Sabrout_Start*/
+/*
+  Start point
+  author:Sabrout
+  */
 
 body{
 padding:0px;
-overflow:hidden;
-background-color: #eff0ec;
+background-color: #222222;
 }
 
 .logo{
   float: left;
-  height: 26px;
 }
 
-/*Nav Bar Style*/
-
-
-/* Responsive Goodness */
-/*html{font-size:100%}
-@-webkit-viewport{width:device-width}
-@-moz-viewport{width:device-width}
-@-ms-viewport{width:device-width}
-@-o-viewport{width:device-width}
-@viewport{width:device-width}
-html{overflow-y:auto;}
-img,video{max-width:100%;height:auto;}
-img{-ms-interpolation-mode: bicubic;}
-*/
-/* Box Sizing */
-/**,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}*/
-
-/*.clearfix:before,.clearfix:after{content:" ";display:table}
-.clearfix:after{clear:both}
-.clearfix{*zoom:1}
-*/
 .container {
   margin: 0 auto;
   max-width: 1200px;
@@ -64,21 +27,6 @@ img{-ms-interpolation-mode: bicubic;}
   background-color: #fafbf9;
   height: 20px;
 }
-
-/*.search-wrap {
-  background-color: #fafbf9; 
-  height: 60px;
-}
-*/
-/*.search-wrap input {
-  background-color: #fafbf9;
-  border: none;
-  font-family:Segoe UI;
-  color: #0B424C;
-  padding: 1.875rem 0;
-  width: 100%;  
-  height: 60px;
-}*/
 
 .nav-bar {
   padding: 0.625em 0;   
@@ -92,81 +40,183 @@ img{-ms-interpolation-mode: bicubic;}
   margin-left: 30%;
 }
 
-/*.toggle-search {
+.navbar-mail{
   text-transform: uppercase;
-  color: #000;
+  color: #EEC900;
   text-decoration: none;
   font-family:Segoe UI;
-  transition:all 0.4s ease-in-out;
-  padding:12px;
-  text-transform: uppercase;
-  text-align: center;
-  
-}*/
-
-.navbar-element {
-  text-transform: uppercase;
-  color: #df40e7;
-  text-decoration: none;
-  font-family:Segoe UI;
+  font-weight: bold;
   transition:all 0.4s ease-in-out;
   padding:12px;
   text-align: center;
   
 }
 
-.login-element {
+.navbar-cart{
+  text-transform: uppercase;
+  color: #aa5351;
+  text-decoration: none;
+  font-family:Segoe UI;
+  font-weight: bold;
+  transition:all 0.4s ease-in-out;
+  padding:12px;
+  text-align: center;
+}
+
+.navbar-browse{
+  text-transform: uppercase;
+  color: #7b911f;
+  text-decoration: none;
+  font-family:Segoe UI;
+  font-weight: bold;
+  transition:all 0.4s ease-in-out;
+  padding:12px;
+  text-align: center;
+}
+
+.navbar-login{
+  text-transform: uppercase;
+  color: #5a9ea2;
+  text-decoration: none;
+  font-family:Segoe UI;
+  font-weight: bold;
+  transition:all 0.4s ease-in-out;
+  padding:12px;
+  text-align: center;
+}
+
+.navbar-mail:hover{
+  
   text-decoration:none;
   color:#fff;
   font-family:Segoe UI;
-  background-color:#e86551;
+  background-color:#EEC900;
   padding:12px 12px 25px 12px;
 }
 
-/*.toggle-search:hover{
+.navbar-cart:hover{
   
   text-decoration:none;
   color:#fff;
   font-family:Segoe UI;
-  background-color:#e86551;
+  background-color:#aa5351;
   padding:12px 12px 25px 12px;
-}*/
+}
 
-.navbar-element:hover{
+.navbar-browse:hover{
   
   text-decoration:none;
   color:#fff;
   font-family:Segoe UI;
-  background-color:#e86551;
+  background-color:#7b911f;
   padding:12px 12px 25px 12px;
 }
 
-.login-element:hover{
+.navbar-login:hover{
   
   text-decoration:none;
   color:#fff;
   font-family:Segoe UI;
-  background-color:#000;
+  background-color:#5a9ea2;
   padding:12px 12px 25px 12px;
 }
 
-/*.toggle-search.active{
- padding:12px 12px 25px 12px; 
- background-color:#e86551;
-  
-}*/
-
-.navbar-element.active{
- padding:12px 12px 25px 12px; 
- background-color:#e86551;
-  
+.a-footer{
+  color: #e5e5e5;
+  text-decoration: none;
 }
 
-/*@media screen and (min-width: 850px) {
-  .search-wrap input {
-    font-size: 1em; 
-  }
-} */
+#footer{
+  margin-bottom: -150px;
+  clear: both;
+}
 
+.tomottoWrap{
+  position: relative;
+  background: #2f2f2f;
+}
 
-/*Sabrout_End*/
+#tomotto{
+  text-align: center;
+  color:#f2f2f2;
+  width: 960px;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.9);
+  line-height: 36px;
+  margin: auto;
+}
+
+.lookWrap{
+  padding-top: 1%;
+  position: relative; 
+  background-color: #222222;
+  float: left;
+  width: 100%;
+}
+
+#look{
+  margin: auto;
+  width: 700px;
+}
+
+.section{
+  overflow: hidden;
+  float: left;
+  display: inline;
+  width: 160px;
+  margin: 0 15px 15px 0;
+  font: 10pt verdana;
+  line-height: 1.6em;
+}
+
+.section h3{
+  font-weight: normal;
+  font: 12pt Georgia;
+  text-transform: uppercase;
+  color: #f2f2f2;
+}
+
+.section a{
+  display: block;
+}
+
+.legality{
+  margin: auto;
+  width: auto;
+  text-align: center;
+  clear: both;
+  font: 10pt Segoe UI;
+  line-height: 2em;
+  padding: 10px 0 0 0;
+  color:#fff;
+  background-color: #2f2f2f;
+}
+
+#reasonable-yellow{
+  color:#EEC900;
+  font-family: Segoe UI;
+  font-size: 1.5em;
+}
+
+#reasonable-red{
+  color:#aa5351;
+  font-family: Segoe UI;
+  font-size: 1.5em;
+}
+
+#reasonable-green{
+  color:#7b911f;
+  font-family: Segoe UI;
+  font-size: 1.5em;
+}
+
+#reasonable-blue{
+  color:#5a9ea2;
+  font-family: Segoe UI;
+  font-size: 1.5em;
+}
+
+/*
+  End point
+  author:Sabrout
+  */

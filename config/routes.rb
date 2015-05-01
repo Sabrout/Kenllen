@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   post 'new' => 'messages#new', as: 'compose'
   post '/' => 'messages#create'
 
+  match '/destroy_image' => 'items#destroyImage', :as => 'destroyImage', via: [:get, :post]
+
 match ':controller(/:action(/:id))', :via  => [:get, :post , :delete]
   
   # The priority is based upon order of creation: first created -> highest priority.
