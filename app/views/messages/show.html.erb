@@ -1,2 +1,17 @@
-<h1>Messages#show</h1>
-<p>Find me in app/views/messages/show.html.erb</p>
+<h1 class = "p">Reply</h1>
+<div class = "dialog">
+<%= form_for :reply, :url => {:action => 'reply', :controller => 'messages'} do |f| %>
+<!-- <%= # f.text_area :user, :placeholder => 'Reciever Name', :size => '50x1' , :class=> 'name'%> -->
+<textarea><%= params[:m_from] %></textarea>
+<br>
+<br>
+<!-- <%= # f.text_area :subject, :placeholder => 'Subject', :size => '50x2' , :class=> 'sub'%> -->
+<textarea><%= params[:m_sub] %></textarea>
+<br>
+<br>
+<%= f.text_area :body, :placeholder => 'Message Body', :size => '50x20' , :class=> 'body'%>
+<br>
+<br>
+<%= f.submit 'Reply' , :class=> 'send'%>
+<% end %>
+</div>

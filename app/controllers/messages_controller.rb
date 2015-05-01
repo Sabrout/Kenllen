@@ -19,9 +19,6 @@ class MessagesController < ApplicationController
     end
   end
 
-  def trash
-  end
-
   def send_trash
     # retreives the message ID passed from inbox view and sends it to trash
     @message = current_user.received_messages.find(params[:m_id])
@@ -42,6 +39,16 @@ class MessagesController < ApplicationController
   		current_user.send_message(@receiver, params[:compose][:subject], params[:compose][:body])
   		redirect_to inbox_path
   	end
+  end
+
+  def show
+
+    current_user.received_messages.find(params[:m_id]).open
+    
+  end
+
+  def reply
+
   end
 
 end

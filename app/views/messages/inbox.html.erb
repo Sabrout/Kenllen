@@ -24,7 +24,7 @@
 			<%= m.topic %>
 		</td>
 		<td class = "txt">
-			<%= m.body %>
+			<%= link_to m.body, {:action => 'show', :m_body => m.body, :m_id => m.id, :m_from => m.from.uname, :m_sub => m.topic} %>
 		</td>
 		<!-- adds the delete button that calls a method to sent this message to trash -->
 		<td class = "txt">
