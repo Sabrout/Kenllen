@@ -20,9 +20,9 @@ class ItemController < ApplicationController
 
   def report 
     # report the item
-    ItemReports.create(user_id:current_user.id,item_id:params[:id])
+    ItemReport.create(user_id:current_user.id,item_id:params[:id])
     flash[:notice] = "Item Reported Successfully"
-    if (ItemReports.count(params[:id]) >= 3) # count number of reports for a given item
+    if (ItemReport.count(params[:id]) >= 3) # count number of reports for a given item
       #delete Item
       flash[:notice] = "Item Is now DELETED , thank you for the feedback"
       item = Item.find(params[:id])
