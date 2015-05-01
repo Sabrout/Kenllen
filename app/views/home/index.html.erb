@@ -1,56 +1,48 @@
-<% @page_title = "Home" %> <!--set the page title to home-->
+<% @page_title = "Home" %>
 
   
-    <div id="slider"> <!-- Slider DIV-->
-      <div id="mask"> <!-- Mask DIV-->
-        <ul>
-          <li class="firstanimation">
-            <a href="#">
-            <img class="slideImage" src="http://cdn.twitrcovers.com/wp-content/uploads/2013/08/Paintings-Castles-l.jpg" alt="Castle"/>
-            </a>
-          </li>
-          <li class="secondanimation">
-            <a href="#">
-            <img class="slideImage" src="http://cdn.twitrcovers.com/wp-content/uploads/2013/10/Paintings-Clouds-l.jpg" alt="Clouds"/>
-            </a>
-          </li>
-          <li class="thirdanimation">
-            <a href="#">
-            <img class="slideImage" src="http://cdn.twitrcovers.com/wp-content/uploads/2012/11/Paintings-Dark-l.jpg" alt="China"/>
-            </a>
-          </li>           
-          <li class="fourthanimation">
-            <a href="#">
-            <img class="slideImage" src="https://bizarrocentral.files.wordpress.com/2013/06/seekoenig.jpg" alt="Budda"/>
-            </a>
-          </li>
-          <li class="fifthanimation">
-            <a href="#">
-            <img class="slideImage" src="http://cdn.twitrcovers.com/wp-content/uploads/2014/03/Paintings-Sci-Fi-l.jpg" alt="SciFi"/>
-            </a>
-          </li>
-        </ul>
-      </div> 
-      <div id="progressbar">
-      </div>
-    </div>
-  
-
-<% if user_signed_in? %> 
-<div class ="pp">
-  <h2>WELCOME</h2> <br>
-<h4><%=@current_user.uname%> </h4>
-</div>
-<%end%>
- <div class = "page">
-    <% @items.each do |item| %> <!--diplay of all items in all shops-->
-    <div class ="shop-card">
-      <div><%= item.id %></div>
-      <div><%= item.item_name %></div>
-      <div class="actions">
-        <%= link_to "Show", {:action => 'show', :id => item.id, :controller => 'item'}, :class => 'actionshow' %>   
-        </div>
-    </div>
-    <% end %>
+<div id="slider"> 
+  <div id="mask">
+    <ul>
+      <li class="firstanimation">
+        <a href="#">
+        <img class="slideImage" src="http://cdn.twitrcovers.com/wp-content/uploads/2013/08/Paintings-Castles-l.jpg" alt="Castle"/>
+        </a>
+      </li>
+      <li class="secondanimation">
+        <a href="#">
+        <img class="slideImage" src="http://cdn.twitrcovers.com/wp-content/uploads/2013/10/Paintings-Clouds-l.jpg" alt="Clouds"/>
+        </a>
+      </li>
+      <li class="thirdanimation">
+        <a href="#">
+        <img class="slideImage" src="http://cdn.twitrcovers.com/wp-content/uploads/2012/11/Paintings-Dark-l.jpg" alt="China"/>
+        </a>
+      </li>           
+      <li class="fourthanimation">
+        <a href="#">
+        <img class="slideImage" src="https://bizarrocentral.files.wordpress.com/2013/06/seekoenig.jpg" alt="Budda"/>
+        </a>
+      </li>
+      <li class="fifthanimation">
+        <a href="#">
+        <img class="slideImage" src="http://cdn.twitrcovers.com/wp-content/uploads/2014/03/Paintings-Sci-Fi-l.jpg" alt="SciFi"/>
+        </a>
+      </li>
+    </ul>
+  </div> 
+  <div id="progressbar">
   </div>
+</div>
+<div class = "page">
+  <% @items.each do |item| %> <!--diplay of all items in all shops-->
+  <div class ="shop-card">
+    <div><%= item.id %></div>
+    <div><%= item.item_name %></div>
+    <div class="actions">
+      <%= link_to "Show", {:action => 'show', :id => item.id, :controller => 'item'}, :class => 'actionshow' %>   
+    </div>
+  </div>
+  <% end %>
+</div>
 
