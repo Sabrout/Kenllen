@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  post '/rate' => 'rater#create', :as => 'rate'
   resources :cart_items
   resources :carts
   resources :item_attachments
@@ -6,9 +7,17 @@ Rails.application.routes.draw do
   devise_for :users
   root 'home#index'
 
-  get 'inbox' => 'messages#inbox', as: 'inbox'
-  post 'new' => 'messages#new', as: 'compose'
-  post '/' => 'messages#create'
+  get '/messages/inbox' => 'messages#inbox', as: 'inbox'
+  get '/messages/sentbox' => 'messages#sentbox', as: 'sentbox'
+  get '/messages/trash' => 'messages#trash', as: 'trash'
+  get '/messages/new' => 'messages#new', as: 'compose'
+  post '/messages/inbox' => 'messages#inbox'
+  post '/messages/sentbox' => 'messages#sentbox'
+  post '/messages/new' => 'messages#new'
+  post '/messages/create' => 'messages#create'
+  post '/messages/trash' => 'messages#trash'
+
+  match '/destroy_image' => 'items#destroyImage', :as => 'destroyImage', via: [:get, :post]
 
 match ':controller(/:action(/:id))', :via  => [:get, :post , :delete]
   

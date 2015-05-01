@@ -1,50 +1,56 @@
-<%= link_to("<< Back To List", {:action => 'index'}, :class => 'back-link') %>
+<div class = "form-card">
+<div class = "form-back"><%= link_to("Back", {:action => 'index'}, :class => 'form-back') %></div>
+	<div class = "form-title">Update Item</div>
 
-<div class="create">
-	<h2>Update Item</h2>
-
-	<%= form_for(:item, :url => {:action => 'update', :id => @item.id}) do |f| %>
+	<%= form_for(:item, :url => {:action => 'update', :id => @item.id, :shop_id => @shop.id}) do |f| %>
 	
 	<table summary="Item form fields"> <!-- this div contain all fields to edit items -->
 		<tr>
-			<th>Name</th>
-			<td><%= f.text_field(:item_name) %></td>
+			<th class = 'form-attr'>Name</th>
+			<td><%= f.text_field(:item_name, :class => 'form-tf') %></td>
 		</tr>
 		<tr>
-			<th>Price</th>
-			<td><%= f.text_field(:price) %></td>
+			<th class = 'form-attr'>Price</th>
+			<td><%= f.text_field(:price, :class => 'form-tf') %></td>
 		</tr>
 		<tr>
-			<th>Description</th>
-			<td><%= f.text_field(:description) %></td>
+			<th class = 'form-attr'>Description</th>
+			<td><%= f.text_field(:description, :class => 'form-ta') %></td>
 		</tr>
 		<tr>
-			<th>Inspiration</th>
-			<td><%= f.text_field(:inspiration) %></td>
+			<th class = 'form-attr'>Inspiration</th>
+			<td><%= f.text_field(:inspiration, :class => 'form-ta') %></td>
 		</tr>
 		<tr>
-			<th>Delete Images</th>
+			<th class = 'form-attr'>Delete Images</th>
 			<td>
+				<% @item_attachments = @item.item_attachments %>
 				<% @item_attachments.each do |p| %> <!-- creat table contains all pics for the item to delete it -->
  		 			<%= image_tag p.photo_url, :size => "150x150" %>
-  					<%= link_to "Delete", {:action => 'destroyImage', :id => @item.id, :attachment_id => p.id} %>
+  					<%= link_to "Delete", {:action => 'destroyImage', :id => @item.id, :attachment_id => p.id, :confirm => 'Are you sure ?'} %>
 				<% end %>
 			</td>
 		</tr>
 		<tr>
-			<th>Add Images</th>
+			<th class = 'form-attr'>Add Images</th>
 			<td>
 			<%= f.fields_for :item_attachments do |i| %>
      			<div class="field">
-       				<%= i.file_field :photo, :multiple => true, name: "item_attachments[photo][]" %>
+       				<%= i.file_field :photo, :multiple => true, name: "item_attachments[photo][]", :class => 'form-upload' %>
      			</div>
    			<% end %>
    			</td>
+   			<tr>
+			<th class = 'form-attr'>Change Category</th>    
+     		<td>
+      			<%= f.select :category, options_for_select([['Category One', 'Category One'], ['Category Two', 'Category Two'], ['Category Three', 'Category Three']], {:prompt => "Please select"}) %>
+      		</td>
+		</tr>
 		</tr>
 	</table>
 
-	<div class="form-button">
-		<%= submit_tag("Update Item", :class => 'button') %>
+	<div>
+		<%= submit_tag("Update Item", :class => 'form-button') %>
 	</div>
 
 	<% end %>

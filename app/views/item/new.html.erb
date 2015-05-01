@@ -1,51 +1,45 @@
-<%= link_to("<< Back To List", {:action => 'index'}, :class => 'back-link') %>
-
-<div class="create">
-	<h2>Create Item</h2>
-
+<div class = "form-card">
+<div class = "form-back"><%= link_to("Back", {:controller => 'shops', :action => 'show', :id => @shop.id}, :class => 'form-back') %></div>
+	<div class = "form-title">Create Item</div>
 	<%= form_for :item, :url => {:action => 'create', :shop_id => @shop.id} , :html => { :multipart => true } do |f| %>
 	
-	<table summary="Item form fields">
+	<table>
 		<tr>
-			<th>Name</th>
-			<td><%= f.text_field(:item_name) %></td>
+			<th class = "form-attr">Name</th>
+			<td ><%= f.text_field(:item_name, :class => "form-tf") %></td>
 		</tr>
 		<tr>
-			<th>Price</th>
-			<td><%= f.text_field(:price) %></td>
+			<th class = "form-attr">Price</th>
+			<td><%= f.text_field(:price, :class => "form-tf") %></td>
 		</tr>
 		<tr>
-			<th>Description</th>
-			<td><%= f.text_field(:description) %></td>
+			<th class = "form-attr">Description</th>
+			<td><%= f.text_area(:description, :class => "form-ta") %></td>
 		</tr>
 		<tr>
-			<th>Inspiration</th>
-			<td><%= f.text_field(:inspiration) %></td>
+			<th class = "form-attr">Inspiration</th>
+			<td><%= f.text_area(:inspiration, :class => "form-ta") %></td>
 		</tr>
 		<tr>
-			<th>Category</th>
+			<th class = "form-attr">Category</th>
 			<td>
-			<select>
-    			<option value="" disabled="disabled" selected="selected">Please select a category</option>
-    			<option value="1">Category One</option>
-    			<option value="2">Category Two</option>
-			</select>
+			<%= f.select :category, options_for_select([['Category One', 'Category One'], ['Category Two', 'Category Two'], ['Category Three', 'Category Three']], {:prompt => "Please select"}), :class => "form-ta" %>
 			</td>
 		</tr>
 		<tr>
-			<th>Art Images</th>
+			<th class = "form-attr">Art Images</th>
 			<td>
 			<%= f.fields_for :item_attachments do |i| %>
      			<div class="field">
-       				<%= i.file_field :photo, :multiple => true, name: "item_attachments[photo][]" %>
+       				<%= i.file_field :photo, :multiple => true, name: "item_attachments[photo][]", :class => "form-upload" %>
      			</div>
    			<% end %>
    			</td>
 		</tr>
 	</table>
 
-	<div class="form-button">
-		<%= submit_tag("Create Item", :class => 'button') %>
+	<div>
+		<%= submit_tag("Create Item", :class => 'form-button') %>
 	</div>
 
 	<% end %>
