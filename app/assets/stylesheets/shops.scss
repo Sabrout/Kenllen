@@ -1,11 +1,21 @@
+/*
+#222222 dark gray
+#2f2f2f light gray
+#EEC900 yellow
+#aa5351 red
+#7b911f green
+#5a9ea2 blue
+*/
 
 .pagetitle{ /*changes the color, font size, and font style of the title of every page*/
-	color: black;
-	text-align: center;
+	color: white;
+	margin-left: 12%;
 	margin-top: 5%;
 	font-size: 220%;
 	font-family: 'Segoe UI';
+	font-size: 400%;
 }
+
 h2{
 	margin-top: 1%;
 }
@@ -34,12 +44,11 @@ body{  /*defines the background color of all the page of the website*/
 	padding-left: 6%;
 	padding-right: 1%;
 	background-color:#fefefe;
+	height: 100%;
 	font-family: 'Segoe UI';
-	height: 400px;
-	margin-top: 5%;
+	margin-top: 0.5%;
 	margin-left: 11%;
 	margin-right: 11%;
-	text-align: center;
 	padding-bottom: 5%;
 	overflow: hidden;
 	-webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
@@ -137,7 +146,188 @@ margin-top: 0%;
 .add{
 	text-align: center;	
 }
-.actions{ /*changes the background color of the three buttons (show, edit, delete)*/
+
+.create-button {
+	position:relative;
+    padding:6px 15px;
+    left:-8px;
+    border:2px solid #E9573F;
+    background-color:#E9573F;
+    color:#fafafa;
+}
+
+.create-button:hover {
+	background-color:#fafafa;
+    color:#E9573F;
+}
+
+/*
+CSS For the Search Text Field
+AUTHOR: Tarek
+*/
+
+.search-field {
+	text-align: center;
+	margin-top: -2%;
+	opacity: 0.85;
+	/*background-color: black;*/
+}
+
+.search-field2 {
+	text-align: right;
+	margin-top: -1%;
+	margin-bottom: 1%;
+	margin-right: 12%;
+	opacity: 0.85;
+}
+
+.search-form {
+	width:500px;
+    margin:50px auto;
+}
+
+.search-tf{
+	width: 350px;
+    padding:8px 15px;
+    background:rgba(50, 50, 50, 0.2);
+    border:0px solid #dbdbdb;
+}
+
+.search-button {
+    position:relative;
+    padding:6px 15px;
+    left:-8px;
+    border:2px solid #E9573F;
+    background-color:#E9573F;
+    color:#fafafa;
+}
+
+.search-button:hover {
+    background-color:#fafafa;
+    color:#E9573F;
+}
+
+/*
+*/
+
+
+/*
+CSS For Forms
+AUTHOR: Tarek
+*/
+
+.form-card {
+	text-align: center;
+	margin-right: 34%;
+	margin-left:34%;
+	margin-top: 5%;
+	margin-bottom: 3%;
+	font-size: 120%;
+	padding:2%;
+	background-color: black;
+	background-color: #fefefe;
+	font-family: 'Segoe UI';
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+	box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+	font-weight: normal;
+}
+
+.form-back {
+	text-align: left;
+	margin-top: -2%;
+	text-decoration: none;
+	color: #E9573F;
+}
+
+.form-back:hover {
+	color: #ffb296;
+}
+
+.form-title {
+	margin-bottom: 6%;
+	margin-top: 2%;
+	font-size: 150%;
+	font-weight: normal;
+}
+
+.form-fields {
+	text-align: right;
+}
+
+.form-attr {
+	width: 150px;
+	font-style: none;
+	text-align: left;
+	font-weight: normal;
+	vertical-align: top;
+}
+
+.form-tf {
+	margin: 1%;
+	width: 90%;
+    padding:8px 15px;
+    margin-left: 10px;
+    background:rgba(50, 50, 50, 0.2);
+    border:0px solid #dbdbdb;
+}
+
+.form-ta {
+	width: 90%;
+    padding:8px 15px;
+    margin-left: 10px;
+    background:rgba(50, 50, 50, 0.2);
+    border:0px solid #dbdbdb;
+    resize: none;
+}
+
+.form-dropbox {
+	width: 370px;
+    padding:8px 15px;
+    margin-left: 10px;
+    background:rgba(50, 50, 50, 0.2);
+    border:0px solid #dbdbdb;
+}
+
+.form-upload {
+    padding:8px 15px;
+    margin-left: 10px;
+}
+
+.form-button {
+	position:relative;
+    padding:6px 15px;
+    left:-8px;
+    border:2px solid #E9573F;
+    background-color:#E9573F;
+    color:#fafafa;
+    margin-top: 5%;
+}
+
+.form-button:hover {
+	background-color:#fafafa;
+    color:#E9573F;
+}
+
+.form-image {
+	background: white;
+	padding: 1%;
+	margin-bottom: 2%;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(160,160,160,1);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(160,160,160,1);
+	box-shadow: 0px 0px 15px 0px rgba(160,160,160,1);
+}
+
+/*
+*/
+
+.search-res {
+	margin-top: -4%;
+	margin-bottom: 2%;
+	font-size: 200%;
+}
+
+.actions { /*changes the background color of the three buttons (show, edit, delete)*/
 	background-color: #fefefe; 
 }
 
