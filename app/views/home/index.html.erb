@@ -34,6 +34,17 @@
   <div id="progressbar">
   </div>
 </div>
+<div class="search-bar">
+  <div class = 'search-field'>
+      <%= form_tag :action => 'search', :method => 'get', :class => 'search-form' do %>
+        <%= text_field_tag :query, params[:query], :class => 'search-tf' %>
+        <%= submit_tag "Search", :name => nil, :class => 'search-button' %>
+      <% end %>    
+    </div>
+</div>
+<div class="featured-items">
+  <h1>----------------------- Featured Items -----------------------</h1>
+</div>
 <div class = "page">
   <% @items.each do |item| %> <!--diplay of all items in all shops-->
     <div class ="arrange_o">
@@ -43,7 +54,7 @@
         <% end %>
           <span class="name_o">
             <%= link_to "Show", {:action => 'show', :id => item.id, :controller => 'item'}, :class => 'actionshow_o' %>
-            <span class="title_o"><p class="art-name"> <%= item.item_name %> </p></span></span>   
+            <span class="title_o"><div class="art-name"> <%= item.item_name %> </div></span></span>   
           </span>
         </li>
       </ul>

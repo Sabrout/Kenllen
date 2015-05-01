@@ -19,7 +19,8 @@ body{
   min-height:1000px;
   position:relative;
   background-color: #222222;
-}
+  background-image: url("http://cdn01.wallconvert.com/_media/wallpapers_1920x1080/1/1/gray-gradient-9839.jpg");
+} 
 
 .wrapper {
   padding:10px;
@@ -34,7 +35,7 @@ body{
   margin: 0 auto;
   height: 58px;
   width: auto;
-  background-color: #2f2f2f;
+  background-color: #111;
 }
 
 .container {
@@ -42,7 +43,7 @@ body{
   max-width: 1200px;
   height: 58px;
   width: auto;
-  background-color: #2f2f2f;
+  background-color: #111;
   width: 100%;
 }
 
@@ -164,7 +165,7 @@ body{
 .lookWrap{
   padding-top: 1%;
   position: relative; 
-  background-color: #222222;
+  background-color: #111;
   float: left;
   width: 100%;
 }
