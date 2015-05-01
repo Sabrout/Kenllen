@@ -1,0 +1,59 @@
+
+<div class= "pagetitle">Search results for "<%= params[:query] %>"</div>
+<div class = 'search-field2'>
+      <%= form_tag :action => 'search', :method => 'get', :class => 'search-form' do %>
+        <%= text_field_tag :query, params[:query], :class => 'search-tf' %>
+        <%= submit_tag "Search", :name => nil, :class => 'search-button' %>
+      <% end %>    
+    </div>
+
+    <!-- Shops search result -->
+<div class = "page">
+  <div class = "search-res">Shop results</div>
+  <% if @shops != nil %>
+    <% if !@shops.empty? %>
+      <% @shops.each do |shop| %>
+        <div class ="shop-card">
+          <div class = "shop">
+            <img src="<%= shop.cover_url.to_s %>" style="width:200px;height:200px">
+          </div>
+          <div><%= shop.id %></div>
+          <div><%= shop.shop_name %></div>
+          <div class="actions">
+            <%= link_to("Show", {:action => 'show', :id => shop.id}, :class => 'actionshow') %>
+          </div>
+        </div>
+      <% end %>
+    <% else %>
+      <div>No results were found...</div>
+    <% end %>
+  <% else %>
+    <div>No results were found...</div>
+  <% end %>    
+</div>
+
+    <!-- Items search results -->
+<div class = "page">
+  <div class = "search-res">Item results</div>
+  <% if @items != nil %>
+    <% if !@items.empty? %>
+      <% @items.each do |item| %>
+        <div class ="shop-card">
+          <div class = "shop">
+            <!-- This is where the item's image should be added -->
+          </div>
+          <div><%= item.id %></div>
+          <div><%= item.item_name %></div>
+          <div class="actions">
+            <%= link_to("Show", {:controller => 'item', :action => 'show', :id => item.id, :shop_id => item.shop_id}, :class => 'actionshow') %>
+          </div>
+        </div>
+      <% end %>
+    <% else %>
+      <div>No results were found...</div>
+    <% end %>
+  <% else %>
+    <div>No results were found...</div>
+  <% end %>    
+</div>
+
