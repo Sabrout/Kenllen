@@ -120,6 +120,7 @@ hr
 {
   padding: 5% 0 5% 40%;
   background-color: #2F2F2F;
+  color: #F2F2F2;
 }
 
 .content-helper 
@@ -151,7 +152,7 @@ hr
     float: right;
     position: fixed;
     top:90px;
-    right: 170px;
+    right: 375px;
 }
 .clear:hover 
 {
@@ -182,7 +183,7 @@ hr
     float: right;
     position: fixed;
     top: 90px;
-    left: 800px;
+    right: 503px;
 }
 .checkout:hover
 {
@@ -210,10 +211,10 @@ hr
     -webkit-transition: all ease 0.8s;
     -moz-transition: all ease 0.8s;
     transition: all 0.8s ease 0s;
-    float: left;
+    float: right;
     position: fixed;
     top: 90px;
-    left: 170px;
+    right: 170px;
 }
 .Continue:hover 
 {
