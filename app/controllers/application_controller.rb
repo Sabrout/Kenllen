@@ -35,7 +35,7 @@ class ApplicationController < ActionController::Base
       end
 
       def reported?(item_id , user_id) # check if a user has reported this item before
-       return ItemReports.exists?(item_id:item_id , user_id: user_id)
+       return ItemReport.exists?(item_id:item_id , user_id: user_id)
       end
 
       private 
