@@ -6,9 +6,14 @@ Rails.application.routes.draw do
   devise_for :users
   root 'home#index'
 
-  get 'inbox' => 'messages#inbox', as: 'inbox'
-  post 'new' => 'messages#new', as: 'compose'
-  post '/' => 'messages#create'
+  get '/messages/inbox' => 'messages#inbox', as: 'inbox'
+  get 'sentbox' => 'messages#sentbox', as: 'sentbox'
+  get '/messages/trash' => 'messages#trash', as: 'trash'
+  post '/messages/inbox' => 'messages#inbox'
+  post '/messages/sentbox' => 'messages#sentbox'
+  post '/messages/new' => 'messages#new', as: 'compose'
+  post '/messages/create' => 'messages#create'
+  post '/messages/trash' => 'messages#trash'
 
   match '/destroy_image' => 'items#destroyImage', :as => 'destroyImage', via: [:get, :post]
 

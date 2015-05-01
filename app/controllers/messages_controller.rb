@@ -22,7 +22,10 @@ class MessagesController < ApplicationController
   def trash
   end
 
-  def new
+  def send_trash
+    @message = messages.find(params[:m_id])
+    current_user.delete_message(@message)
+    redirect_to trash_path
   end
 
   def create
