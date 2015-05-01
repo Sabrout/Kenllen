@@ -2,7 +2,7 @@
 <div class = "buttons">
 <div><%= button_to 'Compose New', compose_path , :class=> 'button'%> </div> 
 <div><%= button_to 'Inbox', inbox_path , :class=> 'button'%> </div>
-<div><%= button_to 'Sentbox', sentbox_path , :class=> 'button'%> </div>
+<div><%= button_to 'Trash', trash_path , :class=> 'button'%> </div>
 </div>
 <table class = "table">
 	<tr>
@@ -10,7 +10,7 @@
 		<td class = "td">Subject</td>
 		<td class = "td-message">Message</td>
 	</tr>
-	<!-- Loop over all deleted messages and show recipient's name then the subject then the body -->
+	<!-- Loop over all sent messages and show recipient's name then the subject then the body -->
 	<% current_user.sent_messages.each do |m| %>
 	<tr>
 	<% @current_message = m %>
