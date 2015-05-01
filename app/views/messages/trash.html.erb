@@ -11,7 +11,7 @@
 		<td class = "td-message">Message</td>
 	</tr>
 	<!-- Loop over all deleted messages and show recipient's name then the subject then the body -->
-	<% current_user.sent_messages.each do |m| %>
+	<% current_user.deleted_messages.each do |m| %>
 	<tr>
 	<% @current_message = m %>
 		<td class = "txt">
