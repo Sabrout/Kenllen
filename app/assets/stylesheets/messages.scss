@@ -2,31 +2,37 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.table
+{
+	width: 1200px;
+}
 .buttons
 {
-	margin-top: 5.25%;
-	margin-bottom: 1%;
+	margin-top: 50px;
+	margin-bottom: 10px;
 	text-align: center;
 	margin-bottom: 7%;
 	margin-left: 20.1%;
 }
 .h1
 {
-	margin-top: 1%;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
 }
 .button
 {
-	background-color:#eff0ec;
+	background-color:#f0f0f0;
 	border:0;
 	display: inline-block;
 	float: left;
-	background-color:#e86540;
 	padding: 3px;
 	margin: 1px;
 }
 .button:hover
 {
-	 background-color: #3399ff;
+	 background-color: #b6b6b6;
 }
 .table 
 {
@@ -35,25 +41,61 @@
 	width: 60%;
 	margin-bottom: 5%;
 }
-.td
+.td1
 {
-	background-color:#e86540;
-	width: 20%;
-	color: #fff;
-	font-size: 130%;
+	background-color:#EEC900;
+	width: 250px;
+	color: #000;
+	font-size: 22px;
+	font-family: Segoe UI;
+	text-align: center;
 	padding: 3px;
 }
-
-.td-message
+.td2
 {
-	background-color:#e86540;
-	color: #fff;
-	width: 60%;
-	font-size: 130%;
+	background-color:#aa5351;
+	width: 300px;
+	color: #000;
+	font-size: 22px;
+	font-family: Segoe UI;
+	text-align: center;
+	padding: 3px;
+}
+.td3
+{
+	background-color:#7b911f;
+	width: 800px;
+	color: #000;
+	font-size: 22px;
+	font-family: Segoe UI;
+	text-align: center;
+	padding: 3px;
+}
+.td4
+{
+	background-color:#5a9ea2;
+	width: 300px;
+	color: #000;
+	font-size: 22px;
+	font-family: Segoe UI;
+	text-align: center;
+	padding: 3px;
 }
 .txt
 {
-	font-size: 110%;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	color:#000;
+	background-color: #eee;
+	padding: 3px;
+}
+.txt-only
+{
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	color:#000;
 	padding: 3px;
 }
 .name
