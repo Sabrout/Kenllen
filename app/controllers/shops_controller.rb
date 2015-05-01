@@ -51,7 +51,7 @@ class ShopsController < ApplicationController
     # Save
     if @shop.save
       # If succeeds, redirect
-      redirect_to(:action => 'index')
+      redirect_to(:controller => 'profile', :action => 'myshops')
       flash[:notice] = "Shop created successfully."
     else
       # If fails, redisplay

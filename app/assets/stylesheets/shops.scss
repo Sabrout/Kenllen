@@ -1,23 +1,43 @@
-h2 {
+/*
+#222222 dark gray
+#2f2f2f light gray
+#EEC900 yellow
+#aa5351 red
+#7b911f green
+#5a9ea2 blue
+*/
+
+.pagetitle{ /*changes the color, font size, and font style of the title of every page*/
+	color: white;
+	margin-left: 12%;
+	margin-top: 5%;
+	font-size: 220%;
+	font-family: 'Segoe UI';
+	font-size: 400%;
+}
+
+h2{
 	margin-top: 1%;
 }
+
 .myshops-title{
 	float: left;
 	font-size:250%;
 	margin-top: -5%;
+	margin-left: 2%;
 }
 .followed-shops{
 margin-top: 35%;
 clear:both;
-
+margin-left: 8%;
 }
+
 body{  /*defines the background color of all the page of the website*/
 	background-color: #F2F2F2;
 	background-size: cover;
 	height: 100%;
 }
-
-.page { /*changes the color, position , and padding of the white page which will include all the elements in the website*/
+.page{ /*changes the color, position , and padding of the white page which will include all the elements in the website*/
 	/*background: url(index.jpeg);
 	background-size: cover;*/
 	padding-top:6%;
@@ -26,37 +46,33 @@ body{  /*defines the background color of all the page of the website*/
 	background-color:#fefefe;
 	height: 100%;
 	font-family: 'Segoe UI';
-	margin-top: 0.5%;
+	margin-top: 5%;
 	margin-left: 11%;
 	margin-right: 11%;
-	/*text-align: center;*/
-	padding-bottom: 5%;
 	overflow: hidden;
 	-webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
 	-moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
 	box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
 }
+.header{ 
 
-.header { 
 	/*margin-right:5%;*/
 	margin-top:20%;
+	
 }
-
-.k {
+.k{
 	color:#E9573F;
 	margin-left: 15%;
 	font-family: 'Segoe UI';
 	text-decoration: none;
 }
-
-.title { /*writes the knellen at the top of the page, sets the color to white and the font style to segoe*/
+.title{ /*writes the knellen at the top of the page, sets the color to white and the font style to segoe*/
 	margin-left: -.5%;
 	color: black;
 	font-family: 'Segoe UI';
 	text-decoration: none;
-}
-
-.titlebk { /*changes the background of the banner at the top of the page to orange, and also changes its position and edges style*/
+	}
+.titlebk{ /*changes the background of the banner at the top of the page to orange, and also changes its position and edges style*/
 	background-color: white;
 	margin-top:-25px;
 	margin-right:-.4%;
@@ -89,13 +105,20 @@ body{  /*defines the background color of all the page of the website*/
 	font-size: 110%;
 	float: center;	
 }
-
-th { /*styling the heads of the table*/
+th{ /*styling the heads of the table*/
 	padding: .5%;
 	width:28.5%;
 	float: center;
 	/*margin-bottom:-80%;*/
 }
+
+.back:hover{
+		color: #E9573F; 
+		-webkit-box-shadow: 0px 0px 10px 0px rgba(233,87,63,1);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(233,87,63,1);
+	box-shadow: 0px 0px 10px 0px rgba(233,87,63,1);
+}
+
 
 .actionshow, .actionedit, .actiondelete { /*changes the background color, font color , and font style of the three buttons (show, edit, delete)*/
 	color: #E9573F; 
@@ -103,64 +126,24 @@ th { /*styling the heads of the table*/
 	font-family: 'Segoe UI';
 	text-decoration: none;
 }
-
-.back:hover {
-	color: #E9573F; 
-	-webkit-box-shadow: 0px 0px 10px 0px rgba(233,87,63,1);
-	-moz-box-shadow: 0px 0px 10px 0px rgba(233,87,63,1);
-	box-shadow: 0px 0px 10px 0px rgba(233,87,63,1);
-}
-
- .actionshow:hover, .actionedit:hover, .actiondelete:hover { /*changes the background color of the three buttons(show,edit, delete) on hover*/
+ .actionshow:hover, .actionedit:hover, .actiondelete:hover{ /*changes the background color of the three buttons(show,edit, delete) on hover*/
 color:#ffb296;
 }
-
-.title :hover { /*changes the background color of the knellen title on hover
+.title :hover{ /*changes the background color of the knellen title on hover
 	background-color:	#ffb296;*/
 }
 
-.add1 { /*changes the text alignment*/
-	text-align: right;	
-	float: right; 
-	display: inline-block; 
-	margin-top: -.5%;	
-	margin-left: 0.5%;
+.add2{
+margin-top: 25%;
+
 }
 
-.pagetitle { /*changes the color, font size, and font style of the title of every page*/
-	color: black;
-	margin-left: 12%;
-	margin-top: 5%;
-	font-size: 220%;
-	font-family: 'Segoe UI';
-	font-size: 400%;
+.add1{ /*changes the text alignment*/
+	 
+margin-top: 0%;	
 }
-
-.add {
-	text-align: right;	
-	margin-right: 12%;
-}
-
-.search-field {
-	text-align: center;
-	margin-top: -2%;
-	opacity: 0.85;
-	/*background-color: black;*/
-}
-
-.search-field2 {
-	text-align: right;
-	margin-top: -1%;
-	margin-bottom: 1%;
-	margin-right: 12%;
-	opacity: 0.85;
-}
-
-.button {
-	text-align: right;	
-	margin-right: 12%;
-	margin-bottom: 0.30%;
-    opacity: 0.85;
+.add{
+	text-align: center;	
 }
 
 .create-button {
@@ -181,6 +164,21 @@ color:#ffb296;
 CSS For the Search Text Field
 AUTHOR: Tarek
 */
+
+.search-field {
+	text-align: center;
+	margin-top: -2%;
+	opacity: 0.85;
+	/*background-color: black;*/
+}
+
+.search-field2 {
+	text-align: right;
+	margin-top: -1%;
+	margin-bottom: 1%;
+	margin-right: 12%;
+	opacity: 0.85;
+}
 
 .search-form {
 	width:500px;
@@ -211,6 +209,117 @@ AUTHOR: Tarek
 /*
 */
 
+
+/*
+CSS For Forms
+AUTHOR: Tarek
+*/
+
+.form-card {
+	text-align: center;
+	margin-right: 34%;
+	margin-left:34%;
+	margin-top: 5%;
+	margin-bottom: 3%;
+	font-size: 120%;
+	padding:2%;
+	background-color: black;
+	background-color: #fefefe;
+	font-family: 'Segoe UI';
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+	box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+	font-weight: normal;
+}
+
+.form-back {
+	text-align: left;
+	margin-top: -2%;
+	text-decoration: none;
+	color: #E9573F;
+}
+
+.form-back:hover {
+	color: #ffb296;
+}
+
+.form-title {
+	margin-bottom: 6%;
+	margin-top: 2%;
+	font-size: 150%;
+	font-weight: normal;
+}
+
+.form-fields {
+	text-align: right;
+}
+
+.form-attr {
+	width: 150px;
+	font-style: none;
+	text-align: left;
+	font-weight: normal;
+	vertical-align: top;
+}
+
+.form-tf {
+	margin: 1%;
+	width: 90%;
+    padding:8px 15px;
+    margin-left: 10px;
+    background:rgba(50, 50, 50, 0.2);
+    border:0px solid #dbdbdb;
+}
+
+.form-ta {
+	width: 90%;
+    padding:8px 15px;
+    margin-left: 10px;
+    background:rgba(50, 50, 50, 0.2);
+    border:0px solid #dbdbdb;
+    resize: none;
+}
+
+.form-dropbox {
+	width: 370px;
+    padding:8px 15px;
+    margin-left: 10px;
+    background:rgba(50, 50, 50, 0.2);
+    border:0px solid #dbdbdb;
+}
+
+.form-upload {
+    padding:8px 15px;
+    margin-left: 10px;
+}
+
+.form-button {
+	position:relative;
+    padding:6px 15px;
+    left:-8px;
+    border:2px solid #E9573F;
+    background-color:#E9573F;
+    color:#fafafa;
+    margin-top: 5%;
+}
+
+.form-button:hover {
+	background-color:#fafafa;
+    color:#E9573F;
+}
+
+.form-image {
+	background: white;
+	padding: 1%;
+	margin-bottom: 2%;
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(160,160,160,1);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(160,160,160,1);
+	box-shadow: 0px 0px 15px 0px rgba(160,160,160,1);
+}
+
+/*
+*/
+
 .search-res {
 	margin-top: -4%;
 	margin-bottom: 2%;
@@ -221,12 +330,12 @@ AUTHOR: Tarek
 	background-color: #fefefe; 
 }
 
-.shop-card { /*styles all the shop cards by changing the position, font, border style, padding and text alignment*/
+.shop-card{ /*styles all the shop cards by changing the position, font, border style, padding and text alignment*/
 	max-width: 20%;
 	text-align:center;
 	margin-top: 1%;
 	margin-bottom: 5%;
-	margin-left: 1%;
+	margin-left: 2%;
 	margin-right: 1%;
 	padding:1.5%;
 	float: left;
@@ -238,13 +347,13 @@ AUTHOR: Tarek
 	box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
 	transition: box-shadow .30s;
 }
-.shop-card:hover { /*changes the shadow of the shopcard on hover*/
+.shop-card:hover{ /*changes the shadow of the shopcard on hover*/
 	transition: .30s;
 	-webkit-box-shadow: 0px 0px 15px 0px rgba(233,87,63,1);
 	-moz-box-shadow: 0px 0px 15px 0px rgba(233,87,63,1);
 	box-shadow: 0px 0px 15px 0px rgba(233,87,63,1);
 }
-.back { /*styles the back button on all of the pages by changing their color the position, font, border style, padding and text alignment*/
+.back{ /*styles the back button on all of the pages by changing their color the position, font, border style, padding and text alignment*/
 	color: black; 
 	background-color: #f2f2f2; 
 	padding: 0.5%; 
@@ -261,7 +370,7 @@ AUTHOR: Tarek
 	-moz-box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
 	box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
 }
-.create { /*styles (show, edit, delete) cards by changing the position, font, border style, padding and text alignment*/
+.create{ /*styles (show, edit, delete) cards by changing the position, font, border style, padding and text alignment*/
 	margin-right: 40%;
 	margin-left:35%;
 	margin-top: 8%;	
@@ -276,7 +385,7 @@ AUTHOR: Tarek
 	-moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
 	box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);;
 }
-.submit { /*styles all submit buttons in (show, edit, delete) cards*/
+.submit{ /*styles all submit buttons in (show, edit, delete) cards*/
 	color: #F2F6DD; 
 	background-color: #E9573F; 
 	padding: 0.5%; 
@@ -290,7 +399,7 @@ AUTHOR: Tarek
 	font-size: 90%;
 }
 
-.notice { /*styles the flash that appear after the delete or edit command execution*/
+.notice{ /*styles the flash that appear after the delete or edit command execution*/
 	-webkit-box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
 	-moz-box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
 	box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
@@ -300,11 +409,11 @@ AUTHOR: Tarek
 	width: 20%;
 	text-align: center;
 }
-.bold {
+.bold{
 	font-size: 120%;
 	font-style: bold;
 }
-.description {
+.description{
 	-webkit-box-shadow: 0px 0px 2px 0px rgba(160,160,160,1);
 	-moz-box-shadow: 0px 0px 2px 0px rgba(160,160,160,1);
 	box-shadow: 0px 0px 2px 0px rgba(160,160,160,1);
@@ -313,22 +422,26 @@ AUTHOR: Tarek
 	height: 100%;	
 }
 
-.show-shop { /*styles (show, edit, delete) cards by changing the position, font, border style, padding and text alignment*/
+.show-shop{ /*styles (show, edit, delete) cards by changing the position, font, border style, padding and text alignment*/
 	color : black;
-	margin-top: 3%;
-	margin-left: 11%;
-	margin-right: 11%;	
+	margin-top: -8.5%;
+	margin-left: -8.5%;
+	margin-right: 0%;
+	height: 1000px;
+	overflow: hidden;
 	font-size: 120%;
-	text-align: left;
-	padding:1.6%;
+	text-align: center;
+	padding:2%;
 	padding-top: -1%;
+	float:left;
+	display: inline-block;
 	background-color: #D5D5D5; 
 	font-family: 'Segoe UI';
- 	/*-webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
-	-moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
-	box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);*/
+ 	-webkit-box-shadow: 0px 0px 25px 0px rgba(160,160,160,1) inset;
+	-moz-box-shadow: 0px 0px 25px 0px rgba(160,160,160,1) inset;
+	box-shadow: 0px 0px 25px 0px rgba(160,160,160,1) inset;
 }
-.shop-image {
+.shop-image{
 	background: white;
 	padding: 1%;
 	margin-top: 2%;
@@ -340,36 +453,32 @@ AUTHOR: Tarek
 
 
 
-.shop-button {
-	background: white;
-	-webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+.shop-button{
+		background: #D5D5D5;
+/*-webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
 	-moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
-	box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
-  	border-top-left-radius:10px;
-  	border-top-right-radius: 10px;  
-  	font-family: 'Segoe UI';
-  	color: black;
-  	font-weight: bold;
-  	font-size:85%;
-  	padding: 10px 20px 10px 20px;
-  	text-decoration: none;
-  	border: none;
-  	opacity: 0.9;
+	box-shadow: 0px 0px 5px 0px rgba(160,160,160,1); */
+  font-family: 'Segoe UI';
+  color: black;
+  font-weight: bold;
+  font-size:85%;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+  opacity: 0.9;
 
  }
 
-.shop-button:hover {
-  	color: #e95640;
+
+
+
+.shop-button:hover{
+  color: #e95640;
  /*-webkit-box-shadow: 0px 0px 20px 0px rgba(233,87,63,1);
 	-moz-box-shadow: 0px 0px 20px 0px rgba(233,87,63,1);
 	box-shadow: 0px 0px 20px 0px rgba(233,87,63,1);*/
 }
-.shop-name {
-	font-size: 150%;
-	text-align: center;
-	
-}
-.shop-description {
+.shop-description{
 	background-color: white;
 	font-size: 130%;
 	margin-left: 32%;
@@ -380,22 +489,25 @@ AUTHOR: Tarek
 	margin-top: 1%;
 	margin-bottom: 1%;
 	text-align: center;
-	-webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+-webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
 	-moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
 	box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
 
 }
-.invisible {
+.invisible{
 	visibility: hidden;
 }
-.shop-name {
+.shop-name{
 	font-size: 150%;
 	text-align: center;
+	margin-bottom: 5%;
 }
-.shop-owner {
+.shop-owner{
 	font-size: 100%;
 	text-align: center;
+	margin-bottom: 10%;
 }
+
 
 
 
@@ -420,7 +532,7 @@ AUTHOR: Tarek
     overflow:hidden;
     background:white;
 }
-.slider {
+.slider{
     width:300px;
     float:left;
     left:0;
@@ -429,7 +541,7 @@ AUTHOR: Tarek
     transition: all 0.5s ease-in-out;
 }
 
-.header1 {/* change position of text , width and hieght of header and color */
+.header1{/* change position of text , width and hieght of header and color */
     text-align:center;
     width:150px;
     float:left;
@@ -446,16 +558,153 @@ AUTHOR: Tarek
     color:#fff;
     position:relative;
 }
-.actions2 {
+.actions2{
 	color: red;
 	margin-top:2%;
 
 }
-.art-name { /* change color ,size and position of art name*/
+.art-name{ /* change color ,size and position of art name*/
+	margin-top: 2% ;
 	font-size: 100%;
 	text-align: center;
 	color: red;
-	
 }
+.gallery_o {
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+.gallery_o li {
+  width: 270px;
+  min-height: 100%;
+  text-align: center;
+  height: 200px;
+  position: relative;
+  margin: 0 auto;
+  display: inline-block;
+  overflow: hidden;
+  background-color: black;
+}
+.gallery_o li:nth-child(2) img {
+  margin: 0;
+  display: inline-block;
+  float: right;
+}
+.gallery_o li .name_o {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-shadow: rgba(0, 0, 0, 0.7) 1px 1px 5px;
+  color: white;
+  font-weight: lighter;
+  font-size: 20px;
+  letter-spacing: .1em;
+  position: absolute;
+  display: block;
+  top: 40%;
+  left: 0;
+  text-align: center;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+.gallery_o li .name_o .title_o {
+  display: block;
+  text-transform: none;
+  font-style: italic;
+  font-size: 80%;
+  color: rgba(255, 255, 255, 0.7);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+  -moz-transition-duration: 0.9s;
+  -o-transition-duration: 0.9s;
+  -webkit-transition-duration: 0.9s;
+  transition-duration: 0.9s;
+}
+.gallery_o li:hover .name_o {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.6s;
+  -o-transition-duration: 0.6s;
+  -webkit-transition-duration: 0.6s;
+  transition-duration: 0.6s;
+}
+.gallery_o li:hover .title_o {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+.gallery_o li:hover img {
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  background-position: top top;
+  -webkit-filter: grayscale(0.4) blur(2px);
+  filter: grayscale(0.4) blur(2px);
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.8s;
+  -o-transition-duration: 0.8s;
+  -webkit-transition-duration: 0.8s;
+  transition-duration: 0.8s;
+}
+.gallery_o li:hover:hover img {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+.gallery_o li img {
+  display: block;
+  width: 270px;
+  height: 200px;
+  margin: 0 auto;
+  display: inline-block;
+  text-align: center;
+  -moz-transform: scale(1.09, 1.09);
+  -ms-transform: scale(1.09, 1.09);
+  -webkit-transform: scale(1.09, 1.09);
+  transform: scale(1.09, 1.09);
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+.arrange_o{
+	margin-top: 0.5%;
+	margin-bottom: 0.5%;
+	margin-left: 0.25%;
+	margin-right: .25%;
+	padding:1%;
+	float: left;
 
-
+}
+.actionshow_o, .actionedit_o, .actiondelete_o,.actioncart_o{ /*changes the background color, font color , and font style of the three buttons (show, edit, delete)*/
+	color: red; 
+	font-size: 12px; 
+	font-family: 'Segoe UI';
+	font-style: italic;
+	text-decoration: none;
+}

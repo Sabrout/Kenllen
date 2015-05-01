@@ -1,17 +1,24 @@
-<div class="page">
-	<p class="Show-Item">Show Item</p>
-		<% @item_attachments.each do |p| %> <!-- print all pics for this item -->
- 	 		<%= image_tag p.photo_url, :size => "450x300" %>
-		<% end %>
-</div>
-<div class="page"> <!-- this class contain all description of item -->
-
-	<p class="blod">Name</p>  
-	<p class="answer"><%= @item.item_name %></p>
-	<p class="blod">Price</p>
-	<p class="answer"><%= @item.price %></p>
-	<p class="blod">Description</p>
-	<p class="answer"><%= @item.description %></p>
-	<p class="blod">Inspiration</p>
-	<p class="answer"><%= @item.inspiration %></p>
+<div class="page2_o">
+<p class="art_name_o"><%= @item.item_name %></p>
+<!-- 	<p class="Show-Item">Show Item</p> -->
+<div class='picture-wall'>
+  <ul class='picture-wall__list picture-wall__list--list-type-1'><li class='picture-wall__item'>
+      <img alt='Dummy' class='picture-wall__image'>	<% @item_attachments.each do |p| %> <!-- print all pics for this item -->
+ 		 		<%= image_tag p.photo_url, :size => "600x450" %>
+			<% end %>
+    </li><li class='picture-wall__item'>
+    </div>
+    <div class="star_o"><%= rating_for @item, "speed"  ,:disable_after_rate => true , :imdb_avg => true , :cancel => false %>
+	</div>
+</div>	
+<div class="page_o"> <!-- this class contain all description of item -->
+ 		<div class="inspiration_o">
+		<p class="blod">Inspiration</p>
+		<p class="answer"><%= @item.inspiration %></p></div>
+ 		<div class="price_o">
+		<p class="blod_o">Price</p>	
+		<p class="number_o"><%= @item.price %></p></div>
+		<div class="description_o">
+		<p class="blod">Description</p>
+		<p class="answer"><%= @item.description %></p></div>
 </div>
