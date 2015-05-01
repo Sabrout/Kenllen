@@ -5,9 +5,9 @@
 <!--   <% if user_signed_in?%>
   <%end%>
   </div>  -->
-
   <!-- Shops showcase -->
   <div class = "page", id = "page">
+
   <!-- profile info -->
   <div class = "show-shop", id = "show-shop">
     <div class = "add2">  
@@ -18,8 +18,7 @@
       </div>
     </div>
   </div>
-
-  <div>
+<div class = "shop-page">
   <!-- shops cards -->
   <div class = "myshops-title">My shops</div>
     <% @shops.each do |shop| %>
@@ -33,10 +32,11 @@
             </div>
           </div>
    <% end %>
-    <div class = "myshops-title">My followed shops</div>
+    <div class = "followed-shops">My followed shops</div>
    <!-- followed shops  -->
    <% @followed_shops.each do |shop| %>
     <div class ="shop-card">
+    <div class = "above-each-other">
       <div class = "shop">
       <img src="<%= shop.cover_url.to_s %>" style="width:200px;height:200px"></div>
         <div><%= shop.id %></div>
@@ -44,7 +44,10 @@
           <div class="actions">
            <%= link_to("Show", {:action => 'show', :controller => '/shops', :id => shop.id}, :class => 'actionshow') %>
           </div>
+          </div>
          </div>
     <% end %>
-  </div>
+
 </div>
+</div>
+<script type="text/javascript">document.getElementById("show-shop").setAttribute("style","height:"+ document.getElementById("page").offsetHeight +"px;")</script>
