@@ -40,6 +40,12 @@
      			</div>
    			<% end %>
    			</td>
+   			<tr>
+			<th class = 'form-attr'>Change Category</th>    
+     		<td>
+      			<%= f.select :category, options_for_select([['Category One', 'Category One'], ['Category Two', 'Category Two'], ['Category Three', 'Category Three']], {:prompt => "Please select"}) %>
+      		</td>
+		</tr>
 		</tr>
 	</table>
 

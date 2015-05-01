@@ -98,8 +98,7 @@ class ItemController < ApplicationController
   end
 
   def filterCategories
-    categ = params[:category]
-    @itemsList = Item.find_by_category(categ)
+    @itemsList = Item.where(:category => (params[:item][:category]).to_s)
   end
 
 private
