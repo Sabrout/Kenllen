@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   resources :carts
   resources :item_attachments
 
-  devise_for :users
+  devise_for :users , :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+
   root 'home#index'
 
   get '/messages/inbox' => 'messages#inbox', as: 'inbox'
