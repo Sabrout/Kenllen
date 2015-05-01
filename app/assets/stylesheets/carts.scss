@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.item-image 
+.item-image /*here is the styling for the item image*/ 
 {
   float: left;
   margin: 0 25px 10px 0;
@@ -11,14 +11,16 @@
 
 }
 
-.item-image:hover img
+.item-image:hover img /*here is the styling for the item image to 
+make it bigger when hover is on*/ 
 { 
     cursor: pointer;
     width: 700px;
     height: 700px;
 }
 
-.text-field
+.text-field /*here is the styling field where u can update the 
+number of the items u want to buy*/ 
 {
   background: white; 
   border: 1px solid #c4c4c4; 
@@ -32,12 +34,12 @@
   margin-right: 10px;
 }
 
-.text-field:focus
+.text-field:focus /*here is animation for the field*/ 
 {
   box-shadow: 0 0 5px 3px #c4c4c4; 
 }
 
- .clear:after
+ .clear:after /*here is making the clear button hidden if the cart is clear*/ 
  {
     content: ".";
     display: block;
@@ -46,7 +48,7 @@
     visibility: hidden;
 }
 
-.item-label 
+.item-label /*here is the styling for the whole item description*/ 
 {
   color: #858585;
   padding: 5px 0 10px 0;
@@ -55,7 +57,7 @@
   text-align: center;
 }
 
-.item-title 
+.item-title /*here is the styling for the item name*/
 {
   color: #E9573F;
   font-size: 18px;
@@ -63,7 +65,7 @@
   line-height: 1.6em;
 }
 
-.item-desc 
+.item-desc /*here is the styling for the item description*/
 {
   color: #E9573F;
   font-size: 18px;
@@ -71,7 +73,7 @@
   line-height: 1.6em;
 }
 
-.price 
+.price /*here is the styling for the item price*/
 {
   color: #E9573F;
   font-size: 18px;
@@ -79,7 +81,7 @@
   line-height: 1.6em;
 }
   
- .complete 
+ .complete /*here is the styling for the x,=,$*/
 {
   color: #F2F2F2;
   font-size: 18px;
@@ -87,43 +89,43 @@
   line-height: 1.6em;
 }
  
-.total-price
+.total-price /*here is the styling for the item total price of all the items in the cart*/
 {
   font-size: 18px;
   color: black;
 }
 
-.total-price-line
+.total-price-line /*here is the styling for the item total price of all the items in the cart*/
 {
   margin-right: 10%;
 }
 
-.total-price-number
+.total-price-number /*here is the styling for the item total price of all the items in the cart*/
 {
   color: #E9573F;
   font-size: 18px;
 }
-.sub-price
+.sub-price /*here is the styling for the item total price of every single item the items in the cart*/
 {
   color: #E9573F;
   font-size: 14px;
   line-height: 1.6em;
 }
 
-hr 
+hr  /*here is the styling for the breaker between every item*/
 {
   border: 0.5;
 }
 
 
-.empty-cart
+.empty-cart /*here is the styling for the  cart when empty*/
 {
   padding: 5% 0 5% 40%;
   background-color: #2F2F2F;
   color: #F2F2F2;
 }
 
-.content-helper 
+.content-helper /*here is the styling for the whole cart*/
 {
   width: 80%;
   margin: 0 auto;
@@ -133,7 +135,7 @@ hr
   border-radius: 2px;
 }
 
-.clear 
+.clear /*here is the styling for the  button clear*/
 {
     -webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
     -moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
@@ -154,7 +156,7 @@ hr
     top:90px;
     right: 375px;
 }
-.clear:hover 
+.clear:hover /*here is animation for the  button clear*/
 {
 
     box-shadow: inset 0 100px 0 0 #aa5351;
@@ -164,7 +166,7 @@ hr
     
 }
 
-.checkout
+.checkout /*here is the styling for the  button checkout*/
 {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
     -moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
@@ -185,7 +187,7 @@ hr
     top: 90px;
     right: 503px;
 }
-.checkout:hover
+.checkout:hover /*here is animation for the  button checkout*/
 {
 
     box-shadow: inset 0 100px 0 0 #7b911f;
@@ -195,7 +197,7 @@ hr
     
 }
 
-.Continue
+.Continue /*here is the styling for the  button Continuw shopping*/
 {
     -webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
     -moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
@@ -216,7 +218,7 @@ hr
     top: 90px;
     right: 170px;
 }
-.Continue:hover 
+.Continue:hover /*here is animation for the  button continue shopping*/
 {
 
     box-shadow: inset 0 100px 0 0 #5a9ea2;
@@ -225,7 +227,7 @@ hr
     letter-spacing: 1px;
     
 }
-.update
+.update /*here is the styling for the  button update*/
 {
     color: #FFF;
     background: #7b911f;
@@ -240,7 +242,7 @@ hr
     transition: all 0.8s ease 0s;
     float: right;
 }
-.update:hover 
+.update:hover /*here is animation for the  button update*/
 {
 
     text-transform: uppercase;
@@ -251,7 +253,7 @@ hr
     
 }
 
-.delete
+.delete /*here is the styling for the  button delete*/
 {
   -webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
     -moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
@@ -272,7 +274,7 @@ hr
     top :20px;
 }
 
-.delete:hover 
+.delete:hover /*here is animation for the  button delete*/
 {
 
     text-transform: uppercase;
