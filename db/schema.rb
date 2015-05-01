@@ -122,6 +122,9 @@ ActiveRecord::Schema.define(version: 20150430135921) do
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 
+<<<<<<< HEAD
   add_foreign_key "item_reports", "items", name: "item_reports_item_id_fkey", on_update: :cascade, on_delete: :cascade
   add_foreign_key "item_reports", "users", name: "item_reports_user_id_fkey", on_update: :cascade, on_delete: :cascade
+=======
+>>>>>>> origin/master
 end
