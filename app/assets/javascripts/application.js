@@ -68,3 +68,5 @@
 	}
 }
 
+document.getElementById("show-shop").setAttribute("style","height:"+ document.getElementById("page").offsetHeight +"px;")
+
