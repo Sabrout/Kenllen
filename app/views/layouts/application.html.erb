@@ -16,7 +16,11 @@
           <% if user_signed_in? %> 
           <div class ="username">
             <h4>Welcome,</h4>
-            <h3><%=current_user.fname%> </h3>
+            <h3>
+            <% if user_signed_in?%>
+            <%= link_to(current_user.fname,{:action => 'myshops', :controller => '/profile'}, :class => 'profile-welcome-word') %>
+            <%end%> 
+            </h3>
           </div>
           <%end%>
           <%= link_to("Mail", {:action => 'inbox' , :controller => '/messages'}, :class => 'navbar-mail') %>
@@ -39,6 +43,7 @@
     <% end %>	
 
     <%= yield %>
+
     <div class="push"></div>
   </div>
   <div id="footer">
