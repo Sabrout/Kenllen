@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  post '/rate' => 'rater#create', :as => 'rate'
   resources :cart_items
   resources :carts
   resources :item_attachments
