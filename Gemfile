@@ -26,8 +26,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # Authentication Gem (signup and in)
 gem 'devise'
-
-
+# Manipulate images
+gem 'mini_magick'
 # Messaging gem
 gem 'acts-as-messageable'
 # gem 'mailboxer', :git => 'git://github.com/div/mailboxer.git', :branch => 'rails42-foreigner'

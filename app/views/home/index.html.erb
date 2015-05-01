@@ -1,5 +1,5 @@
 <% @page_title = "Home" %>
-
+<%= stylesheet_link_tag 'shop', media: 'all', 'data-turbolinks-track' => true %>
   
 <div id="slider"> 
   <div id="mask">
@@ -36,13 +36,18 @@
 </div>
 <div class = "page">
   <% @items.each do |item| %> <!--diplay of all items in all shops-->
-  <div class ="shop-card">
-    <div><%= item.id %></div>
-    <div><%= item.item_name %></div>
-    <div class="actions">
-      <%= link_to "Show", {:action => 'show', :id => item.id, :controller => 'item'}, :class => 'actionshow' %>   
+    <div class ="arrange_o">
+      <ul class="gallery_o">
+        <% if item.item_attachments.first %>
+        <li><%= image_tag item.item_attachments.first.photo_url, :size => "150x250" %>
+        <% end %>
+          <span class="name_o">
+            <%= link_to "Show", {:action => 'show', :id => item.id, :controller => 'item'}, :class => 'actionshow_o' %>
+            <span class="title_o"><p class="art-name"> <%= item.item_name %> </p></span></span>   
+          </span>
+        </li>
+      </ul>
     </div>
-  </div>
-  <% end %>
+    <% end %>
 </div>
 

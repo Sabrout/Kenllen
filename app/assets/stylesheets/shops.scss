@@ -7,34 +7,23 @@ h2 {
 	margin-top: -5%;
 }
 .followed-shops{
-margin-top: 35%;
-clear:both;
-
-}
-body{  /*defines the background color of all the page of the website*/
-	background-color: #F2F2F2;
-	background-size: cover;
-	height: 100%;
+	margin-top: 35%;
+	clear:both;
 }
 
 .page { /*changes the color, position , and padding of the white page which will include all the elements in the website*/
 	/*background: url(index.jpeg);
 	background-size: cover;*/
-	padding-top:6%;
-	padding-left: 6%;
-	padding-right: 1%;
-	background-color:#fefefe;
+	width:1200px;
+	background-color:#222222;
 	height: 100%;
-	font-family: 'Segoe UI';
-	margin-top: 0.5%;
-	margin-left: 11%;
-	margin-right: 11%;
-	/*text-align: center;*/
-	padding-bottom: 5%;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
 	overflow: hidden;
-	-webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
-	-moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
-	box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+	padding-left: 10px;
+	padding-right: 10px;
+	align:center;
 }
 
 .header { 
@@ -403,24 +392,25 @@ AUTHOR: Tarek
 	color: red;
 }
 .gallery_o {
-  margin: 0 auto;
   text-align: center;
   width: 100%;
   padding: 20px;
 }
 .gallery_o li {
-  width: 270px;
+  width: 338px;
+  height:338px;
   min-height: 100%;
   text-align: center;
-  height: 200px;
   position: relative;
-  margin: 0 auto;
   display: inline-block;
   overflow: hidden;
   background-color: black;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #000;
+
 }
 .gallery_o li:nth-child(2) img {
-  margin: 0;
   display: inline-block;
   float: right;
 }
@@ -507,8 +497,8 @@ AUTHOR: Tarek
 }
 .gallery_o li img {
   display: block;
-  width: 270px;
-  height: 200px;
+  width: 338px;
+  height: 338px;
   margin: 0 auto;
   display: inline-block;
   text-align: center;
@@ -526,18 +516,17 @@ AUTHOR: Tarek
   transition-duration: 0.4s;
 }
 .arrange_o{
-	margin-top: 0.5%;
-	margin-bottom: 0.5%;
-	margin-left: 0.25%;
-	margin-right: .25%;
-	padding:1%;
+	padding:0;
+	margin-left: 0;
+	margin-right: auto;
 	float: left;
 
 }
 .actionshow_o, .actionedit_o, .actiondelete_o,.actioncart_o{ /*changes the background color, font color , and font style of the three buttons (show, edit, delete)*/
-	color: red; 
-	font-size: 12px; 
+	color: #fff; 
+	font-size: 14px; 
 	font-family: 'Segoe UI';
-	font-style: italic;
+	font-style: bold;
+	font-weight: 5;
 	text-decoration: none;
 }
