@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable
-
+   ratyrate_rater
 
   # adds the messaging service from acts-as-messageable to this model 
   acts_as_messageable :dependent => :destroy
