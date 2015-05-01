@@ -62405,3 +62405,287 @@ ActionController::RoutingError (No route matches [GET] "/stylesheets/shop.css"):
   Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
   Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
   Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (29.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-01 22:54:30 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+SyntaxError (/home/abdoo/Desktop/SE/knellen_project/app/controllers/application_controller.rb:14: syntax error, unexpected <<, expecting keyword_end
+<<<<<<< HEAD
+  ^
+/home/abdoo/Desktop/SE/knellen_project/app/controllers/application_controller.rb:16: syntax error, unexpected ===
+=======
+   ^
+/home/abdoo/Desktop/SE/knellen_project/app/controllers/application_controller.rb:18: syntax error, unexpected >>
+>>>>>>> 024696b010b113a60cc06d979f0a7810fb6d8101
+  ^
+/home/abdoo/Desktop/SE/knellen_project/app/controllers/application_controller.rb:18: Invalid octal digit
+>>>>>>> 024696b010b113a60cc06d979f0a7810fb6d8101
+             ^
+/home/abdoo/Desktop/SE/knellen_project/app/controllers/application_controller.rb:65: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/application_controller.rb:14: syntax error, unexpected <<, expecting keyword_end
+  app/controllers/application_controller.rb:16: syntax error, unexpected ===
+  app/controllers/application_controller.rb:18: syntax error, unexpected >>
+  app/controllers/application_controller.rb:18: Invalid octal digit
+  app/controllers/application_controller.rb:65: syntax error, unexpected end-of-input, expecting keyword_end
+  app/controllers/home_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (8.9ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.7ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (13.1ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (28.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-01 22:55:33 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mItem Load (1.4ms)[0m  SELECT "items".* FROM "items"
+  [1m[36mItemAttachment Load (0.9ms)[0m  [1mSELECT  "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1  ORDER BY "item_attachments"."id" ASC LIMIT 1[0m  [["item_id", 8]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1  ORDER BY "item_attachments"."id" ASC LIMIT 1  [["item_id", 8]]
+  Rendered home/index.html.erb within layouts/application (168.9ms)
+Completed 200 OK in 334ms (Views: 296.2ms | ActiveRecord: 12.6ms)
+
+
+Started GET "/stylesheets/shop.css" for 127.0.0.1 at 2015-05-01 22:55:34 +0300
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/shop.css"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.5) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.5) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.6.0) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.0) lib/rack/server.rb:286:in `start'
+  railties (4.2.0) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.0) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.0) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.0) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.0) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.0) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.3.4) lib/spring/client/rails.rb:28:in `load'
+  spring (1.3.4) lib/spring/client/rails.rb:28:in `call'
+  spring (1.3.4) lib/spring/client/command.rb:7:in `call'
+  spring (1.3.4) lib/spring/client.rb:26:in `run'
+  spring (1.3.4) bin/spring:48:in `<top (required)>'
+  spring (1.3.4) lib/spring/binstub.rb:11:in `load'
+  spring (1.3.4) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:13:in `require'
+  bin/spring:13:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.0ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.6ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (71.3ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (14.1ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (28.6ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2015-05-01 22:55:35 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (12.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (35.3ms)
+Completed 200 OK in 132ms (Views: 109.2ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2015-05-01 22:55:38 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"txPVyTUAtlA+v7DvJApPIxHNqKiRLrllsovqoA2NEj1yp+6AomPUWOURwh6SOafgfMZvzI/NAr073E/0lQ1Z4Q==", "user"=>{"uname"=>"test", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."uname" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["uname", "test"]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5[0m  [["last_sign_in_at", "2015-05-01 19:50:13.865401"], ["current_sign_in_at", "2015-05-01 19:55:38.458082"], ["sign_in_count", 4], ["updated_at", "2015-05-01 19:55:38.461294"], ["id", 215]]
+  [1m[35m (48.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 171ms (ActiveRecord: 50.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-01 22:55:38 +0300
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 215]]
+  [1m[35mItem Load (0.6ms)[0m  SELECT "items".* FROM "items"
+  [1m[36mItemAttachment Load (0.9ms)[0m  [1mSELECT  "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1  ORDER BY "item_attachments"."id" ASC LIMIT 1[0m  [["item_id", 8]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1  ORDER BY "item_attachments"."id" ASC LIMIT 1  [["item_id", 8]]
+  Rendered home/index.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 115ms (Views: 108.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/stylesheets/shop.css" for 127.0.0.1 at 2015-05-01 22:55:38 +0300
+
+ActionController::RoutingError (No route matches [GET] "/stylesheets/shop.css"):
+  actionpack (4.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  thin (1.5.1) lib/thin/connection.rb:81:in `block in pre_process'
+  thin (1.5.1) lib/thin/connection.rb:79:in `catch'
+  thin (1.5.1) lib/thin/connection.rb:79:in `pre_process'
+  thin (1.5.1) lib/thin/connection.rb:54:in `process'
+  thin (1.5.1) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.5) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.5) lib/eventmachine.rb:187:in `run'
+  thin (1.5.1) lib/thin/backends/base.rb:63:in `start'
+  thin (1.5.1) lib/thin/server.rb:159:in `start'
+  rack (1.6.0) lib/rack/handler/thin.rb:19:in `run'
+  rack (1.6.0) lib/rack/server.rb:286:in `start'
+  railties (4.2.0) lib/rails/commands/server.rb:80:in `start'
+  railties (4.2.0) lib/rails/commands/commands_tasks.rb:80:in `block in server'
+  railties (4.2.0) lib/rails/commands/commands_tasks.rb:75:in `tap'
+  railties (4.2.0) lib/rails/commands/commands_tasks.rb:75:in `server'
+  railties (4.2.0) lib/rails/commands/commands_tasks.rb:39:in `run_command!'
+  railties (4.2.0) lib/rails/commands.rb:17:in `<top (required)>'
+  bin/rails:8:in `require'
+  bin/rails:8:in `<top (required)>'
+  spring (1.3.4) lib/spring/client/rails.rb:28:in `load'
+  spring (1.3.4) lib/spring/client/rails.rb:28:in `call'
+  spring (1.3.4) lib/spring/client/command.rb:7:in `call'
+  spring (1.3.4) lib/spring/client.rb:26:in `run'
+  spring (1.3.4) bin/spring:48:in `<top (required)>'
+  spring (1.3.4) lib/spring/binstub.rb:11:in `load'
+  spring (1.3.4) lib/spring/binstub.rb:11:in `<top (required)>'
+  bin/spring:13:in `require'
+  bin/spring:13:in `<top (required)>'
+  bin/rails:3:in `load'
+  bin/rails:3:in `<main>'
+
+
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.8ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (53.5ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (13.2ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/abdoo/.rvm/gems/ruby-2.2.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (28.0ms)
+
+
+Started GET "/shops" for 127.0.0.1 at 2015-05-01 22:55:39 +0300
+Processing by ShopsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 215]]
+  [1m[35mShop Load (1.5ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 118ms (Views: 99.2ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/shops/show/4" for 127.0.0.1 at 2015-05-01 22:55:41 +0300
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 215]]
+  [1m[35mShop Load (0.5ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 215]]
+  [1m[35mShop Exists (0.7ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 215], ["id", 4]]
+  [1m[36mShop Exists (0.6ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 215], ["id", 4]]
+  [1m[35mItem Load (0.6ms)[0m  SELECT "items".* FROM "items" WHERE "items"."shop_id" = $1  [["shop_id", 4]]
+  [1m[36mItemAttachment Load (0.5ms)[0m  [1mSELECT  "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1  ORDER BY "item_attachments"."id" ASC LIMIT 1[0m  [["item_id", 8]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "item_attachments".* FROM "item_attachments" WHERE "item_attachments"."item_id" = $1  ORDER BY "item_attachments"."id" ASC LIMIT 1  [["item_id", 8]]
+  [1m[36mShop Exists (0.6ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 215], ["id", 4]]
+  [1m[35mItemReport Exists (13.1ms)[0m  SELECT  1 AS one FROM "item_reports" WHERE "item_reports"."item_id" = $1 AND "item_reports"."user_id" = $2 LIMIT 1  [["item_id", 8], ["user_id", 215]]
+  [1m[36mShop Exists (0.6ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 215], ["id", 4]]
+  [1m[35mShop Exists (0.6ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 215], ["id", 4]]
+  Rendered shops/show.html.erb within layouts/application (60.2ms)
+Completed 200 OK in 137ms (Views: 106.1ms | ActiveRecord: 21.4ms)
+
+
+Started GET "/item/delete/8?shop_id=4" for 127.0.0.1 at 2015-05-01 22:55:42 +0300
+Processing by ItemController#delete as HTML
+  Parameters: {"shop_id"=>"4", "id"=>"8"}
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 215]]
+  [1m[35mItem Load (0.3ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mShop Load (0.3ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered item/delete.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 72ms (Views: 66.1ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/item/destroy/8?shop_id=4" for 127.0.0.1 at 2015-05-01 22:55:43 +0300
+Processing by ItemController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Gu1/B2wyEhckOlmhoG3E5cUidgc8UimnfCd7Ju3N9NEGe8SuoTKnBQS0FwKRIHgeuJGMWb2evFbmoMuiEwB65A==", "commit"=>"Delete", "shop_id"=>"4", "id"=>"8"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 215]]
+  [1m[36mShop Load (0.7ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mItem Load (0.6ms)[0m  SELECT  "items".* FROM "items" WHERE "items"."id" = $1 LIMIT 1  [["id", 8]]
+  [1m[36mShop Exists (0.6ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 215], ["id", 4]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mRate Load (1.0ms)[0m  [1mSELECT "rates".* FROM "rates" WHERE "rates"."rateable_id" = $1 AND "rates"."rateable_type" = $2 AND "rates"."dimension" IS NULL[0m  [["rateable_id", 8], ["rateable_type", "Item"]]
+  [1m[35mRatingCache Load (0.9ms)[0m  SELECT  "rating_caches".* FROM "rating_caches" WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" IS NULL LIMIT 1  [["cacheable_id", 8], ["cacheable_type", "Item"]]
+  [1m[36mRate Load (0.8ms)[0m  [1mSELECT "rates".* FROM "rates" WHERE "rates"."rateable_id" = $1 AND "rates"."rateable_type" = $2 AND "rates"."dimension" = $3[0m  [["rateable_id", 8], ["rateable_type", "Item"], ["dimension", "speed"]]
+  [1m[35mSQL (0.7ms)[0m  DELETE FROM "rates" WHERE "rates"."id" = $1  [["id", 1]]
+  [1m[36mRatingCache Load (1.1ms)[0m  [1mSELECT  "rating_caches".* FROM "rating_caches" WHERE "rating_caches"."cacheable_id" = $1 AND "rating_caches"."cacheable_type" = $2 AND "rating_caches"."dimension" = $3 LIMIT 1[0m  [["cacheable_id", 8], ["cacheable_type", "Item"], ["dimension", "speed"]]
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "rating_caches" WHERE "rating_caches"."id" = $1  [["id", 1]]
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "items" WHERE "items"."id" = $1[0m  [["id", 8]]
+  [1m[35m (15.8ms)[0m  COMMIT
+Redirected to http://localhost:3000/shops/show/4
+Completed 302 Found in 94ms (ActiveRecord: 32.0ms)
+
+
+Started GET "/shops/show/4" for 127.0.0.1 at 2015-05-01 22:55:43 +0300
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 215]]
+  [1m[35mShop Load (0.5ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 215]]
+  [1m[35mShop Exists (0.4ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 215], ["id", 4]]
+  [1m[36mShop Exists (0.4ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 215], ["id", 4]]
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE "items"."shop_id" = $1  [["shop_id", 4]]
+  Rendered shops/show.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 96ms (Views: 87.6ms | ActiveRecord: 3.2ms)
