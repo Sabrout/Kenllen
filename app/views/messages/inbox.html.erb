@@ -13,7 +13,7 @@
 		<td class = "td-message">Message</td>
 		<td class = "td">Delete message</td>
 	</tr>
-	<!-- Loop over all messages and show sender's name then the subject then the body -->
+	<!-- Loop over all received messages and show sender's name then the subject then the body -->
 	<% current_user.received_messages.each do |m| %>
 	<tr>
 	<% @current_message = m %>
@@ -26,6 +26,7 @@
 		<td class = "txt">
 			<%= m.body %>
 		</td>
+		<!-- adds the delete button that calls a method to sent this message to trash -->
 		<td class = "txt">
 			<%= link_to 'Delete', {:action => 'send_trash', :m_id => m.id} %>
 		</td>
