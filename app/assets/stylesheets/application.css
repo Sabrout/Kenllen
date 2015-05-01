@@ -9,35 +9,36 @@
   */
 
 body{
-padding:0px;
-background-color: #222222;
+  padding:0px;
+  min-height: 10000px;
+  height: 100%;
+  background-color: #222222;
 }
 
 .logo{
   float: left;
 }
 
+.container-color {
+  margin: 0 auto;
+  height: 58px;
+  width: auto;
+  background-color: #2f2f2f;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1200px;
-  width: 90%
-}
-
-.site-header {
-  background-color: #fafbf9;
-  height: 20px;
+  height: 58px;
+  width: auto;
+  background-color: #2f2f2f;
+  width: 100%;
 }
 
 .nav-bar {
   padding: 0.625em 0;   
   text-align: right;
-}
-
-#Username{
-  font-family:Segoe UI;
-  color: #000;
-  float: left;
-  margin-left: 30%;
+  width: 100%;
 }
 
 .navbar-mail{
@@ -129,6 +130,7 @@ background-color: #222222;
 #footer{
   margin-bottom: -150px;
   clear: both;
+  margin-bottom: 0;
 }
 
 .tomottoWrap{
