@@ -1,0 +1,177 @@
+
+
+Started GET "/" for ::1 at 2015-05-01 18:36:33 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mItem Load (1.0ms)[0m  [1mSELECT "items".* FROM "items"[0m
+  Rendered home/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 2649ms (Views: 2587.1ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/shops.self-779371d90d56e6dfb794af173deaabc60f32768fbb8f0ee82c537b5d5fffde5b.css?body=1" for ::1 at 2015-05-01 18:36:36 +0200
+
+
+Started GET "/messages/inbox" for ::1 at 2015-05-01 18:36:37 +0200
+Processing by MessagesController#inbox as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mActsAsMessageable::Message Load (2.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."received_messageable_id" = $1 AND "messages"."received_messageable_type" = $2 AND "messages"."recipient_delete" = 'f'  ORDER BY created_at desc[0m  [["received_messageable_id", 1], ["received_messageable_type", "User"]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered messages/inbox.html.erb within layouts/application (84.0ms)
+Completed 200 OK in 218ms (Views: 210.0ms | ActiveRecord: 6.0ms)
+
+
+Started POST "/messages/sentbox" for ::1 at 2015-05-01 18:36:39 +0200
+Processing by MessagesController#sentbox as HTML
+  Parameters: {"authenticity_token"=>"GHvd4PXGG1KEhqloxI5bozMz5NTO2pegIiGXYIqUIjp4pTf6G9UKsqEOLxKF4tVMi05zZ8gjkhP2bsUUVVQHpQ=="}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mActsAsMessageable::Message Load (1.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."sent_messageable_id" = $1 AND "messages"."sent_messageable_type" = $2 AND "messages"."sender_delete" = 'f'  ORDER BY created_at desc  [["sent_messageable_id", 1], ["sent_messageable_type", "User"]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered messages/sentbox.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 127ms (Views: 123.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/messages/trash" for ::1 at 2015-05-01 18:36:40 +0200
+Processing by MessagesController#trash as HTML
+  Parameters: {"authenticity_token"=>"E9nQqbj2JuFfUkoxPiQ7miGxHv4KiRhce3xaunN2nxlzBzqzVuU3AXrazEt/SLV1mcyJTQxwHe+vMwjOrLa6hg=="}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mActsAsMessageable::Message Load (1.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."sent_messageable_id" = $1 AND "messages"."sent_messageable_type" = $2 AND "messages"."sender_delete" = 'f'  ORDER BY created_at desc  [["sent_messageable_id", 1], ["sent_messageable_type", "User"]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered messages/trash.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 136ms (Views: 133.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/messages/sentbox" for ::1 at 2015-05-01 18:36:42 +0200
+Processing by MessagesController#sentbox as HTML
+  Parameters: {"authenticity_token"=>"59yA/MNjxE0p3dVpKhQv/ejk1e8DvOR4xn/VvGsrDtSHAmrmLXDVrQxVUxNreKESUJlCXAVF4csSMIfItOsrSw=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mActsAsMessageable::Message Load (1.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."sent_messageable_id" = $1 AND "messages"."sent_messageable_type" = $2 AND "messages"."sender_delete" = 'f'  ORDER BY created_at desc  [["sent_messageable_id", 1], ["sent_messageable_type", "User"]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered messages/sentbox.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 118ms (Views: 114.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/messages/trash" for ::1 at 2015-05-01 18:36:43 +0200
+Processing by MessagesController#trash as HTML
+  Parameters: {"authenticity_token"=>"eybQo3Rvp+dEBJMN4rP6uTXgmCDGB7yo12XOjOK8u0Ib+Dq5mny2B2GMFXej33RWjZ0Pk8D+uRsDKpz4PXye3Q=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mActsAsMessageable::Message Load (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."sent_messageable_id" = $1 AND "messages"."sent_messageable_type" = $2 AND "messages"."sender_delete" = 'f'  ORDER BY created_at desc  [["sent_messageable_id", 1], ["sent_messageable_type", "User"]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered messages/trash.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 136ms (Views: 134.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages/inbox" for ::1 at 2015-05-01 18:36:45 +0200
+Processing by MessagesController#inbox as HTML
+  Parameters: {"authenticity_token"=>"8JfyA79V1eAQPIsuEWU61l7wiPhe60or2mqGpV9/IZ+QSRgZUUbEADW0DVRQCbQ55o0fS1gST5gOJdTRgL8EAA=="}
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mActsAsMessageable::Message Load (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."received_messageable_id" = $1 AND "messages"."received_messageable_type" = $2 AND "messages"."recipient_delete" = 'f'  ORDER BY created_at desc  [["received_messageable_id", 1], ["received_messageable_type", "User"]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered messages/inbox.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 122ms (Views: 118.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/messages/new" for ::1 at 2015-05-01 18:36:49 +0200
+Processing by MessagesController#new as HTML
+  Parameters: {"authenticity_token"=>"yo6i3r6XoNBL1Tpk6XcGH/UuspBmZli3WtQej5S79GWqUEjEUISxMG5dvB6oG4jwTVMlI2CfXQSOm0z7S3vR+g=="}
+  Rendered messages/new.html.erb within layouts/application (16.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 130ms (Views: 130.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages/create" for ::1 at 2015-05-01 18:37:00 +0200
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mWQgX/d0D2yBiDhEnGDCK5x1zW/hyi43wdJncBih1Wn5uspFGWcejKQAvj7dDEzEJAha3OczK4QVnTUEx2Hw9g==", "compose"=>{"user"=>"omar1", "subject"=>"test delete", "body"=>"sdcsdvsv"}, "commit"=>"Send"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."uname" = $1 LIMIT 1[0m  [["uname", "omar1"]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "messages" ("topic", "body", "received_messageable_id", "received_messageable_type", "sent_messageable_id", "sent_messageable_type", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"  [["topic", "test delete"], ["body", "sdcsdvsv"], ["received_messageable_id", 1], ["received_messageable_type", "User"], ["sent_messageable_id", 1], ["sent_messageable_type", "User"], ["created_at", "2015-05-01 16:37:00.116572"], ["updated_at", "2015-05-01 16:37:00.116572"]]
+  [1m[36m (21.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/messages/inbox
+Completed 302 Found in 58ms (ActiveRecord: 23.0ms)
+
+
+Started GET "/messages/inbox" for ::1 at 2015-05-01 18:37:00 +0200
+Processing by MessagesController#inbox as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mActsAsMessageable::Message Load (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."received_messageable_id" = $1 AND "messages"."received_messageable_type" = $2 AND "messages"."recipient_delete" = 'f'  ORDER BY created_at desc[0m  [["received_messageable_id", 1], ["received_messageable_type", "User"]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered messages/inbox.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 157ms (Views: 153.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/messages/send_trash?m_id=8" for ::1 at 2015-05-01 18:37:03 +0200
+Processing by MessagesController#send_trash as HTML
+  Parameters: {"m_id"=>"8"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mActsAsMessageable::Message Load (0.0ms)[0m  [1mSELECT  "messages".* FROM "messages" WHERE "messages"."received_messageable_id" = $1 AND "messages"."received_messageable_type" = $2 AND "messages"."recipient_delete" = 'f' AND "messages"."id" = $3  ORDER BY created_at desc LIMIT 1[0m  [["received_messageable_id", 1], ["received_messageable_type", "User"], ["id", 8]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.0ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.0ms)[0m  UPDATE "messages" SET "recipient_delete" = $1, "updated_at" = $2 WHERE "messages"."id" = $3  [["recipient_delete", "t"], ["updated_at", "2015-05-01 16:37:03.656774"], ["id", 8]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/messages/trash
+Completed 302 Found in 15ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/messages/trash" for ::1 at 2015-05-01 18:37:03 +0200
+Processing by MessagesController#trash as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mActsAsMessageable::Message Load (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."sent_messageable_id" = $1 AND "messages"."sent_messageable_type" = $2 AND "messages"."sender_delete" = 'f'  ORDER BY created_at desc[0m  [["sent_messageable_id", 1], ["sent_messageable_type", "User"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered messages/trash.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 122ms (Views: 119.0ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/messages/sentbox" for ::1 at 2015-05-01 18:37:11 +0200
+Processing by MessagesController#sentbox as HTML
+  Parameters: {"authenticity_token"=>"OUl+KQyhtzzSFxyAZqNc6zkmcTGFHTs1T5JWRuHH+lxZl5Qz4rKm3Pefmvonz9IEgVvmgoPkPoab3QQyPgffww=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mActsAsMessageable::Message Load (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."sent_messageable_id" = $1 AND "messages"."sent_messageable_type" = $2 AND "messages"."sender_delete" = 'f'  ORDER BY created_at desc  [["sent_messageable_id", 1], ["sent_messageable_type", "User"]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered messages/sentbox.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 131ms (Views: 127.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages/trash" for ::1 at 2015-05-01 18:37:12 +0200
+Processing by MessagesController#trash as HTML
+  Parameters: {"authenticity_token"=>"Bcu4CcEAAcT0ff4CoLgowFxVugLHn9UWCNU4GD393IdlFVITLxMQJNH1eHjh1KYv5CgtscFm0KXcmmps4j35GA=="}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mActsAsMessageable::Message Load (1.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."sent_messageable_id" = $1 AND "messages"."sent_messageable_type" = $2 AND "messages"."sender_delete" = 'f'  ORDER BY created_at desc[0m  [["sent_messageable_id", 1], ["sent_messageable_type", "User"]]
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered messages/trash.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 118ms (Views: 115.0ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/messages/inbox" for ::1 at 2015-05-01 18:37:20 +0200
+Processing by MessagesController#inbox as HTML
+  Parameters: {"authenticity_token"=>"zoyE5H2bOApFRFzSB18VfjhUxsqND4FO1qaFSfU0J/WuUm7+k4gp6mDM2qhGM5uRgClReYv2hP0C6dc9KvQCag=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mActsAsMessageable::Message Load (1.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."received_messageable_id" = $1 AND "messages"."received_messageable_type" = $2 AND "messages"."recipient_delete" = 'f'  ORDER BY created_at desc  [["received_messageable_id", 1], ["received_messageable_type", "User"]]
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered messages/inbox.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 123ms (Views: 117.0ms | ActiveRecord: 2.0ms)
