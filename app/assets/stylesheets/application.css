@@ -240,6 +240,13 @@ body{
 .username h3,.username h4{
   color:#b0b0b0;
   text-align:center;
+  text-decoration: none;
+}
+
+.profile-welcome-word{
+  color:#b0b0b0;
+  text-align:center;
+  text-decoration: none;
 }
 /*
   End point

@@ -1,10 +1,10 @@
-<h2 class="pagetitle">SignUp</h2>
-
+<div class = 'form-card'>
+<div class = "form-title">SignUp</div>
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
- <table> <!-- make a table 2*8 contain all text field we need to enter information in it -->
+ <table class = 'form-table'> <!-- make a table 2*8 contain all text field we need to enter information in it -->
     <tr>
-        <th>User Name</th>
-        <td><%= f.text_field :uname %> 
+        <th class = "form-attr">User Name</th>
+        <td><%= f.text_field :uname, :class => 'form-tf' %> 
              <%if resource.errors[:uname].any?%>
                 <% resource.errors[:uname].each do |msg| %>
                      <li><%=msg%></li>
@@ -13,8 +13,8 @@
              <%end%></li> </td>
     </tr>
     <tr>
-        <th>Email</th>
-        <td><%= f.email_field :email %>
+        <th class = "form-attr">Email</th>
+        <td><%= f.email_field :email, :class => 'form-tf' %>
               <%if resource.errors[:email].any?%>
                   <% resource.errors[:email].each do |msg| %>
                      <li><%=msg%></li>
@@ -23,8 +23,8 @@
              <%end%></li> </td>
     </tr>
     <tr>
-        <th>Confirm Email</th>
-        <td><%= f.email_field :email_confirmation %>
+        <th class = "form-attr">Confirm Email</th>
+        <td><%= f.email_field :email_confirmation, :class => 'form-tf' %>
                  <%if resource.errors[:email_confirmation].any?%>
                       <% resource.errors[:email_confirmation].each do |msg| %>
                          <li><%=msg%></li>
@@ -33,8 +33,8 @@
                  <%end%></li> </td>
     </tr>
     <tr>
-        <th>Password</th>
-        <td> <%= f.password_field :password %>
+        <th class = "form-attr">Password</th>
+        <td> <%= f.password_field :password, :class => 'form-tf' %>
                  <%if resource.errors[:password].any?%>
                     <% resource.errors[:password].each do |msg| %>
                         <li><%=msg%></li>
@@ -43,8 +43,8 @@
                  <%end%></li> </td>
     </tr>
     <tr>
-        <th>Password Confirmation</th>
-        <td><%= f.password_field :password_confirmation %>
+        <th class = "form-attr">Password Confirmation</th>
+        <td><%= f.password_field :password_confirmation, :class => 'form-tf' %>
                  <%if resource.errors[:password_confirmation].any?%>
                      <% resource.errors[:password_confirmation].each do |msg| %>
                             <li><%=msg%></li>
@@ -53,8 +53,8 @@
                 <%end%></li> </td>
     </tr>
     <tr>
-        <th>First Name</th>
-        <td><%= f.text_field :fname %>
+        <th class = "form-attr">First Name</th>
+        <td><%= f.text_field :fname, :class => 'form-tf' %>
                  <%if resource.errors[:fname].any?%>
                     <% resource.errors[:fname].each do |msg| %>
                          <li><%=msg%></li>
@@ -63,8 +63,8 @@
                  <%end%></li> </td>
     </tr>
     <tr>
-        <th>Last Name</th>
-        <td>  <%= f.text_field :lname %>
+        <th class = "form-attr">Last Name</th>
+        <td>  <%= f.text_field :lname, :class => 'form-tf' %>
                 <%if resource.errors[:lname].any?%>
                      <% resource.errors[:lname].each do |msg| %>
                         <li><%=msg%></li>
@@ -73,8 +73,8 @@
                 <%end%></li> </td>
     </tr>
      <tr>
-        <th>Phone Number</th>
-        <td><%= f.phone_field :phone %>
+        <th class = "form-attr">Phone Number</th>
+        <td><%= f.phone_field :phone, :class => 'form-tf' %>
                 <%if resource.errors[:phone].any?%>
                      <% resource.errors[:phone].each do |msg| %>
                         <li><%=msg%></li>
@@ -82,9 +82,9 @@
                 <%end%>
     </tr>
      </table>
-     <div class="button"> <!-- this div contain the sign up button --> 
-    <%= f.submit "Sign up" %>
-    </div>
+    <div> <!-- this div contain the sign up button --> 
+    <%= f.submit "Sign up", :class => 'form-button' %>
+    </div><br/>
+    <%= render "devise/shared/links" %>
 <% end %>
-
-<%= render "devise/shared/links" %>
+</div>
