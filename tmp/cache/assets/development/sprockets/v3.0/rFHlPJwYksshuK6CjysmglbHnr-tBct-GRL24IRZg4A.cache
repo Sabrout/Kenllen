@@ -1,5 +1,0 @@
-I"ž(function() {
-  document.getElementById('show-shop').setAttribute('style', 'height:' + document.getElementById('page').offsetHeight + 'px;');
-
-}).call(this);
-:ET
