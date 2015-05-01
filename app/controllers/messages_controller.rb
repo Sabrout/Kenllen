@@ -42,13 +42,14 @@ class MessagesController < ApplicationController
   end
 
   def show
+    @m_id = params[:m_id]
 
     current_user.received_messages.find(params[:m_id]).open
-    
+
   end
 
   def reply
-
+    body = params[:reply][:body]
   end
 
 end
