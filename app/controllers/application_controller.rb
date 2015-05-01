@@ -3,20 +3,12 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
   before_action :configure_permitted_parameters, if: :devise_controller?
-  before_filter :banned?
   helper_method :reported?
 	def configure_permitted_parameters
     	devise_parameter_sanitizer.for(:sign_up) { |u| u.permit(:uname, :email, :fname, :lname, :phone, :password ,:password_confirmation , :email_confirmation) }
     	devise_parameter_sanitizer.for(:sign_in) { |u| u.permit(:uname, :password, :remember_me) }
       devise_parameter_sanitizer.for(:account_update) { |u| u.permit(:reports , :banned) }
   end
-
-      def banned?
-        if current_user.present? && current_user.banned
-          sign_out current_user
-           redirect_to root_path, :notice => "This account has been suspended...."
-        end
-      end
 
       def current_cart                      #retrieve the current cart id & if it doesn't exist then create a new cart and put id in session
             if (current_user.cart)
@@ -43,7 +35,7 @@ class ApplicationController < ActionController::Base
       end
 
       def reported?(item_id , user_id) # check if a user has reported this item before
-       return ItemReports.find_by(item_id:item_id , user_id: user_id)
+       return ItemReports.exists?(item_id:item_id , user_id: user_id)
       end
 
       private 
