@@ -1,8 +1,5 @@
 class MessagesController < ApplicationController
-
-  def show
-  end
-
+  
   def inbox
 
     # checks if the current user is logged in or not, if not, he/she is redirected to the signin page
@@ -13,10 +10,23 @@ class MessagesController < ApplicationController
 
   end
 
+  def sentbox
+
+    # same as inbox... mainly for security reasons and to avoid errors
+
+    if current_user == nil
+      redirect_to new_user_session_path
+    end
+  end
+
   def trash
   end
 
-  def new
+  def send_trash
+    # retreives the message ID passed from inbox view and sends it to trash
+    @message = current_user.received_messages.find(params[:m_id])
+    current_user.delete_message(@message)
+    redirect_to trash_path
   end
 
   def create
