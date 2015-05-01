@@ -64,10 +64,6 @@ ActiveRecord::Schema.define(version: 20150501155331) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "item_reports", primary_key: "user_id", force: :cascade do |t|
-    t.integer "item_id", default: "nextval('item_reports_item_id_seq'::regclass)", null: false
-  end
-
   create_table "items", force: :cascade do |t|
     t.integer  "shop_id"
     t.string   "item_name",   limit: 15,               null: false
@@ -181,6 +177,4 @@ ActiveRecord::Schema.define(version: 20150501155331) do
   add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
 
-  add_foreign_key "item_reports", "items", name: "item_reports_item_id_fkey", on_update: :cascade, on_delete: :cascade
-  add_foreign_key "item_reports", "users", name: "item_reports_user_id_fkey", on_update: :cascade, on_delete: :cascade
 end

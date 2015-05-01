@@ -23,15 +23,23 @@ h2{
 .myshops-title{
 	float: left;
 	font-size:250%;
-	margin-top: -5%;
+	margin-top: 0%;
 	margin-left: 2%;
+	clear:both;
 }
 .followed-shops{
-margin-top: 35%;
-clear:both;
-margin-left: 8%;
+	margin-top: 5%;
+	font-size:250%;
+	float:left;
+	clear:both;
+	margin-bottom: 5%;
 }
+.shop-page{ /*changes the color, position , and padding of the white page which will include all the elements in the website*/
+	/*background: url(index.jpeg);
+	background-size: cover;*/
+	overflow: hidden;
 
+}
 .page{ /*changes the color, position , and padding of the white page which will include all the elements in the website*/
 	/*background: url(index.jpeg);
 	background-size: cover;*/
@@ -39,12 +47,13 @@ margin-left: 8%;
 	height: 100%;
 	font-family: 'Segoe UI';
 	margin-top: 5%;
-	margin-left: 11%;
-	margin-right: 11%;
+	margin-left: auto;
+	margin-right: auto;
 	overflow: hidden;
 	padding-left: 10px;
 	padding-right: 10px;
-	align:center;
+	text-align:center;
+	background-color: white;
 }
 
 .page-homepage{ /*changes the color, position , and padding of the white page which will include all the elements in the website*/
@@ -58,7 +67,7 @@ margin-left: 8%;
 	overflow: hidden;
 	padding-left: 10px;
 	padding-right: 10px;
-	align:center;
+	text-align:center;
 }
 .header{ 
 
@@ -350,6 +359,7 @@ AUTHOR: Tarek
 	-moz-box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
 	box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
 	transition: box-shadow .30s;
+	clear:both;
 }
 .shop-card:hover{ /*changes the shadow of the shopcard on hover*/
 	transition: .30s;
@@ -428,10 +438,10 @@ AUTHOR: Tarek
 
 .show-shop{ /*styles (show, edit, delete) cards by changing the position, font, border style, padding and text alignment*/
 	color : black;
-	margin-top: -8.5%;
-	margin-left: -8.5%;
+	margin-top: 0%;
+	margin-left: -1%;
 	margin-right: 0%;
-	height: 1000px;
+	height: 500px;
 	overflow: hidden;
 	font-size: 120%;
 	text-align: center;
