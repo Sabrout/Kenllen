@@ -58,9 +58,11 @@
           <% end %></ul></div>
                   <span class="name_o">
                   <span class="title_o"><p class="art-name"> <%= item.item_name %> </p></span>
-                    <%= link_to "Show",  {:controller => 'item', :action => 'show', :id => item.id}, :class => 'actionshow_o' %> 
+                    <%= link_to "Show",  {:controller => 'item', :action => 'show', :id => item.id}, :class => 'actionshow_o' %>
+          <% if current_user!=nil %>
           <% if !current_user.shops.include?(@shop)%>
                     <%= link_to 'Add to Cart', cart_items_path(item_id: item.id) ,method: :post , :class => 'actioncart_o' %>
+          <%end%>
           <%end%>
         <%if user_signed_in? and !reported?(item.id,current_user.id)%>  <!-- Can't Report An Owned Item Or Report Item Twice-->
             <% if !current_user.shops.include?(@shop)%>
