@@ -4,14 +4,11 @@
 			<div class="content-helper">
 				 <h2 class="empty-cart"> Your Cart Is Empty </h2>
 			</div>
+			<%=button_to 'Go To Shops' , {:controller => '/shops' , method: :get}, class: 'shops' %>
 
 		<%else%>
 				<%= button_to 'Clear Cart' , cart_path(@cart) , method: :delete , class: 'clear'%>
 			<!--CLEAR BUTTON-->
-
-		<%end%>
-		 <!-- CHECKOUT BuTTON -->
-
 			<button class="checkout" onclick="myFunction()"><a>Checkout</a></button> 
 
 			<%=button_to 'Continue Shopping' , {:controller => '/shops' , method: :get}, class: 'Continue' %>
@@ -25,6 +22,11 @@
 	    								}
 									}
 									</script>
+
+		<%end%>
+		 <!-- CHECKOUT BuTTON -->
+
+			
 <div class="content-helper"><!--Big Container-->
 		<%@cart.cart_items.each do |cart_item|%> <!--List All Cart Items-->
 		
