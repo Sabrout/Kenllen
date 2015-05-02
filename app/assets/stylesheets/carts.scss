@@ -8,15 +8,14 @@
   margin: 0 25px 10px 0;
   text-align: center;
   margin-left: 0.5%;
-
 }
 
 .item-image:hover img /*here is the styling for the item image to 
 make it bigger when hover is on*/ 
 { 
     cursor: pointer;
-    width: 700px;
-    height: 700px;
+    width: 500px;
+    height: 500px;
 }
 
 .text-field /*here is the styling field where u can update the 
@@ -129,7 +128,7 @@ hr  /*here is the styling for the breaker between every item*/
 {
   width: 80%;
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 10%;
   background: #2F2F2F;
   margin-bottom: 2%;
   border-radius: 2px;
@@ -152,9 +151,9 @@ hr  /*here is the styling for the breaker between every item*/
     -moz-transition: all ease 0.8s;
     transition: all 0.8s ease 0s;
     float: right;
-    position: fixed;
-    top:90px;
-    right: 375px;
+    position: relative;
+    right: 9.9%;
+    margin-top: 8%;
 }
 .clear:hover /*here is animation for the  button clear*/
 {
@@ -163,7 +162,6 @@ hr  /*here is the styling for the breaker between every item*/
     color: #000;
     text-transform: uppercase;
     letter-spacing: 1px;
-    
 }
 
 .checkout /*here is the styling for the  button checkout*/
@@ -183,9 +181,9 @@ hr  /*here is the styling for the breaker between every item*/
     -moz-transition: all ease 0.8s;
     transition: all 0.8s ease 0s;
     float: right;
-    position: fixed;
-    top: 90px;
-    right: 503px;
+    position: relative;
+    right: 9.9%;
+    margin-top: 8%;
 }
 .checkout:hover /*here is animation for the  button checkout*/
 {
@@ -194,7 +192,6 @@ hr  /*here is the styling for the breaker between every item*/
     color: #000;
     text-transform: uppercase;
     letter-spacing: 1px;
-    
 }
 
 .Continue /*here is the styling for the  button Continuw shopping*/
@@ -214,9 +211,9 @@ hr  /*here is the styling for the breaker between every item*/
     -moz-transition: all ease 0.8s;
     transition: all 0.8s ease 0s;
     float: right;
-    position: fixed;
-    top: 90px;
-    right: 170px;
+    position: relative;
+    right: 9.9%;
+    margin-top: 8%;
 }
 .Continue:hover /*here is animation for the  button continue shopping*/
 {
@@ -225,7 +222,31 @@ hr  /*here is the styling for the breaker between every item*/
     color: #000;
     text-transform: uppercase;
     letter-spacing: 1px;
-    
+}
+
+.shops /*here is the styling for the  button shopping*/
+{
+    color: #FFF;
+    background: #5a9ea2;
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #C14800;
+    -webkit-transition: all ease 0.8s;
+    -moz-transition: all ease 0.8s;
+    transition: all 0.8s ease 0s;
+    float: right;
+    position: relative;
+    right: 46%;
+}
+.shops:hover /*here is animation for the  button continue shopping*/
+{
+    text-transform: uppercase;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
+    box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
 }
 .update /*here is the styling for the  button update*/
 {
@@ -250,7 +271,6 @@ hr  /*here is the styling for the breaker between every item*/
     -webkit-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
     -moz-box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
     box-shadow: 0px 0px 5px 0px rgba(160,160,160,1);
-    
 }
 
 .delete /*here is the styling for the  button delete*/
@@ -271,7 +291,7 @@ hr  /*here is the styling for the breaker between every item*/
     transition: all 0.8s ease 0s;
     float: right;
     position: relative;
-    top :20px;
+    margin-top:2%;
 }
 
 .delete:hover /*here is animation for the  button delete*/
