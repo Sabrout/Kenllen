@@ -62,7 +62,6 @@ body{
   transition:all 0.2s ease-in-out;
   padding:12px;
   text-align: center;
-  
 }
 
 .navbar-cart{
@@ -255,34 +254,33 @@ body{
 .newmessage /*here is the styling and the animation for the notification*/
 {
   position: relative;
-  left: 100%;
-  bottom: 40px; 
-  color: #aa5351;
+  left:525px;
+  /*font-size: 22px;*/
+  bottom:25px; 
+  color: #fff;
   font-family: Segoe UI;
   -moz-animation-name:shake-rotate ;
-  -moz-animation-duration:5s;
+  -moz-animation-duration:2s;
   -moz-animation-iteration-count:infinite;
   -moz-animation-direction:linear;
   -webkit-animation-name:shake-rotate ;
-  -webkit-animation-duration:5s;
+  -webkit-animation-duration:2s;
   -webkit-animation-iteration-count:infinite;
   -webkit-animation-direction:linear;
   -ms-animation-name:shake-rotate ;
-  -ms-animation-duration:5s;
+  -ms-animation-duration:2s;
   -ms-animation-iteration-count:infinite;
   -ms-animation-direction:linear;
   -o-animation-name:shake-rotate ;
-  -o-animation-duration:5s;
+  -o-animation-duration:2s;
   -o-animation-iteration-count:infinite;
   -o-animation-direction:linear;
   animation-name:shake-rotate ;
-  animation-duration:5s;
+  animation-duration:1 2s;
   animation-iteration-count:infinite;
   animation-direction:linear;
 }
-  @keyframes shake-rotate /*here is the styling and the animation for the notification*/
-{ 
-  0% { transform: translate(0px, 0px) rotate(0deg); }
+ @keyframes shake-rotate { 0% { transform: translate(0px, 0px) rotate(0deg); }
   2% { transform: translate(0px, 0px) rotate(1.5deg); }
   4% { transform: translate(0px, 0px) rotate(-7.5deg); }
   6% { transform: translate(0px, 0px) rotate(-2.5deg); }
@@ -299,5 +297,36 @@ body{
   28% { transform: translate(0px, 0px) rotate(2.5deg); }
   30% { transform: translate(0px, 0px) rotate(1.5deg); }
   32% { transform: translate(0px, 0px) rotate(-4.5deg); }
-  34% { transform: translate(0px, 0px) rotate(-0.5deg); }
-}
+  34% { transform: translate(0px, 0px) rotate(-3.5deg); }
+  36% { transform: translate(0px, 0px) rotate(-0.5deg); }
+  38% { transform: translate(0px, 0px) rotate(4.5deg); }
+  40% { transform: translate(0px, 0px) rotate(4.5deg); }
+  42% { transform: translate(0px, 0px) rotate(-0.5deg); }
+  44% { transform: translate(0px, 0px) rotate(1.5deg); }
+  46% { transform: translate(0px, 0px) rotate(-0.5deg); }
+  48% { transform: translate(0px, 0px) rotate(-7.5deg); }
+  50% { transform: translate(0px, 0px) rotate(3.5deg); }
+  52% { transform: translate(0px, 0px) rotate(-5.5deg); }
+  54% { transform: translate(0px, 0px) rotate(-6.5deg); }
+  56% { transform: translate(0px, 0px) rotate(-0.5deg); }
+  58% { transform: translate(0px, 0px) rotate(3.5deg); }
+  60% { transform: translate(0px, 0px) rotate(-2.5deg); }
+  62% { transform: translate(0px, 0px) rotate(3.5deg); }
+  64% { transform: translate(0px, 0px) rotate(6.5deg); }
+  66% { transform: translate(0px, 0px) rotate(-6.5deg); }
+  68% { transform: translate(0px, 0px) rotate(-2.5deg); }
+  70% { transform: translate(0px, 0px) rotate(-3.5deg); }
+  72% { transform: translate(0px, 0px) rotate(-6.5deg); }
+  74% { transform: translate(0px, 0px) rotate(-5.5deg); }
+  76% { transform: translate(0px, 0px) rotate(1.5deg); }
+  78% { transform: translate(0px, 0px) rotate(-1.5deg); }
+  80% { transform: translate(0px, 0px) rotate(3.5deg); }
+  82% { transform: translate(0px, 0px) rotate(1.5deg); }
+  84% { transform: translate(0px, 0px) rotate(-7.5deg); }
+  86% { transform: translate(0px, 0px) rotate(-0.5deg); }
+  88% { transform: translate(0px, 0px) rotate(0.5deg); }
+  90% { transform: translate(0px, 0px) rotate(-3.5deg); }
+  92% { transform: translate(0px, 0px) rotate(-4.5deg); }
+  94% { transform: translate(0px, 0px) rotate(2.5deg); }
+  96% { transform: translate(0px, 0px) rotate(2.5deg); }
+  98% { transform: translate(0px, 0px) rotate(-2.5deg); } }
