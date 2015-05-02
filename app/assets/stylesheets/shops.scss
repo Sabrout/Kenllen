@@ -31,8 +31,8 @@ h2{
 	margin-top: 5%;
 	font-size:250%;
 	float:left;
-	clear:both;
 	margin-bottom: 5%;
+	clear:both;
 }
 .shop-page{ /*changes the color, position , and padding of the white page which will include all the elements in the website*/
 	/*background: url(index.jpeg);
@@ -164,10 +164,12 @@ margin-top: 0%;
 .create-button {
 	position:relative;
     padding:6px 15px;
-    left:-8px;
     border:2px solid #E9573F;
     background-color:#E9573F;
     color:#fafafa;
+    left: 12.7%;
+    margin-top: 1%;
+    margin-bottom: -5%;
 }
 
 .create-button:hover {
@@ -382,7 +384,7 @@ AUTHOR: Tarek
 	-moz-box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
 	box-shadow: 0px 0px 10px 0px rgba(160,160,160,1);
 	transition: box-shadow .30s;
-	clear:both;
+	display: inline-block;
 }
 .shop-card:hover{ /*changes the shadow of the shopcard on hover*/
 	transition: .30s;
@@ -787,4 +789,7 @@ AUTHOR: Tarek
 	margin-right: auto;
 	margin-top: 60px;
 	margin-bottom: 0px;
+}
+.inline_block{
+	clear:both;
 }

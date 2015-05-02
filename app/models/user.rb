@@ -3,7 +3,8 @@ class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
-         :rememberable, :trackable , :confirmable
+         :rememberable, :trackable , :confirmable,
+         :omniauthable, :omniauth_providers => [:facebook]
    ratyrate_rater
 
   # adds the messaging service from acts-as-messageable to this model 
@@ -13,6 +14,7 @@ class User < ActiveRecord::Base
     has_many :shops , :dependent => :destroy
     has_one :cart , dependent: :destroy
     has_and_belongs_to_many :followed_shops, class_name: "Shop", join_table: "shops_users"
+    has_and_belongs_to_many :reported_items, class_name: "Item", join_table: "items_reports"
 
     validates :fname , :presence => {:message => "Firsname Field Cannot be blank"} , :on => :create
     validates :fname , :length => { :maximum => 12 , :message => "Firstname Is Too Long(maximum is 12 characters)" }  #sets the maximum length of first name to 12
@@ -25,7 +27,7 @@ class User < ActiveRecord::Base
     validates :uname , :allow_blank => true , :uniqueness => { case_sensitive: false , :message => "Username Already Taken" } # validate uniqueness
     validates :uname , :allow_blank => true , :length => { :minimum => 4, :message => "Username Is Too Shot (minimum is 4 characters)" } #sets the minimum length of user name to 4
 
-    validates :phone , :presence => {:message => "Phone Field Cannot be blank"}, :length => { :maximum => 12 , :message => "PhoneNumber Is Too Long(maximum is 12 numbers)" } , :on => :create #sets the maximum length of phone to 12
+    validates :phone , :length => { :maximum => 12 , :message => "PhoneNumber Is Too Long(maximum is 12 numbers)" } , :on => :create #sets the maximum length of phone to 12
     validates :password , :presence => { :message => "Password Field Can't Be Blank"} , :on => :create #password can't be blank
     validates :password , :allow_blank => true , :length => { :maximum => 12 , :message => "Password Is Too Long(maximum is 12 characters)"} #sets the maximum length of password to 12
     validates :password , :allow_blank => true , :length => { :minimum => 6, :message => "Password Is Too SHORT(minimum is 6 characters)"} #sets the minimum length of password to 6
@@ -38,5 +40,14 @@ class User < ActiveRecord::Base
 
     # mount_uploader :image , ImageUploader
 
-
+    def self.from_omniauth(auth)
+        where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
+            user.email = auth.info.email
+            user.password = Devise.friendly_token[0,20]
+            user.uname = auth.info.name   # assuming the user model has a name
+            user.fname = auth.info.first_name
+            user.lname = auth.info.last_name
+            user.skip_confirmation! 
+        end
+    end
 end
