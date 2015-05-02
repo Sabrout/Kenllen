@@ -252,7 +252,7 @@ body{
   End point
   author:Sabrout
   */
-.newmessage
+.newmessage /*here is the styling and the animation for the notification*/
 {
   position: relative;
   left: 100%;
@@ -280,7 +280,7 @@ body{
   animation-iteration-count:infinite;
   animation-direction:linear;
 }
-  @keyframes shake-rotate 
+  @keyframes shake-rotate /*here is the styling and the animation for the notification*/
 { 
   0% { transform: translate(0px, 0px) rotate(0deg); }
   2% { transform: translate(0px, 0px) rotate(1.5deg); }
