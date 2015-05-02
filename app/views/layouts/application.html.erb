@@ -20,9 +20,9 @@
             <% if user_signed_in?%>
             <%= link_to(current_user.fname,{:action => 'myshops', :controller => '/profile'}, :class => 'profile-welcome-word') %>
               <% if current_user.messages.unreaded.count == 1 %> 
-                <div class = "newmessage">You Have <%=current_user.messages.unreaded.count%>  New Message</div> 
+                <div class = "newmessage" id="10"><%=current_user.messages.unreaded.count%>  New Message</div> 
               <%elsif current_user.messages.unreaded.count > 1%> 
-                      <div class = "newmessage">You Have <%=current_user.messages.unreaded.count%>  New Messages</div> 
+                      <div class = "newmessage" id="10"><%=current_user.messages.unreaded.count%>  New Messages</div> 
               <%end%>
             <%end%> 
             </h3>
