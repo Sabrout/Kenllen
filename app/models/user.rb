@@ -14,6 +14,7 @@ class User < ActiveRecord::Base
     has_many :shops , :dependent => :destroy
     has_one :cart , dependent: :destroy
     has_and_belongs_to_many :followed_shops, class_name: "Shop", join_table: "shops_users"
+    has_and_belongs_to_many :reported_items, class_name: "Item", join_table: "items_reports"
 
     validates :fname , :presence => {:message => "Firsname Field Cannot be blank"} , :on => :create
     validates :fname , :length => { :maximum => 12 , :message => "Firstname Is Too Long(maximum is 12 characters)" }  #sets the maximum length of first name to 12

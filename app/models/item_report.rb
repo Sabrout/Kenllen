@@ -1,3 +1,3 @@
 class ItemReport < ActiveRecord::Base
-self.table_name = 'item_reports'
+self.table_name = 'items_reports'
 end

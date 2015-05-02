@@ -2,6 +2,7 @@ class Item < ActiveRecord::Base
 	belongs_to :shop
 	has_many :item_attachments
 	has_one :cart_item
+	has_and_belongs_to_many :reporters, class_name: "User", join_table: "items_reports"
     accepts_nested_attributes_for :item_attachments
 	#Validations of any entered information to match the desired criteria
 	ratyrate_rateable "speed"

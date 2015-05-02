@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150501221719) do
+ActiveRecord::Schema.define(version: 20150502171309) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -64,10 +64,6 @@ ActiveRecord::Schema.define(version: 20150501221719) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "item_reports", primary_key: "user_id", force: :cascade do |t|
-    t.integer "item_id", default: "nextval('item_reports_item_id_seq'::regclass)", null: false
-  end
-
   create_table "items", force: :cascade do |t|
     t.integer  "shop_id"
     t.string   "item_name",   limit: 15,               null: false
@@ -82,6 +78,13 @@ ActiveRecord::Schema.define(version: 20150501221719) do
   end
 
   add_index "items", ["shop_id"], name: "index_items_on_shop_id", using: :btree
+
+  create_table "items_reports", id: false, force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "item_id"
+  end
+
+  add_index "items_reports", ["item_id", "user_id"], name: "index_items_reports_on_item_id_and_user_id", using: :btree
 
   create_table "messages", force: :cascade do |t|
     t.string   "topic"
@@ -183,6 +186,4 @@ ActiveRecord::Schema.define(version: 20150501221719) do
   add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
 
-  add_foreign_key "item_reports", "items", name: "item_reports_item_id_fkey", on_update: :cascade, on_delete: :cascade
-  add_foreign_key "item_reports", "users", name: "item_reports_user_id_fkey", on_update: :cascade, on_delete: :cascade
 end
