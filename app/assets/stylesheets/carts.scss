@@ -152,9 +152,9 @@ hr  /*here is the styling for the breaker between every item*/
     -moz-transition: all ease 0.8s;
     transition: all 0.8s ease 0s;
     float: right;
-    position: fixed;
-    top:90px;
-    right: 375px;
+    position: relative;
+    bottom: 230px;
+    right: 170px;
 }
 .clear:hover /*here is animation for the  button clear*/
 {
@@ -183,9 +183,9 @@ hr  /*here is the styling for the breaker between every item*/
     -moz-transition: all ease 0.8s;
     transition: all 0.8s ease 0s;
     float: right;
-    position: fixed;
-    top: 90px;
-    right: 503px;
+    position: relative;
+    bottom: 230px;
+    right: 170px;
 }
 .checkout:hover /*here is animation for the  button checkout*/
 {
@@ -214,8 +214,8 @@ hr  /*here is the styling for the breaker between every item*/
     -moz-transition: all ease 0.8s;
     transition: all 0.8s ease 0s;
     float: right;
-    position: fixed;
-    top: 90px;
+    position: relative;
+    bottom: 230px;
     right: 170px;
 }
 .Continue:hover /*here is animation for the  button continue shopping*/

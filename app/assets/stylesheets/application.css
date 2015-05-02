@@ -253,9 +253,10 @@ body{
   author:Sabrout
   */
 .newmessage
-{ 
-    position: fixed;
-    top: 20px;
-    left: 703px;
+{
+    position: relative;
+    left: 230px;
+    bottom: 40px; 
     color: purple;
+    font-family: Segoe UI;
 }
