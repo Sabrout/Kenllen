@@ -85,7 +85,7 @@ ActiveRecord::Schema.define(version: 20150502171309) do
   end
 
   add_index "items_reports", ["item_id", "user_id"], name: "index_items_reports_on_item_id_and_user_id", using: :btree
-
+  
   create_table "messages", force: :cascade do |t|
     t.string   "topic"
     t.text     "body"
