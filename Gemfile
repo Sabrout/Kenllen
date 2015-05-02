@@ -41,6 +41,9 @@ gem "daemons"
 # Messaging gem
 gem 'acts-as-messageable'
 
+#Comments gem
+gem 'commontator', '~> 4.10.0'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 # Use Capistrano for deployment

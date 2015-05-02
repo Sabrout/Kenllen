@@ -9,6 +9,7 @@ class ItemController < ApplicationController
     #finding certain Item using id to use in show page
     @item = Item.find(params[:id])
     @item_attachments = @item.item_attachments.all
+    commontator_thread_show(@item)
   end
 
   def edit
@@ -80,7 +81,6 @@ class ItemController < ApplicationController
   def create
     #Instantiate a new Item using form parameters
   	@item = Item.new(item_params)
-    @item.category = params[:category]
     @shop = Shop.find(params[:shop_id])
     #Save the item
     
@@ -130,6 +130,6 @@ private
     #same as using "params[:item]", Except that it :
     # - raises an error if :item is not present
     # - allows listed attributes to be mass assigned
-		params.require(:item).permit(:item_name, :price, :description, :inspiration, item_attachments_attributes: [:id, :item_id, :photo])
+		params.require(:item).permit(:item_name, :price, :description, :inspiration, :category, item_attachments_attributes: [:id, :item_id, :photo])
 	end
 end
