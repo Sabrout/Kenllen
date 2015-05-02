@@ -10,11 +10,9 @@
         <%= submit_tag "Search", :name => nil, :class => 'search-button' %>
       <% end %>    
     </div>
-    <div class = 'button'>
       <% if user_signed_in?%>
         <%= button_to("Create New Shop", {:action => 'new'}, :class => 'create-button') %>
       <%end%>
-    </div>
   </div>
 
   <!-- Shops showcase -->
