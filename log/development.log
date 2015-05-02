@@ -28575,3 +28575,149 @@ ActionController::RoutingError (No route matches [GET] "/stylesheets/shop.css"):
   Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
   Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
   Rendered /var/lib/gems/2.1.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (29.6ms)
+
+
+Started GET "/shops" for 127.0.0.1 at 2015-05-02 13:55:12 +0200
+Processing by ShopsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mShop Load (0.6ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (3.8ms)
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "messages" WHERE ((sent_messageable_type = 'User' and
+                                                  sent_messageable_id = 3 and
+                                                  sender_delete = 'f' and sender_permanent_delete = 'f') or
+                                                  (received_messageable_type = 'User' and
+                                                  received_messageable_id = 3 and
+                                                  recipient_delete = 'f' and recipient_permanent_delete = 'f')) AND "messages"."opened" = 'f'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "messages" WHERE ((sent_messageable_type = 'User' and
+                                                  sent_messageable_id = 3 and
+                                                  sender_delete = 'f' and sender_permanent_delete = 'f') or
+                                                  (received_messageable_type = 'User' and
+                                                  received_messageable_id = 3 and
+                                                  recipient_delete = 'f' and recipient_permanent_delete = 'f')) AND "messages"."opened" = 'f'
+Completed 200 OK in 168ms (Views: 163.3ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/shops" for 127.0.0.1 at 2015-05-02 13:55:12 +0200
+Processing by ShopsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mShop Load (0.5ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (3.3ms)
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "messages" WHERE ((sent_messageable_type = 'User' and
+                                                  sent_messageable_id = 3 and
+                                                  sender_delete = 'f' and sender_permanent_delete = 'f') or
+                                                  (received_messageable_type = 'User' and
+                                                  received_messageable_id = 3 and
+                                                  recipient_delete = 'f' and recipient_permanent_delete = 'f')) AND "messages"."opened" = 'f'[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(*) FROM "messages" WHERE ((sent_messageable_type = 'User' and
+                                                  sent_messageable_id = 3 and
+                                                  sender_delete = 'f' and sender_permanent_delete = 'f') or
+                                                  (received_messageable_type = 'User' and
+                                                  received_messageable_id = 3 and
+                                                  recipient_delete = 'f' and recipient_permanent_delete = 'f')) AND "messages"."opened" = 'f'
+Completed 200 OK in 79ms (Views: 75.0ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.self-76a668c5840b92138c87f58c8de93ce132e9987ff3a7fa81e4ab468d164c5284.css?body=1" for 127.0.0.1 at 2015-05-02 13:55:12 +0200
+
+
+Started GET "/profile/myshops" for 127.0.0.1 at 2015-05-02 13:55:17 +0200
+Processing by ProfileController#myshops as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mShop Load (0.4ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1  [["user_id", 3]]
+  [1m[36mShop Load (0.4ms)[0m  [1mSELECT "shops".* FROM "shops" INNER JOIN "shops_users" ON "shops"."id" = "shops_users"."shop_id" WHERE "shops_users"."user_id" = $1[0m  [["user_id", 3]]
+  Rendered profile/myshops.html.erb within layouts/application (3.2ms)
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "messages" WHERE ((sent_messageable_type = 'User' and
+                                                  sent_messageable_id = 3 and
+                                                  sender_delete = 'f' and sender_permanent_delete = 'f') or
+                                                  (received_messageable_type = 'User' and
+                                                  received_messageable_id = 3 and
+                                                  recipient_delete = 'f' and recipient_permanent_delete = 'f')) AND "messages"."opened" = 'f'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "messages" WHERE ((sent_messageable_type = 'User' and
+                                                  sent_messageable_id = 3 and
+                                                  sender_delete = 'f' and sender_permanent_delete = 'f') or
+                                                  (received_messageable_type = 'User' and
+                                                  received_messageable_id = 3 and
+                                                  recipient_delete = 'f' and recipient_permanent_delete = 'f')) AND "messages"."opened" = 'f'[0m
+Completed 200 OK in 80ms (Views: 75.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/shops/show/2" for 127.0.0.1 at 2015-05-02 13:55:19 +0200
+Processing by ShopsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mShop Load (0.3ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mShop Exists (0.5ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 3], ["id", 2]]
+  [1m[35mShop Exists (0.3ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 3], ["id", 2]]
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."shop_id" = $1[0m  [["shop_id", 2]]
+  Rendered shops/show.html.erb within layouts/application (5.2ms)
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "messages" WHERE ((sent_messageable_type = 'User' and
+                                                  sent_messageable_id = 3 and
+                                                  sender_delete = 'f' and sender_permanent_delete = 'f') or
+                                                  (received_messageable_type = 'User' and
+                                                  received_messageable_id = 3 and
+                                                  recipient_delete = 'f' and recipient_permanent_delete = 'f')) AND "messages"."opened" = 'f'
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(*) FROM "messages" WHERE ((sent_messageable_type = 'User' and
+                                                  sent_messageable_id = 3 and
+                                                  sender_delete = 'f' and sender_permanent_delete = 'f') or
+                                                  (received_messageable_type = 'User' and
+                                                  received_messageable_id = 3 and
+                                                  recipient_delete = 'f' and recipient_permanent_delete = 'f')) AND "messages"."opened" = 'f'[0m
+Completed 200 OK in 71ms (Views: 65.9ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/shops/delete/2" for 127.0.0.1 at 2015-05-02 13:55:22 +0200
+Processing by ShopsController#delete as HTML
+  Parameters: {"authenticity_token"=>"0cRVyILm7g4p7jogW3sywInbZi3/GkTdkjWuv3QGELYAezUmxXGOp3TXW+AWfU9NJIjAr3oa4SwZ/gtWtFlDtw==", "id"=>"2"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mShop Load (0.7ms)[0m  [1mSELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  [1m[35mShop Exists (1.2ms)[0m  SELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2  [["user_id", 3], ["id", 2]]
+  Rendered shops/delete.html.erb within layouts/application (1.3ms)
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "messages" WHERE ((sent_messageable_type = 'User' and
+                                                  sent_messageable_id = 3 and
+                                                  sender_delete = 'f' and sender_permanent_delete = 'f') or
+                                                  (received_messageable_type = 'User' and
+                                                  received_messageable_id = 3 and
+                                                  recipient_delete = 'f' and recipient_permanent_delete = 'f')) AND "messages"."opened" = 'f'[0m
+  [1m[35mCACHE (0.4ms)[0m  SELECT COUNT(*) FROM "messages" WHERE ((sent_messageable_type = 'User' and
+                                                  sent_messageable_id = 3 and
+                                                  sender_delete = 'f' and sender_permanent_delete = 'f') or
+                                                  (received_messageable_type = 'User' and
+                                                  received_messageable_id = 3 and
+                                                  recipient_delete = 'f' and recipient_permanent_delete = 'f')) AND "messages"."opened" = 'f'
+Completed 200 OK in 75ms (Views: 69.4ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/shops/destroy/2" for 127.0.0.1 at 2015-05-02 13:55:24 +0200
+Processing by ShopsController#destroy as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GsLOLXcLkjXAUdLJ28GK5TTCGncGhHvma6gsl34+oUXLfa7DMJzynJ1oswmWx/domZG89YOE3hfgY4l+vmHyRA==", "commit"=>"Delete Shop", "id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mShop Load (0.2ms)[0m  SELECT  "shops".* FROM "shops" WHERE "shops"."id" = $1 LIMIT 1  [["id", 2]]
+  [1m[36mShop Exists (0.3ms)[0m  [1mSELECT "shops".* FROM "shops" WHERE "shops"."user_id" = $1 AND "shops"."id" = $2[0m  [["user_id", 3], ["id", 2]]
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "shops_users" WHERE "shops_users"."shop_id" = $1[0m  [["shop_id", 2]]
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "shops" WHERE "shops"."id" = $1  [["id", 2]]
+  [1m[36m (1.2ms)[0m  [1mCOMMIT[0m
+  [1m[35mItem Load (0.4ms)[0m  SELECT "items".* FROM "items" WHERE "items"."shop_id" = $1  [["shop_id", 2]]
+Redirected to http://localhost:3000/shops
+Completed 302 Found in 14ms (ActiveRecord: 3.4ms)
+
+
+Started GET "/shops" for 127.0.0.1 at 2015-05-02 13:55:24 +0200
+Processing by ShopsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mShop Load (0.4ms)[0m  SELECT "shops".* FROM "shops"  ORDER BY shops.shop_name ASC
+  Rendered shops/index.html.erb within layouts/application (2.4ms)
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "messages" WHERE ((sent_messageable_type = 'User' and
+                                                  sent_messageable_id = 3 and
+                                                  sender_delete = 'f' and sender_permanent_delete = 'f') or
+                                                  (received_messageable_type = 'User' and
+                                                  received_messageable_id = 3 and
+                                                  recipient_delete = 'f' and recipient_permanent_delete = 'f')) AND "messages"."opened" = 'f'[0m
+  [1m[35mCACHE (0.1ms)[0m  SELECT COUNT(*) FROM "messages" WHERE ((sent_messageable_type = 'User' and
+                                                  sent_messageable_id = 3 and
+                                                  sender_delete = 'f' and sender_permanent_delete = 'f') or
+                                                  (received_messageable_type = 'User' and
+                                                  received_messageable_id = 3 and
+                                                  recipient_delete = 'f' and recipient_permanent_delete = 'f')) AND "messages"."opened" = 'f'
+Completed 200 OK in 101ms (Views: 97.3ms | ActiveRecord: 1.5ms)
