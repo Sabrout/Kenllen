@@ -17,6 +17,7 @@ class MessagesController < ApplicationController
   def send_trash
     # retreives the message ID passed from inbox view and sends it to trash
     @message = current_user.received_messages.find(params[:m_id])
+    @message.mark_as_read
     current_user.delete_message(@message)
     redirect_to trash_path
   end
