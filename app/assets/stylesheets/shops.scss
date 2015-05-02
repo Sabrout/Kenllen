@@ -213,14 +213,14 @@ AUTHOR: Tarek
     position:relative;
     padding:6px 15px;
     left:-8px;
-    border:2px solid #E9573F;
-    background-color:#E9573F;
+    border:2px solid #EEC900;
+    background-color:#EEC900;
     color:#fafafa;
 }
 
 .search-button:hover {
-    background-color:#fafafa;
-    color:#E9573F;
+    background-color:#222222;
+    color:#fff;
 }
 
 
@@ -775,7 +775,7 @@ AUTHOR: Tarek
 
 .featured-items{
 	color: #fff;
-	float: center;
+	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 20px;

@@ -10,6 +10,9 @@ class User < ActiveRecord::Base
   # adds the messaging service from acts-as-messageable to this model 
   acts_as_messageable :dependent => :destroy
 
+  #allows users to add comments
+  acts_as_commontator
+
          # Associations
     has_many :shops , :dependent => :destroy
     has_one :cart , dependent: :destroy
