@@ -12,7 +12,6 @@ default: &default
   username: 
   password: 
 
-
 development:
   <<: *default
 

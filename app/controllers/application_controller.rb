@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
       def banned? # check if a user is banned or not and kicks him/her in case column ban has true value in it
         if current_user.present? && current_user.banned
           sign_out current_user
-           redirect_to root_path, :notice => "This account has been suspended...."
+          redirect_to root_path, :notice => "This account has been suspended...."
         end
       end
 

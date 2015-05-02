@@ -21,6 +21,7 @@
 <div class = "shop-page">
   <!-- shops cards -->
   <div class = "myshops-title">My shops</div>
+  <div class = "inline_block">
     <% @shops.each do |shop| %>
     <div class ="shop-card">
       <div class = "shop">
@@ -30,11 +31,15 @@
             <div class="actions">
               <%= link_to("Show", {:action => 'show', :controller => '/shops', :id => shop.id}, :class => 'actionshow') %>
             </div>
-          </div>
-   <% end %>
+            </div>
+          
+     <% end %>
+   </div>
     <div class = "followed-shops">My followed shops</div>
    <!-- followed shops  -->
+       <div class = "inline_block">
    <% @followed_shops.each do |shop| %>
+
     <div class ="shop-card">
     <div class = "above-each-other">
       <div class = "shop">
@@ -46,8 +51,9 @@
           </div>
           </div>
          </div>
+         
     <% end %>
-
+    </div>
 </div>
 </div>
 <script type="text/javascript">document.getElementById("show-shop").setAttribute("style","height:"+ document.getElementById("page").offsetHeight +"px;")</script>
