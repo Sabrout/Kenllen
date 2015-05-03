@@ -234,6 +234,8 @@ body{
 .username{
   float: left;
   margin-left: 10px;
+  font-family: Segoe UI;
+  margin-bottom: 10px;
 }
 
 .username h3,.username h4{

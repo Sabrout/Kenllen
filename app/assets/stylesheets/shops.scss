@@ -52,6 +52,7 @@ h2{
 	overflow: hidden;
 	padding-left: 10px;
 	padding-right: 10px;
+	padding-top: 20px;
 	text-align:center;
 	background-color: white;
 }
@@ -136,7 +137,7 @@ th{ /*styling the heads of the table*/
 
 
 .actionshow, .actionedit, .actiondelete { /*changes the background color, font color , and font style of the three buttons (show, edit, delete)*/
-	color: #E9573F; 
+	color: #aa5351; 
 	background-color: #fefefe; 
 	font-family: 'Segoe UI';
 	text-decoration: none;
@@ -164,17 +165,18 @@ margin-top: 0%;
 .create-button {
 	position:relative;
     padding:6px 15px;
-    border:2px solid #E9573F;
-    background-color:#E9573F;
+    border:2px solid #7b911f;
+    background-color:#7b911f;
     color:#fafafa;
     left: 12.7%;
     margin-top: 1%;
     margin-bottom: -5%;
+    opacity: 0.8;
 }
 
 .create-button:hover {
 	background-color:#fafafa;
-    color:#E9573F;
+    color:#7b911f;
 }
 
 /*
@@ -205,6 +207,7 @@ AUTHOR: Tarek
 .search-tf{
 	width: 350px;
     padding:8px 15px;
+    color: #fafafa;
     background:rgba(30, 30, 30, 0.7);
     border:0px solid #dbdbdb;
 }
@@ -213,14 +216,14 @@ AUTHOR: Tarek
     position:relative;
     padding:6px 15px;
     left:-8px;
-    border:2px solid #EEC900;
-    background-color:#EEC900;
+    border:2px solid #5a9ea2;
+    background-color:#5a9ea2;
     color:#fafafa;
 }
 
 .search-button:hover {
-    background-color:#222222;
-    color:#fff;
+    background-color:#fafafa;
+    color:#5a9ea2;
 }
 
 
@@ -359,9 +362,15 @@ AUTHOR: Tarek
 */
 
 .search-res {
-	margin-top: -4%;
-	margin-bottom: 2%;
-	font-size: 200%;
+	text-align: left;
+	margin: 2%;
+	font-size: 150%;
+}
+
+.search-res2 {
+	text-align: left;
+	margin: 1.5%;
+	font-size: 100%;
 }
 
 .actions { /*changes the background color of the three buttons (show, edit, delete)*/
@@ -388,9 +397,9 @@ AUTHOR: Tarek
 }
 .shop-card:hover{ /*changes the shadow of the shopcard on hover*/
 	transition: .30s;
-	-webkit-box-shadow: 0px 0px 15px 0px rgba(233,87,63,1);
-	-moz-box-shadow: 0px 0px 15px 0px rgba(233,87,63,1);
-	box-shadow: 0px 0px 15px 0px rgba(233,87,63,1);
+	-webkit-box-shadow: 0px 0px 15px 0px rgba(80,80,80,1);
+	-moz-box-shadow: 0px 0px 15px 0px rgba(80,80,80,1);
+	box-shadow: 0px 0px 15px 0px rgba(80,80,80,1);
 }
 .back{ /*styles the back button on all of the pages by changing their color the position, font, border style, padding and text alignment*/
 	color: black; 
@@ -446,6 +455,7 @@ AUTHOR: Tarek
 	margin-left:40%;
 	margin-top: 1%;
 	width: 20%;
+	padding: 0.5%;
 	text-align: center;
 }
 .bold{

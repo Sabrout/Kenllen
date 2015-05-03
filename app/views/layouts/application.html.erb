@@ -16,7 +16,7 @@
           <%= link_to(image_tag("logo.png"), root_path, :class => 'logo') %>
           <% if user_signed_in? %> 
           <div class ="username">
-            <h4>Welcome,</h4>
+            <div>Welcome,</div>
             <h3>
             <% if user_signed_in?%>
             <%= link_to(current_user.fname,{:action => 'myshops', :controller => '/profile'}, :class => 'profile-welcome-word')%>
