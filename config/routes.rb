@@ -22,6 +22,9 @@ Rails.application.routes.draw do
 
   match '/destroy_image' => 'items#destroyImage', :as => 'destroyImage', via: [:get, :post]
 
+  #used for comments
+  mount Commontator::Engine => '/commontator'
+
 match ':controller(/:action(/:id))', :via  => [:get, :post , :delete]
   
   # The priority is based upon order of creation: first created -> highest priority.
