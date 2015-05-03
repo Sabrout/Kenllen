@@ -21,7 +21,6 @@
     <div class ="shop-card">
       <div class = "shop">
       <img src="<%= shop.cover_url.to_s %>" style="width:200px;height:200px"></div>
-      <div><%= shop.id %></div>
       <div><%= shop.shop_name %></div>
         <div class="actions">
          <%= link_to("Show", {:action => 'show', :id => shop.id}, :class => 'actionshow') %>

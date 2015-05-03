@@ -42,7 +42,9 @@
           <div class = "shop">
             <!-- This is where the item's image should be added -->
           </div>
-          <div><%= item.id %></div>
+          <% if item.item_attachments.first %>
+        <%= image_tag item.item_attachments.first.photo_url, :size => "150x250" %>
+        <% end %>
           <div><%= item.item_name %></div>
           <div class="actions">
             <%= link_to("Show", {:controller => 'item', :action => 'show', :id => item.id, :shop_id => item.shop_id}, :class => 'actionshow') %>

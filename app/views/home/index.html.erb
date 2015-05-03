@@ -46,7 +46,7 @@
 <div class = "page-homepage">
   <% @items.each do |item| %>
     <div class ="arrange_o">
-      <ul class="gallery_o">
+      <ul class="gallery_sabrout">
         <% if item.item_attachments.first %>
         <li><%= image_tag item.item_attachments.first.photo_url, :size => "150x250" %>
         <% end %>
